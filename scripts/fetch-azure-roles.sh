@@ -8,6 +8,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ROLES_DIR="$1"
 SUBSCRIPTION_ID="$(az account show -ojson | jq -rc .id)"
 
+mkdir -p "${ROLES_DIR}"
 find "${ROLES_DIR}" -type f -name '*.json' -delete
 
 az role definition list -ojson \

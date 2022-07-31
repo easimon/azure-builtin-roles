@@ -9,7 +9,6 @@ on a schedule, and pushes changes to this repository.
 ## TODO list
 
 - Monitor AAD roles
-- Monitor available permissions (actions/dataactions)
 - Add twitter bot support, similar to MAMIP
 
 ## Caveats
