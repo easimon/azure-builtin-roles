@@ -1,0 +1,762 @@
+{
+  "displayName": "Microsoft Azure Lab Services",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.LabServices",
+  "name": "Microsoft.LabServices",
+  "operations": [
+    {
+      "description": "Register the subscription with the Lab Services provider and enable the creation of labs.",
+      "displayName": "Register Subscription for Lab Services",
+      "isDataAction": false,
+      "name": "Microsoft.LabServices/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription with the Lab Services provider.",
+      "displayName": "Unregister Subscription for Lab Services",
+      "isDataAction": false,
+      "name": "Microsoft.LabServices/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Microsoft.LabServices/locations/operationResults",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Get the properties and status of an asynchronous operation.",
+          "displayName": "Get Operation",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/locations/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/skus",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "Get the properties of a Lab Services SKU.",
+          "displayName": "Get SKU",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/skus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/labPlans",
+      "name": "labPlans",
+      "operations": [
+        {
+          "description": "Get the properties of a lab plan.",
+          "displayName": "Get Lab Plan",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labPlans/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create new or update an existing lab plan.",
+          "displayName": "Create or Update Lab Plan",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labPlans/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the lab plan.",
+          "displayName": "Delete Lab Plan",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labPlans/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create an image from a virtual machine in the gallery attached to the lab plan.",
+          "displayName": "Save Image",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labPlans/saveImage/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a new lab from a lab plan.",
+          "displayName": "Create Lab",
+          "isDataAction": true,
+          "name": "Microsoft.LabServices/labPlans/createLab/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/labPlans/images",
+      "name": "labPlans/images",
+      "operations": [
+        {
+          "description": "Get the properties of an image.",
+          "displayName": "Get Image",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labPlans/images/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Enable or disable a marketplace or gallery image.",
+          "displayName": "Update Image",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labPlans/images/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/labs",
+      "name": "labs",
+      "operations": [
+        {
+          "description": "Get the properties of a lab.",
+          "displayName": "Get Lab",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create new or update an existing lab.",
+          "displayName": "Create or Update Lab",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the lab and all its users, schedules and virtual machines.",
+          "displayName": "Delete Lab",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Publish a lab by propagating image of the template virtual machine to all virtual machines in the lab.",
+          "displayName": "Publish Lab",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/publish/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the list of users from the Active Directory group assigned to the lab.",
+          "displayName": "Sync Lab from Group",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/syncGroup/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/labs/users",
+      "name": "labs/users",
+      "operations": [
+        {
+          "description": "Get the properties of a user.",
+          "displayName": "Get User",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/users/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create new or update an existing user.",
+          "displayName": "Create or Update User",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/users/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the user.",
+          "displayName": "Delete User",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/users/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Send email invitation to a user to join the lab.",
+          "displayName": "Invite User",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/users/invite/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/labs/schedules",
+      "name": "labs/schedules",
+      "operations": [
+        {
+          "description": "Get the properties of a schedule.",
+          "displayName": "Get Schedule",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/schedules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create new or update an existing schedule.",
+          "displayName": "Create or Update Schedule",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/schedules/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the schedule.",
+          "displayName": "Delete Schedule",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/schedules/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/labs/virtualMachines",
+      "name": "labs/virtualMachines",
+      "operations": [
+        {
+          "description": "Get the properties of a virtual machine.",
+          "displayName": "Get Virtual Machine",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/virtualMachines/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Start a virtual machine.",
+          "displayName": "Start Virtual Machine",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/virtualMachines/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stop and deallocate a virtual machine.",
+          "displayName": "Stop Virtual Machine",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/virtualMachines/stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reimage a virtual machine to the last published image.",
+          "displayName": "Reimage Virtual Machine",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/virtualMachines/reimage/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Redeploy a virtual machine to a different compute node.",
+          "displayName": "Redeploy Virtual Machine",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/virtualMachines/redeploy/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reset local user's password on a virtual machine.",
+          "displayName": "Reset Virtual Machine Password",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labs/virtualMachines/resetPassword/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Lab Accounts",
+      "name": "labAccounts",
+      "operations": [
+        {
+          "description": "Delete lab accounts.",
+          "displayName": "Delete lab accounts.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read lab accounts.",
+          "displayName": "Read lab accounts.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify lab accounts.",
+          "displayName": "Add or modify lab accounts.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a lab in a lab account.",
+          "displayName": "Create a managed lab",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/CreateLab/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get regional availability information for each size category configured under a lab account",
+          "displayName": "Get regional availability for sizes configured under a lab account",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/GetRegionalAvailability/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the pricing and availability of combinations of sizes, geographies, and operating systems for the lab account.",
+          "displayName": "Get pricing and availability for the lab account",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/GetPricingAndAvailability/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get core restrictions and usage for this subscription",
+          "displayName": "Get restrictions and usage",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/GetRestrictionsAndUsage/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Labs",
+      "name": "labAccounts/labs",
+      "operations": [
+        {
+          "description": "Delete labs.",
+          "displayName": "Delete labs.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read labs.",
+          "displayName": "Read labs.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify labs.",
+          "displayName": "Add or modify labs.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add users to a lab",
+          "displayName": "Add users",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/AddUsers/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Send email with registration link to the lab",
+          "displayName": "SendEmail",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/SendEmail/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the pricing per lab unit for this lab and the availability which indicates if this lab can scale up.",
+          "displayName": "Get the pricing and availability for the lab",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/GetLabPricingAndAvailability/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Syncs the changes from the AAD group to the userlist",
+          "displayName": "Syncs the userlist",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/SyncUserList/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Environment Setting",
+      "name": "labAccounts/labs/environmentSettings",
+      "operations": [
+        {
+          "description": "Delete environment setting.",
+          "displayName": "Delete environment setting.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read environment setting.",
+          "displayName": "Read environment setting.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify environment setting.",
+          "displayName": "Add or modify environment setting.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Provisions/deprovisions required resources for an environment setting based on current state of the lab/environment setting.",
+          "displayName": "Publishes changes to an environment setting based on changes made to lab/environment setting",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/Publish/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a template by starting all resources inside the template.",
+          "displayName": "Starts a template.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/Start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stops a template by stopping all resources inside the template.",
+          "displayName": "Stops a template.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/Stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Saves current template image to the shared gallery in the lab account",
+          "displayName": "Saves current template image to the shared gallery in the lab account",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/SaveImage/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resets password on the template virtual machine.",
+          "displayName": "Reset password",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/ResetPassword/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "locations/operations",
+      "operations": [
+        {
+          "description": "Read operations.",
+          "displayName": "Read operations.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/locations/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Environments",
+      "name": "labAccounts/labs/environmentSettings/environments",
+      "operations": [
+        {
+          "description": "Delete environments.",
+          "displayName": "Delete environments.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/environments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read environments.",
+          "displayName": "Read environments.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/environments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts an environment by starting all resources inside the environment.",
+          "displayName": "Starts an environment.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/environments/Start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stops an environment by stopping all resources inside the environment",
+          "displayName": "Stops an environment",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/environments/Stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resets the user password on an environment",
+          "displayName": "Reset password",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/environments/ResetPassword/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Users",
+      "name": "labAccounts/labs/users",
+      "operations": [
+        {
+          "description": "Delete users.",
+          "displayName": "Delete users.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/users/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read users.",
+          "displayName": "Read users.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/users/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify users.",
+          "displayName": "Add or modify users.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/users/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Gallery Images",
+      "name": "labAccounts/galleryImages",
+      "operations": [
+        {
+          "description": "Delete gallery images.",
+          "displayName": "Delete gallery images.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/galleryImages/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read gallery images.",
+          "displayName": "Read gallery images.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/galleryImages/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify gallery images.",
+          "displayName": "Add or modify gallery images.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/galleryImages/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SharedImages",
+      "name": "labAccounts/sharedImages",
+      "operations": [
+        {
+          "description": "Delete sharedimages.",
+          "displayName": "Delete sharedimages.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/sharedImages/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read sharedimages.",
+          "displayName": "Read sharedimages.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/sharedImages/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify sharedimages.",
+          "displayName": "Add or modify sharedimages.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/sharedImages/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SharedGalleries",
+      "name": "labAccounts/sharedGalleries",
+      "operations": [
+        {
+          "description": "Delete sharedgalleries.",
+          "displayName": "Delete sharedgalleries.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/sharedGalleries/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read sharedgalleries.",
+          "displayName": "Read sharedgalleries.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/sharedGalleries/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify sharedgalleries.",
+          "displayName": "Add or modify sharedgalleries.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/sharedGalleries/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schedules",
+      "name": "labAccounts/labs/environmentSettings/schedules",
+      "operations": [
+        {
+          "description": "Delete schedules.",
+          "displayName": "Delete schedules.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/schedules/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read schedules.",
+          "displayName": "Read schedules.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/schedules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add or modify schedules.",
+          "displayName": "Add or modify schedules.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/labAccounts/labs/environmentSettings/schedules/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Users",
+      "name": "users",
+      "operations": [
+        {
+          "description": "Register a user to a managed lab",
+          "displayName": "Register",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/users/Register/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List all Environments for the user",
+          "displayName": "ListAllEnvironments",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/users/ListAllEnvironments/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts an environment by starting all resources inside the environment.",
+          "displayName": "Starts an environment.",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/users/StartEnvironment/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stops an environment by stopping all resources inside the environment",
+          "displayName": "Stops an environment",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/users/StopEnvironment/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resets the user password on an environment",
+          "displayName": "Reset password",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/users/ResetPassword/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates and returns personal user settings.",
+          "displayName": "User settings",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/users/UserSettings/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.LabServices/locations/usages",
+      "name": "locations/usages",
+      "operations": [
+        {
+          "description": "Get Usage in a location",
+          "displayName": "Get Usage",
+          "isDataAction": false,
+          "name": "Microsoft.LabServices/locations/usages/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

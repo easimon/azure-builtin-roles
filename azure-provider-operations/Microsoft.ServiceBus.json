@@ -1,0 +1,1608 @@
+{
+  "displayName": "Microsoft Azure ServiceBus",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ServiceBus",
+  "name": "Microsoft.ServiceBus",
+  "operations": [
+    {
+      "description": "Checks availability of namespace under given subscription. This API is deprecated please use CheckNameAvailabiltiy instead.",
+      "displayName": "Get namespace availability.",
+      "isDataAction": false,
+      "name": "Microsoft.ServiceBus/checkNamespaceAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Checks availability of namespace under given subscription.",
+      "displayName": "Get namespace availability.",
+      "isDataAction": false,
+      "name": "Microsoft.ServiceBus/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the subscription for the ServiceBus resource provider and enables the creation of ServiceBus resources",
+      "displayName": "Registers the ServiceBus Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.ServiceBus/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the subscription for the ServiceBus resource provider and enables the creation of ServiceBus resources",
+      "displayName": "Registers the ServiceBus Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.ServiceBus/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Namespace",
+      "name": "namespaces",
+      "operations": [
+        {
+          "description": "Create a Namespace Resource and Update its properties. Tags and Capacity of the Namespace are the properties which can be updated.",
+          "displayName": "Create Or Update Namespace ",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespace Resource Description",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Resource",
+          "displayName": "Delete Namespace",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates Namespace Authorization Rule. This API is depricated. Please use a PUT call to update the Namespace Authorization Rule instead.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Updates Namespace Authorization Rule (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Migrate namespace operation",
+          "displayName": "Migrate namespace operation",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/migrate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove ACS namespace",
+          "displayName": "Remove ACS namespace",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/removeAcsNamepsace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/operationresults",
+      "operations": [
+        {
+          "description": "Get the status of Namespace operation",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationRules",
+      "name": "namespaces/authorizationRules",
+      "operations": [
+        {
+          "description": "Create a Namespace level Authorization Rules and update its properties. The Authorization Rules Access Rights, the Primary and Secondary Keys can be updated.",
+          "displayName": "Create or Update Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespaces Authorization Rules description.",
+          "displayName": "Get Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Authorization Rule. The Default Namespace Authorization Rule cannot be deleted. ",
+          "displayName": "Delete Namespace Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to the Namespace",
+          "displayName": "Get Namespace Listkeys",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/messagingPlan",
+      "operations": [
+        {
+          "description": "Gets the Messaging Plan for a namespace. This API is deprecated. Properties exposed via the MessagingPlan resource are moved to the (parent) Namespace resource in later API versions.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Get Messaging Plan (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/messagingPlan/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Messaging Plan for a namespace. This API is deprecated. Properties exposed via the MessagingPlan resource are moved to the (parent) Namespace resource in later API versions.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Create or Update Messaging Plan (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/messagingPlan/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Queue",
+      "name": "namespaces/queues",
+      "operations": [
+        {
+          "description": "Create or Update Queue properties.",
+          "displayName": "Create or Update Queue",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Queue Resource Descriptions",
+          "displayName": "Get Queue",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete Queue Resource",
+          "displayName": "Delete Queue",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to update Queue. This operation is not supported on API version 2017-04-01. Authorization Rules. Please use a PUT call to update Authorization Rule.",
+          "displayName": "Update Queue Authorization Rules (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Queue AuthorizationRules",
+      "name": "namespaces/queues/authorizationRules",
+      "operations": [
+        {
+          "description": "Create Queue Authorization Rules and Update its properties. The Authorization Rules Access Rights can be updated.",
+          "displayName": "Create or Update Queue Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": " Get the list of Queue Authorization Rules",
+          "displayName": " Get Queue Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete Queue Authorization Rules",
+          "displayName": "Delete Queue Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to Queue",
+          "displayName": "List Queue keys",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/queues/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topic",
+      "name": "namespaces/topics",
+      "operations": [
+        {
+          "description": "Create or Update Topic properties.",
+          "displayName": "Create or Update Topic",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Topic Resource Descriptions",
+          "displayName": "Get Topic",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete Topic Resource",
+          "displayName": "Delete Topic",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to update Topic. This operation is not supported on API version 2017-04-01. Authorization Rules. Please use a PUT call to update Authorization Rule.",
+          "displayName": "Update Topic Authorization Rules (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topic AuthorizationRules",
+      "name": "namespaces/topics/authorizationRules",
+      "operations": [
+        {
+          "description": "Create Topic Authorization Rules and Update its properties. The Authorization Rules Access Rights can be updated.",
+          "displayName": "Create or Update Topic Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": " Get the list of Topic Authorization Rules",
+          "displayName": " Get Topic Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete Topic Authorization Rules",
+          "displayName": "Delete Topic Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to Topic",
+          "displayName": "List Topic keys",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "TopicSubscription",
+      "name": "namespaces/topics/subscriptions",
+      "operations": [
+        {
+          "description": "Create or Update TopicSubscription properties.",
+          "displayName": "Create or Update TopicSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/subscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of TopicSubscription Resource Descriptions",
+          "displayName": "Get TopicSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/subscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete TopicSubscription Resource",
+          "displayName": "Delete TopicSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/subscriptions/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Rule",
+      "name": "namespaces/topics/subscriptions/rules",
+      "operations": [
+        {
+          "description": "Create or Update Rule properties.",
+          "displayName": "Create or Update Rule",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/subscriptions/rules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Rule Resource Descriptions",
+          "displayName": "Get Rule",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/subscriptions/rules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete Rule Resource",
+          "displayName": "Delete Rule",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/topics/subscriptions/rules/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sku",
+      "name": "sku",
+      "operations": [
+        {
+          "description": "Get list of Sku Resource Descriptions",
+          "displayName": "Get Sku",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/sku/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SkuRegions",
+      "name": "sku/regions",
+      "operations": [
+        {
+          "description": "Get list of SkuRegions Resource Descriptions",
+          "displayName": "Get SkuRegions",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/sku/regions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Get Operations",
+          "displayName": "Get Operations",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventHub",
+      "name": "namespaces/eventhubs",
+      "operations": [
+        {
+          "description": "Get list of EventHub Resource Descriptions",
+          "displayName": "Get EventHub",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/eventhubs/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ServiceBus Resource Provider",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Deletes the VNet rules in ServiceBus Resource Provider for the specified VNet",
+          "displayName": "Deletes the VNet rules in ServiceBus Resource Provider for the specified VNet",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/locations/deleteVirtualNetworkOrSubnets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace metrics",
+      "name": "namespaces/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace metrics Resource Descriptions",
+          "displayName": "Get Namespace metrics",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Total successful requests for a namespace",
+                  "displayName": "Successful Requests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "SuccessfulRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Server Errors for Microsoft.ServiceBus.",
+                  "displayName": "Server Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "ServerErrors",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "User Errors for Microsoft.ServiceBus.",
+                  "displayName": "User Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "UserErrors",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ServerBusy"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    },
+                    {
+                      "name": "MessagingErrorSubCode",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Throttled Requests for Microsoft.ServiceBus.",
+                  "displayName": "Throttled Requests.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "ThrottledRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incoming Requests for Microsoft.ServiceBus.",
+                  "displayName": "Incoming Requests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "IncomingRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incoming Messages for Microsoft.ServiceBus.",
+                  "displayName": "Incoming Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingMessages",
+                  "isDimensionRequired": false,
+                  "name": "IncomingMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Outgoing Messages for Microsoft.ServiceBus.",
+                  "displayName": "Outgoing Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "OutgoingMessages",
+                  "isDimensionRequired": false,
+                  "name": "OutgoingMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total Active Connections for Microsoft.ServiceBus.",
+                  "displayName": "ActiveConnections",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "NamespaceActiveConnections",
+                  "isDimensionRequired": false,
+                  "name": "ActiveConnections",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Connections Opened for Microsoft.ServiceBus.",
+                  "displayName": "Connections Opened.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ConnectionOpen",
+                  "isDimensionRequired": false,
+                  "name": "ConnectionsOpened",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Connections Closed for Microsoft.ServiceBus.",
+                  "displayName": "Connections Closed.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ConnectionClose",
+                  "isDimensionRequired": false,
+                  "name": "ConnectionsClosed",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Size of an Queue/Topic in Bytes.",
+                  "displayName": "Size",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntitySize",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "Size",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of messages in a Queue/Topic.",
+                  "displayName": "Count of messages in a Queue/Topic.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntityMessageCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "Messages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of active messages in a Queue/Topic.",
+                  "displayName": "Count of active messages in a Queue/Topic.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntityActiveMessageCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ActiveMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of dead-lettered messages in a Queue/Topic.",
+                  "displayName": "Count of dead-lettered messages in a Queue/Topic.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntityDeadLetterMessageCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "DeadletteredMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of scheduled messages in a Queue/Topic.",
+                  "displayName": "Count of scheduled messages in a Queue/Topic.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntityScheduledMessageCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ScheduledMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Completed Messages",
+                  "displayName": "Completed Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "CompleteMessage",
+                  "isDimensionRequired": false,
+                  "name": "CompleteMessage",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Abandoned Messages",
+                  "displayName": "Abandoned Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "AbandonMessage",
+                  "isDimensionRequired": false,
+                  "name": "AbandonMessage",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Primary"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Replica"
+                    }
+                  ],
+                  "displayDescription": "CPU usage metric for Premium SKU namespaces.",
+                  "displayName": "CPU",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "NamespaceCpuUsage",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Max",
+                  "metricFilterPattern": "(?i)^premium$",
+                  "name": "NamespaceCpuUsage",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Max"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Primary"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Replica"
+                    }
+                  ],
+                  "displayDescription": "Memory usage metric for Premium SKU namespaces.",
+                  "displayName": "Memory Usage",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "NamespaceWorkingSet64",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Max",
+                  "metricFilterPattern": "(?i)^premium$",
+                  "name": "NamespaceMemoryUsage",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Max"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Pending Checkpoint Operations Count.",
+                  "displayName": "Pending Checkpoint Operations Count.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "MessageStorePendingCheckpointBacklogOperationCount",
+                  "name": "PendingCheckpointOperationCount",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Server Send Latency.",
+                  "displayName": "Server Send Latency.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ServerSendLatency",
+                  "isDimensionRequired": false,
+                  "name": "ServerSendLatency",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Primary"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Replica"
+                    }
+                  ],
+                  "displayDescription": "Service bus premium namespace CPU usage metric. This metric is depricated. Please use the CPU metric (NamespaceCpuUsage) instead.",
+                  "displayName": "CPU (Deprecated)",
+                  "fillGapWithZero": false,
+                  "metricFilterPattern": "(?i)^premium$",
+                  "name": "CPUXNS",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Primary"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Replica"
+                    }
+                  ],
+                  "displayDescription": "Service bus premium namespace memory usage metric. This metric is deprecated. Please use the  Memory Usage (NamespaceMemoryUsage) metric instead.",
+                  "displayName": "Memory Usage (Deprecated)",
+                  "fillGapWithZero": false,
+                  "metricFilterPattern": "(?i)^premium$",
+                  "name": "WSXNS",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace diagnostic settings",
+      "name": "namespaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Get list of Namespace diagnostic settings Resource Descriptions",
+          "displayName": "Get Namespace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Namespace diagnostic settings Resource Descriptions",
+          "displayName": "Create or Update Namespace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace logs",
+      "name": "namespaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace logs Resource Descriptions",
+          "displayName": "Get Namespace logs",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Operational Logs",
+                  "name": "OperationalLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "VNet/IP Filtering Connection Logs",
+                  "name": "VNetAndIPFilteringLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Messages",
+      "name": "namespaces/messages",
+      "operations": [
+        {
+          "description": "Send messages",
+          "displayName": "Send messages",
+          "isDataAction": true,
+          "name": "Microsoft.ServiceBus/namespaces/messages/send/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Receive messages",
+          "displayName": "Receive messages",
+          "isDataAction": true,
+          "name": "Microsoft.ServiceBus/namespaces/messages/receive/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DisasterRecoveryConfigurations",
+      "name": "namespaces/disasterrecoveryconfigs",
+      "operations": [
+        {
+          "description": "Checks availability of namespace alias under given subscription.",
+          "displayName": "Get alias availability.",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterrecoveryconfigs/checkNameAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the Disaster Recovery configuration associated with the namespace.",
+          "displayName": "Create or Update Disaster Recovery configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Disaster Recovery configuration associated with the namespace.",
+          "displayName": "Get Disaster Recovery configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Disaster Recovery configuration associated with the namespace. This operation can only be invoked via the primary namespace.",
+          "displayName": "Delete Disaster Recovery configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disables Disaster Recovery and stops replicating changes from primary to secondary namespaces.",
+          "displayName": "Break Pairing",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/breakPairing/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Invokes a GEO DR failover and reconfigures the namespace alias to point to the secondary namespace.",
+          "displayName": "Failover",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/failover/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationRules",
+      "name": "namespaces/disasterRecoveryConfigs/authorizationRules",
+      "operations": [
+        {
+          "description": "Get Disaster Recovery Primary Namespace's Authorization Rules",
+          "displayName": "Get Disaster Recovery Primary Namespace's Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the authorization rules keys for the Disaster Recovery primary namespace",
+          "displayName": "Gets the authorization rules keys for the Disaster Recovery primary namespace",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "MigrationConfigurations",
+      "name": "namespaces/migrationConfigurations",
+      "operations": [
+        {
+          "description": "Creates or Updates Migration configuration. This will start synchronizing resources from the standard to the premium namespace",
+          "displayName": "Create or Update Migration configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/migrationConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Migration configuration which indicates the state of the migration and pending replication operations",
+          "displayName": "Gets the Migration configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/migrationConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Migration configuration.",
+          "displayName": "Deletes the Migration configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/migrationConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reverts the standard to premium namespace migration",
+          "displayName": "Revert",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/migrationConfigurations/revert/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assigns the DNS associated with the standard namespace to the premium namespace which completes the migration and stops the syncing resources from standard to premium namespace",
+          "displayName": "Upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/migrationConfigurations/upgrade/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventGridFilters",
+      "name": "namespaces/eventGridFilters",
+      "operations": [
+        {
+          "description": "Creates or Updates the Event Grid filter associated with the namespace.",
+          "displayName": "Create or Update Event Grid filter.",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Event Grid filter associated with the namespace.",
+          "displayName": "GetEvent Grid filter configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Event Grid filter associated with the namespace.",
+          "displayName": "Delete Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IPFilter",
+      "name": "namespaces/ipFilterRules",
+      "operations": [
+        {
+          "description": "Get IP Filter Resource",
+          "displayName": "Get IP Filter Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/ipFilterRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create IP Filter Resource",
+          "displayName": "Create IP Filter Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/ipFilterRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete IP Filter Resource",
+          "displayName": "Delete IP Filter Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/ipFilterRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Network Rule",
+      "name": "namespaces/virtualNetworkRules",
+      "operations": [
+        {
+          "description": "Gets VNET Rule Resource",
+          "displayName": "Gets VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/virtualNetworkRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/virtualNetworkRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/virtualNetworkRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Rule Set",
+      "name": "namespaces/networkrulesets",
+      "operations": [
+        {
+          "description": "Gets NetworkRuleSet Resource",
+          "displayName": "Gets NetworkRuleSet Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/networkrulesets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/networkrulesets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/networkrulesets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Rule Set",
+      "name": "namespaces/networkruleset",
+      "operations": [
+        {
+          "description": "Gets NetworkRuleSet Resource",
+          "displayName": "Gets NetworkRuleSet Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/networkruleset/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/networkruleset/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/networkruleset/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "namespaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate Private Endpoint Connection Proxy",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Private Endpoint Connection Proxy",
+          "displayName": "Create Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "namespaces/privateEndpointConnectionProxies/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnectionProxies/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "namespaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Private Endpoint Connection",
+          "displayName": "Create or Update Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes Private Endpoint Connection",
+          "displayName": "Removes Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateLinks",
+      "name": "namespaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets the resource types that support private endpoint connections",
+          "displayName": "Gets the resource types that support private endpoint connections",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "namespaces/privateEndpointConnections/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/privateEndpointConnections/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace SKU",
+      "name": "namespaces/skus",
+      "operations": [
+        {
+          "description": "List Supported SKUs for Namespace",
+          "displayName": "List SKUs",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceBus/namespaces/skus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

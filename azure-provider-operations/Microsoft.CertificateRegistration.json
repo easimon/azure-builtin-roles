@@ -1,0 +1,172 @@
+{
+  "displayName": "Microsoft Certificates",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.CertificateRegistration",
+  "name": "Microsoft.CertificateRegistration",
+  "operations": [
+    {
+      "description": "ProvisionAKSCluster service principal for service app principal",
+      "displayName": "ProvisionAKSCluster service principal",
+      "isDataAction": false,
+      "name": "Microsoft.CertificateRegistration/provisionGlobalAppServicePrincipalInUserTenant/Action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Validate certificate purchase object without submitting it",
+      "displayName": "Certificate Purchase Info Validation",
+      "isDataAction": false,
+      "name": "Microsoft.CertificateRegistration/validateCertificateRegistrationInformation/Action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Register the Microsoft Certificates resource provider for the subscription",
+      "displayName": "Register Microsoft Certificates resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.CertificateRegistration/register/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Certificate",
+      "name": "certificateOrders/certificates",
+      "operations": [
+        {
+          "description": "Add a new certificate or update an existing one",
+          "displayName": "Add or Update Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/certificates/Write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete an existing certificate",
+          "displayName": "Delete Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/certificates/Delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the list of certificates",
+          "displayName": "Get Certificates",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/certificates/Read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AppServiceCertificate",
+      "name": "certificateOrders",
+      "operations": [
+        {
+          "description": "Add a new certificateOrder or update an existing one",
+          "displayName": "Add or Update AppServiceCertificate",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/Write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete an existing AppServiceCertificate",
+          "displayName": "Delete AppServiceCertificate",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/Delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the list of CertificateOrders",
+          "displayName": "Get CertificateOrders",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reissue an existing certificateorder",
+          "displayName": "Reissue certificateorder",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/reissue/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Renew an existing certificateorder",
+          "displayName": "Renew certificateorder",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/renew/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Retrieve the list of certificate actions",
+          "displayName": "Certificateorder actions",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/retrieveCertificateActions/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Retrieve certificate email history",
+          "displayName": "Certificateorder email history",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/retrieveEmailHistory/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resend certificate email",
+          "displayName": "Resend Certificateorder email",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/resendEmail/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Verify domain ownership",
+          "displayName": "Verify domain ownership",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/verifyDomainOwnership/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resend domain verification ownership email containing steps on how to verify a domain for a given certificate order",
+          "displayName": "Resend domain verification email to customer for this certificate order",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/resendRequestEmails/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "This method is used to obtain the site seal information for an issued certificate. A site seal is a graphic that the certificate purchaser can embed on their web site to show their visitors information about their SSL certificate. If a web site visitor clicks on the site seal image, a pop-up page is displayed that contains detailed information about the SSL certificate. The site seal token is used to link the site seal graphic image to the appropriate certificate details pop-up page display when a user clicks on the site seal. The site seal images are expected to be static images and hosted by the reseller, to minimize delays for customer page load times.",
+          "displayName": "This method is used to obtain the site seal information for an issued certificate.",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/certificateOrders/resendRequestEmails/Action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AppServiceCertificate",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List all operations from app service certificate registration",
+          "displayName": "Read Operations",
+          "isDataAction": false,
+          "name": "Microsoft.CertificateRegistration/operations/Read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

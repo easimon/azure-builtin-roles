@@ -1,0 +1,1179 @@
+{
+  "displayName": "Microsoft Azure HPC Cache",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.StorageCache",
+  "name": "Microsoft.StorageCache",
+  "operations": [
+    {
+      "description": "Registers the subscription for the storage cache resource provider and enables creation of Azure HPC Cache resources",
+      "displayName": "Register the cache resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.StorageCache/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "",
+      "displayName": "",
+      "isDataAction": false,
+      "name": "Microsoft.StorageCache/preflight/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Available cache operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists operations available for the Azure HPC Cache",
+          "displayName": "List available cache operations",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Usage models",
+      "name": "usageModels",
+      "operations": [
+        {
+          "description": "Lists available usage models for NFS storage targets in this cache",
+          "displayName": "List usage models",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/usageModels/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cache",
+      "name": "caches",
+      "operations": [
+        {
+          "description": "Creates a new cache, or updates an existing one",
+          "displayName": "Create or update a cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the properties of a cache",
+          "displayName": "Read cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the cache instance",
+          "displayName": "Delete cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades OS software for the cache",
+          "displayName": "Upgrade cache software",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/Upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts the cache",
+          "displayName": "Start the cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/Start/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stops the cache",
+          "displayName": "Stop the cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/Stop/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "",
+          "displayName": "",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/spaceAllocation/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds a priming job to the cache",
+          "displayName": "Add priming job",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/addPrimingJob/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "",
+          "displayName": "",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/startPrimingJob/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes a primining job from the cache",
+          "displayName": "Remove primining job",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/removePrimingJob/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "",
+          "displayName": "",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/stopPrimingJob/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Pauses a running priming job in the cache",
+          "displayName": "Pause priming job",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/pausePrimingJob/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resumes a paused priming job in the cache",
+          "displayName": "Resume priming job",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/resumePrimingJob/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Flushes cached data to storage targets",
+          "displayName": "Flush the cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/Flush/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Caches in resource group",
+      "name": "ResourceGroup/caches",
+      "operations": [
+        {
+          "description": "Lists existing cache instances in the resource group",
+          "displayName": "List caches for a resource group",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/ResourceGroup/caches/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage targets in a cache",
+      "name": "caches/storageTargetsLists",
+      "operations": [
+        {
+          "description": "Lists the cache's storage targets",
+          "displayName": "List cache storage targets",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/storageTargetsLists/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage target in a cache",
+      "name": "caches/storageTargets",
+      "operations": [
+        {
+          "description": "Creates a new storage target in the cache, or updates an existing one",
+          "displayName": "Create or update a cache storage target",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/storageTargets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets properties of a storage target in the cache",
+          "displayName": "Read cache storage target",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/storageTargets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a cache storage target",
+          "displayName": "Delete a storage target",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/storageTargets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "",
+          "displayName": "",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/storageTargets/flush/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SKU",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "Lists all valid SKUs for the cache",
+          "displayName": "List SKUs for Azure HPC Cache",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/skus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "StorageCache Metric Definitions",
+      "name": "caches/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Reads Cache Metric Definitions.",
+          "displayName": "Get Cache Metric Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "The rate of client file operations processed by the Cache.",
+                  "displayName": "Total Client IOPS",
+                  "metricClass": "Transactions",
+                  "name": "ClientIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Average latency of client file operations to the Cache.",
+                  "displayName": "Average Client Latency",
+                  "metricClass": "Latency",
+                  "name": "ClientLatency",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Client read operations per second.",
+                  "displayName": "Client Read IOPS",
+                  "metricClass": "Transactions",
+                  "name": "ClientReadIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Client read data transfer rate.",
+                  "displayName": "Average Cache Read Throughput",
+                  "metricClass": "Transactions",
+                  "name": "ClientReadThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Client write operations per second.",
+                  "displayName": "Client Write IOPS",
+                  "metricClass": "Transactions",
+                  "name": "ClientWriteIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Client write data transfer rate.",
+                  "displayName": "Average Cache Write Throughput",
+                  "metricClass": "Transactions",
+                  "name": "ClientWriteThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "The rate of client file operations sent to the Cache, excluding data reads, that do not modify persistent state.",
+                  "displayName": "Client Metadata Read IOPS",
+                  "metricClass": "Transactions",
+                  "name": "ClientMetadataReadIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "The rate of client file operations sent to the Cache, excluding data writes, that modify persistent state.",
+                  "displayName": "Client Metadata Write IOPS",
+                  "metricClass": "Transactions",
+                  "name": "ClientMetadataWriteIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Client file locking operations per second.",
+                  "displayName": "Client Lock IOPS",
+                  "metricClass": "Transactions",
+                  "name": "ClientLockIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Boolean results of connectivity test between the Cache and Storage Targets.",
+                  "displayName": "Storage Target Health",
+                  "metricClass": "Errors",
+                  "name": "StorageTargetHealth",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Boolean results of connectivity test between the Cache and monitoring system.",
+                  "displayName": "Uptime",
+                  "metricClass": "Availability",
+                  "name": "Uptime",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate of all file operations the Cache sends to a particular StorageTarget.",
+                  "displayName": "Total StorageTarget IOPS",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate of the file write operations the Cache sends to a particular StorageTarget.",
+                  "displayName": "StorageTarget Write IOPS",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetWriteIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate the Cache asynchronously writes data to a particular StorageTarget. These are opportunistic writes that do not cause clients to block.",
+                  "displayName": "StorageTarget Asynchronous Write Throughput",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetAsyncWriteThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate the Cache synchronously writes data to a particular StorageTarget. These are writes that do cause clients to block.",
+                  "displayName": "StorageTarget Synchronous Write Throughput",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetSyncWriteThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The total rate that the Cache writes data to a particular StorageTarget.",
+                  "displayName": "StorageTarget Total Write Throughput",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetTotalWriteThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average round trip latency of all the file operations the Cache sends to a partricular StorageTarget.",
+                  "displayName": "StorageTarget Latency",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetLatency",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate of file operations that do not modify persistent state, and excluding the read operation, that the Cache sends to a particular StorageTarget.",
+                  "displayName": "StorageTarget Metadata Read IOPS",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetMetadataReadIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate of file operations that do modify persistent state and excluding the write operation, that the Cache sends to a particular StorageTarget.",
+                  "displayName": "StorageTarget Metadata Write IOPS",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetMetadataWriteIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate of file read operations the Cache sends to a particular StorageTarget.",
+                  "displayName": "StorageTarget Read IOPS",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetReadIOPS",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate the Cache opportunisticly reads data from the StorageTarget.",
+                  "displayName": "StorageTarget Read Ahead Throughput",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetReadAheadThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The rate the Cache reads data from the StorageTarget to handle a cache miss.",
+                  "displayName": "StorageTarget Fill Throughput",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetFillThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The total rate that the Cache reads data from a particular StorageTarget.",
+                  "displayName": "StorageTarget Total Read Throughput",
+                  "metricClass": "Transactions",
+                  "name": "StorageTargetTotalReadThroughput",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total number of 16k cache blocks recycled (freed) per Storage Target.",
+                  "displayName": "Storage Target Blocks Recycled",
+                  "metricClass": "Saturation",
+                  "name": "StorageTargetBlocksRecycled",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total number of 16k cache blocks recycled (freed) for the HPC Cache.",
+                  "displayName": "Total Blocks Recycled",
+                  "metricClass": "Saturation",
+                  "name": "TotalBlocksRecycled",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Read space available for caching files associated with a storage target.",
+                  "displayName": "Storage Target Free Read Space",
+                  "metricClass": "Saturation",
+                  "name": "StorageTargetFreeReadSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total space available for caching read files.",
+                  "displayName": "Free Read Space",
+                  "metricClass": "Saturation",
+                  "name": "TotalFreeReadSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Write space available for dirty data associated with a storage target.",
+                  "displayName": "Storage Target Free Write Space",
+                  "metricClass": "Saturation",
+                  "name": "StorageTargetFreeWriteSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total write space available to store changed data in the cache.",
+                  "displayName": "Free Write Read Space",
+                  "metricClass": "Saturation",
+                  "name": "TotalFreeWriteSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Cache space recycle rate associated with a storage target in the HPC Cache. This is the rate at which existing data is cleared from the cache to make room for new data.",
+                  "displayName": "Storage Target Recycle Rate",
+                  "metricClass": "Saturation",
+                  "name": "StorageTargetRecycleRate",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total cache space recycle rate in the HPC Cache. This is the rate at which existing data is cleared from the cache to make room for new data.",
+                  "displayName": "Recycle Rate",
+                  "metricClass": "Saturation",
+                  "name": "TotalRecycleRate",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Read space used by cached files associated with a storage target.",
+                  "displayName": "Storage Target Used Read Space",
+                  "metricClass": "Saturation",
+                  "name": "StorageTargetUsedReadSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total read space used by dirty data for the HPC Cache.",
+                  "displayName": "Used Read Space",
+                  "metricClass": "Saturation",
+                  "name": "TotalUsedReadSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "StorageTarget",
+                      "name": "StorageTarget",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Write space used by dirty data associated with a storage target.",
+                  "displayName": "Storage Target Used Write Space",
+                  "metricClass": "Saturation",
+                  "name": "StorageTargetUsedWriteSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total write space used by dirty data for the HPC Cache.",
+                  "displayName": "Used Write Space",
+                  "metricClass": "Saturation",
+                  "name": "TotalUsedWriteSpace",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Client Source",
+                      "name": "ClientSource",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HPC Cache Address",
+                      "name": "CacheAddress",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Client Address",
+                      "name": "ClientAddress",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Connection Type",
+                      "name": "ConnectionType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Client connection information.",
+                  "displayName": "Client Status",
+                  "metricClass": "Traffic",
+                  "name": "ClientStatus",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Source File",
+                      "name": "SourceFile",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Rank",
+                      "name": "Rank",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Type",
+                      "name": "FileType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of file operations per second.",
+                  "displayName": "File Operations",
+                  "metricClass": "Traffic",
+                  "name": "FileOps",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Source File",
+                      "name": "SourceFile",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Rank",
+                      "name": "Rank",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Type",
+                      "name": "FileType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of directory updates and metadata operations per second.",
+                  "displayName": "File Updates",
+                  "metricClass": "Traffic",
+                  "name": "FileUpdates",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Source File",
+                      "name": "SourceFile",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Rank",
+                      "name": "Rank",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Type",
+                      "name": "FileType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of bytes per second read from a file.",
+                  "displayName": "File Reads",
+                  "metricClass": "Traffic",
+                  "name": "FileReads",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Source File",
+                      "name": "SourceFile",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Rank",
+                      "name": "Rank",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Type",
+                      "name": "FileType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of bytes per second written to a file.",
+                  "displayName": "File Writes",
+                  "metricClass": "Traffic",
+                  "name": "FileWrites",
+                  "supportedAggregationTypes": [
+                    "Minimum",
+                    "Maximum",
+                    "Average"
+                  ],
+                  "unit": "BytesPerSecond"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "StorageCache",
+      "name": "caches/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the Cache.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the Cache.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Caches in subscription",
+      "name": "Subscription/caches",
+      "operations": [
+        {
+          "description": "Lists existing caches in the subscription",
+          "displayName": "List caches for a subscription",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/Subscription/caches/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation",
+      "name": "locations/ascOperations",
+      "operations": [
+        {
+          "description": "Gets the status of an asynchronous operation for the Azure HPC cache",
+          "displayName": "Get Operation",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/locations/ascOperations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "StorageCache log definitions",
+      "name": "caches/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the log definitions for the StorageCache",
+          "displayName": "Read log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/caches/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "displayName": "HPC Cache operation event",
+                  "name": "AscCacheOperationEvent"
+                },
+                {
+                  "displayName": "HPC Cache warning event",
+                  "name": "AscWarningEvent"
+                },
+                {
+                  "displayName": "HPC Cache upgrade event",
+                  "name": "AscUpgradeEvent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "AmlFilesystems in resource group",
+      "name": "ResourceGroup/amlFilesystems",
+      "operations": [
+        {
+          "description": "Lists existing amlfilesystem instances in the resource group",
+          "displayName": "List amlFilesystems for a resource group",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/ResourceGroup/amlFilesystems/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AmlFilesystems in subscription",
+      "name": "Subscription/amlFilesystems",
+      "operations": [
+        {
+          "description": "Lists existing amlfilesystems in the subscription",
+          "displayName": "List amlfilesystems for a subscription",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/Subscription/amlFilesystems/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AmlFilesystem",
+      "name": "amlFilesystems",
+      "operations": [
+        {
+          "description": "Gets the properties of an amlfilesystem",
+          "displayName": "Read amlfilesystem",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/amlFilesystems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new amlfilesystem, or updates an existing one",
+          "displayName": "Create or update an amlfilesystem",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/amlFilesystems/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the amlfilesystem instance",
+          "displayName": "Delete amlfilesystem",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/amlFilesystems/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Archive the data in the amlfilesystem",
+          "displayName": "Archive the amlfilesystem",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/amlFilesystems/Archive/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel archiving the amlfilesystem",
+          "displayName": "Cancel archive",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/amlFilesystems/CancelArchive/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "checkAmlFSSubnets",
+      "operations": [
+        {
+          "description": "",
+          "displayName": "",
+          "isDataAction": false,
+          "name": "Microsoft.StorageCache/checkAmlFSSubnets/CheckAmlFSSubnets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

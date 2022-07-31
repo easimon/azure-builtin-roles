@@ -1,0 +1,902 @@
+{
+  "displayName": "Microsoft.DevCenter",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DevCenter",
+  "name": "Microsoft.DevCenter",
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.DevCenter",
+      "displayName": "Register the Microsoft.DevCenter",
+      "isDataAction": false,
+      "name": "Microsoft.DevCenter/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.DevCenter",
+      "displayName": "Unregister the Microsoft.DevCenter",
+      "isDataAction": false,
+      "name": "Microsoft.DevCenter/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Locations/OperationStatuses",
+      "name": "Locations/OperationStatuses",
+      "operations": [
+        {
+          "description": "read OperationStatuses",
+          "displayName": "read_OperationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/Locations/OperationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write OperationStatuses",
+          "displayName": "write_OperationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/Locations/OperationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters",
+      "name": "devcenters",
+      "operations": [
+        {
+          "description": "Lists all devcenters in a subscription.",
+          "displayName": "DevCenters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all devcenters in a resource group.",
+          "displayName": "DevCenters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a devcenter.",
+          "displayName": "DevCenters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a devcenter resource",
+          "displayName": "DevCenters_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a devcenter",
+          "displayName": "DevCenters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a devcenter.",
+          "displayName": "DevCenters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/attachednetworks",
+      "name": "devcenters/attachednetworks",
+      "operations": [
+        {
+          "description": "Lists the attached NetworkConnections for a DevCenter.",
+          "displayName": "AttachedNetworks_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/attachednetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an attached NetworkConnection.",
+          "displayName": "AttachedNetworks_GetByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/attachednetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an attached NetworkConnection.",
+          "displayName": "AttachedNetworks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/attachednetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Un-attach a NetworkConnection.",
+          "displayName": "AttachedNetworks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/attachednetworks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/catalogs",
+      "name": "devcenters/catalogs",
+      "operations": [
+        {
+          "description": "Lists catalogs for a devcenter.",
+          "displayName": "Catalogs_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a catalog",
+          "displayName": "Catalogs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a catalog.",
+          "displayName": "Catalogs_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a catalog resource.",
+          "displayName": "Catalogs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a catalog.",
+          "displayName": "Catalogs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Syncs templates for a template source.",
+          "displayName": "Catalogs_Sync",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/sync/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/devboxdefinitions",
+      "name": "devcenters/devboxdefinitions",
+      "operations": [
+        {
+          "description": "List Dev Box definitions for a devcenter.",
+          "displayName": "DevBoxDefinitions_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/devboxdefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a Dev Box definition",
+          "displayName": "DevBoxDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/devboxdefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Dev Box definition.",
+          "displayName": "DevBoxDefinitions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/devboxdefinitions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Dev Box definition",
+          "displayName": "DevBoxDefinitions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/devboxdefinitions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a Dev Box definition.",
+          "displayName": "DevBoxDefinitions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/devboxdefinitions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/environmentTypes",
+      "name": "devcenters/environmentTypes",
+      "operations": [
+        {
+          "description": "Lists environment types for the devcenter.",
+          "displayName": "EnvironmentTypes_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/environmentTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an environment type.",
+          "displayName": "EnvironmentTypes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/environmentTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an environment type.",
+          "displayName": "EnvironmentTypes_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/environmentTypes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an environment type.",
+          "displayName": "EnvironmentTypes_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/environmentTypes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates an environment type.",
+          "displayName": "EnvironmentTypes_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/environmentTypes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/galleries",
+      "name": "devcenters/galleries",
+      "operations": [
+        {
+          "description": "Lists galleries for a devcenter.",
+          "displayName": "Galleries_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a gallery",
+          "displayName": "Galleries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a gallery.",
+          "displayName": "Galleries_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a gallery resource.",
+          "displayName": "Galleries_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/galleries/images/versions",
+      "name": "devcenters/galleries/images/versions",
+      "operations": [
+        {
+          "description": "Lists versions for an image.",
+          "displayName": "ImageVersions_ListByImage",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/images/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an image version.",
+          "displayName": "ImageVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/images/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/galleries/images",
+      "name": "devcenters/galleries/images",
+      "operations": [
+        {
+          "description": "Lists images for a gallery.",
+          "displayName": "Images_ListByGallery",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a gallery image.",
+          "displayName": "Images_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/galleries/images/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/images",
+      "name": "devcenters/images",
+      "operations": [
+        {
+          "description": "Lists images for a devcenter.",
+          "displayName": "Images_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/images/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkConnections",
+      "name": "networkConnections",
+      "operations": [
+        {
+          "description": "Lists network connections in a subscription",
+          "displayName": "NetworkConnections_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists network connections in a resource group",
+          "displayName": "NetworkConnections_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a network connection resource",
+          "displayName": "NetworkConnections_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Network Connections resource",
+          "displayName": "NetworkConnections_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Network Connections resource",
+          "displayName": "NetworkConnections_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a Network Connection",
+          "displayName": "NetworkConnections_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Triggers a new health check run. The execution and health check result can be tracked via the network Connection health check details",
+          "displayName": "NetworkConnections_RunHealthChecks",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/runHealthChecks/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allow a DevCenter to attach this NetworkConnection.",
+          "displayName": "Attach_NetworkConnection",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/DevCenterJoin/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkConnections/healthChecks",
+      "name": "networkConnections/healthChecks",
+      "operations": [
+        {
+          "description": "Lists health check status details",
+          "displayName": "NetworkConnections_ListHealthDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/healthChecks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets health check status details.",
+          "displayName": "NetworkConnections_GetHealthDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/healthChecks/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects",
+      "name": "projects",
+      "operations": [
+        {
+          "description": "Lists all projects in the subscription.",
+          "displayName": "Projects_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all projects in the resource group.",
+          "displayName": "Projects_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a specific project.",
+          "displayName": "Projects_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a project.",
+          "displayName": "Projects_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a project resource.",
+          "displayName": "Projects_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a project.",
+          "displayName": "Projects_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/attachednetworks",
+      "name": "projects/attachednetworks",
+      "operations": [
+        {
+          "description": "Lists the attached NetworkConnections for a Project.",
+          "displayName": "AttachedNetworks_ListByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/attachednetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an attached NetworkConnection.",
+          "displayName": "AttachedNetworks_GetByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/attachednetworks/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/devboxdefinitions",
+      "name": "projects/devboxdefinitions",
+      "operations": [
+        {
+          "description": "List Dev Box definitions configured for a project.",
+          "displayName": "DevBoxDefinitions_ListByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/devboxdefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a Dev Box definition configured for a project",
+          "displayName": "DevBoxDefinitions_GetByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/devboxdefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/environmentTypes",
+      "name": "projects/environmentTypes",
+      "operations": [
+        {
+          "description": "Lists environment types for a project.",
+          "displayName": "ProjectEnvironmentTypes_List",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/environmentTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a project environment type.",
+          "displayName": "ProjectEnvironmentTypes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/environmentTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a project environment type.",
+          "displayName": "ProjectEnvironmentTypes_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/environmentTypes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a project environment type.",
+          "displayName": "ProjectEnvironmentTypes_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/environmentTypes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a project environment type.",
+          "displayName": "ProjectEnvironmentTypes_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/environmentTypes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/pools",
+      "name": "projects/pools",
+      "operations": [
+        {
+          "description": "Lists pools for a project",
+          "displayName": "Pools_ListByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a machine pool",
+          "displayName": "Pools_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a machine pool",
+          "displayName": "Pools_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a machine pool",
+          "displayName": "Pools_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a machine pool",
+          "displayName": "Pools_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/pools/schedules",
+      "name": "projects/pools/schedules",
+      "operations": [
+        {
+          "description": "Lists schedules for a pool",
+          "displayName": "Schedules_ListByPool",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/schedules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a schedule resource.",
+          "displayName": "Schedules_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/schedules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Schedule.",
+          "displayName": "Schedules_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/schedules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Scheduled.",
+          "displayName": "Schedules_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/schedules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a Scheduled.",
+          "displayName": "Schedules_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/schedules/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RegisteredSubscriptions",
+      "name": "RegisteredSubscriptions",
+      "operations": [
+        {
+          "description": "Reads registered subscriptions",
+          "displayName": "Gets/Lists registered subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/RegisteredSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/users/devboxes",
+      "name": "projects/users/devboxes",
+      "operations": [
+        {
+          "description": "Allows a user to start any Dev Box resource.",
+          "displayName": "Projects_Users_DevBoxes_AdminStart",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminStart/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to stop any Dev Box resource.",
+          "displayName": "Projects_Users_DevBoxes_AdminStop",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminStop/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user read access to any Dev Box resource.",
+          "displayName": "Projects_Users_DevBoxes_AdminRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user write access to any Dev Box resource.",
+          "displayName": "Projects_Users_DevBoxes_AdminWrite",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminWrite/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to delete any Dev Box resource.",
+          "displayName": "Projects_Users_DevBoxes_AdminDelete",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminDelete/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to stop their own Dev Box resources.",
+          "displayName": "Projects_Users_DevBoxes_UserStop",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userStop/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to start their own Dev Box resources.",
+          "displayName": "Projects_Users_DevBoxes_UserStart",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userStart/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to get the RDP connection information for their own Dev Box resources.",
+          "displayName": "Projects_Users_DevBoxes_UserGeRemoteConnection",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userGetRemoteConnection/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to read their own Dev Box resources.",
+          "displayName": "Projects_Users_DevBoxes_UserRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to create and update their own Dev Box resources.",
+          "displayName": "Projects_Users_DevBoxes_UserWrite",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userWrite/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to delete their own Dev Box resources.",
+          "displayName": "Projects_Users_DevBoxes_UserDelete",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userDelete/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/users/environments",
+      "name": "projects/users/environments",
+      "operations": [
+        {
+          "description": "Allows a user to read the environments they have access to in a project.",
+          "displayName": "Projects_Environments_UserRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/userRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a project administrator to read all of the environments in a project.",
+          "displayName": "Projects_Environments_AdminRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/adminRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to write the environments they have access to in a project.",
+          "displayName": "Projects_Environments_UserWrite",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/userWrite/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a project administrator to write all of the environments in a project.",
+          "displayName": "Projects_Environments_AdminWrite",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/adminWrite/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to delete the environments they have access to in a project.",
+          "displayName": "Projects_Environments_UserDelete",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/userDelete/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a project administrator to delete all of the environments in a project.",
+          "displayName": "Projects_Environments_AdminDelete",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/adminDelete/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to perform an action on the environments they have access to in a project.",
+          "displayName": "Projects_Environments_UserAction",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/userAction/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a project administrator to perform an action on all of the environments in a project.",
+          "displayName": "Projects_Environments_AdminAction",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/environments/adminAction/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

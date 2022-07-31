@@ -1,0 +1,1198 @@
+{
+  "displayName": "Microsoft ContainerRegistry",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ContainerRegistry",
+  "name": "Microsoft.ContainerRegistry",
+  "operations": [
+    {
+      "description": "Registers the subscription for the container registry resource provider and enables the creation of container registries.",
+      "displayName": "Register the Container Registry Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.ContainerRegistry/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Gets an async operation result",
+          "displayName": "Get Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/locations/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks whether the container registry name is available for use.",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists all of the available Azure Container Registry REST API operations",
+          "displayName": "Container Registry Resource Provider Operations",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified container registry or lists all the container registries under the specified resource group or subscription.",
+          "displayName": "Get Container Registry or List Container Registries",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a container registry with the specified parameters.",
+          "displayName": "Create or Update Container Registry",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a container registry.",
+          "displayName": "Delete Container Registry",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the login credentials for the specified container registry.",
+          "displayName": "List Container Registry Login Credentials",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/listCredentials/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates one of the login credentials for the specified container registry.",
+          "displayName": "Regenerate Container Registry Login Credentials",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/regenerateCredential/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate keys for a token of a specified container registry.",
+          "displayName": "Generate keys for a token",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/generateCredentials/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Import Image to container registry with the specified parameters.",
+          "displayName": "Import Image",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/importImage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the upload location for the user to be able to upload the source.",
+          "displayName": "Get build source upload url location.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/getBuildSourceUploadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new build based on the request parameters and add it to the build queue.",
+          "displayName": "Queue a new build.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/queueBuild/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get source upload url location for a container registry.",
+          "displayName": "Get source upload url location for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/listBuildSourceUploadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Schedule a run against a container registry.",
+          "displayName": "Schedule a run against a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/scheduleRun/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Auto Approves a Private Endpoint Connection",
+          "displayName": "Auto Approves a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/listUsages",
+      "operations": [
+        {
+          "description": "Lists the quota usages for the specified container registry.",
+          "displayName": "List Container Registry Quota Usages",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/listUsages/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a registry async operation status",
+          "displayName": "Get Registry Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/Webhooks",
+      "name": "registries/webhooks",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified webhook or lists all the webhooks for the specified container registry.",
+          "displayName": "Get Webhook or List Webhooks",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a webhook for a container registry with the specified parameters.",
+          "displayName": "Create or Update Webhook",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a webhook from a container registry.",
+          "displayName": "Delete Webhook",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the configuration of service URI and custom headers for the webhook.",
+          "displayName": "Get Webhook Callback Config",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/getCallbackConfig/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Triggers a ping event to be sent to the webhook.",
+          "displayName": "Ping Webhook",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/ping/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists recent events for the specified webhook.",
+          "displayName": "List Webhook Events",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/listEvents/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/Webhooks",
+      "name": "registries/webhooks/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a webhook async operation status",
+          "displayName": "Get Webhook Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/webhooks/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/Replications",
+      "name": "registries/replications",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified replication or lists all the replications for the specified container registry.",
+          "displayName": "Get Replication or List Replications",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/replications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a replication for a container registry with the specified parameters.",
+          "displayName": "Create or Update Replication",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/replications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a replication from a container registry.",
+          "displayName": "Delete Replication",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/replications/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/Replications",
+      "name": "registries/replications/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a replication async operation status",
+          "displayName": "Get Replication Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/replications/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/EventGridFilters",
+      "name": "registries/eventGridFilters",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified event grid filter or lists all the event grid filters for the specified container registry.",
+          "displayName": "Get Event Grid Filter or List Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an event grid filter for a container registry with the specified parameters.",
+          "displayName": "Create or Update Event Grid Filter",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an event grid filter from a container registry.",
+          "displayName": "Delete Event Grid Filter",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of Microsoft ContainerRegistry",
+      "name": "registries/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Microsoft ContainerRegistry",
+          "displayName": "Read Microsoft ContainerRegistry metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Number of image pulls in total",
+                  "displayName": "Total Pull Count",
+                  "internalMetricName": "TotalPullCount",
+                  "name": "TotalPullCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Number of successful image pulls",
+                  "displayName": "Successful Pull Count",
+                  "internalMetricName": "SuccessfulPullCount",
+                  "name": "SuccessfulPullCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Number of image pushes in total",
+                  "displayName": "Total Push Count",
+                  "internalMetricName": "TotalPushCount",
+                  "name": "TotalPushCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Number of successful image pushes",
+                  "displayName": "Successful Push Count",
+                  "internalMetricName": "SuccessfulPushCount",
+                  "name": "SuccessfulPushCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "displayDescription": "Run Duration in milliseconds",
+                  "displayName": "Run Duration",
+                  "internalMetricName": "RunDuration",
+                  "name": "RunDuration",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "displayDescription": "AgentPool CPU Time in seconds",
+                  "displayName": "AgentPool CPU Time",
+                  "internalMetricName": "AgentPoolCPUTime",
+                  "name": "AgentPoolCPUTime",
+                  "unit": "Seconds"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Notifies Microsoft.ContainerRegistry that virtual network or subnet is being deleted",
+          "displayName": "Delete virtual network or subnets notifications",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/locations/deleteVirtualNetworkOrSubnets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/listPolicies",
+      "operations": [
+        {
+          "description": "Lists the policies for the specified container registry",
+          "displayName": "List registry policies",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/listPolicies/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/updatePolicies",
+      "operations": [
+        {
+          "description": "Updates the policies for the specified container registry",
+          "displayName": "Update registry policies",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/updatePolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/pull",
+      "operations": [
+        {
+          "description": "Pull or Get images from a container registry.",
+          "displayName": "Pull images from container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/pull/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/push",
+      "operations": [
+        {
+          "description": "Push or Write images to a container registry.",
+          "displayName": "Push images to container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/push/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/sign",
+      "operations": [
+        {
+          "description": "Push/Pull content trust metadata for a container registry.",
+          "displayName": "Manage content trust metadata for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/sign/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/builds",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified build or lists all the builds for the specified container registry.",
+          "displayName": "Get Build or List Builds.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/builds/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates a build for a container registry with the specified parameters.",
+          "displayName": "Update a build.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/builds/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a link to download the build logs.",
+          "displayName": "Get log link for a build.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/builds/getLogLink/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels an existing build.",
+          "displayName": "Cancel an existing build.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/builds/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/buildTasks",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified build task or lists all the build tasks for the specified container registry.",
+          "displayName": "Get build task or List build tasks.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a build task for a container registry with the specified parameters.",
+          "displayName": "Create or Update build task.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a build task from a container registry.",
+          "displayName": "Delete build task.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the source control properties for a build task.",
+          "displayName": "List source control repository properties.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/listSourceRepositoryProperties/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/buildTasks/steps",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified build step or lists all the build steps for the specified build task.",
+          "displayName": "Get build step or List build steps.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/steps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a build step for a build task with the specified parameters.",
+          "displayName": "Create or Update build step",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/steps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a build step from a build task.",
+          "displayName": "Delete build step.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/steps/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the build arguments for a build step including the secret arguments.",
+          "displayName": "List build arguments for a build step.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/buildTasks/steps/listBuildArguments/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/runs",
+      "operations": [
+        {
+          "description": "Gets the properties of a run against a container registry or list runs.",
+          "displayName": "Get the run or List runs.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/runs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates a run.",
+          "displayName": "Update a run.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/runs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the log SAS URL for a run.",
+          "displayName": "Get the log SAS URL for a run.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/runs/listLogSasUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel an existing run.",
+          "displayName": "Cancel an existing run.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/runs/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/tasks",
+      "operations": [
+        {
+          "description": "Gets a task for a container registry or list all tasks.",
+          "displayName": "Get a task for a container registry or list all tasks.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a task for a container registry.",
+          "displayName": "Create or Update a task for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tasks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a task for a container registry.",
+          "displayName": "Delete a task for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tasks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all details of a task for a container registry.",
+          "displayName": "List all details of a task for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tasks/listDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/artifacts",
+      "operations": [
+        {
+          "description": "Delete artifact in a container registry.",
+          "displayName": "Delete artifact in a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/artifacts/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/metadata",
+      "operations": [
+        {
+          "description": "Gets the metadata of a specific repository for a container registry",
+          "displayName": "Get metadata of a repository for a container registry",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/metadata/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the metadata of a repository for a container registry",
+          "displayName": "Update metadata of a repository for a container registry",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/metadata/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The logs definition of Microsoft ContainerRegistry",
+      "name": "registries/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for Microsoft ContainerRegistry",
+          "displayName": "Read Microsoft ContainerRegistry log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "RepositoryEvent logs",
+                  "name": "ContainerRegistryRepositoryEvents"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Login Events",
+                  "name": "ContainerRegistryLoginEvents"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/quarantine",
+      "operations": [
+        {
+          "description": "Pull or Get quarantined images from container registry",
+          "displayName": "Pull quarantined images",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/quarantine/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write/Modify quarantine state of quarantined images",
+          "displayName": "Modify quarantined images",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/quarantine/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/ScopeMaps",
+      "name": "registries/scopeMaps",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified scope map or lists all the scope maps for the specified container registry.",
+          "displayName": "Get scope map or List scope maps",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/scopeMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a scope map for a container registry with the specified parameters.",
+          "displayName": "Create or Update scope map",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/scopeMaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a scope map from a container registry.",
+          "displayName": "Delete scope map",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/scopeMaps/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/ScopeMaps",
+      "name": "registries/scopeMaps/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a scope map async operation status.",
+          "displayName": "Get scope map async operation status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/scopeMaps/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/Tokens",
+      "name": "registries/tokens",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified token or lists all the tokens for the specified container registry.",
+          "displayName": "Get token or List tokens",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tokens/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a token for a container registry with the specified parameters.",
+          "displayName": "Create or Update token",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tokens/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a token from a container registry.",
+          "displayName": "Delete token",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tokens/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/Tokens",
+      "name": "registries/tokens/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a token async operation status.",
+          "displayName": "Get token async operation status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/tokens/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Container Registry Private Endpoint Connection Proxy",
+      "name": "registries/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate the Private Endpoint Connection Proxy (NRP only)",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Private Endpoint Connection Proxy (NRP only)",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create the Private Endpoint Connection Proxy (NRP only)",
+          "displayName": "Create Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the Private Endpoint Connection Proxy (NRP only)",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Container Registry Private Endpoint Connection Proxy",
+      "name": "registries/privateEndpointConnectionProxies/operationStatuses",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy Async Operation Status",
+          "displayName": "Get PrivateEndpointConnectionProxyAsyncOperationStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnectionProxies/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/taskruns",
+      "operations": [
+        {
+          "description": "Get a taskrun for a container registry or list all taskruns.",
+          "displayName": "Get a taskrun for a container registry or list all taskruns.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/taskruns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update a taskrun for a container registry.",
+          "displayName": "Create or Update a taskrun for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/taskruns/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a taskrun for a container registry.",
+          "displayName": "Delete a taskrun for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/taskruns/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all details of a taskrun for a container registry.",
+          "displayName": "List all details of a taskrun for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/taskruns/listDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/agentpools",
+      "operations": [
+        {
+          "description": "Get a agentpool for a container registry or list all agentpools.",
+          "displayName": "Get a agentpool for a container registry or list all agentpools.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/agentpools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update an agentpool for a container registry.",
+          "displayName": "Create or Update an agentpool for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/agentpools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an agentpool for a container registry.",
+          "displayName": "Delete an agentpool for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/agentpools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all queue status of an agentpool for a container registry.",
+          "displayName": "List all queue status of an agentpool for a container registry.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/agentpools/listQueueStatus/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Container Registry Private Endpoint Connection",
+      "name": "registries/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Gets the properties of private endpoint connection or list all the private endpoint connections for the specified container registry",
+          "displayName": "Get Private Endpoint Connection or List Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approves/Rejects the private endpoint connection",
+          "displayName": "Approve/Reject Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the private endpoint connection",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/trustedCollections",
+      "operations": [
+        {
+          "description": "Allows push or publish of trusted collections of container registry content. This is similar to Microsoft.ContainerRegistry/registries/sign/write action except that this is a data action",
+          "displayName": "Manage content trust metadata for a container registry",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerRegistry/registries/trustedCollections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries",
+      "name": "registries/quarantinedArtifacts",
+      "operations": [
+        {
+          "description": "Allows pull or get of the quarantined artifacts from container registry. This is similar to Microsoft.ContainerRegistry/registries/quarantine/read except that it is a data action",
+          "displayName": "Pull/Read of the quarantined artifacts",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerRegistry/registries/quarantinedArtifacts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows write or update of the quarantine state of quarantined artifacts. This is similar to Microsoft.ContainerRegistry/registries/quarantine/write action except that it is a data action",
+          "displayName": "Modify/Update the state of quarantined artifacts",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerRegistry/registries/quarantinedArtifacts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/ExportPipelines",
+      "name": "registries/exportPipelines",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified export pipeline or lists all the export pipelines for the specified container registry.",
+          "displayName": "Get export pipeline or List export pipelines",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/exportPipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an export pipeline for a container registry with the specified parameters.",
+          "displayName": "Create or Update export pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/exportPipelines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an export pipeline from a container registry.",
+          "displayName": "Delete export pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/exportPipelines/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/ImportPipelines",
+      "name": "registries/importPipelines",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified import pipeline or lists all the import pipelines for the specified container registry.",
+          "displayName": "Get import pipeline or List import pipelines",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/importPipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an import pipeline for a container registry with the specified parameters.",
+          "displayName": "Create or Update import pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/importPipelines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an import pipeline from a container registry.",
+          "displayName": "Delete import pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/importPipelines/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/PipelineRuns",
+      "name": "registries/pipelineRuns",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified pipeline run or lists all the pipeline runs for the specified container registry.",
+          "displayName": "Get scope map or List pipeline runs",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/pipelineRuns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a pipeline run for a container registry with the specified parameters.",
+          "displayName": "Create or Update pipeline run",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/pipelineRuns/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a pipeline run from a container registry.",
+          "displayName": "Delete pipeline run",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/pipelineRuns/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/PipelineRuns",
+      "name": "registries/pipelineRuns/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a pipeline run async operation status.",
+          "displayName": "Get pipeline run async operation status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/pipelineRuns/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registries/ConnectedRegistries",
+      "name": "registries/connectedRegistries",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified connected registry or lists all the connected registries for the specified container registry.",
+          "displayName": "Get connected registry or List connected registries",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/connectedRegistries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a connected registry for a container registry with the specified parameters.",
+          "displayName": "Create or Update connected registry",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/connectedRegistries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a connected registry from a container registry.",
+          "displayName": "Delete connected registry",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/registries/connectedRegistries/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

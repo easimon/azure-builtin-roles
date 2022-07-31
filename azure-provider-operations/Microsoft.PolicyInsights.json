@@ -1,0 +1,310 @@
+{
+  "displayName": "Microsoft Policy Insights",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.PolicyInsights",
+  "name": "Microsoft.PolicyInsights",
+  "operations": [
+    {
+      "description": "Registers the Microsoft Policy Insights resource provider and enables actions on it.",
+      "displayName": "Register Microsoft Policy Insights Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.PolicyInsights/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters the Microsoft Policy Insights resource provider.",
+      "displayName": "Unregister Microsoft Policy Insights Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.PolicyInsights/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Check the compliance status of a given component against data policies.",
+      "displayName": "Check Data Policy Compliance",
+      "isDataAction": true,
+      "name": "Microsoft.PolicyInsights/checkDataPolicyCompliance/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Policy Events",
+      "name": "policyEvents",
+      "operations": [
+        {
+          "description": "Query information about policy events.",
+          "displayName": "Query Policy Events",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyEvents/queryResults/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Log the resource component policy events.",
+          "displayName": "Log Data Policy Events",
+          "isDataAction": true,
+          "name": "Microsoft.PolicyInsights/policyEvents/logDataEvents/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy States",
+      "name": "policyStates",
+      "operations": [
+        {
+          "description": "Query information about policy states.",
+          "displayName": "Query Policy States",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyStates/queryResults/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Query summary information about policy latest states.",
+          "displayName": "Query Policy Latest States Summary",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyStates/summarize/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Triggers a new compliance evaluation for the selected scope.",
+          "displayName": "Trigger Policy Insights Compliance Evaluation",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyStates/triggerEvaluation/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Async Operation Results",
+      "name": "asyncOperationResults",
+      "operations": [
+        {
+          "description": "Gets the async operation result.",
+          "displayName": "Get Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/asyncOperationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy Events",
+      "name": "policyEvents/queryResults",
+      "operations": [
+        {
+          "description": "Query information about policy events.",
+          "displayName": "Query Policy Events",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyEvents/queryResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy States",
+      "name": "policyStates/queryResults",
+      "operations": [
+        {
+          "description": "Query information about policy states.",
+          "displayName": "Query Policy States",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyStates/queryResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy States",
+      "name": "policyStates/summarize",
+      "operations": [
+        {
+          "description": "Query summary information about policy latest states.",
+          "displayName": "Query Policy Latest States Summary",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyStates/summarize/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy Remediations",
+      "name": "remediations",
+      "operations": [
+        {
+          "description": "Get policy remediations.",
+          "displayName": "Get Policy Remediations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/remediations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Microsoft Policy remediations.",
+          "displayName": "Create or Update Microsoft Policy remediations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/remediations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete policy remediations.",
+          "displayName": "Delete Policy Remediations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/remediations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel in-progress Microsoft Policy remediations.",
+          "displayName": "Cancel Policy Remediations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/remediations/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy Remediations",
+      "name": "remediations/listDeployments",
+      "operations": [
+        {
+          "description": "Lists the deployments required by a policy remediation.",
+          "displayName": "List Remediation Deployments",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/remediations/listDeployments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy Tracked Resources",
+      "name": "policyTrackedResources/queryResults",
+      "operations": [
+        {
+          "description": "Query information about resources required by DeployIfNotExists policies.",
+          "displayName": "Query Policy Tracked Resources",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyTrackedResources/queryResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Gets supported operations on Microsoft.PolicyInsights namespace",
+          "displayName": "Get Microsoft Policy Insights operations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy Metadata",
+      "name": "policyMetadata",
+      "operations": [
+        {
+          "description": "Get Policy Metadata resources.",
+          "displayName": "Get Policy Metadata",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/policyMetadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Attestations",
+      "name": "attestations",
+      "operations": [
+        {
+          "description": "Get compliance state attestations.",
+          "displayName": "Get Attestations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/attestations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update compliance state attestations.",
+          "displayName": "Create or Update Attestations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/attestations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete compliance state attestations.",
+          "displayName": "Delete Attestations",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/attestations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Policy Restrictions",
+      "name": "checkPolicyRestrictions",
+      "operations": [
+        {
+          "description": "Get details about the restrictions that policy will enforce on a resource.",
+          "displayName": "Check Policy Restrictions",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/checkPolicyRestrictions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Event Grid Filters",
+      "name": "eventGridFilters",
+      "operations": [
+        {
+          "description": "Get Event Grid filters used to track which scopes to publish state change notifications for.",
+          "displayName": "Get Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Event Grid filters.",
+          "displayName": "Create or Update Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Event Grid filters.",
+          "displayName": "Delete Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.PolicyInsights/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

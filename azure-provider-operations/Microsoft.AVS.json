@@ -1,0 +1,780 @@
+{
+  "displayName": "Microsoft.AVS",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.AVS",
+  "name": "Microsoft.AVS",
+  "operations": [
+    {
+      "description": "Register Subscription for Microsoft.AVS resource provider.",
+      "displayName": "Register Subscription for Microsoft.AVS",
+      "isDataAction": false,
+      "name": "Microsoft.AVS/register/action",
+      "origin": "user,system",
+      "properties": {}
+    },
+    {
+      "description": "Unregister Subscription for Microsoft.AVS resource provider.",
+      "displayName": "Unregister Subscription for Microsoft.AVS",
+      "isDataAction": false,
+      "name": "Microsoft.AVS/unregister/action",
+      "origin": "user,system",
+      "properties": {}
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "privateClouds",
+      "name": "privateClouds",
+      "operations": [
+        {
+          "description": "Registers the Microsoft Microsoft.AVS resource provider and enables creation of Private Clouds.",
+          "displayName": "Register Microsoft.AVS resource provider.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/register/action",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Creates or updates a PrivateCloud resource.",
+          "displayName": "Create or update a PrivateCloud.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Gets the settings for the specified PrivateCloud.",
+          "displayName": "Read PrivateCloud settings",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete a specific PrivateCloud.",
+          "displayName": "Delete a PrivateCloud.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Lists the AdminCredentials for privateClouds.",
+          "displayName": "List privateClouds AdminCredentials",
+          "isDataAction": true,
+          "name": "Microsoft.AVS/privateClouds/listAdminCredentials/action",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Rotate Vcenter password for the PrivateCloud.",
+          "displayName": "Private Cloud Vcenter password rotation",
+          "isDataAction": true,
+          "name": "Microsoft.AVS/privateClouds/rotateVcenterPassword/action",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Rotate Nsxt password for the PrivateCloud.",
+          "displayName": "Private Cloud Nsxt password rotation",
+          "isDataAction": true,
+          "name": "Microsoft.AVS/privateClouds/rotateNsxtPassword/action",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Rotate Nsxt CloudAdmin password for the PrivateCloud.",
+          "displayName": "Private Cloud Nsxt Cloud Admin password rotation",
+          "isDataAction": true,
+          "name": "Microsoft.AVS/privateClouds/rotateNsxtCloudAdminPassword/action",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/clusters",
+      "name": "privateClouds/clusters",
+      "operations": [
+        {
+          "description": "Gets the cluster settings for a PrivateCloud cluster.",
+          "displayName": "Read Cluster settings.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Create or update a PrivateCloud cluster resource.",
+          "displayName": "Create or update a PrivateCloud cluster.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete a specific PrivateCloud cluster.",
+          "displayName": "Delete a PriveCloud cluster.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists operations available on Microsoft.AVS resource provider.",
+          "displayName": "List available Microsoft.AVS operations",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/operations/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "checkNameAvailability",
+      "name": "checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks if the privateCloud Name is available",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/checkNameAvailability/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "locations/checkNameAvailability",
+      "name": "locations/checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks if the privateCloud Name is available",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/locations/checkNameAvailability/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "locations/checkQuotaAvailability",
+      "name": "locations/checkQuotaAvailability",
+      "operations": [
+        {
+          "description": "Checks if quota is available for the subscription",
+          "displayName": "Check Quota Availability",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/locations/checkQuotaAvailability/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "locations/checkTrialAvailability",
+      "name": "locations/checkTrialAvailability",
+      "operations": [
+        {
+          "description": "Checks if trial is available for the subscription",
+          "displayName": "Check Trial Availability",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/locations/checkTrialAvailability/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/operationstatuses",
+      "name": "privateClouds/operationstatuses",
+      "operations": [
+        {
+          "description": "Reads privateClouds operationstatuses.",
+          "displayName": "Read privateClouds operationstatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/operationstatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/clusters/operationstatuses",
+      "name": "privateClouds/clusters/operationstatuses",
+      "operations": [
+        {
+          "description": "Reads privateClouds/clusters operationstatuses.",
+          "displayName": "Read privateClouds/clusters operationstatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/operationstatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/authorizations",
+      "name": "privateClouds/authorizations",
+      "operations": [
+        {
+          "description": "Gets the authorization settings for a PrivateCloud cluster.",
+          "displayName": "Read Authorization settings.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/authorizations/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Create or update a PrivateCloud authorization resource.",
+          "displayName": "Create or update a PrivateCloud authorization.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/authorizations/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete a specific PrivateCloud authorization.",
+          "displayName": "Delete a PriveCloud authorization.",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/authorizations/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/hcxEnterpriseSites",
+      "name": "privateClouds/hcxEnterpriseSites",
+      "operations": [
+        {
+          "description": "Gets the hcxEnterpriseSites for a PrivateCloud.",
+          "displayName": "Read hcxEnterpriseSites",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/hcxEnterpriseSites/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Create or update a hcxEnterpriseSites.",
+          "displayName": "Create or update a hcxEnterpriseSites",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/hcxEnterpriseSites/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete a specific hcxEnterpriseSites.",
+          "displayName": "Delete a hcxEnterpriseSites",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/hcxEnterpriseSites/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/hostInstances",
+      "name": "privateClouds/hostInstances",
+      "operations": [
+        {
+          "description": "Gets the hostInstances for a PrivateCloud.",
+          "displayName": "Read hostInstances",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/hostInstances/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Create or update a hostInstances.",
+          "displayName": "Create or update a hostInstances",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/hostInstances/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete a specific hostInstances.",
+          "displayName": "Delete a hostInstances",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/hostInstances/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateclouds/clusters/operationresults",
+      "name": "privateclouds/clusters/operationresults",
+      "operations": [
+        {
+          "description": "Reads privateClouds/clusters operationresults.",
+          "displayName": "Read privateClouds/clusters operationresults",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateclouds/clusters/operationresults/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/operationresults",
+      "name": "privateClouds/operationresults",
+      "operations": [
+        {
+          "description": "Reads privateClouds operationresults.",
+          "displayName": "Read privateClouds operationresults",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/operationresults/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/addOns/operationStatuses",
+      "name": "privateClouds/addOns/operationStatuses",
+      "operations": [
+        {
+          "description": "Read addOns operationStatuses.",
+          "displayName": "Read addOns operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/addOns/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/addOns",
+      "name": "privateClouds/addOns",
+      "operations": [
+        {
+          "description": "Read addOns.",
+          "displayName": "Read addOns",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/addOns/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write addOns.",
+          "displayName": "Write addOns",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/addOns/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete addOns.",
+          "displayName": "Delete addOns",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/addOns/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/globalReachConnections",
+      "name": "privateClouds/globalReachConnections",
+      "operations": [
+        {
+          "description": "Delete globalReachConnections.",
+          "displayName": "Delete globalReachConnections",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/globalReachConnections/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write globalReachConnections.",
+          "displayName": "Write globalReachConnections",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/globalReachConnections/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read globalReachConnections.",
+          "displayName": "Read globalReachConnections",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/globalReachConnections/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/globalReachConnections/operationStatuses",
+      "name": "privateClouds/globalReachConnections/operationStatuses",
+      "operations": [
+        {
+          "description": "Read globalReachConnections operationStatuses.",
+          "displayName": "Read globalReachConnections operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/globalReachConnections/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/dhcpConfigurations",
+      "name": "privateClouds/workloadNetworks/dhcpConfigurations",
+      "operations": [
+        {
+          "description": "Delete dhcpConfigurations.",
+          "displayName": "Delete dhcpConfigurations",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dhcpConfigurations/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write dhcpConfigurations.",
+          "displayName": "Write dhcpConfigurations",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dhcpConfigurations/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read dhcpConfigurations.",
+          "displayName": "Read dhcpConfigurations",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dhcpConfigurations/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/dhcpConfigurations/operationStatuses",
+      "name": "privateClouds/workloadNetworks/dhcpConfigurations/operationStatuses",
+      "operations": [
+        {
+          "description": "Read dhcpConfigurations operationStatuses.",
+          "displayName": "Read dhcpConfigurations operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dhcpConfigurations/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/portMirroringProfiles",
+      "name": "privateClouds/workloadNetworks/portMirroringProfiles",
+      "operations": [
+        {
+          "description": "Delete portMirroringProfiles.",
+          "displayName": "Delete portMirroringProfiles",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/portMirroringProfiles/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write portMirroringProfiles.",
+          "displayName": "Write portMirroringProfiles",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/portMirroringProfiles/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read portMirroringProfiles.",
+          "displayName": "Read portMirroringProfiles",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/portMirroringProfiles/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/portMirroringProfiles/operationStatuses",
+      "name": "privateClouds/workloadNetworks/portMirroringProfiles/operationStatuses",
+      "operations": [
+        {
+          "description": "Read portMirroringProfiles operationStatuses.",
+          "displayName": "Read portMirroringProfiles operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/portMirroringProfiles/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/segments",
+      "name": "privateClouds/workloadNetworks/segments",
+      "operations": [
+        {
+          "description": "Delete segments.",
+          "displayName": "Delete segments",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/segments/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write segments.",
+          "displayName": "Write segments",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/segments/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read segments.",
+          "displayName": "Read segments",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/segments/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/segments/operationStatuses",
+      "name": "privateClouds/workloadNetworks/segments/operationStatuses",
+      "operations": [
+        {
+          "description": "Read segments operationStatuses.",
+          "displayName": "Read segments operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/segments/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/vmGroups",
+      "name": "privateClouds/workloadNetworks/vmGroups",
+      "operations": [
+        {
+          "description": "Delete vmGroups.",
+          "displayName": "Delete vmGroups",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/vmGroups/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write vmGroups.",
+          "displayName": "Write vmGroups",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/vmGroups/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read vmGroups.",
+          "displayName": "Read vmGroups",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/vmGroups/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/vmGroups/operationStatuses",
+      "name": "privateClouds/workloadNetworks/vmGroups/operationStatuses",
+      "operations": [
+        {
+          "description": "Read vmGroups operationStatuses.",
+          "displayName": "Read vmGroups operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/vmGroups/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/virtualMachines",
+      "name": "privateClouds/workloadNetworks/virtualMachines",
+      "operations": [
+        {
+          "description": "Read virtualMachines.",
+          "displayName": "Read virtualMachines",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/virtualMachines/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/gateways",
+      "name": "privateClouds/workloadNetworks/gateways",
+      "operations": [
+        {
+          "description": "Read gateways.",
+          "displayName": "Read gateways",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/gateways/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/dnsZones",
+      "name": "privateClouds/workloadNetworks/dnsZones",
+      "operations": [
+        {
+          "description": "Delete dnsZones.",
+          "displayName": "Delete dnsZones",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsZones/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write dnsZones.",
+          "displayName": "Write dnsZones",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsZones/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read dnsZones.",
+          "displayName": "Read dnsZones",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsZones/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/dnsZones/operationStatuses",
+      "name": "privateClouds/workloadNetworks/dnsZones/operationStatuses",
+      "operations": [
+        {
+          "description": "Read dnsZones operationStatuses.",
+          "displayName": "Read dnsZones operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsZones/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/dnsServices",
+      "name": "privateClouds/workloadNetworks/dnsServices",
+      "operations": [
+        {
+          "description": "Delete dnsServices.",
+          "displayName": "Delete dnsServices",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsServices/delete",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Write dnsServices.",
+          "displayName": "Write dnsServices",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsServices/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Read dnsServices.",
+          "displayName": "Read dnsServices",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsServices/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/workloadNetworks/dnsServices/operationStatuses",
+      "name": "privateClouds/workloadNetworks/dnsServices/operationStatuses",
+      "operations": [
+        {
+          "description": "Read dnsServices operationStatuses.",
+          "displayName": "Read dnsServices operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/workloadNetworks/dnsServices/operationStatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/clusters/datastores",
+      "name": "privateClouds/clusters/datastores",
+      "operations": [
+        {
+          "description": "Get the datastore properties in a private cloud cluster.",
+          "displayName": "Get the datastore properties in a private cloud cluster",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/datastores/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Create or update datastore in private cloud cluster.",
+          "displayName": "Create or update datastore in private cloud cluster",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/datastores/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Delete datastore in private cloud cluster.",
+          "displayName": "Delete datastore in private cloud cluster",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/datastores/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateClouds/clusters/datastores/operationstatuses",
+      "name": "privateClouds/clusters/datastores/operationstatuses",
+      "operations": [
+        {
+          "description": "Read privateClouds/clusters/datastores operationstatuses.",
+          "displayName": "Read privateClouds/clusters/datastores operationstatuses",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/clusters/datastores/operationstatuses/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "privateclouds/clusters/datastores/operationresults",
+      "name": "privateclouds/clusters/datastores/operationresults",
+      "operations": [
+        {
+          "description": "Read privateClouds/clusters/datastores operationresults.",
+          "displayName": "Read privateClouds/clusters/datastores operationresults",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateclouds/clusters/datastores/operationresults/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

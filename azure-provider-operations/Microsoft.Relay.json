@@ -1,0 +1,1029 @@
+{
+  "displayName": "Microsoft Azure Relay",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Relay",
+  "name": "Microsoft.Relay",
+  "operations": [
+    {
+      "description": "Checks availability of namespace under given subscription. This API is deprecated please use CheckNameAvailabiltiy instead.",
+      "displayName": "Get namespace availability.",
+      "isDataAction": false,
+      "name": "Microsoft.Relay/checkNamespaceAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Checks availability of namespace under given subscription.",
+      "displayName": "Get namespace availability.",
+      "isDataAction": false,
+      "name": "Microsoft.Relay/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the subscription for the Relay resource provider and enables the creation of Relay resources",
+      "displayName": "Registers the Relay Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.Relay/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the subscription for the Relay resource provider and enables the creation of Relay resources",
+      "displayName": "Registers the Relay Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.Relay/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Namespace",
+      "name": "namespaces",
+      "operations": [
+        {
+          "description": "Create a Namespace Resource and Update its properties. Tags and Capacity of the Namespace are the properties which can be updated.",
+          "displayName": "Create Or Update Namespace ",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespace Resource Description",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Resource",
+          "displayName": "Delete Namespace",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates Namespace Authorization Rule. This API is depricated. Please use a PUT call to update the Namespace Authorization Rule instead.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Updates Namespace Authorization Rule (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove ACS namespace",
+          "displayName": "Remove ACS namespace",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/removeAcsNamepsace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/operationresults",
+      "operations": [
+        {
+          "description": "Get the status of Namespace operation",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationRules",
+      "name": "namespaces/authorizationRules",
+      "operations": [
+        {
+          "description": "Get the list of Namespaces Authorization Rules description.",
+          "displayName": "Get Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Namespace level Authorization Rules and update its properties. The Authorization Rules Access Rights, the Primary and Secondary Keys can be updated.",
+          "displayName": "Create or Update Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Authorization Rule. The Default Namespace Authorization Rule cannot be deleted. ",
+          "displayName": "Delete Namespace Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to the Namespace",
+          "displayName": "Get Namespace Listkeys",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/messagingPlan",
+      "operations": [
+        {
+          "description": "Gets the Messaging Plan for a namespace. This API is deprecated. Properties exposed via the MessagingPlan resource are moved to the (parent) Namespace resource in later API versions.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Get Messaging Plan (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/messagingPlan/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Messaging Plan for a namespace. This API is deprecated. Properties exposed via the MessagingPlan resource are moved to the (parent) Namespace resource in later API versions.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Create or Update Messaging Plan (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/messagingPlan/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HybridConnection",
+      "name": "namespaces/HybridConnections",
+      "operations": [
+        {
+          "description": "Create or Update HybridConnection properties.",
+          "displayName": "Create or Update HybridConnection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of HybridConnection Resource Descriptions",
+          "displayName": "Get HybridConnection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete HybridConnection Resource",
+          "displayName": "Delete HybridConnection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to update HybridConnection. This operation is not supported on API version 2017-04-01. Authorization Rules. Please use a PUT call to update Authorization Rule.",
+          "displayName": "Update HybridConnection Authorization Rules (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HybridConnection AuthorizationRules",
+      "name": "namespaces/HybridConnections/authorizationRules",
+      "operations": [
+        {
+          "description": " Get the list of HybridConnection Authorization Rules",
+          "displayName": " Get HybridConnection Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create HybridConnection Authorization Rules and Update its properties. The Authorization Rules Access Rights can be updated.",
+          "displayName": "Create or Update HybridConnection Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete HybridConnection Authorization Rules",
+          "displayName": "Delete HybridConnection Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to HybridConnection",
+          "displayName": "List HybridConnection keys",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules/regeneratekeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "WcfRelay",
+      "name": "namespaces/WcfRelays",
+      "operations": [
+        {
+          "description": "Create or Update WcfRelay properties.",
+          "displayName": "Create or Update WcfRelay",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of WcfRelay Resource Descriptions",
+          "displayName": "Get WcfRelay",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete WcfRelay Resource",
+          "displayName": "Delete WcfRelay",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to update WcfRelay. This operation is not supported on API version 2017-04-01. Authorization Rules. Please use a PUT call to update Authorization Rule.",
+          "displayName": "Update WcfRelay Authorization Rules (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "WcfRelay AuthorizationRules",
+      "name": "namespaces/WcfRelays/authorizationRules",
+      "operations": [
+        {
+          "description": " Get the list of WcfRelay Authorization Rules",
+          "displayName": " Get WcfRelay Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create WcfRelay Authorization Rules and Update its properties. The Authorization Rules Access Rights can be updated.",
+          "displayName": "Create or Update WcfRelay Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete WcfRelay Authorization Rules",
+          "displayName": "Delete WcfRelay Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to WcfRelay",
+          "displayName": "List WcfRelay keys",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules/regeneratekeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Get Operations",
+          "displayName": "Get Operations",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace metrics",
+      "name": "namespaces/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace metrics Resource Descriptions",
+          "displayName": "Get Namespace metrics",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Successful ListenerConnections for Microsoft.Relay.",
+                  "displayName": "ListenerConnections-Success",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-Success",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ClientError on ListenerConnections for Microsoft.Relay.",
+                  "displayName": "ListenerConnections-ClientError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-ClientError",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ServerError on ListenerConnections for Microsoft.Relay.",
+                  "displayName": "ListenerConnections-ServerError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-ServerError",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Successful SenderConnections for Microsoft.Relay.",
+                  "displayName": "SenderConnections-Success",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-Success",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ClientError on SenderConnections for Microsoft.Relay.",
+                  "displayName": "SenderConnections-ClientError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-ClientError",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ServerError on SenderConnections for Microsoft.Relay.",
+                  "displayName": "SenderConnections-ServerError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-ServerError",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total ListenerConnections for Microsoft.Relay.",
+                  "displayName": "ListenerConnections-TotalRequests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-TotalRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total SenderConnections requests for Microsoft.Relay.",
+                  "displayName": "SenderConnections-TotalRequests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-TotalRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total ActiveConnections for Microsoft.Relay.",
+                  "displayName": "ActiveConnections",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ActiveConnectionsCount",
+                  "isDimensionRequired": false,
+                  "name": "ActiveConnections",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total ActiveListeners for Microsoft.Relay.",
+                  "displayName": "ActiveListeners",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ActiveListenersCount",
+                  "isDimensionRequired": false,
+                  "name": "ActiveListeners",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total BytesTransferred for Microsoft.Relay.",
+                  "displayName": "BytesTransferred",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "BytesTransferred",
+                  "isDimensionRequired": false,
+                  "name": "BytesTransferred",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total ListenerDisconnects for Microsoft.Relay.",
+                  "displayName": "ListenerDisconnects",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionDisconnects",
+                  "isDimensionRequired": false,
+                  "name": "ListenerDisconnects",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total SenderDisconnects for Microsoft.Relay.",
+                  "displayName": "SenderDisconnects",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionDisconnects",
+                  "isDimensionRequired": false,
+                  "name": "SenderDisconnects",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "DisasterRecoveryConfigurations",
+      "name": "namespaces/disasterrecoveryconfigs",
+      "operations": [
+        {
+          "description": "Checks availability of namespace alias under given subscription.",
+          "displayName": "Get alias availability.",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterrecoveryconfigs/checkNameAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the Disaster Recovery configuration associated with the namespace.",
+          "displayName": "Create or Update Disaster Recovery configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Disaster Recovery configuration associated with the namespace.",
+          "displayName": "Get Disaster Recovery configuration",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Disaster Recovery configuration associated with the namespace. This operation can only be invoked via the primary namespace.",
+          "displayName": "Delete Disaster Recovery configuration",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disables Disaster Recovery and stops replicating changes from primary to secondary namespaces.",
+          "displayName": "Break Pairing",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/breakPairing/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Invokes a GEO DR failover and reconfigures the namespace alias to point to the secondary namespace.",
+          "displayName": "Failover",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/failover/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationRules",
+      "name": "namespaces/disasterRecoveryConfigs/authorizationRules",
+      "operations": [
+        {
+          "description": "Get Disaster Recovery Primary Namespace's Authorization Rules",
+          "displayName": "Get Disaster Recovery Primary Namespace's Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the authorization rules keys for the Disaster Recovery primary namespace",
+          "displayName": "Gets the authorization rules keys for the Disaster Recovery primary namespace",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/disasterRecoveryConfigs/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace diagnostic settings",
+      "name": "namespaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Get list of Namespace diagnostic settings Resource Descriptions",
+          "displayName": "Get Namespace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Namespace diagnostic settings Resource Descriptions",
+          "displayName": "Create or Update Namespace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace logs",
+      "name": "namespaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace logs Resource Descriptions",
+          "displayName": "Get Namespace logs",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "HybridConnections Events",
+                  "name": "HybridConnectionsEvent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Network Rule Set",
+      "name": "namespaces/networkrulesets",
+      "operations": [
+        {
+          "description": "Gets NetworkRuleSet Resource",
+          "displayName": "Gets NetworkRuleSet Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/networkrulesets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/networkrulesets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/networkrulesets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "namespaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate Private Endpoint Connection Proxy",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Private Endpoint Connection Proxy",
+          "displayName": "Create Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "namespaces/privateEndpointConnectionProxies/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnectionProxies/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "namespaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Private Endpoint Connection",
+          "displayName": "Create or Update Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes Private Endpoint Connection",
+          "displayName": "Removes Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateLinks",
+      "name": "namespaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets the resource types that support private endpoint connections",
+          "displayName": "Gets the resource types that support private endpoint connections",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "namespaces/privateEndpointConnections/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/namespaces/privateEndpointConnections/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Messages",
+      "name": "namespaces/messages",
+      "operations": [
+        {
+          "description": "Send messages",
+          "displayName": "Send messages",
+          "isDataAction": true,
+          "name": "Microsoft.Relay/namespaces/messages/send/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Receive messages",
+          "displayName": "Receive messages",
+          "isDataAction": true,
+          "name": "Microsoft.Relay/namespaces/messages/listen/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

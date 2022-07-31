@@ -1,0 +1,1112 @@
+{
+  "displayName": "Microsoft.Migrate",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Migrate",
+  "name": "Microsoft.Migrate",
+  "operations": [
+    {
+      "description": "Subscription Registration Action",
+      "displayName": "Subscription Registration Action",
+      "isDataAction": false,
+      "name": "Microsoft.Migrate/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Registers Subscription with Microsoft.Migrate resource provider",
+      "displayName": "Register Subscription for Migrate",
+      "isDataAction": false,
+      "name": "Microsoft.Migrate/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregisters Subscription with Microsoft.Migrate resource provider",
+      "displayName": "Unregister Subscription for Migrate",
+      "isDataAction": false,
+      "name": "Microsoft.Migrate/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Microsoft.Migrate/assessmentprojects",
+      "name": "Operations",
+      "operations": [
+        {
+          "description": "Lists operations available on Microsoft.Migrate resource provider",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/Operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Projects",
+      "name": "projects",
+      "operations": [
+        {
+          "description": "Gets the properties of a project",
+          "displayName": "Get Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new project or updates an existing project",
+          "displayName": "Create or Update Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the project",
+          "displayName": "Delete Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets shared keys for the project",
+          "displayName": "Get Project keys",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/keys/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "projects/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a machine",
+          "displayName": "Get Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/machines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Groups",
+      "name": "projects/groups",
+      "operations": [
+        {
+          "description": "Get the properties of a group",
+          "displayName": "Get Group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new group or updates an existing group",
+          "displayName": "Create or Update Group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a group",
+          "displayName": "Delete Group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessments",
+      "name": "projects/groups/assessments",
+      "operations": [
+        {
+          "description": "Gets the properties of an assessment",
+          "displayName": "Get Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/assessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new assessment or updates an existing assessment",
+          "displayName": "Create or Update Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/assessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an assessment",
+          "displayName": "Delete Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/assessments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Downloads an assessment report's URL",
+          "displayName": "Download an assessment URL",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/assessments/downloadurl/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessed Machines",
+      "name": "projects/groups/assessments/assessedmachines",
+      "operations": [
+        {
+          "description": "Get the properties of an assessed machine",
+          "displayName": "Get Assessed Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/groups/assessments/assessedmachines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Name Availability",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Checks availability of the resouce name for the given subscription in the given location",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/locations/checknameavailability/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessment Options",
+      "name": "locations/assessmentOptions",
+      "operations": [
+        {
+          "description": "Gets the assessment options which are available in the given location",
+          "displayName": "List Assessment Options",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/locations/assessmentOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessments",
+      "name": "projects/assessments",
+      "operations": [
+        {
+          "description": "Lists assessments within a project",
+          "displayName": "Lists Assessments",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/projects/assessments/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migrate Projects ",
+      "name": "migrateprojects",
+      "operations": [
+        {
+          "description": "Gets the properties of migrate project",
+          "displayName": "Get Migrate Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new migrate project or updates an existing migrate project",
+          "displayName": "Create or Update Migrate Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a migrate project",
+          "displayName": "Delete Migrate Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Registers tool to a migrate project",
+          "displayName": "Register tool",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/registerTool/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refreshes the migrate project summary",
+          "displayName": "Refresh the migrate project summary",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/RefreshSummary/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Provides the tool registration details",
+          "displayName": "Provides the tool registration details",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/registrationDetails/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migrate project solution ",
+      "name": "migrateprojects/solutions",
+      "operations": [
+        {
+          "description": "Gets the properties of migrate project solution",
+          "displayName": "Get Migrate project solution",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/solutions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new migrate project solution or updates an existing migrate project solution",
+          "displayName": "Create or update migrate project solution",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/solutions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a  migrate project solution",
+          "displayName": "Delete migrate project solution",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/solutions/Delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets the migrate project solution configuration",
+          "displayName": "Get migrate project solution configuration",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/solutions/getconfig/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Clean up the migrate project solution data",
+          "displayName": "Clean up data",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/solutions/cleanupData/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "migrateprojects/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a machine",
+          "displayName": "Get Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/machines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databases",
+      "name": "migrateprojects/Databases",
+      "operations": [
+        {
+          "description": "Gets the properties of a database",
+          "displayName": "Get database",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/Databases/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Database Instances",
+      "name": "migrateprojects/DatabaseInstances",
+      "operations": [
+        {
+          "description": "Gets the properties of a database instance",
+          "displayName": "Get database instance",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/DatabaseInstances/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migrate Events",
+      "name": "migrateprojects/MigrateEvents",
+      "operations": [
+        {
+          "description": "Gets the properties of a migrate events.",
+          "displayName": "Get migrate events",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/MigrateEvents/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a migrate event",
+          "displayName": "Delete migrate event",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/MigrateEvents/Delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessment Projects",
+      "name": "assessmentprojects",
+      "operations": [
+        {
+          "description": "Gets the properties of assessment project",
+          "displayName": "Get assessment Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new assessment project or updates an existing assessment project",
+          "displayName": "Create or Update Assessment Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the assessment project",
+          "displayName": "Delete Assessment Project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HyperV Collector",
+      "name": "assessmentprojects/hypervcollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of HyperV collector",
+          "displayName": "Get HyperV collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/hypervcollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new HyperV collector or updates an existing HyperV collector",
+          "displayName": "Create or Update HyperV collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/hypervcollectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the HyperV collector",
+          "displayName": "Delete HyperV collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/hypervcollectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "VMware Collector",
+      "name": "assessmentprojects/vmwarecollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of VMware collector",
+          "displayName": "Get VMware collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/vmwarecollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new VMware collector or updates an existing VMware collector",
+          "displayName": "Create or Update VMware collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/vmwarecollectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the VMware collector",
+          "displayName": "Delete VMware collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/vmwarecollectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "assessmentprojects/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a machine",
+          "displayName": "Get Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/machines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Groups",
+      "name": "assessmentprojects/groups",
+      "operations": [
+        {
+          "description": "Get the properties of a group",
+          "displayName": "Get Group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new group or updates an existing group",
+          "displayName": "Create or Update Group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a group",
+          "displayName": "Delete Group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Update group by adding or removing machines",
+          "displayName": "Update machines in group",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/updateMachines/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessments",
+      "name": "assessmentprojects/assessments",
+      "operations": [
+        {
+          "description": "Lists assessments within a project",
+          "displayName": "Lists Assessments",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/assessments/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessments",
+      "name": "assessmentprojects/groups/assessments",
+      "operations": [
+        {
+          "description": "Gets the properties of an assessment",
+          "displayName": "Get Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new assessment or updates an existing assessment",
+          "displayName": "Create or Update Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an assessment",
+          "displayName": "Delete Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Downloads an assessment report's URL",
+          "displayName": "Download an assessment URL",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/downloadurl/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessed Machines",
+      "name": "assessmentprojects/groups/assessments/assessedmachines",
+      "operations": [
+        {
+          "description": "Get the properties of an assessed machine",
+          "displayName": "Get Assessed Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/assessedmachines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessment Options",
+      "name": "assessmentprojects/assessmentOptions",
+      "operations": [
+        {
+          "description": "Gets the assessment options which are available in the given location",
+          "displayName": "List Assessment Options",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/assessmentOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Server Collector",
+      "name": "assessmentprojects/servercollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of Server collector",
+          "displayName": "Get Server collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/servercollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Server collector or updates an existing Server collector",
+          "displayName": "Create or Update Server collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/servercollectors/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Import Collector",
+      "name": "assessmentprojects/importcollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of Import collector",
+          "displayName": "Get Import collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/importcollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Import collector or updates an existing Import collector",
+          "displayName": "Create or Update Import collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/importcollectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Import collector",
+          "displayName": "Delete Import collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/importcollectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Desktop User",
+      "name": "migrateprojects/VirtualDesktopUsers",
+      "operations": [
+        {
+          "description": "Gets the properties of a virtual desktop user",
+          "displayName": "Gets the properties of a virtual desktop user",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/VirtualDesktopUsers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web Server",
+      "name": "migrateprojects/WebServers",
+      "operations": [
+        {
+          "description": "Gets the properties of a web server",
+          "displayName": "Gets the properties of a web server",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/WebServers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web site",
+      "name": "migrateprojects/WebSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a web site",
+          "displayName": "Gets the properties of a web site",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/WebSites/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AVS Assessments",
+      "name": "assessmentprojects/groups/avsAssessments",
+      "operations": [
+        {
+          "description": "Gets the properties of an AVS assessment",
+          "displayName": "Get AVS Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new AVS assessment or updates an existing AVS assessment",
+          "displayName": "Create or Update AVS Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an AVS assessment",
+          "displayName": "Delete AVS Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Downloads an AVS assessment report's URL",
+          "displayName": "Download an AVS assessment URL",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/downloadurl/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AVS Assessed Machines",
+      "name": "assessmentprojects/groups/avsAssessments/avsassessedmachines",
+      "operations": [
+        {
+          "description": "Get the properties of an AVS assessed machine",
+          "displayName": "Get AVS Assessed Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/avsassessedmachines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AVS Assessment Options",
+      "name": "assessmentprojects/avsAssessmentOptions",
+      "operations": [
+        {
+          "description": "Gets the AVS assessment options which are available in the given location",
+          "displayName": "List AVS Assessment Options",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/avsAssessmentOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Assessments Summary",
+      "name": "assessmentprojects/assessmentsSummary",
+      "operations": [
+        {
+          "description": "Gets the assessments summary which are available in the given location",
+          "displayName": "List Assessments summary",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/assessmentsSummary/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "assessmentprojects/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate a Private Endpoint Connection Proxy",
+          "displayName": "Validate a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/validate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a Private Endpoint Connection Proxy",
+          "displayName": "Create or Update a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Private Endpoint Connection Proxy",
+          "displayName": "Delete a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "assessmentprojects/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Update a Private Endpoint Connection",
+          "displayName": "Update a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Private Endpoint Connection",
+          "displayName": "Delete a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link Resource",
+      "name": "assessmentprojects/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get Private Link Resource",
+          "displayName": "Get Private Link Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentprojects/privateLinkResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "migrateprojects/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate a Private Endpoint Connection Proxy",
+          "displayName": "Validate a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/validate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a Private Endpoint Connection Proxy",
+          "displayName": "Create or Update a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Private Endpoint Connection Proxy",
+          "displayName": "Delete a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "migrateprojects/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Update a Private Endpoint Connection",
+          "displayName": "Update a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Private Endpoint Connection",
+          "displayName": "Delete a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link Resource",
+      "name": "migrateprojects/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get Private Link Resource",
+          "displayName": "Get Private Link Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateprojects/privateLinkResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move collection",
+      "name": "moveCollections",
+      "operations": [
+        {
+          "description": "Gets the move collection",
+          "displayName": "Gets the move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a move collection",
+          "displayName": "Creates or updates a move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a move collection",
+          "displayName": "Deletes a move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Computes, resolves and validate the dependencies of the move resources in the move collection",
+          "displayName": "Computes, resolves and validate the dependencies of the move resources in the move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/resolveDependencies/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Initiates prepare for the set of resources included in the request body",
+          "displayName": "Initiates prepare for the set of resources included in the request body",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/prepare/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Moves the set of resources included in the request body",
+          "displayName": "Moves the set of resources included in the request body",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/initiateMove/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Discards the set of resources included in the request body",
+          "displayName": "Discards the set of resources included in the request body",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/discard/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Commits the set of resources included in the request body",
+          "displayName": "Commits the set of resources included in the request body",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/commit/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Removes the set of move resources included in the request body from move collection",
+          "displayName": "Removes the set of move resources included in the request body from move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/bulkRemove/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move collection",
+      "name": "moveCollections/unresolvedDependencies",
+      "operations": [
+        {
+          "description": "Gets a list of unresolved dependencies in the move collection",
+          "displayName": "Gets a list of unresolved dependencies in the move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/unresolvedDependencies/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move resource",
+      "name": "moveCollections/moveResources",
+      "operations": [
+        {
+          "description": "Gets all the move resources or a move resource from the move collection",
+          "displayName": "Gets all the move resources or a move resource from the move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/moveResources/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a move resource",
+          "displayName": "Creates or updates a move resource",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/moveResources/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a move resource from the move collection",
+          "displayName": "Deletes a move resource from the move collection",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/moveResources/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move collection",
+      "name": "moveCollections/operations",
+      "operations": [
+        {
+          "description": "Gets the status of the operation",
+          "displayName": "Gets the status of the operation",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move collection",
+      "name": "moveCollections/requiredFor",
+      "operations": [
+        {
+          "description": "Gets the resources which will use the resource passed in query parameter",
+          "displayName": "Gets the resources which will use the resource passed in query parameter",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/moveCollections/requiredFor/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move collection",
+      "name": "locations/rmsOperationResults",
+      "operations": [
+        {
+          "description": "Gets the status of the subscription wide location based operation",
+          "displayName": "Gets the status of the subscription wide location based operation",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/locations/rmsOperationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

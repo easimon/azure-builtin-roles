@@ -1,0 +1,831 @@
+{
+  "displayName": "Microsoft.MixedReality",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.MixedReality",
+  "name": "Microsoft.MixedReality",
+  "operations": [
+    {
+      "description": "Registers a subscription for the Mixed Reality resource provider.",
+      "displayName": "Registers the Mixed Reality resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.MixedReality/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters a subscription for the Mixed Reality resource provider.",
+      "displayName": "Unregisters the Mixed Reality resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.MixedReality/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "The metric definition of spatialAnchorsAccounts",
+      "name": "spatialAnchorsAccounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Microsoft.MixedReality/spatialAnchorsAccounts",
+          "displayName": "Read the spatialAnchorsAccounts metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/spatialAnchorsAccounts/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Device Family",
+                      "name": "DeviceFamily",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of Anchors created",
+                  "displayName": "Anchors Created",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "AnchorsCreated",
+                  "sourceMdmAccount": "SpatialAnchorsShoebox",
+                  "sourceMdmNamespace": "SACustomer",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Device Family",
+                      "name": "DeviceFamily",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of Anchors deleted",
+                  "displayName": "Anchors Deleted",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "AnchorsDeleted",
+                  "sourceMdmAccount": "SpatialAnchorsShoebox",
+                  "sourceMdmNamespace": "SACustomer",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Device Family",
+                      "name": "DeviceFamily",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of Spatial Anchors queried",
+                  "displayName": "Anchors Queried",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "AnchorsQueried",
+                  "sourceMdmAccount": "SpatialAnchorsShoebox",
+                  "sourceMdmNamespace": "SACustomer",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Device Family",
+                      "name": "DeviceFamily",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of Poses returned",
+                  "displayName": "Poses Found",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "PosesFound",
+                  "sourceMdmAccount": "SpatialAnchorsShoebox",
+                  "sourceMdmNamespace": "SACustomer",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Device Family",
+                      "name": "DeviceFamily",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of Anchors updated",
+                  "displayName": "Anchors Updated",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "AnchorsUpdated",
+                  "sourceMdmAccount": "SpatialAnchorsShoebox",
+                  "sourceMdmNamespace": "SACustomer",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Device Family",
+                      "name": "DeviceFamily",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Total number of Anchors - Daily",
+                  "displayName": "Total Daily Anchors",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "TotalDailyAnchors",
+                  "sourceMdmAccount": "SpatialAnchorsShoebox",
+                  "sourceMdmNamespace": "SACustomer",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of spatialAnchorsAccounts",
+      "name": "spatialAnchorsAccounts/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for Microsoft.MixedReality/spatialAnchorsAccounts",
+          "displayName": "Read the spatialAnchorsAccounts diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/spatialAnchorsAccounts/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for Microsoft.MixedReality/spatialAnchorsAccounts",
+          "displayName": "Write the spatialAnchorsAccounts diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/spatialAnchorsAccounts/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts",
+      "operations": [
+        {
+          "description": "Create spatial anchors",
+          "displayName": "Create Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/create/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete spatial anchors",
+          "displayName": "Delete Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List keys of a Spatial Anchors account",
+          "displayName": "List keys of a Spatial Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read the properties of a Spatial Anchors account",
+          "displayName": "Read the properties of a Spatial Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the keys of a Spatial Anchors account",
+          "displayName": "Regenerate the keys of a Spatial Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/regeneratekeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update spatial anchors properties",
+          "displayName": "Update Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts/discovery",
+      "operations": [
+        {
+          "description": "Discover nearby spatial anchors",
+          "displayName": "Discover nearby Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/discovery/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts/properties",
+      "operations": [
+        {
+          "description": "Get properties of spatial anchors",
+          "displayName": "Get properties of Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/properties/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts/query",
+      "operations": [
+        {
+          "description": "Locate spatial anchors",
+          "displayName": "Locate Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/query/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts/submitdiag",
+      "operations": [
+        {
+          "description": "Submit diagnostics data to help improve the quality of the Azure Spatial Anchors service",
+          "displayName": "Submit Diagnostics for Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/submitdiag/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RemoteRenderingAccounts",
+      "name": "RemoteRenderingAccounts",
+      "operations": [
+        {
+          "description": "Start asset conversion",
+          "displayName": "Start asset conversion",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/convert/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a remote rendering account",
+          "displayName": "Delete a remote rendering account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List keys of a remote rendering account",
+          "displayName": "List keys of a remote rendering account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start sessions",
+          "displayName": "Start sessions",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/managesessions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read the properties of a remote rendering account",
+          "displayName": "Read the properties of a remote rendering account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the keys of a remote rendering account",
+          "displayName": "Regenerate the keys of a remote rendering account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/regeneratekeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the properties of a remote rendering account",
+          "displayName": "Update the properties of a remote rendering account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RemoteRenderingAccounts",
+      "name": "RemoteRenderingAccounts/convert",
+      "operations": [
+        {
+          "description": "Get asset conversion properties",
+          "displayName": "Get asset conversion properties",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/convert/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stop asset conversion",
+          "displayName": "Stop asset conversion",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/convert/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RemoteRenderingAccounts",
+      "name": "RemoteRenderingAccounts/managesessions",
+      "operations": [
+        {
+          "description": "Get session properties",
+          "displayName": "Get session properties",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/managesessions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stop sessions",
+          "displayName": "Stop sessions",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/managesessions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RemoteRenderingAccounts",
+      "name": "RemoteRenderingAccounts/render",
+      "operations": [
+        {
+          "description": "Connect to a session",
+          "displayName": "Connect to a session",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/render/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RemoteRenderingAccounts",
+      "name": "RemoteRenderingAccounts/diagnostic",
+      "operations": [
+        {
+          "description": "Connect to the Remote Rendering inspector",
+          "displayName": "Connect to the Remote Rendering inspector",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/diagnostic/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of remoteRenderingAccounts",
+      "name": "remoteRenderingAccounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Microsoft.MixedReality/remoteRenderingAccounts",
+          "displayName": "Read the remoteRenderingAccounts metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/remoteRenderingAccounts/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Total number of assets converted",
+                  "displayName": "Assets Converted",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "NotSpecified",
+                  "metricFilterPattern": null,
+                  "name": "AssetsConverted",
+                  "sourceMdmAccount": "RemoteRenderingShoebox",
+                  "sourceMdmNamespace": "RRCustomer",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Session Type",
+                      "name": "SessionType",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "SDK Version",
+                      "name": "SDKVersion",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Total number of active rendering sessions",
+                  "displayName": "Active Rendering Sessions",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "lockedAggregationType": "Total",
+                  "metricFilterPattern": null,
+                  "name": "ActiveRenderingSessions",
+                  "sourceMdmAccount": "RemoteRenderingShoebox",
+                  "sourceMdmNamespace": "RRCustomer",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "ObjectUnderstandingAccounts",
+      "name": "ObjectUnderstandingAccounts",
+      "operations": [
+        {
+          "description": "Delete an Object Understanding account",
+          "displayName": "Delete an Object Understanding account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the keys an Object Understanding account",
+          "displayName": "List the keys of an Object Understanding account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Model Ingestion Job",
+          "displayName": "Create Model Ingestion Job",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/ingest/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read the properties an Object Understanding account",
+          "displayName": "Read the properties of an Object Understanding account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the keys of an Object Understanding account",
+          "displayName": "Regenerate the keys of an Object Understanding account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/regeneratekeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the properties an Object Understanding account",
+          "displayName": "Update the properties of an Object Understanding account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ObjectUnderstandingAccounts",
+      "name": "ObjectUnderstandingAccounts/ingest",
+      "operations": [
+        {
+          "description": "Get model Ingestion Job Status",
+          "displayName": "Get model Ingestion Job Status",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/ObjectUnderstandingAccounts/ingest/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mixed Reality resource provider",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List available operations for Microsoft Mixed Reality",
+          "displayName": "List operations",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mixed Reality resource provider",
+      "name": "locations/checknameavailability",
+      "operations": [
+        {
+          "description": "Checks for name availability",
+          "displayName": "Checks for name availability",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/locations/checknameavailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts/keys",
+      "operations": [
+        {
+          "description": "Read keys of a Spatial Anchors account",
+          "displayName": "Read keys of a Spatial Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/keys/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RemoteRenderingAccounts",
+      "name": "RemoteRenderingAccounts/keys",
+      "operations": [
+        {
+          "description": "Read keys of a remote rendering account",
+          "displayName": "Read keys of a remote rendering account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/RemoteRenderingAccounts/keys/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ObjectAnchorsAccounts",
+      "name": "ObjectAnchorsAccounts",
+      "operations": [
+        {
+          "description": "Delete an Object Anchors account",
+          "displayName": "Delete an Object Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the keys an Object Anchors account",
+          "displayName": "List the keys of an Object Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create model Ingestion Job",
+          "displayName": "Create model Ingestion Job",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/ingest/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read the properties an Object Anchors account",
+          "displayName": "Read the properties of an Object Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the keys of an Object Anchors account",
+          "displayName": "Regenerate the keys of an Object Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/regeneratekeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the properties an Object Anchors account",
+          "displayName": "Update the properties of an Object Anchors account",
+          "isDataAction": false,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ObjectAnchorsAccounts",
+      "name": "ObjectAnchorsAccounts/ingest",
+      "operations": [
+        {
+          "description": "Get model Ingestion Job Status",
+          "displayName": "Get model Ingestion Job Status",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/ObjectAnchorsAccounts/ingest/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SpatialAnchorsAccounts",
+      "name": "SpatialAnchorsAccounts/maps",
+      "operations": [
+        {
+          "description": "Get list of existing maps and allow localizing into a map.",
+          "displayName": "Read Map data for Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/maps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Contribute mapping data to a map.",
+          "displayName": "Write Map data for Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/maps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete maps for Spatial Anchors",
+          "displayName": "Delete Maps for Spatial Anchors",
+          "isDataAction": true,
+          "name": "Microsoft.MixedReality/SpatialAnchorsAccounts/maps/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

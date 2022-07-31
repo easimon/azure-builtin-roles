@@ -1,0 +1,3273 @@
+{
+  "displayName": "Microsoft Storage",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Storage",
+  "name": "Microsoft.Storage",
+  "operations": [
+    {
+      "description": "Registers the subscription for the storage resource provider and enables the creation of storage accounts.",
+      "displayName": "Registers the Storage Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.Storage/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Location",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Notifies Microsoft.Storage that virtual network or subnet is being deleted",
+          "displayName": "Delete virtual network or subnets notifications",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/locations/deleteVirtualNetworkOrSubnets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Blob Services",
+      "name": "storageAccounts/blobServices",
+      "operations": [
+        {
+          "description": "List blob services",
+          "displayName": "List Blob Services",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns a user delegation key for the blob service",
+          "displayName": "Generate a user delegation key",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of put blob service properties",
+          "displayName": "Put blob service properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns blob service properties or statistics",
+          "displayName": "Get blob service properties or statistics",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Blob Service Blobs",
+      "name": "storageAccounts/blobServices/containers/blobs",
+      "operations": [
+        {
+          "description": "Returns a blob or a list of blobs",
+          "displayName": "Read Blob",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of writing a blob",
+          "displayName": "Write Blob",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of deleting a blob",
+          "displayName": "Delete blob",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of deleting a blob version",
+          "displayName": "Delete blob versions",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/deleteBlobVersion/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/permanentDelete/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of adding blob content",
+          "displayName": "Add blob content",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the list of blobs under an account with matching tags filter",
+          "displayName": "Filter blobs",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/filter/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Moves the blob from one path to another",
+          "displayName": "Move blobs",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/move/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Changes ownership of the blob",
+          "displayName": "Manage blob ownership",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/manageOwnership/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Modifies permissions of the blob",
+          "displayName": "Modify blob permissions",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/modifyPermissions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of the blob command",
+          "displayName": "Execute the command as super user",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/runAsSuperUser/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Blob Service Containers",
+      "name": "storageAccounts/blobServices/containers",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/migrate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of patch blob container",
+          "displayName": "Patch blob container",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of deleting a container",
+          "displayName": "Delete blob container",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns a container",
+          "displayName": "Get blob container",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns list of containers",
+          "displayName": "List of blob containers",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of leasing blob container",
+          "displayName": "Lease blob container",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/lease/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of put blob container",
+          "displayName": "Put blob container",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Clear blob container legal hold",
+          "displayName": "Clear blob container legal hold",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/clearLegalHold/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Set blob container legal hold",
+          "displayName": "Set blob container legal hold",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/setLegalHold/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Blob Service Containers ImmutabilityPolicy",
+      "name": "storageAccounts/blobServices/containers/immutabilityPolicies",
+      "operations": [
+        {
+          "description": "Extend blob container immutability policy",
+          "displayName": "Extend blob container immutability policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies/extend/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete blob container immutability policy",
+          "displayName": "Delete blob container immutability policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put blob container immutability policy",
+          "displayName": "Put blob container immutability policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lock blob container immutability policy",
+          "displayName": "Lock blob container immutability policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies/lock/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get blob container immutability policy",
+          "displayName": "Get blob container immutability policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Queue Services",
+      "name": "storageAccounts/queueServices",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Queue service properties",
+          "displayName": "Get Queue service properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns queue service properties or statistics.",
+          "displayName": "Get queue service properties or statistics",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of setting queue service properties",
+          "displayName": "Set queue service properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Queue Service Queues",
+      "name": "storageAccounts/queueServices/queues",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns a queue or a list of queues.",
+          "displayName": "Read a queue or list queues",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of writing a queue",
+          "displayName": "Write queue",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of deleting a queue",
+          "displayName": "Delete queue",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Queue Service Messages",
+      "name": "storageAccounts/queueServices/queues/messages",
+      "operations": [
+        {
+          "description": "Returns a message",
+          "displayName": "Read message",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/messages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of writing a message",
+          "displayName": "Write message",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/messages/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of deleting a message",
+          "displayName": "Delete message",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/messages/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of adding a message",
+          "displayName": "Add message",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/messages/add/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of processing a message",
+          "displayName": "Process message",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/queues/messages/process/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Accounts",
+      "name": "storageAccounts",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/updateInternalProperties/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Customer is able to abort an ongoing Hns migration on the storage account",
+          "displayName": "Abort Account HnsOn Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/hnsonmigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Customer is able to migrate to hns account type",
+          "displayName": "Account HnsOn Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/hnsonmigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnections/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restore blob ranges to the state of the specified time",
+          "displayName": "Restore blob ranges",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/restoreBlobRanges/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connections",
+          "displayName": "Approve Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Customer is able to control the failover in case of availability issues",
+          "displayName": "Storage Account Failover",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/failover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the access keys for the specified storage account.",
+          "displayName": "List Storage Account Keys",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates the access keys for the specified storage account.",
+          "displayName": "Regenerate Storage Account Keys",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/regeneratekey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/rotateKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Revokes all the user delegation keys for the specified storage account.",
+          "displayName": "Revoke Storage Account User Delegation Keys",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/revokeUserDelegationKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing storage account.",
+          "displayName": "Delete Storage Account",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the list of storage accounts or gets the properties for the specified storage account.",
+          "displayName": "List/Get Storage Account(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the Account SAS token for the specified storage account.",
+          "displayName": "Returns Storage Account SAS Token",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/listAccountSas/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the Service SAS token for the specified storage account.",
+          "displayName": "Returns Storage Service SAS Token",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/listServiceSas/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a storage account with the specified parameters or update the properties or tags or adds custom domain for the specified storage account.",
+          "displayName": "Create/Update Storage Account",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Accounts",
+      "name": "storageAccounts/services/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Create/Update storage account diagnostic settings.",
+          "displayName": "Create/Update Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/services/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Accounts",
+      "name": "storageAccounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Microsoft Storage Metrics definitions.",
+          "displayName": "Get list of Microsoft Storage Metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The amount of storage used by the storage account. For standard storage accounts, it's the sum of capacity used by blob, table, file, and queue. For premium storage accounts and Blob storage accounts, it is the same as BlobCapacity or FileCapacity.",
+                  "displayName": "Used capacity",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "UsedCapacity",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Response type",
+                      "name": "ResponseType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors. Use ResponseType dimension for the number of different type of response.",
+                  "displayName": "Transactions",
+                  "fillGapWithZero": true,
+                  "name": "Transactions",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of ingress data, in bytes. This number includes ingress from an external client into Azure Storage as well as ingress within Azure.",
+                  "displayName": "Ingress",
+                  "fillGapWithZero": true,
+                  "name": "Ingress",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of egress data. This number includes egress to external client from Azure Storage as well as egress within Azure. As a result, this number does not reflect billable egress.",
+                  "displayName": "Egress",
+                  "fillGapWithZero": true,
+                  "name": "Egress",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average time used to process a successful request by Azure Storage. This value does not include the network latency specified in SuccessE2ELatency.",
+                  "displayName": "Success Server Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessServerLatency",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response.",
+                  "displayName": "Success E2E Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessE2ELatency",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The percentage of availability for the storage service or the specified API operation. Availability is calculated by taking the TotalBillableRequests value and dividing it by the number of applicable requests, including those that produced unexpected errors. All unexpected errors result in reduced availability for the storage service or the specified API operation.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "resourceIdDimensionNameOverride": "AccountResourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Accounts",
+      "name": "storageAccounts/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Blob service",
+      "name": "storageAccounts/blobServices/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Microsoft Storage Metrics definitions.",
+          "displayName": "Get list of Microsoft Storage Metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Blob type",
+                      "name": "BlobType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Blob tier",
+                      "name": "Tier",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of storage used by the storage account’s Blob service in bytes.",
+                  "displayName": "Blob Capacity",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "BlobCapacity",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Blob type",
+                      "name": "BlobType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Blob tier",
+                      "name": "Tier",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of blob objects stored in the storage account.",
+                  "displayName": "Blob Count",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "BlobCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Blob type",
+                      "name": "BlobType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Blob tier",
+                      "name": "Tier",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of storage provisioned in the storage account’s Blob service in bytes.",
+                  "displayName": "Blob Provisioned Size",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "metricFilterPattern": "Premium",
+                  "name": "BlobProvisionedSize",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The number of containers in the storage account.",
+                  "displayName": "Blob Container Count",
+                  "fillGapWithZero": false,
+                  "name": "ContainerCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The amount of storage used by Azure Data Lake Storage Gen2 hierarchical index.",
+                  "displayName": "Index Capacity",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "IndexCapacity",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Response type",
+                      "name": "ResponseType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors. Use ResponseType dimension for the number of different type of response.",
+                  "displayName": "Transactions",
+                  "fillGapWithZero": true,
+                  "name": "Transactions",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of ingress data, in bytes. This number includes ingress from an external client into Azure Storage as well as ingress within Azure.",
+                  "displayName": "Ingress",
+                  "fillGapWithZero": true,
+                  "name": "Ingress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of egress data. This number includes egress to external client from Azure Storage as well as egress within Azure. As a result, this number does not reflect billable egress.",
+                  "displayName": "Egress",
+                  "fillGapWithZero": true,
+                  "name": "Egress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average time used to process a successful request by Azure Storage. This value does not include the network latency specified in SuccessE2ELatency.",
+                  "displayName": "Success Server Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessServerLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response.",
+                  "displayName": "Success E2E Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessE2ELatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The percentage of availability for the storage service or the specified API operation. Availability is calculated by taking the TotalBillableRequests value and dividing it by the number of applicable requests, including those that produced unexpected errors. All unexpected errors result in reduced availability for the storage service or the specified API operation.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Blob service",
+      "name": "storageAccounts/blobServices/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Table service",
+      "name": "storageAccounts/tableServices/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Microsoft Storage Metrics definitions.",
+          "displayName": "Get list of Microsoft Storage Metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The amount of Table storage used by the storage account.",
+                  "displayName": "Table Capacity",
+                  "fillGapWithZero": false,
+                  "name": "TableCapacity",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The number of tables in the storage account.",
+                  "displayName": "Table Count",
+                  "fillGapWithZero": false,
+                  "name": "TableCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The number of table entities in the storage account.",
+                  "displayName": "Table Entity Count",
+                  "fillGapWithZero": false,
+                  "name": "TableEntityCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Response type",
+                      "name": "ResponseType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors. Use ResponseType dimension for the number of different type of response.",
+                  "displayName": "Transactions",
+                  "fillGapWithZero": true,
+                  "name": "Transactions",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of ingress data, in bytes. This number includes ingress from an external client into Azure Storage as well as ingress within Azure.",
+                  "displayName": "Ingress",
+                  "fillGapWithZero": true,
+                  "name": "Ingress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of egress data. This number includes egress to external client from Azure Storage as well as egress within Azure. As a result, this number does not reflect billable egress.",
+                  "displayName": "Egress",
+                  "fillGapWithZero": true,
+                  "name": "Egress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average time used to process a successful request by Azure Storage. This value does not include the network latency specified in SuccessE2ELatency.",
+                  "displayName": "Success Server Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessServerLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response.",
+                  "displayName": "Success E2E Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessE2ELatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The percentage of availability for the storage service or the specified API operation. Availability is calculated by taking the TotalBillableRequests value and dividing it by the number of applicable requests, including those that produced unexpected errors. All unexpected errors result in reduced availability for the storage service or the specified API operation.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Table service",
+      "name": "storageAccounts/tableServices/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "File service",
+      "name": "storageAccounts/fileServices/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Microsoft Storage Metrics definitions.",
+          "displayName": "Get list of Microsoft Storage Metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "File Share",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of File storage used by the storage account.",
+                  "displayName": "File Capacity",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "FileCapacity",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "File Share",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of files in the storage account.",
+                  "displayName": "File Count",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "FileCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The number of file shares in the storage account.",
+                  "displayName": "File Share Count",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "FileShareCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "File Share",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of snapshots present on the share in storage account’s Files Service.",
+                  "displayName": "File Share Snapshot Count",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "FileShareSnapshotCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "File Share",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of storage used by the snapshots in storage account’s File service in bytes.",
+                  "displayName": "File Share Snapshot Size",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "name": "FileShareSnapshotSize",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "File Share",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The upper limit on the amount of storage that can be used by Azure Files Service in bytes.",
+                  "displayName": "File Share Capacity Quota",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "FileShareQuota",
+                  "lockAggregationType": "Total",
+                  "name": "FileShareCapacityQuota",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "File Share",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The baseline number of provisioned IOPS for the premium file share in the premium files storage account. This number is calculated based on the provisioned size (quota) of the share capacity.",
+                  "displayName": "File Share Provisioned IOPS",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Total",
+                  "metricFilterPattern": "Premium",
+                  "name": "FileShareProvisionedIOPS",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Response type",
+                      "name": "ResponseType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Share",
+                      "internalName": "Container",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors. Use ResponseType dimension for the number of different type of response.",
+                  "displayName": "Transactions",
+                  "fillGapWithZero": true,
+                  "name": "Transactions",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Share",
+                      "internalName": "Container",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of ingress data, in bytes. This number includes ingress from an external client into Azure Storage as well as ingress within Azure.",
+                  "displayName": "Ingress",
+                  "fillGapWithZero": true,
+                  "name": "Ingress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Share",
+                      "internalName": "Container",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of egress data. This number includes egress to external client from Azure Storage as well as egress within Azure. As a result, this number does not reflect billable egress.",
+                  "displayName": "Egress",
+                  "fillGapWithZero": true,
+                  "name": "Egress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Share",
+                      "internalName": "Container",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average time used to process a successful request by Azure Storage. This value does not include the network latency specified in SuccessE2ELatency.",
+                  "displayName": "Success Server Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessServerLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Share",
+                      "internalName": "Container",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response.",
+                  "displayName": "Success E2E Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessE2ELatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "File Share",
+                      "internalName": "Container",
+                      "name": "FileShare",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The percentage of availability for the storage service or the specified API operation. Availability is calculated by taking the TotalBillableRequests value and dividing it by the number of applicable requests, including those that produced unexpected errors. All unexpected errors result in reduced availability for the storage service or the specified API operation.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "File service",
+      "name": "storageAccounts/fileServices/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Queue service",
+      "name": "storageAccounts/queueServices/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Microsoft Storage Metrics definitions.",
+          "displayName": "Get list of Microsoft Storage Metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The amount of Queue storage used by the storage account.",
+                  "displayName": "Queue Capacity",
+                  "fillGapWithZero": false,
+                  "name": "QueueCapacity",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The number of queues in the storage account.",
+                  "displayName": "Queue Count",
+                  "fillGapWithZero": false,
+                  "name": "QueueCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "displayDescription": "The number of unexpired queue messages in the storage account.",
+                  "displayName": "Queue Message Count",
+                  "fillGapWithZero": false,
+                  "name": "QueueMessageCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Response type",
+                      "name": "ResponseType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of requests made to a storage service or the specified API operation. This number includes successful and failed requests, as well as requests which produced errors. Use ResponseType dimension for the number of different type of response.",
+                  "displayName": "Transactions",
+                  "fillGapWithZero": true,
+                  "name": "Transactions",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of ingress data, in bytes. This number includes ingress from an external client into Azure Storage as well as ingress within Azure.",
+                  "displayName": "Ingress",
+                  "fillGapWithZero": true,
+                  "name": "Ingress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The amount of egress data. This number includes egress to external client from Azure Storage as well as egress within Azure. As a result, this number does not reflect billable egress.",
+                  "displayName": "Egress",
+                  "fillGapWithZero": true,
+                  "name": "Egress",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average time used to process a successful request by Azure Storage. This value does not include the network latency specified in SuccessE2ELatency.",
+                  "displayName": "Success Server Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessServerLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The average end-to-end latency of successful requests made to a storage service or the specified API operation, in milliseconds. This value includes the required processing time within Azure Storage to read the request, send the response, and receive acknowledgment of the response.",
+                  "displayName": "Success E2E Latency",
+                  "fillGapWithZero": false,
+                  "name": "SuccessE2ELatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Transaction",
+                  "dimensions": [
+                    {
+                      "displayName": "Geo type",
+                      "name": "GeoType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "API name",
+                      "name": "ApiName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The percentage of availability for the storage service or the specified API operation. Availability is calculated by taking the TotalBillableRequests value and dividing it by the number of applicable requests, including those that produced unexpected errors. All unexpected errors result in reduced availability for the storage service or the specified API operation.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Queue service",
+      "name": "storageAccounts/queueServices/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Table Service",
+      "name": "storageAccounts/tableServices/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the log definition for Table",
+          "displayName": "Read log definition",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageRead",
+                  "name": "StorageRead"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageWrite",
+                  "name": "StorageWrite"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageDelete",
+                  "name": "StorageDelete"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Blob Service",
+      "name": "storageAccounts/blobServices/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the log definition for Blob",
+          "displayName": "Read log definition",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageRead",
+                  "name": "StorageRead"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageWrite",
+                  "name": "StorageWrite"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageDelete",
+                  "name": "StorageDelete"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "File Service",
+      "name": "storageAccounts/fileServices/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the log definition for File",
+          "displayName": "Read log definition",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageRead",
+                  "name": "StorageRead"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageWrite",
+                  "name": "StorageWrite"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageDelete",
+                  "name": "StorageDelete"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Queue Service",
+      "name": "storageAccounts/queueServices/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the log definition for Queue",
+          "displayName": "Read log definition",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/queueServices/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageRead",
+                  "name": "StorageRead"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageWrite",
+                  "name": "StorageWrite"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "StorageDelete",
+                  "name": "StorageDelete"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Sku",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "Lists the Skus supported by Microsoft.Storage.",
+          "displayName": "List Skus",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/skus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Polls the status of an asynchronous operation.",
+          "displayName": "Poll Asynchronous Operation",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Name Availability",
+      "name": "checknameavailability",
+      "operations": [
+        {
+          "description": "Checks that account name is valid and is not in use.",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/checknameavailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Usage Metrics",
+      "name": "locations/usages",
+      "operations": [
+        {
+          "description": "Returns the limit and the current usage count for resources in the specified subscription",
+          "displayName": "Get Subscription Usages",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/locations/usages/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Usage Metrics",
+      "name": "usages",
+      "operations": [
+        {
+          "description": "Returns the limit and the current usage count for resources in the specified subscription",
+          "displayName": "Get Subscription Usages",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/usages/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Blob Service Blobs",
+      "name": "storageAccounts/blobServices/containers/blobs/tags",
+      "operations": [
+        {
+          "description": "Returns the result of reading blob tags",
+          "displayName": "Read blob tags",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of writing blob tags",
+          "displayName": "Write blob tags",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Account Management Policies",
+      "name": "storageAccounts/managementPolicies",
+      "operations": [
+        {
+          "description": "Delete storage account management policies",
+          "displayName": "Delete storage account management policies",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/managementPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get storage management account policies",
+          "displayName": "Get storage account management policies",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/managementPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put storage account management policies",
+          "displayName": "Put storage account management policies",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/managementPolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage File Service Files",
+      "name": "storageAccounts/fileServices",
+      "operations": [
+        {
+          "description": "Restore file share",
+          "displayName": "Restore File Share",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List file services",
+          "displayName": "List File Services",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put file service properties",
+          "displayName": "Put File Service Properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get file service properties",
+          "displayName": "Get file service properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read File Backup Sematics Privilege",
+          "displayName": "Read File Backup Sematics Privilege",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write File Backup Sematics Privilege",
+          "displayName": "Write File Backup Sematics Privilege",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/writeFileBackupSemantics/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "File Take Ownership Privilege",
+          "displayName": "File Take Ownership Privilege",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/takeOwnership/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Table Services",
+      "name": "storageAccounts/tableServices",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Table service properties",
+          "displayName": "Get Table service properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get table service properties or statistics",
+          "displayName": "Get table service properties or statistics",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Set table service properties",
+          "displayName": "Set table service properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage File Service Files",
+      "name": "storageAccounts/fileServices/fileshares/files",
+      "operations": [
+        {
+          "description": "Returns a file/folder or a list of files/folders",
+          "displayName": "Read Files",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of writing a file or creating a folder",
+          "displayName": "Write Files",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of deleting a file/folder",
+          "displayName": "Delete Files",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the result of modifying permission on a file/folder",
+          "displayName": "Modify File Acl",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/modifypermissions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get File Admin Privileges",
+          "displayName": "Get File Admin Privileges",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/actassuperuser/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Account Private Endpoint Connection Proxy",
+      "name": "storageAccounts/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update storage account private endpoint properties",
+          "displayName": "Update storage account private endpoint properties",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnectionProxies/updatePrivateEndpointProperties/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxies",
+          "displayName": "Delete Private Endpoint Connection Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put Private Endpoint Connection Proxies",
+          "displayName": "Put Private Endpoint Connection Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Account Private Endpoint Connection",
+      "name": "storageAccounts/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "List Private Endpoint Connections",
+          "displayName": "List Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put Private Endpoint Connection",
+          "displayName": "Put Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage account groupids",
+      "name": "storageAccounts/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get StorageAccount groupids",
+          "displayName": "Get StorageAccount groupids",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Name Availability",
+      "name": "locations/checknameavailability",
+      "operations": [
+        {
+          "description": "Checks that account name is valid and is not in use.",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/locations/checknameavailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "File Share",
+      "name": "storageAccounts/fileServices/shares",
+      "operations": [
+        {
+          "description": "Delete file share",
+          "displayName": "Delete File Share",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get file share",
+          "displayName": "Get File Share",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/lease/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List file shares",
+          "displayName": "List File Shares",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update file share",
+          "displayName": "Put File Share",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/encryptionScopes",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/encryptionScopes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/encryptionScopes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Object Replication Policy",
+      "name": "storageAccounts/objectReplicationPolicies",
+      "operations": [
+        {
+          "description": "Delete object replication policy",
+          "displayName": "Delete Object Replication Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/objectReplicationPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get object replication policy",
+          "displayName": "Get Object Replication Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/objectReplicationPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List object replication policies",
+          "displayName": "List Object Replication Policies",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/objectReplicationPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update object replication policy",
+          "displayName": "Put Object Replication Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/objectReplicationPolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/dataSharePolicies",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/dataSharePolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/dataSharePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/dataSharePolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Local User",
+      "name": "storageAccounts/localUsers",
+      "operations": [
+        {
+          "description": "Delete local user",
+          "displayName": "Delete Local User",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/localUsers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/localusers/regeneratePassword/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List local user keys",
+          "displayName": "List Local User Keys",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/localusers/listKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List local users",
+          "displayName": "List Local Users",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/localusers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get local user",
+          "displayName": "Get Local User",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/localusers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update local user",
+          "displayName": "Put Local User",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/localusers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "deletedAccounts",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/deletedAccounts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Tables",
+      "name": "storageAccounts/tableServices/tables",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Query tables",
+          "displayName": "Query tables",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create tables",
+          "displayName": "Create tables",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete tables",
+          "displayName": "Delete tables",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/inventoryPolicies",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/inventoryPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/inventoryPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/inventoryPolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/accountLocks",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/accountLocks/deleteLock/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/accountLocks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/accountLocks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/accountLocks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/consumerDataSharePolicies",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/consumerDataSharePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/consumerDataSharePolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "resilienciesProgressions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/resilienciesProgressions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Table Entities",
+      "name": "storageAccounts/tableServices/tables/entities",
+      "operations": [
+        {
+          "description": "Query table entities",
+          "displayName": "Query table entities",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Insert, merge, or replace table entities",
+          "displayName": "Insert, merge, update or replace table entities",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete table entities",
+          "displayName": "Delete table entities",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Insert table entities",
+          "displayName": "Insert table entities",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/add/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Merge or update table entities",
+          "displayName": "Merge or update table entities",
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/tableServices/tables/entities/update/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/blobServices/containers/blobs/immutableStorage",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": true,
+          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/immutableStorage/runAsSuperUser/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/objectReplicationPolicies/restorePointMarkers",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/objectReplicationPolicies/restorePointMarkers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/restorePoints",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/restorePoints/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/restorePoints/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/accountMigrations",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/accountMigrations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/accountMigrations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/networkSecurityPerimeterAssociationProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/networkSecurityPerimeterAssociationProxies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/storageTasks",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/executionsummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/assignmentexecutionsummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageTasks",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/promote/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

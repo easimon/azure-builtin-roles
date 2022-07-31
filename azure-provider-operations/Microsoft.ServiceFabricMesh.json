@@ -1,0 +1,419 @@
+{
+  "displayName": "Microsoft ServiceFabricMesh",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ServiceFabricMesh",
+  "name": "Microsoft.ServiceFabricMesh",
+  "operations": [],
+  "resourceTypes": [
+    {
+      "displayName": "Applications",
+      "name": "applications/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Microsoft Service Fabric Mesh",
+          "displayName": "Read Microsoft Service Fabric Mesh metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceFabricMesh/applications/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Cpu allocated to this container in milli cores",
+                  "displayName": "AllocatedCpu",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "AllocatedCpu",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Memory allocated to this container in MB",
+                  "displayName": "AllocatedMemory",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "AllocatedMemory",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Actual CPU usage in milli cores",
+                  "displayName": "ActualCpu",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "ActualCpu",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Actual memory usage in MB",
+                  "displayName": "ActualMemory",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "ActualMemory",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Utilization of CPU for this container as percentage of AllocatedCpu",
+                  "displayName": "CpuUtilization",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Average",
+                  "name": "CpuUtilization",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Utilization of CPU for this container as percentage of AllocatedCpu",
+                  "displayName": "MemoryUtilization",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Average",
+                  "name": "MemoryUtilization",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Status of Service Fabric Mesh application",
+                  "displayName": "ApplicationStatus",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "ApplicationStatus",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Health Status of a service in Service Fabric Mesh application",
+                  "displayName": "ServiceStatus",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "ServiceStatus",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Health Status of a service replica in Service Fabric Mesh application",
+                  "displayName": "ServiceReplicaStatus",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "ServiceReplicaStatus",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Status of the container in Service Fabric Mesh application",
+                  "displayName": "ContainerStatus",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "ContainerStatus",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ApplicationName",
+                      "name": "ApplicationName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ServiceReplicaName",
+                      "name": "ServiceReplicaName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "CodePackageName",
+                      "name": "CodePackageName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Restart count of a container in Service Fabric Mesh application",
+                  "displayName": "RestartCount",
+                  "enableRegionalMdmAccount": true,
+                  "lockAggregationType": "Total",
+                  "name": "RestartCount",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Applications",
+      "name": "applications/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceFabricMesh/applications/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.ServiceFabricMesh/applications/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,896 @@
+{
+  "displayName": "Microsoft Data Collaboration",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataCollaboration",
+  "name": "Microsoft.DataCollaboration",
+  "operations": [
+    {
+      "description": "Register the subscription for the Ci Resource Provider.",
+      "displayName": "Register Ci Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataCollaboration/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for the Ci Resource Provider.",
+      "displayName": "Unregister Ci Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataCollaboration/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Workspace",
+      "name": "workspaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of workspace",
+      "name": "workspaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for workspace.",
+          "displayName": "Read workspace log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Computations",
+                  "name": "Computations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Data Assets",
+                  "name": "DataAssets"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Pipelines",
+                  "name": "Pipelines"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Proposals",
+                  "name": "Proposals"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Scripts",
+                  "name": "Scripts"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Collaboration Audit",
+                  "name": "CollaborationAudit"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of workspace",
+      "name": "workspaces/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for workspace.",
+          "displayName": "Read workspace metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Computation Name",
+                      "name": "ComputationName"
+                    }
+                  ],
+                  "displayDescription": "Number of created computations",
+                  "displayName": "Created Computations",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "ComputationCount",
+                  "name": "ComputationCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "DataAsset Name",
+                      "name": "DataAssetName"
+                    }
+                  ],
+                  "displayDescription": "Number of created data assets",
+                  "displayName": "Created Data Assets",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "DataAssetCount",
+                  "name": "DataAssetCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline Name",
+                      "name": "PipelineName"
+                    }
+                  ],
+                  "displayDescription": "Number of created pipelines",
+                  "displayName": "Created Pipelines",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "PipelineCount",
+                  "name": "PipelineCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Proposal Name",
+                      "name": "ProposalName"
+                    }
+                  ],
+                  "displayDescription": "Number of created proposals",
+                  "displayName": "Created Proposals",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "ProposalCount",
+                  "name": "ProposalCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Script Name",
+                      "name": "ScriptName"
+                    }
+                  ],
+                  "displayDescription": "Number of created scripts",
+                  "displayName": "Created Scripts",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "ScriptCount",
+                  "name": "ScriptCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "ConsumerInvitation",
+      "name": "locations/consumerInvitations",
+      "operations": [
+        {
+          "description": "Reads a ConsumerInvitation.",
+          "displayName": "Read ConsumerInvitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/locations/consumerInvitations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a ConsumerInvitation.",
+          "displayName": "Action ConsumerInvitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/locations/consumerInvitations/reject/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Read all operations",
+          "displayName": "Reads all available operations in Ci Resource Provider.",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DataSet",
+      "name": "workspaces/dataAssets/dataSets",
+      "operations": [
+        {
+          "description": "Deletes a DataSet.",
+          "displayName": "Delete DataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/dataAssets/dataSets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a DataSet.",
+          "displayName": "Read DataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/dataAssets/dataSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a DataSet.",
+          "displayName": "Write DataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/dataAssets/dataSets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DataAsset",
+      "name": "workspaces/dataAssets",
+      "operations": [
+        {
+          "description": "Deletes a DataAsset.",
+          "displayName": "Delete DataAsset",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/dataAssets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a DataAsset.",
+          "displayName": "Read DataAsset",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/dataAssets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a DataAsset.",
+          "displayName": "Write DataAsset",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/dataAssets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace",
+      "name": "workspaces",
+      "operations": [
+        {
+          "description": "Deletes a Workspace.",
+          "displayName": "Delete Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Workspace.",
+          "displayName": "Read Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Workspace.",
+          "displayName": "Write Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pipeline",
+      "name": "workspaces/pipelines",
+      "operations": [
+        {
+          "description": "Deletes a Pipeline.",
+          "displayName": "Delete Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Pipeline.",
+          "displayName": "Read Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a Pipeline.",
+          "displayName": "Action Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/run/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Pipeline.",
+          "displayName": "Write Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PipelineStep",
+      "name": "workspaces/pipelines/pipelinesSteps",
+      "operations": [
+        {
+          "description": "Deletes a PipelineStep.",
+          "displayName": "Delete PipelineStep",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/pipelinesSteps/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a PipelineStep.",
+          "displayName": "Write PipelineStep",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/pipelinesSteps/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PipelineStep",
+      "name": "workspaces/pipelines/pipelineSteps",
+      "operations": [
+        {
+          "description": "Reads a PipelineStep.",
+          "displayName": "Read PipelineStep",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelines/pipelineSteps/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DataAssetReference",
+      "name": "workspaces/proposals/dataAssetReferences",
+      "operations": [
+        {
+          "description": "Deletes a DataAssetReference.",
+          "displayName": "Delete DataAssetReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/dataAssetReferences/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a DataAssetReference.",
+          "displayName": "Read DataAssetReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/dataAssetReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a DataAssetReference.",
+          "displayName": "Action DataAssetReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/dataAssetReferences/resolve/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a DataAssetReference.",
+          "displayName": "Write DataAssetReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/dataAssetReferences/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Proposal",
+      "name": "workspaces/proposals",
+      "operations": [
+        {
+          "description": "Deletes a Proposal.",
+          "displayName": "Delete Proposal",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Proposal.",
+          "displayName": "Read Proposal",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a Proposal.",
+          "displayName": "Action Proposal",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/revoke/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a Proposal.",
+          "displayName": "Action Proposal",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/sign/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Proposal.",
+          "displayName": "Write Proposal",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Constraint",
+      "name": "workspaces/proposals/entitlements/constraints",
+      "operations": [
+        {
+          "description": "Deletes a Constraint.",
+          "displayName": "Delete Constraint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/constraints/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Constraint.",
+          "displayName": "Read Constraint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/constraints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Constraint.",
+          "displayName": "Write Constraint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/constraints/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Entitlement",
+      "name": "workspaces/proposals/entitlements",
+      "operations": [
+        {
+          "description": "Deletes a Entitlement.",
+          "displayName": "Delete Entitlement",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Entitlement.",
+          "displayName": "Read Entitlement",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Entitlement.",
+          "displayName": "Write Entitlement",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy",
+      "name": "workspaces/proposals/entitlements/policies",
+      "operations": [
+        {
+          "description": "Deletes a Policy.",
+          "displayName": "Delete Policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/policies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Policy.",
+          "displayName": "Read Policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Policy.",
+          "displayName": "Write Policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/entitlements/policies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Invitation",
+      "name": "workspaces/proposals/invitations",
+      "operations": [
+        {
+          "description": "Deletes a Invitation.",
+          "displayName": "Delete Invitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/invitations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Invitation.",
+          "displayName": "Read Invitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/invitations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Invitation.",
+          "displayName": "Write Invitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/invitations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Participant",
+      "name": "workspaces/proposals/Participants",
+      "operations": [
+        {
+          "description": "Deletes a Participant.",
+          "displayName": "Delete Participant",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/Participants/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Participant.",
+          "displayName": "Read Participant",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/participants/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Participant.",
+          "displayName": "Write Participant",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/Participants/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ScriptReference",
+      "name": "workspaces/proposals/scriptReferences",
+      "operations": [
+        {
+          "description": "Deletes a ScriptReference.",
+          "displayName": "Delete ScriptReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/scriptReferences/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a ScriptReference.",
+          "displayName": "Read ScriptReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/scriptReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a ScriptReference.",
+          "displayName": "Action ScriptReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/scriptReferences/resolve/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a ScriptReference.",
+          "displayName": "Write ScriptReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/scriptReferences/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Script",
+      "name": "workspaces/scripts",
+      "operations": [
+        {
+          "description": "Deletes a Script.",
+          "displayName": "Delete Script",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/scripts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Script.",
+          "displayName": "Read Script",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/scripts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Script.",
+          "displayName": "Write Script",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/scripts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Script",
+      "name": "workspaces/scripts/scriptRevisions",
+      "operations": [
+        {
+          "description": "Reads a Script.",
+          "displayName": "Read Script",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/scripts/scriptRevisions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PipelineRun",
+      "name": "workspaces/pipelineRuns",
+      "operations": [
+        {
+          "description": "Actions a PipelineRun.",
+          "displayName": "Action PipelineRun",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a PipelineRun.",
+          "displayName": "Read PipelineRun",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PipelineStepRun",
+      "name": "workspaces/pipelineRuns/pipelineStepRuns",
+      "operations": [
+        {
+          "description": "Reads a PipelineStepRun.",
+          "displayName": "Read PipelineStepRun",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/pipelineStepRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ConstrainedResource",
+      "name": "workspaces/constrainedResources",
+      "operations": [
+        {
+          "description": "Deletes a ConstrainedResource.",
+          "displayName": "Delete ConstrainedResource",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a ConstrainedResource.",
+          "displayName": "Read ConstrainedResource",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a ConstrainedResource.",
+          "displayName": "Write ConstrainedResource",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "VirtualOutputReference",
+      "name": "workspaces/proposals/virtualOutputReferences",
+      "operations": [
+        {
+          "description": "Reads a VirtualOutputReference.",
+          "displayName": "Read VirtualOutputReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/virtualOutputReferences/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ManagedPrivateEndpoint",
+      "name": "workspaces/managedPrivateEndpoints",
+      "operations": [
+        {
+          "description": "Deletes a ManagedPrivateEndpoint.",
+          "displayName": "Delete ManagedPrivateEndpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a ManagedPrivateEndpoint.",
+          "displayName": "Read ManagedPrivateEndpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a ManagedPrivateEndpoint.",
+          "displayName": "Write ManagedPrivateEndpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Computation",
+      "name": "workspaces/computations/computationRevisions",
+      "operations": [
+        {
+          "description": "Reads a Computation.",
+          "displayName": "Read Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/computationRevisions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Computation",
+      "name": "workspaces/computations",
+      "operations": [
+        {
+          "description": "Deletes a Computation.",
+          "displayName": "Delete Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Computation.",
+          "displayName": "Read Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Computation.",
+          "displayName": "Write Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

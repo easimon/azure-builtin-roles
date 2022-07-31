@@ -1,0 +1,2541 @@
+{
+  "displayName": "Microsoft.RecoveryServices",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.RecoveryServices",
+  "name": "Microsoft.RecoveryServices",
+  "operations": [
+    {
+      "description": "Registers subscription for given Resource Provider",
+      "displayName": "Register Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.RecoveryServices/register/action",
+      "origin": "user",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Vault Usage",
+      "name": "Vaults/usages",
+      "operations": [
+        {
+          "description": "Returns usage details for a Recovery Services Vault.",
+          "displayName": "Recovery Services Vault usage details.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/usages/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Read any Vault Usages",
+          "displayName": "Read Vault Usages",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/usages/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Usages Summaries",
+      "name": "Vaults/backupUsageSummaries",
+      "operations": [
+        {
+          "description": "Returns summaries for Protected Items and Protected Servers for a Recovery Services .",
+          "displayName": "Recovery Services Protected Items and Protected Servers usage summaries details.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupUsageSummaries/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Storage Config",
+      "name": "Vaults/backupstorageconfig",
+      "operations": [
+        {
+          "description": "Returns Storage Configuration for Recovery Services Vault.",
+          "displayName": "Get Resource Storage Config",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupstorageconfig/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates Storage Configuration for Recovery Services Vault.",
+          "displayName": "Write Resource Storage Config",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupstorageconfig/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Config",
+      "name": "Vaults/backupconfig",
+      "operations": [
+        {
+          "description": "Returns Configuration for Recovery Services Vault.",
+          "displayName": "Get Resource Config",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupconfig/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates Configuration for Recovery Services Vault.",
+          "displayName": "Update Resource Config",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupconfig/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults",
+      "operations": [
+        {
+          "description": "Export Jobs",
+          "displayName": "Export Jobs",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupJobsExport/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns Security PIN Information for Recovery Services Vault.",
+          "displayName": "Get Security PIN Info",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupSecurityPIN/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupTriggerValidateOperation/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupValidateOperation/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create Vault operation creates an Azure resource of type 'vault'",
+          "displayName": "Create Vault",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "The Get Vault operation gets an object representing the Azure resource of type 'vault'",
+          "displayName": "Get Vault",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "The Delete Vault operation deletes the specified Azure resource of type 'vault'",
+          "displayName": "Delete Vault",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Operation Results",
+      "name": "Vaults/backupOperationResults",
+      "operations": [
+        {
+          "description": "Returns Backup Operation Result for Recovery Services Vault.",
+          "displayName": "Get Backup Operation Result",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupOperationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Operation Status",
+      "name": "Vaults/backupOperations",
+      "operations": [
+        {
+          "description": "Returns Backup Operation Status for Recovery Services Vault.",
+          "displayName": "Get Backup Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupOperations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs",
+      "name": "Vaults/backupJobs",
+      "operations": [
+        {
+          "description": "Cancel the Job",
+          "displayName": "Cancel Jobs",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupJobs/cancel/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns all Job Objects",
+          "displayName": "Get Jobs",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupJobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs Operation Results",
+      "name": "Vaults/backupJobs/operationResults",
+      "operations": [
+        {
+          "description": "Returns the Result of Job Operation.",
+          "displayName": "Get Job Operation Result",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupJobs/operationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints",
+      "operations": [
+        {
+          "description": "Get AccessToken for Cross Region Restore.",
+          "displayName": "Get AccessToken",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/accessToken/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Move Recovery point to another tier",
+          "displayName": "Move Recovery point to another tier",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/move/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Provision Instant Item Recovery for Protected Item",
+          "displayName": "Provision Instant Item Recovery for Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/provisionInstantItemRecovery/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get Recovery Points for Protected Items.",
+          "displayName": "Get Recovery Points",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Restore Recovery Points for Protected Items.",
+          "displayName": "Restore Recovery Points",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Revoke Instant Item Recovery for Protected Item",
+          "displayName": "Revoke Instant Item Recovery for Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/revokeInstantItemRecovery/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Policies",
+      "name": "Vaults/backupPolicies",
+      "operations": [
+        {
+          "description": "Delete a Protection Policy",
+          "displayName": "Delete Protection Policy",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupPolicies/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns all Protection Policies",
+          "displayName": "Get Protection Policy",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupPolicies/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates Protection Policy",
+          "displayName": "Create Protection Policy",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupPolicies/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Policy Operation Results",
+      "name": "Vaults/backupPolicies/operationResults",
+      "operations": [
+        {
+          "description": "Get Results of Policy Operation.",
+          "displayName": "Get Policy Operation Results",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupPolicies/operationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Policy Operation Status",
+      "name": "Vaults/backupPolicies/operations",
+      "operations": [
+        {
+          "description": "Get Status of Policy Operation.",
+          "displayName": "Get Policy Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupPolicies/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "Vaults/backupFabrics/protectionContainers/protectedItems",
+      "operations": [
+        {
+          "description": "Performs Backup for Protected Item.",
+          "displayName": "Backup Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/backup/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes Protected Item",
+          "displayName": "Delete Protected Items",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns object details of the Protected Item",
+          "displayName": "Get Protected Item Details",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get Recovery points recommended for move to another tier",
+          "displayName": "Get Recovery points recommended for move to another tier",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPointsRecommendedForMove/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create a backup Protected Item",
+          "displayName": "Create Backup Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "Vaults/backupProtectedItems",
+      "operations": [
+        {
+          "description": "Returns the list of all Protected Items.",
+          "displayName": "Get All Protected Items",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupProtectedItems/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Results",
+      "name": "Vaults/backupFabrics/protectionContainers/protectedItems/operationResults",
+      "operations": [
+        {
+          "description": "Gets Result of Operation Performed on Protected Items.",
+          "displayName": "Get Protected Items Operation Results",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/operationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Status",
+      "name": "Vaults/backupFabrics/protectionContainers/protectedItems/operationsStatus",
+      "operations": [
+        {
+          "description": "Returns the status of Operation performed on Protected Items.",
+          "displayName": "Get Protected Items operation status",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/protectedItems/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Protectable Items",
+      "name": "Vaults/backupProtectableItems",
+      "operations": [
+        {
+          "description": "Returns list of all Protectable Items.",
+          "displayName": "Get Protectable Items",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupProtectableItems/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Refresh Containers Operation Results",
+      "name": "Vaults/backupFabrics/operationResults",
+      "operations": [
+        {
+          "description": "Returns status of the operation",
+          "displayName": "Get Operation Results",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/operationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Protection Containers",
+      "name": "Vaults/backupProtectionContainers",
+      "operations": [
+        {
+          "description": "Returns all containers belonging to the subscription",
+          "displayName": "Get Containers In Subscription",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupProtectionContainers/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Containers",
+      "name": "Vaults/backupFabrics/protectionContainers",
+      "operations": [
+        {
+          "description": "Deletes the registered Container",
+          "displayName": "Delete Registered Container",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Do inquiry for workloads within a container",
+          "displayName": "Do inquiry for workloads within a container",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/inquire/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns all registered containers",
+          "displayName": "Get Registered Container",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates a registered container",
+          "displayName": "Create Registered Container",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Containers Operation Results",
+      "name": "Vaults/backupFabrics/protectionContainers/operationResults",
+      "operations": [
+        {
+          "description": "Gets result of Operation performed on Protection Container.",
+          "displayName": "Get Container Operation Results",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/operationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Engines",
+      "name": "Vaults/backupEngines",
+      "operations": [
+        {
+          "description": "Returns all the backup management servers registered with vault.",
+          "displayName": "List of backup management servers.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupEngines/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Intent",
+      "name": "Vaults/backupFabrics/backupProtectionIntent",
+      "operations": [
+        {
+          "description": "Delete a backup Protection Intent",
+          "displayName": "Delete backup Protection Intent",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/backupProtectionIntent/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get a backup Protection Intent",
+          "displayName": "Get backup Protection Intent",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/backupProtectionIntent/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create a backup Protection Intent",
+          "displayName": "Create backup Protection Intent",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/backupProtectionIntent/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protectable Containers",
+      "name": "Vaults/backupFabrics/protectableContainers",
+      "operations": [
+        {
+          "description": "Get all protectable containers",
+          "displayName": "Get all protectable containers",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectableContainers/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workload Items",
+      "name": "Vaults/backupFabrics/protectionContainers/items",
+      "operations": [
+        {
+          "description": "Get all items in a container",
+          "displayName": "Get all items in a container",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/items/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Locations",
+      "operations": [
+        {
+          "description": "Trigger Cross region restore.",
+          "displayName": "Cross Region Restore",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupCrossRegionRestore/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get Cross Region Restore Job Details in the secondary region for Recovery Services Vault.",
+          "displayName": "Get CRR Job Details",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupCrrJob/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "List Cross Region Restore Jobs in the secondary region for Recovery Services Vault.",
+          "displayName": "List CRR Jobs",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupCrrJobs/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "",
+          "displayName": "Pre Validate Enable Protection",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupPreValidateProtection/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Check Backup Status for Recovery Services Vaults",
+          "displayName": "Check Backup Status for Vault",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupStatus/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validate Features",
+          "displayName": "Validate Features",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupValidateFeatures/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "AllocateStamp is internal operation used by service",
+          "displayName": "Allocated Stamp Action",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/locations/allocateStamp/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Check Resource Name Availability is an API to check if resource name is available",
+          "displayName": "Check Resource Name Availability Action",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/locations/checkNameAvailability/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Alerts Settings",
+      "name": "vaults/replicationAlertSettings",
+      "operations": [
+        {
+          "description": "Read any Alerts Settings",
+          "displayName": "Read Alerts Settings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationAlertSettings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Alerts Settings",
+          "displayName": "Create or Update Alerts Settings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationAlertSettings/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Events",
+      "name": "vaults/replicationEvents",
+      "operations": [
+        {
+          "description": "Read any Events",
+          "displayName": "Read Events",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationEvents/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networks",
+      "name": "vaults/replicationFabrics/replicationNetworks",
+      "operations": [
+        {
+          "description": "Read any Networks",
+          "displayName": "Read Networks",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Mappings",
+      "name": "vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings",
+      "operations": [
+        {
+          "description": "Read any Network Mappings",
+          "displayName": "Read Network Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Network Mappings",
+          "displayName": "Create or Update Network Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Network Mappings",
+          "displayName": "Delete Network Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protectable Items",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectableItems",
+      "operations": [
+        {
+          "description": "Read any Protectable Items",
+          "displayName": "Read Protectable Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectableItems/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Container Mappings",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings",
+      "operations": [
+        {
+          "description": "Read any Protection Container Mappings",
+          "displayName": "Read Protection Container Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Protection Container Mappings",
+          "displayName": "Create or Update Protection Container Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Remove Protection Container Mapping",
+          "displayName": "Remove Protection Container Mapping",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/remove/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Protection Container Mappings",
+          "displayName": "Delete Protection Container Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Recovery Points",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/recoveryPoints",
+      "operations": [
+        {
+          "description": "Read any Replication Recovery Points",
+          "displayName": "Read Replication Recovery Points",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/recoveryPoints/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems",
+      "operations": [
+        {
+          "description": "Read any Protected Items",
+          "displayName": "Read Protected Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Protected Items",
+          "displayName": "Create or Update Protected Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Protected Items",
+          "displayName": "Delete Protected Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Remove Protected Item",
+          "displayName": "Remove Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/remove/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Planned Failover",
+          "displayName": "Planned Failover",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/plannedFailover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Failover",
+          "displayName": "Failover",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/unplannedFailover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Test Failover",
+          "displayName": "Test Failover",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Test Failover Cleanup",
+          "displayName": "Test Failover Cleanup",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailoverCleanup/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Failover Commit",
+          "displayName": "Failover Commit",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/failoverCommit/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "ReProtect Protected Item",
+          "displayName": "ReProtect Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/reProtect/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Update Mobility Service",
+          "displayName": "Update Mobility Service",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/updateMobilityService/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Repair replication",
+          "displayName": "Repair replication",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/repairReplication/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Apply Recovery Point",
+          "displayName": "Apply Recovery Point",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/applyRecoveryPoint/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Submit Feedback",
+          "displayName": "Submit Feedback",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/submitFeedback/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add disks",
+          "displayName": "Add disks",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/addDisks/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Remove disks",
+          "displayName": "Remove disks",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/removeDisks/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/ResolveHealthErrors/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Failover Cancel",
+          "displayName": "Failover Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/failoverCancel/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/updateAppliance/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "vaults/replicationJobs",
+      "operations": [
+        {
+          "description": "Read any Jobs",
+          "displayName": "Read Jobs",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationJobs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Cancel Job",
+          "displayName": "Cancel Job",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationJobs/cancel/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restart job",
+          "displayName": "Restart job",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationJobs/restart/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resume Job",
+          "displayName": "Resume Job",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationJobs/resume/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Containers",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers",
+      "operations": [
+        {
+          "description": "Read any Protection Containers",
+          "displayName": "Read Protection Containers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Discover Protectable Item",
+          "displayName": "Discover Protectable Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/discoverProtectableItem/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Protection Containers",
+          "displayName": "Create or Update Protection Containers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Remove Protection Container",
+          "displayName": "Remove Protection Container",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/remove/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Switch Protection Container",
+          "displayName": "Switch Protection Container",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/switchprotection/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policies",
+      "name": "vaults/replicationPolicies",
+      "operations": [
+        {
+          "description": "Read any Policies",
+          "displayName": "Read Policies",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationPolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Policies",
+          "displayName": "Create or Update Policies",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationPolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Policies",
+          "displayName": "Delete Policies",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationPolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Plans",
+      "name": "vaults/replicationRecoveryPlans",
+      "operations": [
+        {
+          "description": "Read any Recovery Plans",
+          "displayName": "Read Recovery Plans",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Recovery Plans",
+          "displayName": "Create or Update Recovery Plans",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Recovery Plans",
+          "displayName": "Delete Recovery Plans",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Planned Failover Recovery Plan",
+          "displayName": "Planned Failover Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/plannedFailover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Failover Recovery Plan",
+          "displayName": "Failover Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/unplannedFailover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Test Failover Recovery Plan",
+          "displayName": "Test Failover Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/testFailover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Test Failover Cleanup Recovery Plan",
+          "displayName": "Test Failover Cleanup Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/testFailoverCleanup/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Failover Commit Recovery Plan",
+          "displayName": "Failover Commit Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/failoverCommit/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "ReProtect Recovery Plan",
+          "displayName": "ReProtect Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/reProtect/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Cancel Failover Recovery Plan",
+          "displayName": "Cancel Failover Recovery Plan",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/failoverCancel/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Services Providers",
+      "name": "vaults/replicationFabrics/replicationRecoveryServicesProviders",
+      "operations": [
+        {
+          "description": "Read any Recovery Services Providers",
+          "displayName": "Read Recovery Services Providers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Recovery Services Providers",
+          "displayName": "Create or Update Recovery Services Providers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Remove Recovery Services Provider",
+          "displayName": "Remove Recovery Services Provider",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/remove/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Recovery Services Providers",
+          "displayName": "Delete Recovery Services Providers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refresh Provider",
+          "displayName": "Refresh Provider",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/refreshProvider/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Fabrics",
+      "name": "vaults/replicationFabrics",
+      "operations": [
+        {
+          "description": "Read any Fabrics",
+          "displayName": "Read Fabrics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Fabrics",
+          "displayName": "Create or Update Fabrics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Remove Fabric",
+          "displayName": "Remove Fabric",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/remove/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Checks Consistency of the Fabric",
+          "displayName": "Checks Consistency of the Fabric",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/checkConsistency/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Fabrics",
+          "displayName": "Delete Fabrics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Renew Certificate for Fabric",
+          "displayName": "Renew Certificate for Fabric",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/renewcertificate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deploy Process Server Image",
+          "displayName": "Deploy Process Server Image",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/deployProcessServerImage/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reassociate Gateway",
+          "displayName": "Reassociate Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/reassociateGateway/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Migrate Fabric To AAD",
+          "displayName": "Migrate Fabric To AAD",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/migratetoaad/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Move WebApp",
+          "displayName": "Move WebApp",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/moveWebApp/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Classifications",
+      "name": "vaults/replicationFabrics/replicationStorageClassifications",
+      "operations": [
+        {
+          "description": "Read any Storage Classifications",
+          "displayName": "Read Storage Classifications",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Classification Mappings",
+      "name": "vaults/replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings",
+      "operations": [
+        {
+          "description": "Read any Storage Classification Mappings",
+          "displayName": "Read Storage Classification Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Storage Classification Mappings",
+          "displayName": "Create or Update Storage Classification Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Storage Classification Mappings",
+          "displayName": "Delete Storage Classification Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "vCenters",
+      "name": "vaults/replicationFabrics/replicationvCenters",
+      "operations": [
+        {
+          "description": "Read any vCenters",
+          "displayName": "Read vCenters",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any vCenters",
+          "displayName": "Create or Update vCenters",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any vCenters",
+          "displayName": "Delete vCenters",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/vaultTokens",
+      "operations": [
+        {
+          "description": "The Vault Token operation can be used to get Vault Token for vault level backend operations.",
+          "displayName": "Vault Token",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/vaultTokens/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/registeredIdentities",
+      "operations": [
+        {
+          "description": "The Register Service Container operation can be used to register a container with Recovery Service.",
+          "displayName": "Register Service Container",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/registeredIdentities/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "The Get Containers operation can be used get the containers registered for a resource.",
+          "displayName": "Get Containers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/registeredIdentities/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "The UnRegister Container operation can be used to unregister a container.",
+          "displayName": "Unregister Service Container",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/registeredIdentities/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/registeredIdentities/operationResults",
+      "operations": [
+        {
+          "description": "The Get Operation Results operation can be used get the operation status and result for the asynchronously submitted operation",
+          "displayName": "Get Operation Results",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/registeredIdentities/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/certificates",
+      "operations": [
+        {
+          "description": "The Update Resource Certificate operation updates the resource/vault credential certificate.",
+          "displayName": "Update Resource Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/certificates/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/monitoringAlerts",
+      "operations": [
+        {
+          "description": "Gets the alerts for the Recovery services vault.",
+          "displayName": "Get alerts",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/monitoringAlerts/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Resolves the alert.",
+          "displayName": "Resolve alert",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/monitoringAlerts/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/monitoringConfigurations",
+      "operations": [
+        {
+          "description": "Gets the Recovery services vault notification configuration.",
+          "displayName": "Get configuration",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Configures e-mail notifications to Recovery services vault.",
+          "displayName": "Configure e-mail notification",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Azure Backup Logs",
+          "displayName": "Azure Backup Logs",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Backup Reporting Data",
+                  "name": "AzureBackupReport"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Core Azure Backup Data",
+                  "name": "CoreAzureBackup"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Addon Azure Backup Job Data",
+                  "name": "AddonAzureBackupJobs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Addon Azure Backup Alert Data",
+                  "name": "AddonAzureBackupAlerts"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Addon Azure Backup Policy Data",
+                  "name": "AddonAzureBackupPolicy"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Addon Azure Backup Storage Data",
+                  "name": "AddonAzureBackupStorage"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Addon Azure Backup Protected Instance Data",
+                  "name": "AddonAzureBackupProtectedInstance"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Jobs",
+                  "name": "AzureSiteRecoveryJobs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Events",
+                  "name": "AzureSiteRecoveryEvents"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Replicated Items",
+                  "name": "AzureSiteRecoveryReplicatedItems"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Replication Stats",
+                  "name": "AzureSiteRecoveryReplicationStats"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Recovery Points",
+                  "name": "AzureSiteRecoveryRecoveryPoints"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Replication Data Upload Rate",
+                  "name": "AzureSiteRecoveryReplicationDataUploadRate"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Site Recovery Protected Disk Data Churn",
+                  "name": "AzureSiteRecoveryProtectedDiskDataChurn"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Azure Backup Metrics",
+          "displayName": "Azure Backup Metrics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Azure Backup Diagnostics",
+          "displayName": "Azure Backup Diagnostics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Azure Backup Diagnostics",
+          "displayName": "Azure Backup Diagnostics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vaults",
+      "name": "Vaults/extendedInformation",
+      "operations": [
+        {
+          "description": "The Get Extended Info operation gets an object's Extended Info representing the Azure resource of type ?vault?",
+          "displayName": "Get Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/extendedInformation/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "The Get Extended Info operation gets an object's Extended Info representing the Azure resource of type ?vault?",
+          "displayName": "Get Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/extendedInformation/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "The Get Extended Info operation gets an object's Extended Info representing the Azure resource of type ?vault?",
+          "displayName": "Get Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/extendedInformation/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/allocatedStamp",
+      "name": "locations/allocatedStamp",
+      "operations": [
+        {
+          "description": "GetAllocatedStamp is internal operation used by service",
+          "displayName": "Get Allocated Stamp",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/locations/allocatedStamp/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Operation returns the list of Operations for a Resource Provider",
+          "displayName": "List of Operations",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Logical Networks",
+      "name": "vaults/replicationFabrics/replicationLogicalNetworks",
+      "operations": [
+        {
+          "description": "Read any Logical Networks",
+          "displayName": "Read Logical Networks",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationLogicalNetworks/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networks",
+      "name": "vaults/replicationNetworks",
+      "operations": [
+        {
+          "description": "Read any Networks",
+          "displayName": "Read Networks",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationNetworks/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Mappings",
+      "name": "vaults/replicationNetworkMappings",
+      "operations": [
+        {
+          "description": "Read any Network Mappings",
+          "displayName": "Read Network Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationNetworkMappings/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Container Mappings",
+      "name": "vaults/replicationProtectionContainerMappings",
+      "operations": [
+        {
+          "description": "Read any Protection Container Mappings",
+          "displayName": "Read Protection Container Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationProtectionContainerMappings/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "vaults/replicationProtectedItems",
+      "operations": [
+        {
+          "description": "Read any Protected Items",
+          "displayName": "Read Protected Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationProtectedItems/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Target Compute Sizes",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/targetComputeSizes",
+      "operations": [
+        {
+          "description": "Read any Target Compute Sizes",
+          "displayName": "Read Target Compute Sizes",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/targetComputeSizes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Containers",
+      "name": "vaults/replicationProtectionContainers",
+      "operations": [
+        {
+          "description": "Read any Protection Containers",
+          "displayName": "Read Protection Containers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationProtectionContainers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Services Providers",
+      "name": "vaults/replicationRecoveryServicesProviders",
+      "operations": [
+        {
+          "description": "Read any Recovery Services Providers",
+          "displayName": "Read Recovery Services Providers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryServicesProviders/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Classifications",
+      "name": "vaults/replicationStorageClassifications",
+      "operations": [
+        {
+          "description": "Read any Storage Classifications",
+          "displayName": "Read Storage Classifications",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationStorageClassifications/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Classification Mappings",
+      "name": "vaults/replicationStorageClassificationMappings",
+      "operations": [
+        {
+          "description": "Read any Storage Classification Mappings",
+          "displayName": "Read Storage Classification Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationStorageClassificationMappings/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Replication Usages",
+      "name": "vaults/replicationUsages",
+      "operations": [
+        {
+          "description": "Read any Vault Replication Usages",
+          "displayName": "Read Vault Replication Usages",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationUsages/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "vCenters",
+      "name": "vaults/replicationvCenters",
+      "operations": [
+        {
+          "description": "Read any vCenters",
+          "displayName": "Read vCenters",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationvCenters/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Replication Health",
+      "name": "vaults/replicationVaultHealth",
+      "operations": [
+        {
+          "description": "Read any Vault Replication Health",
+          "displayName": "Read Vault Replication Health",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationVaultHealth/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refresh Vault Health",
+          "displayName": "Refresh Vault Health",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationVaultHealth/refresh/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatus",
+      "name": "locations/operationStatus",
+      "operations": [
+        {
+          "description": "Gets Operation Status for a given Operation",
+          "displayName": "Get Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/locations/operationStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Intent",
+      "name": "Vaults/backupProtectionIntents",
+      "operations": [
+        {
+          "description": "List all backup Protection Intents",
+          "displayName": "List all backup Protection Intents",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupProtectionIntents/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migration Items",
+      "name": "vaults/replicationMigrationItems",
+      "operations": [
+        {
+          "description": "Read any Migration Items",
+          "displayName": "Read Migration Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationMigrationItems/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migration Items",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems",
+      "operations": [
+        {
+          "description": "Read any Migration Items",
+          "displayName": "Read Migration Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Migration Items",
+          "displayName": "Create or Update Migration Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete any Migration Items",
+          "displayName": "Delete Migration Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resynchronize",
+          "displayName": "Resynchronize",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/resync/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Migrate Item",
+          "displayName": "Migrate Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Test Migrate",
+          "displayName": "Test Migrate",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/testMigrate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Test Migrate Cleanup",
+          "displayName": "Test Migrate Cleanup",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/testMigrateCleanup/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migration Recovery Points",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrationRecoveryPoints",
+      "operations": [
+        {
+          "description": "Read any Migration Recovery Points",
+          "displayName": "Read Migration Recovery Points",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrationRecoveryPoints/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "vaults/replicationSupportedOperatingSystems",
+      "operations": [
+        {
+          "description": "Read any ",
+          "displayName": "Read ",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationSupportedOperatingSystems/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "Locations/backupProtectedItem",
+      "operations": [
+        {
+          "description": "Create a backup Protected Item",
+          "displayName": "Create Backup Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupProtectedItem/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "Locations/backupProtectedItems",
+      "operations": [
+        {
+          "description": "Returns the list of all Protected Items.",
+          "displayName": "Get All Protected Items",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupProtectedItems/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "vaults/replicationVaultSettings",
+      "operations": [
+        {
+          "description": "Read any ",
+          "displayName": "Read ",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationVaultSettings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any ",
+          "displayName": "Create or Update ",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationVaultSettings/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Refresh Containers Operation Statuses",
+      "name": "Vaults/backupFabrics/operationsStatus",
+      "operations": [
+        {
+          "description": "Returns status of the operation",
+          "displayName": "Get Operation Status for refresh container operation",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Containers Operation Statuses",
+      "name": "Vaults/backupFabrics/protectionContainers/operationsStatus",
+      "operations": [
+        {
+          "description": "Gets status of Operation performed on Protection Container.",
+          "displayName": "Get Container Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/protectionContainers/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs Operation Statuses",
+      "name": "Vaults/backupJobs/operationsStatus",
+      "operations": [
+        {
+          "description": "Returns the status of Job Operation.",
+          "displayName": "Get Job Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupJobs/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Protected Items",
+          "displayName": "Track the results of an asynchronous operation on the resource Protected Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "vaults/replicationJobs/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Jobs",
+          "displayName": "Track the results of an asynchronous operation on the resource Jobs",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationJobs/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Containers",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Protection Containers",
+          "displayName": "Track the results of an asynchronous operation on the resource Protection Containers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policies",
+      "name": "vaults/replicationPolicies/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Policies",
+          "displayName": "Track the results of an asynchronous operation on the resource Policies",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationPolicies/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Plans",
+      "name": "vaults/replicationRecoveryPlans/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Recovery Plans",
+          "displayName": "Track the results of an asynchronous operation on the resource Recovery Plans",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Services Providers",
+      "name": "vaults/replicationFabrics/replicationRecoveryServicesProviders/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Recovery Services Providers",
+          "displayName": "Track the results of an asynchronous operation on the resource Recovery Services Providers",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Fabrics",
+      "name": "vaults/replicationFabrics/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Fabrics",
+          "displayName": "Track the results of an asynchronous operation on the resource Fabrics",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Classification Mappings",
+      "name": "vaults/replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Storage Classification Mappings",
+          "displayName": "Track the results of an asynchronous operation on the resource Storage Classification Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "vCenters",
+      "name": "vaults/replicationFabrics/replicationvCenters/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource vCenters",
+          "displayName": "Track the results of an asynchronous operation on the resource vCenters",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Replication Health",
+      "name": "vaults/replicationVaultHealth/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Vault Replication Health",
+          "displayName": "Track the results of an asynchronous operation on the resource Vault Replication Health",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationVaultHealth/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protection Container Mappings",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Protection Container Mappings",
+          "displayName": "Track the results of an asynchronous operation on the resource Protection Container Mappings",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migration Items",
+      "name": "vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/operationresults",
+      "operations": [
+        {
+          "description": "Track the results of an asynchronous operation on the resource Migration Items",
+          "displayName": "Track the results of an asynchronous operation on the resource Migration Items",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Encryption Config",
+      "name": "Vaults/backupEncryptionConfigs",
+      "operations": [
+        {
+          "description": "Gets Backup Resource Encryption Configuration.",
+          "displayName": "Get Backup Resource Encryption Config",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupEncryptionConfigs/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates Backup Resource Encryption Configuration",
+          "displayName": "Put Backup Resource Encryption Config",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupEncryptionConfigs/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault Replication Operation Status",
+      "name": "vaults/replicationOperationStatus",
+      "operations": [
+        {
+          "description": "Read any Vault Replication Operation Status",
+          "displayName": "Read Vault Replication Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationOperationStatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoints",
+      "name": "Vaults/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Wait for a few minutes and then try the operation again. If the issue persists, please contact Microsoft support.",
+          "displayName": "Microsoft Azure Backup encountered an internal error.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnectionProxies/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get all protectable containers",
+          "displayName": "Get all protectable containers",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnectionProxies/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get all protectable containers",
+          "displayName": "Get all protectable containers",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnectionProxies/validate/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get all protectable containers",
+          "displayName": "Get all protectable containers",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnectionProxies/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoints",
+      "name": "Vaults/privateEndpointConnectionProxies/operationsStatus",
+      "operations": [
+        {
+          "description": "Get all protectable containers",
+          "displayName": "Get all protectable containers",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnectionProxies/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoints",
+      "name": "Vaults/privateEndpointConnections/operationsStatus",
+      "operations": [
+        {
+          "description": "Returns the operation status for a private endpoint connection.",
+          "displayName": "Returns the operation status for a private endpoint connection.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnections/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoints",
+      "name": "Vaults/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Delete Private Endpoint requests. This call is made by Backup Admin.",
+          "displayName": "Delete Private Endpoint requests. This call is made by Backup Admin.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnections/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Approve or Reject Private Endpoint requests. This call is made by Backup Admin.",
+          "displayName": "Approve or Reject Private Endpoint requests. This call is made by Backup Admin.",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/privateEndpointConnections/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "vaults/replicationProtectionIntents",
+      "operations": [
+        {
+          "description": "Read any ",
+          "displayName": "Read ",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationProtectionIntents/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update any ",
+          "displayName": "Create or Update ",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationProtectionIntents/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Locations/backupAadProperties",
+      "operations": [
+        {
+          "description": "Get AAD Properties for authentication in the third region for Cross Region Restore.",
+          "displayName": "Get Aad Properties for CRR",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupAadProperties/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "CRR Operation Results",
+      "name": "Locations/backupCrrOperationResults",
+      "operations": [
+        {
+          "description": "Returns CRR Operation Result for Recovery Services Vault.",
+          "displayName": "Get CRR Operation Result",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupCrrOperationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "CRR Operation Status",
+      "name": "Locations/backupCrrOperationsStatus",
+      "operations": [
+        {
+          "description": "Returns CRR Operation Status for Recovery Services Vault.",
+          "displayName": "Get CRR Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Locations/backupCrrOperationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "vaults/replicationSupportedRegionMappings",
+      "operations": [
+        {
+          "description": "Read any ",
+          "displayName": "Read ",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/vaults/replicationSupportedRegionMappings/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resource Guard Proxy",
+      "name": "Vaults/backupResourceGuardProxies",
+      "operations": [
+        {
+          "description": "The Delete ResourceGuard proxy operation deletes the specified Azure resource of type 'ResourceGuard proxy'",
+          "displayName": "Delete ResourceGuard proxy",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupResourceGuardProxies/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get the list of ResourceGuard proxies for a resource",
+          "displayName": "Get the list of ResourceGuard proxies for a resource",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupResourceGuardProxies/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get ResourceGuard proxy operation gets an object representing the Azure resource of type 'ResourceGuard proxy'",
+          "displayName": "Get ResourceGuard proxy",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupResourceGuardProxies/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Unlock delete ResourceGuard proxy operation unlocks the next delete critical operation",
+          "displayName": "Unlock delete ResourceGuard proxy operation unlocks the next delete critical operation",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupResourceGuardProxies/unlockDelete/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create ResourceGuard proxy operation creates an Azure resource of type 'ResourceGuard Proxy'",
+          "displayName": "Create ResourceGuard proxy",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupResourceGuardProxies/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation Results",
+      "name": "Vaults/backupValidateOperationResults",
+      "operations": [
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupValidateOperationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation Status",
+      "name": "Vaults/backupValidateOperationsStatuses",
+      "operations": [
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupValidateOperationsStatuses/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Refresh Containers",
+      "name": "Vaults/backupFabrics",
+      "operations": [
+        {
+          "description": "Refreshes the container list",
+          "displayName": "Refresh container",
+          "isDataAction": false,
+          "name": "microsoft.recoveryservices/Vaults/backupFabrics/refreshContainers/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

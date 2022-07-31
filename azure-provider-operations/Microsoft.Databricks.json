@@ -1,0 +1,471 @@
+{
+  "displayName": "Microsoft Databricks",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Databricks",
+  "name": "Microsoft.Databricks",
+  "operations": [
+    {
+      "description": "Register to Databricks.",
+      "displayName": "Register Databricks",
+      "isDataAction": false,
+      "name": "Microsoft.Databricks/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Databricks Workspace",
+      "name": "workspaces",
+      "operations": [
+        {
+          "description": "Retrieves a list of Databricks workspaces.",
+          "displayName": "List Databricks Workspaces",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Databricks workspace.",
+          "displayName": "Create Databricks Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes a Databricks workspace.",
+          "displayName": "Remove Databricks Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refresh permissions for a workspace",
+          "displayName": "Refresh permissions",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/refreshPermissions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Applies new NIP templates based on 'requiredNsgRules' and 'enablePublicAccess'",
+          "displayName": "Migrate Private Link Workspaces",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/migratePrivateLinkWorkspaces/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update deny assignment not actions for a managed resource group of a workspace",
+          "displayName": "Update deny assignment",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/updateDenyAssignment/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refresh a workspace with new details like URL",
+          "displayName": "Refresh workspaces",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/refreshWorkspaces/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace",
+      "name": "workspaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available log definitions for the Databricks workspace",
+          "displayName": "Read Databricks workspace log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks File System",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "dbfs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Clusters",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "clusters"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Accounts",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "accounts"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Jobs",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "jobs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Notebook",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "notebook"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks SSH",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "ssh"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Workspace",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "workspace"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Secrets",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "secrets"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks SQLPermissions",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "sqlPermissions"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Instance Pools",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "instancePools"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks SQL Analytics",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "sqlanalytics"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Genie",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "genie"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Global Init Scripts",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "globalInitScripts"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks IAM Role",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "iamRole"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks MLFlow Experiment",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "mlflowExperiment"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Feature Store",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "featureStore"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Remote History Service",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "RemoteHistoryService"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks MLFlow Acled Artifact",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "mlflowAcledArtifact"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks DatabricksSQL",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "databrickssql"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Delta Pipelines",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "deltaPipelines"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Model Registry",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "modelRegistry"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Repos",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "repos"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Databricks Unity Catalog",
+                  "logFilterPattern": "(P|p)remium",
+                  "name": "unityCatalog"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace",
+      "name": "workspaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Sets the available diagnostic settings for the Databricks workspace",
+          "displayName": "Read Databricks workspace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Add or modify diagnostics settings.",
+          "displayName": "Write Databricks workspace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Get Network Intent Policies",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Get Network Intent Polices for a subnet based on the location used by NRP",
+          "displayName": "Get Subnet Network Intent Polices",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/locations/getNetworkPolicies/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Status",
+      "name": "locations/operationstatuses",
+      "operations": [
+        {
+          "description": "Reads the operation status for the resource.",
+          "displayName": "Get the Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/locations/operationstatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Gets the list of operations.",
+          "displayName": "Get operations",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Network Peering",
+      "name": "workspaces/virtualNetworkPeerings",
+      "operations": [
+        {
+          "description": "Gets the virtual network peering.",
+          "displayName": "Get Virtual Network Peering",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/virtualNetworkPeerings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Add or modify virtual network peering",
+          "displayName": "Add Virtual Network Peering",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/virtualNetworkPeerings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a virtual network peering",
+          "displayName": "Delete Virtual Network Peering",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/virtualNetworkPeerings/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace",
+      "name": "workspaces/dbWorkspaces",
+      "operations": [
+        {
+          "description": "Initializes the Databricks workspace (internal only)",
+          "displayName": "Initialize Databricks workspace",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/dbWorkspaces/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace Private Link Resources",
+      "name": "workspaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "List Private Link Resources",
+          "displayName": "List Private Link Resources",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace Private Endpoint Connection Proxies",
+      "name": "workspaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate Private Endpoint Connection Proxies",
+          "displayName": "Validate Private Endpoint Connection Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put Private Endpoint Connection Proxies",
+          "displayName": "Put Private Endpoint Connection Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxies",
+          "displayName": "Delete Private Endpoint Connection Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace Storage Account Private Endpoint Connections",
+      "name": "workspaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "List Private Endpoint Connections",
+          "displayName": "List Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connections",
+          "displayName": "Approve Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove Private Endpoint Connection",
+          "displayName": "Remove Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Databricks Workspace Outbound Network Dependency endpoints",
+      "name": "workspaces/outboundNetworkDependenciesEndpoints",
+      "operations": [
+        {
+          "description": "Gets a list of egress endpoints (network endpoints of all outbound dependencies) for an Azure Databricks Workspace. The operation returns properties of each egress endpoint",
+          "displayName": "List Outbound Network Dependencies",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/workspaces/outboundNetworkDependenciesEndpoints/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AccessConnector",
+      "name": "accessConnectors",
+      "operations": [
+        {
+          "description": "Retrieves a list of Azure Databricks Access Connectors",
+          "displayName": "List Azure Databricks Access Connectors",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/accessConnectors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates an Azure Databricks Access Connector",
+          "displayName": "Create Azure Databricks Access Connector",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/accessConnectors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes Azure Databricks Access Connector",
+          "displayName": "Remove Azure Databricks Access Connector",
+          "isDataAction": false,
+          "name": "Microsoft.Databricks/accessConnectors/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,1305 @@
+{
+  "displayName": "Microsoft Azure Notification Hub",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.NotificationHubs",
+  "name": "Microsoft.NotificationHubs",
+  "operations": [
+    {
+      "description": "Registers the subscription for the NotifciationHubs resource provider and enables the creation of Namespaces and NotificationHubs",
+      "displayName": "Registers the NotificationHubs Provider",
+      "isDataAction": false,
+      "name": "Microsoft.NotificationHubs/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for the NotifciationHubs resource provider and enables the creation of Namespaces and NotificationHubs",
+      "displayName": "Unregisters the NotificationHubs Provider",
+      "isDataAction": false,
+      "name": "Microsoft.NotificationHubs/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Checks whether or not a given Namespace resource name is available within the NotificationHub service.",
+      "displayName": "Check Namespace name availability.",
+      "isDataAction": false,
+      "name": "Microsoft.NotificationHubs/CheckNamespaceAvailability/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Namespace",
+      "name": "Namespaces",
+      "operations": [
+        {
+          "description": "Create a Namespace Resource and Update its properties. Tags and Capacity of the Namespace are the properties which can be updated.",
+          "displayName": "Create Or Update Namespace",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespace Resource Description",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Resource",
+          "displayName": "Delete Namespace",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespaces Authorization Rules description.",
+          "displayName": "Get Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Checks whether or not a given NotificationHub name is available inside a Namespace.",
+          "displayName": "Check NotificationHub name availability.",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/CheckNotificationHubAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace Authorization Rule",
+      "name": "Namespaces/authorizationRules",
+      "operations": [
+        {
+          "description": "Create a Namespace level Authorization Rules and update its properties. The Authorization Rules Access Rights, the Primary and Secondary Keys can be updated.",
+          "displayName": "Create or Update Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespaces Authorization Rules description.",
+          "displayName": "Get Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Authorization Rule. The Default Namespace Authorization Rule cannot be deleted.",
+          "displayName": "Delete Namespace Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to the Namespace",
+          "displayName": "Get Namespace Listkeys",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Namespace Authorization Rule Regenerate Primary/SecondaryKey, Specify the Key that needs to be regenerated",
+          "displayName": "Namespace Authorization Rule Regenerate Keys",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NotificationHub",
+      "name": "Namespaces/NotificationHubs",
+      "operations": [
+        {
+          "description": "Create a Notification Hub and Update its properties. Its properties mainly include PNS Credentials. Authorization Rules and TTL",
+          "displayName": "Create or Update Notification Hub",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Notification Hub Resource Descriptions",
+          "displayName": "Get Notification Hub",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Notification Hub Resource",
+          "displayName": "Delete Notification Hub",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Notification Hub Authorization Rules",
+          "displayName": "Get Notification Hub Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get All Notification Hub PNS Credentials. This includes, WNS, MPNS, APNS, GCM and Baidu credentials",
+          "displayName": "Get Notification Hub PNS Credentials",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/pnsCredentials/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Send a test push notification to 10 matched devices.",
+          "displayName": "Send a test push notification.",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/debugSend/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NotificationHub Authorization Rule",
+      "name": "Namespaces/NotificationHubs/authorizationRules",
+      "operations": [
+        {
+          "description": "Create Notification Hub Authorization Rules and Update its properties. The Authorization Rules Access Rights, the Primary and Secondary Keys can be updated.",
+          "displayName": "Create or Update Notification hub Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Notification Hub Authorization Rules",
+          "displayName": "Get Notification Hub Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Notification Hub Authorization Rules",
+          "displayName": "Delete Notification Hub Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to the Notification Hub",
+          "displayName": "Get Notification Hub Listkeys",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Notification Hub Authorization Rule Regenerate Primary/SecondaryKey, Specify the Key that needs to be regenerated",
+          "displayName": "Notification Hub Authorization Rule Regenerate Keys",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace metrics",
+      "name": "Namespaces/NotificationHubs/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace metrics Resource Descriptions",
+          "displayName": "Get Namespace metrics",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful registration operations (creations updates queries and deletions). ",
+                  "displayName": "Registration Operations",
+                  "fillGapWithZero": true,
+                  "name": "registration.all",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful registration creations.",
+                  "displayName": "Registration Create Operations",
+                  "fillGapWithZero": true,
+                  "name": "registration.create",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful registration updates.",
+                  "displayName": "Registration Update Operations",
+                  "fillGapWithZero": true,
+                  "name": "registration.update",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful registration queries.",
+                  "displayName": "Registration Read Operations",
+                  "fillGapWithZero": true,
+                  "name": "registration.get",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful registration deletions.",
+                  "displayName": "Registration Delete Operations",
+                  "fillGapWithZero": true,
+                  "name": "registration.delete",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful send API calls. ",
+                  "displayName": "Incoming Messages",
+                  "fillGapWithZero": true,
+                  "name": "incoming",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Scheduled Push Notifications Sent",
+                  "displayName": "Scheduled Push Notifications Sent",
+                  "fillGapWithZero": true,
+                  "name": "incoming.scheduled",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Scheduled Push Notifications Cancelled",
+                  "displayName": "Scheduled Push Notifications Cancelled",
+                  "fillGapWithZero": true,
+                  "name": "incoming.scheduled.cancel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Pending Scheduled Notifications",
+                  "displayName": "Pending Scheduled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "scheduled.pending",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Installation Management Operations",
+                  "displayName": "Installation Management Operations",
+                  "fillGapWithZero": true,
+                  "name": "installation.all",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Get Installation Operations",
+                  "displayName": "Get Installation Operations",
+                  "fillGapWithZero": true,
+                  "name": "installation.get",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Create or Update Installation Operations",
+                  "displayName": "Create or Update Installation Operations",
+                  "fillGapWithZero": true,
+                  "name": "installation.upsert",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Patch Installation Operations",
+                  "displayName": "Patch Installation Operations",
+                  "fillGapWithZero": true,
+                  "name": "installation.patch",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Delete Installation Operations",
+                  "displayName": "Delete Installation Operations",
+                  "fillGapWithZero": true,
+                  "name": "installation.delete",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "Successful notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.allpns.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS returned a bad payload error.",
+                  "displayName": "Payload Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.allpns.invalidpayload",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because there was a problem communicating with the PNS (excludes authentication problems).",
+                  "displayName": "External Notification System Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.allpns.pnserror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the channel was invalid not associated with the correct app throttled or expired.",
+                  "displayName": "Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.allpns.channelerror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the channel/token/registrationId in the registration was expired or invalid.",
+                  "displayName": "Bad or Expired Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.allpns.badorexpiredchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "WNS Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked. (Windows Live does not recognize the credentials).",
+                  "displayName": "WNS Authorization Errors (Invalid Credentials)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.invalidcredentials",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the ChannelURI in the registration was not recognized (WNS status: 404 not found).",
+                  "displayName": "WNS Bad Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.badchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the ChannelURI is expired (WNS status: 410 Gone).",
+                  "displayName": "WNS Expired Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.expiredchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because WNS is throttling this app (WNS status: 406 Not Acceptable).",
+                  "displayName": "WNS Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.throttled",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Windows Live is not reachable.",
+                  "displayName": "WNS Authorization Errors (Unreachable)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.tokenproviderunreachable",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The token provided to WNS is not valid (WNS status: 401 Unauthorized).",
+                  "displayName": "WNS Authorization Errors (Invalid Token)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.invalidtoken",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The token provided to WNS is valid but for another application (WNS status: 403 Forbidden). This can happen if the ChannelURI in the registration is associated with another app. Check that the client app is associated with the same app whose credentials are in the notification hub.",
+                  "displayName": "WNS Authorization Errors (Wrong Token)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.wrongtoken",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The format of the notification is invalid (WNS status: 400). Note that WNS does not reject all invalid payloads.",
+                  "displayName": "WNS Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.invalidnotificationformat",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The notification payload is too large (WNS status: 413).",
+                  "displayName": "WNS Invalid Notification Size Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.invalidnotificationsize",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The notification was dropped because the ChannelURI in the registration is throttled (WNS response header: X-WNS-NotificationStatus:channelThrottled).",
+                  "displayName": "WNS Channel Throttled",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.channelthrottled",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The notification was dropped because the ChannelURI in the registration is throttled (WNS response header: X-WNS-DeviceConnectionStatus: disconnected).",
+                  "displayName": "WNS Channel Disconnected",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.channeldisconnected",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The notification was dropped because the ChannelURI in the registration is throttled (X-WNS-NotificationStatus: dropped but not X-WNS-DeviceConnectionStatus: disconnected).",
+                  "displayName": "WNS Dropped Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.dropped",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Notification not delivered because of errors communicating with WNS.",
+                  "displayName": "WNS Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.pnserror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Notification not delivered because of errors communicating with Windows Live invalid credentials or wrong token.",
+                  "displayName": "WNS Authentication Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.wns.authenticationerror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "APNS Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.apns.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "APNS Authorization Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.apns.invalidcredentials",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the token is invalid (APNS status code: 8).",
+                  "displayName": "APNS Bad Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.apns.badchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of token that were invalidated by the APNS feedback channel.",
+                  "displayName": "APNS Expired Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.apns.expiredchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the payload was too large (APNS status code: 7).",
+                  "displayName": "APNS Invalid Notification Size Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.apns.invalidnotificationsize",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of errors communicating with APNS.",
+                  "displayName": "APNS Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.apns.pnserror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "GCM Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "GCM Authorization Errors (Invalid Credentials)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.invalidcredentials",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the registrationId in the registration was not recognized (GCM result: Invalid Registration).",
+                  "displayName": "GCM Bad Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.badchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the registrationId in the registration was expired (GCM result: NotRegistered).",
+                  "displayName": "GCM Expired Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.expiredchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because GCM throttled this app (GCM status code: 501-599 or result:Unavailable).",
+                  "displayName": "GCM Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.throttled",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the payload was not formatted correctly (GCM result: InvalidDataKey or InvalidTtl).",
+                  "displayName": "GCM Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.invalidnotificationformat",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the payload was too large (GCM result: MessageTooBig).",
+                  "displayName": "GCM Invalid Notification Size Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.invalidnotificationsize",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the registrationId in the registration is not associated to the current app (GCM result: InvalidPackageName).",
+                  "displayName": "GCM Wrong Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.wrongchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of errors communicating with GCM.",
+                  "displayName": "GCM Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.pnserror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials the credentials are blocked or the SenderId is not correctly configured in the app (GCM result: MismatchedSenderId).",
+                  "displayName": "GCM Authentication Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.gcm.authenticationerror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "MPNS Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "MPNS Invalid Credentials",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.invalidcredentials",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the ChannelURI in the registration was not recognized (MPNS status: 404 not found).",
+                  "displayName": "MPNS Bad Channel Error",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.badchannel",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because MPNS is throttling this app (WNS MPNS: 406 Not Acceptable).",
+                  "displayName": "MPNS Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.throttled",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the payload of the notification was too large.",
+                  "displayName": "MPNS Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.invalidnotificationformat",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the ChannelURI in the registration was disconnected (MPNS status: 412 not found).",
+                  "displayName": "MPNS Channel Disconnected",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.channeldisconnected",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that were dropped by MPNS (MPNS response header: X-NotificationStatus: QueueFull or Suppressed).",
+                  "displayName": "MPNS Dropped Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.dropped",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of errors communicating with MPNS.",
+                  "displayName": "MPNS Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.pnserror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "MPNS Authentication Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.mpns.authenticationerror",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "All outgoing notifications of the notification hub",
+                  "displayName": "All Outgoing Notifications",
+                  "fillGapWithZero": true,
+                  "name": "notificationhub.pushes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total incoming requests for a notification hub",
+                  "displayName": "All Incoming Requests",
+                  "fillGapWithZero": true,
+                  "name": "incoming.all.requests",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total incoming failed requests for a notification hub",
+                  "displayName": "All Incoming Failed Requests",
+                  "fillGapWithZero": true,
+                  "name": "incoming.all.failedrequests",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Azure Notification Hub",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Returns a list of supported operations for Notification Hubs provider",
+          "displayName": "Notification Hubs provider operations",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Azure Notification Hub",
+      "name": "operationResults",
+      "operations": [
+        {
+          "description": "Returns operation results for Notification Hubs provider",
+          "displayName": "Operation results for Notification Hubs provider",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Get Namespace diagnostic settings",
+          "displayName": "Read diagnostics setting",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Namespace diagnostic settings",
+          "displayName": "Write diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of Namespace",
+      "name": "namespaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for Namespace",
+          "displayName": "Read Namespace log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Operational Logs",
+                  "name": "OperationalLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "namespaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate Private Endpoint Connection Proxy",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Private Endpoint Connection Proxy",
+          "displayName": "Create Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "namespaces/privateEndpointConnectionProxies/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnectionProxies/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "namespaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Private Endpoint Connection",
+          "displayName": "Create or Update Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes Private Endpoint Connection",
+          "displayName": "Removes Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "namespaces/privateEndpointConnections/operationstatus",
+      "operations": [
+        {
+          "description": "Removes Private Endpoint Connection",
+          "displayName": "Removes Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/namespaces/privateEndpointConnections/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NotificationHub",
+      "name": "Namespaces/NotificationHubs/vapidkeys",
+      "operations": [
+        {
+          "description": "Get new pair of VAPID keys for a Notification Hub",
+          "displayName": "Get VAPID keys for a Notification Hub",
+          "isDataAction": false,
+          "name": "Microsoft.NotificationHubs/Namespaces/NotificationHubs/vapidkeys/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

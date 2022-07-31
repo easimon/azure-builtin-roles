@@ -1,0 +1,680 @@
+{
+  "displayName": "Microsoft Data Share",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataShare",
+  "name": "Microsoft.DataShare",
+  "operations": [
+    {
+      "description": "Register the subscription for the Data Share Resource Provider.",
+      "displayName": "Register Data Share Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataShare/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for the Data Share Resource Provider.",
+      "displayName": "Unregister Data Share Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataShare/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Data Share Resource Provider",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Reads all available operations in Data Share Resource Provider.",
+          "displayName": "Read all operations",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of account",
+      "name": "accounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for account.",
+          "displayName": "Read Account metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Share Name",
+                      "name": "ShareName"
+                    }
+                  ],
+                  "displayDescription": "Number of sent shares in the account",
+                  "displayName": "Sent Shares",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ShareCount",
+                  "name": "ShareCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Share Subscription Name",
+                      "name": "ShareSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Number of received shares in the account",
+                  "displayName": "Received Shares",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ShareSubscriptionCount",
+                  "name": "ShareSubscriptionCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "displayDescription": "Number of sent share succeeded snapshots in the account",
+                  "displayName": "Sent Share Succeeded Snapshots",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SucceededShareSynchronizations",
+                  "name": "SucceededShareSynchronizations",
+                  "supportedAggregationTypes": [
+                    "Count"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "displayDescription": "Number of sent share failed snapshots in the account",
+                  "displayName": "Sent Share Failed Snapshots",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "FailedShareSynchronizations",
+                  "name": "FailedShareSynchronizations",
+                  "supportedAggregationTypes": [
+                    "Count"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "displayDescription": "Number of received share succeeded snapshots in the account",
+                  "displayName": "Received Share Succeeded Snapshots",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SucceededShareSubscriptionSynchronizations",
+                  "name": "SucceededShareSubscriptionSynchronizations",
+                  "supportedAggregationTypes": [
+                    "Count"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "displayDescription": "Number of received share failed snapshots in the account",
+                  "displayName": "Received Share Failed Snapshots",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "FailedShareSubscriptionSynchronizations",
+                  "name": "FailedShareSubscriptionSynchronizations",
+                  "supportedAggregationTypes": [
+                    "Count"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Account",
+      "name": "accounts/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of account",
+      "name": "accounts/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for account.",
+          "displayName": "Read Account log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Shares",
+                  "name": "Shares"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Share Subscriptions",
+                  "name": "ShareSubscriptions"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Sent Share Snapshots",
+                  "name": "SentShareSnapshots"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Received Share Snapshots",
+                  "name": "ReceivedShareSnapshots"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Account",
+      "name": "accounts",
+      "operations": [
+        {
+          "description": "Reads a Data Share Account.",
+          "displayName": "Read Data Share Account",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Data Share Account.",
+          "displayName": "Write Data Share Account",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Data Share Account.",
+          "displayName": "Delete Data Share Account",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Share",
+      "name": "accounts/shares",
+      "operations": [
+        {
+          "description": "Reads a Data Share Share.",
+          "displayName": "Read Data Share Share",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Data Share Share.",
+          "displayName": "Write Data Share Share",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Data Share Share.",
+          "displayName": "Delete Data Share Share",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action For Data Share ListSynchronization.",
+          "displayName": "Data Share ListSynchronization Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/listSynchronizations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action For Data Share ListSynchronization details.",
+          "displayName": "Data Share ListSynchronizationDetails Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/listSynchronizationDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Invitations",
+      "name": "accounts/shares/invitations",
+      "operations": [
+        {
+          "description": "Reads a Data Share Invitation.",
+          "displayName": "Read Data Share Invitations",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/invitations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Data Share Invitation.",
+          "displayName": "Write Data Share Invitations",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/invitations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Data Share Invitation.",
+          "displayName": "Delete Data Share Invitations",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/invitations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share DataSet",
+      "name": "accounts/shares/dataSets",
+      "operations": [
+        {
+          "description": "Reads a DataSet.",
+          "displayName": "Read Data Share DataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/dataSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Data Share DataSet.",
+          "displayName": "Write Data Share DataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/dataSets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Data Share DataSet.",
+          "displayName": "Delete Data Share DataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/dataSets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Provider Share Subscriptions",
+      "name": "accounts/shares/providerShareSubscriptions",
+      "operations": [
+        {
+          "description": "Reads a Data Share Provider ShareSubscription.",
+          "displayName": "Read Data Share Provider ShareSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Revokes a Data Share Subscription.",
+          "displayName": "Revoke Data Share Share Subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions/revoke/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reinstates a Data Share Subscription.",
+          "displayName": "Reinstate Data Share share subscription",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions/reinstate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Synchronization Setting",
+      "name": "accounts/shares/synchronizationSettings",
+      "operations": [
+        {
+          "description": "Reads a Data Share Synchronization Setting.",
+          "displayName": "Read Data Share Synchronization Setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/synchronizationSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Data Share Synchronization Setting.",
+          "displayName": "Write Data Share Synchronization Setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/synchronizationSettings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Data Share Synchronization Setting.",
+          "displayName": "Delete Data Share Synchronization Setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/synchronizationSettings/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share ShareSubscription",
+      "name": "accounts/shareSubscriptions",
+      "operations": [
+        {
+          "description": "Cancels a Data Share Synchronization.",
+          "displayName": "Data Share Synchronize Cancel Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/cancelSynchronization/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Data Share Share Subscription.",
+          "displayName": "Delete Data Share Share Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Data Share Source Share SynchronizationSettings.",
+          "displayName": "Data Share ListSourceShareSynchronizationSettings Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/listSourceShareSynchronizationSettings/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Data Share Synchronization Details.",
+          "displayName": "Data Share ListSynchronizationDetails Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/listSynchronizationDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Data Share Synchronizations.",
+          "displayName": "Data Share ListSynchronizations Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/listSynchronizations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Data Share ShareSubscription.",
+          "displayName": "Read Data Share ShareSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Initialize a Data Share Synchronize operation.",
+          "displayName": "Data Share Synchronize Action",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/synchronize/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Data Share ShareSubscription.",
+          "displayName": "Write Data Share ShareSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share ConsumerSourceDataSet",
+      "name": "accounts/shareSubscriptions/consumerSourceDataSets",
+      "operations": [
+        {
+          "description": "Reads a Data Share Consumer Source DataSet.",
+          "displayName": "Read Data Share ConsumerSourceDataSet",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/consumerSourceDataSets/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Long Running Synchronization Operation Result",
+      "name": "accounts/shareSubscriptions/synchronizationOperationResults",
+      "operations": [
+        {
+          "description": "Reads a Data Share Synchronization Operation Result.",
+          "displayName": "Read Data Share SynchronizationOperationResult",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/synchronizationOperationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share DataSetMapping ",
+      "name": "accounts/shareSubscriptions/dataSetMappings",
+      "operations": [
+        {
+          "description": "Deletes a Data Share DataSetMapping.",
+          "displayName": "Delete Data Share DataSetMapping",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/dataSetMappings/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write a Data Share DataSetMapping.",
+          "displayName": "Write Data Share DataSetMapping",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/dataSetMappings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read a Data Share DataSetMapping.",
+          "displayName": "Read Data Share DataSetMapping",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/dataSetMappings/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Trigger",
+      "name": "accounts/shareSubscriptions/triggers",
+      "operations": [
+        {
+          "description": "Reads a Data Share Trigger.",
+          "displayName": "Read Data Share Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/triggers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write a Data Share Trigger.",
+          "displayName": "Write Data Share Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/triggers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Data Share Trigger.",
+          "displayName": "Delete Data Share Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/triggers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share ListInvitation",
+      "name": "listInvitations",
+      "operations": [
+        {
+          "description": "Reads Invitations at a tenant level.",
+          "displayName": "Read Data Share ListInvitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/listInvitations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Long Running Operation Result",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Reads the locations Data Share is supported in.",
+          "displayName": "Read Data Share Location",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/locations/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Share Operation Result",
+      "name": "accounts/shares/operationResults",
+      "operations": [
+        {
+          "description": "Reads a Data Share Share.",
+          "displayName": "Read Data Share Share",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shares/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Long Running Operation Result",
+      "name": "accounts/shareSubscriptions/operationResults",
+      "operations": [
+        {
+          "description": "Reads a Data Share ShareSubscription long running operation status.",
+          "displayName": "Read Data Share ShareSubscription Long Running Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Reject Invitation Operation",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Rejects a Data Share Invitation.",
+          "displayName": "Reject Data Share Invitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/locations/rejectInvitation/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Share Subscription Synchronization",
+      "name": "accounts/shareSubscriptions/shareSubscriptionSynchronizations",
+      "operations": [
+        {
+          "description": "Reads a Data Share Share Subscription Synchronization.",
+          "displayName": "Read Data Share Share Subscription Synchronization",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/accounts/shareSubscriptions/shareSubscriptionSynchronizations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Share Consumer Invitation",
+      "name": "locations/consumerInvitations",
+      "operations": [
+        {
+          "description": "Gets a Data Share Consumer Invitation.",
+          "displayName": "Get Data Share Consumer Invitation",
+          "isDataAction": false,
+          "name": "Microsoft.DataShare/locations/consumerInvitations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

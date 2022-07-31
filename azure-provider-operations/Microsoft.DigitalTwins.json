@@ -1,0 +1,948 @@
+{
+  "displayName": "Azure Digital Twins",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DigitalTwins",
+  "name": "Microsoft.DigitalTwins",
+  "operations": [
+    {
+      "description": "Register the Subscription for the Digital Twins resource provider and enable the creation of Digital Twins instances.",
+      "displayName": "Register the Digital Twins Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DigitalTwins/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Query any Digital Twins Graph",
+      "displayName": "Query Digital Twins Graph",
+      "isDataAction": true,
+      "name": "Microsoft.DigitalTwins/query/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for the Digital Twins Resource Provider",
+      "displayName": "Unregister the Digital Twins Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DigitalTwins/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "digitalTwinsInstances",
+      "name": "digitalTwinsInstances",
+      "operations": [
+        {
+          "description": "Read any Microsoft.DigitalTwins/digitalTwinsInstances resource",
+          "displayName": "Read Azure Digital Twins resource",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update any Microsoft.DigitalTwins/digitalTwinsInstances resource",
+          "displayName": "Create or Update Azure Digital Twins resource",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an Microsoft.DigitalTwins/digitalTwinsInstances resource",
+          "displayName": "Delete Azure Digital Twins resource",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Digital Twin",
+      "name": "digitaltwins",
+      "operations": [
+        {
+          "description": "Read any Digital Twin",
+          "displayName": "Read Digital Twin",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Digital Twin",
+          "displayName": "Create Digital Twin",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Digital Twin",
+          "displayName": "Delete Digital Twin",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Invoke any Command on a Digital Twin",
+          "displayName": "Invoke Command on Digital Twin",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/commands/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Digital Twin Relationship",
+      "name": "digitaltwins/relationships",
+      "operations": [
+        {
+          "description": "Read any Digital Twin Relationship",
+          "displayName": "Read Digital Twin Relationship",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/relationships/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Digital Twin Relationship",
+          "displayName": "Create Digital Twin Relationship",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/relationships/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Digital Twin Relationship",
+          "displayName": "Delete Digital Twin Relationship",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/digitaltwins/relationships/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Event Route",
+      "name": "eventroutes",
+      "operations": [
+        {
+          "description": "Read any Event Route",
+          "displayName": "Read Event Route",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/eventroutes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Event Route",
+          "displayName": "Delete Event Route",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/eventroutes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Event Route",
+          "displayName": "Create Event Route",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/eventroutes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Model",
+      "name": "models",
+      "operations": [
+        {
+          "description": "Read any Model",
+          "displayName": "Read Model",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/models/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Model",
+          "displayName": "Create Model",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/models/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Model",
+          "displayName": "Delete Model",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/models/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "digitalTwinsInstances",
+      "name": "digitalTwinsInstances/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic settings for the resource",
+          "displayName": "Get Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Sets the diagnostic settings for the resource",
+          "displayName": "Set Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "digitalTwinsInstances",
+      "name": "digitalTwinsInstances/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the metric settings for the resource's Azure Monitor",
+          "displayName": "Get Azure Monitor Metric Settings",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "internalName": "Operation",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "The number of messages routed to an endpoint Azure service such as Event Hub, Service Bus or Event Grid.",
+                  "displayName": "Messages Routed",
+                  "fillGapWithZero": true,
+                  "name": "Routing",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "internalName": "Operation",
+                      "name": "EndpointType"
+                    }
+                  ],
+                  "displayDescription": "The percentage of events that result in an error as they are routed from Azure Digital Twins to an endpoint Azure service such as Event Hub, Service Bus or Event Grid.",
+                  "displayName": "Routing Failure Rate",
+                  "fillGapWithZero": true,
+                  "name": "RoutingFailureRate",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "internalName": "Operation",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "Time elapsed between an event getting routed from Azure Digital Twins to when it is posted to the endpoint Azure service such as Event Hub, Service Bus or Event Grid.",
+                  "displayName": "Routing Latency",
+                  "fillGapWithZero": true,
+                  "name": "RoutingLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "internalName": "Operation",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "The number of messages routed to a time series database.",
+                  "displayName": "Data History Messages Routed (preview)",
+                  "fillGapWithZero": true,
+                  "name": "DataHistoryRouting",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "internalName": "Operation",
+                      "name": "EndpointType"
+                    }
+                  ],
+                  "displayDescription": "The percentage of events that result in an error as they are routed from Azure Digital Twins to a time series database.",
+                  "displayName": "Data History Routing Failure Rate (preview)",
+                  "fillGapWithZero": true,
+                  "name": "DataHistoryRoutingFailureRate",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "internalName": "Operation",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "Time elapsed between an event getting routed from Azure Digital Twins to when it is posted to a time series database.",
+                  "displayName": "Data History Routing Latency (preview)",
+                  "fillGapWithZero": true,
+                  "name": "DataHistoryRoutingLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass"
+                    },
+                    {
+                      "displayName": "Status Text",
+                      "name": "StatusText"
+                    }
+                  ],
+                  "displayDescription": "The number of API requests made for Digital Twins read, write, delete and query operations.",
+                  "displayName": "API Requests",
+                  "fillGapWithZero": true,
+                  "name": "ApiRequests",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "The percentage of API requests that the service receives for your instance that return an internal error (500) response code for Digital Twins read, write, delete and query operations.",
+                  "displayName": "API Requests Failure Rate",
+                  "fillGapWithZero": true,
+                  "name": "ApiRequestsFailureRate",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass"
+                    },
+                    {
+                      "displayName": "Status Text",
+                      "name": "StatusText"
+                    }
+                  ],
+                  "displayDescription": "The response time for API requests, i.e. from when the request is received by Azure Digital Twins until the service sends a success/fail result for Digital Twins read, write, delete and query operations.",
+                  "displayName": "API Requests Latency",
+                  "fillGapWithZero": true,
+                  "name": "ApiRequestsLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Meter Id",
+                      "name": "MeterId"
+                    }
+                  ],
+                  "displayDescription": "Billing metric for the count of all API requests made against the Azure Digital Twins service.",
+                  "displayName": "Billing API Operations",
+                  "fillGapWithZero": true,
+                  "name": "BillingApiOperations",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Meter Id",
+                      "name": "MeterId"
+                    }
+                  ],
+                  "displayDescription": "Billing metric for the number of messages sent out from Azure Digital Twins to external endpoints.",
+                  "displayName": "Billing Messages Processed",
+                  "fillGapWithZero": true,
+                  "name": "BillingMessagesProcessed",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Meter Id",
+                      "name": "MeterId"
+                    }
+                  ],
+                  "displayDescription": "The number of Query Units, an internally computed measure of service resource usage, consumed to execute queries.",
+                  "displayName": "Billing Query Units",
+                  "fillGapWithZero": true,
+                  "name": "BillingQueryUnits",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "The number of incoming telemetry events into Azure Digital Twins.",
+                  "displayName": "Ingress Events",
+                  "fillGapWithZero": true,
+                  "name": "IngressEvents",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The percentage of incoming telemetry events for which the service returns an internal error (500) response code.",
+                  "displayName": "Ingress Events Failure Rate",
+                  "fillGapWithZero": true,
+                  "name": "IngressEventsFailureRate",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "The time from when an event arrives to when it is ready to be egressed by Azure Digital Twins, at which point the service sends a success/fail result.",
+                  "displayName": "Ingress Events Latency",
+                  "fillGapWithZero": true,
+                  "name": "IngressEventsLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total number of twins in the Azure Digital Twins instance. Use this metric to determine if you are approaching the service limit for max number of twins allowed per instance.",
+                  "displayName": "Twin Count",
+                  "fillGapWithZero": false,
+                  "name": "TwinCount",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total number of models in the Azure Digital Twins instance. Use this metric to determine if you are approaching the service limit for max number of models allowed per instance.",
+                  "displayName": "Model Count",
+                  "fillGapWithZero": false,
+                  "name": "ModelCount",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "digitalTwinsInstances",
+      "name": "digitalTwinsInstances/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the log settings for the resource's Azure Monitor",
+          "displayName": "Get Azure Monitor Log Settings",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "DigitalTwinsOperation",
+                  "name": "DigitalTwinsOperation"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "EventRoutesOperation",
+                  "name": "EventRoutesOperation"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "DataHistoryOperation",
+                  "name": "DataHistoryOperation"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "ModelsOperation",
+                  "name": "ModelsOperation"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "QueryOperation",
+                  "name": "QueryOperation"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "ResourceProviderOperation",
+                  "name": "ResourceProviderOperation"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Endpoint",
+      "name": "digitalTwinsInstances/endpoints",
+      "operations": [
+        {
+          "description": "Delete any Endpoint of a Digital Twins resource",
+          "displayName": "Delete Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/endpoints/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read any Endpoint of a Digital Twins resource",
+          "displayName": "Read Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/endpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Endpoint of a Digital Twins resource",
+          "displayName": "Write Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/endpoints/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Result",
+      "name": "digitalTwinsInstances/operationsResults",
+      "operations": [
+        {
+          "description": "Read any Operation Result",
+          "displayName": "Read Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/operationsResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Digital Twins Resource Provider",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Check Name Availability of a resource in the Digital Twins Resource Provider",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/locations/checkNameAvailability/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Result",
+      "name": "locations/operationsResults",
+      "operations": [
+        {
+          "description": "Read any Operation Result",
+          "displayName": "Read Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/locations/operationsResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Read all Operations",
+          "displayName": "Read Operations",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateLinkResources",
+      "name": "digitalTwinsInstances/privateLinkResources",
+      "operations": [
+        {
+          "description": "Reads PrivateLinkResources for Digital Twins",
+          "displayName": "Read PrivateLinkResources",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateEndpointConnectionProxies",
+      "name": "digitalTwinsInstances/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate PrivateEndpointConnectionProxies resource",
+          "displayName": "Validate PrivateEndpointConnectionProxies",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read PrivateEndpointConnectionProxies resource",
+          "displayName": "Read PrivateEndpointConnectionProxies",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnectionProxies resource",
+          "displayName": "Write PrivateEndpointConnectionProxies",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnectionProxies resource",
+          "displayName": "Delete PrivateEndpointConnectionProxies",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateEndpointConnectionProxies",
+      "name": "digitalTwinsInstances/privateEndpointConnectionProxies/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of an async operation on a private endpoint connection proxy",
+          "displayName": "Get PrivateEndpointConnectionProxies Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnectionProxies/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateEndpointConnection",
+      "name": "digitalTwinsInstances/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Read PrivateEndpointConnection resource",
+          "displayName": "Read PrivateEndpointConnection",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnection resource",
+          "displayName": "Write PrivateEndpointConnection",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnection resource",
+          "displayName": "Delete PrivateEndpointConnection",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateEndpointConnection",
+      "name": "digitalTwinsInstances/privateEndpointConnections/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of an async operation on a private endpoint connection",
+          "displayName": "Get PrivateEndpointConnection Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnections/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

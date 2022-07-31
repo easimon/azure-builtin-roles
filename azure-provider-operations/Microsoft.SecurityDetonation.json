@@ -1,0 +1,390 @@
+{
+  "displayName": "Microsoft SecurityDetonationChamber",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.SecurityDetonation",
+  "name": "Microsoft.SecurityDetonation",
+  "operations": [],
+  "resourceTypes": [
+    {
+      "displayName": "Name Availability",
+      "name": "checknameavailability",
+      "operations": [
+        {
+          "description": "Checks that resource name is valid and is not in use",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/checknameavailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Submissions",
+      "name": "chambers/submissions",
+      "operations": [
+        {
+          "description": "Allows retrieving submissions using submission IDs for submissions marked as 'shared with Submitter'",
+          "displayName": "List/Get Sumissions",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows creating submissions of files/urls for detonation",
+          "displayName": "Create Sumissions",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows deletion of submissions",
+          "displayName": "Delete Sumissions",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows importing submissions",
+          "displayName": "Submissions Import Action",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/import/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Submissions Admin View",
+      "name": "chambers/submissions/adminview",
+      "operations": [
+        {
+          "description": "Allows retrieving (including in bulk) and deleting submissions using a submission ID",
+          "displayName": "Submissions Admin View Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/adminview/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Submissions Access Key View",
+      "name": "chambers/submissions/accesskeyview",
+      "operations": [
+        {
+          "description": "Allows retrieving (including in bulk) and deleting submissions using a submission ID + access key",
+          "displayName": "Submissions Access Key View Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/accesskeyview/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tokens",
+      "name": "chambers/tokens",
+      "operations": [
+        {
+          "description": "Allows generating a token for a submission, task or file",
+          "displayName": "Tokens Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/tokens/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Platforms",
+      "name": "chambers/platforms",
+      "operations": [
+        {
+          "description": "Allows querying of available platforms",
+          "displayName": "Platforms Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/platforms/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows adding or modifying platforms",
+          "displayName": "Platforms Write",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/platforms/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows deleting available platforms",
+          "displayName": "Platforms Delete",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/platforms/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflows",
+      "name": "chambers/workflows",
+      "operations": [
+        {
+          "description": "Allows querying of available workflows",
+          "displayName": "Workflows Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/workflows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows adding or modifying workflows",
+          "displayName": "Workflows Write",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/workflows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows deleting available workflows",
+          "displayName": "Workflows Delete",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/workflows/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Toolsets",
+      "name": "chambers/toolsets",
+      "operations": [
+        {
+          "description": "Allws querying of available toolsets",
+          "displayName": "Toolsets Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/toolsets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows adding or modifying toolsets",
+          "displayName": "Toolsets Write",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/toolsets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows deleting available toolsets",
+          "displayName": "Toolsets Delete",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/toolsets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of SecurityDetonationChambers",
+      "name": "SecurityDetonationChambers/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for SecurityDetonationChambers",
+          "displayName": "Read SecurityDetonationChambers metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/SecurityDetonationChambers/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Saturation",
+                  "displayDescription": "Percent CPU utilization",
+                  "displayName": "% CPU",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "% Processor Time",
+                  "sourceMdmAccount": "MicrosoftSecurityDetonationChamberShoebox",
+                  "sourceMdmNamespace": "DaaSRPProd",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "SecurityDetonationChambers",
+      "name": "SecurityDetonationChambers/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/SecurityDetonationChambers/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/SecurityDetonationChambers/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Security Detonation Chambers",
+      "name": "chambers",
+      "operations": [
+        {
+          "description": "Creates a SecurityDetonationChamber with the specified parameters or update the properties or tags for the specified SecurityDetonationChamber",
+          "displayName": "Create/Update SecurityDetonationChamber",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/chambers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing SecurityDetonationChamber",
+          "displayName": "Delete SecurityDetonationChamber",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/chambers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the list of SecurityDetonationChambers or gets the properties for the specified SecurityDetonationChamber",
+          "displayName": "List/Get SecurityDetonationChamber(s)",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/chambers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the api key and publishing token for the specified SecurityDetonationChamber",
+          "displayName": "List SecurityDetonationChamber api keys and publishing tokens",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityDetonation/chambers/listsecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Submission Files",
+      "name": "chambers/submissions/files",
+      "operations": [
+        {
+          "description": "Allows reading of submission files",
+          "displayName": "Read Sumission Files",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/files/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Submissions Public View",
+      "name": "chambers/submissions/publicview",
+      "operations": [
+        {
+          "description": "Allows retrieving (including in bulk) submissions which are marked as public",
+          "displayName": "Submissions Public View Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/publicview/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Submissions Analyst View",
+      "name": "chambers/submissions/analystview",
+      "operations": [
+        {
+          "description": "Allows retrieving (including in bulk) and deleting submissions as an analyst",
+          "displayName": "Submissions Analyst View Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/submissions/analystview/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Platforms Metadata",
+      "name": "chambers/platforms/metadata",
+      "operations": [
+        {
+          "description": "Allows reading platforms metadata",
+          "displayName": "Platforms Metadata Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/platforms/metadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflows Metadata",
+      "name": "chambers/workflows/metadata",
+      "operations": [
+        {
+          "description": "Allows reading workflows metadata",
+          "displayName": "Workflows Metadata Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/workflows/metadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Toolsets Metadata",
+      "name": "chambers/toolsets/metadata",
+      "operations": [
+        {
+          "description": "Allows reading toolsets metadata",
+          "displayName": "Toolsets Metadata Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/toolsets/metadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Publish Requests",
+      "name": "chambers/publishRequests",
+      "operations": [
+        {
+          "description": "Allows querying of publish requests",
+          "displayName": "Publish Requests Read",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/publishRequests/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows cancelling publish requests",
+          "displayName": "Publish Requests Cancel",
+          "isDataAction": true,
+          "name": "Microsoft.SecurityDetonation/chambers/publishRequests/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

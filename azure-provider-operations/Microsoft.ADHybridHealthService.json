@@ -1,0 +1,908 @@
+{
+  "displayName": "Microsoft ADHybridHealthService",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ADHybridHealthService",
+  "name": "Microsoft.ADHybridHealthService",
+  "operations": [
+    {
+      "description": "Updates Tenant Configuration.",
+      "displayName": "Updates Tenant Configuration.",
+      "isDataAction": false,
+      "name": "Microsoft.ADHybridHealthService/configuration/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Updates a service instance in the tenant.",
+      "displayName": "Updates a service.",
+      "isDataAction": false,
+      "name": "Microsoft.ADHybridHealthService/services/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Create a new forest for the tenant.",
+      "displayName": "Create a new forest.",
+      "isDataAction": false,
+      "name": "Microsoft.ADHybridHealthService/addsservices/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the ADHybrid Health Service Resource Provider and enables the creation of ADHybrid Health Service resource.",
+      "displayName": "Registers the ADHybrid Health Service Resource Provider.",
+      "isDataAction": false,
+      "name": "Microsoft.ADHybridHealthService/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for ADHybrid Health Service Resource Provider.",
+      "displayName": "Unregisters the ADHybrid Health Service Resource Provider.",
+      "isDataAction": false,
+      "name": "Microsoft.ADHybridHealthService/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Tenant Configuration",
+      "name": "configuration",
+      "operations": [
+        {
+          "description": "Creates a Tenant Configuration.",
+          "displayName": "Creates a new Tenant.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/configuration/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the Tenant Configuration.",
+          "displayName": "Reads Tenant Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/configuration/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services",
+      "operations": [
+        {
+          "description": "Creates a service instance in the tenant.",
+          "displayName": "Creates a service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the service instances in the tenant.",
+          "displayName": "Reads services.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a service instance in the tenant.",
+          "displayName": "Deletes service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a server instance in the service.",
+          "displayName": "Creates a server.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers",
+      "operations": [
+        {
+          "description": "Reads the server instance in the service.",
+          "displayName": "Reads a server.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a server instance in the service.",
+          "displayName": "Deletes server.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Alert",
+      "name": "services/servicemembers/alerts",
+      "operations": [
+        {
+          "description": "Reads the alerts for a server.",
+          "displayName": "Reads the server alerts.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/alerts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Alert",
+      "name": "services/alerts",
+      "operations": [
+        {
+          "description": "Reads the alerts for a service.",
+          "displayName": "Reads the service alerts.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/alerts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the alerts for a service.",
+          "displayName": "Reads the service alerts.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/alerts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/tenantwhitelisting",
+      "operations": [
+        {
+          "description": "Gets feature whitelisting status for a given tenant.",
+          "displayName": "Gets feature whitelisting status.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/tenantwhitelisting/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers/serviceconfiguration",
+      "operations": [
+        {
+          "description": "Gets service configuration for a given tenant.",
+          "displayName": "Gets service configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/serviceconfiguration/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers/metrics/groups",
+      "operations": [
+        {
+          "description": "Given a service, this API gets the metrics information.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.",
+          "displayName": "Gets information about different service metrics.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/metrics/groups/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers/exportstatus",
+      "operations": [
+        {
+          "description": "Gets the Sync Export Error details for a given Sync Service.",
+          "displayName": "Gets the Sync Export Error details.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/exportstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers/datafreshness",
+      "operations": [
+        {
+          "description": "For a given server, this API gets a list of  datatypes that are being uploaded by the servers and the latest time for each upload.",
+          "displayName": "Gets the data freshness status.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/datafreshness/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers/credentials",
+      "operations": [
+        {
+          "description": "During server registration, this api is called to get the credentials for onboarding new servers.",
+          "displayName": "Gets the credentials for service authentication.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/credentials/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/reports/details",
+      "operations": [
+        {
+          "description": "Gets report of top 50 users with bad password errors from last 7 days",
+          "displayName": "Gets report for bad password.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/reports/details/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/premiumcheck",
+      "operations": [
+        {
+          "description": "This API gets the list of all onboarded services for a premium tenant.",
+          "displayName": "Gets onboarded services for premium tenants.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/premiumcheck/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/monitoringconfigurations",
+      "operations": [
+        {
+          "description": "Gets the monitoring configurations for a given service.",
+          "displayName": "Gets monitoring configurations for a service",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/monitoringconfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Add or updates monitoring configurations for a service.",
+          "displayName": "Add or updates monitoring configurations for a service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/monitoringconfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/monitoringconfiguration",
+      "operations": [
+        {
+          "description": "Add or updates monitoring configuration for a service.",
+          "displayName": "Add or updates monitoring configuration for a service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/monitoringconfiguration/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/metrics/groups/sum",
+      "operations": [
+        {
+          "description": "Given a service, this API gets the aggregated view for metrics for a given service.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.",
+          "displayName": "Gets aggregated view for metrics and performance data.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/metrics/groups/sum/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/metrics/groups",
+      "operations": [
+        {
+          "description": "Given a service, this API gets the metrics information.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.",
+          "displayName": "Gets information about different service metrics.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/metrics/groups/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/metrics/groups/average",
+      "operations": [
+        {
+          "description": "Given a service, this API gets the average for metrics for a given service.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.",
+          "displayName": "Gets average view for metrics and performance data.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/metrics/groups/average/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/metricmetadata",
+      "operations": [
+        {
+          "description": "Gets the list of supported metrics for a given service. For example Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFS service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomainService. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for ADSync service.",
+          "displayName": "Gets the list of supported metrics for a given service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/metricmetadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/exportstatus",
+      "operations": [
+        {
+          "description": "Gets the export status for a given service.",
+          "displayName": "Gets the export status for a given service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/exportstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/exporterrors",
+      "operations": [
+        {
+          "description": "Gets the export errors for a given sync service.",
+          "displayName": "Gets the export errors for a given sync service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/exporterrors/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/checkservicefeatureavailibility",
+      "operations": [
+        {
+          "description": "Given a feature name verifies if a service has everything required to use that feature.",
+          "displayName": "Gets if a feature is enabled for a service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/checkservicefeatureavailibility/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/updateselecteddeployment",
+      "operations": [
+        {
+          "description": "Gets the geo location from which data will be accessed.",
+          "displayName": "Gets the browsing location for the users.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/updateselecteddeployment/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/tenantassigneddeployment",
+      "operations": [
+        {
+          "description": "Given a tenant id gets the tenant storage location.",
+          "displayName": "Gets tenant storage mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/tenantassigneddeployment/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/selecteddeployment",
+      "operations": [
+        {
+          "description": "Gets selected deployment for the given tenant.",
+          "displayName": "Gets selected deployment.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/selecteddeployment/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/selectdevopstenant",
+      "operations": [
+        {
+          "description": "Updates userid(objectid) for the selected dev ops tenant.",
+          "displayName": "Updates userid(objectid) for the selected dev ops tenant.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/selectdevopstenant/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/isdevops",
+      "operations": [
+        {
+          "description": "Gets a value indicating wheather the teannt is DevOps Consented or not.",
+          "displayName": "Gets a value indicating wheather the teannt is DevOps Consented or not.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/isdevops/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/consentedtodevopstenants",
+      "operations": [
+        {
+          "description": "Gets the list of DevOps consented tenants. Typically used for customer support.",
+          "displayName": "Gets the list of DevOps consented tenants.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/consentedtodevopstenants/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Technical Advisor Reports",
+      "name": "reports/badpassworduseridipfrequency",
+      "operations": [
+        {
+          "description": "Gets Blob SAS URI containing status and eventual result of newly enqueued report job for frequency of Bad Username/Password attempts per UserId per IPAddress per Day for a given Tenant.",
+          "displayName": "Gets Blob SAS Uri for enqueued report job.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/badpassworduseridipfrequency/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/availabledeployments",
+      "operations": [
+        {
+          "description": "Gets list of available regions, used by DevOps to support customer incidents.",
+          "displayName": "Gets list of available regions for DevOps.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/availabledeployments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DevOps Reports",
+      "name": "reports/badpassword",
+      "operations": [
+        {
+          "description": "Gets the list of bad password attempts for all the users in Active Directory Federation Service.",
+          "displayName": "Gets the list of bad password attempts.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/reports/badpassword/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agent Logs",
+      "name": "logs",
+      "operations": [
+        {
+          "description": "Gets agent installation and registration logs for the tenant.",
+          "displayName": "Gets agent logs.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/logs/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agent Logs",
+      "name": "logs/contents",
+      "operations": [
+        {
+          "description": "Gets the content of agent installation and registration logs stored in blob.",
+          "displayName": "Gets the content of a log stored in blob.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/logs/contents/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices",
+      "operations": [
+        {
+          "description": "Creates or Updates the ADDomainService instance for the tenant.",
+          "displayName": "Creates or Updates the ADDomainService.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Add a server instance to the service.",
+          "displayName": "Add a server.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/servicemembers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Service details for the specified service name.",
+          "displayName": "Gets Service details.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Service and it's servers along with Health data.",
+          "displayName": "Deletes a Service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService Server",
+      "name": "addsservices/servicemembers/credentials",
+      "operations": [
+        {
+          "description": "During server registration of ADDomainService, this api is called to get the credentials for onboarding new servers.",
+          "displayName": "Gets the credentials for service authentication.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/servicemembers/credentials/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/servicemembers",
+      "operations": [
+        {
+          "description": "Deletes a server for a given service and tenant.",
+          "displayName": "Deletes a server.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/servicemembers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/replicationsummary",
+      "operations": [
+        {
+          "description": "Gets complete domain controller list along with replication details for the given forest.",
+          "displayName": "Gets domain controller replication summary.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/replicationsummary/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/replicationstatus",
+      "operations": [
+        {
+          "description": "Gets the number of domain controllers and their replication errors if any.",
+          "displayName": "Gets replication error status.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/replicationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/premiumcheck",
+      "operations": [
+        {
+          "description": "This API gets the list of all onboarded ADDomainServices for a premium tenant.",
+          "displayName": "Gets onboarded ADDomainServices for a premium tenant.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/premiumcheck/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/metrics/groups",
+      "operations": [
+        {
+          "description": "Given a service, this API gets the metrics information.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.",
+          "displayName": "Gets information about different service metrics.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/metrics/groups/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/metricmetadata",
+      "operations": [
+        {
+          "description": "Gets the list of supported metrics for a given service. For example Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFS service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomainService. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for ADSync service.",
+          "displayName": "Gets the list of supported metrics for a given service.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/metricmetadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/forestsummary",
+      "operations": [
+        {
+          "description": "Gets forest summary for the given forest like forest name, number of domains under this forest, number of sites and sites details etc.",
+          "displayName": "Gets forest summary.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/forestsummary/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/features/userpreference",
+      "operations": [
+        {
+          "description": "Gets the user preference setting for the forest. Example- MetricCounterName like ldapsuccessfulbinds, ntlmauthentications, kerberosauthentications, addsinsightsagentprivatebytes, ldapsearches. Settings for the UI Charts etc.",
+          "displayName": "Gets the user preference setting.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/features/userpreference/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/dimensions",
+      "operations": [
+        {
+          "description": "Gets the domains and sites details for the forest. Example- health status, active alerts, resolved alerts, properties like Domain Functional Level, Forest, Infrastructure Master, PDC, RID master etc. ",
+          "displayName": "Gets the domains and sites details for the forest.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/dimensions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/configuration",
+      "operations": [
+        {
+          "description": "Gets Service Configuration for the forest. Example- Forest Name, Functionla Level, Domain Naming master FSMO role, Schema master FSMO role etc.",
+          "displayName": "Gets Service Configuration for the forest.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/configuration/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/alerts",
+      "operations": [
+        {
+          "description": "Gets alerts details for the forest like alertid, alert raised date, alert last detected, alert description, last updated, alert level, alert state, alert troubleshooting links etc. .",
+          "displayName": "Gets alerts for the forest.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/alerts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/feedbacktype/feedback",
+      "operations": [
+        {
+          "description": "Gets alerts feedback for a given service and server.",
+          "displayName": "Gets alerts feedback.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/feedbacktype/feedback/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/addomainservicemembers",
+      "operations": [
+        {
+          "description": "Gets all servers for the specified service name.",
+          "displayName": "Gets all servers.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/addomainservicemembers/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADDomainService",
+      "name": "addsservices/replicationdetails",
+      "operations": [
+        {
+          "description": "Gets replication details for all the servers for the specified service name.",
+          "displayName": "Gets replication details.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/addsservices/replicationdetails/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Gets list of operations supported by system.",
+          "displayName": "Gets operations.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Member",
+      "name": "services/servicemembers/metrics",
+      "operations": [
+        {
+          "description": "Gets the list of connectors and run profile names for the given service and service member.",
+          "displayName": "Gets the list of connectors and run profile names.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/servicemembers/metrics/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/reports/blobUris",
+      "operations": [
+        {
+          "description": "Gets all Risky IP report URIs for the last 7 days.",
+          "displayName": "Gets all Risky IP report URIs.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/reports/blobUris/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/reports",
+      "operations": [
+        {
+          "description": "Generates Risky IP report and returns a URI pointing to it.",
+          "displayName": "Initiate generation of new risky IP report.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/reports/generateBlobUri/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/ipAddressAggregateSettings",
+      "operations": [
+        {
+          "description": "Reads alarm thresholds for bad IPs.",
+          "displayName": "Reads ipAddressAggregateSettings.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/ipAddressAggregateSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes alarm thresholds for bad IPs.",
+          "displayName": "Writes ipAddressAggregateSettings.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/ipAddressAggregateSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "services/ipAddressAggregates",
+      "operations": [
+        {
+          "description": "Reads the bad IPs which attempted to access the service.",
+          "displayName": "Reads ipAddressAggregates.",
+          "isDataAction": false,
+          "name": "Microsoft.ADHybridHealthService/services/ipAddressAggregates/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,459 @@
+{
+  "displayName": "Microsoft App Configuration",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.AppConfiguration",
+  "name": "Microsoft.AppConfiguration",
+  "operations": [
+    {
+      "description": "Registers a subscription to use Microsoft App Configuration.",
+      "displayName": "Register for Microsoft App Configuration",
+      "isDataAction": false,
+      "name": "Microsoft.AppConfiguration/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters a subscription from using Microsoft App Configuration.",
+      "displayName": "Unregister for Microsoft App Configuration",
+      "isDataAction": false,
+      "name": "Microsoft.AppConfiguration/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "",
+      "name": "checkNameAvailability",
+      "operations": [
+        {
+          "description": "Check whether the resource name is available for use.",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Configuration Store",
+      "name": "configurationStores",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified configuration store or lists all the configuration stores under the specified resource group or subscription.",
+          "displayName": "Get Configuration Store or List Configuration Stores",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a configuration store with the specified parameters.",
+          "displayName": "Create or Update Configuration Store",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a configuration store.",
+          "displayName": "Delete Configuration Store",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the API keys for the specified configuration store.",
+          "displayName": "List Configuration Store API Keys",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/ListKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates of the API key's for the specified configuration store.",
+          "displayName": "Regenerate Configuration Store API Key",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/RegenerateKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists a key-value for the specified configuration store.",
+          "displayName": "List Configuration Store Key-Value",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/ListKeyValue/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Auto-Approve a private endpoint connection under the specified configuration store.",
+          "displayName": "Auto-Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/PrivateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Configuration Store Event Grid Filter",
+      "name": "configurationStores/eventGridFilters",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified configuration store event grid filter or lists all the configuration store event grid filters under the specified configuration store.",
+          "displayName": "Get Configuration Store Event Grid Filter or List Configuration Store Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a configuration store event grid filter with the specified parameters.",
+          "displayName": "Create or Update Configuration Store Event Grid Filter",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a configuration store event grid filter.",
+          "displayName": "Delete Configuration Store Event Grid Filter",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists all of the operations supported by Microsoft App Configuration.",
+          "displayName": "List Operations",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "configurationStores/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate a private endpoint connection proxy under the specified configuration store.",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a private endpoint connection proxy under the specified configuration store.",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a private endpoint connection proxy under the specified configuration store.",
+          "displayName": "Create or Update Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a private endpoint connection proxy under the specified configuration store.",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key-Value",
+      "name": "configurationStores/keyValues",
+      "operations": [
+        {
+          "description": "Reads a key-value from the configuration store.",
+          "displayName": "Read Key-Value",
+          "isDataAction": true,
+          "name": "Microsoft.AppConfiguration/configurationStores/keyValues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a key-value in the configuration store.",
+          "displayName": "Write Key-Value",
+          "isDataAction": true,
+          "name": "Microsoft.AppConfiguration/configurationStores/keyValues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing key-value from the configuration store.",
+          "displayName": "Delete Key-Value",
+          "isDataAction": true,
+          "name": "Microsoft.AppConfiguration/configurationStores/keyValues/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations/operationsStatus",
+      "operations": [
+        {
+          "description": "Get the status of an operation.",
+          "displayName": "Get Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/locations/operationsStatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft App Configuration Metric Definition.",
+      "name": "configurationStores/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Retrieve all metric definitions for Microsoft App Configuration.",
+          "displayName": "Read Configuration Store Metric Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Count",
+                  "dimensions": [
+                    {
+                      "displayName": "HttpStatusCode",
+                      "internalName": "StatusCode",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "AuthenticationScheme",
+                      "internalName": "Authentication",
+                      "name": "Authentication"
+                    }
+                  ],
+                  "displayDescription": "Total number of incoming http requests.",
+                  "displayName": "HttpIncomingRequestCount",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "HttpIncomingRequestCount",
+                  "name": "HttpIncomingRequestCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "HttpStatusCode",
+                      "internalName": "StatusCode",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "AuthenticationScheme",
+                      "internalName": "Authentication",
+                      "name": "Authentication"
+                    }
+                  ],
+                  "displayDescription": "Latency on an http request.",
+                  "displayName": "HttpIncomingRequestDuration",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "HttpIncomingRequestDuration",
+                  "name": "HttpIncomingRequestDuration",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "displayDescription": "Throttled http requests.",
+                  "displayName": "ThrottledHttpRequestCount",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ThrottledHttpRequestCount",
+                  "name": "ThrottledHttpRequestCount",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Configuration Store",
+      "name": "configurationStores/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Read all Diagnostic Settings values for a Configuration Store.",
+          "displayName": "Read Configuration Store Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write/Overwrite Diagnostic Settings for Microsoft App Configuration.",
+          "displayName": "Write Configuration Store Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "configurationStores/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get a private endpoint connection or list private endpoint connections under the specified configuration store.",
+          "displayName": "Get Private Endpoint Connection or List Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a private endpoint connection under the specified configuration store.",
+          "displayName": "Approve or Reject Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a private endpoint connection under the specified configuration store.",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link",
+      "name": "configurationStores/privateLinkResources",
+      "operations": [
+        {
+          "description": "Lists all the private link resources under the specified configuration store.",
+          "displayName": "List Private Link",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft App Configuration Log Definition.",
+      "name": "configurationStores/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Retrieve all log definitions for Microsoft App Configuration.",
+          "displayName": "Read Configuration Store Log Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "displayName": "HTTP Requests",
+                  "name": "HttpRequest"
+                },
+                {
+                  "displayName": "Audit",
+                  "name": "Audit"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations/checkNameAvailability",
+      "operations": [
+        {
+          "description": "Check whether the resource name is available for use.",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/locations/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deleted Configuration Store",
+      "name": "locations/deletedConfigurationStores",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified deleted configuration store or lists all the deleted configuration stores under the specified subscription.",
+          "displayName": "Get Deleted Configuration Store or List Deleted Configuration Stores",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/locations/deletedConfigurationStores/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purge the specified deleted configuration store.",
+          "displayName": "Purge Deleted Configuration Store",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/locations/deletedConfigurationStores/purge/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replica",
+      "name": "configurationStores/replicas",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified replica or lists all the replicas under the specified configuration store.",
+          "displayName": "Get Replica or List Replicas",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/replicas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a replica with the specified parameters.",
+          "displayName": "Create Replica",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/replicas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a replica.",
+          "displayName": "Delete Replica",
+          "isDataAction": false,
+          "name": "Microsoft.AppConfiguration/configurationStores/replicas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}
