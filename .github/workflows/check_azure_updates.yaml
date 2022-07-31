@@ -7,16 +7,20 @@ on:
     - cron: "17 * * * *"
 
 env:
-  ROLES_DIR: azure-roles
+  ROLES_DIR:   azure-roles
+  OPERATIONS_DIR: azure-provider-operations
 
 permissions:
   id-token: write
   contents: write
 
 jobs:
-  check-for-updates:
-    name: Check for updates
+  update-azure-roles:
+    name: Update Azure Role Definitions
     runs-on: ubuntu-latest
+    concurrency:
+      group: update-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -27,6 +31,26 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Fetch current role definitions
-        run: ./scripts/fetch-updates.sh "${{ env.ROLES_DIR }}"
+        run: ./scripts/fetch-azure-roles.sh "${{ env.ROLES_DIR }}"
       - name: Check for differences
         run: ./scripts/process-changes.sh "${{ env.ROLES_DIR }}"
+
+  update-azure-operations:
+    name: Update Azure Provider Operation Definitions
+    runs-on: ubuntu-latest
+    concurrency:
+      group: update-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Azure login
+        uses: Azure/login@v1.4.5
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Fetch current operation definitions
+        run: ./scripts/fetch-azure-operations.sh "${{ env.OPERATIONS_DIR }}"
+      - name: Check for differences
+        run: ./scripts/process-changes.sh "${{ env.OPERATIONS_DIR }}"

@@ -9,7 +9,10 @@ DIR="$1"
 
 case "${DIR}" in
   "azure-roles")
-    ROLE_TYPE="Azure Built-In Role"
+    DEFINITION_TYPE="Azure Built-In Role"
+    ;;
+  "azure-provider-operations")
+    DEFINITION_TYPE="Azure Provider Operations"
     ;;
   *)
     echo "Unknown directory: $DIR"
@@ -17,6 +20,6 @@ case "${DIR}" in
     ;;
 esac
 
-"${SCRIPT_DIR}/_process-additions.sh" "${DIR}" "${ROLE_TYPE}"
-"${SCRIPT_DIR}/_process-removals.sh" "${DIR}" "${ROLE_TYPE}"
-"${SCRIPT_DIR}/_process-modifications.sh" "${DIR}" "${ROLE_TYPE}"
+"${SCRIPT_DIR}/_process-additions.sh" "${DIR}" "${DEFINITION_TYPE}"
+"${SCRIPT_DIR}/_process-removals.sh" "${DIR}" "${DEFINITION_TYPE}"
+"${SCRIPT_DIR}/_process-modifications.sh" "${DIR}" "${DEFINITION_TYPE}"
