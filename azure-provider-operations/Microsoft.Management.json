@@ -1,0 +1,138 @@
+{
+  "displayName": "Microsoft Management",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Management",
+  "name": "Microsoft.Management",
+  "operations": [
+    {
+      "description": "Checks if the specified management group name is valid and unique.",
+      "displayName": "Check Name Availability",
+      "isDataAction": false,
+      "name": "Microsoft.Management/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "List all entities (Management Groups, Subscriptions, etc.) for the authenticated user.",
+      "displayName": "List Entities",
+      "isDataAction": false,
+      "name": "Microsoft.Management/getEntities/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Register the specified subscription with Microsoft.Management",
+      "displayName": "Register for Microsoft.Management",
+      "isDataAction": false,
+      "name": "Microsoft.Management/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "managementGroups",
+      "name": "managementGroups",
+      "operations": [
+        {
+          "description": "List management groups for the authenticated user.",
+          "displayName": "List Groups",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a management group.",
+          "displayName": "Create or Update",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete management group.",
+          "displayName": "Delete Group",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "managementGroups",
+      "name": "managementGroups/subscriptions",
+      "operations": [
+        {
+          "description": "Lists subscription under the given management group.",
+          "displayName": "Lists Management Group Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/subscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Associates existing subscription with the management group.",
+          "displayName": "Add Management Group Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/subscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "De-associates subscription from the management group.",
+          "displayName": "Delete Management Group Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/subscriptions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "managementGroups",
+      "name": "managementGroups/descendants",
+      "operations": [
+        {
+          "description": "Gets all the descendants (Management Groups, Subscriptions) of a Management Group.",
+          "displayName": "Get Group Descendants",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/descendants/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "managementGroups",
+      "name": "managementGroups/settings",
+      "operations": [
+        {
+          "description": "Lists existing management group hierarchy settings.",
+          "displayName": "List Management Group Hierarchy Settings",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/settings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates management group hierarchy settings.",
+          "displayName": "Creates or updates Management Group Hierarchy Settings",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/settings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes management group hierarchy settings.",
+          "displayName": "Deletes Management Group Hierarchy Settings",
+          "isDataAction": false,
+          "name": "Microsoft.Management/managementGroups/settings/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

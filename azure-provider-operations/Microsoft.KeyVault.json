@@ -1,0 +1,1394 @@
+{
+  "displayName": "Microsoft Key Vault",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.KeyVault",
+  "name": "Microsoft.KeyVault",
+  "operations": [
+    {
+      "description": "Registers a subscription",
+      "displayName": "Register Subscription",
+      "isDataAction": false,
+      "name": "Microsoft.KeyVault/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters a subscription",
+      "displayName": "Unregister Subscription",
+      "isDataAction": false,
+      "name": "Microsoft.KeyVault/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Key Vault",
+      "name": "vaults",
+      "operations": [
+        {
+          "description": "View the properties of a key vault",
+          "displayName": "View Key Vault",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new key vault or updates the properties of an existing key vault. Certain properties may require more permissions.",
+          "displayName": "Update Key Vault",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a key vault",
+          "displayName": "Delete Key Vault",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables access to secrets in a key vault when deploying Azure resources",
+          "displayName": "Use Vault for Azure Deployments",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/deploy/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Approve or reject a Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/PrivateEndpointConnectionsApproval/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Secret",
+      "name": "vaults/secrets",
+      "operations": [
+        {
+          "description": "View the properties of a secret, but not its value.",
+          "displayName": "Read Secret Properties",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/secrets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new secret or updates the value of an existing secret.",
+          "displayName": "Write Secret",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/secrets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a secret. All versions are deleted.",
+          "displayName": "Delete Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the backup file of a secret. The file can used to restore the secret in a Key Vault of same subscription. Restrictions may apply.",
+          "displayName": "Backup Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/backup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purges a secret, making it unrecoverable.",
+          "displayName": "Purge Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/purge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the specified attributes associated with the given secret.",
+          "displayName": "Update Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/update/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Recovers the deleted secret. The operation performs the reversal of the Delete operation. The operation is applicable in vaults enabled for soft-delete, and must be issued during the retention interval.",
+          "displayName": "Recover Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/recover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores a secret and all its versions from a backup file generated by Key Vault.",
+          "displayName": "Restore Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/restore/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List or view the properties of a secret, but not its value.",
+          "displayName": "List or Read Secret Properties",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/readMetadata/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the value of a secret.",
+          "displayName": "Get Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/getSecret/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Sets the value of a secret. If the secret does not exist, the first version is created. Otherwise, a new version is created with the specified value.",
+          "displayName": "Set Secret",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/secrets/setSecret/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Access Policy",
+      "name": "vaults/accessPolicies",
+      "operations": [
+        {
+          "description": "Updates an existing access policy by merging or replacing, or adds a new access policy to the key vault.",
+          "displayName": "Update Access Policy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/accessPolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key Vault Log Definition",
+      "name": "vaults/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for a key vault",
+          "displayName": "Read log definition",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Audit Logs",
+                  "name": "AuditEvent"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Azure Policy Evaluation Details",
+                  "name": "AzurePolicyEvaluationDetails"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Key Vault Diagnostic Settings",
+      "name": "vaults/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/providers/Microsoft.Insights/diagnosticSettings/Read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/providers/Microsoft.Insights/diagnosticSettings/Write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists operations available on Microsoft.KeyVault resource provider",
+          "displayName": "Available Key Vault Operations",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Name Availability",
+      "name": "checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks that a key vault name is valid and is not in use",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Soft Deleted Key Vault",
+      "name": "deletedVaults",
+      "operations": [
+        {
+          "description": "View the properties of soft deleted key vaults",
+          "displayName": "View Soft Deleted Vaults",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/deletedVaults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Soft Deleted Key Vault",
+      "name": "locations/deletedVaults",
+      "operations": [
+        {
+          "description": "View the properties of a soft deleted key vault",
+          "displayName": "View Soft Deleted Key Vault",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/deletedVaults/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purge a soft deleted key vault",
+          "displayName": "Purge Soft Deleted Key Vault",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/deletedVaults/purge/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Long Run Operation Result",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Check the result of a long run operation",
+          "displayName": "Check Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Location",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Notifies Microsoft.KeyVault that a virtual network or subnet is being deleted",
+          "displayName": "Delete virtual network or subnets notification",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/deleteVirtualNetworkOrSubnets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HSM pool",
+      "name": "hsmPools",
+      "operations": [
+        {
+          "description": "View the properties of an HSM pool",
+          "displayName": "View HSM pool",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/hsmPools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new HSM pool of update the properties of an existing HSM pool",
+          "displayName": "Create or Update HSM pool",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/hsmPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an HSM pool",
+          "displayName": "Delete HSM pool",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/hsmPools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Join a key vault to an HSM pool",
+          "displayName": "Join KeyVault to HSM pool",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/hsmPools/joinVault/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key Vault Metric Definition",
+      "name": "vaults/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for a key vault",
+          "displayName": "Read metric definition",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Count",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of total service api hits",
+                  "displayName": "Total Service Api Hits",
+                  "fillGapWithZero": true,
+                  "name": "ServiceApiHit",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Overall latency of service api requests",
+                  "displayName": "Overall Service Api Latency",
+                  "fillGapWithZero": false,
+                  "name": "ServiceApiLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Count",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of total service api results",
+                  "displayName": "Total Service Api Results",
+                  "fillGapWithZero": true,
+                  "name": "ServiceApiResult",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Transaction Type",
+                      "name": "TransactionType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Vault capacity used",
+                  "displayName": "Overall Vault Saturation",
+                  "fillGapWithZero": false,
+                  "lockAggregationType": "Average",
+                  "name": "SaturationShoebox",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Vault requests availability",
+                  "displayName": "Overall Vault Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "EventGrid Subscription for Key Vault",
+      "name": "vaults/eventGridFilters",
+      "operations": [
+        {
+          "description": "Notifies Microsoft.KeyVault that an EventGrid Subscription for Key Vault is being viewed",
+          "displayName": "View EventGrid Subscription for Key Vault notification",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Notifies Microsoft.KeyVault that a new EventGrid Subscription for Key Vault is being created",
+          "displayName": "Create EventGrid Subscription for Key Vault notification",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Notifies Microsoft.KeyVault that an EventGrid Subscription for Key Vault is being deleted",
+          "displayName": "Delete EventGrid Subscription for Key Vault notification",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key Vault",
+      "name": "vaults/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get the available private link resources for the specified instance of Key Vault",
+          "displayName": "Get private link resources",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateLinkResources/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "vaults/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "View the state of a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "View state of Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnectionProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Change the state of a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Change state of Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnectionProxies/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Delete a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnectionProxies/delete",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Validate a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Validate a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnectionProxies/validate/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "vaults/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "View the state of a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "View state of Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnections/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Change the state of a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Change state of Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnections/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Delete a Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/privateEndpointConnections/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificate Issuer",
+      "name": "vaults/certificatecas",
+      "operations": [
+        {
+          "description": "Delete Certificate Issuer",
+          "displayName": "Delete Certificate Issuer",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificatecas/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read Certificate Issuer",
+          "displayName": "Read Certificate Issuer",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificatecas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write Certificate Issuer",
+          "displayName": "Write Certificate Issuer",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificatecas/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificate Contact",
+      "name": "vaults/certificatecontacts",
+      "operations": [
+        {
+          "description": "Manage Certificate Contact",
+          "displayName": "Manage Certificate Contact",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificatecontacts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificate",
+      "name": "vaults/certificates",
+      "operations": [
+        {
+          "description": "Deletes a certificate. All versions are deleted.",
+          "displayName": "Delete Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List certificates in a specified key vault, or get information about a certificate.",
+          "displayName": "Read Certificate Properties",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the backup file of a certificate. The file can used to restore the certificate in a Key Vault of same subscription. Restrictions may apply.",
+          "displayName": "Backup Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/backup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purges a certificate, making it unrecoverable.",
+          "displayName": "Purge Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/purge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the specified attributes associated with the given certificate.",
+          "displayName": "Update Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/update/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new certificate. If the certificate does not exist, the first version is created. Otherwise, a new version is created.",
+          "displayName": "Create Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/create/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Imports an existing valid certificate containing a private key. The certificate to be imported can be in either PFX or PEM format. If the certificate does not exist in Key Vault, the first version is created with specified content. Otherwise, a new version is created with specified content.",
+          "displayName": "Import Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/import/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Recovers the deleted certificate. The operation performs the reversal of the Delete operation. The operation is applicable in vaults enabled for soft-delete, and must be issued during the retention interval.",
+          "displayName": "Recover Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/recover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores a certificate and all its versions from a backup file generated by Key Vault.",
+          "displayName": "Restore Certificate",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/certificates/restore/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key",
+      "name": "vaults/keys",
+      "operations": [
+        {
+          "description": "List the keys in a specified vault, or read the current version of a specified key.",
+          "displayName": "Read Key",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/keys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the first version of a new key if it does not exist. If it already exists, then the existing key is returned without any modification. This API does not create subsequent versions, and does not update existing keys.",
+          "displayName": "Create Key (if not exist)",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/keys/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List keys in the specified vault, or read properties and public material of a key. For asymmetric keys, this operation exposes public key and includes ability to perform public key algorithms such as encrypt and verify signature. Private keys and symmetric keys are never exposed.",
+          "displayName": "Read Key Properties and Public Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the specified attributes associated with the given key.",
+          "displayName": "Update Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/update/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new key. If the key does not exist, the first version is created. Otherwise, a new version is created with the specified value.",
+          "displayName": "Create Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/create/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Imports an externally created key. If the key does not exist, the first version is created with the imported material. Otherwise, a new version is created with the imported material.",
+          "displayName": "Import Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/import/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Recovers the deleted key. The operation performs the reversal of the Delete operation. The operation is applicable in vaults enabled for soft-delete, and must be issued during the retention interval.",
+          "displayName": "Recover Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/recover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores a key and all its versions from a backup file generated by Key Vault.",
+          "displayName": "Restore Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/restore/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a key. All versions are deleted.",
+          "displayName": "Delete Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the backup file of a key. The file can used to restore the key in a Key Vault of same subscription. Restrictions may apply.",
+          "displayName": "Backup Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/backup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purges a key, making it unrecoverable.",
+          "displayName": "Purge Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/purge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Encrypts plaintext with a key. Note that if the key is asymmetric, this operation can be performed by principals with read access.",
+          "displayName": "Encrypt with Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/encrypt/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Decrypts ciphertext with a key.",
+          "displayName": "Decrypt with Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/decrypt/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Wraps a symmetric key with a Key Vault key. Note that if the Key Vault key is asymmetric, this operation can be performed by principals with read access.",
+          "displayName": "Wrap with Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/wrap/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Unwraps a symmetric key with a Key Vault key.",
+          "displayName": "Unwrap with Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/unwrap/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Signs a message digest (hash) with a key.",
+          "displayName": "Sign with Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/sign/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verifies the signature of a message digest (hash) with a key. Note that if the key is asymmetric, this operation can be performed by principals with read access.",
+          "displayName": "Verify With Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/verify/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Release a key using public part of KEK from attestation token.",
+          "displayName": "Release a Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/release/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new version of an existing key (with the same parameters).",
+          "displayName": "Rotate Key",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keys/rotate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Storage Account",
+      "name": "vaults/storageaccounts",
+      "operations": [
+        {
+          "description": "Read definition of managed storage accounts.",
+          "displayName": "Read Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the definition of a managed storage account.",
+          "displayName": "Set Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/set/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the definition of a managed storage account.",
+          "displayName": "Delete Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a backup file of the definition of a managed storage account and its SAS (Shared Access Signature).",
+          "displayName": "Backup Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/backup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purge the soft-deleted definition of a managed storage account or SAS (Shared Access Signature).",
+          "displayName": "Purge Managed Storage Account or SAS",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/purge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the access key of a managed storage account.",
+          "displayName": "Regenerate Key of Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/regeneratekey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Recover the soft-deleted definition of a managed storage account or SAS (Shared Access Signature).",
+          "displayName": "Recover Managed Storage Account or SAS",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/recover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores the definition of a managed storage account and its SAS (Shared Access Signature) from a backup file generated by Key Vault.",
+          "displayName": "Restore Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/restore/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Storage Account",
+      "name": "vaults/storageaccounts/sas",
+      "operations": [
+        {
+          "description": "Creates or updates the SAS (Shared Access Signature) definition for a managed storage account.",
+          "displayName": "Set SAS Definition for Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/sas/set/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the SAS (Shared Access Signature) definition for a managed storage account.",
+          "displayName": "Delete SAS Definition for Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/sas/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read the SAS (Shared Access Signature) definition for a managed storage account.",
+          "displayName": "Read SAS Definition for Managed Storage Account",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/storageaccounts/sas/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key Version",
+      "name": "vaults/keys/versions",
+      "operations": [
+        {
+          "description": "List the versions of a specified key, or read the specified version of a key.",
+          "displayName": "Read Key Version",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/keys/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key Rotation Policy",
+      "name": "vaults/keyrotationpolicies",
+      "operations": [
+        {
+          "description": "Retrieves the rotation policy of a given key.",
+          "displayName": "Read Key Rotation Policy",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keyrotationpolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the rotation policy of a given key.",
+          "displayName": "Write Key Rotation Policy",
+          "isDataAction": true,
+          "name": "Microsoft.KeyVault/vaults/keyrotationpolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed HSM",
+      "name": "managedHSMs",
+      "operations": [
+        {
+          "description": "View the properties of a Managed HSM",
+          "displayName": "View Managed HSM",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new Managed HSM or update the properties of an existing Managed HSM",
+          "displayName": "Update Managed HSM",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Managed HSM",
+          "displayName": "Delete Managed HSM",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Approve or reject a Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/PrivateEndpointConnectionsApproval/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Hsm Log Definition",
+      "name": "managedHSMs/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for a Managed HSM",
+          "displayName": "Read log definition",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Audit Logs",
+                  "name": "AuditEvent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Managed HSM Diagnostic Settings",
+      "name": "managedHSMs/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/providers/Microsoft.Insights/diagnosticSettings/Read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/providers/Microsoft.Insights/diagnosticSettings/Write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed HSM",
+      "name": "managedHSMs/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get the available private link resources for the specified instance of Managed HSM.",
+          "displayName": "Get private link resources",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateLinkResources/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "managedHSMs/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "View the state of a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "View state of Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnectionProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Change the state of a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Change state of Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnectionProxies/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Delete a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnectionProxies/delete",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Validate a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Validate a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnectionProxies/validate/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "managedHSMs/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "View the state of a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "View state of Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnections/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Change the state of a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Change state of Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnections/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Delete a Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/privateEndpointConnections/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed HSM Metric Definition",
+      "name": "managedHSMs/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for a key vault",
+          "displayName": "Read metric definition",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Count",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of total service api hits",
+                  "displayName": "Total Service Api Hits",
+                  "fillGapWithZero": true,
+                  "name": "ServiceApiHit",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Overall latency of service api requests",
+                  "displayName": "Overall Service Api Latency",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "ServiceApiDurating",
+                  "name": "ServiceApiLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Count",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Gets the available metrics for a Managed HSM pool",
+                  "displayName": "Total Service Api Results",
+                  "fillGapWithZero": true,
+                  "name": "ServiceApiResult",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity Name",
+                      "name": "ActivityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Status Code Class",
+                      "name": "StatusCodeClass",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Vault requests availability",
+                  "displayName": "Overall Vault Availability",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "ServiceApiAvailability",
+                  "name": "Availability",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Hsm long running operation result",
+      "name": "locations/managedHsmOperationResults",
+      "operations": [
+        {
+          "description": "Check the result of a long run operation",
+          "displayName": "Check Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/managedHsmOperationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed HSM",
+      "name": "deletedManagedHsms",
+      "operations": [
+        {
+          "description": "View the properties of a deleted managed hsm",
+          "displayName": "View Soft Deleted Managed Hsms",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/deletedManagedHsms/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed HSM",
+      "name": "locations/deletedManagedHsms",
+      "operations": [
+        {
+          "description": "View the properties of a deleted managed hsm",
+          "displayName": "View Soft Deleted Managed Hsms",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/deletedManagedHsms/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Purge a soft deleted managed hsm",
+          "displayName": "Purge Soft Deleted Managed Hsm",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/deletedManagedHsms/purge/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

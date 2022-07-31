@@ -1,0 +1,465 @@
+{
+  "displayName": "Microsoft.PowerBI",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.PowerBI",
+  "name": "Microsoft.PowerBI",
+  "operations": [],
+  "resourceTypes": [
+    {
+      "displayName": "Workspace Collections",
+      "name": "workspaceCollections",
+      "operations": [
+        {
+          "description": "Retrieves the specified Power BI Workspace Collection.",
+          "displayName": "Read Workspace Collection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/workspaceCollections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the specified Power BI Workspace Collection.",
+          "displayName": "Create/Update Workspace Collection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/workspaceCollections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Power BI Workspace Collection.",
+          "displayName": "Delete Workspace Collection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/workspaceCollections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves the primary and secondary access keys for the specified Power BI Workspace Collection.",
+          "displayName": "List Workspace Collection Access Keys",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/workspaceCollections/listKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates the primary or secondary access key for the specified Power BI Workspace Collection.",
+          "displayName": "Regenerate Workspace Collection Access Key",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/workspaceCollections/regenerateKey/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace Collections",
+      "name": "workspaceCollections/workspaces",
+      "operations": [
+        {
+          "description": "Retrieves the Power BI Workspaces under the specified Power BI Workspace Collection.",
+          "displayName": "Read Workspace Collection Workspaces",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/workspaceCollections/workspaces/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace Collections",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Retrieves the name availability for the specified resource.",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/locations/checkNameAvailability/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tenants",
+      "name": "tenants",
+      "operations": [
+        {
+          "description": "Creates or updates the specified Power BI Tenant.",
+          "displayName": "Create/Update Tenant",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the specified Power BI Tenant.",
+          "displayName": "Read Tenant",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Power BI Tenant.",
+          "displayName": "Delete Tenant",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tenants",
+      "name": "tenants/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Reads Log Definitions for the specified Azure Tenant.",
+          "displayName": "Read Log Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "ServiceSpecification": {
+              "LogSpecifications": [
+                {
+                  "BlobDuration": "PT1H",
+                  "DisplayName": "Engine",
+                  "Name": "Engine"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Tenants",
+      "name": "tenants/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Reads Diagnostic Settings for the specified Azure Tenant.",
+          "displayName": "Read Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes Diagnostic Settings for the specified Azure Tenant.",
+          "displayName": "Write Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspaces",
+      "name": "tenants/workspaces",
+      "operations": [
+        {
+          "description": "Creates or updates the specified Power BI Workspace.",
+          "displayName": "Create/Update a Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/workspaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the specified Power BI Workspace.",
+          "displayName": "Read Workspaces",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/workspaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Power BI Tenant.",
+          "displayName": "Delete Tenant",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/workspaces/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspaces",
+      "name": "tenants/workspaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Reads Log Definitions for the specified Azure Workspace.",
+          "displayName": "Read Log Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/workspaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "ServiceSpecification": {
+              "LogSpecifications": [
+                {
+                  "BlobDuration": "PT1H",
+                  "DisplayName": "Engine",
+                  "Name": "Engine"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Workspaces",
+      "name": "tenants/workspaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Reads Diagnostic Settings for the specified Azure Workspace.",
+          "displayName": "Read Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/workspaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes Diagnostic Settings for the specified Azure Workspace.",
+          "displayName": "Write Diagnostic Settings",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/tenants/workspaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI",
+      "operations": [
+        {
+          "description": "Gets all resources for the tenant private link service.",
+          "displayName": "Gets all resources",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates resource for the tenant private link service.",
+          "displayName": "Creates or updates private link service",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes resource for the tenant private link service.",
+          "displayName": "Deletes private link service",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/operationResults/operationId",
+      "operations": [
+        {
+          "description": "Gets operation result of Private Link Service Resources for Power BI.",
+          "displayName": "Get Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/operationResults/operationId/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/azureResourceName",
+      "operations": [
+        {
+          "description": "Creates or updates resource for the tenant private link service.",
+          "displayName": "Creates or updates private link service",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes resource for the tenant private link service.",
+          "displayName": "Deletes private link service",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/azureResourceName/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets private link resources in an Azure resource.",
+          "displayName": "Gets private link resources by name",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnectionProxies/privateEndpointName.privateEndpointGuid",
+      "operations": [
+        {
+          "description": "Gets private endpoint connection proxy for the tenant.",
+          "displayName": "Gets private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnectionProxies/privateEndpointName.privateEndpointGuid/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates private endpoint connection proxy for the tenant.",
+          "displayName": "Creates or updates private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnectionProxies/privateEndpointName.privateEndpointGuid/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes private endpoint connection proxy for the tenant.",
+          "displayName": "Deletes private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnectionProxies/privateEndpointName.privateEndpointGuid/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates a private endpoint connection proxy before create or update.",
+          "displayName": "Validates a private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnectionProxies/privateEndpointName.privateEndpointGuid/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnections/privateEndpointName.privateEndpointGuid",
+      "operations": [
+        {
+          "description": "Gets private endpoint connection for the tenant.",
+          "displayName": "Gets private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnections/privateEndpointName.privateEndpointGuid/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates private endpoint connection for the tenant.",
+          "displayName": "Creates or updates private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnections/privateEndpointName.privateEndpointGuid/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes private endpoint connection for the tenant.",
+          "displayName": "Deletes private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/azureResourceName/privateEndpointConnections/privateEndpointName.privateEndpointGuid/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/operationResults",
+      "operations": [
+        {
+          "description": "Gets operation result of Private Link Service Resources for Power BI.",
+          "displayName": "Get Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Gets private endpoint connection proxy for the tenant.",
+          "displayName": "Gets private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates private endpoint connection proxy for the tenant.",
+          "displayName": "Creates or updates private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes private endpoint connection proxy for the tenant.",
+          "displayName": "Deletes private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates a private endpoint connection proxy before create or update.",
+          "displayName": "Validates a private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private link service resources",
+      "name": "privateLinkServicesForPowerBI/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Gets private endpoint connection for the tenant.",
+          "displayName": "Gets private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates private endpoint connection for the tenant.",
+          "displayName": "Creates or updates private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes private endpoint connection for the tenant.",
+          "displayName": "Deletes private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.PowerBI/privateLinkServicesForPowerBI/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

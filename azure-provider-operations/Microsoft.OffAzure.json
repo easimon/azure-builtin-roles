@@ -1,0 +1,944 @@
+{
+  "displayName": "Microsoft.OffAzure",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.OffAzure",
+  "name": "Microsoft.OffAzure",
+  "operations": [
+    {
+      "description": "Subscription Registration Action",
+      "displayName": "Subscription Registration Action",
+      "isDataAction": false,
+      "name": "Microsoft.OffAzure/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregisters Subscription with Microsoft.Migrate resource provider",
+      "displayName": "Unregister Subscription for Migrate",
+      "isDataAction": false,
+      "name": "Microsoft.OffAzure/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Registers Subscription with Microsoft.OffAzure resource provider",
+      "displayName": "Register Subscription for Migrate.OffAzure",
+      "isDataAction": false,
+      "name": "Microsoft.OffAzure/register/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Microsoft.OffAzure/VMwareSites",
+      "name": "Operations",
+      "operations": [
+        {
+          "description": "Reads the exposed operations",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/Operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HyperVSites",
+      "name": "HyperVSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V site",
+          "displayName": "Get Hyper-V site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the Hyper-V site",
+          "displayName": "Create or update Hyper-V site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Hyper-V site",
+          "displayName": "Delete Hyper-V site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refreshes the objects within a Hyper-V site",
+          "displayName": "Refresh Hyper-V site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/refresh/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the properties for machines in a site",
+          "displayName": "Updates properties for machines in a site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/updateProperties/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HyperVSites",
+      "name": "HyperVSites/usage",
+      "operations": [
+        {
+          "description": "Gets the usages of a Hyper-V site",
+          "displayName": "Get Hyper-V site usages",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/usage/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Hosts",
+      "name": "HyperVSites/hosts",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V host",
+          "displayName": "Get Hyper-V host",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/hosts/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the Hyper-V host",
+          "displayName": "Create or update Hyper-V host",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/hosts/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Clusters",
+      "name": "HyperVSites/clusters",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V cluster",
+          "displayName": "Get Hyper-V cluster",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/clusters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the Hyper-V cluster",
+          "displayName": "Create or update Hyper-V cluster",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/clusters/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "HyperVSites/jobs",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V jobs",
+          "displayName": "Get Hyper-V jobs",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "HyperVSites/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V machines",
+          "displayName": "Get Hyper-V machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/machines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RunAsAccounts",
+      "name": "HyperVSites/runasaccounts",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V run as accounts",
+          "displayName": "Get Hyper-V run as accounts",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/runasaccounts/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationsStatus",
+      "name": "HyperVSites/operationsstatus",
+      "operations": [
+        {
+          "description": "Gets the properties of a Hyper-V operation status",
+          "displayName": "Get Hyper-V operation status",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/operationsstatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "VMwareSites",
+      "name": "VMwareSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware site",
+          "displayName": "Get VMware site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the VMware site",
+          "displayName": "Create or update VMware site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the VMware site",
+          "displayName": "Delete VMware site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refreshes the objects within a VMware site",
+          "displayName": "Refresh VMware site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/refresh/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Exports the VMware applications and roles data into xls",
+          "displayName": "Exports VMware applications and roles data into xls",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/exportapplications/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the properties for machines in a site",
+          "displayName": "Updates properties for machines in a site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/updateProperties/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the tags for machines in a site",
+          "displayName": "Updates tags for machines in a site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/updateTags/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Generates the coarse map for the list of machines",
+          "displayName": "Generates coarse map for the list of machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/generateCoarseMap/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Generates the Detailed VMware Coarse Map",
+          "displayName": "Generates Detailed VMware Coarse Map",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/generateDetailedMap/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Lists the client group members for the selected client group.",
+          "displayName": "Lists client group members for the selected client group.",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/clientGroupMembers/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Lists the server group members for the selected server group.",
+          "displayName": "Lists server group members for the selected server group.",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/serverGroupMembers/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets the list application information for the selected machines",
+          "displayName": "Gets list application information for the selected machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/getApplications/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Exports the dependencies information for the selected machines",
+          "displayName": "Exports dependencies information for the selected machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/exportDependencies/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "VMwareSites",
+      "name": "VMwareSites/usage",
+      "operations": [
+        {
+          "description": "Gets the usages of a VMware site",
+          "displayName": "Get VMware site usages",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/usage/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "vCenters",
+      "name": "VMwareSites/vcenters",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware vCenter",
+          "displayName": "Get VMware vCenter",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/vcenters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the VMware vCenter",
+          "displayName": "Create or update VMware vCenter",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/vcenters/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "VMwareSites/jobs",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware jobs",
+          "displayName": "Get VMware jobs",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "VMwareSites/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware machines",
+          "displayName": "Get VMware machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/machines/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stops the VMware machines",
+          "displayName": "Stops VMware machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/machines/stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Start VMware machines",
+          "displayName": "Start VMware machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/machines/start/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RunAsAccounts",
+      "name": "VMwareSites/runasaccounts",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware run as accounts",
+          "displayName": "Get VMware run as accounts",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/runasaccounts/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationsStatus",
+      "name": "VMwareSites/operationsstatus",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware operation status",
+          "displayName": "Get VMware operation status",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/operationsstatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Register Subscription ",
+      "name": "HyperVSites/healthsummary",
+      "operations": [
+        {
+          "description": "Gets the health summary for Hyper-V resource",
+          "displayName": "Get health summary for Hyper-V resource",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/healthsummary/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Register Subscription ",
+      "name": "VMwareSites/healthsummary",
+      "operations": [
+        {
+          "description": "Gets the health summary for VMware resource",
+          "displayName": "Get health summary for VMware resource",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/healthsummary/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ServerSites",
+      "name": "ServerSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a Server site",
+          "displayName": "Get Server site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the Server site",
+          "displayName": "Create or update Server site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Server site",
+          "displayName": "Delete Server site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refreshes the objects within a Server site",
+          "displayName": "Refresh Server site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/refresh/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the properties for machines in a site",
+          "displayName": "Updates properties for machines in a site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/updateProperties/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the tags for machines in a site",
+          "displayName": "Updates tags for machines in a site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/updateTags/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ServerSites",
+      "name": "ServerSites/usage",
+      "operations": [
+        {
+          "description": "Gets the usages of a Server site",
+          "displayName": "Get Server site usages",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/usage/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "ServerSites/jobs",
+      "operations": [
+        {
+          "description": "Gets the properties of a Server jobs",
+          "displayName": "Get Server jobs",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "ServerSites/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a Server machines",
+          "displayName": "Get Server machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/machines/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Write the properties of a Server machines",
+          "displayName": "Write Server machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/machines/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the properties of a Server machines",
+          "displayName": "Delete Server machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/machines/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RunAsAccounts",
+      "name": "ServerSites/runasaccounts",
+      "operations": [
+        {
+          "description": "Gets the properties of a Server run as accounts",
+          "displayName": "Get Server run as accounts",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/runasaccounts/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationsStatus",
+      "name": "ServerSites/operationsstatus",
+      "operations": [
+        {
+          "description": "Gets the properties of a Server operation status",
+          "displayName": "Get Server operation status",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/operationsstatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "VMwareSites/machines/applications",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware machines applications",
+          "displayName": "Gets VMware machines applications",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/machines/applications/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ImportSites",
+      "name": "ImportSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a Import site",
+          "displayName": "Get Import site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the Import site",
+          "displayName": "Create or update Import site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Import site",
+          "displayName": "Delete Import site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets the SAS uri for importing the machines CSV file.",
+          "displayName": "Get SAS uri for importing the machines CSV file.",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/importuri/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets the SAS uri for exporting the machines CSV file.",
+          "displayName": "Get SAS uri for exporting the machines CSV file.",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/exporturi/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "ImportSites/jobs",
+      "operations": [
+        {
+          "description": "Gets the properties of a Import jobs",
+          "displayName": "Get Import jobs",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machines",
+      "name": "ImportSites/machines",
+      "operations": [
+        {
+          "description": "Gets the properties of a Import machines",
+          "displayName": "Get Import machines",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/machines/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Import machine",
+          "displayName": "Delete Import machine",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ImportSites/machines/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HyperVSites",
+      "name": "HyperVSites/summary",
+      "operations": [
+        {
+          "description": "Gets the summary of a Hyper-V site",
+          "displayName": "Get Hyper-V site summary",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/HyperVSites/summary/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "VMwareSites",
+      "name": "VMwareSites/summary",
+      "operations": [
+        {
+          "description": "Gets the summary of a VMware site",
+          "displayName": "Get VMware site summary",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/summary/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ServerSites",
+      "name": "ServerSites/summary",
+      "operations": [
+        {
+          "description": "Gets the summary of a Server site",
+          "displayName": "Get Server site summary",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/ServerSites/summary/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Hosts",
+      "name": "VMwareSites/hosts",
+      "operations": [
+        {
+          "description": "Gets the properties of a VMware hosts",
+          "displayName": "Get VMware host",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/VMwareSites/hosts/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationsStatus",
+      "name": "MasterSites/operationsstatus",
+      "operations": [
+        {
+          "description": "Gets the properties of a Master site operation status",
+          "displayName": "Get Master site  operation status",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/operationsstatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "MasterSites/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate a Private Endpoint Connection Proxy",
+          "displayName": "Validate a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/validate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a Private Endpoint Connection Proxy",
+          "displayName": "Create or Update a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Private Endpoint Connection Proxy",
+          "displayName": "Delete a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "MasterSites/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Update a Private Endpoint Connection",
+          "displayName": "Update a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Private Endpoint Connection",
+          "displayName": "Delete a Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link Resource",
+      "name": "MasterSites/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get Private Link Resource",
+          "displayName": "Get Private Link Resource",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateLinkResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web App Site",
+      "name": "MasterSites/webAppSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a WebApp site",
+          "displayName": "Get WebApp site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/webAppSites/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the WebApp site",
+          "displayName": "Create or update WebApp site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/webAppSites/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the WebApp site",
+          "displayName": "Delete WebApp site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/webAppSites/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IIS Web Application",
+      "name": "MasterSites/webAppSites/IISWebApplications",
+      "operations": [
+        {
+          "description": "Gets the properties of IIS Web applications.",
+          "displayName": "Get IIS Web applications.",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/webAppSites/IISWebApplications/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IIS Web Server",
+      "name": "MasterSites/webAppSites/IISWebServers",
+      "operations": [
+        {
+          "description": "Gets the properties of IIS Web servers.",
+          "displayName": "Get IIS Web servers.",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/webAppSites/IISWebServers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationsStatus",
+      "name": "MasterSites/privateEndpointConnectionProxies/operationsstatus",
+      "operations": [
+        {
+          "description": "Get status of a long running operation on a Private Endpoint Connection Proxy",
+          "displayName": "Get status of a long running operation on a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/operationsstatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Master Site",
+      "name": "MasterSites",
+      "operations": [
+        {
+          "description": "Gets the properties of a Master site",
+          "displayName": "Get Master site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the Master site",
+          "displayName": "Create or update Master site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Master site",
+          "displayName": "Delete Master site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/MasterSites/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

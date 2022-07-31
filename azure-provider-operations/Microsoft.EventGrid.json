@@ -1,0 +1,2998 @@
+{
+  "displayName": "Microsoft Event Grid",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.EventGrid",
+  "name": "Microsoft.EventGrid",
+  "operations": [
+    {
+      "description": "Registers the subscription for the EventGrid resource provider.",
+      "displayName": "Registers EventGrid Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.EventGrid/register/action",
+      "origin": "User,System",
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for the EventGrid resource provider.",
+      "displayName": "Unregisters EventGrid Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.EventGrid/unregister/action",
+      "origin": "User,System",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "eventSubscriptions",
+      "name": "eventSubscriptions",
+      "operations": [
+        {
+          "description": "Create or update a eventSubscription",
+          "displayName": "Write EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a eventSubscription",
+          "displayName": "Read EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a eventSubscription",
+          "displayName": "Delete EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the event subscription",
+          "displayName": "Get FullUrl of EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get EventSubscription Delivery Attributes",
+          "displayName": "Get EventSubscription Delivery Attributes",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/getDeliveryAttributes/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "topics",
+      "name": "topics",
+      "operations": [
+        {
+          "description": "Create or update a topic",
+          "displayName": "Write Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a topic",
+          "displayName": "Read Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a topic",
+          "displayName": "Delete Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "List keys for a topic",
+          "displayName": "List Topic Keys",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/listKeys/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Regenerate key for a topic",
+          "displayName": "Regenerate Topic Key",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/regenerateKey/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Approve PrivateEndpointConnections for topics",
+          "displayName": "Approve PrivateEndpointConnections for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/PrivateEndpointConnectionsApproval/action",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topics Metrics",
+      "name": "topics/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for topics",
+          "displayName": "Read topic metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events published to this topic",
+                  "displayName": "Published Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "Error"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to publish to this topic",
+                  "displayName": "Publish Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishFailCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events not matching any of the event subscriptions for this topic",
+                  "displayName": "Unmatched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "UnmatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "UnmatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Publish success latency in milliseconds",
+                  "displayName": "Publish Success Latency",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessLatencyInMs",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessLatencyInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total advanced filters evaluated across event subscriptions for this topic.",
+                  "displayName": "Advanced Filter Evaluations",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "AdvancedFilterEvaluationCount",
+                  "isDimensionRequired": false,
+                  "name": "AdvancedFilterEvaluationCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events matched to this event subscription",
+                  "displayName": "Matched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "MatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "MatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Error"
+                    },
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to deliver to this event subscription",
+                  "displayName": "Delivery Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliveryFailCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliveryAttemptFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events delivered to this event subscription",
+                  "displayName": "Delivered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliverySuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliverySuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Destination processing duration in milliseconds",
+                  "displayName": "Destination Processing Duration",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DestinationProcessingDelay",
+                  "isDimensionRequired": false,
+                  "name": "DestinationProcessingDurationInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DropReason"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total dropped events matching to this event subscription",
+                  "displayName": "Dropped Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DroppedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "DroppedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DeadLetterReason"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total dead lettered events matching to this event subscription",
+                  "displayName": "Dead Lettered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeadLetteredCount",
+                  "isDimensionRequired": false,
+                  "name": "DeadLetteredCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Topics Diagnostics",
+      "name": "topics/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for topics",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for topics",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventSubscription Metrics",
+      "name": "eventSubscriptions/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for eventSubscriptions",
+          "displayName": "Read eventSubscription metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events matched to this event subscription",
+                  "displayName": "Matched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "MatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "MatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Error"
+                    },
+                    {
+                      "name": "ErrorType"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to deliver to this event subscription",
+                  "displayName": "Delivery Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliveryFailCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliveryAttemptFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events delivered to this event subscription",
+                  "displayName": "Delivered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliverySuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliverySuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Destination processing duration in milliseconds",
+                  "displayName": "Destination Processing Duration",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DestinationProcessingDelay",
+                  "isDimensionRequired": false,
+                  "name": "DestinationProcessingDurationInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DropReason"
+                    }
+                  ],
+                  "displayDescription": "Total dropped events matching to this event subscription",
+                  "displayName": "Dropped Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DroppedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "DroppedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DeadLetterReason"
+                    }
+                  ],
+                  "displayDescription": "Total dead lettered events matching to this event subscription",
+                  "displayName": "Dead Lettered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeadLetteredCount",
+                  "isDimensionRequired": false,
+                  "name": "DeadLetteredCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "EventSubscription Diagnostics",
+      "name": "eventSubscriptions/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for event subscriptions",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for event subscriptions",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/eventSubscriptions/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topics Metrics",
+      "name": "extensionTopics/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for topics",
+          "displayName": "Read topic metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/extensionTopics/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "User,System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events published to this topic",
+                  "displayName": "Published Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "Error"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to publish to this topic",
+                  "displayName": "Publish Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishFailCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events not matching any of the event subscriptions for this topic",
+                  "displayName": "Unmatched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "UnmatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "UnmatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Publish success latency in milliseconds",
+                  "displayName": "Publish Success Latency",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessLatencyInMs",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessLatencyInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Topics Diagnostics",
+      "name": "extensionTopics/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for topics",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/extensionTopics/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for topics",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/extensionTopics/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "topictypes",
+      "name": "topictypes",
+      "operations": [
+        {
+          "description": "Read a topictype",
+          "displayName": "Read TopicType",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topictypes/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventtypes",
+      "name": "topictypes/eventtypes",
+      "operations": [
+        {
+          "description": "Read eventtypes supported by a topictype",
+          "displayName": "Read EventTypes Of TopicType",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topictypes/eventtypes/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operationResults",
+      "name": "operationResults",
+      "operations": [
+        {
+          "description": "Read the result of an operation",
+          "displayName": "Read Global OperationResult",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/operationResults/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Regional OperationResults",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Read the result of a regional operation",
+          "displayName": "Read Regional OperationResult",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/locations/operationResults/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operationsStatus",
+      "name": "operationsStatus",
+      "operations": [
+        {
+          "description": "Read the status of an operation",
+          "displayName": "Read Global OperationsStatus",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/operationsStatus/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Regional OperationsStatus",
+      "name": "locations/operationsStatus",
+      "operations": [
+        {
+          "description": "Read the status of a regional operation",
+          "displayName": "Read Regional OperationsStatus",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/locations/operationsStatus/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "topictypes/eventSubscriptions",
+      "operations": [
+        {
+          "description": "List global event subscriptions by topic type",
+          "displayName": "List global event subscriptions by topic type",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topictypes/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "locations/eventSubscriptions",
+      "operations": [
+        {
+          "description": "List regional event subscriptions",
+          "displayName": "List regional event subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/locations/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "locations/topictypes/eventSubscriptions",
+      "operations": [
+        {
+          "description": "List regional event subscriptions by topictype",
+          "displayName": "List regional event subscriptions by topictype",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/locations/topictypes/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventGrid Resource Provider",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List EventGrid operations.",
+          "displayName": "List EventGrid Operations",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/operations/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "extensionTopics",
+      "name": "extensionTopics",
+      "operations": [
+        {
+          "description": "Read an extensionTopic.",
+          "displayName": "Read ExtensionTopic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/extensionTopics/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "domains",
+      "name": "domains",
+      "operations": [
+        {
+          "description": "Create or update a domain",
+          "displayName": "Write Domain",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a domain",
+          "displayName": "Read Domain",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a domain",
+          "displayName": "Delete Domain",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "List keys for a domain",
+          "displayName": "List Domain Keys",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/listKeys/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Regenerate key for a domain",
+          "displayName": "Regenerate Domain Key",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/regenerateKey/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Approve PrivateEndpointConnections for domains",
+          "displayName": "Approve PrivateEndpointConnections for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/PrivateEndpointConnectionsApproval/action",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "domaintopics",
+      "name": "domains/topics",
+      "operations": [
+        {
+          "description": "Read a domain topic",
+          "displayName": "Read Domain Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update a domain topic",
+          "displayName": "Write Domain Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a domain topic",
+          "displayName": "Delete Domain Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/delete",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Domains Metrics",
+      "name": "domains/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for domains",
+          "displayName": "Read domains metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    }
+                  ],
+                  "displayDescription": "Total events published to this topic",
+                  "displayName": "Published Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "Error"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to publish to this topic",
+                  "displayName": "Publish Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishFailCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Publish success latency in milliseconds",
+                  "displayName": "Publish Success Latency",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessLatencyInMs",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessLatencyInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total advanced filters evaluated across event subscriptions for this topic.",
+                  "displayName": "Advanced Filter Evaluations",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "AdvancedFilterEvaluationCount",
+                  "isDimensionRequired": false,
+                  "name": "AdvancedFilterEvaluationCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events matched to this event subscription",
+                  "displayName": "Matched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "MatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "MatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    },
+                    {
+                      "name": "Error"
+                    },
+                    {
+                      "name": "ErrorType"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to deliver to this event subscription",
+                  "displayName": "Delivery Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliveryFailCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliveryAttemptFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events delivered to this event subscription",
+                  "displayName": "Delivered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliverySuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliverySuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Destination processing duration in milliseconds",
+                  "displayName": "Destination Processing Duration",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DestinationProcessingDelay",
+                  "isDimensionRequired": false,
+                  "name": "DestinationProcessingDurationInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    },
+                    {
+                      "name": "DropReason"
+                    }
+                  ],
+                  "displayDescription": "Total dropped events matching to this event subscription",
+                  "displayName": "Dropped Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DroppedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "DroppedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "DomainEventSubscriptionName"
+                    },
+                    {
+                      "name": "DeadLetterReason"
+                    }
+                  ],
+                  "displayDescription": "Total dead lettered events matching to this event subscription",
+                  "displayName": "Dead Lettered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeadLetteredCount",
+                  "isDimensionRequired": false,
+                  "name": "DeadLetteredCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Topics Diagnostics",
+      "name": "topics/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Allows access to diagnostic logs",
+          "displayName": "Read diagnostic logs",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Delivery Failure Logs",
+                  "name": "DeliveryFailures"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Publish Failure Logs",
+                  "name": "PublishFailures"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.EventGrid/domains",
+      "name": "domains/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Allows access to diagnostic logs",
+          "displayName": "Read diagnostic logs",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Delivery Failure Logs",
+                  "name": "DeliveryFailures"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Publish Failure Logs",
+                  "name": "PublishFailures"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "System Topics Metrics",
+      "name": "systemTopics/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for system topics",
+          "displayName": "Read system topic metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events published to this topic",
+                  "displayName": "Published Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "Error"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to publish to this topic",
+                  "displayName": "Publish Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishFailCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events not matching any of the event subscriptions for this topic",
+                  "displayName": "Unmatched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "UnmatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "UnmatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Publish success latency in milliseconds",
+                  "displayName": "Publish Success Latency",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessLatencyInMs",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessLatencyInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total advanced filters evaluated across event subscriptions for this topic.",
+                  "displayName": "Advanced Filter Evaluations",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "AdvancedFilterEvaluationCount",
+                  "isDimensionRequired": false,
+                  "name": "AdvancedFilterEvaluationCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events matched to this event subscription",
+                  "displayName": "Matched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "MatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "MatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Error"
+                    },
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to deliver to this event subscription",
+                  "displayName": "Delivery Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliveryFailCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliveryAttemptFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events delivered to this event subscription",
+                  "displayName": "Delivered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliverySuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliverySuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Destination processing duration in milliseconds",
+                  "displayName": "Destination Processing Duration",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DestinationProcessingDelay",
+                  "isDimensionRequired": false,
+                  "name": "DestinationProcessingDurationInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DropReason"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total dropped events matching to this event subscription",
+                  "displayName": "Dropped Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DroppedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "DroppedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DeadLetterReason"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total dead lettered events matching to this event subscription",
+                  "displayName": "Dead Lettered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeadLetteredCount",
+                  "isDimensionRequired": false,
+                  "name": "DeadLetteredCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "systemTopics",
+      "name": "systemTopics/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Allows access to diagnostic logs",
+          "displayName": "Read diagnostic logs",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Delivery Failure Logs",
+                  "name": "DeliveryFailures"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "System topics Diagnostics",
+      "name": "systemTopics/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for system topics",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for system topics",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sku",
+      "name": "sku",
+      "operations": [
+        {
+          "description": "Read available Sku Definitions for event grid resources",
+          "displayName": "Read available Sku Definitions for event grid resources",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/sku/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Partner Topics Metrics",
+      "name": "partnerTopics/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for partner topics",
+          "displayName": "Read partner topic metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events published to this topic",
+                  "displayName": "Published Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events not matching any of the event subscriptions for this topic",
+                  "displayName": "Unmatched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "UnmatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "UnmatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total advanced filters evaluated across event subscriptions for this topic.",
+                  "displayName": "Advanced Filter Evaluations",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "AdvancedFilterEvaluationCount",
+                  "isDimensionRequired": false,
+                  "name": "AdvancedFilterEvaluationCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events matched to this event subscription",
+                  "displayName": "Matched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "MatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "MatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Error"
+                    },
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to deliver to this event subscription",
+                  "displayName": "Delivery Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliveryFailCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliveryAttemptFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total events delivered to this event subscription",
+                  "displayName": "Delivered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeliverySuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "DeliverySuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Destination processing duration in milliseconds",
+                  "displayName": "Destination Processing Duration",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DestinationProcessingDelay",
+                  "isDimensionRequired": false,
+                  "name": "DestinationProcessingDurationInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DropReason"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total dropped events matching to this event subscription",
+                  "displayName": "Dropped Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DroppedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "DroppedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DeadLetterReason"
+                    },
+                    {
+                      "name": "EventSubscriptionName"
+                    }
+                  ],
+                  "displayDescription": "Total dead lettered events matching to this event subscription",
+                  "displayName": "Dead Lettered Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "DeadLetteredCount",
+                  "isDimensionRequired": false,
+                  "name": "DeadLetteredCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "privateEndpointConnectionProxies",
+      "name": "topics/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate PrivateEndpointConnectionProxies for topics",
+          "displayName": "Validate PrivateEndpointConnectionProxies for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnectionProxies/validate/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Read PrivateEndpointConnectionProxies for topics",
+          "displayName": "Read PrivateEndpointConnectionProxies for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnectionProxies/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnectionProxies for topics",
+          "displayName": "Write PrivateEndpointConnectionProxies for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnectionProxies/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnectionProxies for topics",
+          "displayName": "Delete PrivateEndpointConnectionProxies for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnectionProxies/delete",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateEndpointConnections",
+      "name": "topics/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Read PrivateEndpointConnections for topics",
+          "displayName": "Read PrivateEndpointConnections for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnections/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnections for topics",
+          "displayName": "Write PrivateEndpointConnections for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnections/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnections for topics",
+          "displayName": "Delete PrivateEndpointConnections for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateEndpointConnections/delete",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateLinkResources",
+      "name": "topics/privateLinkResources",
+      "operations": [
+        {
+          "description": "Read PrivateLinkResources for topics",
+          "displayName": "Read PrivateLinkResources for topics",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/privateLinkResources/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateEndpointConnectionProxies",
+      "name": "domains/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate PrivateEndpointConnectionProxies for domains",
+          "displayName": "Validate PrivateEndpointConnectionProxies for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnectionProxies/validate/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Read PrivateEndpointConnectionProxies for domains",
+          "displayName": "Read PrivateEndpointConnectionProxies for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnectionProxies/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnectionProxies for domains",
+          "displayName": "Write PrivateEndpointConnectionProxies for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnectionProxies/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnectionProxies for domains",
+          "displayName": "Delete PrivateEndpointConnectionProxies for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnectionProxies/delete",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateEndpointConnections",
+      "name": "domains/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Read PrivateEndpointConnections for domains",
+          "displayName": "Read PrivateEndpointConnections for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnections/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnections for domains",
+          "displayName": "Write PrivateEndpointConnections for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnections/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnections for domains",
+          "displayName": "Delete PrivateEndpointConnections for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateEndpointConnections/delete",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateLinkResources",
+      "name": "domains/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get or List PrivateLinkResources for domains",
+          "displayName": "Get PrivateLinkResources for domains",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/privateLinkResources/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Partner Namespaces Metrics",
+      "name": "partnerNamespaces/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for partner namespaces",
+          "displayName": "Read partner namespace metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events published to this topic",
+                  "displayName": "Published Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "ErrorType"
+                    },
+                    {
+                      "name": "Error"
+                    }
+                  ],
+                  "displayDescription": "Total events failed to publish to this topic",
+                  "displayName": "Publish Failed Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishFailCount",
+                  "isDimensionRequired": false,
+                  "name": "PublishFailCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Total events not matching any of the event subscriptions for this topic",
+                  "displayName": "Unmatched Events",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "UnmatchedEventCount",
+                  "isDimensionRequired": false,
+                  "name": "UnmatchedEventCount",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "Publish success latency in milliseconds",
+                  "displayName": "Publish Success Latency",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "PublishSuccessLatencyInMs",
+                  "isDimensionRequired": false,
+                  "name": "PublishSuccessLatencyInMs",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetrics",
+                  "unit": "Milliseconds"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "partnerNamespaces",
+      "name": "partnerNamespaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Allows access to diagnostic logs",
+          "displayName": "Read diagnostic logs",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Delivery Failure Logs",
+                  "name": "DeliveryFailures"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Publish Failure Logs",
+                  "name": "PublishFailures"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Partner namespaces Diagnostics",
+      "name": "partnerNamespaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for partner namespaces",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for partner namespaces",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "partnerTopics",
+      "name": "partnerTopics/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Allows access to diagnostic logs",
+          "displayName": "Read diagnostic logs",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Delivery Failure Logs",
+                  "name": "DeliveryFailures"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Partner topics Diagnostics",
+      "name": "partnerTopics/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for partner topics",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for partner topics",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "partnerTopics/eventSubscriptions",
+      "operations": [
+        {
+          "description": "Create or update a PartnerTopic eventSubscription",
+          "displayName": "Write PartnerTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/eventSubscriptions/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a partner topic event subscription",
+          "displayName": "Read PartnerTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a partner topic event subscription",
+          "displayName": "Delete PartnerTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/eventSubscriptions/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the partner topic event subscription",
+          "displayName": "Get FullUrl of PartnerTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/eventSubscriptions/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get PartnerTopic EventSubscription Delivery Attributes",
+          "displayName": "Get PartnerTopic EventSubscription Delivery Attributes",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/eventSubscriptions/getDeliveryAttributes/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "systemTopics/eventSubscriptions",
+      "operations": [
+        {
+          "description": "Create or update a SystemTopic eventSubscription",
+          "displayName": "Write SystemTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/eventSubscriptions/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a SystemTopic eventSubscription",
+          "displayName": "Read SystemTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a SystemTopic eventSubscription",
+          "displayName": "Delete SystemTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/eventSubscriptions/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the SystemTopic event subscription",
+          "displayName": "Get FullUrl of SystemTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get SystemTopic EventSubscription Delivery Attributes",
+          "displayName": "Get SystemTopic EventSubscription Delivery Attributes",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "events",
+      "name": "events",
+      "operations": [
+        {
+          "description": "Send events to topics",
+          "displayName": "Send events",
+          "isDataAction": true,
+          "name": "Microsoft.EventGrid/events/send/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "systemTopics",
+      "name": "systemTopics",
+      "operations": [
+        {
+          "description": "Read a system topic",
+          "displayName": "Read System Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update a system topic",
+          "displayName": "Write System Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a system topic",
+          "displayName": "Delete System Topic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/systemTopics/delete",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "partnerRegistrations",
+      "name": "partnerRegistrations",
+      "operations": [
+        {
+          "description": "Create or update a partner registration",
+          "displayName": "Write PartnerRegistration",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerRegistrations/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a partner registration",
+          "displayName": "Read PartnerRegistration",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerRegistrations/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a partner registration",
+          "displayName": "Delete PartnerRegistration",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerRegistrations/delete",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "partnerNamespaces",
+      "name": "partnerNamespaces",
+      "operations": [
+        {
+          "description": "Create or update a partner namespace",
+          "displayName": "Write PartnerNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a partner namespace",
+          "displayName": "Read PartnerNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a partner namespace",
+          "displayName": "Delete PartnerNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "List keys for a partner namespace",
+          "displayName": "List PartnerNamespace keys",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/listKeys/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Regenerate key for a partner namespace",
+          "displayName": "Regenerate PartnerNamespace key",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/regenerateKey/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Approve PrivateEndpointConnections for partner namespaces",
+          "displayName": "Approve PrivateEndpointConnections for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/PrivateEndpointConnectionsApproval/action",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventChannels",
+      "name": "partnerNamespaces/eventChannels",
+      "operations": [
+        {
+          "description": "Read an event channel",
+          "displayName": "Read EventChannel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/eventChannels/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update an event channel",
+          "displayName": "Write EventChannel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/eventChannels/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete an event channel",
+          "displayName": "Delete EventChannel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/eventChannels/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Change event channel readiness state",
+          "displayName": "Change EventChannel state",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/eventChannels/channelReadinessStateChange/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "partnerTopics",
+      "name": "partnerTopics",
+      "operations": [
+        {
+          "description": "Read a partner topic",
+          "displayName": "Read PartnerTopic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update a partner topic",
+          "displayName": "Write PartnerTopic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a partner topic",
+          "displayName": "Delete PartnerTopic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Activate a partner topic",
+          "displayName": "Activate PartnerTopic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/activate/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Deactivate a partner topic",
+          "displayName": "Deactivate PartnerTopic",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/deactivate/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "channels",
+      "name": "partnerNamespaces/channels",
+      "operations": [
+        {
+          "description": "Read a channel",
+          "displayName": "Read Channel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/channels/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update a channel",
+          "displayName": "Write Channel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/channels/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a channel",
+          "displayName": "Delete Channel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/channels/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Change channel readiness state",
+          "displayName": "Change Channel state",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/channels/channelReadinessStateChange/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the partner destination channel",
+          "displayName": "Get FullUrl of PartnerDestination Channel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/channels/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "partnerDestinations",
+      "name": "partnerDestinations",
+      "operations": [
+        {
+          "description": "Read a partner destination",
+          "displayName": "Read PartnerDestination",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update a partner destination",
+          "displayName": "Write PartnerDestination",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a partner destination",
+          "displayName": "Delete PartnerDestination",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Activate a partner destination",
+          "displayName": "Activate PartnerDestination",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/activate/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get channel details of activated partner destination",
+          "displayName": "Get Channel details of activated PartnerDestination",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/getPartnerDestinationChannelInfo/action",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "partnerConfigurations",
+      "name": "partnerConfigurations",
+      "operations": [
+        {
+          "description": "Read a partner configuration",
+          "displayName": "Read PartnerConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerConfigurations/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Create or update a partner configuration",
+          "displayName": "Write PartnerConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerConfigurations/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a partner configuration",
+          "displayName": "Delete PartnerConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerConfigurations/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Authorize a partner in the partner configuration",
+          "displayName": "Authorize Partner",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerConfigurations/authorizePartner/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Unauthorize a partner in the partner configuration",
+          "displayName": "Unauthorize Partner",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerConfigurations/unauthorizePartner/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "verifiedPartners",
+      "name": "verifiedPartners",
+      "operations": [
+        {
+          "description": "Read a verified partner",
+          "displayName": "Read VerifiedPartner",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/verifiedPartners/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateEndpointConnectionProxies",
+      "name": "partnerNamespaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate PrivateEndpointConnectionProxies for partner namespaces",
+          "displayName": "Validate PrivateEndpointConnectionProxies for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnectionProxies/validate/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Read PrivateEndpointConnectionProxies for partner namespaces",
+          "displayName": "Read PrivateEndpointConnectionProxies for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnectionProxies/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnectionProxies for partner namespaces",
+          "displayName": "Write PrivateEndpointConnectionProxies for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnectionProxies/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnectionProxies for partner namespaces",
+          "displayName": "Delete PrivateEndpointConnectionProxies for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnectionProxies/delete",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateEndpointConnections",
+      "name": "partnerNamespaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Read PrivateEndpointConnections for partner namespaces",
+          "displayName": "Read PrivateEndpointConnections for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnections/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Write PrivateEndpointConnections for partner namespaces",
+          "displayName": "Write PrivateEndpointConnections for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnections/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Delete PrivateEndpointConnections for partner namespaces",
+          "displayName": "Delete PrivateEndpointConnections for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateEndpointConnections/delete",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "privateLinkResources",
+      "name": "partnerNamespaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "Read PrivateLinkResources for partner namespaces",
+          "displayName": "Read PrivateLinkResources for partner namespaces",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/privateLinkResources/read",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "topics/eventSubscriptions",
+      "operations": [
+        {
+          "description": "Create or update a Topic eventSubscription",
+          "displayName": "Write Topic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/eventSubscriptions/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a Topic eventSubscription",
+          "displayName": "Read Topic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a Topic eventSubscription",
+          "displayName": "Delete Topic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/eventSubscriptions/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the Topic event subscription",
+          "displayName": "Get FullUrl of Topic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/eventSubscriptions/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get Topic EventSubscription Delivery Attributes",
+          "displayName": "Get Topic EventSubscription Delivery Attributes",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/topics/eventSubscriptions/getDeliveryAttributes/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "domains/eventSubscriptions",
+      "operations": [
+        {
+          "description": "Create or update a Domain eventSubscription",
+          "displayName": "Write Domain EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/eventSubscriptions/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a Domain eventSubscription",
+          "displayName": "Read Domain EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a Domain eventSubscription",
+          "displayName": "Delete Domain EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/eventSubscriptions/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the Domain event subscription",
+          "displayName": "Get FullUrl of Domain EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/eventSubscriptions/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get Domain EventSubscription Delivery Attributes",
+          "displayName": "Get Domain EventSubscription Delivery Attributes",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/eventSubscriptions/getDeliveryAttributes/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eventSubscriptions",
+      "name": "domains/topics/eventSubscriptions",
+      "operations": [
+        {
+          "description": "Create or update a DomainTopic eventSubscription",
+          "displayName": "Write DomainTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/eventSubscriptions/write",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Read a DomainTopic eventSubscription",
+          "displayName": "Read DomainTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/eventSubscriptions/read",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Delete a DomainTopic eventSubscription",
+          "displayName": "Delete DomainTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/eventSubscriptions/delete",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get full url for the DomainTopic event subscription",
+          "displayName": "Get FullUrl of DomainTopic EventSubscription",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/eventSubscriptions/getFullUrl/action",
+          "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Get DomainTopic EventSubscription Delivery Attributes",
+          "displayName": "Get DomainTopic EventSubscription Delivery Attributes",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/domains/topics/eventSubscriptions/getDeliveryAttributes/action",
+          "origin": "User,System",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,274 @@
+{
+  "displayName": "Microsoft Chaos",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Chaos",
+  "name": "Microsoft.Chaos",
+  "operations": [
+    {
+      "description": "Registers the subscription for the Chaos Resource Provider and enables the creation of Chaos resources.",
+      "displayName": "Registers the Chaos Resource Provider.",
+      "isDataAction": false,
+      "name": "Microsoft.Chaos/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for the Chaos Resource Provider and enables the creation of Chaos resources.",
+      "displayName": "Unregisters the Chaos Resource Provider.",
+      "isDataAction": false,
+      "name": "Microsoft.Chaos/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Artifact Set Definition",
+      "name": "artifactSetDefinitions",
+      "operations": [
+        {
+          "description": "Creates an Artifact Set Definition which describes the set of artifact to capture for a given Chaos Experiment.",
+          "displayName": "Create an Artifact Set Definition.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetDefinitions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets all Artifact Set Definitions that extend a Chaos Experiment resource.",
+          "displayName": "Gets all Artifact Set Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetDefinitions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes all Artifact Set Definitions that extend a Chaos Experiment resource.",
+          "displayName": "Delete Artifact Set Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetDefinitions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Set Snapshot",
+      "name": "artifactSetSnapshots",
+      "operations": [
+        {
+          "description": "Gets all Artifact Set Snapshots that extend a Chaos Experiment resource.",
+          "displayName": "Gets all Artifact Set Snapshots.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetSnapshots/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Snapshot",
+      "name": "artifactSetSnapshots/artifactSnapshots",
+      "operations": [
+        {
+          "description": "Gets all Artifact Snapshots that extend a Artifact Set Snapshot.",
+          "displayName": "Gets all Artifact Snapshots.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetSnapshots/artifactSnapshots/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Target",
+      "name": "targets",
+      "operations": [
+        {
+          "description": "Creates or update a Target resource that extends a tracked resource.",
+          "displayName": "Creates or updates a Target.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/targets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Target resource that extends a tracked resource.",
+          "displayName": "Deletes a Target.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/targets/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets all Targets that extend a tracked resource.",
+          "displayName": "Gets all Targets.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/targets/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Capability",
+      "name": "targets/capabilities",
+      "operations": [
+        {
+          "description": "Creates or update a Capability resource that extends a Target resource.",
+          "displayName": "Creates or updates a Capability.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/targets/capabilities/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Capability resource that extends a Target resource.",
+          "displayName": "Deletes a Capability.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/targets/capabilities/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets all Capabilities that extend a Target resource.",
+          "displayName": "Gets all Capabilities.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/targets/capabilities/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Chaos Experiment",
+      "name": "experiments",
+      "operations": [
+        {
+          "description": "Creates or updates a Chaos Experiment resource in a resource group.",
+          "displayName": "Creates or updates a Chaos Experiment.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Chaos Experiment resource in a resource group.",
+          "displayName": "Deletes a Chaos Experiment.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets all Chaos Experiments in a resource group.",
+          "displayName": "Gets all Chaos Experiments.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a Chaos Experiment to inject faults.",
+          "displayName": "Starts a Chaos Experiment.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Cancels a running Chaos Experiment to stop the fault injection.",
+          "displayName": "Cancels a Chaos Experiment.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/cancel/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Chaos Experiment Execution Status",
+      "name": "experiments/statuses",
+      "operations": [
+        {
+          "description": "Gets all chaos experiment execution statuses for a given chaos experiment.",
+          "displayName": "Gets all Chaos Experiment execution statuses.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/statuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Chaos Experiment Execution Detail",
+      "name": "experiments/executionDetails",
+      "operations": [
+        {
+          "description": "Gets all chaos experiment execution details for a given chaos experiment.",
+          "displayName": "Gets all Chaos Experiment execution details.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/executionDetails/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "TargetType",
+      "name": "locations/targetTypes",
+      "operations": [
+        {
+          "description": "Gets all TargetTypes.",
+          "displayName": "Gets all TargetTypes.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/locations/targetTypes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "CapabilityType",
+      "name": "locations/targetTypes/capabilityTypes",
+      "operations": [
+        {
+          "description": "Gets all CapabilityType.",
+          "displayName": "Gets all CapabilityType.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/locations/targetTypes/capabilityTypes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Skus",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "Read the available SKUs for Chaos Studio.",
+          "displayName": "Read Chaos Studio SKUs.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/skus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Read the available Operations for Chaos Studio.",
+          "displayName": "Read Chaos Studio Operations.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,3491 @@
+{
+  "displayName": "Microsoft Azure Spring Apps",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.AppPlatform",
+  "name": "Microsoft.AppPlatform",
+  "operations": [
+    {
+      "description": "Register the subscription to the Microsoft.AppPlatform resource provider",
+      "displayName": "Register the Microsoft.AppPlatform resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.AppPlatform/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription from the Microsoft.AppPlatform resource provider",
+      "displayName": "Unregister the Microsoft.AppPlatform resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.AppPlatform/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Azure Spring Apps service instance",
+      "name": "Spring",
+      "operations": [
+        {
+          "description": "Create or Update a specific Azure Spring Apps service instance",
+          "displayName": "Update an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a specific Azure Spring Apps service instance",
+          "displayName": "Delete an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get Azure Spring Apps service instance(s)",
+          "displayName": "Get the details of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List test keys for a specific Azure Spring Apps service instance",
+          "displayName": "Get the test endpoint keys of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/listTestKeys/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Regenerate test key for a specific Azure Spring Apps service instance",
+          "displayName": "Regenerate a test endpoint key of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/regenerateTestKey/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Disable test endpoint functionality for a specific Azure Spring Apps service instance",
+          "displayName": "Disable a test endpoint of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/disableTestEndpoint/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Enable test endpoint functionality for a specific Azure Spring Apps service instance",
+          "displayName": "Enable a test endpoint of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/enableTestEndpoint/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stop a specific Azure Spring Apps service instance",
+          "displayName": "Stop Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Start a specific Azure Spring Apps service instance",
+          "displayName": "Start Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate the config server settings for a specific Azure Spring Apps service instance",
+          "displayName": "Validate the Config Server settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configServers/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of Microsoft Azure Spring Apps",
+      "name": "Spring/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Get definitions of logs from Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Application Console",
+                  "name": "ApplicationConsole"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "System Logs",
+                  "name": "SystemLogs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Ingress Logs",
+                  "name": "IngressLogs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Build Logs",
+                  "name": "BuildLogs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Container Event Logs",
+                  "name": "ContainerEventLogs"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The metrics definition of Microsoft Azure Spring Apps",
+      "name": "Spring/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get definitions of metrics from Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent CPU usage for the whole system",
+                  "displayName": "system.cpu.usage",
+                  "fillGapWithZero": false,
+                  "name": "system.cpu.usage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent CPU usage for the JVM process",
+                  "displayName": "process.cpu.usage",
+                  "fillGapWithZero": false,
+                  "name": "process.cpu.usage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Memory assigned to JVM in bytes",
+                  "displayName": "jvm.memory.committed",
+                  "fillGapWithZero": false,
+                  "name": "jvm.memory.committed",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "App Memory Used in bytes",
+                  "displayName": "jvm.memory.used",
+                  "fillGapWithZero": false,
+                  "name": "jvm.memory.used",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The maximum amount of memory in bytes that can be used for memory management",
+                  "displayName": "jvm.memory.max",
+                  "fillGapWithZero": false,
+                  "name": "jvm.memory.max",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Max size of old generation memory pool",
+                  "displayName": "jvm.gc.max.data.size",
+                  "fillGapWithZero": false,
+                  "name": "jvm.gc.max.data.size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Size of old generation memory pool after a full GC",
+                  "displayName": "jvm.gc.live.data.size",
+                  "fillGapWithZero": false,
+                  "name": "jvm.gc.live.data.size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of positive increases in the size of the old generation memory pool before GC to after GC",
+                  "displayName": "jvm.gc.memory.promoted",
+                  "fillGapWithZero": false,
+                  "name": "jvm.gc.memory.promoted",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incremented for an increase in the size of the young generation memory pool after one GC to before the next",
+                  "displayName": "jvm.gc.memory.allocated",
+                  "fillGapWithZero": false,
+                  "name": "jvm.gc.memory.allocated",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "GC Pause Count",
+                  "displayName": "jvm.gc.pause.total.count",
+                  "fillGapWithZero": false,
+                  "name": "jvm.gc.pause.total.count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Performance (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "GC Pause Total Time",
+                  "displayName": "jvm.gc.pause.total.time",
+                  "fillGapWithZero": false,
+                  "name": "jvm.gc.pause.total.time",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Config Max Thread Count",
+                  "displayName": "tomcat.threads.config.max",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.threads.config.max",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Current Thread Count",
+                  "displayName": "tomcat.threads.current",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.threads.current",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Total Sent Bytes",
+                  "displayName": "tomcat.global.sent",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.sent",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Total Received Bytes",
+                  "displayName": "tomcat.global.received",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.received",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Request Total Time",
+                  "displayName": "tomcat.global.request.total.time",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.request.total.time",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Request Total Count",
+                  "displayName": "tomcat.global.request.total.count",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.request.total.count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Request Average Time",
+                  "displayName": "tomcat.global.request.avg.time",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.request.avg.time",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Request (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Request Max Time",
+                  "displayName": "tomcat.global.request.max",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.request.max",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Error (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Global Error",
+                  "displayName": "tomcat.global.error",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.global.error",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Session (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Session Max Active Count",
+                  "displayName": "tomcat.sessions.active.max",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.sessions.active.max",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Session (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Session Max Alive Time",
+                  "displayName": "tomcat.sessions.alive.max",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.sessions.alive.max",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Session (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Session Active Count",
+                  "displayName": "tomcat.sessions.active.current",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.sessions.active.current",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Session (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Session Created Count",
+                  "displayName": "tomcat.sessions.created",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.sessions.created",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Session (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Session Expired Count",
+                  "displayName": "tomcat.sessions.expired",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.sessions.expired",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Session (Java)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Tomcat Session Rejected Count",
+                  "displayName": "tomcat.sessions.rejected",
+                  "fillGapWithZero": false,
+                  "name": "tomcat.sessions.rejected",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "% time the process has utilized the CPU",
+                  "displayName": "System.Runtime|cpu-usage",
+                  "fillGapWithZero": false,
+                  "name": "cpu-usage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Amount of working set used by the process (MB)",
+                  "displayName": "System.Runtime|working-set",
+                  "fillGapWithZero": false,
+                  "name": "working-set",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total heap size reported by the GC (MB)",
+                  "displayName": "System.Runtime|gc-heap-size",
+                  "fillGapWithZero": false,
+                  "name": "gc-heap-size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of Gen 0 GCs",
+                  "displayName": "System.Runtime|gen-0-gc-count",
+                  "fillGapWithZero": false,
+                  "name": "gen-0-gc-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "System.Runtime|Number of Gen 1 GCs",
+                  "displayName": "System.Runtime|gen-1-gc-count",
+                  "fillGapWithZero": false,
+                  "name": "gen-1-gc-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of Gen 2 GCs",
+                  "displayName": "System.Runtime|gen-2-gc-count",
+                  "fillGapWithZero": false,
+                  "name": "gen-2-gc-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "% time in GC since the last GC",
+                  "displayName": "System.Runtime|time-in-gc",
+                  "fillGapWithZero": false,
+                  "name": "time-in-gc",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Gen 0 Heap Size",
+                  "displayName": "System.Runtime|gen-0-size",
+                  "fillGapWithZero": false,
+                  "name": "gen-0-size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Gen 1 Heap Size",
+                  "displayName": "System.Runtime|gen-1-size",
+                  "fillGapWithZero": false,
+                  "name": "gen-1-size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Gen 2 Heap Size",
+                  "displayName": "System.Runtime|gen-2-size",
+                  "fillGapWithZero": false,
+                  "name": "gen-2-size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "LOH Heap Size",
+                  "displayName": "System.Runtime|loh-size",
+                  "fillGapWithZero": false,
+                  "name": "loh-size",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of bytes allocated in the managed heap",
+                  "displayName": "System.Runtime|alloc-rate",
+                  "fillGapWithZero": false,
+                  "name": "alloc-rate",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of Assemblies Loaded",
+                  "displayName": "System.Runtime|assembly-count",
+                  "fillGapWithZero": false,
+                  "name": "assembly-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of Exceptions",
+                  "displayName": "System.Runtime|exception-count",
+                  "fillGapWithZero": false,
+                  "name": "exception-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of ThreadPool Threads",
+                  "displayName": "System.Runtime|threadpool-thread-count",
+                  "fillGapWithZero": false,
+                  "name": "threadpool-thread-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of times there were contention when trying to take the monitor lock",
+                  "displayName": "System.Runtime|monitor-lock-contention-count",
+                  "fillGapWithZero": false,
+                  "name": "monitor-lock-contention-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "ThreadPool Work Items Queue Length",
+                  "displayName": "System.Runtime|threadpool-queue-length",
+                  "fillGapWithZero": false,
+                  "name": "threadpool-queue-length",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "ThreadPool Completed Work Items Count",
+                  "displayName": "System.Runtime|threadpool-completed-items-count",
+                  "fillGapWithZero": false,
+                  "name": "threadpool-completed-items-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Performance (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of timers that are currently active",
+                  "displayName": "System.Runtime|active-timer-count",
+                  "fillGapWithZero": false,
+                  "name": "active-timer-count",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Request (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Request rate",
+                  "displayName": "Microsoft.AspNetCore.Hosting|requests-rate",
+                  "fillGapWithZero": false,
+                  "name": "requests-per-second",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Request (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total number of requests in the lifetime of the process",
+                  "displayName": "Microsoft.AspNetCore.Hosting|total-requests",
+                  "fillGapWithZero": false,
+                  "name": "total-requests",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Request (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total number of requests in processing in the lifetime of the process",
+                  "displayName": "Microsoft.AspNetCore.Hosting|current-requests",
+                  "fillGapWithZero": false,
+                  "name": "current-requests",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Request (.NET)",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total number of failed requests in the lifetime of the process",
+                  "displayName": "Microsoft.AspNetCore.Hosting|failed-requests",
+                  "fillGapWithZero": false,
+                  "name": "failed-requests",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Common",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent CPU usage for the app",
+                  "displayName": "App CPU Usage",
+                  "fillGapWithZero": false,
+                  "name": "PodCpuUsage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Common",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent Memory usage for the app",
+                  "displayName": "App Memory Usage",
+                  "fillGapWithZero": false,
+                  "name": "PodMemoryUsage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Common",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent CPU usage for the app. This metric is being deprecated. Please use \"App CPU Usage\" with metric id \"PodCpuUsage\".",
+                  "displayName": "App CPU Usage (Deprecated)",
+                  "fillGapWithZero": false,
+                  "name": "AppCpuUsage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Common",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Cumulative count of bytes received in the app",
+                  "displayName": "App Network In",
+                  "fillGapWithZero": false,
+                  "name": "PodNetworkIn",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Common",
+                  "dimensions": [
+                    {
+                      "displayName": "Deployment",
+                      "name": "Deployment",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "App",
+                      "name": "AppName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Cumulative count of bytes sent from the app",
+                  "displayName": "App Network Out",
+                  "fillGapWithZero": false,
+                  "name": "PodNetworkOut",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of bytes received by Azure Spring Apps from the clients",
+                  "displayName": "Bytes Received",
+                  "fillGapWithZero": false,
+                  "name": "IngressBytesReceived",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of bytes sent by Azure Spring Apps to the clients",
+                  "displayName": "Bytes Sent",
+                  "fillGapWithZero": false,
+                  "name": "IngressBytesSent",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of requests by Azure Spring Apps from the clients",
+                  "displayName": "Requests",
+                  "fillGapWithZero": false,
+                  "name": "IngressRequests",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of failed requests by Azure Spring Apps from the clients",
+                  "displayName": "Failed Requests",
+                  "fillGapWithZero": false,
+                  "name": "IngressFailedRequests",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "HTTP response status returned by Azure Spring Apps. The response status code distribution can be further categorized to show responses in 2xx, 3xx, 4xx, and 5xx categories",
+                  "displayName": "Response Status",
+                  "fillGapWithZero": false,
+                  "name": "IngressResponseStatus",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Http response time return by Azure Spring Apps",
+                  "displayName": "Response Time",
+                  "fillGapWithZero": false,
+                  "name": "IngressResponseTime",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Seconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Bytes received per second by Azure Spring Apps from the clients",
+                  "displayName": "Throughput In (bytes/s)",
+                  "fillGapWithZero": false,
+                  "name": "IngressBytesReceivedRate",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Ingress",
+                  "dimensions": [
+                    {
+                      "displayName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatus",
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Bytes sent per second by Azure Spring Apps to the clients",
+                  "displayName": "Throughput Out (bytes/s)",
+                  "fillGapWithZero": false,
+                  "name": "IngressBytesSentRate",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatusCode",
+                      "name": "httpStatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Outcome",
+                      "name": "outcome",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpMethod",
+                      "name": "httpMethod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The number of requests",
+                  "displayName": "Request count",
+                  "fillGapWithZero": false,
+                  "name": "GatewayHttpServerRequestsSecondsCount",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatusCode",
+                      "name": "httpStatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Outcome",
+                      "name": "outcome",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpMethod",
+                      "name": "httpMethod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The total time of requests",
+                  "displayName": "Total time of requests",
+                  "fillGapWithZero": false,
+                  "name": "GatewayHttpServerRequestsMilliSecondsSum",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpStatusCode",
+                      "name": "httpStatusCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Outcome",
+                      "name": "outcome",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "HttpMethod",
+                      "name": "httpMethod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The max time of requests",
+                  "displayName": "Max time of requests",
+                  "fillGapWithZero": false,
+                  "name": "GatewayHttpServerRequestsMilliSecondsMax",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The count of the throttled requests",
+                  "displayName": "Throttled requests count",
+                  "fillGapWithZero": false,
+                  "name": "GatewayRatelimitThrottledCount",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent CPU usage for the JVM process",
+                  "displayName": "process.cpu.usage",
+                  "fillGapWithZero": false,
+                  "name": "GatewayProcessCpuUsage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "The recent CPU usage for the whole system",
+                  "displayName": "system.cpu.usage",
+                  "fillGapWithZero": false,
+                  "name": "GatewaySystemCpuUsage",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "GC Pause Count",
+                  "displayName": "jvm.gc.pause.total.count",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcPauseSecondsCount",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "GC Pause Total Time",
+                  "displayName": "jvm.gc.pause.total.time",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcPauseSecondsSum",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Seconds"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "GC Pause Max Time",
+                  "displayName": "jvm.gc.pause.max.time",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcPauseSecondsMax",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Seconds"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incremented for an increase in the size of the young generation memory pool after one GC to before the next",
+                  "displayName": "jvm.gc.memory.allocated",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcMemoryAllocatedBytesTotal",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of positive increases in the size of the old generation memory pool before GC to after GC",
+                  "displayName": "jvm.gc.memory.promoted",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcMemoryPromotedBytesTotal",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Size of old generation memory pool after a full GC",
+                  "displayName": "jvm.gc.live.data.size",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcLiveDataSizeBytes",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Max size of old generation memory pool",
+                  "displayName": "jvm.gc.max.data.size",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmGcMaxDataSizeBytes",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Memory Used in bytes",
+                  "displayName": "jvm.memory.used",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmMemoryUsedBytes",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway",
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "name": "Pod",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Memory assigned to JVM in bytes",
+                  "displayName": "jvm.memory.committed",
+                  "fillGapWithZero": false,
+                  "name": "GatewayJvmMemoryCommittedBytes",
+                  "sourceMdmNamespace": null,
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": null,
+                  "unit": "Bytes"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The diagnostic settings of Microsoft Azure Spring Apps",
+      "name": "Spring/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Get the diagnostic settings for a specific Azure Spring Apps service instance",
+          "displayName": "Get the diagnostic settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the diagnostic settings for a specific Azure Spring Apps service instance",
+          "displayName": "Update the diagnostic settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The application of Microsoft Azure Spring Apps",
+      "name": "Spring/apps",
+      "operations": [
+        {
+          "description": "Create or update the application for a specific Azure Spring Apps service instance",
+          "displayName": "Update configurations of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the application for a specific Azure Spring Apps service instance",
+          "displayName": "Delete an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the applications for a specific Azure Spring Apps service instance",
+          "displayName": "Get the details of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the resource upload URL of a specific Microsoft Azure Spring Apps application",
+          "displayName": "Get the URL to upload artifacts to an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/getResourceUploadUrl/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate the custom domain for a specific application",
+          "displayName": "Validate a custom domain in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/validateDomain/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Set active deployments for a specific Microsoft Azure Spring Apps application",
+          "displayName": "Set the active deployments to service traffic to an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/setActiveDeployments/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The application deployment of Microsoft Azure Spring Apps",
+      "name": "Spring/apps/deployments",
+      "operations": [
+        {
+          "description": "Create or update the deployment for a specific application",
+          "displayName": "Update the deployment of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the deployment for a specific application",
+          "displayName": "Delete the deployment of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the deployments for a specific application",
+          "displayName": "Get details of the deployment(s) of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Start the deployment for a specific application",
+          "displayName": "Start an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stop the deployment for a specific application",
+          "displayName": "Stop an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restart the deployment for a specific application",
+          "displayName": "Restart an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/restart/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the log file URL of a specific Microsoft Azure Spring Apps application deployment",
+          "displayName": "Get an app deployment log file URL in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/getLogFileUrl/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Generate heap dump for a specific application",
+          "displayName": "Generate heap dump in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/generateHeapDump/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Generate thread dump for a specific application",
+          "displayName": "Generate thread dump in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/generateThreadDump/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Start JFR for a specific application",
+          "displayName": "Start JFR in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/startJFR/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List available operations of Microsoft Azure Spring Apps",
+          "displayName": "Get available operations in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sku",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "List available skus of Microsoft Azure Spring Apps",
+          "displayName": "Get available Service Tiers of Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/skus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deployment Sku",
+      "name": "Spring/apps/deployments/skus",
+      "operations": [
+        {
+          "description": "List available skus of an application deployment",
+          "displayName": "Get the scale values of a Service Tier for deployment(s) of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/skus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The application binding of Microsoft Azure Spring Apps",
+      "name": "Spring/apps/bindings",
+      "operations": [
+        {
+          "description": "Create or update the binding for a specific application",
+          "displayName": "Update the service binding of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/bindings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the binding for a specific application",
+          "displayName": "Delete the service binding of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/bindings/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the bindings for a specific application",
+          "displayName": "Get the details of a service binding of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/bindings/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The application custom domain of Microsoft Azure Spring Apps",
+      "name": "Spring/apps/domains",
+      "operations": [
+        {
+          "description": "Create or update the custom domain for a specific application",
+          "displayName": "Update a custom domain in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/domains/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the custom domain for a specific application",
+          "displayName": "Delete a custom domain in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/domains/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the custom domains for a specific application",
+          "displayName": "Get custom domain(s) in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/domains/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The certificate of Microsoft Azure Spring Apps",
+      "name": "Spring/certificates",
+      "operations": [
+        {
+          "description": "Create or update the certificate for a specific Azure Spring Apps service instance",
+          "displayName": "Update a certificate to Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/certificates/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the certificate for a specific Azure Spring Apps service instance",
+          "displayName": "Delete a certificate in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/certificates/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the certificates for a specific Azure Spring Apps service instance",
+          "displayName": "Get certificate(s) in an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/certificates/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The detectors of Microsoft Azure Spring Apps",
+      "name": "Spring/detectors",
+      "operations": [
+        {
+          "description": "Get the detectors for a specific Azure Spring Apps service instance",
+          "displayName": "Get the analysis result for specified problem(s) in an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/detectors/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Location",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Check resource name availability",
+          "displayName": "Check the availability of a specified resource name in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/locations/checkNameAvailability/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Location Operation Result",
+      "name": "locations/operationResults/Spring",
+      "operations": [
+        {
+          "description": "Read resource operation result",
+          "displayName": "Get operation result",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/locations/operationResults/Spring/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Location Operation Status",
+      "name": "locations/operationStatus/operationId",
+      "operations": [
+        {
+          "description": "Read resource operation status",
+          "displayName": "Get operation status",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/locations/operationStatus/operationId/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The application deployment of Microsoft Azure Spring Apps",
+      "name": "Spring/deployments",
+      "operations": [
+        {
+          "description": "Get the deployments for a specific Azure Spring Apps service instance",
+          "displayName": "Get details of the deployments in an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/deployments/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The monitoring setting of Microsoft Azure Spring Apps",
+      "name": "Spring/monitoringSettings",
+      "operations": [
+        {
+          "description": "Get the monitoring setting for a specific Azure Spring Apps service instance",
+          "displayName": "Get the monitoring settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/monitoringSettings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the monitoring setting for a specific Azure Spring Apps service instance",
+          "displayName": "Update the monitoring settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/monitoringSettings/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The config server of Microsoft Azure Spring Apps",
+      "name": "Spring/configServers",
+      "operations": [
+        {
+          "description": "Get the config server for a specific Azure Spring Apps service instance",
+          "displayName": "Get the Config Server settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configServers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the config server for a specific Azure Spring Apps service instance",
+          "displayName": "Update the Config Server settings of an Azure Spring Apps service instance",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configServers/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The content of config server from Microsoft Azure Spring Apps",
+      "name": "Spring/configService",
+      "operations": [
+        {
+          "description": "Read the configuration content(for example, application.yaml) for a specific Azure Spring Apps service instance",
+          "displayName": "Get content of config server from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/configService/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Write config server content for a specific Azure Spring Apps service instance",
+          "displayName": "Update config server content from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/configService/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete config server content for a specific Azure Spring Apps service instance",
+          "displayName": "Delete config server content from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/configService/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The app(s) registration of eureka server from Microsoft Azure Spring Apps",
+      "name": "Spring/eurekaService",
+      "operations": [
+        {
+          "description": "Read the user app(s) registration information for a specific Azure Spring Apps service instance",
+          "displayName": "Get app(s) registration of eureka server from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/eurekaService/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Write the user app(s) registration information for a specific Azure Spring Apps service instance",
+          "displayName": "Update app(s) registration of eureka server from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/eurekaService/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the user app registration information for a specific Azure Spring Apps service instance",
+          "displayName": "Delete app registration of eureka server from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/eurekaService/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The streaming log of app from Microsoft Azure Spring Apps",
+      "name": "Spring/logstreamService",
+      "operations": [
+        {
+          "description": "Read the streaming log of user app for a specific Azure Spring Apps service instance",
+          "displayName": "Get the streaming log of app from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/logstreamService/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The storage of Microsoft Azure Spring Apps",
+      "name": "Spring/storages",
+      "operations": [
+        {
+          "description": "Create or update the storage for a specific Azure Spring Apps service instance",
+          "displayName": "Update Microsoft Azure Spring Apps storage",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/storages/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the storage for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps storage",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/storages/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get storage for a specific Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps storage",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/storages/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The application service connector of Microsoft Azure Spring Apps",
+      "name": "Spring/apps/deployments/connectorProps",
+      "operations": [
+        {
+          "description": "Get the service connectors for a specific application",
+          "displayName": "Get the details of a service connector of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/connectorProps/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the service connector for a specific application",
+          "displayName": "Write the service connector of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/connectorProps/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the service connector for a specific application",
+          "displayName": "Delete the service connector of an app in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/connectorProps/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The BuildpackBinding of Microsoft Azure Spring Apps Builder",
+      "name": "Spring/buildServices/builders/buildpackBindings",
+      "operations": [
+        {
+          "description": "Get the BuildpackBinding for a specific Azure Spring Apps service instance Builder",
+          "displayName": "Read Microsoft Azure Spring Apps Builder BuildpackBinding",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/buildpackBindings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the BuildpackBinding for a specific Azure Spring Apps service instance Builder",
+          "displayName": "Write Microsoft Azure Spring Apps Builder BuildpackBinding",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/buildpackBindings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the BuildpackBinding for a specific Azure Spring Apps service instance Builder",
+          "displayName": "Delete Microsoft Azure Spring Apps Builder BuildpackBinding",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/buildpackBindings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Build Service of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices",
+      "operations": [
+        {
+          "description": "Get the Build Services for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Build Services",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the Upload URL of a specific Microsoft Azure Spring Apps build",
+          "displayName": "Get an Upload URL in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/getResourceUploadUrl/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The supported buildpack of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices/supportedBuildpacks",
+      "operations": [
+        {
+          "description": "Get the Supported Buildpacks for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Supported Buildpacks",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/supportedBuildpacks/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The supported stack of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices/supportedStacks",
+      "operations": [
+        {
+          "description": "Get the Supported Stacks for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Supported Stacks",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/supportedStacks/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Agent Pool of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices/agentPools",
+      "operations": [
+        {
+          "description": "Get the Agent Pools for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Agent Pools",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/agentPools/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Agent Pools for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps Agent Pools",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/agentPools/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Builder of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices/builders",
+      "operations": [
+        {
+          "description": "Get the Builders for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Builders",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Builders for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps Builders",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Builders for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Builders",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Build of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices/builds",
+      "operations": [
+        {
+          "description": "Get the Builds for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Builds",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builds/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Builds for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps Builds",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builds/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Build Result of Microsoft Azure Spring Apps",
+      "name": "Spring/buildServices/builds/results",
+      "operations": [
+        {
+          "description": "Get the Build Results for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Build Results",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builds/results/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get the Log File URL of a specific Microsoft Azure Spring Apps build result",
+          "displayName": "Get an Log File URL in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builds/results/getLogFileUrl/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Application Configuration Service of Microsoft Azure Spring Apps",
+      "name": "Spring/configurationServices",
+      "operations": [
+        {
+          "description": "Get the Application Configuration Services for a specific Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps Application Configuration Service",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configurationServices/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Application Configuration Service for a specific Azure Spring Apps service instance",
+          "displayName": "Update Microsoft Azure Spring Apps Application Configuration Service",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configurationServices/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Application Configuration Service for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Application Configuration Service",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configurationServices/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate the settings for a specific Application Configuration Service",
+          "displayName": "Validate Microsoft Azure Spring Apps Application Configuration Service settings",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configurationServices/validate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Service Registry of Microsoft Azure Spring Apps",
+      "name": "Spring/serviceRegistries",
+      "operations": [
+        {
+          "description": "Get the Service Registrys for a specific Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps Service Registry",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/serviceRegistries/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Service Registry for a specific Azure Spring Apps service instance",
+          "displayName": "Update Microsoft Azure Spring Apps Service Registry",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/serviceRegistries/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Service Registry for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Service Registry",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/serviceRegistries/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Spring Cloud Gateway of Microsoft Azure Spring Apps",
+      "name": "Spring/gateways",
+      "operations": [
+        {
+          "description": "Get the Spring Cloud Gateways for a specific Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps Spring Cloud Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Spring Cloud Gateway for a specific Azure Spring Apps service instance",
+          "displayName": "Update Microsoft Azure Spring Apps Spring Cloud Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Spring Cloud Gateway for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Spring Cloud Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate the Spring Cloud Gateway domain for a specific Azure Spring Apps service instance",
+          "displayName": "Validate Microsoft Azure Spring Apps Spring Cloud Gateway domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/validateDomain/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Spring Cloud Gateway route config of Microsoft Azure Spring Apps",
+      "name": "Spring/gateways/routeConfigs",
+      "operations": [
+        {
+          "description": "Get the Spring Cloud Gateway route config for a specific Azure Spring Apps service instance",
+          "displayName": "Get Microsoft Azure Spring Apps Spring Cloud Gateway route config",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/routeConfigs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Spring Cloud Gateway route config for a specific Azure Spring Apps service instance",
+          "displayName": "Update Microsoft Azure Spring Apps Spring Cloud Gateway route config",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/routeConfigs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Spring Cloud Gateway route config for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Spring Cloud Gateway route config",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/routeConfigs/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Spring Cloud Gateway domain of Microsoft Azure Spring Apps",
+      "name": "Spring/gateways/domains",
+      "operations": [
+        {
+          "description": "Get the Spring Cloud Gateways domain for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Spring Cloud Gateway domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/domains/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Spring Cloud Gateway domain for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps Spring Cloud Gateway domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/domains/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Spring Cloud Gateway domain for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Spring Cloud Gateway domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/domains/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The API portal of Microsoft Azure Spring Apps",
+      "name": "Spring/apiPortals",
+      "operations": [
+        {
+          "description": "Get the API portal for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps API portal ",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the API portal for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps API portal",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the API portal for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps API portal",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate the API portal domain for a specific Azure Spring Apps service instance",
+          "displayName": "Validate Microsoft Azure Spring Apps API portal domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/validateDomain/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The API portal domain of Microsoft Azure Spring Apps",
+      "name": "Spring/apiPortals/domains",
+      "operations": [
+        {
+          "description": "Get the API portal domain for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps API portal domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/domains/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the API portal domain for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps API portal domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/domains/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the API portal domain for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps API portal domain",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apiPortals/domains/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

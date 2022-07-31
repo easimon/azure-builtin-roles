@@ -1,0 +1,198 @@
+{
+  "displayName": "Azure Data Box",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataBox",
+  "name": "Microsoft.DataBox",
+  "operations": [
+    {
+      "description": "Register Provider Microsoft.Databox",
+      "displayName": "Register Microsoft.Databox",
+      "isDataAction": false,
+      "name": "Microsoft.DataBox/register/action",
+      "origin": "user",
+      "properties": {}
+    },
+    {
+      "description": "Un-Register Provider Microsoft.Databox",
+      "displayName": "Un-Register Microsoft.Databox",
+      "isDataAction": false,
+      "name": "Microsoft.DataBox/unregister/action",
+      "origin": "user",
+      "properties": {}
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Orders",
+      "name": "jobs",
+      "operations": [
+        {
+          "description": "Cancels an order in progress.",
+          "displayName": "Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/cancel/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "Allows to book a pick up for return shipments.",
+          "displayName": "Book Shipment Pick Up",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/bookShipmentPickUp/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "This method helps in performing mitigation action on a job with a resolution code",
+          "displayName": "Mitigate",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/mitigate/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/markDevicesShipped/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "List or get the Orders",
+          "displayName": "List Orders",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/read",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "Delete the Orders",
+          "displayName": "Delete Orders",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/delete",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "Create or update the Orders",
+          "displayName": "Create or Update Orders",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/write",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "Lists the unencrypted credentials related to the order.",
+          "displayName": "List Credentials",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/jobs/listCredentials/action",
+          "origin": "user",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Inputs",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "This method does all type of validations.",
+          "displayName": "Validate Inputs",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/locations/validateInputs/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "Validates the shipping address and provides alternate addresses if any.",
+          "displayName": "Validate Address",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/locations/validateAddress/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "This method returns the list of available skus.",
+          "displayName": "Availabe Skus",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/locations/availableSkus/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "This method returns the configurations for the region.",
+          "displayName": "Region Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/locations/regionConfiguration/action",
+          "origin": "user",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Results",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "List or get the Operation Results",
+          "displayName": "List Operation Results",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/locations/operationResults/read",
+          "origin": "user",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Available Skus",
+      "name": "locations/availableSkus",
+      "operations": [
+        {
+          "description": "List or get the Available Skus",
+          "displayName": "List Available Skus",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/locations/availableSkus/read",
+          "origin": "user",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Move Resource",
+      "name": "subscriptions/resourceGroups",
+      "operations": [
+        {
+          "description": "This method performs the resource move.",
+          "displayName": "Move Resource",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/subscriptions/resourceGroups/moveResources/action",
+          "origin": "user",
+          "properties": {}
+        },
+        {
+          "description": "This method validates whether resource move is allowed or not.",
+          "displayName": "Validate Move Resource Request",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/subscriptions/resourceGroups/validateMoveResources/action",
+          "origin": "user",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List or get the Operations",
+          "displayName": "List Operations",
+          "isDataAction": false,
+          "name": "Microsoft.DataBox/operations/read",
+          "origin": "user",
+          "properties": {}
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

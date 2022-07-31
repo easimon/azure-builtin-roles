@@ -1,0 +1,949 @@
+{
+  "displayName": "Microsoft.HDInsight",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.HDInsight",
+  "name": "Microsoft.HDInsight",
+  "operations": [
+    {
+      "description": "Register HDInsight resource provider for the subscription",
+      "displayName": "Register HDInsight resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.HDInsight/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister HDInsight resource provider for the subscription",
+      "displayName": "Unregister HDInsight resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.HDInsight/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters",
+      "operations": [
+        {
+          "description": "Create or Update HDInsight Cluster",
+          "displayName": "Create or Update Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get details about HDInsight Cluster",
+          "displayName": "Read Cluster Details",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a HDInsight Cluster",
+          "displayName": "Delete Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get gateway settings for HDInsight Cluster",
+          "displayName": "Get gateway settings",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/getGatewaySettings/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update gateway settings for HDInsight Cluster",
+          "displayName": "Update gateway settings",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/updateGatewaySettings/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get HDInsight Cluster Configurations",
+          "displayName": "Get Cluster Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/configurations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Execute Script Actions for HDInsight Cluster",
+          "displayName": "Execute Script Actions for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/executeScriptActions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resolve Private Link Service ID for HDInsight Cluster",
+          "displayName": "Resolve Private Link Service ID",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/resolvePrivateLinkServiceId/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Auto Approve Private Endpoint Connections for HDInsight Cluster",
+          "displayName": "Auto Approve Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/roles",
+      "operations": [
+        {
+          "description": "Resize a HDInsight Cluster",
+          "displayName": "Resize Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/roles/resize/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/configurations",
+      "operations": [
+        {
+          "description": "Get HDInsight Cluster Configurations",
+          "displayName": "Get Cluster Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/configurations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "locations/checkNameAvailability",
+      "operations": [
+        {
+          "description": "Check Name Availability",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/locations/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Subscription Capabilities",
+      "name": "locations/capabilities",
+      "operations": [
+        {
+          "description": "Get Subscription Capabilities",
+          "displayName": "Get Subscription Capabilities",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/locations/capabilities/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource HDInsight Cluster",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource HDInsight Cluster",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of HDInsight Cluster",
+      "name": "clusters/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for HDInsight Cluster",
+          "displayName": "Read HDInsight Cluster metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "HttpStatus",
+                      "internalName": null,
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of gateway requests",
+                  "displayName": "Gateway Requests",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": null,
+                  "name": "GatewayRequests",
+                  "resourceIdDimensionNameOverride": "ClusterDnsName",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Count",
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "HttpStatus",
+                      "internalName": null,
+                      "name": "HttpStatus",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of gateway requests by categories (1xx/2xx/3xx/4xx/5xx)",
+                  "displayName": "Categorized Gateway Requests",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": null,
+                  "name": "CategorizedGatewayRequests",
+                  "resourceIdDimensionNameOverride": "ClusterDnsName",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Count",
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "MetricName",
+                      "internalName": null,
+                      "name": "MetricName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of Active Workers",
+                  "displayName": "Number of Active Workers",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": null,
+                  "name": "NumActiveWorkers",
+                  "resourceIdDimensionNameOverride": "ClusterDnsName",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of concurrent connections through Kafka REST proxy",
+                  "displayName": "REST proxy ConcurrentConnections",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.OpenConnections",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of producer requests to Kafka REST proxy",
+                  "displayName": "REST proxy Producer RequestThroughput",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ProducerRequest.m1_delta",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of producer messages through Kafka REST proxy",
+                  "displayName": "REST proxy Producer MessageThroughput",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.MessagesIn.m1_delta",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Message latency in a producer request through Kafka REST proxy",
+                  "displayName": "REST proxy Producer RequestLatency",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ProducerRequestTime.p95",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Producer REST proxy queue length",
+                  "displayName": "REST proxy Producer Request Backlog",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ProducerRequestWaitingInQueueTime.p95",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Producer request exceptions",
+                  "displayName": "REST proxy Producer Unsuccessful Requests",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ProducerRequestFail.m1_delta",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of consumer requests to Kafka REST proxy",
+                  "displayName": "REST proxy Consumer RequestThroughput",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ConsumerRequest.m1_delta",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of consumer messages through Kafka REST proxy",
+                  "displayName": "REST proxy Consumer MessageThroughput",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.MessagesOut.m1_delta",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Message latency in a consumer request through Kafka REST proxy",
+                  "displayName": "REST proxy Consumer RequestLatency",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ConsumerRequestTime.p95",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Consumer REST proxy queue length",
+                  "displayName": "REST proxy Consumer Request Backlog",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ConsumerRequestWaitingInQueueTime.p95",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Machine",
+                      "internalName": null,
+                      "name": "Machine",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Topic",
+                      "internalName": null,
+                      "name": "Topic",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Consumer request exceptions",
+                  "displayName": "REST proxy Consumer Unsuccessful Requests",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "^(?i)kafka.*$",
+                  "name": "KafkaRestProxy.ConsumerRequestFail.m1_delta",
+                  "resourceIdDimensionNameOverride": "Cluster",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": null,
+                  "displayDescription": "Pending CPU Requests in YARN",
+                  "displayName": "Pending CPU",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": null,
+                  "name": "PendingCPU",
+                  "resourceIdDimensionNameOverride": "ClusterDnsName",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "category": "Availability",
+                  "delegateMetricNameOverride": null,
+                  "dimensions": null,
+                  "displayDescription": "Pending Memory Requests in YARN",
+                  "displayName": "Pending Memory",
+                  "enableRegionalMdmAccount": false,
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": null,
+                  "name": "PendingMemory",
+                  "resourceIdDimensionNameOverride": "ClusterDnsName",
+                  "sourceMdmAccount": "HdInsight",
+                  "sourceMdmNamespace": "HdInsightIaasCluster",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT1H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster Application",
+      "name": "clusters/applications",
+      "operations": [
+        {
+          "description": "Get Application for HDInsight Cluster",
+          "displayName": "Get Cluster Application",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/applications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Application for HDInsight Cluster",
+          "displayName": "Create or Update Cluster Application",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/applications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Application for HDInsight Cluster",
+          "displayName": "Delete Cluster Application",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/applications/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/extensions",
+      "operations": [
+        {
+          "description": "Create Cluster Extension for HDInsight Cluster",
+          "displayName": "Create Cluster Extension",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/extensions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Cluster Extension for HDInsight Cluster",
+          "displayName": "Get Cluster Extension",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/extensions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Cluster Extension for HDInsight Cluster",
+          "displayName": "Delete Cluster Extension",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/extensions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/executeScriptActions/operationresults",
+      "operations": [
+        {
+          "description": "Get Script Action status for HDInsight Cluster",
+          "displayName": "Get Script Action status for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/executeScriptActions/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/executeScriptActions/azureasyncoperations",
+      "operations": [
+        {
+          "description": "Get Script Action status for HDInsight Cluster",
+          "displayName": "Get Script Action status for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/executeScriptActions/azureasyncoperations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/scriptActions",
+      "operations": [
+        {
+          "description": "Get persisted Script Actions for HDInsight Cluster",
+          "displayName": "Get persisted Script Actions for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/scriptActions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete persisted Script Actions for HDInsight Cluster",
+          "displayName": "Delete persisted Script Actions for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/scriptActions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/scriptExecutionHistory",
+      "operations": [
+        {
+          "description": "Get Script Actions history for HDInsight Cluster",
+          "displayName": "Get Script Actions history for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/scriptExecutionHistory/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Promote Script Action for HDInsight Cluster",
+          "displayName": "Promote Script Action for HDInsight Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/scriptExecutionHistory/promote/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get Private Link Resources for HDInsight Cluster",
+          "displayName": "Get Private Link Resources",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HDInsight Cluster",
+      "name": "clusters/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connections for HDInsight Cluster",
+          "displayName": "Get Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Private Endpoint Connections for HDInsight Cluster",
+          "displayName": "Update Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connections for HDInsight Cluster",
+          "displayName": "Delete Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.HDInsight/clusters/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

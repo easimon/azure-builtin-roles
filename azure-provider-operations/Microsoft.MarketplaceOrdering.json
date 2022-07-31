@@ -1,0 +1,89 @@
+{
+  "displayName": "Microsoft Marketplace Ordering",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.MarketplaceOrdering",
+  "name": "Microsoft.MarketplaceOrdering",
+  "operations": [],
+  "resourceTypes": [
+    {
+      "displayName": "Agreement",
+      "name": "agreements",
+      "operations": [
+        {
+          "description": "Return all agreements under given subscription",
+          "displayName": "Get all Agreements",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/agreements/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agreement",
+      "name": "agreements/offers/plans",
+      "operations": [
+        {
+          "description": "Return an agreement for a given marketplace item",
+          "displayName": "Get Agreement",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/agreements/offers/plans/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Sign an agreement for a given marketplace item",
+          "displayName": "Sign Agreement",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/agreements/offers/plans/sign/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel an agreement for a given marketplace item",
+          "displayName": "Cancel Agreement",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/agreements/offers/plans/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agreement",
+      "name": "offertypes/publishers/offers/plans/agreements",
+      "operations": [
+        {
+          "description": "Get an agreement for a given marketplace virtual machine item",
+          "displayName": "Get Agreement for virtual machine",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Sign or Cancel an agreement for a given marketplace virtual machine item",
+          "displayName": "Save Agreement for virtual machine",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agreement",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List all possible operations in the API",
+          "displayName": "List Operations",
+          "isDataAction": false,
+          "name": "Microsoft.MarketplaceOrdering/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

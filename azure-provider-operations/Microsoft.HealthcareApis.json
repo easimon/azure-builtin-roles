@@ -1,0 +1,1571 @@
+{
+  "displayName": "Microsoft.HealthcareApis",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.HealthcareApis",
+  "name": "Microsoft.HealthcareApis",
+  "operations": [
+    {
+      "description": "Subscription Registration Action",
+      "displayName": "Subscription Registration Action",
+      "isDataAction": false,
+      "name": "Microsoft.HealthcareApis/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for the resource provider.",
+      "displayName": "Unregisters the Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.HealthcareApis/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "services",
+      "name": "services",
+      "operations": [
+        {
+          "description": "Reads resources.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes resources.",
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes resources.",
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operationresults",
+      "name": "locations/operationresults",
+      "operations": [
+        {
+          "description": "Read the status of an asynchronous operation.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/locations/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "Operations",
+      "operations": [
+        {
+          "description": "Read the operations for all resource types.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/Operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks for the availability of the specified name.",
+          "displayName": "Check name availability",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/checkNameAvailability/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "FHIR Resources",
+      "name": "services/fhir/resources",
+      "operations": [
+        {
+          "description": "Read FHIR resources (includes searching and versioned history). ",
+          "displayName": "Read",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Write FHIR resources (includes create and update).",
+          "displayName": "Write",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete FHIR resources (soft delete).",
+          "displayName": "Delete",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Hard Delete (including version history).",
+          "displayName": "Hard Delete",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/hardDelete/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Export operation ($export).",
+          "displayName": "Export",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/export/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Data convert operation ($convert-data)",
+          "displayName": "ConvertData",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/convertData/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validate operation ($validate).",
+          "displayName": "Validate",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/services/fhir/resources/resourceValidate/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxies.",
+      "name": "services/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate",
+          "displayName": "Validate",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnectionProxies/validate/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Writes Private Endpoint Connection Proxy resources.",
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnectionProxies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reads Private Endpoint Connection Proxy resources.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnectionProxies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes Private Endpoint Connection Proxy resources.",
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnectionProxies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connections.",
+      "name": "services/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Reads Private Endpoint Connections resources.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes connection status to Private Endpoint Connection.",
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes Private Endpoint Connections.",
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateEndpointConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link resources",
+      "name": "services/privateLinkResources",
+      "operations": [
+        {
+          "description": "Reads Private Link resources.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/privateLinkResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations/checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks for the availability of the specified name.",
+          "displayName": "Check name availability",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/locations/checkNameAvailability/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link resources",
+      "name": "workspaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "Reads Private Link resources.",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateLinkResources/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DICOM resources",
+      "name": "workspaces/dicomservices/resources",
+      "operations": [
+        {
+          "description": "Read DICOM resources (includes searching and change feed). ",
+          "displayName": "Read",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/resources/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Write DICOM resources.",
+          "displayName": "Write",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/resources/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete DICOM resources.",
+          "displayName": "Delete",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/resources/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Manage DICOM extended query tags.",
+          "displayName": "Manage Extended Query Tags",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/resources/manageExtendedQueryTags/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Export resources from the DICOM service.",
+          "displayName": "Export",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/resources/export/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/dicomservices",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/iotconnectors",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/fhirservices",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service log definition.",
+      "name": "workspaces/iotconnectors/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for the Azure service.",
+          "displayName": "Read the Azure service log definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service diagnostic settings.",
+      "name": "workspaces/iotconnectors/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic settings for the Azure service.",
+          "displayName": "Read Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic settings for the Azure service.",
+          "displayName": "Write Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service metrics settings.",
+      "name": "workspaces/iotconnectors/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the metrics settings for the Azure service.",
+          "displayName": "Read the Azure service metrics definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Sum",
+                  "category": "Errors",
+                  "dimensions": [
+                    {
+                      "displayName": "The name of the error",
+                      "name": "Name"
+                    },
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The type of error",
+                      "name": "ErrorType"
+                    },
+                    {
+                      "displayName": "The severity of the error",
+                      "name": "ErrorSeverity"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The total number of errors logged by the Azure IoT Connector for FHIR",
+                  "displayName": "Total Error Count",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "TotalErrors",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The total number of messages received by the Azure IoT Connector for FHIR prior to any normalization.",
+                  "displayName": "Number of Incoming Messages",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "DeviceEvent",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    },
+                    {
+                      "displayName": "The name of the FHIR resource saved and the operation performed",
+                      "name": "Name"
+                    }
+                  ],
+                  "displayDescription": "The total number of FHIR resources saved by the Azure IoT Connector",
+                  "displayName": "Number of Fhir resources saved",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "FhirResourceSaved",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The total number of mapped normalized values outputted from the normalization stage of the the Azure IoT Connector for FHIR.",
+                  "displayName": "Number of Normalized Messages",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "NormalizedEvent",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The number of normalized value readings received by the FHIR conversion stage of the Azure IoT Connector for FHIR.",
+                  "displayName": "Number of Measurements",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "Measurement",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The total number of unique groupings of measurements across type, device, patient, and configured time period generated by the FHIR conversion stage.",
+                  "displayName": "Number of Message Groups",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "MeasurementGroup",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Latency",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The average time between an event's ingestion time and the time the event is processed for normalization.",
+                  "displayName": "Average Normalize Stage Latency",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "DeviceEventProcessingLatencyMs",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Latency",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    }
+                  ],
+                  "displayDescription": "The time period between when the IoT Connector received the device data and when the data is processed by the FHIR conversion stage.",
+                  "displayName": "Average Group Stage Latency",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "MeasurementIngestionLatencyMs",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ResourceName"
+                    },
+                    {
+                      "displayName": "The name of the health check",
+                      "name": "HealthCheckName"
+                    }
+                  ],
+                  "displayDescription": "Health checks which indicate the overall health of the IoT Connector.",
+                  "displayName": "IotConnector Health Status",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IotConnectorStatus",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "FHIR Resources",
+      "name": "workspaces/fhirservices/resources",
+      "operations": [
+        {
+          "description": "Read FHIR resources (includes searching and versioned history). ",
+          "displayName": "Read",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Write FHIR resources (includes create and update).",
+          "displayName": "Write",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete FHIR resources (soft delete).",
+          "displayName": "Delete",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Hard Delete (including version history).",
+          "displayName": "Hard Delete",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/hardDelete/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Export operation ($export).",
+          "displayName": "Export",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/export/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Data convert operation ($convert-data)",
+          "displayName": "ConvertData",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/convertData/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validate operation ($validate).",
+          "displayName": "Validate",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/resourceValidate/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Import FHIR resources in batch.",
+          "displayName": "Import",
+          "isDataAction": true,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/resources/import/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnectionProxies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnectionProxies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnectionProxies/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validate",
+          "displayName": "Validate",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnectionProxies/validate/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/eventGridFilters",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/eventGridFilters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/eventGridFilters/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/eventGridFilters/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/privateEndpointConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service log definition.",
+      "name": "workspaces/dicomservices/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for the Azure service.",
+          "displayName": "Read the Azure service log definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Audit logs",
+                  "name": "AuditLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service diagnostic settings.",
+      "name": "workspaces/dicomservices/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic settings for the Azure service.",
+          "displayName": "Read Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic settings for the Azure service.",
+          "displayName": "Write Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service metrics settings.",
+      "name": "workspaces/dicomservices/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the metrics settings for the Azure service.",
+          "displayName": "Read the Azure service metrics definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/iotconnectors/destinations",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/destinations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/destinations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/destinations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/iotconnectors/fhirdestinations",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/fhirdestinations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/fhirdestinations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/iotconnectors/fhirdestinations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service log definition.",
+      "name": "workspaces/fhirservices/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for the Azure service.",
+          "displayName": "Read the Azure service log definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "FHIR Audit logs",
+                  "name": "AuditLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service diagnostic settings.",
+      "name": "workspaces/fhirservices/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic settings for the Azure service.",
+          "displayName": "Read Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic settings for the Azure service.",
+          "displayName": "Write Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service metrics settings.",
+      "name": "workspaces/fhirservices/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the metrics settings for the Azure service.",
+          "displayName": "Read the Azure service metrics definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/fhirservices/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Sum",
+                  "category": "Errors",
+                  "dimensions": [
+                    {
+                      "displayName": "The protocol of the request.",
+                      "name": "Protocol"
+                    },
+                    {
+                      "displayName": "The numeric status code of the response.",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "The class of status code of the response.",
+                      "name": "StatusCodeClass"
+                    },
+                    {
+                      "displayName": "The name of the status code of the response.",
+                      "name": "StatusCodeText"
+                    }
+                  ],
+                  "displayDescription": "The total number of internal server errors encountered by the service.",
+                  "displayName": "Total Errors",
+                  "fillGapWithZero": false,
+                  "name": "TotalErrors",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The protocol of the request.",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "The total number of requests received by the service.",
+                  "displayName": "Total Requests",
+                  "fillGapWithZero": false,
+                  "name": "TotalRequests",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The protocol of the request.",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "The response latency of the service.",
+                  "displayName": "Total Latency",
+                  "fillGapWithZero": false,
+                  "name": "TotalLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "dimensions": [],
+                  "displayDescription": "The availability rate of the service.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Saturation",
+                  "dimensions": [],
+                  "displayDescription": "Total size of the data in the backing database, in bytes.",
+                  "displayName": "Total Data Size",
+                  "fillGapWithZero": false,
+                  "name": "TotalDataSize",
+                  "unit": "Bytes"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Azure API for FHIR log definition",
+      "name": "services/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for Azure API for FHIR",
+          "displayName": "Read Azure API for FHIR log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Audit logs",
+                  "name": "AuditLogs"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Diagnostic logs",
+                  "name": "DiagnosticLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Azure API for FHIR diagnostic settings",
+      "name": "services/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic settings for Azure API for FHIR",
+          "displayName": "Read Azure API for FHIR diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic settings for Azure API for FHIR",
+          "displayName": "Write Azure API for FHIR diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure API for FHIR metrics settings",
+      "name": "services/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the metrics settings for Azure API for FHIR",
+          "displayName": "Read Azure API for FHIR metrics definitions",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/services/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Sum",
+                  "category": "Errors",
+                  "dimensions": [
+                    {
+                      "displayName": "The protocol of the request.",
+                      "name": "Protocol"
+                    },
+                    {
+                      "displayName": "The numeric status code of the response.",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "The class of status code of the response.",
+                      "name": "StatusCodeClass"
+                    },
+                    {
+                      "displayName": "The name of the status code of the response.",
+                      "name": "StatusCodeText"
+                    }
+                  ],
+                  "displayDescription": "The total number of internal server errors encountered by the service.",
+                  "displayName": "Total Errors",
+                  "fillGapWithZero": false,
+                  "name": "TotalErrors",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The protocol of the request.",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "The total number of requests received by the service.",
+                  "displayName": "Total Requests",
+                  "fillGapWithZero": false,
+                  "name": "TotalRequests",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The protocol of the request.",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "The response latency of the service.",
+                  "displayName": "Total Latency",
+                  "fillGapWithZero": false,
+                  "name": "TotalLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Availability",
+                  "dimensions": [],
+                  "displayDescription": "The availability rate of the service.",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "name": "Availability",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Saturation",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation of the request.",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The type of resource associated with the request.",
+                      "name": "ResourceType"
+                    }
+                  ],
+                  "displayDescription": "The total number of 429 responses from a service's backing Cosmos DB.",
+                  "displayName": "Service Cosmos DB throttle rate",
+                  "fillGapWithZero": false,
+                  "name": "CosmosDbThrottleRate",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation of the request.",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The type of resource associated with the request.",
+                      "name": "ResourceType"
+                    }
+                  ],
+                  "displayDescription": "The total number of requests made to a service's backing Cosmos DB.",
+                  "displayName": "Service Cosmos DB requests",
+                  "fillGapWithZero": false,
+                  "name": "CosmosDbRequests",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Saturation",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation of the request.",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The type of resource associated with the request.",
+                      "name": "ResourceType"
+                    }
+                  ],
+                  "displayDescription": "The RU usage of requests to the service's backing Cosmos DB.",
+                  "displayName": "Cosmos DB RU usage",
+                  "fillGapWithZero": false,
+                  "name": "CosmosDbRequestCharge",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Saturation",
+                  "dimensions": [],
+                  "displayDescription": "The size of the backing Cosmos DB collection, in bytes.",
+                  "displayName": "Cosmos DB Collection Size",
+                  "fillGapWithZero": false,
+                  "name": "CosmosDbCollectionSize",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Saturation",
+                  "dimensions": [],
+                  "displayDescription": "The size of the backing Cosmos DB collection's index, in bytes.",
+                  "displayName": "Cosmos DB Index Size",
+                  "fillGapWithZero": false,
+                  "name": "CosmosDbIndexSize",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Errors",
+                  "dimensions": [
+                    {
+                      "displayName": "The name of the error",
+                      "name": "Name"
+                    },
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The type of error",
+                      "name": "ErrorType"
+                    },
+                    {
+                      "displayName": "The severity of the error",
+                      "name": "ErrorSeverity"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The total number of errors logged by the Azure IoT Connector for FHIR",
+                  "displayName": "Total Error Count",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorTotalErrors",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The total number of messages received by the Azure IoT Connector for FHIR prior to any normalization.",
+                  "displayName": "Number of Incoming Messages",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorDeviceEvent",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The total number of mapped normalized values outputted from the normalization stage of the the Azure IoT Connector for FHIR.",
+                  "displayName": "Number of Normalized Messages",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorNormalizedEvent",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The number of normalized value readings received by the FHIR conversion stage of the Azure IoT Connector for FHIR.",
+                  "displayName": "Number of Measurements",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorMeasurement",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "category": "Traffic",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The total number of unique groupings of measurements across type, device, patient, and configured time period generated by the FHIR conversion stage.",
+                  "displayName": "Number of Message Groups",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorMeasurementGroup",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Latency",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The average time between an event's ingestion time and the time the event is processed for normalization.",
+                  "displayName": "Average Normalize Stage Latency",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorDeviceEventProcessingLatencyMs",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Latency",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure IoT Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure IoT Connector for FHIR",
+                      "name": "ConnectorName"
+                    }
+                  ],
+                  "displayDescription": "The time period between when the IoT Connector received the device data and when the data is processed by the FHIR conversion stage.",
+                  "displayName": "Average Group Stage Latency",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "IoTConnectorMeasurementIngestionLatencyMs",
+                  "sourceMdmAccount": "MicrosoftHealthcareApisIoTShoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Milliseconds"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "workspaces/dicomservices/dicomcasts",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/dicomcasts/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/dicomcasts/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/dicomservices/dicomcasts/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "validateMedtechMappings",
+      "operations": [
+        {
+          "description": "Handles requests related to editing IotConnector mapping files",
+          "displayName": "mappingEditorValidator",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/validateMedtechMappings/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

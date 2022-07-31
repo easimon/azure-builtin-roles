@@ -1,0 +1,837 @@
+{
+  "displayName": "Microsoft Analysis Services",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.AnalysisServices",
+  "name": "Microsoft.AnalysisServices",
+  "operations": [
+    {
+      "description": "Registers Analysis Services resource provider.",
+      "displayName": "Register Analysis Services provider",
+      "isDataAction": false,
+      "name": "Microsoft.AnalysisServices/register/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "servers",
+      "name": "servers",
+      "operations": [
+        {
+          "description": "Retrieves the information of the specified Analysis Server.",
+          "displayName": "Read Analysis Server",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the specified Analysis Server.",
+          "displayName": "Create/Update Analysis Server",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Analysis Server.",
+          "displayName": "Delete the Analysis Server",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Suspends the Analysis Server.",
+          "displayName": "Suspend the Analysis Server.",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/suspend/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resumes the Analysis Server.",
+          "displayName": "Resume the Analysis Server.",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/resume/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List the status of the gateway associated with the server.",
+          "displayName": "List the status of the gateway associated with the server",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/listGatewayStatus/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Checks that given Analysis Server name is valid and not in use.",
+          "displayName": "Check availability of the Analysis Server name",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/locations/checkNameAvailability/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "locations/operationresults",
+      "operations": [
+        {
+          "description": "Retrieves the information of the specified operation result.",
+          "displayName": "Read operation results",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/locations/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "locations/operationstatuses",
+      "operations": [
+        {
+          "description": "Retrieves the information of the specified operation status.",
+          "displayName": "Read operation statuses",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/locations/operationstatuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Retrieves the information of operations",
+          "displayName": "Read operations",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "Retrieves the information of Skus",
+          "displayName": "Read SKU information",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/skus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "servers/skus",
+      "operations": [
+        {
+          "description": "Retrieve available SKU information for the server",
+          "displayName": "Read available SKU information for the server",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/skus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "servers/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Analysis Server",
+          "displayName": "Read Microsoft Analysis Service metrics",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "QPU. Range 0-100 for S1, 0-200 for S2 and 0-400 for S4",
+                  "displayName": "QPU",
+                  "name": "qpu_metric",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Memory. Range 0-25 GB for S1, 0-50 GB for S2 and 0-100 GB for S4",
+                  "displayName": "Memory",
+                  "name": "memory_metric",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Private bytes.",
+                  "displayName": "Private Bytes",
+                  "name": "private_bytes_metric",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Virtual bytes.",
+                  "displayName": "Virtual Bytes",
+                  "name": "virtual_bytes_metric",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Total connection requests. These are arrivals.",
+                  "displayName": "Total Connection Requests",
+                  "name": "TotalConnectionRequests",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Rate of successful connection completions.",
+                  "displayName": "Successful Connections Per Sec",
+                  "name": "SuccessfullConnectionsPerSec",
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Total failed connection attempts.",
+                  "displayName": "Total Connection Failures",
+                  "name": "TotalConnectionFailures",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Current number of user sessions established.",
+                  "displayName": "Current User Sessions",
+                  "name": "CurrentUserSessions",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of busy threads in the query thread pool.",
+                  "displayName": "Query Pool Busy Threads",
+                  "name": "QueryPoolBusyThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of jobs in the queue of the command thread pool.",
+                  "displayName": "Command Pool Job Queue Length",
+                  "name": "CommandPoolJobQueueLength",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of non-I/O jobs in the queue of the processing thread pool.",
+                  "displayName": "Processing Pool Job Queue Length",
+                  "name": "ProcessingPoolJobQueueLength",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Current number of client connections established.",
+                  "displayName": "Connection: Current connections",
+                  "name": "CurrentConnections",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Current price of memory, $/byte/time, normalized to 1000.",
+                  "displayName": "Memory: Cleaner Current Price",
+                  "name": "CleanerCurrentPrice",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Amount of memory, in bytes, subject to purging by the background cleaner.",
+                  "displayName": "Memory: Cleaner Memory shrinkable",
+                  "name": "CleanerMemoryShrinkable",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Amount of memory, in bytes, not subject to purging by the background cleaner.",
+                  "displayName": "Memory: Cleaner Memory nonshrinkable",
+                  "name": "CleanerMemoryNonshrinkable",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Memory usage of the server process as used in calculating cleaner memory price. Equal to counter Process\\PrivateBytes plus the size of memory-mapped data, ignoring any memory which was mapped or allocated by the xVelocity in-memory analytics engine (VertiPaq) in excess of the xVelocity engine Memory Limit.",
+                  "displayName": "Memory: Memory Usage",
+                  "name": "MemoryUsage",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Hard memory limit, from configuration file.",
+                  "displayName": "Memory: Memory Limit Hard",
+                  "name": "MemoryLimitHard",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "High memory limit, from configuration file.",
+                  "displayName": "Memory: Memory Limit High",
+                  "name": "MemoryLimitHigh",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Low memory limit, from configuration file.",
+                  "displayName": "Memory: Memory Limit Low",
+                  "name": "MemoryLimitLow",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "In-memory limit, from configuration file.",
+                  "displayName": "Memory: Memory Limit VertiPaq",
+                  "name": "MemoryLimitVertiPaq",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Current memory quota, in bytes. Memory quota is also known as a memory grant or memory reservation.",
+                  "displayName": "Memory: Quota",
+                  "name": "Quota",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Current number of quota requests that are blocked until other memory quotas are freed.",
+                  "displayName": "Memory: Quota Blocked",
+                  "name": "QuotaBlocked",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Bytes of memory locked in the working set for use by the in-memory engine.",
+                  "displayName": "Memory: VertiPaq Nonpaged",
+                  "name": "VertiPaqNonpaged",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Bytes of paged memory in use for in-memory data.",
+                  "displayName": "Memory: VertiPaq Paged",
+                  "name": "VertiPaqPaged",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Rate of rows read from all relational databases.",
+                  "displayName": "Processing: Rows read per sec",
+                  "name": "RowsReadPerSec",
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Rate of rows converted during processing.",
+                  "displayName": "Processing: Rows converted per sec",
+                  "name": "RowsConvertedPerSec",
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Rate of rows written during processing.",
+                  "displayName": "Processing: Rows written per sec",
+                  "name": "RowsWrittenPerSec",
+                  "unit": "CountPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of busy threads in the command thread pool.",
+                  "displayName": "Threads: Command pool busy threads",
+                  "name": "CommandPoolBusyThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of idle threads in the command thread pool.",
+                  "displayName": "Threads: Command pool idle threads",
+                  "name": "CommandPoolIdleThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of busy threads in the long parsing thread pool.",
+                  "displayName": "Threads: Long parsing busy threads",
+                  "name": "LongParsingBusyThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of idle threads in the long parsing thread pool.",
+                  "displayName": "Threads: Long parsing idle threads",
+                  "name": "LongParsingIdleThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of jobs in the queue of the long parsing thread pool.",
+                  "displayName": "Threads: Long parsing job queue length",
+                  "name": "LongParsingJobQueueLength",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of threads running I/O jobs in the processing thread pool.",
+                  "displayName": "Threads: Processing pool busy I/O job threads",
+                  "name": "ProcessingPoolBusyIOJobThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of threads running non-I/O jobs in the processing thread pool.",
+                  "displayName": "Threads: Processing pool busy non-I/O threads",
+                  "name": "ProcessingPoolBusyNonIOThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of I/O jobs in the queue of the processing thread pool.",
+                  "displayName": "Threads: Processing pool I/O job queue length",
+                  "name": "ProcessingPoolIOJobQueueLength",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of idle threads for I/O jobs in the processing thread pool.",
+                  "displayName": "Threads: Processing pool idle I/O job threads",
+                  "name": "ProcessingPoolIdleIOJobThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of idle threads in the processing thread pool dedicated to non-I/O jobs.",
+                  "displayName": "Threads: Processing pool idle non-I/O threads",
+                  "name": "ProcessingPoolIdleNonIOThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of idle threads for I/O jobs in the processing thread pool.",
+                  "displayName": "Threads: Query pool idle threads",
+                  "name": "QueryPoolIdleThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of jobs in the queue of the query thread pool.",
+                  "displayName": "Threads: Query pool job queue lengt",
+                  "name": "QueryPoolJobQueueLength",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of busy threads in the short parsing thread pool.",
+                  "displayName": "Threads: Short parsing busy threads",
+                  "name": "ShortParsingBusyThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of idle threads in the short parsing thread pool.",
+                  "displayName": "Threads: Short parsing idle threads",
+                  "name": "ShortParsingIdleThreads",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Number of jobs in the queue of the short parsing thread pool.",
+                  "displayName": "Threads: Short parsing job queue length",
+                  "name": "ShortParsingJobQueueLength",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Average memory thrashing.",
+                  "displayName": "Memory Thrashing",
+                  "name": "memory_thrashing_metric",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "QPU usage by mashup engine processes",
+                  "displayName": "M Engine QPU",
+                  "name": "mashup_engine_qpu_metric",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Memory usage by mashup engine processes",
+                  "displayName": "M Engine Memory",
+                  "name": "mashup_engine_memory_metric",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Private bytes usage by mashup engine processes.",
+                  "displayName": "M Engine Private Bytes",
+                  "name": "mashup_engine_private_bytes_metric",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "ServerResourceType",
+                      "name": "ServerResourceType"
+                    }
+                  ],
+                  "displayDescription": "Virtual bytes usage by mashup engine processes.",
+                  "displayName": "M Engine Virtual Bytes",
+                  "name": "mashup_engine_virtual_bytes_metric",
+                  "unit": "Bytes"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "servers/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for servers",
+          "displayName": "Read Analysis Server log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Engine",
+                  "name": "Engine"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Service",
+                  "name": "Service"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "servers",
+      "name": "servers/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for Analysis Server",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for Analysis Server",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.AnalysisServices/servers/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

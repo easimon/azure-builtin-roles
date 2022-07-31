@@ -1,0 +1,350 @@
+{
+  "displayName": "Azure Active Directory",
+  "id": "/providers/Microsoft.Authorization/providerOperations/microsoft.aadiam",
+  "name": "microsoft.aadiam",
+  "operations": [],
+  "resourceTypes": [
+    {
+      "displayName": "The log definition of tenants",
+      "name": "tenants/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for tenants",
+          "displayName": "Read tenants log definitions",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/tenants/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Signin",
+                  "name": "Signin"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "tenants",
+      "name": "tenants/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/tenants/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/tenants/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Diagnostic settings",
+      "name": "diagnosticsettings",
+      "operations": [
+        {
+          "description": "Writing a diagnostic setting",
+          "displayName": "Diagnostic settings write",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/diagnosticsettings/write",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Reading a diagnostic setting",
+          "displayName": "Diagnostic settings read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/diagnosticsettings/read",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Deleting a diagnostic setting",
+          "displayName": "Diagnostic settings delete",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/diagnosticsettings/delete",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Diagnostic settings categories",
+      "name": "diagnosticsettingscategories",
+      "operations": [
+        {
+          "description": "Reading a diagnostic setting categories",
+          "displayName": "Diagnostic settings categories read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/diagnosticsettingscategories/read",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Metrics",
+      "name": "metrics",
+      "operations": [
+        {
+          "description": "Reading Tenant-Level Metrics",
+          "displayName": "Metrics read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/metrics/read",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Metric Definitions",
+      "name": "metricDefinitions",
+      "operations": [
+        {
+          "description": "Reading Tenant-Level Metric Definitions",
+          "displayName": "Metric Definitions read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/metricDefinitions/read",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link Policy Definition",
+      "name": "privateLinkForAzureAD",
+      "operations": [
+        {
+          "description": "Read Private Link Policy Definition",
+          "displayName": "Private Link Policy Definition read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/read",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Create and Update Private Link Policy Definition",
+          "displayName": "Private Link Policy Definition read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/write",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Delete Private Link Policy Definition",
+          "displayName": "Private Link Policy Definition read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/delete",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Approve PrivateEndpointConnections",
+          "displayName": "PrivateEndpointConnections approve",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link Proxies",
+      "name": "privateLinkForAzureAD/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Read Private Link Proxies",
+          "displayName": "Private Link Proxies read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Delete Private Link Proxies",
+          "displayName": "Private Link Proxies read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Validate Private Link Proxies",
+          "displayName": "Private Link Proxies validate",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateEndpointConnections",
+      "name": "privateLinkForAzureAD/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Read PrivateEndpointConnections",
+          "displayName": "PrivateEndpointConnections read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnections/read",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Create and Update PrivateEndpointConnections",
+          "displayName": "PrivateEndpointConnections read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnections/write",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Delete PrivateEndpointConnections",
+          "displayName": "PrivateEndpointConnections read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateLinkResources",
+      "name": "privateLinkForAzureAD/privateLinkResources",
+      "operations": [
+        {
+          "description": "Read PrivateLinkResources",
+          "displayName": "PrivateLinkResources read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateLinkResources/read",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Create and Update PrivateLinkResources",
+          "displayName": "PrivateLinkResources read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateLinkResources/write",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Delete PrivateLinkResources",
+          "displayName": "PrivateLinkResources read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/privateLinkForAzureAD/privateLinkResources/delete",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "Azure AD Metrics Definition",
+      "name": "azureADMetrics",
+      "operations": [
+        {
+          "description": "Read Azure AD Metrics Definition",
+          "displayName": "Azure AD Metrics Definition read",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/azureADMetrics/read",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Create and Update Azure AD Metrics Definition",
+          "displayName": "Azure AD Metrics Definition write",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/azureADMetrics/write",
+          "origin": null,
+          "properties": {}
+        },
+        {
+          "description": "Delete Azure AD Metrics Definition",
+          "displayName": "Azure AD Metrics Definition delete",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/azureADMetrics/delete",
+          "origin": null,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of azureADMetrics",
+      "name": "azureADMetrics/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for azureADMetrics",
+          "displayName": "Read azureADMetrics metric definitions",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/azureADMetrics/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "LockAggregationType": "Total",
+                  "aggregationType": "Average",
+                  "displayDescription": "azureADMetrics type metric",
+                  "displayName": "ThrottledRequests",
+                  "internalMetricName": "ThrottledRequests",
+                  "metricClass": "Traffic",
+                  "name": "ThrottledRequests",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "azureADMetrics",
+      "name": "azureADMetrics/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/azureADMetrics/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "microsoft.aadiam/azureADMetrics/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

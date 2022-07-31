@@ -1,0 +1,82 @@
+{
+  "displayName": "D365CustomerInsights",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.D365CustomerInsights",
+  "name": "Microsoft.D365CustomerInsights",
+  "operations": [],
+  "resourceTypes": [
+    {
+      "displayName": "Instances",
+      "name": "instances",
+      "operations": [
+        {
+          "description": "Get details about an instance",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.D365CustomerInsights/instances/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Write details about an instance",
+          "displayName": "Write",
+          "isDataAction": false,
+          "name": "Microsoft.D365CustomerInsights/instances/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Instances",
+      "name": "instances/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for instances",
+          "displayName": "Read instance log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.D365CustomerInsights/instances/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Audit events",
+                  "name": "Audit"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Operational events",
+                  "name": "Operational"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Instances",
+      "name": "instances/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.D365CustomerInsights/instances/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.D365CustomerInsights/instances/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

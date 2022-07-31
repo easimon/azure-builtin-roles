@@ -1,0 +1,4534 @@
+{
+  "displayName": "Microsoft Container Service",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ContainerService",
+  "name": "Microsoft.ContainerService",
+  "operations": [
+    {
+      "description": "Registers Subscription with Microsoft.ContainerService resource provider",
+      "displayName": "Register Subscription for Container Service",
+      "isDataAction": false,
+      "name": "Microsoft.ContainerService/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregisters Subscription with Microsoft.ContainerService resource provider",
+      "displayName": "Unregister Subscription for Container Service",
+      "isDataAction": false,
+      "name": "Microsoft.ContainerService/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Container Services",
+      "name": "containerServices",
+      "operations": [
+        {
+          "description": "Get a container service",
+          "displayName": "Get Container Service",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/containerServices/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new container service or updates an existing one",
+          "displayName": "Create or Update Container Service",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/containerServices/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a container service",
+          "displayName": "Delete Container Service",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/containerServices/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Clusters",
+      "name": "managedClusters",
+      "operations": [
+        {
+          "description": "Get a managed cluster",
+          "displayName": "Get Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new managed cluster or updates an existing one",
+          "displayName": "Create or Update Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a managed cluster",
+          "displayName": "Delete Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a managed cluster",
+          "displayName": "Start Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stops a managed cluster",
+          "displayName": "Stop Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/stop/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List the clusterAdmin credential of a managed cluster",
+          "displayName": "List clusterAdmin credential",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/listClusterAdminCredential/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List the clusterUser credential of a managed cluster",
+          "displayName": "List clusterUser credential",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List the clusterMonitoringUser credential of a managed cluster",
+          "displayName": "List clusterMonitoringUser credential",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/listClusterMonitoringUserCredential/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reset the service principal profile of a managed cluster",
+          "displayName": "Reset service principal profile",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/resetServicePrincipalProfile/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reset the service principal profile of a managed cluster",
+          "displayName": "Unpin managed cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/unpinManagedCluster/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Resolve the private link service id of a managed cluster",
+          "displayName": "Resolve private link service id",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/resolvePrivateLinkServiceId/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reset the AAD profile of a managed cluster",
+          "displayName": "Reset AAD profile",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/resetAADProfile/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Rotate certificates of a managed cluster",
+          "displayName": "Rotate certificates of the cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/rotateClusterCertificates/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Run user issued command against managed kubernetes server.",
+          "displayName": "RunCommand",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/runCommand/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Determines if user is allowed to approve a private endpoint connection",
+          "displayName": "Approve Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/privateEndpointConnectionsApproval/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Clusters",
+      "name": "managedClusters/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Get the diagnostic setting for a managed cluster resource",
+          "displayName": "Read Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for a managed cluster resource",
+          "displayName": "Write Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of Managed Cluster",
+      "name": "managedClusters/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Managed Cluster",
+          "displayName": "Read Managed Cluster metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total number of available cpu cores in a managed cluster",
+                  "displayName": "Total number of available cpu cores in a managed cluster",
+                  "lockAggregationType": "Total",
+                  "name": "kube_node_status_allocatable_cpu_cores",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "displayDescription": "Total amount of available memory in a managed cluster",
+                  "displayName": "Total amount of available memory in a managed cluster",
+                  "lockAggregationType": "Total",
+                  "name": "kube_node_status_allocatable_memory_bytes",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "PT1D"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Namespace of the pod",
+                      "name": "namespace"
+                    },
+                    {
+                      "displayName": "Name of the pod",
+                      "name": "pod"
+                    },
+                    {
+                      "displayName": "Condition of the pod",
+                      "name": "condition"
+                    }
+                  ],
+                  "displayDescription": "Number of pods in Ready state",
+                  "displayName": "Number of pods in Ready state",
+                  "lockAggregationType": "Total",
+                  "name": "kube_pod_status_ready",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Condition type represented in this metric",
+                      "name": "condition"
+                    },
+                    {
+                      "displayName": "Status of the condition dimension (true/false)",
+                      "name": "status"
+                    },
+                    {
+                      "displayName": "Status of the condition dimension (Ready/NotReady)",
+                      "name": "status2"
+                    },
+                    {
+                      "displayName": "Node's name",
+                      "name": "node"
+                    }
+                  ],
+                  "displayDescription": "Statuses for various node conditions",
+                  "displayName": "Statuses for various node conditions",
+                  "lockAggregationType": "Total",
+                  "name": "kube_node_status_condition",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Phase of the pod",
+                      "name": "phase"
+                    },
+                    {
+                      "displayName": "Namespace of the pod",
+                      "name": "namespace"
+                    },
+                    {
+                      "displayName": "Name of the pod",
+                      "name": "pod"
+                    }
+                  ],
+                  "displayDescription": "Number of pods by phase",
+                  "displayName": "Number of pods by phase",
+                  "lockAggregationType": "Total",
+                  "name": "kube_pod_status_phase",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "PT1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Clusters",
+      "name": "managedClusters/accessProfiles",
+      "operations": [
+        {
+          "description": "Get a managed cluster access profile by role name",
+          "displayName": "Get Managed Cluster AccessProfile",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/accessProfiles/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get a managed cluster access profile by role name using list credential",
+          "displayName": "Get Managed Cluster AccessProfile by List Credential",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/accessProfiles/listCredential/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of Managed Cluster",
+      "name": "managedClusters/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for Managed Cluster",
+          "displayName": "Read Managed Cluster log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes API Server",
+                  "name": "kube-apiserver"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Audit",
+                  "name": "kube-audit"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Audit Admin Logs",
+                  "name": "kube-audit-admin"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Controller Manager",
+                  "name": "kube-controller-manager"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Cloud Controller Manager",
+                  "name": "cloud-controller-manager"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Scheduler",
+                  "name": "kube-scheduler"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Cluster Autoscaler",
+                  "name": "cluster-autoscaler"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes Guard",
+                  "name": "guard"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "AKS Guardrails/Admissions Enforcer",
+                  "name": "admissionsenforcer"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes CSI Azuredisk Controller",
+                  "name": "csi-azuredisk-controller"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes CSI Azuredisk V2 Controller",
+                  "name": "csi-azuredisk-controller-v2"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes CSI Azurefile Controller",
+                  "name": "csi-azurefile-controller"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes CSI Snapshot Controller",
+                  "name": "csi-snapshot-controller"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Kubernetes CSI Blob Controller",
+                  "name": "csi-blob-controller"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Operation",
+      "name": "locations/operations",
+      "operations": [
+        {
+          "description": "Gets the status of an asynchronous operation",
+          "displayName": "Get Operation",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/locations/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Orchestrator",
+      "name": "locations/orchestrators",
+      "operations": [
+        {
+          "description": "Lists the supported orchestrators",
+          "displayName": "List Orchestrators",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/locations/orchestrators/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "UpgradeProfile",
+      "name": "managedClusters/upgradeProfiles",
+      "operations": [
+        {
+          "description": "Gets the upgrade profile of the cluster",
+          "displayName": "Get UpgradeProfile",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/upgradeProfiles/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Available Container Service Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists operations available on Microsoft.ContainerService resource provider",
+          "displayName": "List Available Container Service Operations",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationResult",
+      "name": "locations/operationresults",
+      "operations": [
+        {
+          "description": "Gets the status of an asynchronous operation result",
+          "displayName": "Get Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/locations/operationresults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Open Shift Managed Cluster",
+      "name": "openShiftManagedClusters",
+      "operations": [
+        {
+          "description": "Get a Open Shift Managed Cluster",
+          "displayName": "Get Open Shift Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/openShiftManagedClusters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Open Shift Managed Cluster or updates an existing one",
+          "displayName": "Create or Update Open Shift Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/openShiftManagedClusters/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Open Shift Managed Cluster",
+          "displayName": "Delete Open Shift Managed Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/openShiftManagedClusters/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Open Shift Cluster",
+      "name": "openShiftClusters",
+      "operations": [
+        {
+          "description": "Get a Open Shift Cluster",
+          "displayName": "Get Open Shift Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/openShiftClusters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Open Shift Cluster or updates an existing one",
+          "displayName": "Create or Update Open Shift Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/openShiftClusters/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Open Shift Cluster",
+          "displayName": "Delete Open Shift Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/openShiftClusters/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agent Pools",
+      "name": "managedClusters/agentPools",
+      "operations": [
+        {
+          "description": "Gets an agent pool",
+          "displayName": "Get Agent Pool",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/agentPools/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new agent pool or updates an existing one",
+          "displayName": "Create or Update Agent Pool",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/agentPools/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an agent pool",
+          "displayName": "Delete Agent Pool",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/agentPools/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Cluster Detector",
+      "name": "managedClusters/detectors",
+      "operations": [
+        {
+          "description": "Get Managed Cluster Detector",
+          "displayName": "Get Managed Cluster Detector",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/detectors/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agent Pools",
+      "name": "managedClusters/agentPools/upgradeProfiles",
+      "operations": [
+        {
+          "description": "Gets the upgrade profile of the Agent Pool",
+          "displayName": "Get Agent Pool UpgradeProfile",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/agentPools/upgradeProfiles/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Diagnostics State",
+      "name": "managedClusters/diagnosticsState",
+      "operations": [
+        {
+          "description": "Gets the diagnostics state of the cluster",
+          "displayName": "Get Diagnostics State",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/diagnosticsState/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Clusters",
+      "name": "managedClusters/availableAgentPoolVersions",
+      "operations": [
+        {
+          "description": "Gets the available agent pool versions of the cluster",
+          "displayName": "Get Available Agent Pool Versions",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/availableAgentPoolVersions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Initializerconfigurations",
+      "name": "managedClusters/admissionregistration.k8s.io/initializerconfigurations",
+      "operations": [
+        {
+          "description": "Reads initializerconfigurations",
+          "displayName": "Gets/List initializerconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/initializerconfigurations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes initializerconfigurations",
+          "displayName": "Creates/Updates initializerconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/initializerconfigurations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes/DeletesCollection initializerconfigurations resource",
+          "displayName": "Initializerconfigurations",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/initializerconfigurations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mutatingwebhookconfigurations",
+      "name": "managedClusters/admissionregistration.k8s.io/mutatingwebhookconfigurations",
+      "operations": [
+        {
+          "description": "Reads mutatingwebhookconfigurations",
+          "displayName": "Gets/List mutatingwebhookconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/mutatingwebhookconfigurations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes mutatingwebhookconfigurations",
+          "displayName": "Creates/Updates mutatingwebhookconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/mutatingwebhookconfigurations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes mutatingwebhookconfigurations",
+          "displayName": "Deletes/DeletesCollection mutatingwebhookconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/mutatingwebhookconfigurations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validatingwebhookconfigurations",
+      "name": "managedClusters/admissionregistration.k8s.io/validatingwebhookconfigurations",
+      "operations": [
+        {
+          "description": "Reads validatingwebhookconfigurations",
+          "displayName": "Gets/List validatingwebhookconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/validatingwebhookconfigurations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes validatingwebhookconfigurations",
+          "displayName": "Creates/Updates validatingwebhookconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/validatingwebhookconfigurations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes validatingwebhookconfigurations",
+          "displayName": "Deletes/DeletesCollection validatingwebhookconfigurations resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/admissionregistration.k8s.io/validatingwebhookconfigurations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Customresourcedefinitions",
+      "name": "managedClusters/apiextensions.k8s.io/customresourcedefinitions",
+      "operations": [
+        {
+          "description": "Reads customresourcedefinitions",
+          "displayName": "Gets/List customresourcedefinitions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apiextensions.k8s.io/customresourcedefinitions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes customresourcedefinitions",
+          "displayName": "Creates/Updates customresourcedefinitions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apiextensions.k8s.io/customresourcedefinitions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes customresourcedefinitions",
+          "displayName": "Deletes/DeletesCollection customresourcedefinitions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apiextensions.k8s.io/customresourcedefinitions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiservices",
+      "name": "managedClusters/apiregistration.k8s.io/apiservices",
+      "operations": [
+        {
+          "description": "Reads apiservices",
+          "displayName": "Gets/List apiservices resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apiregistration.k8s.io/apiservices/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes apiservices",
+          "displayName": "Creates/Updates apiservices resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apiregistration.k8s.io/apiservices/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes apiservices",
+          "displayName": "Deletes/DeletesCollection apiservices resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apiregistration.k8s.io/apiservices/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Controllerrevisions",
+      "name": "managedClusters/apps/controllerrevisions",
+      "operations": [
+        {
+          "description": "Reads controllerrevisions",
+          "displayName": "Gets/List controllerrevisions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/controllerrevisions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes controllerrevisions",
+          "displayName": "Creates/Updates controllerrevisions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/controllerrevisions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes controllerrevisions",
+          "displayName": "Deletes/DeletesCollection controllerrevisions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/controllerrevisions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Daemonsets",
+      "name": "managedClusters/apps/daemonsets",
+      "operations": [
+        {
+          "description": "Reads daemonsets",
+          "displayName": "Gets/List daemonsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/daemonsets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes daemonsets",
+          "displayName": "Creates/Updates daemonsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/daemonsets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes daemonsets",
+          "displayName": "Deletes/DeletesCollection daemonsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/daemonsets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deployments",
+      "name": "managedClusters/apps/deployments",
+      "operations": [
+        {
+          "description": "Reads deployments",
+          "displayName": "Gets/List deployments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/deployments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes deployments",
+          "displayName": "Creates/Updates deployments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/deployments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes deployments",
+          "displayName": "Deletes/DeletesCollection deployments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/deployments/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replicasets",
+      "name": "managedClusters/apps/replicasets",
+      "operations": [
+        {
+          "description": "Reads replicasets",
+          "displayName": "Gets/List replicasets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/replicasets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes replicasets",
+          "displayName": "Creates/Updates replicasets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/replicasets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes replicasets",
+          "displayName": "Deletes/DeletesCollection replicasets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/replicasets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Statefulsets",
+      "name": "managedClusters/apps/statefulsets",
+      "operations": [
+        {
+          "description": "Reads statefulsets",
+          "displayName": "Gets/List statefulsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/statefulsets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes statefulsets",
+          "displayName": "Creates/Updates statefulsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/statefulsets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes statefulsets",
+          "displayName": "Deletes/DeletesCollection statefulsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apps/statefulsets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tokenreviews",
+      "name": "managedClusters/authentication.k8s.io/tokenreviews",
+      "operations": [
+        {
+          "description": "Writes tokenreviews",
+          "displayName": "Creates/Updates tokenreviews resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/authentication.k8s.io/tokenreviews/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Localsubjectaccessreviews",
+      "name": "managedClusters/authorization.k8s.io/localsubjectaccessreviews",
+      "operations": [
+        {
+          "description": "Writes localsubjectaccessreviews",
+          "displayName": "Creates/Updates localsubjectaccessreviews resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/authorization.k8s.io/localsubjectaccessreviews/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Selfsubjectaccessreviews",
+      "name": "managedClusters/authorization.k8s.io/selfsubjectaccessreviews",
+      "operations": [
+        {
+          "description": "Writes selfsubjectaccessreviews",
+          "displayName": "Creates/Updates selfsubjectaccessreviews resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/authorization.k8s.io/selfsubjectaccessreviews/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Selfsubjectrulesreviews",
+      "name": "managedClusters/authorization.k8s.io/selfsubjectrulesreviews",
+      "operations": [
+        {
+          "description": "Writes selfsubjectrulesreviews",
+          "displayName": "Creates/Updates selfsubjectrulesreviews resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/authorization.k8s.io/selfsubjectrulesreviews/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Subjectaccessreviews",
+      "name": "managedClusters/authorization.k8s.io/subjectaccessreviews",
+      "operations": [
+        {
+          "description": "Writes subjectaccessreviews",
+          "displayName": "Creates/Updates subjectaccessreviews resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/authorization.k8s.io/subjectaccessreviews/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Horizontalpodautoscalers",
+      "name": "managedClusters/autoscaling/horizontalpodautoscalers",
+      "operations": [
+        {
+          "description": "Reads horizontalpodautoscalers",
+          "displayName": "Gets/List horizontalpodautoscalers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/autoscaling/horizontalpodautoscalers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes horizontalpodautoscalers",
+          "displayName": "Creates/Updates horizontalpodautoscalers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/autoscaling/horizontalpodautoscalers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes horizontalpodautoscalers",
+          "displayName": "Deletes/DeletesCollection horizontalpodautoscalers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/autoscaling/horizontalpodautoscalers/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cronjobs",
+      "name": "managedClusters/batch/cronjobs",
+      "operations": [
+        {
+          "description": "Reads cronjobs",
+          "displayName": "Gets/List cronjobs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/batch/cronjobs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes cronjobs",
+          "displayName": "Creates/Updates cronjobs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/batch/cronjobs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes cronjobs",
+          "displayName": "Deletes/DeletesCollection cronjobs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/batch/cronjobs/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Jobs",
+      "name": "managedClusters/batch/jobs",
+      "operations": [
+        {
+          "description": "Reads jobs",
+          "displayName": "Gets/List jobs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/batch/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes jobs",
+          "displayName": "Creates/Updates jobs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/batch/jobs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes jobs",
+          "displayName": "Deletes/DeletesCollection jobs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/batch/jobs/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificatesigningrequests",
+      "name": "managedClusters/certificates.k8s.io/certificatesigningrequests",
+      "operations": [
+        {
+          "description": "Reads certificatesigningrequests",
+          "displayName": "Gets/List certificatesigningrequests resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/certificates.k8s.io/certificatesigningrequests/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes certificatesigningrequests",
+          "displayName": "Creates/Updates certificatesigningrequests resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/certificates.k8s.io/certificatesigningrequests/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes certificatesigningrequests",
+          "displayName": "Deletes/DeletesCollection certificatesigningrequests resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/certificates.k8s.io/certificatesigningrequests/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Leases",
+      "name": "managedClusters/coordination.k8s.io/leases",
+      "operations": [
+        {
+          "description": "Reads leases",
+          "displayName": "Gets/List leases resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/coordination.k8s.io/leases/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes leases",
+          "displayName": "Creates/Updates leases resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/coordination.k8s.io/leases/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes leases",
+          "displayName": "Deletes/DeletesCollection leases resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/coordination.k8s.io/leases/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Bindings",
+      "name": "managedClusters/bindings",
+      "operations": [
+        {
+          "description": "Writes bindings",
+          "displayName": "Creates/Updates bindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/bindings/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Componentstatuses",
+      "name": "managedClusters/componentstatuses",
+      "operations": [
+        {
+          "description": "Reads componentstatuses",
+          "displayName": "Gets/List componentstatuses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/componentstatuses/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes componentstatuses",
+          "displayName": "Creates/Updates componentstatuses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/componentstatuses/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes componentstatuses",
+          "displayName": "Deletes/DeletesCollection componentstatuses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/componentstatuses/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Configmaps",
+      "name": "managedClusters/configmaps",
+      "operations": [
+        {
+          "description": "Reads configmaps",
+          "displayName": "Gets/List configmaps resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/configmaps/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes configmaps",
+          "displayName": "Creates/Updates configmaps resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/configmaps/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes configmaps",
+          "displayName": "Deletes/DeletesCollection configmaps resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/configmaps/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Endpoints",
+      "name": "managedClusters/endpoints",
+      "operations": [
+        {
+          "description": "Reads endpoints",
+          "displayName": "Gets/List endpoints resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/endpoints/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes endpoints",
+          "displayName": "Creates/Updates endpoints resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/endpoints/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes endpoints",
+          "displayName": "Deletes/DeletesCollection endpoints resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/endpoints/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Events",
+      "name": "managedClusters/events",
+      "operations": [
+        {
+          "description": "Reads events",
+          "displayName": "Gets/List events resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/events/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes events",
+          "displayName": "Creates/Updates events resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/events/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes events",
+          "displayName": "Deletes/DeletesCollection events resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/events/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Limitranges",
+      "name": "managedClusters/limitranges",
+      "operations": [
+        {
+          "description": "Reads limitranges",
+          "displayName": "Gets/List limitranges resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/limitranges/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes limitranges",
+          "displayName": "Creates/Updates limitranges resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/limitranges/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes limitranges",
+          "displayName": "Deletes/DeletesCollection limitranges resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/limitranges/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespaces",
+      "name": "managedClusters/namespaces",
+      "operations": [
+        {
+          "description": "Reads namespaces",
+          "displayName": "Gets/List namespaces resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/namespaces/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes namespaces",
+          "displayName": "Creates/Updates namespaces resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/namespaces/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes namespaces",
+          "displayName": "Deletes/DeletesCollection namespaces resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/namespaces/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Nodes",
+      "name": "managedClusters/nodes",
+      "operations": [
+        {
+          "description": "Reads nodes",
+          "displayName": "Gets/List nodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/nodes/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes nodes",
+          "displayName": "Creates/Updates nodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/nodes/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes nodes",
+          "displayName": "Deletes/DeletesCollection nodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/nodes/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Persistentvolumeclaims",
+      "name": "managedClusters/persistentvolumeclaims",
+      "operations": [
+        {
+          "description": "Reads persistentvolumeclaims",
+          "displayName": "Gets/List persistentvolumeclaims resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/persistentvolumeclaims/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes persistentvolumeclaims",
+          "displayName": "Creates/Updates persistentvolumeclaims resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/persistentvolumeclaims/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes persistentvolumeclaims",
+          "displayName": "Deletes/DeletesCollection persistentvolumeclaims resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/persistentvolumeclaims/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Persistentvolumes",
+      "name": "managedClusters/persistentvolumes",
+      "operations": [
+        {
+          "description": "Reads persistentvolumes",
+          "displayName": "Gets/List persistentvolumes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/persistentvolumes/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes persistentvolumes",
+          "displayName": "Creates/Updates persistentvolumes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/persistentvolumes/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes persistentvolumes",
+          "displayName": "Deletes/DeletesCollection persistentvolumes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/persistentvolumes/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pods",
+      "name": "managedClusters/pods",
+      "operations": [
+        {
+          "description": "Reads pods",
+          "displayName": "Gets/List pods resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/pods/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes pods",
+          "displayName": "Creates/Updates pods resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/pods/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes pods",
+          "displayName": "Deletes/DeletesCollection pods resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/pods/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Exec into pods resource",
+          "displayName": "Exec into pods resource ",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/pods/exec/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Podtemplates",
+      "name": "managedClusters/podtemplates",
+      "operations": [
+        {
+          "description": "Reads podtemplates",
+          "displayName": "Gets/List podtemplates resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/podtemplates/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes podtemplates",
+          "displayName": "Creates/Updates podtemplates resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/podtemplates/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes podtemplates",
+          "displayName": "Deletes/DeletesCollection podtemplates resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/podtemplates/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replicationcontrollers",
+      "name": "managedClusters/replicationcontrollers",
+      "operations": [
+        {
+          "description": "Reads replicationcontrollers",
+          "displayName": "Gets/List replicationcontrollers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/replicationcontrollers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes replicationcontrollers",
+          "displayName": "Creates/Updates replicationcontrollers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/replicationcontrollers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes replicationcontrollers",
+          "displayName": "Deletes/DeletesCollection replicationcontrollers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/replicationcontrollers/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resourcequotas",
+      "name": "managedClusters/resourcequotas",
+      "operations": [
+        {
+          "description": "Reads resourcequotas",
+          "displayName": "Gets/List resourcequotas resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/resourcequotas/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes resourcequotas",
+          "displayName": "Creates/Updates resourcequotas resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/resourcequotas/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes resourcequotas",
+          "displayName": "Deletes/DeletesCollection resourcequotas resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/resourcequotas/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Secrets",
+      "name": "managedClusters/secrets",
+      "operations": [
+        {
+          "description": "Reads secrets",
+          "displayName": "Gets/List secrets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/secrets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes secrets",
+          "displayName": "Creates/Updates secrets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/secrets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes secrets",
+          "displayName": "Deletes/DeletesCollection secrets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/secrets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Serviceaccounts",
+      "name": "managedClusters/serviceaccounts",
+      "operations": [
+        {
+          "description": "Reads serviceaccounts",
+          "displayName": "Gets/List serviceaccounts resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/serviceaccounts/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes serviceaccounts",
+          "displayName": "Creates/Updates serviceaccounts resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/serviceaccounts/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes serviceaccounts",
+          "displayName": "Deletes/DeletesCollection serviceaccounts resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/serviceaccounts/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Impersonate serviceaccounts",
+          "displayName": "Impersonate serviceaccounts resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/serviceaccounts/impersonate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Services",
+      "name": "managedClusters/services",
+      "operations": [
+        {
+          "description": "Reads services",
+          "displayName": "Gets/List services resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/services/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes services",
+          "displayName": "Creates/Updates services resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/services/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes services",
+          "displayName": "Deletes/DeletesCollection services resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/services/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Events",
+      "name": "managedClusters/events.k8s.io/events",
+      "operations": [
+        {
+          "description": "Reads events",
+          "displayName": "Gets/List events resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/events.k8s.io/events/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes events",
+          "displayName": "Creates/Updates events resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/events.k8s.io/events/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes events",
+          "displayName": "Deletes/DeletesCollection events resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/events.k8s.io/events/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Daemonsets",
+      "name": "managedClusters/extensions/daemonsets",
+      "operations": [
+        {
+          "description": "Reads daemonsets",
+          "displayName": "Gets/List daemonsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/daemonsets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes daemonsets",
+          "displayName": "Creates/Updates daemonsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/daemonsets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes daemonsets",
+          "displayName": "Deletes/DeletesCollection daemonsets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/daemonsets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deployments",
+      "name": "managedClusters/extensions/deployments",
+      "operations": [
+        {
+          "description": "Reads deployments",
+          "displayName": "Gets/List deployments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/deployments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes deployments",
+          "displayName": "Creates/Updates deployments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/deployments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes deployments",
+          "displayName": "Deletes/DeletesCollection deployments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/deployments/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ingresses",
+      "name": "managedClusters/extensions/ingresses",
+      "operations": [
+        {
+          "description": "Reads ingresses",
+          "displayName": "Gets/List ingresses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/ingresses/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes ingresses",
+          "displayName": "Creates/Updates ingresses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/ingresses/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes ingresses",
+          "displayName": "Deletes/DeletesCollection ingresses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/ingresses/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networkpolicies",
+      "name": "managedClusters/extensions/networkpolicies",
+      "operations": [
+        {
+          "description": "Reads networkpolicies",
+          "displayName": "Gets/List networkpolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/networkpolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes networkpolicies",
+          "displayName": "Creates/Updates networkpolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/networkpolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes networkpolicies",
+          "displayName": "Deletes/DeletesCollection networkpolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/networkpolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Podsecuritypolicies",
+      "name": "managedClusters/extensions/podsecuritypolicies",
+      "operations": [
+        {
+          "description": "Reads podsecuritypolicies",
+          "displayName": "Gets/List podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/podsecuritypolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes podsecuritypolicies",
+          "displayName": "Creates/Updates podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/podsecuritypolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes podsecuritypolicies",
+          "displayName": "Deletes/DeletesCollection podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/podsecuritypolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replicasets",
+      "name": "managedClusters/extensions/replicasets",
+      "operations": [
+        {
+          "description": "Reads replicasets",
+          "displayName": "Gets/List replicasets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/replicasets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes replicasets",
+          "displayName": "Creates/Updates replicasets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/replicasets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes replicasets",
+          "displayName": "Deletes/DeletesCollection replicasets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/extensions/replicasets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pods",
+      "name": "managedClusters/metrics.k8s.io/pods",
+      "operations": [
+        {
+          "description": "Reads pods",
+          "displayName": "Gets/List pods resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/metrics.k8s.io/pods/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Nodes",
+      "name": "managedClusters/metrics.k8s.io/nodes",
+      "operations": [
+        {
+          "description": "Reads nodes",
+          "displayName": "Gets/List nodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/metrics.k8s.io/nodes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networkpolicies",
+      "name": "managedClusters/networking.k8s.io/networkpolicies",
+      "operations": [
+        {
+          "description": "Reads networkpolicies",
+          "displayName": "Gets/List networkpolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/networking.k8s.io/networkpolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes networkpolicies",
+          "displayName": "Creates/Updates networkpolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/networking.k8s.io/networkpolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes networkpolicies",
+          "displayName": "Deletes/DeletesCollection networkpolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/networking.k8s.io/networkpolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ingresses",
+      "name": "managedClusters/networking.k8s.io/ingresses",
+      "operations": [
+        {
+          "description": "Reads ingresses",
+          "displayName": "Gets/List ingresses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/networking.k8s.io/ingresses/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes ingresses",
+          "displayName": "Creates/Updates ingresses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/networking.k8s.io/ingresses/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes ingresses",
+          "displayName": "Deletes/DeletesCollection ingresses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/networking.k8s.io/ingresses/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Runtimeclasses",
+      "name": "managedClusters/node.k8s.io/runtimeclasses",
+      "operations": [
+        {
+          "description": "Reads runtimeclasses",
+          "displayName": "Gets/List runtimeclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/node.k8s.io/runtimeclasses/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes runtimeclasses",
+          "displayName": "Creates/Updates runtimeclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/node.k8s.io/runtimeclasses/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes runtimeclasses",
+          "displayName": "Deletes/DeletesCollection runtimeclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/node.k8s.io/runtimeclasses/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Api",
+      "name": "managedClusters/api",
+      "operations": [
+        {
+          "description": "Reads api",
+          "displayName": "Gets/List api resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/api/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Api/V1",
+      "name": "managedClusters/api/v1",
+      "operations": [
+        {
+          "description": "Reads api/v1",
+          "displayName": "Gets/List api/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/api/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apis",
+      "name": "managedClusters/apis",
+      "operations": [
+        {
+          "description": "Reads apis",
+          "displayName": "Gets/List apis resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Admissionregistration.K8s.Io",
+      "name": "managedClusters/apis/admissionregistration.k8s.io",
+      "operations": [
+        {
+          "description": "Reads admissionregistration.k8s.io",
+          "displayName": "Gets/List admissionregistration.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/admissionregistration.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Admissionregistration.K8s.Io/V1",
+      "name": "managedClusters/apis/admissionregistration.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads admissionregistration.k8s.io/v1",
+          "displayName": "Gets/List admissionregistration.k8s.io/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/admissionregistration.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Admissionregistration.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/admissionregistration.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads admissionregistration.k8s.io/v1beta1",
+          "displayName": "Gets/List admissionregistration.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/admissionregistration.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiextensions.K8s.Io",
+      "name": "managedClusters/apis/apiextensions.k8s.io",
+      "operations": [
+        {
+          "description": "Reads apiextensions.k8s.io",
+          "displayName": "Gets/List apiextensions.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apiextensions.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiextensions.K8s.Io/V1",
+      "name": "managedClusters/apis/apiextensions.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads apiextensions.k8s.io/v1",
+          "displayName": "Gets/List apiextensions.k8s.io/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apiextensions.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiextensions.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/apiextensions.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads apiextensions.k8s.io/v1beta1",
+          "displayName": "Gets/List apiextensions.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apiextensions.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiregistration.K8s.Io",
+      "name": "managedClusters/apis/apiregistration.k8s.io",
+      "operations": [
+        {
+          "description": "Reads apiregistration.k8s.io",
+          "displayName": "Gets/List apiregistration.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apiregistration.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiregistration.K8s.Io/V1",
+      "name": "managedClusters/apis/apiregistration.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads apiregistration.k8s.io/v1",
+          "displayName": "Gets/List apiregistration.k8s.io/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apiregistration.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apiregistration.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/apiregistration.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads apiregistration.k8s.io/v1beta1",
+          "displayName": "Gets/List apiregistration.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apiregistration.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apps",
+      "name": "managedClusters/apis/apps",
+      "operations": [
+        {
+          "description": "Reads apps",
+          "displayName": "Gets/List apps resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apps/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apps/V1",
+      "name": "managedClusters/apis/apps/v1",
+      "operations": [
+        {
+          "description": "Reads apps/v1",
+          "displayName": "Gets/List apps/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apps/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apps/V1beta1",
+      "name": "managedClusters/apis/apps/v1beta1",
+      "operations": [
+        {
+          "description": "Reads apps/v1beta1",
+          "displayName": "Gets/List apps/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apps/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Apps/V1beta2",
+      "name": "managedClusters/apis/apps/v1beta2",
+      "operations": [
+        {
+          "description": "Reads apps/v1beta2",
+          "displayName": "Gets/List apps/v1beta2 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/apps/v1beta2/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authentication.K8s.Io",
+      "name": "managedClusters/apis/authentication.k8s.io",
+      "operations": [
+        {
+          "description": "Reads authentication.k8s.io",
+          "displayName": "Gets/List authentication.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/authentication.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authentication.K8s.Io/V1",
+      "name": "managedClusters/apis/authentication.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads authentication.k8s.io/v1",
+          "displayName": "Gets/List authentication.k8s.io/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/authentication.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authentication.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/authentication.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads authentication.k8s.io/v1beta1",
+          "displayName": "Gets/List authentication.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/authentication.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authorization.K8s.Io",
+      "name": "managedClusters/apis/authorization.k8s.io",
+      "operations": [
+        {
+          "description": "Reads authorization.k8s.io",
+          "displayName": "Gets/List authorization.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/authorization.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authorization.K8s.Io/V1",
+      "name": "managedClusters/apis/authorization.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads authorization.k8s.io/v1",
+          "displayName": "Gets/List authorization.k8s.io/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/authorization.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authorization.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/authorization.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads authorization.k8s.io/v1beta1",
+          "displayName": "Gets/List authorization.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/authorization.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Autoscaling",
+      "name": "managedClusters/apis/autoscaling",
+      "operations": [
+        {
+          "description": "Reads autoscaling",
+          "displayName": "Gets/List autoscaling resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/autoscaling/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Autoscaling/V1",
+      "name": "managedClusters/apis/autoscaling/v1",
+      "operations": [
+        {
+          "description": "Reads autoscaling/v1",
+          "displayName": "Gets/List autoscaling/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/autoscaling/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Autoscaling/V2beta1",
+      "name": "managedClusters/apis/autoscaling/v2beta1",
+      "operations": [
+        {
+          "description": "Reads autoscaling/v2beta1",
+          "displayName": "Gets/List autoscaling/v2beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/autoscaling/v2beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Autoscaling/V2beta2",
+      "name": "managedClusters/apis/autoscaling/v2beta2",
+      "operations": [
+        {
+          "description": "Reads autoscaling/v2beta2",
+          "displayName": "Gets/List autoscaling/v2beta2 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/autoscaling/v2beta2/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Batch",
+      "name": "managedClusters/apis/batch",
+      "operations": [
+        {
+          "description": "Reads batch",
+          "displayName": "Gets/List batch resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/batch/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Batch/V1",
+      "name": "managedClusters/apis/batch/v1",
+      "operations": [
+        {
+          "description": "Reads batch/v1",
+          "displayName": "Gets/List batch/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/batch/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Batch/V1beta1",
+      "name": "managedClusters/apis/batch/v1beta1",
+      "operations": [
+        {
+          "description": "Reads batch/v1beta1",
+          "displayName": "Gets/List batch/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/batch/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificates.K8s.Io",
+      "name": "managedClusters/apis/certificates.k8s.io",
+      "operations": [
+        {
+          "description": "Reads certificates.k8s.io",
+          "displayName": "Gets/List certificates.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/certificates.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificates.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/certificates.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads certificates.k8s.io/v1beta1",
+          "displayName": "Gets/List certificates.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/certificates.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Coordination.K8s.Io",
+      "name": "managedClusters/apis/coordination.k8s.io",
+      "operations": [
+        {
+          "description": "Reads coordination.k8s.io",
+          "displayName": "Gets/List coordination.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/coordination.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Coordination.K8s.Io/V1",
+      "name": "managedClusters/apis/coordination.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads coordination/v1",
+          "displayName": "Gets/List coordination/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/coordination.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Coordination.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/coordination.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads coordination.k8s.io/v1beta1",
+          "displayName": "Gets/List coordination.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/coordination.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Events.K8s.Io",
+      "name": "managedClusters/apis/events.k8s.io",
+      "operations": [
+        {
+          "description": "Reads events.k8s.io",
+          "displayName": "Gets/List events.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/events.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Events.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/events.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads events.k8s.io/v1beta1",
+          "displayName": "Gets/List events.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/events.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Extensions",
+      "name": "managedClusters/apis/extensions",
+      "operations": [
+        {
+          "description": "Reads extensions",
+          "displayName": "Gets/List extensions resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/extensions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Extensions/V1beta1",
+      "name": "managedClusters/apis/extensions/v1beta1",
+      "operations": [
+        {
+          "description": "Reads extensions/v1beta1",
+          "displayName": "Gets/List extensions/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/extensions/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Metrics.K8s.Io",
+      "name": "managedClusters/apis/metrics.k8s.io",
+      "operations": [
+        {
+          "description": "Reads metrics.k8s.io",
+          "displayName": "Gets/List metrics.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/metrics.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Metrics.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/metrics.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads metrics.k8s.io/v1beta1",
+          "displayName": "Gets/List metrics.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/metrics.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networking.K8s.Io",
+      "name": "managedClusters/apis/networking.k8s.io",
+      "operations": [
+        {
+          "description": "Reads networking.k8s.io",
+          "displayName": "Gets/List networking.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/networking.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networking.K8s.Io/V1",
+      "name": "managedClusters/apis/networking.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads networking/v1",
+          "displayName": "Gets/List networking/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/networking.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Networking.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/networking.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads networking.k8s.io/v1beta1",
+          "displayName": "Gets/List networking.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/networking.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Node.K8s.Io",
+      "name": "managedClusters/apis/node.k8s.io",
+      "operations": [
+        {
+          "description": "Reads node.k8s.io",
+          "displayName": "Gets/List node.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/node.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Node.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/node.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads node.k8s.io/v1beta1",
+          "displayName": "Gets/List node.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/node.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy",
+      "name": "managedClusters/apis/policy",
+      "operations": [
+        {
+          "description": "Reads policy",
+          "displayName": "Gets/List policy resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/policy/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy/V1beta1",
+      "name": "managedClusters/apis/policy/v1beta1",
+      "operations": [
+        {
+          "description": "Reads policy/v1beta1",
+          "displayName": "Gets/List policy/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/policy/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Rbac.Authorization.K8s.Io",
+      "name": "managedClusters/apis/rbac.authorization.k8s.io",
+      "operations": [
+        {
+          "description": "Reads rbac.authorization.k8s.io",
+          "displayName": "Gets/List rbac.authorization.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/rbac.authorization.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Rbac.Authorization.K8s.Io/V1",
+      "name": "managedClusters/apis/rbac.authorization.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads rbac.authorization/v1",
+          "displayName": "Gets/List rbac.authorization/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/rbac.authorization.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Rbac.Authorization.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/rbac.authorization.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads rbac.authorization.k8s.io/v1beta1",
+          "displayName": "Gets/List rbac.authorization.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/rbac.authorization.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Scheduling.K8s.Io",
+      "name": "managedClusters/apis/scheduling.k8s.io",
+      "operations": [
+        {
+          "description": "Reads scheduling.k8s.io",
+          "displayName": "Gets/List scheduling.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/scheduling.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Scheduling.K8s.Io/V1",
+      "name": "managedClusters/apis/scheduling.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads scheduling/v1",
+          "displayName": "Gets/List scheduling/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/scheduling.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Scheduling.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/scheduling.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads scheduling.k8s.io/v1beta1",
+          "displayName": "Gets/List scheduling.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/scheduling.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage.K8s.Io",
+      "name": "managedClusters/apis/storage.k8s.io",
+      "operations": [
+        {
+          "description": "Reads storage.k8s.io",
+          "displayName": "Gets/List storage.k8s.io resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/storage.k8s.io/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage.K8s.Io/V1",
+      "name": "managedClusters/apis/storage.k8s.io/v1",
+      "operations": [
+        {
+          "description": "Reads storage/v1",
+          "displayName": "Gets/List storage/v1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/storage.k8s.io/v1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage.K8s.Io/V1beta1",
+      "name": "managedClusters/apis/storage.k8s.io/v1beta1",
+      "operations": [
+        {
+          "description": "Reads storage.k8s.io/v1beta1",
+          "displayName": "Gets/List storage.k8s.io/v1beta1 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/apis/storage.k8s.io/v1beta1/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz",
+      "name": "managedClusters/healthz",
+      "operations": [
+        {
+          "description": "Reads healthz",
+          "displayName": "Gets/List healthz resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Autoregister-Completion",
+      "name": "managedClusters/healthz/autoregister-completion",
+      "operations": [
+        {
+          "description": "Reads autoregister-completion",
+          "displayName": "Gets/List autoregister-completion resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/autoregister-completion/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Etcd",
+      "name": "managedClusters/healthz/etcd",
+      "operations": [
+        {
+          "description": "Reads etcd",
+          "displayName": "Gets/List etcd resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/etcd/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Log",
+      "name": "managedClusters/healthz/log",
+      "operations": [
+        {
+          "description": "Reads log",
+          "displayName": "Gets/List log resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/log/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Ping",
+      "name": "managedClusters/healthz/ping",
+      "operations": [
+        {
+          "description": "Reads ping",
+          "displayName": "Gets/List ping resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/ping/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Apiservice-Openapi-Controller",
+      "name": "managedClusters/healthz/poststarthook/apiservice-openapi-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-openapi-controller",
+          "displayName": "Gets/List apiservice-openapi-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/apiservice-openapi-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Apiservice-Registration-Controller",
+      "name": "managedClusters/healthz/poststarthook/apiservice-registration-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-registration-controller",
+          "displayName": "Gets/List apiservice-registration-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/apiservice-registration-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Apiservice-Status-Available-Controller",
+      "name": "managedClusters/healthz/poststarthook/apiservice-status-available-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-status-available-controller",
+          "displayName": "Gets/List apiservice-status-available-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/apiservice-status-available-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Bootstrap-Controller",
+      "name": "managedClusters/healthz/poststarthook/bootstrap-controller",
+      "operations": [
+        {
+          "description": "Reads bootstrap-controller",
+          "displayName": "Gets/List bootstrap-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/bootstrap-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Ca-Registration",
+      "name": "managedClusters/healthz/poststarthook/ca-registration",
+      "operations": [
+        {
+          "description": "Reads ca-registration",
+          "displayName": "Gets/List ca-registration resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/ca-registration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Crd-Informer-Synced",
+      "name": "managedClusters/healthz/poststarthook/crd-informer-synced",
+      "operations": [
+        {
+          "description": "Reads crd-informer-synced",
+          "displayName": "Gets/List crd-informer-synced resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/crd-informer-synced/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Generic-Apiserver-Start-Informers",
+      "name": "managedClusters/healthz/poststarthook/generic-apiserver-start-informers",
+      "operations": [
+        {
+          "description": "Reads generic-apiserver-start-informers",
+          "displayName": "Gets/List generic-apiserver-start-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/generic-apiserver-start-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Kube-Apiserver-Autoregistration",
+      "name": "managedClusters/healthz/poststarthook/kube-apiserver-autoregistration",
+      "operations": [
+        {
+          "description": "Reads kube-apiserver-autoregistration",
+          "displayName": "Gets/List kube-apiserver-autoregistration resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/kube-apiserver-autoregistration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Bootstrap-Roles",
+      "name": "managedClusters/healthz/poststarthook/rbac/bootstrap-roles",
+      "operations": [
+        {
+          "description": "Reads bootstrap-roles",
+          "displayName": "Gets/List bootstrap-roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/rbac/bootstrap-roles/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Bootstrap-System-Priority-Classes",
+      "name": "managedClusters/healthz/poststarthook/scheduling/bootstrap-system-priority-classes",
+      "operations": [
+        {
+          "description": "Reads bootstrap-system-priority-classes",
+          "displayName": "Gets/List bootstrap-system-priority-classes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/scheduling/bootstrap-system-priority-classes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Start-Apiextensions-Controllers",
+      "name": "managedClusters/healthz/poststarthook/start-apiextensions-controllers",
+      "operations": [
+        {
+          "description": "Reads start-apiextensions-controllers",
+          "displayName": "Gets/List start-apiextensions-controllers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/start-apiextensions-controllers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Start-Apiextensions-Informers",
+      "name": "managedClusters/healthz/poststarthook/start-apiextensions-informers",
+      "operations": [
+        {
+          "description": "Reads start-apiextensions-informers",
+          "displayName": "Gets/List start-apiextensions-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/start-apiextensions-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Start-Kube-Aggregator-Informers",
+      "name": "managedClusters/healthz/poststarthook/start-kube-aggregator-informers",
+      "operations": [
+        {
+          "description": "Reads start-kube-aggregator-informers",
+          "displayName": "Gets/List start-kube-aggregator-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/start-kube-aggregator-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Healthz/Poststarthook/Start-Kube-Apiserver-Admission-Initializer",
+      "name": "managedClusters/healthz/poststarthook/start-kube-apiserver-admission-initializer",
+      "operations": [
+        {
+          "description": "Reads start-kube-apiserver-admission-initializer",
+          "displayName": "Gets/List start-kube-apiserver-admission-initializer resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/healthz/poststarthook/start-kube-apiserver-admission-initializer/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez",
+      "name": "managedClusters/livez",
+      "operations": [
+        {
+          "description": "Reads livez",
+          "displayName": "Gets/List livez resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Autoregister-Completion",
+      "name": "managedClusters/livez/autoregister-completion",
+      "operations": [
+        {
+          "description": "Reads autoregister-completion",
+          "displayName": "Gets/List autoregister-completion resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/autoregister-completion/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Etcd",
+      "name": "managedClusters/livez/etcd",
+      "operations": [
+        {
+          "description": "Reads etcd",
+          "displayName": "Gets/List etcd resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/etcd/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Log",
+      "name": "managedClusters/livez/log",
+      "operations": [
+        {
+          "description": "Reads log",
+          "displayName": "Gets/List log resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/log/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Ping",
+      "name": "managedClusters/livez/ping",
+      "operations": [
+        {
+          "description": "Reads ping",
+          "displayName": "Gets/List ping resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/ping/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Apiservice-Openapi-Controller",
+      "name": "managedClusters/livez/poststarthook/apiservice-openapi-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-openapi-controller",
+          "displayName": "Gets/List apiservice-openapi-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/apiservice-openapi-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Apiservice-Registration-Controller",
+      "name": "managedClusters/livez/poststarthook/apiservice-registration-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-registration-controller",
+          "displayName": "Gets/List apiservice-registration-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/apiservice-registration-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Apiservice-Status-Available-Controller",
+      "name": "managedClusters/livez/poststarthook/apiservice-status-available-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-status-available-controller",
+          "displayName": "Gets/List apiservice-status-available-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/apiservice-status-available-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Bootstrap-Controller",
+      "name": "managedClusters/livez/poststarthook/bootstrap-controller",
+      "operations": [
+        {
+          "description": "Reads bootstrap-controller",
+          "displayName": "Gets/List bootstrap-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/bootstrap-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Ca-Registration",
+      "name": "managedClusters/livez/poststarthook/ca-registration",
+      "operations": [
+        {
+          "description": "Reads ca-registration",
+          "displayName": "Gets/List ca-registration resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/ca-registration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Crd-Informer-Synced",
+      "name": "managedClusters/livez/poststarthook/crd-informer-synced",
+      "operations": [
+        {
+          "description": "Reads crd-informer-synced",
+          "displayName": "Gets/List crd-informer-synced resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/crd-informer-synced/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Generic-Apiserver-Start-Informers",
+      "name": "managedClusters/livez/poststarthook/generic-apiserver-start-informers",
+      "operations": [
+        {
+          "description": "Reads generic-apiserver-start-informers",
+          "displayName": "Gets/List generic-apiserver-start-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/generic-apiserver-start-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Kube-Apiserver-Autoregistration",
+      "name": "managedClusters/livez/poststarthook/kube-apiserver-autoregistration",
+      "operations": [
+        {
+          "description": "Reads kube-apiserver-autoregistration",
+          "displayName": "Gets/List kube-apiserver-autoregistration resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/kube-apiserver-autoregistration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Bootstrap-Roles",
+      "name": "managedClusters/livez/poststarthook/rbac/bootstrap-roles",
+      "operations": [
+        {
+          "description": "Reads bootstrap-roles",
+          "displayName": "Gets/List bootstrap-roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/rbac/bootstrap-roles/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Bootstrap-System-Priority-Classes",
+      "name": "managedClusters/livez/poststarthook/scheduling/bootstrap-system-priority-classes",
+      "operations": [
+        {
+          "description": "Reads bootstrap-system-priority-classes",
+          "displayName": "Gets/List bootstrap-system-priority-classes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/scheduling/bootstrap-system-priority-classes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Start-Apiextensions-Controllers",
+      "name": "managedClusters/livez/poststarthook/start-apiextensions-controllers",
+      "operations": [
+        {
+          "description": "Reads start-apiextensions-controllers",
+          "displayName": "Gets/List start-apiextensions-controllers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/start-apiextensions-controllers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Start-Apiextensions-Informers",
+      "name": "managedClusters/livez/poststarthook/start-apiextensions-informers",
+      "operations": [
+        {
+          "description": "Reads start-apiextensions-informers",
+          "displayName": "Gets/List start-apiextensions-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/start-apiextensions-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Start-Kube-Aggregator-Informers",
+      "name": "managedClusters/livez/poststarthook/start-kube-aggregator-informers",
+      "operations": [
+        {
+          "description": "Reads start-kube-aggregator-informers",
+          "displayName": "Gets/List start-kube-aggregator-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/start-kube-aggregator-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Livez/Poststarthook/Start-Kube-Apiserver-Admission-Initializer",
+      "name": "managedClusters/livez/poststarthook/start-kube-apiserver-admission-initializer",
+      "operations": [
+        {
+          "description": "Reads start-kube-apiserver-admission-initializer",
+          "displayName": "Gets/List start-kube-apiserver-admission-initializer resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/livez/poststarthook/start-kube-apiserver-admission-initializer/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Logs",
+      "name": "managedClusters/logs",
+      "operations": [
+        {
+          "description": "Reads logs",
+          "displayName": "Gets/List logs resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/logs/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Metrics",
+      "name": "managedClusters/metrics",
+      "operations": [
+        {
+          "description": "Reads metrics",
+          "displayName": "Gets/List metrics resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/metrics/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Openapi/V2",
+      "name": "managedClusters/openapi/v2",
+      "operations": [
+        {
+          "description": "Reads v2",
+          "displayName": "Gets/List v2 resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/openapi/v2/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz",
+      "name": "managedClusters/readyz",
+      "operations": [
+        {
+          "description": "Reads readyz",
+          "displayName": "Gets/List readyz resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Autoregister-Completion",
+      "name": "managedClusters/readyz/autoregister-completion",
+      "operations": [
+        {
+          "description": "Reads autoregister-completion",
+          "displayName": "Gets/List autoregister-completion resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/autoregister-completion/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Etcd",
+      "name": "managedClusters/readyz/etcd",
+      "operations": [
+        {
+          "description": "Reads etcd",
+          "displayName": "Gets/List etcd resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/etcd/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Log",
+      "name": "managedClusters/readyz/log",
+      "operations": [
+        {
+          "description": "Reads log",
+          "displayName": "Gets/List log resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/log/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Ping",
+      "name": "managedClusters/readyz/ping",
+      "operations": [
+        {
+          "description": "Reads ping",
+          "displayName": "Gets/List ping resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/ping/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Apiservice-Openapi-Controller",
+      "name": "managedClusters/readyz/poststarthook/apiservice-openapi-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-openapi-controller",
+          "displayName": "Gets/List apiservice-openapi-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/apiservice-openapi-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Apiservice-Registration-Controller",
+      "name": "managedClusters/readyz/poststarthook/apiservice-registration-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-registration-controller",
+          "displayName": "Gets/List apiservice-registration-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/apiservice-registration-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Apiservice-Status-Available-Controller",
+      "name": "managedClusters/readyz/poststarthook/apiservice-status-available-controller",
+      "operations": [
+        {
+          "description": "Reads apiservice-status-available-controller",
+          "displayName": "Gets/List apiservice-status-available-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/apiservice-status-available-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Bootstrap-Controller",
+      "name": "managedClusters/readyz/poststarthook/bootstrap-controller",
+      "operations": [
+        {
+          "description": "Reads bootstrap-controller",
+          "displayName": "Gets/List bootstrap-controller resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/bootstrap-controller/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Ca-Registration",
+      "name": "managedClusters/readyz/poststarthook/ca-registration",
+      "operations": [
+        {
+          "description": "Reads ca-registration",
+          "displayName": "Gets/List ca-registration resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/ca-registration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Crd-Informer-Synced",
+      "name": "managedClusters/readyz/poststarthook/crd-informer-synced",
+      "operations": [
+        {
+          "description": "Reads crd-informer-synced",
+          "displayName": "Gets/List crd-informer-synced resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/crd-informer-synced/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Generic-Apiserver-Start-Informers",
+      "name": "managedClusters/readyz/poststarthook/generic-apiserver-start-informers",
+      "operations": [
+        {
+          "description": "Reads generic-apiserver-start-informers",
+          "displayName": "Gets/List generic-apiserver-start-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/generic-apiserver-start-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Kube-Apiserver-Autoregistration",
+      "name": "managedClusters/readyz/poststarthook/kube-apiserver-autoregistration",
+      "operations": [
+        {
+          "description": "Reads kube-apiserver-autoregistration",
+          "displayName": "Gets/List kube-apiserver-autoregistration resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/kube-apiserver-autoregistration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Bootstrap-Roles",
+      "name": "managedClusters/readyz/poststarthook/rbac/bootstrap-roles",
+      "operations": [
+        {
+          "description": "Reads bootstrap-roles",
+          "displayName": "Gets/List bootstrap-roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/rbac/bootstrap-roles/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Bootstrap-System-Priority-Classes",
+      "name": "managedClusters/readyz/poststarthook/scheduling/bootstrap-system-priority-classes",
+      "operations": [
+        {
+          "description": "Reads bootstrap-system-priority-classes",
+          "displayName": "Gets/List bootstrap-system-priority-classes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/scheduling/bootstrap-system-priority-classes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Start-Apiextensions-Controllers",
+      "name": "managedClusters/readyz/poststarthook/start-apiextensions-controllers",
+      "operations": [
+        {
+          "description": "Reads start-apiextensions-controllers",
+          "displayName": "Gets/List start-apiextensions-controllers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/start-apiextensions-controllers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Start-Apiextensions-Informers",
+      "name": "managedClusters/readyz/poststarthook/start-apiextensions-informers",
+      "operations": [
+        {
+          "description": "Reads start-apiextensions-informers",
+          "displayName": "Gets/List start-apiextensions-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/start-apiextensions-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Start-Kube-Aggregator-Informers",
+      "name": "managedClusters/readyz/poststarthook/start-kube-aggregator-informers",
+      "operations": [
+        {
+          "description": "Reads start-kube-aggregator-informers",
+          "displayName": "Gets/List start-kube-aggregator-informers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/start-kube-aggregator-informers/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Poststarthook/Start-Kube-Apiserver-Admission-Initializer",
+      "name": "managedClusters/readyz/poststarthook/start-kube-apiserver-admission-initializer",
+      "operations": [
+        {
+          "description": "Reads start-kube-apiserver-admission-initializer",
+          "displayName": "Gets/List start-kube-apiserver-admission-initializer resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/poststarthook/start-kube-apiserver-admission-initializer/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Readyz/Shutdown",
+      "name": "managedClusters/readyz/shutdown",
+      "operations": [
+        {
+          "description": "Reads shutdown",
+          "displayName": "Gets/List shutdown resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/readyz/shutdown/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resetmetrics",
+      "name": "managedClusters/resetMetrics",
+      "operations": [
+        {
+          "description": "Reads resetMetrics",
+          "displayName": "Gets/List resetMetrics resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/resetMetrics/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Swagger-Ui",
+      "name": "managedClusters/swagger-ui",
+      "operations": [
+        {
+          "description": "Reads swagger-ui",
+          "displayName": "Gets/List swagger-ui resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/swagger-ui/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Swagger-Api",
+      "name": "managedClusters/swagger-api",
+      "operations": [
+        {
+          "description": "Reads swagger-api",
+          "displayName": "Gets/List swagger-api resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/swagger-api/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ui",
+      "name": "managedClusters/ui",
+      "operations": [
+        {
+          "description": "Reads ui",
+          "displayName": "Gets/List ui resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/ui/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Version",
+      "name": "managedClusters/version",
+      "operations": [
+        {
+          "description": "Reads version",
+          "displayName": "Gets/List version resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/version/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Poddisruptionbudgets",
+      "name": "managedClusters/policy/poddisruptionbudgets",
+      "operations": [
+        {
+          "description": "Reads poddisruptionbudgets",
+          "displayName": "Gets/List poddisruptionbudgets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/poddisruptionbudgets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes poddisruptionbudgets",
+          "displayName": "Creates/Updates poddisruptionbudgets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/poddisruptionbudgets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes poddisruptionbudgets",
+          "displayName": "Deletes/DeletesCollection poddisruptionbudgets resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/poddisruptionbudgets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Podsecuritypolicies",
+      "name": "managedClusters/policy/podsecuritypolicies",
+      "operations": [
+        {
+          "description": "Reads podsecuritypolicies",
+          "displayName": "Gets/List podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/podsecuritypolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes podsecuritypolicies",
+          "displayName": "Creates/Updates podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/podsecuritypolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes podsecuritypolicies",
+          "displayName": "Deletes/DeletesCollection podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/podsecuritypolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Use action on podsecuritypolicies",
+          "displayName": "Use podsecuritypolicies resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/policy/podsecuritypolicies/use/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Clusterrolebindings",
+      "name": "managedClusters/rbac.authorization.k8s.io/clusterrolebindings",
+      "operations": [
+        {
+          "description": "Reads clusterrolebindings",
+          "displayName": "Gets/List clusterrolebindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterrolebindings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes clusterrolebindings",
+          "displayName": "Creates/Updates clusterrolebindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterrolebindings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes clusterrolebindings",
+          "displayName": "Deletes/DeletesCollection clusterrolebindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterrolebindings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Clusterroles",
+      "name": "managedClusters/rbac.authorization.k8s.io/clusterroles",
+      "operations": [
+        {
+          "description": "Reads clusterroles",
+          "displayName": "Gets/List clusterroles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterroles/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes clusterroles",
+          "displayName": "Creates/Updates clusterroles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterroles/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes clusterroles",
+          "displayName": "Deletes/DeletesCollection clusterroles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterroles/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Binds clusterroles",
+          "displayName": "Bind clusterroles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterroles/bind/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Escalates",
+          "displayName": "Escalate clusterroles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/clusterroles/escalate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Rolebindings",
+      "name": "managedClusters/rbac.authorization.k8s.io/rolebindings",
+      "operations": [
+        {
+          "description": "Reads rolebindings",
+          "displayName": "Gets/List rolebindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/rolebindings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes rolebindings",
+          "displayName": "Creates/Updates rolebindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/rolebindings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes rolebindings",
+          "displayName": "Deletes/DeletesCollection rolebindings resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/rolebindings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Roles",
+      "name": "managedClusters/rbac.authorization.k8s.io/roles",
+      "operations": [
+        {
+          "description": "Reads roles",
+          "displayName": "Gets/List roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/roles/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes roles",
+          "displayName": "Creates/Updates roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/roles/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes roles",
+          "displayName": "Deletes/DeletesCollection roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/roles/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Binds roles",
+          "displayName": "Bind roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/roles/bind/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Escalates roles",
+          "displayName": "Escalate roles resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/rbac.authorization.k8s.io/roles/escalate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Priorityclasses",
+      "name": "managedClusters/scheduling.k8s.io/priorityclasses",
+      "operations": [
+        {
+          "description": "Reads priorityclasses",
+          "displayName": "Gets/List priorityclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/scheduling.k8s.io/priorityclasses/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes priorityclasses",
+          "displayName": "Creates/Updates priorityclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/scheduling.k8s.io/priorityclasses/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes priorityclasses",
+          "displayName": "Deletes/DeletesCollection priorityclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/scheduling.k8s.io/priorityclasses/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Users",
+      "name": "managedClusters/users",
+      "operations": [
+        {
+          "description": "Impersonate users",
+          "displayName": "Impersonate users resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/users/impersonate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Groups",
+      "name": "managedClusters/groups",
+      "operations": [
+        {
+          "description": "Impersonate groups",
+          "displayName": "Impersonate groups resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/groups/impersonate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Userextras",
+      "name": "managedClusters/authentication.k8s.io/userextras",
+      "operations": [
+        {
+          "description": "Impersonate userextras",
+          "displayName": "Impersonate userextras resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/authentication.k8s.io/userextras/impersonate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storageclasses",
+      "name": "managedClusters/storage.k8s.io/storageclasses",
+      "operations": [
+        {
+          "description": "Reads storageclasses",
+          "displayName": "Gets/List storageclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/storageclasses/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes storageclasses",
+          "displayName": "Creates/Updates storageclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/storageclasses/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes storageclasses",
+          "displayName": "Deletes/DeletesCollection storageclasses resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/storageclasses/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Volumeattachments",
+      "name": "managedClusters/storage.k8s.io/volumeattachments",
+      "operations": [
+        {
+          "description": "Reads volumeattachments",
+          "displayName": "Gets/List volumeattachments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/volumeattachments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes volumeattachments",
+          "displayName": "Creates/Updates volumeattachments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/volumeattachments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes volumeattachments",
+          "displayName": "Deletes/DeletesCollection volumeattachments resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/volumeattachments/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Csidrivers",
+      "name": "managedClusters/storage.k8s.io/csidrivers",
+      "operations": [
+        {
+          "description": "Reads csidrivers",
+          "displayName": "Gets/List csidrivers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/csidrivers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes csidrivers",
+          "displayName": "Creates/Updates csidrivers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/csidrivers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes csidrivers",
+          "displayName": "Deletes/DeletesCollection csidrivers resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/csidrivers/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Csinodes",
+      "name": "managedClusters/storage.k8s.io/csinodes",
+      "operations": [
+        {
+          "description": "Reads csinodes",
+          "displayName": "Gets/List csinodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/csinodes/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes csinodes",
+          "displayName": "Creates/Updates csinodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/csinodes/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes csinodes",
+          "displayName": "Deletes/DeletesCollection csinodes resource",
+          "isDataAction": true,
+          "name": "Microsoft.ContainerService/managedClusters/storage.k8s.io/csinodes/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agent Pools",
+      "name": "managedClusters/agentPools/upgradeNodeImageVersion",
+      "operations": [
+        {
+          "description": "Upgrade the node image version of agent pool",
+          "displayName": "Upgrade agent pool node image version",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/agentPools/upgradeNodeImageVersion/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connections",
+      "name": "managedClusters/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get private endpoint connection",
+          "displayName": "Get private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/privateEndpointConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Approve or Reject a private endpoint connection",
+          "displayName": "Update private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/privateEndpointConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete private endpoint connection",
+          "displayName": "Delete private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/privateEndpointConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Clusters",
+      "name": "managedClusters/commandResults",
+      "operations": [
+        {
+          "description": "Retrieve result from previous issued command.",
+          "displayName": "CommandResult",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/commandResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Maintenance Configurations",
+      "name": "managedClusters/maintenanceConfigurations",
+      "operations": [
+        {
+          "description": "Gets a maintenance configuration",
+          "displayName": "Get a maintenance configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/maintenanceConfigurations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new MaintenanceConfiguration or updates an existing one",
+          "displayName": "Create or Update maintenance configuratio",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/maintenanceConfigurations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a maintenance configuration",
+          "displayName": "Delete Maintenance Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/maintenanceConfigurations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ExtensionAddons",
+      "name": "managedClusters/extensionaddons",
+      "operations": [
+        {
+          "description": "Gets an extension addon",
+          "displayName": "Get an extension addon",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/extensionaddons/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new extension addon or updates an existing one",
+          "displayName": "Create or Update extension addon",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/extensionaddons/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an extension addon",
+          "displayName": "Delete an extension addon",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/extensionaddons/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventGridFilters",
+      "name": "managedClusters/eventGridFilters",
+      "operations": [
+        {
+          "description": "Get eventgrid filter",
+          "displayName": "Get eventgrid filter",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/eventGridFilters/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update eventgrid filter",
+          "displayName": "Create or Update eventgrid filter",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/eventGridFilters/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete an eventgrid filter",
+          "displayName": "Delete an eventgrid filter",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/eventGridFilters/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OSOptions",
+      "name": "locations/osOptions",
+      "operations": [
+        {
+          "description": "Gets OS options",
+          "displayName": "Get OS Options",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/locations/osOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Snapshots",
+      "name": "snapshots",
+      "operations": [
+        {
+          "description": "Get a snapshot",
+          "displayName": "Get Snapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/snapshots/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new snapshot",
+          "displayName": "Create Snapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/snapshots/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a snapshot",
+          "displayName": "Delete Snapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/snapshots/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ManagedClusterSnapshots",
+      "name": "managedclustersnapshots",
+      "operations": [
+        {
+          "description": "Get a managed cluster snapshot",
+          "displayName": "Get ManagedClusterSnapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedclustersnapshots/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new managed cluster snapshot",
+          "displayName": "Create ManagedClusterSnapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedclustersnapshots/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a managed cluster snapshot",
+          "displayName": "Delete ManagedClusterSnapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedclustersnapshots/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Clusters",
+      "name": "managedClusters/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "Get ManagedCluster NetworkSecurityPerimeter Association",
+          "displayName": "NetworkSecurityPerimeterAssociationProxy.Read",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterAssociationProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Create or update ManagedCluster NetworkSecurityPerimeter Association",
+          "displayName": "NetworkSecurityPerimeterAssociationProxy.Write",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterAssociationProxies/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete ManagedCluster NetworkSecurityPerimeter Association",
+          "displayName": "NetworkSecurityPerimeterAssociationProxy.Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/managedClusters/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Fleets",
+      "name": "fleets",
+      "operations": [
+        {
+          "description": "Get fleet",
+          "displayName": "Get fleet",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a fleet",
+          "displayName": "Create or Update a fleet",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a fleet",
+          "displayName": "Delete a fleet",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List fleet credentials",
+          "displayName": "List fleet credentials",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/listCredentials/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Members",
+      "name": "fleets/members",
+      "operations": [
+        {
+          "description": "Get a fleet member",
+          "displayName": "Get a fleet member",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/members/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a fleet member",
+          "displayName": "Create or Update a fleet member",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/members/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a fleet member",
+          "displayName": "Delete a fleet member",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleets/members/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Memberships",
+      "name": "fleetMemberships",
+      "operations": [
+        {
+          "description": "Get a fleet membership extension",
+          "displayName": "Get a fleet membership extension",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleetMemberships/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a fleet membership extension",
+          "displayName": "Create or Update a fleet membership extension",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleetMemberships/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete a fleet membership extension",
+          "displayName": "Delete a fleet membership extension",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerService/fleetMemberships/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,4660 @@
+{
+  "displayName": "Microsoft Devices",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Devices",
+  "name": "Microsoft.Devices",
+  "operations": [
+    {
+      "description": "Register the subscription for the IotHub resource provider and enables the creation of IotHub resources",
+      "displayName": "Register Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.Devices/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Check If IotHub name is available",
+      "displayName": "Check If IotHub name is available",
+      "isDataAction": false,
+      "name": "Microsoft.Devices/checkNameAvailability/Action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Check If Provisioning service name is available",
+      "displayName": "Check If Provisioning Service name is available",
+      "isDataAction": false,
+      "name": "Microsoft.Devices/checkProvisioningServiceNameAvailability/Action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Register the subscription for the IotHub resource provider and enables the creation of IotHub resources",
+      "displayName": "Register Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.Devices/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Get Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/IotHubs/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Set Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/IotHubs/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for the IotHub service",
+          "displayName": "Read IotHub service metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/IotHubs/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of device-to-cloud telemetry messages attempted to be sent to your IoT hub",
+                  "displayName": "Telemetry message send attempts",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.ingress.allProtocol",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of device-to-cloud telemetry messages sent successfully to your IoT hub",
+                  "displayName": "Telemetry messages sent",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.ingress.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of cloud-to-device message deliveries completed successfully by the device",
+                  "displayName": "C2D message deliveries completed",
+                  "fillGapWithZero": true,
+                  "name": "c2d.commands.egress.complete.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of cloud-to-device messages abandoned by the device",
+                  "displayName": "C2D messages abandoned",
+                  "fillGapWithZero": true,
+                  "name": "c2d.commands.egress.abandon.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of cloud-to-device messages rejected by the device",
+                  "displayName": "C2D messages rejected",
+                  "fillGapWithZero": true,
+                  "name": "c2d.commands.egress.reject.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of expired cloud-to-device messages",
+                  "displayName": "C2D Messages Expired",
+                  "fillGapWithZero": true,
+                  "name": "C2DMessagesExpired",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices registered to your IoT hub",
+                  "displayName": "Total devices (deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "devices.totalDevices",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices connected to your IoT hub",
+                  "displayName": "Connected devices (deprecated) ",
+                  "fillGapWithZero": true,
+                  "name": "devices.connectedDevices.allProtocol",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times messages were successfully delivered to all endpoints using IoT Hub routing. If a message is routed to multiple endpoints, this value increases by one for each successful delivery. If a message is delivered to the same endpoint multiple times, this value increases by one for each successful delivery.",
+                  "displayName": "Routing: telemetry messages delivered",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times messages were dropped by IoT Hub routing due to dead endpoints. This value does not count messages delivered to fallback route as dropped messages are not delivered there.",
+                  "displayName": "Routing: telemetry messages dropped ",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.dropped",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times messages were orphaned by IoT Hub routing because they didn't match any routing rules (including the fallback rule). ",
+                  "displayName": "Routing: telemetry messages orphaned ",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.orphaned",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing failed to deliver messages due to an incompatibility with the endpoint. This value does not include retries.",
+                  "displayName": "Routing: telemetry messages incompatible",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.invalid",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing delivered messages to the endpoint associated with the fallback route.",
+                  "displayName": "Routing: messages delivered to fallback",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.fallback",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to Event Hub endpoints.",
+                  "displayName": "Routing: messages delivered to Event Hub",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.eventHubs",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and message ingress into an Event Hub endpoint.",
+                  "displayName": "Routing: message latency for Event Hub",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.eventHubs",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to Service Bus queue endpoints.",
+                  "displayName": "Routing: messages delivered to Service Bus Queue",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.serviceBusQueues",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a Service Bus queue endpoint.",
+                  "displayName": "Routing: message latency for Service Bus Queue",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.serviceBusQueues",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to Service Bus topic endpoints.",
+                  "displayName": "Routing: messages delivered to Service Bus Topic",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.serviceBusTopics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a Service Bus topic endpoint.",
+                  "displayName": "Routing: message latency for Service Bus Topic",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.serviceBusTopics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to the built-in endpoint (messages/events).",
+                  "displayName": "Routing: messages delivered to messages/events",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.builtIn.events",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into the built-in endpoint (messages/events).",
+                  "displayName": "Routing: message latency for messages/events",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.builtIn.events",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to storage endpoints.",
+                  "displayName": "Routing: messages delivered to storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.storage",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a storage endpoint.",
+                  "displayName": "Routing: message latency for storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.storage",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The amount of data (bytes) IoT Hub routing delivered to storage endpoints.",
+                  "displayName": "Routing: data delivered to storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.storage.bytes",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing delivered blobs to storage endpoints.",
+                  "displayName": "Routing: blobs delivered to storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.storage.blobs",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Routing Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Event Type",
+                      "name": "EventType"
+                    }
+                  ],
+                  "displayDescription": "The number of IoT Hub events published to Event Grid. Use the Result dimension for the number of successful and failed requests. EventType dimension shows the type of event (https://aka.ms/ioteventgrid).",
+                  "displayName": "Event Grid deliveries",
+                  "fillGapWithZero": true,
+                  "name": "EventGridDeliveries",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Event Type",
+                      "name": "EventType"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) from when the Iot Hub event was generated to when the event was published to Event Grid. This number is an average between all event types. Use the EventType dimension to see latency of a specific type of event.",
+                  "displayName": "Event Grid latency",
+                  "fillGapWithZero": true,
+                  "name": "EventGridLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Endpoint Name",
+                      "name": "EndpointName"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Routing Source",
+                      "name": "RoutingSource"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub attempted to deliver messages to all endpoints using routing. To see the number of successful or failed attempts, use the Result dimension. To see the reason of failure, like invalid, dropped, or orphaned, use the FailureReasonCategory dimension. You can also use the EndpointName and EndpointType dimensions to understand how many messages were delivered to your different endpoints. The metric value increases by one for each delivery attempt, including if the message is delivered to multiple endpoints or if the message is delivered to the same endpoint multiple times.",
+                  "displayName": "Routing Deliveries (preview)",
+                  "fillGapWithZero": true,
+                  "name": "RoutingDeliveries",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Endpoint Name",
+                      "name": "EndpointName"
+                    },
+                    {
+                      "displayName": "Routing Source",
+                      "name": "RoutingSource"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into an endpoint. You can use the EndpointName and EndpointType dimensions to understand the latency to your different endpoints.",
+                  "displayName": "Routing Delivery Latency (preview)",
+                  "fillGapWithZero": true,
+                  "name": "RoutingDeliveryLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Endpoint Name",
+                      "name": "EndpointName"
+                    },
+                    {
+                      "displayName": "Routing Source",
+                      "name": "RoutingSource"
+                    }
+                  ],
+                  "displayDescription": "The total size in bytes of messages delivered by IoT hub to an endpoint. You can use the EndpointName and EndpointType dimensions to view the size of the messages in bytes delivered to your different endpoints. The metric value increases for every message delivered, including if the message is delivered to multiple endpoints or if the message is delivered to the same endpoint multiple times.",
+                  "displayName": "Routing Delivery Message Size in Bytes (preview)",
+                  "fillGapWithZero": true,
+                  "name": "RoutingDataSizeInBytesDelivered",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful device-initiated twin reads.",
+                  "displayName": "Successful twin reads from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.read.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed device-initiated twin reads.",
+                  "displayName": "Failed twin reads from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.read.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful device-initiated twin reads.",
+                  "displayName": "Response size of twin reads from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.read.size",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful device-initiated twin updates.",
+                  "displayName": "Successful twin updates from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.update.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed device-initiated twin updates.",
+                  "displayName": "Failed twin updates from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.update.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max size of all successful device-initiated twin updates.",
+                  "displayName": "Size of twin updates from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.update.size",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful direct method calls.",
+                  "displayName": "Successful direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed direct method calls.",
+                  "displayName": "Failed direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful direct method requests.",
+                  "displayName": "Request size of direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.requestSize",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful direct method responses.",
+                  "displayName": "Response size of direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.responseSize",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful back-end-initiated twin reads.",
+                  "displayName": "Successful twin reads from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.read.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed back-end-initiated twin reads.",
+                  "displayName": "Failed twin reads from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.read.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful back-end-initiated twin reads.",
+                  "displayName": "Response size of twin reads from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.read.size",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful back-end-initiated twin updates.",
+                  "displayName": "Successful twin updates from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.update.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed back-end-initiated twin updates.",
+                  "displayName": "Failed twin updates from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.update.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max size of all successful back-end-initiated twin updates.",
+                  "displayName": "Size of twin updates from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.update.size",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful twin queries.",
+                  "displayName": "Successful twin queries",
+                  "fillGapWithZero": true,
+                  "name": "twinQueries.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed twin queries.",
+                  "displayName": "Failed twin queries",
+                  "fillGapWithZero": true,
+                  "name": "twinQueries.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of the result size of all successful twin queries.",
+                  "displayName": "Twin queries result size",
+                  "fillGapWithZero": true,
+                  "name": "twinQueries.resultSize",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful creation of twin update jobs.",
+                  "displayName": "Successful creations of twin update jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createTwinUpdateJob.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed creation of twin update jobs.",
+                  "displayName": "Failed creations of twin update jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createTwinUpdateJob.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful creation of direct method invocation jobs.",
+                  "displayName": "Successful creations of method invocation jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createDirectMethodJob.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed creation of direct method invocation jobs.",
+                  "displayName": "Failed creations of method invocation jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createDirectMethodJob.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful calls to list jobs.",
+                  "displayName": "Successful calls to list jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.listJobs.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed calls to list jobs.",
+                  "displayName": "Failed calls to list jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.listJobs.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful calls to cancel a job.",
+                  "displayName": "Successful job cancellations",
+                  "fillGapWithZero": true,
+                  "name": "jobs.cancelJob.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed calls to cancel a job.",
+                  "displayName": "Failed job cancellations",
+                  "fillGapWithZero": true,
+                  "name": "jobs.cancelJob.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful calls to query jobs.",
+                  "displayName": "Successful job queries",
+                  "fillGapWithZero": true,
+                  "name": "jobs.queryJobs.success",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed calls to query jobs.",
+                  "displayName": "Failed job queries",
+                  "fillGapWithZero": true,
+                  "name": "jobs.queryJobs.failure",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all completed jobs.",
+                  "displayName": "Completed jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.completed",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed jobs.",
+                  "displayName": "Failed jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.failed",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of throttling errors due to device throughput throttles",
+                  "displayName": "Number of throttling errors",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.ingress.sendThrottle",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of total messages used today",
+                  "displayName": "Total number of messages used",
+                  "fillGapWithZero": true,
+                  "name": "dailyMessageQuotaUsed",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Bytes transferred to and from any devices connected to IotHub",
+                  "displayName": "Total device data usage",
+                  "fillGapWithZero": true,
+                  "name": "deviceDataUsage",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Bytes transferred to and from any devices connected to IotHub",
+                  "displayName": "Total device data usage (preview)",
+                  "fillGapWithZero": true,
+                  "name": "deviceDataUsageV2",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices registered to your IoT hub",
+                  "displayName": "Total devices",
+                  "fillGapWithZero": true,
+                  "lockAggregationType": "Total",
+                  "name": "totalDeviceCount",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices connected to your IoT hub",
+                  "displayName": "Connected devices",
+                  "fillGapWithZero": true,
+                  "lockAggregationType": "Total",
+                  "name": "connectedDeviceCount",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Metrics for Configuration Operations",
+                  "displayName": "Configuration Metrics",
+                  "fillGapWithZero": true,
+                  "name": "configurations",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "QoS",
+                      "name": "QoS"
+                    }
+                  ],
+                  "displayDescription": "Total number of messages published to the broker",
+                  "displayName": "Broker: Messages Published (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "broker.msgs.published",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "QoS",
+                      "name": "QoS"
+                    },
+                    {
+                      "displayName": "Topic Space Name",
+                      "name": "TopicSpaceName"
+                    }
+                  ],
+                  "displayDescription": "Total number of messages delivered by the broker",
+                  "displayName": "Broker: Messages Delivered (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "broker.msgs.delivered",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average egress message delivery latency due to throttling",
+                  "displayName": "Broker: Message delivery latency from throttling (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "broker.msgs.delivery.throttlingLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Session Type",
+                      "name": "SessionType"
+                    },
+                    {
+                      "displayName": "Mqtt Endpoint",
+                      "name": "MqttEndpoint"
+                    }
+                  ],
+                  "displayDescription": "The number of new connections per IoT Hub",
+                  "displayName": "MQTT: New Connections (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.connections",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Drop Reason",
+                      "name": "DropReason"
+                    }
+                  ],
+                  "displayDescription": "The rate of dropped sessions per IoT Hub",
+                  "displayName": "MQTT: Dropped Sessions (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.sessions.dropped",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "Operation Type",
+                      "name": "OperationType"
+                    },
+                    {
+                      "displayName": "Topic Space Name",
+                      "name": "TopicSpaceName"
+                    }
+                  ],
+                  "displayDescription": "The number of subscriptions",
+                  "displayName": "MQTT: New Subscriptions (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.subscriptions",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Session Type",
+                      "name": "SessionType"
+                    },
+                    {
+                      "displayName": "Mqtt Endpoint",
+                      "name": "MqttEndpoint"
+                    }
+                  ],
+                  "displayDescription": "The number of new sessions per IoT Hub",
+                  "displayName": "MQTT: New Sessions (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.sessions",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available log definitions for the IotHub Service",
+          "displayName": "Read IotHub service log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/IotHubs/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Connections",
+                  "name": "Connections"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Telemetry",
+                  "name": "DeviceTelemetry"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "C2D Commands",
+                  "name": "C2DCommands"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Identity Operations",
+                  "name": "DeviceIdentityOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "File Upload Operations",
+                  "name": "FileUploadOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Routes",
+                  "name": "Routes"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "D2CTwinOperations",
+                  "name": "D2CTwinOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "C2D Twin Operations",
+                  "name": "C2DTwinOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Twin Queries",
+                  "name": "TwinQueries"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Jobs Operations",
+                  "name": "JobsOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Direct Methods",
+                  "name": "DirectMethods"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Distributed Tracing (Preview)",
+                  "name": "DistributedTracing"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Configurations",
+                  "name": "Configurations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Streams (Preview)",
+                  "name": "DeviceStreams"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs",
+      "name": "iotHubs",
+      "operations": [
+        {
+          "description": "Gets the IotHub resource(s)",
+          "displayName": "Get IotHub(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update IotHub Resource",
+          "displayName": "Create or update IotHub Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete IotHub Resource",
+          "displayName": "Delete IotHub Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get all IotHub Keys",
+          "displayName": "Get all IotHub Keys",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/listkeys/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Export Devices",
+          "displayName": "Export Devices",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/exportDevices/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Import Devices",
+          "displayName": "Import Devices",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/importDevices/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a private endpoint connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionsApproval/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/operationresults",
+      "operations": [
+        {
+          "description": "Get Operation Result (Obsolete API)",
+          "displayName": "Get Operation Result (Obsolete API)",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/operationresults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/iotHubStats",
+      "operations": [
+        {
+          "description": "Get IotHub Statistics",
+          "displayName": "Get IotHub Statistics",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/iotHubStats/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/skus",
+      "operations": [
+        {
+          "description": "Get valid IotHub Skus",
+          "displayName": "Get valid IotHub Skus",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/skus/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/iotHubKeys",
+      "operations": [
+        {
+          "description": "Get IotHub Key for the given name",
+          "displayName": "Get IotHub Key for the given name",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/iotHubKeys/listkeys/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/eventHubEndpoints/consumerGroups",
+      "operations": [
+        {
+          "description": "Create EventHub Consumer Group",
+          "displayName": "Create EventHub Consumer Group",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/eventHubEndpoints/consumerGroups/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get EventHub Consumer Group(s)",
+          "displayName": "Get EventHub Consumer Group(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/eventHubEndpoints/consumerGroups/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete EventHub Consumer Group",
+          "displayName": "Delete EventHub Consumer Group",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/eventHubEndpoints/consumerGroups/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/jobs",
+      "operations": [
+        {
+          "description": "Return a list of jobs",
+          "displayName": "Read Jobs",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/jobs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update any job",
+          "displayName": "Write Jobs",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/jobs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any job",
+          "displayName": "Delete Jobs",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/jobs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Job(s) details submitted on given IotHub",
+          "displayName": "Get the Job(s) on IotHub",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/jobs/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/quotaMetrics",
+      "operations": [
+        {
+          "description": "Get Quota Metrics",
+          "displayName": "Get Quota Metrics",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/quotaMetrics/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/routing",
+      "operations": [
+        {
+          "description": "Test a message against all existing Routes",
+          "displayName": "Routing Rule Test All",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/routing/$testall/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Test a message against a provided test Route",
+          "displayName": "Routing Rule Test Route",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/routing/$testnew/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/routingEndpointsHealth",
+      "operations": [
+        {
+          "description": "Gets the health of all routing Endpoints for an IotHub",
+          "displayName": "Get Endpoint Health",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/routingEndpointsHealth/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Get All ResourceProvider Operations",
+          "displayName": "Get All ResourceProvider Operations",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/operations/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "usages",
+      "operations": [
+        {
+          "description": "Get subscription usage details for this provider.",
+          "displayName": "Get Subscription Usages",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/usages/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "operationresults",
+      "operations": [
+        {
+          "description": "Get Operation Result",
+          "displayName": "Get Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/operationresults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "iotHubs/certificates",
+      "operations": [
+        {
+          "description": "Gets the Certificate",
+          "displayName": "Gets the Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/certificates/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Certificate",
+          "displayName": "Create or Update Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/certificates/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Certificate",
+          "displayName": "Deletes Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/certificates/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate Verification code",
+          "displayName": "Generate Verification code",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/certificates/generateVerificationCode/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verify Certificate resource",
+          "displayName": "Verify Certificate resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/certificates/verify/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices",
+      "name": "provisioningServices",
+      "operations": [
+        {
+          "description": "Get IotDps resource",
+          "displayName": "Get IotDps resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create IotDps resource",
+          "displayName": "Create IotDps resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete IotDps resource",
+          "displayName": "Delete IotDps resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get all IotDps keys",
+          "displayName": "Get all IotDps keys",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/listkeys/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a private endpoint connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionsApproval/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/operationresults",
+      "operations": [
+        {
+          "description": "Get DPS Operation Result",
+          "displayName": "Get DPS Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/operationresults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/skus",
+      "operations": [
+        {
+          "description": "Get valid IotDps Skus",
+          "displayName": "Get valid IotDps Skus",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/skus/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/keys",
+      "operations": [
+        {
+          "description": "Get IotDps Keys for key name",
+          "displayName": "Get IotDps Keys for key name",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/keys/listkeys/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/certificates",
+      "operations": [
+        {
+          "description": "Gets the Certificate",
+          "displayName": "Gets the Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Certificate",
+          "displayName": "Create or Update Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Certificate",
+          "displayName": "Deletes Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate Verification code",
+          "displayName": "Generate Verification code",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/generateVerificationCode/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verify Certificate resource",
+          "displayName": "Verify Certificate resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/verify/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Get Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Set Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for the provisioning service",
+          "displayName": "Read provisioning service metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "IoT hub name",
+                      "name": "IotHubName"
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of device registrations attempted",
+                  "displayName": "Registration attempts",
+                  "fillGapWithZero": true,
+                  "name": "RegistrationAttempts",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "IoT hub name",
+                      "name": "IotHubName"
+                    }
+                  ],
+                  "displayDescription": "Number of devices assigned to an IoT hub",
+                  "displayName": "Devices assigned",
+                  "fillGapWithZero": true,
+                  "name": "DeviceAssignments",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Number of device attestations attempted",
+                  "displayName": "Attestation attempts",
+                  "fillGapWithZero": true,
+                  "name": "AttestationAttempts",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available log definitions for the provisioning Service",
+          "displayName": "Read provisioning service log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Operations",
+                  "name": "DeviceOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Service Operations",
+                  "name": "ServiceOperations"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "ElasticPools",
+      "name": "ElasticPools/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Get Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Set Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ElasticPools",
+      "name": "ElasticPools/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for the IotHub service",
+          "displayName": "Read IotHub service metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "requested usage rate",
+                  "displayName": "requested usage rate",
+                  "fillGapWithZero": true,
+                  "name": "elasticPool.requestedUsageRate",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubTenants",
+      "name": "ElasticPools/IotHubTenants/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Get Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/IotHubTenants/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Set Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/IotHubTenants/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubTenants",
+      "name": "ElasticPools/IotHubTenants/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for the IotHub service",
+          "displayName": "Read IotHub service metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/IotHubTenants/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "requested usage rate",
+                  "displayName": "requested usage rate",
+                  "fillGapWithZero": true,
+                  "name": "tenantHub.requestedUsageRate",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of device-to-cloud telemetry messages attempted to be sent to your IoT hub",
+                  "displayName": "Telemetry message send attempts",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.ingress.allProtocol",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of device-to-cloud telemetry messages sent successfully to your IoT hub",
+                  "displayName": "Telemetry messages sent",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.ingress.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of cloud-to-device message deliveries completed successfully by the device",
+                  "displayName": "C2D message deliveries completed",
+                  "fillGapWithZero": true,
+                  "name": "c2d.commands.egress.complete.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of cloud-to-device messages abandoned by the device",
+                  "displayName": "C2D messages abandoned",
+                  "fillGapWithZero": true,
+                  "name": "c2d.commands.egress.abandon.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of cloud-to-device messages rejected by the device",
+                  "displayName": "C2D messages rejected",
+                  "fillGapWithZero": true,
+                  "name": "c2d.commands.egress.reject.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of expired cloud-to-device messages",
+                  "displayName": "C2D Messages Expired",
+                  "fillGapWithZero": true,
+                  "name": "C2DMessagesExpired",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices registered to your IoT hub",
+                  "displayName": "Total devices (deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "devices.totalDevices",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices connected to your IoT hub",
+                  "displayName": "Connected devices (deprecated) ",
+                  "fillGapWithZero": true,
+                  "name": "devices.connectedDevices.allProtocol",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times messages were successfully delivered to all endpoints using IoT Hub routing. If a message is routed to multiple endpoints, this value increases by one for each successful delivery. If a message is delivered to the same endpoint multiple times, this value increases by one for each successful delivery.",
+                  "displayName": "Routing: telemetry messages delivered",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times messages were dropped by IoT Hub routing due to dead endpoints. This value does not count messages delivered to fallback route as dropped messages are not delivered there.",
+                  "displayName": "Routing: telemetry messages dropped ",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.dropped",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times messages were orphaned by IoT Hub routing because they didn't match any routing rules (including the fallback rule). ",
+                  "displayName": "Routing: telemetry messages orphaned ",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.orphaned",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing failed to deliver messages due to an incompatibility with the endpoint. This value does not include retries.",
+                  "displayName": "Routing: telemetry messages incompatible",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.invalid",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing delivered messages to the endpoint associated with the fallback route.",
+                  "displayName": "Routing: messages delivered to fallback",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.egress.fallback",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to Event Hub endpoints.",
+                  "displayName": "Routing: messages delivered to Event Hub",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.eventHubs",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and message ingress into an Event Hub endpoint.",
+                  "displayName": "Routing: message latency for Event Hub",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.eventHubs",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to Service Bus queue endpoints.",
+                  "displayName": "Routing: messages delivered to Service Bus Queue",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.serviceBusQueues",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a Service Bus queue endpoint.",
+                  "displayName": "Routing: message latency for Service Bus Queue",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.serviceBusQueues",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to Service Bus topic endpoints.",
+                  "displayName": "Routing: messages delivered to Service Bus Topic",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.serviceBusTopics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a Service Bus topic endpoint.",
+                  "displayName": "Routing: message latency for Service Bus Topic",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.serviceBusTopics",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to the built-in endpoint (messages/events).",
+                  "displayName": "Routing: messages delivered to messages/events",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.builtIn.events",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into the built-in endpoint (messages/events).",
+                  "displayName": "Routing: message latency for messages/events",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.builtIn.events",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing successfully delivered messages to storage endpoints.",
+                  "displayName": "Routing: messages delivered to storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.storage",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into a storage endpoint.",
+                  "displayName": "Routing: message latency for storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.latency.storage",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The amount of data (bytes) IoT Hub routing delivered to storage endpoints.",
+                  "displayName": "Routing: data delivered to storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.storage.bytes",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub routing delivered blobs to storage endpoints.",
+                  "displayName": "Routing: blobs delivered to storage",
+                  "fillGapWithZero": true,
+                  "name": "d2c.endpoints.egress.storage.blobs",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Routing Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Event Type",
+                      "name": "EventType"
+                    }
+                  ],
+                  "displayDescription": "The number of IoT Hub events published to Event Grid. Use the Result dimension for the number of successful and failed requests. EventType dimension shows the type of event (https://aka.ms/ioteventgrid).",
+                  "displayName": "Event Grid deliveries",
+                  "fillGapWithZero": true,
+                  "name": "EventGridDeliveries",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Event Type",
+                      "name": "EventType"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) from when the Iot Hub event was generated to when the event was published to Event Grid. This number is an average between all event types. Use the EventType dimension to see latency of a specific type of event.",
+                  "displayName": "Event Grid latency",
+                  "fillGapWithZero": true,
+                  "name": "EventGridLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Endpoint Name",
+                      "name": "EndpointName"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Routing Source",
+                      "name": "RoutingSource"
+                    }
+                  ],
+                  "displayDescription": "The number of times IoT Hub attempted to deliver messages to all endpoints using routing. To see the number of successful or failed attempts, use the Result dimension. To see the reason of failure, like invalid, dropped, or orphaned, use the FailureReasonCategory dimension. You can also use the EndpointName and EndpointType dimensions to understand how many messages were delivered to your different endpoints. The metric value increases by one for each delivery attempt, including if the message is delivered to multiple endpoints or if the message is delivered to the same endpoint multiple times.",
+                  "displayName": "Routing Deliveries (preview)",
+                  "fillGapWithZero": true,
+                  "name": "RoutingDeliveries",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Endpoint Name",
+                      "name": "EndpointName"
+                    },
+                    {
+                      "displayName": "Routing Source",
+                      "name": "RoutingSource"
+                    }
+                  ],
+                  "displayDescription": "The average latency (milliseconds) between message ingress to IoT Hub and telemetry message ingress into an endpoint. You can use the EndpointName and EndpointType dimensions to understand the latency to your different endpoints.",
+                  "displayName": "Routing Delivery Latency (preview)",
+                  "fillGapWithZero": true,
+                  "name": "RoutingDeliveryLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Endpoint Type",
+                      "name": "EndpointType"
+                    },
+                    {
+                      "displayName": "Endpoint Name",
+                      "name": "EndpointName"
+                    },
+                    {
+                      "displayName": "Routing Source",
+                      "name": "RoutingSource"
+                    }
+                  ],
+                  "displayDescription": "The total size in bytes of messages delivered by IoT hub to an endpoint. You can use the EndpointName and EndpointType dimensions to view the size of the messages in bytes delivered to your different endpoints. The metric value increases for every message delivered, including if the message is delivered to multiple endpoints or if the message is delivered to the same endpoint multiple times.",
+                  "displayName": "Routing Delivery Message Size in Bytes (preview)",
+                  "fillGapWithZero": true,
+                  "name": "RoutingDataSizeInBytesDelivered",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful device-initiated twin reads.",
+                  "displayName": "Successful twin reads from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.read.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed device-initiated twin reads.",
+                  "displayName": "Failed twin reads from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.read.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful device-initiated twin reads.",
+                  "displayName": "Response size of twin reads from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.read.size",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful device-initiated twin updates.",
+                  "displayName": "Successful twin updates from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.update.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed device-initiated twin updates.",
+                  "displayName": "Failed twin updates from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.update.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max size of all successful device-initiated twin updates.",
+                  "displayName": "Size of twin updates from devices",
+                  "fillGapWithZero": true,
+                  "name": "d2c.twin.update.size",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful direct method calls.",
+                  "displayName": "Successful direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed direct method calls.",
+                  "displayName": "Failed direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful direct method requests.",
+                  "displayName": "Request size of direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.requestSize",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful direct method responses.",
+                  "displayName": "Response size of direct method invocations",
+                  "fillGapWithZero": true,
+                  "name": "c2d.methods.responseSize",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful back-end-initiated twin reads.",
+                  "displayName": "Successful twin reads from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.read.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed back-end-initiated twin reads.",
+                  "displayName": "Failed twin reads from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.read.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of all successful back-end-initiated twin reads.",
+                  "displayName": "Response size of twin reads from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.read.size",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful back-end-initiated twin updates.",
+                  "displayName": "Successful twin updates from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.update.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed back-end-initiated twin updates.",
+                  "displayName": "Failed twin updates from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.update.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max size of all successful back-end-initiated twin updates.",
+                  "displayName": "Size of twin updates from back end",
+                  "fillGapWithZero": true,
+                  "name": "c2d.twin.update.size",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful twin queries.",
+                  "displayName": "Successful twin queries",
+                  "fillGapWithZero": true,
+                  "name": "twinQueries.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed twin queries.",
+                  "displayName": "Failed twin queries",
+                  "fillGapWithZero": true,
+                  "name": "twinQueries.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average, min, and max of the result size of all successful twin queries.",
+                  "displayName": "Twin queries result size",
+                  "fillGapWithZero": true,
+                  "name": "twinQueries.resultSize",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful creation of twin update jobs.",
+                  "displayName": "Successful creations of twin update jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createTwinUpdateJob.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed creation of twin update jobs.",
+                  "displayName": "Failed creations of twin update jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createTwinUpdateJob.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful creation of direct method invocation jobs.",
+                  "displayName": "Successful creations of method invocation jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createDirectMethodJob.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed creation of direct method invocation jobs.",
+                  "displayName": "Failed creations of method invocation jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.createDirectMethodJob.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful calls to list jobs.",
+                  "displayName": "Successful calls to list jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.listJobs.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed calls to list jobs.",
+                  "displayName": "Failed calls to list jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.listJobs.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful calls to cancel a job.",
+                  "displayName": "Successful job cancellations",
+                  "fillGapWithZero": true,
+                  "name": "jobs.cancelJob.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed calls to cancel a job.",
+                  "displayName": "Failed job cancellations",
+                  "fillGapWithZero": true,
+                  "name": "jobs.cancelJob.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful calls to query jobs.",
+                  "displayName": "Successful job queries",
+                  "fillGapWithZero": true,
+                  "name": "jobs.queryJobs.success",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed calls to query jobs.",
+                  "displayName": "Failed job queries",
+                  "fillGapWithZero": true,
+                  "name": "jobs.queryJobs.failure",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all completed jobs.",
+                  "displayName": "Completed jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.completed",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all failed jobs.",
+                  "displayName": "Failed jobs",
+                  "fillGapWithZero": true,
+                  "name": "jobs.failed",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of throttling errors due to device throughput throttles",
+                  "displayName": "Number of throttling errors",
+                  "fillGapWithZero": true,
+                  "name": "d2c.telemetry.ingress.sendThrottle",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of total messages used today",
+                  "displayName": "Total number of messages used",
+                  "fillGapWithZero": true,
+                  "name": "dailyMessageQuotaUsed",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Bytes transferred to and from any devices connected to IotHub",
+                  "displayName": "Total device data usage",
+                  "fillGapWithZero": true,
+                  "name": "deviceDataUsage",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Bytes transferred to and from any devices connected to IotHub",
+                  "displayName": "Total device data usage (preview)",
+                  "fillGapWithZero": true,
+                  "name": "deviceDataUsageV2",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices registered to your IoT hub",
+                  "displayName": "Total devices",
+                  "fillGapWithZero": true,
+                  "name": "totalDeviceCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Number of devices connected to your IoT hub",
+                  "displayName": "Connected devices",
+                  "fillGapWithZero": true,
+                  "name": "connectedDeviceCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Metrics for Configuration Operations",
+                  "displayName": "Configuration Metrics",
+                  "fillGapWithZero": true,
+                  "name": "configurations",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "QoS",
+                      "name": "QoS"
+                    }
+                  ],
+                  "displayDescription": "Total number of messages published to the broker",
+                  "displayName": "Broker: Messages Published (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "broker.msgs.published",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "QoS",
+                      "name": "QoS"
+                    },
+                    {
+                      "displayName": "Topic Space Name",
+                      "name": "TopicSpaceName"
+                    }
+                  ],
+                  "displayDescription": "Total number of messages delivered by the broker",
+                  "displayName": "Broker: Messages Delivered (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "broker.msgs.delivered",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The average egress message delivery latency due to throttling",
+                  "displayName": "Broker: Message delivery latency from throttling (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "broker.msgs.delivery.throttlingLatency",
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Session Type",
+                      "name": "SessionType"
+                    },
+                    {
+                      "displayName": "Mqtt Endpoint",
+                      "name": "MqttEndpoint"
+                    }
+                  ],
+                  "displayDescription": "The number of new connections per IoT Hub",
+                  "displayName": "MQTT: New Connections (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.connections",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Drop Reason",
+                      "name": "DropReason"
+                    }
+                  ],
+                  "displayDescription": "The rate of dropped sessions per IoT Hub",
+                  "displayName": "MQTT: Dropped Sessions (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.sessions.dropped",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    },
+                    {
+                      "displayName": "Failure Reason Category",
+                      "name": "FailureReasonCategory"
+                    },
+                    {
+                      "displayName": "Operation Type",
+                      "name": "OperationType"
+                    },
+                    {
+                      "displayName": "Topic Space Name",
+                      "name": "TopicSpaceName"
+                    }
+                  ],
+                  "displayDescription": "The number of subscriptions",
+                  "displayName": "MQTT: New Subscriptions (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.subscriptions",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Session Type",
+                      "name": "SessionType"
+                    },
+                    {
+                      "displayName": "Mqtt Endpoint",
+                      "name": "MqttEndpoint"
+                    }
+                  ],
+                  "displayDescription": "The number of new sessions per IoT Hub",
+                  "displayName": "MQTT: New Sessions (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "mqtt.sessions",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubTenants",
+      "name": "ElasticPools/IotHubTenants/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available log definitions for the IotHub Service",
+          "displayName": "Read IotHub service log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/ElasticPools/IotHubTenants/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Connections",
+                  "name": "Connections"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Telemetry",
+                  "name": "DeviceTelemetry"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "C2D Commands",
+                  "name": "C2DCommands"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Identity Operations",
+                  "name": "DeviceIdentityOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "File Upload Operations",
+                  "name": "FileUploadOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Routes",
+                  "name": "Routes"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "D2CTwinOperations",
+                  "name": "D2CTwinOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "C2D Twin Operations",
+                  "name": "C2DTwinOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Twin Queries",
+                  "name": "TwinQueries"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Jobs Operations",
+                  "name": "JobsOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Direct Methods",
+                  "name": "DirectMethods"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Distributed Tracing (Preview)",
+                  "name": "DistributedTracing"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Configurations",
+                  "name": "Configurations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Streams (Preview)",
+                  "name": "DeviceStreams"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants",
+      "operations": [
+        {
+          "description": "Create or Update the IotHub tenant resource",
+          "displayName": "Create or Update IotHubTenant",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the IotHub tenant resource",
+          "displayName": "Get IotHubTenant",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the IotHub tenant resource",
+          "displayName": "Delete IotHubTenant",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets IotHub tenant keys",
+          "displayName": "Get IotHubTenant Keys",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/listKeys/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Export Devices",
+          "displayName": "Export Devices",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/exportDevices/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Import Devices",
+          "displayName": "Import Devices",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/importDevices/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/getStats",
+      "operations": [
+        {
+          "description": "Gets the IotHub tenant stats resource",
+          "displayName": "Get IotHubTenant Stats",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/getStats/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/iotHubKeys",
+      "operations": [
+        {
+          "description": "Gets the IotHub tenant key",
+          "displayName": "Get IotHubTenant tenant key",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/iotHubKeys/listkeys/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/eventHubEndpoints/consumerGroups",
+      "operations": [
+        {
+          "description": "Create EventHub Consumer Group",
+          "displayName": "Create EventHub Consumer Group",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/eventHubEndpoints/consumerGroups/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get EventHub Consumer Group(s)",
+          "displayName": "Get EventHub Consumer Group(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/eventHubEndpoints/consumerGroups/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete EventHub Consumer Group",
+          "displayName": "Delete EventHub Consumer Group",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/eventHubEndpoints/consumerGroups/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/jobs",
+      "operations": [
+        {
+          "description": "Get Job(s) details submitted on given IotHub",
+          "displayName": "Get the Job(s) on IotHub",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/jobs/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/quotaMetrics",
+      "operations": [
+        {
+          "description": "Get Quota Metrics",
+          "displayName": "Get Quota Metrics",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/quotaMetrics/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/routing/routes",
+      "operations": [
+        {
+          "description": "Test a message against all existing Routes",
+          "displayName": "Routing Rule Test All",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/routing/routes/$testall/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Test a message against a provided test Route",
+          "displayName": "Routing Rule Test Route",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/routing/routes/$testnew/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/routingEndpointsHealth",
+      "operations": [
+        {
+          "description": "Gets the health of all routing Endpoints for an IotHub",
+          "displayName": "Get Endpoint Health",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/routingEndpointsHealth/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/EventGridFilters",
+      "name": "iotHubs/eventGridFilters",
+      "operations": [
+        {
+          "description": "Create new or Update existing Event Grid filter",
+          "displayName": "Create or Update Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/eventGridFilters/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Event Grid filter",
+          "displayName": "Get Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/eventGridFilters/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Event Grid filter",
+          "displayName": "Delete Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/eventGridFilters/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "elasticPools/iotHubTenants/certificates",
+      "operations": [
+        {
+          "description": "Gets the Certificate",
+          "displayName": "Gets the Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/certificates/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Certificate",
+          "displayName": "Create or Update Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/certificates/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Certificate",
+          "displayName": "Deletes Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/certificates/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate Verification code",
+          "displayName": "Generate Verification code",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/certificates/generateVerificationCode/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verify Certificate resource",
+          "displayName": "Verify Certificate resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/certificates/verify/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations/operationresults",
+      "operations": [
+        {
+          "description": "Get Location based Operation Result",
+          "displayName": "Get Location based Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/locations/operationresults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/SecuritySettings",
+      "name": "iotHubs/securitySettings",
+      "operations": [
+        {
+          "description": "Update the Azure Security Center settings on Iot Hub",
+          "displayName": "Update Iot Hub SecuritySettings",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/securitySettings/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Azure Security Center settings on Iot Hub",
+          "displayName": "Get Iot Hub SecuritySettings",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/securitySettings/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/SecuritySettings",
+      "name": "iotHubs/securitySettings/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of the Async Put operation for Iot Hub SecuritySettings",
+          "displayName": "Get Async operation result for Iot Hub SecuritySettings",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/securitySettings/operationResults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/SecuritySettings",
+      "name": "elasticPools/iotHubTenants/securitySettings",
+      "operations": [
+        {
+          "description": "Update the Azure Security Center settings on Iot Tenant Hub",
+          "displayName": "Update Iot Tenant Hub SecuritySettings",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/securitySettings/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Azure Security Center settings on Iot Tenant Hub",
+          "displayName": "Get Iot Tenant Hub SecuritySettings",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/securitySettings/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/SecuritySettings",
+      "name": "elasticPools/iotHubTenants/securitySettings/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of the Async Put operation for Iot Tenant Hub SecuritySettings",
+          "displayName": "Get Async operation result for Iot Tenant Hub SecuritySettings",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/iotHubTenants/securitySettings/operationResults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/ElasticPools/EventGridFilters",
+      "name": "elasticPools/eventGridFilters",
+      "operations": [
+        {
+          "description": "Create new or Update existing Elastic Pool Event Grid filter",
+          "displayName": "Create or Update Elastic Pool Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/eventGridFilters/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Elastic Pool Event Grid filter",
+          "displayName": "Get Elastic Pool Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/eventGridFilters/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Elastic Pool Event Grid filter",
+          "displayName": "Delete Elastic Pool Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/elasticPools/eventGridFilters/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/PrivateLinkResources",
+      "name": "iotHubs/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets private link resources for IotHub",
+          "displayName": "Get Private Link Resources",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateLinkResources/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/PrivateEndpointConnectionProxies",
+      "name": "iotHubs/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validates private endpoint connection proxy input during create",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionProxies/validate/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets properties for specified private endpoint connection proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionProxies/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a private endpoint connection proxy",
+          "displayName": "Put Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionProxies/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionProxies/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/PrivateEndpointConnectionProxies",
+      "name": "iotHubs/privateEndpointConnectionProxies/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of an async operation on a private endpoint connection proxy",
+          "displayName": "Get Private Endpoint Connection Proxy Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionProxies/operationResults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/PrivateEndpointConnections",
+      "name": "iotHubs/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Gets all the private endpoint connections for the specified iot hub",
+          "displayName": "Get All Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnections/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnections/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a private endpoint connection",
+          "displayName": "Put Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnections/Write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/PrivateEndpointConnections",
+      "name": "iotHubs/privateEndpointConnections/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of an async operation on a private endpoint connection",
+          "displayName": "Get Private Endpoint Connection Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/privateEndpointConnections/operationResults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateLinkResources",
+      "name": "provisioningServices/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets private link resources for IotHub",
+          "displayName": "Get Private Link Resources",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateLinkResources/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnectionProxies",
+      "name": "provisioningServices/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validates private endpoint connection proxy input during create",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/validate/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets properties for specified private endpoint connection proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a private endpoint connection proxy",
+          "displayName": "Put Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnectionProxies",
+      "name": "provisioningServices/privateEndpointConnectionProxies/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of an async operation on a private endpoint connection proxy",
+          "displayName": "Get Private Endpoint Connection Proxy Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/operationResults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnections",
+      "name": "provisioningServices/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Gets all the private endpoint connections for the specified iot hub",
+          "displayName": "Get All Private Endpoint Connections",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a private endpoint connection",
+          "displayName": "Put Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnections",
+      "name": "provisioningServices/privateEndpointConnections/operationResults",
+      "operations": [
+        {
+          "description": "Get the result of an async operation on a private endpoint connection",
+          "displayName": "Get Private Endpoint Connection Async Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/operationResults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/devices",
+      "operations": [
+        {
+          "description": "Read any device or module identity",
+          "displayName": "Read Device/Module",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/devices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update any device or module identity",
+          "displayName": "Write Device/Module",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/devices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any device or module identity",
+          "displayName": "Delete Device/Module",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/devices/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/twins",
+      "operations": [
+        {
+          "description": "Read any device or module twin",
+          "displayName": "Read DeviceTwin",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/twins/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write any device or module twin",
+          "displayName": "Write DeviceTwin",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/twins/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/cloudToDeviceMessages",
+      "operations": [
+        {
+          "description": "Send cloud-to-device message to any device ",
+          "displayName": "Send cloud-to-device message",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/cloudToDeviceMessages/send/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Receive, complete, or abandon cloud-to-device message feedback notification",
+          "displayName": "Receive cloud-to-device messages",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/cloudToDeviceMessages/feedback/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/cloudToDeviceMessages/queue",
+      "operations": [
+        {
+          "description": "Deletes all the pending commands for a device",
+          "displayName": "Delete cloud-to-device messages",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/cloudToDeviceMessages/queue/purge/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/directMethods",
+      "operations": [
+        {
+          "description": "Invokes a direct method on a device",
+          "displayName": "Invoke Direct Method",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/directMethods/invoke/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/fileUpload",
+      "operations": [
+        {
+          "description": "Receive, complete, or abandon file upload notifications",
+          "displayName": "File Upload Notifications",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/fileUpload/notifications/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/statistics",
+      "operations": [
+        {
+          "description": "Read device and service statistics",
+          "displayName": "Read Statistics",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/statistics/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IotHubs",
+      "name": "IotHubs/configurations",
+      "operations": [
+        {
+          "description": "Read device management configurations",
+          "displayName": "Read Configuration",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/configurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update device management configurations",
+          "displayName": "Write Configuration",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/configurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any device management configuration",
+          "displayName": "Delete Configuration",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/configurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Applies the configuration content to an edge device",
+          "displayName": "Apply Configuration to Edge Device",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/configurations/applyToEdgeDevice/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates target condition and custom metric queries for a configuration",
+          "displayName": "Test Configuration Queries",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/IotHubs/configurations/testQueries/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/enrollments",
+      "operations": [
+        {
+          "description": "Read Enrollments",
+          "displayName": "Read Enrollments",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/enrollments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write Enrollments",
+          "displayName": "Write Enrollments",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/enrollments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Enrollments",
+          "displayName": "Delete Enrollments",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/enrollments/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/enrollmentGroups",
+      "operations": [
+        {
+          "description": "Read Enrollment Groups",
+          "displayName": "Read Enrollment Groups",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/enrollmentGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write Enrollment Groups",
+          "displayName": "Write Enrollment Groups",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/enrollmentGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Enrollment Groups",
+          "displayName": "Delete Enrollment Groups",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/enrollmentGroups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/registrationStates",
+      "operations": [
+        {
+          "description": "Read Registration States",
+          "displayName": "Read Registration States",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/registrationStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Registration States",
+          "displayName": "Delete Registration States",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/registrationStates/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/attestationmechanism",
+      "operations": [
+        {
+          "description": "Fetch Attestation Mechanism Details",
+          "displayName": "Fetch Attestation Mechanism Details",
+          "isDataAction": true,
+          "name": "Microsoft.Devices/provisioningServices/attestationmechanism/details/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

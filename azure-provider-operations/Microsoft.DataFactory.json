@@ -1,0 +1,2294 @@
+{
+  "displayName": "Microsoft Data Factory",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataFactory",
+  "name": "Microsoft.DataFactory",
+  "operations": [
+    {
+      "description": "Registers the subscription for the Data Factory Resource Provider.",
+      "displayName": "Register Data Factory Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataFactory/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for the Data Factory Resource Provider.",
+      "displayName": "Unregister Data Factory Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataFactory/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Data Factory",
+      "name": "datafactories/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for datafactories",
+          "displayName": "Read datafactories metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline",
+                      "name": "pipelineName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity",
+                      "name": "activityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Failed Runs",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "FailedRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetricsV1",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline",
+                      "name": "pipelineName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity",
+                      "name": "activityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Successful Runs",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SuccessfulRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetricsV1",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "datafactories/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of data factory",
+      "name": "factories/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for factories",
+          "displayName": "Read factories log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Pipeline activity runs log",
+                  "name": "ActivityRuns"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Pipeline runs log",
+                  "name": "PipelineRuns"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Trigger runs log",
+                  "name": "TriggerRuns"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Sandbox Pipeline runs log",
+                  "name": "SandboxPipelineRuns"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Sandbox Activity runs log",
+                  "name": "SandboxActivityRuns"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "SSIS package event messages",
+                  "name": "SSISPackageEventMessages"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "SSIS package executable statistics",
+                  "name": "SSISPackageExecutableStatistics"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "SSIS package event message context",
+                  "name": "SSISPackageEventMessageContext"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "SSIS package execution component phases",
+                  "name": "SSISPackageExecutionComponentPhases"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "SSIS package exeution data statistics",
+                  "name": "SSISPackageExecutionDataStatistics"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "SSIS integration runtime logs",
+                  "name": "SSISIntegrationRuntimeLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for factories",
+          "displayName": "Read metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline Run Id",
+                      "name": "RunId",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Elapsed Time Pipeline Runs Metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "PipelineElapsedTimeRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Failed pipeline runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "PipelineFailedRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Succeeded pipeline runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "PipelineSucceededRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Cancelled pipeline runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "PipelineCancelledRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "PipelineName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Failed activity runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "ActivityFailedRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "PipelineName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Succeeded activity runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "ActivitySucceededRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Activity Type",
+                      "name": "ActivityType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Pipeline",
+                      "name": "PipelineName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Activity",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Cancelled activity runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "ActivityCancelledRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Trigger",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Failed trigger runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "TriggerFailedRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Trigger",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Succeeded trigger runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "TriggerSucceededRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Trigger",
+                      "name": "Name",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Failure Type",
+                      "name": "FailureType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Cancelled trigger runs metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "TriggerCancelledRuns",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Failed SSIS integration runtime start metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISIntegrationRuntimeStartFailed",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Succeeded SSIS integration runtime start metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISIntegrationRuntimeStartSucceeded",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Cancelled SSIS integration runtime start metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISIntegrationRuntimeStartCancel",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Stuck SSIS integration runtime stop metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISIntegrationRuntimeStopStuck",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Succeeded SSIS integration runtime stop metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISIntegrationRuntimeStopSucceeded",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Succeeded SSIS package execution metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISPackageExecutionSucceeded",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Failed SSIS package execution metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISPackageExecutionFailed",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Cancelled SSIS package execution metrics",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "SSISPackageExecutionCancel",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Integration Runtime Node",
+                      "name": "NodeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Integration runtime CPU utilization",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "IntegrationRuntimeCpuPercentage",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Integration Runtime Node",
+                      "name": "NodeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Integration runtime available memory",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "IntegrationRuntimeAvailableMemory",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Integration runtime queue duration",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "IntegrationRuntimeAverageTaskPickupDelay",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Seconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Integration runtime queue length",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "IntegrationRuntimeQueueLength",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Integration runtime available node count",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "name": "IntegrationRuntimeAvailableNodeNumber",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [],
+                  "displayName": "Maximum allowed entities count",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "MaxAllowedResourceCount",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [],
+                  "displayName": "Maximum allowed factory size (GB unit)",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "MaxAllowedFactorySizeInGbUnits",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [],
+                  "displayName": "Total entities count",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "ResourceCount",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [],
+                  "displayName": "Total factory size (GB unit)",
+                  "enableRegionalMdmAccount": "false",
+                  "name": "FactorySizeInGbUnits",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "ADFMetrics",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "datafactories",
+      "operations": [
+        {
+          "description": "Reads the Data Factory.",
+          "displayName": "Read Data Factory",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the Data Factory.",
+          "displayName": "Create or Update Data Factory",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Data Factory.",
+          "displayName": "Delete Data Factory",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Linked Service",
+      "name": "datafactories/linkedServices",
+      "operations": [
+        {
+          "description": "Reads any Linked Service.",
+          "displayName": "Read Linked Service",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/linkedServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Linked Service.",
+          "displayName": "Delete Linked Service",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/linkedServices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Linked Service.",
+          "displayName": "Create or Update Linked Service",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/linkedServices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pipeline",
+      "name": "datafactories/datapipelines",
+      "operations": [
+        {
+          "description": "Reads any Pipeline.",
+          "displayName": "Read Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Pipeline.",
+          "displayName": "Delete Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Pauses any Pipeline.",
+          "displayName": "Pause Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/pause/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resumes any Pipeline.",
+          "displayName": "Resume Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/resume/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates any Pipeline.",
+          "displayName": "Update Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/update/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Pipeline.",
+          "displayName": "Create or Update Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Dataset",
+      "name": "datafactories/datasets",
+      "operations": [
+        {
+          "description": "Reads any Dataset.",
+          "displayName": "Read Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Dataset.",
+          "displayName": "Delete Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Dataset.",
+          "displayName": "Create or Update Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Dataset",
+      "name": "datafactories/tables",
+      "operations": [
+        {
+          "description": "Reads any Dataset.",
+          "displayName": "Read Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/tables/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Dataset.",
+          "displayName": "Delete Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/tables/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Dataset.",
+          "displayName": "Create or Update Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/tables/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Slice",
+      "name": "datafactories/datasets/slices",
+      "operations": [
+        {
+          "description": "Gets the Data Slices in the given period.",
+          "displayName": "Read Data Slices",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/slices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the Status of the Data Slice.",
+          "displayName": "Update Data Slice Status",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/slices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Slice",
+      "name": "datafactories/datasets/sliceruns",
+      "operations": [
+        {
+          "description": "Reads the Data Slice Run for the given dataset with the given start time.",
+          "displayName": "Read Data Slice Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/sliceruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Run Log",
+      "name": "datafactories/runs/loginfo",
+      "operations": [
+        {
+          "description": "Reads a SAS URI to a blob container containing the logs.",
+          "displayName": "Read Run Log Info",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/runs/loginfo/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Activity Windows",
+      "name": "datafactories/activitywindows",
+      "operations": [
+        {
+          "description": "Reads Activity Windows in the Data Factory with specified parameters.",
+          "displayName": "Read Activity Windows in any Data Factory",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/activitywindows/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Activity Windows",
+      "name": "datafactories/datapipelines/activitywindows",
+      "operations": [
+        {
+          "description": "Reads Activity Windows for the Pipeline with specified parameters.",
+          "displayName": "Read Activity Windows for any Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/activitywindows/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Activity Windows",
+      "name": "datafactories/datapipelines/activities/activitywindows",
+      "operations": [
+        {
+          "description": "Reads Activity Windows for the Pipeline Activity with specified parameters.",
+          "displayName": "Read Activity Windows for any Pipeline Activity",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datapipelines/activities/activitywindows/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Activity Windows",
+      "name": "datafactories/datasets/activitywindows",
+      "operations": [
+        {
+          "description": "Reads Activity Windows for the Dataset with specified parameters.",
+          "displayName": "Read Activity Windows for any Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/datasets/activitywindows/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Gateway",
+      "name": "datafactories/gateways",
+      "operations": [
+        {
+          "description": "Reads any Gateway.",
+          "displayName": "Read Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/gateways/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Gateway.",
+          "displayName": "Create or Update Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/gateways/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Gateway.",
+          "displayName": "Delete Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/gateways/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the Connection Info for any Gateway.",
+          "displayName": "Read Gateway Connection Info",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/gateways/connectioninfo/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the Authentication Keys for any Gateway.",
+          "displayName": "List Gateway Authentication Keys",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/gateways/listauthkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates the Authentication Keys for any Gateway.",
+          "displayName": "Regenerate Gateway Authentication Keys",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/datafactories/gateways/regenerateauthkey/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories",
+      "operations": [
+        {
+          "description": "Reads Data Factory.",
+          "displayName": "Read Data Factory",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Data Factory",
+          "displayName": "Create or Update any Data Factory.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Data Factory.",
+          "displayName": "Delete Data Factory",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Data Flow debug session.",
+          "displayName": "Create Data Flow debug session.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/createdataflowdebugsession/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts a Data Flow debug session.",
+          "displayName": "Start Data Flow debug session.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/startdataflowdebugsession/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Add Data Flow to debug session for preview.",
+          "displayName": "Add Data Flow to debug session.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/addDataFlowToDebugSession/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Execute Data Flow debug command.",
+          "displayName": "Execute Data Flow debug command.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/executeDataFlowDebugCommand/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Data Flow debug session.",
+          "displayName": "Delete Data Flow debug session.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/deletedataflowdebugsession/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries a Data Flow debug session.",
+          "displayName": "Query Data Flow debug session.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querydataflowdebugsessions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels the pipeline run specified by the run ID.",
+          "displayName": "Cancel any Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/cancelpipelinerun/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels a debug run for the Pipeline.",
+          "displayName": "Cancel Debug Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/cancelSandboxPipelineRun/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries the Debug Pipeline Runs.",
+          "displayName": "Query Debug Pipeline Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/sandboxpipelineruns/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries the Triggers.",
+          "displayName": "Query Triggers",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querytriggers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get exposure control feature value for the specific location.",
+          "displayName": "Get exposure control feature value",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/getFeatureValue/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get exposure control feature values for a list of features",
+          "displayName": "Get exposure control feature values for a list of features",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/queryFeaturesValue/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets access to ADF DataPlane service.",
+          "displayName": "Get DataPlane access",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/getDataPlaneAccess/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets GitHub access token.",
+          "displayName": "Get GitHub access token",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/getGitHubAccessToken/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries the Trigger Runs.",
+          "displayName": "Query Trigger Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querytriggerruns/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries the Pipeline Runs.",
+          "displayName": "Query Pipeline Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querypipelineruns/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries the Debug Pipeline Runs.",
+          "displayName": "Query Debug Pipeline Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querydebugpipelineruns/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Linked Service",
+      "name": "factories/linkedServices",
+      "operations": [
+        {
+          "description": "Reads Linked Service.",
+          "displayName": "Read Linked Service",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/linkedServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Linked Service.",
+          "displayName": "Delete Linked Service",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/linkedServices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Linked Service",
+          "displayName": "Create or Update any Linked Service.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/linkedServices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pipeline",
+      "name": "factories/pipelines",
+      "operations": [
+        {
+          "description": "Reads Pipeline.",
+          "displayName": "Read Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Pipeline.",
+          "displayName": "Delete Pipeline",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Pipeline",
+          "displayName": "Create or Update any Pipeline.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a run for the Pipeline.",
+          "displayName": "Create Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/createrun/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a debug run environment for the Pipeline.",
+          "displayName": "Create Debug Pipeline Run Environment",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/sandbox/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/pipelineruns",
+      "operations": [
+        {
+          "description": "Reads the Pipeline Runs.",
+          "displayName": "Read Pipeline Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelineruns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels the pipeline run specified by the run ID.",
+          "displayName": "Cancel any Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelineruns/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Queries the activity runs for the specified pipeline run ID.",
+          "displayName": "Query Activity Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelineruns/queryactivityruns/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/pipelineruns/activityruns",
+      "operations": [
+        {
+          "description": "Reads the activity runs for the specified pipeline run ID.",
+          "displayName": "Read Activity Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelineruns/activityruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Dataset",
+      "name": "factories/datasets",
+      "operations": [
+        {
+          "description": "Reads any Dataset.",
+          "displayName": "Read Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/datasets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Dataset.",
+          "displayName": "Delete Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/datasets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Dataset.",
+          "displayName": "Create or Update Dataset",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/datasets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Integration Runtime",
+      "name": "factories/integrationruntimes",
+      "operations": [
+        {
+          "description": "Reads any Integration Runtime.",
+          "displayName": "Read Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Integration Runtime.",
+          "displayName": "Create or Update Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Integration Runtime.",
+          "displayName": "Delete Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts any Integration Runtime.",
+          "displayName": "Start Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/start/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stops any Integration Runtime.",
+          "displayName": "Stop Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/stop/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads Integration Runtime Connection Info.",
+          "displayName": "Read Integration Runtime Connection Info",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/getconnectioninfo/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the Authentication Keys for any Integration Runtime.",
+          "displayName": "List Integration Runtime Authentication Keys",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/listauthkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Syncs the Credentials for the specified Integration Runtime.",
+          "displayName": "Sync Credentials for Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/synccredentials/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the specified Integration Runtime.",
+          "displayName": "Upgrade Integration Runtime",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create express install link for self hosted Integration Runtime.",
+          "displayName": "Create Self hosted Integration Runtime express install link",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/createexpressshirinstalllink/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates the Authentication Keys for the specified Integration Runtime.",
+          "displayName": "Regenerate Integration Runtime Authentication Keys",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/regenerateauthkey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes Linked Integration Runtime References from the specified Integration Runtime.",
+          "displayName": "Remove Linked Integration Runtime References",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/removelinks/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Linked Integration Runtime Reference on the Specified Shared Integration Runtime.",
+          "displayName": "Create Linked Integration Runtime Reference",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/linkedIntegrationRuntime/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get SSIS Integration Runtime metadata for the specified Integration Runtime.",
+          "displayName": "Get SSIS Integration Runtime metadata",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/getObjectMetadata/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refresh SSIS Integration Runtime metadata for the specified Integration Runtime.",
+          "displayName": "Refresh SSIS Integration Runtime metadata",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/refreshObjectMetadata/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enable interactive authoring session.",
+          "displayName": "Enable interactive authoring session",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/enableInteractiveQuery/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disable interactive authoring session.",
+          "displayName": "Disable interactive authoring session.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/disableInteractiveQuery/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Integration Runtime",
+      "name": "factories/integrationruntimes/getstatus",
+      "operations": [
+        {
+          "description": "Reads Integration Runtime Status.",
+          "displayName": "Read Integration Runtime Status",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/getstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Integration Runtime",
+      "name": "factories/integrationruntimes/monitoringdata",
+      "operations": [
+        {
+          "description": "Gets the Monitoring Data for any Integration Runtime.",
+          "displayName": "Get Integration Runtime Monitoring Data",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/monitoringdata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Integration Runtime",
+      "name": "factories/integrationruntimes/nodes",
+      "operations": [
+        {
+          "description": "Reads the Node for the specified Integration Runtime.",
+          "displayName": "Read Integration Runtime Node",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/nodes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Node for the specified Integration Runtime.",
+          "displayName": "Delete Integration Runtime Node",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/nodes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates a self-hosted Integration Runtime Node.",
+          "displayName": "Update Integration Runtime Node",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/nodes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the IP Address for the specified node of the Integration Runtime.",
+          "displayName": "Read Integration Runtime Node IP Address",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/nodes/ipAddress/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Trigger",
+      "name": "factories/triggers",
+      "operations": [
+        {
+          "description": "Reads any Trigger.",
+          "displayName": "Read Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates any Trigger.",
+          "displayName": "Create or Update Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes any Trigger.",
+          "displayName": "Delete Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Subscribe to Events.",
+          "displayName": "Subscribe to Events",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/subscribetoevents/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Event Subscription Status.",
+          "displayName": "Event Subscription Status",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/geteventsubscriptionstatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Unsubscribe from Events.",
+          "displayName": "Unsubscribe from Events",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/unsubscribefromevents/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Query subscription events.",
+          "displayName": "Query subscription events",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/querysubscriptionevents/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete queued subscription events.",
+          "displayName": "Delete queued subscription events",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/deletequeuedsubscriptionevents/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts any Trigger.",
+          "displayName": "Start Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/start/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stops any Trigger.",
+          "displayName": "Stop Trigger",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/stop/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/triggers/triggerruns",
+      "operations": [
+        {
+          "description": "Reads the Trigger Runs.",
+          "displayName": "Read Trigger Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/triggerruns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel the Trigger Run with the given trigger run id.",
+          "displayName": "Cancel Trigger Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/triggerruns/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Rerun the Trigger Run with the given trigger run id.",
+          "displayName": "Rerun Trigger Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggers/triggerruns/rerun/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Configures the repository for the factory.",
+          "displayName": "Configure Factory Repository",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/locations/configureFactoryRepo/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get exposure control feature value for the specific location.",
+          "displayName": "Get exposure control feature value",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/locations/getFeatureValue/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/triggerruns",
+      "operations": [
+        {
+          "description": "Reads the Trigger Runs.",
+          "displayName": "Read Trigger Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/triggerruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/pipelines/pipelineruns",
+      "operations": [
+        {
+          "description": "Reads the Pipeline Run.",
+          "displayName": "Read Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/pipelineruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/querytriggerruns",
+      "operations": [
+        {
+          "description": "Reads the Result of Trigger Runs.",
+          "displayName": "Read the Result of Query Trigger Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querytriggerruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/querypipelineruns",
+      "operations": [
+        {
+          "description": "Reads the Result of Query Pipeline Runs.",
+          "displayName": "Read the Result of Query Pipeline Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/querypipelineruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/pipelineruns/queryactivityruns",
+      "operations": [
+        {
+          "description": "Reads the result of query activity runs for the specified pipeline run ID.",
+          "displayName": "Read the Result of Query Activity Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelineruns/queryactivityruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/pipelines/pipelineruns/activityruns/progress",
+      "operations": [
+        {
+          "description": "Gets the Progress of Activity Runs.",
+          "displayName": "Get the Progress of Activity Runs",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/pipelineruns/activityruns/progress/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Data Factory Provider",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Reads all Operations in Microsoft Data Factory Provider.",
+          "displayName": "Read all Operations",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory Resource Provider",
+      "name": "checkazuredatafactorynameavailability",
+      "operations": [
+        {
+          "description": "Checks if the Data Factory Name is available to use.",
+          "displayName": "Check Data Factory Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/checkazuredatafactorynameavailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "locations/getFeatureValue",
+      "operations": [
+        {
+          "description": "Reads exposure control feature value for the specific location.",
+          "displayName": "Read exposure control feature value",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/locations/getFeatureValue/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Flow",
+      "name": "factories/dataflows",
+      "operations": [
+        {
+          "description": "Reads Data Flow.",
+          "displayName": "Read Data Flow",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/dataflows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Data Flow.",
+          "displayName": "Delete Data Flow",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/dataflows/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Data Flow",
+          "displayName": "Create or update any Data Flow.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/dataflows/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/getFeatureValue",
+      "operations": [
+        {
+          "description": "Reads exposure control feature value for the specific location.",
+          "displayName": "Read exposure control feature value",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/getFeatureValue/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/getDataPlaneAccess",
+      "operations": [
+        {
+          "description": "Reads access to ADF DataPlane service.",
+          "displayName": "Read DataPlane access",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/getDataPlaneAccess/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DebugRun",
+      "name": "factories/pipelines/sandbox",
+      "operations": [
+        {
+          "description": "Creates a debug run environment for the Pipeline.",
+          "displayName": "Create Debug Pipeline Run Environment",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/sandbox/create/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a debug run for the Pipeline.",
+          "displayName": "Create Debug Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/pipelines/sandbox/run/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DebugRun",
+      "name": "factories/debugpipelineruns",
+      "operations": [
+        {
+          "description": "Cancels a debug run for the Pipeline.",
+          "displayName": "Cancel Debug Pipeline Run",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/debugpipelineruns/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DebugRun",
+      "name": "factories/sandboxpipelineruns/sandboxActivityRuns",
+      "operations": [
+        {
+          "description": "Gets the debug run info for the Activity.",
+          "displayName": "Get Debug Run Info",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/sandboxpipelineruns/sandboxActivityRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DebugRun",
+      "name": "factories/sandboxpipelineruns",
+      "operations": [
+        {
+          "description": "Gets the debug run info for the Pipeline.",
+          "displayName": "Get Debug Pipeline Run Info",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/sandboxpipelineruns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/operationResults",
+      "operations": [
+        {
+          "description": "Gets operation results.",
+          "displayName": "Get operation results.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Data Factory Provider",
+      "name": "factories/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Read Private Endpoint Connection Proxy.",
+          "displayName": "Read Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update private Endpoint Connection Proxy.",
+          "displayName": "Create or Update private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxy.",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate a Private Endpoint Connection Proxy.",
+          "displayName": "Validate a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Data Factory Provider",
+      "name": "factories/privateEndpointConnectionProxies/operationstatuses",
+      "operations": [
+        {
+          "description": "Read the status of creating a Private Endpoint Connection Proxy.",
+          "displayName": "Read the status of creating a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnectionProxies/operationstatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Data Factory Provider",
+      "name": "factories/privateEndpointConnectionProxies/operationresults",
+      "operations": [
+        {
+          "description": "Read the results of creating a Private Endpoint Connection Proxy.",
+          "displayName": "Read the results of creating a Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnectionProxies/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Virtual Network",
+      "name": "factories/managedVirtualNetworks",
+      "operations": [
+        {
+          "description": "Read Managed Virtual Network.",
+          "displayName": "Read Managed Virtual Network",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/managedVirtualNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Managed Virtual Network.",
+          "displayName": "Create or Update Managed Virtual Network",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/managedVirtualNetworks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Private Endpoint",
+      "name": "factories/managedVirtualNetworks/managedPrivateEndpoints",
+      "operations": [
+        {
+          "description": "Read Managed Private Endpoint.",
+          "displayName": "Read Managed Private Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Managed Private Endpoint.",
+          "displayName": "Create or Update Managed Private Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Private Endpoint.",
+          "displayName": "Delete Managed Private Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Factory",
+      "name": "factories/queryFeaturesValue",
+      "operations": [
+        {
+          "description": "Reads exposure control feature values for a list of features.",
+          "displayName": "Read exposure control feature values for a list of features",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/queryFeaturesValue/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Data Factory Provider",
+      "name": "factories/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Read Private Endpoint Connection.",
+          "displayName": "Read Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Private Endpoint Connection.",
+          "displayName": "Create or Update Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection.",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft Data Factory Provider",
+      "name": "factories/privateLinkResources",
+      "operations": [
+        {
+          "description": "Read Private Link Resource.",
+          "displayName": "Read Private Link Resource",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Integration Runtime",
+      "name": "factories/integrationruntimes/outboundNetworkDependenciesEndpoints",
+      "operations": [
+        {
+          "description": "Get Azure-SSIS Integration Runtime outbound network dependency endpoints for the specified Integration Runtime.",
+          "displayName": "Get Azure-SSIS Integration Runtime outbound network dependencies",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/integrationruntimes/outboundNetworkDependenciesEndpoints/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Global Parameter",
+      "name": "factories/globalParameters",
+      "operations": [
+        {
+          "description": "Reads GlobalParameter.",
+          "displayName": "Read GlobalParameter",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/globalParameters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes GlobalParameter.",
+          "displayName": "Delete GlobalParameter",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/globalParameters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update GlobalParameter.",
+          "displayName": "Create or Update GlobalParameter",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/globalParameters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Mapping",
+      "name": "factories/dataMappers",
+      "operations": [
+        {
+          "description": "Reads Data Mapping.",
+          "displayName": "Read Data Mapping",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/dataMappers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Data Mapping.",
+          "displayName": "Delete Data Mapping",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/dataMappers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Data Mapping",
+          "displayName": "Create or update any Data Mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/dataMappers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ADF Link Connection",
+      "name": "factories/adflinkconnections",
+      "operations": [
+        {
+          "description": "Reads ADF Link Connection.",
+          "displayName": "Read ADF Link Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/adflinkconnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes ADF Link Connection.",
+          "displayName": "Delete ADF Link Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/adflinkconnections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update ADF Link Connection",
+          "displayName": "Create or update any ADF Link Connection.",
+          "isDataAction": false,
+          "name": "Microsoft.DataFactory/factories/adflinkconnections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

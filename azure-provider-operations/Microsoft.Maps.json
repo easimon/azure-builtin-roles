@@ -1,0 +1,536 @@
+{
+  "displayName": "Microsoft.Maps",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Maps",
+  "name": "Microsoft.Maps",
+  "operations": [
+    {
+      "description": "Unregister the Maps provider",
+      "displayName": "Unregister provider",
+      "isDataAction": false,
+      "name": "Microsoft.Maps/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Register the provider",
+      "displayName": "Register the provider",
+      "isDataAction": false,
+      "name": "Microsoft.Maps/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Maps Account",
+      "name": "accounts",
+      "operations": [
+        {
+          "description": "Create or update a Maps Account.",
+          "displayName": "Create or update a Maps Account.",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Maps Account.",
+          "displayName": "Get a Maps Account.",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Maps Account.",
+          "displayName": "Delete a Maps Account.",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Maps Account keys.",
+          "displayName": "List keys",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/listKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate new Maps Account primary or secondary key.",
+          "displayName": "Generate new primary or secondary key",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/regenerateKey/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of Maps Account",
+      "name": "accounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Maps Accounts",
+          "displayName": "Read Maps Account metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Count",
+                  "dimensions": [
+                    {
+                      "displayName": "API Category",
+                      "internalName": "Service Category",
+                      "name": "ApiCategory",
+                      "toBeExportedToShoebox": true
+                    },
+                    {
+                      "displayName": "API Name",
+                      "internalName": "OperationName",
+                      "name": "ApiName",
+                      "toBeExportedToShoebox": true
+                    },
+                    {
+                      "displayName": "Result Type",
+                      "internalName": "OperationResult",
+                      "name": "ResultType",
+                      "toBeExportedToShoebox": true
+                    },
+                    {
+                      "displayName": "Response Code",
+                      "internalName": "OperationResultCode",
+                      "name": "ResponseCode",
+                      "toBeExportedToShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Count of API calls",
+                  "displayName": "Usage",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "Latency",
+                  "name": "Usage",
+                  "sourceMdmAccount": "MicrosoftLocationBasedServicesShoebox",
+                  "sourceMdmNamespace": "ServiceOperations",
+                  "supportedAggregationTypes": [
+                    "Count"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "API Category",
+                      "internalName": "Service Category",
+                      "name": "ApiCategory",
+                      "toBeExportedToShoebox": true
+                    },
+                    {
+                      "displayName": "API Name",
+                      "internalName": "OperationName",
+                      "name": "ApiName",
+                      "toBeExportedToShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Availability of the APIs",
+                  "displayName": "Availability",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "Availability",
+                  "name": "Availability",
+                  "sourceMdmAccount": "MicrosoftLocationBasedServicesShoebox",
+                  "sourceMdmNamespace": "ServiceOperations",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Service Name",
+                      "internalName": "CreatorServiceName",
+                      "name": "ServiceName",
+                      "toBeExportedToShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Azure Maps Creator usage statistics",
+                  "displayName": "Creator Usage",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "BytesConsumed",
+                  "lockAggregationType": "Total",
+                  "name": "CreatorUsage",
+                  "sourceMdmAccount": "MicrosoftLocationBasedServicesShoebox",
+                  "sourceMdmNamespace": "ServiceOperations",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "unit": "Bytes"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Maps Account",
+      "name": "accounts/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Maps Account",
+      "name": "accounts/eventGridFilters",
+      "operations": [
+        {
+          "description": "Delete an Event Grid filter.",
+          "displayName": "Delete an Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get an Event Grid filter",
+          "displayName": "Get an Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update an Event Grid filter.",
+          "displayName": "Create or update an Event Grid filter",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Read the provider operations",
+          "displayName": "Read the provider operations",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Render",
+      "name": "accounts/services/render",
+      "operations": [
+        {
+          "description": "Allows reading of data for Render services.",
+          "displayName": "Render Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/render/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Geolocation",
+      "name": "accounts/services/geolocation",
+      "operations": [
+        {
+          "description": "Allows reading of data for Geolocation services.",
+          "displayName": "Geolocation Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/geolocation/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Route",
+      "name": "accounts/services/route",
+      "operations": [
+        {
+          "description": "Allows reading of data for Route services.",
+          "displayName": "Route Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/route/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Search",
+      "name": "accounts/services/search",
+      "operations": [
+        {
+          "description": "Allows reading of data for Search services.",
+          "displayName": "Search Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/search/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Timezone",
+      "name": "accounts/services/timezone",
+      "operations": [
+        {
+          "description": "Allows reading of data for Timezone services.",
+          "displayName": "Timezone Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/timezone/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Traffic",
+      "name": "accounts/services/traffic",
+      "operations": [
+        {
+          "description": "Allows reading of data for Traffic services.",
+          "displayName": "Traffic Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/traffic/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Weather",
+      "name": "accounts/services/weather",
+      "operations": [
+        {
+          "description": "Allows reading of data for Weather services.",
+          "displayName": "Weather Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/weather/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data",
+      "name": "accounts/services/data",
+      "operations": [
+        {
+          "description": "Allows reading of data for data upload services and Creator resource.",
+          "displayName": "Data Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/data/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows deleting of data for data upload services and Creator resource.",
+          "displayName": "Data Service Delete",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/data/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows writing or updating of data for data upload services and Creator resource.",
+          "displayName": "Data Service Write",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/data/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Spatial",
+      "name": "accounts/services/spatial",
+      "operations": [
+        {
+          "description": "Allows reading of data for Spatial services.",
+          "displayName": "Spatial Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/spatial/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows writing of data for Spatial services, such as event publishing.",
+          "displayName": "Spatial Service Write",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/spatial/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "TurnByTurn",
+      "name": "accounts/services/turnbyturn",
+      "operations": [
+        {
+          "description": "Allows reading of data for TurnByTurn services.",
+          "displayName": "TurnByTurn Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/turnbyturn/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elevation",
+      "name": "accounts/services/elevation",
+      "operations": [
+        {
+          "description": "Allows reading of data for Elevation services.",
+          "displayName": "Elevation Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/elevation/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Creator",
+      "name": "accounts/creators",
+      "operations": [
+        {
+          "description": "Create or update a Creator.",
+          "displayName": "Create or update a Creator.",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/creators/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Creator.",
+          "displayName": "Get a Creator.",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/creators/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Creator.",
+          "displayName": "Delete a Creator.",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/accounts/creators/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "resourceTypes",
+      "name": "resourceTypes",
+      "operations": [
+        {
+          "description": "Read the provider resourceTypes",
+          "displayName": "Read the provider resourceTypes",
+          "isDataAction": false,
+          "name": "Microsoft.Maps/resourceTypes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DataOrdering",
+      "name": "accounts/services/dataordering",
+      "operations": [
+        {
+          "description": "Allows reading of data for DataOrdering services.",
+          "displayName": "DataOrdering Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/dataordering/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows writing of data for Data Ordering services.",
+          "displayName": "DataOrdering Service Write",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/dataordering/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Analytics",
+      "name": "accounts/services/analytics",
+      "operations": [
+        {
+          "description": "Allows reading of data for Analytics services.",
+          "displayName": "Analytics Service Read",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/analytics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows deleting of data for Analytic services.",
+          "displayName": "Analytics Service Delete",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/analytics/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows writing of data for Analytic services.",
+          "displayName": "Analytics Service Write",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/analytics/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Batch",
+      "name": "accounts/services",
+      "operations": [
+        {
+          "description": "Allows actions upon data for batch services.",
+          "displayName": "Batch Service Action",
+          "isDataAction": true,
+          "name": "Microsoft.Maps/accounts/services/batch/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,200 @@
+{
+  "displayName": "Microsoft Domains",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DomainRegistration",
+  "name": "Microsoft.DomainRegistration",
+  "operations": [
+    {
+      "description": "Generate a request for signing into domain control center.",
+      "displayName": "Generate Domain Control Center Single Sign On Request",
+      "isDataAction": false,
+      "name": "Microsoft.DomainRegistration/generateSsoRequest/Action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Validate domain purchase object without submitting it",
+      "displayName": "Domain Purchase Info Validation",
+      "isDataAction": false,
+      "name": "Microsoft.DomainRegistration/validateDomainRegistrationInformation/Action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Check if a domain is available for purchase",
+      "displayName": "Check Domain Availablity",
+      "isDataAction": false,
+      "name": "Microsoft.DomainRegistration/checkDomainAvailability/Action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Retrieve the list domain recommendations based on keywords",
+      "displayName": "Retrieve Domain Recommendations",
+      "isDataAction": false,
+      "name": "Microsoft.DomainRegistration/listDomainRecommendations/Action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Register the Microsoft Domains resource provider for the subscription",
+      "displayName": "Register Microsoft Domains resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.DomainRegistration/register/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Domain",
+      "name": "domains",
+      "operations": [
+        {
+          "description": "Get the list of domains",
+          "displayName": "Get Domains",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get domain",
+          "displayName": "Get Domain",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Add a new Domain or update an existing one",
+          "displayName": "Add or Update Domain",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/Write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete an existing domain.",
+          "displayName": "Delete Domain",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/Delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Renew an existing domain.",
+          "displayName": "Renew Domain",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/renew/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Transfer out a domain to another registrar.",
+          "displayName": "Transfer Out Domain",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/Read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Domain operation",
+      "name": "domains/operationresults",
+      "operations": [
+        {
+          "description": "Get a domain operation",
+          "displayName": "Get Domain Operation",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/operationresults/Read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Domain operation",
+      "name": "domains/domainownershipidentifiers",
+      "operations": [
+        {
+          "description": "List ownership identifiers",
+          "displayName": "Get ownership Identifiers",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/domainownershipidentifiers/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get ownership identifier",
+          "displayName": "Get ownership Identifier",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/domainownershipidentifiers/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update identifier",
+          "displayName": "Create or update Identifier",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/domainownershipidentifiers/Write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete ownership identifier",
+          "displayName": "Delete ownership Identifier",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/domains/domainownershipidentifiers/Delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "TopLevelDomain",
+      "name": "topLevelDomains",
+      "operations": [
+        {
+          "description": "Get toplevel domains",
+          "displayName": "Get toplevel domains",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/topLevelDomains/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get toplevel domain",
+          "displayName": "Get toplevel domain",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/topLevelDomains/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List Agreement action",
+          "displayName": "List Agreement action",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/topLevelDomains/listAgreements/Action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Domain",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List all operations from app service domain registration",
+          "displayName": "Read Operations",
+          "isDataAction": false,
+          "name": "Microsoft.DomainRegistration/operations/Read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

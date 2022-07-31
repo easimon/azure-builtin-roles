@@ -1,0 +1,4191 @@
+{
+  "displayName": "Microsoft API Management",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ApiManagement",
+  "name": "Microsoft.ApiManagement",
+  "operations": [
+    {
+      "description": "Register subscription for Microsoft.ApiManagement resource provider",
+      "displayName": "Register Microsoft.ApiManagement resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.ApiManagement/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Un-register subscription for Microsoft.ApiManagement resource provider",
+      "displayName": "Un-register Microsoft.ApiManagement resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.ApiManagement/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Service",
+      "name": "service",
+      "operations": [
+        {
+          "description": "Create or Update API Management Service instance",
+          "displayName": "Create or Update API Management Service instance",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read metadata for an API Management Service instance",
+          "displayName": "Read metadata for an API Management Service instance",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete API Management Service instance",
+          "displayName": "Delete API Management Service instance",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Setup, update or remove custom domain names for an API Management Service",
+          "displayName": "Update domain names",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/updatehostname/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upload SSL certificate for an API Management Service",
+          "displayName": "Upload SSL certificate",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/updatecertificate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Backup API Management Service to the specified container in a user provided storage account",
+          "displayName": "Backup API Management Service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/backup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restore API Management Service from the specified container in a user provided storage account",
+          "displayName": "Restore API Management Service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/restore/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Change SKU/units, add/remove regional deployments of API Management Service",
+          "displayName": "Manage Service Deployments",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/managedeployments/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets SSO token that can be used to login into API Management Service Legacy portal as an administrator",
+          "displayName": "Get SSO token",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/getssotoken/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Microsoft.ApiManagement resources running in Virtual Network to pick updated Network Settings.",
+          "displayName": "Apply Network Configuration Updates",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/applynetworkconfigurationupdates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Register a new user",
+          "displayName": "Register new user",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Sends notification to a specified user",
+          "displayName": "Send notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Result",
+      "name": "service/operationresults",
+      "operations": [
+        {
+          "description": "Gets current status of long running operation",
+          "displayName": "Get long running operation result",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Read all API operations available for Microsoft.ApiManagement resource",
+          "displayName": "Read all API operations available for API Management",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Name Availability",
+      "name": "checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks if provided service name is available",
+          "displayName": "Check Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Status",
+      "name": "service/networkstatus",
+      "operations": [
+        {
+          "description": "Gets the network access status of resources on which the service depends on.",
+          "displayName": "Gets the network status of the service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/networkstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Status By Location",
+      "name": "service/locations/networkstatus",
+      "operations": [
+        {
+          "description": "Gets the network access status of resources on which the service depends on in the location.",
+          "displayName": "Gets the network status of the service in the location",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/locations/networkstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management reports",
+      "name": "reports",
+      "operations": [
+        {
+          "description": "Get reports aggregated by time periods, geographical region, developers, products, APIs, operations, subscription and byRequest.",
+          "displayName": "Get reports",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/reports/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service",
+      "name": "service/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for ApiManagement service",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for ApiManagement service",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of API Management service",
+      "name": "service/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for API Management service",
+          "displayName": "Read API Management service metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": null,
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of gateway requests - Use multi-dimension request metric with GatewayResponseCodeCategory dimension instead",
+                  "displayName": "Total Gateway Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "TotalRequests",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of successful gateway requests - Use multi-dimension request metric with GatewayResponseCodeCategory dimension instead",
+                  "displayName": "Successful Gateway Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "SuccessfulRequests",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of unauthorized gateway requests - Use multi-dimension request metric with GatewayResponseCodeCategory dimension instead",
+                  "displayName": "Unauthorized Gateway Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "UnauthorizedRequests",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of failures in gateway requests - Use multi-dimension request metric with GatewayResponseCodeCategory dimension instead",
+                  "displayName": "Failed Gateway Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "FailedRequests",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of other gateway requests - Use multi-dimension request metric with GatewayResponseCodeCategory dimension instead",
+                  "displayName": "Other Gateway Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "OtherRequests",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Overall Duration of Gateway Requests in milliseconds",
+                  "displayName": "Overall Duration of Gateway Requests",
+                  "fillGapWithZero": true,
+                  "name": "Duration",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Duration of Backend Requests in milliseconds",
+                  "displayName": "Duration of Backend Requests",
+                  "fillGapWithZero": true,
+                  "name": "BackendDuration",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Capacity",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Utilization metric for ApiManagement service",
+                  "displayName": "Capacity",
+                  "fillGapWithZero": false,
+                  "name": "Capacity",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of events sent to EventHub",
+                  "displayName": "Total EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubTotalEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of successful EventHub events",
+                  "displayName": "Successful EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubSuccessfulEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of failed EventHub events",
+                  "displayName": "Failed EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubTotalFailedEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of rejected EventHub events (wrong configuration or unauthorized)",
+                  "displayName": "Rejected EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubRejectedEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of throttled EventHub events",
+                  "displayName": "Throttled EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubThrottledEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of timed out EventHub events",
+                  "displayName": "Timed Out EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubTimedoutEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of events skipped because of queue size limit reached",
+                  "displayName": "Dropped EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubDroppedEvents",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "EventHub Events",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Total size of EventHub events in bytes",
+                  "displayName": "Size of EventHub Events",
+                  "fillGapWithZero": true,
+                  "name": "EventHubTotalBytesSent",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "EventHubClient",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Gateway Requests",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Location",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Hostname",
+                      "internalName": "Hostname",
+                      "name": "Hostname",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Last Error Reason",
+                      "internalName": "LastErrorReason",
+                      "name": "LastErrorReason",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Backend Response Code",
+                      "internalName": "BackendResponseCode",
+                      "name": "BackendResponseCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Gateway Response Code",
+                      "internalName": "ResponseCode",
+                      "name": "GatewayResponseCode",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Backend Response Code Category",
+                      "internalName": "BackendResponseCodeCategory",
+                      "name": "BackendResponseCodeCategory",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Gateway Response Code Category",
+                      "internalName": "ResponseCodeCategory",
+                      "name": "GatewayResponseCodeCategory",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Gateway request metrics with multiple dimensions",
+                  "displayName": "Requests",
+                  "fillGapWithZero": true,
+                  "name": "Requests",
+                  "sourceMdmAccount": "ApiManagementProd",
+                  "sourceMdmNamespace": "Proxy",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Network Status",
+                  "dimensions": [
+                    {
+                      "displayName": "Location",
+                      "internalName": "Region",
+                      "name": "Location",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "ResourceType",
+                      "internalName": "ResourceType",
+                      "name": "ResourceType",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Network Connectivity status of dependent resource types from API Management service",
+                  "displayName": "Network Connectivity Status of Resources (Preview)",
+                  "fillGapWithZero": true,
+                  "name": "NetworkConnectivity",
+                  "sourceMdmAccount": "ApiManagementShoeboxProd2",
+                  "sourceMdmNamespace": "TenantHealth",
+                  "supportedAggregationTypes": [
+                    "Total",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of API Management service",
+      "name": "service/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for API Management service",
+          "displayName": "Read API Management service log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Logs related to ApiManagement Gateway",
+                  "name": "GatewayLogs"
+                }
+              ],
+              "metricSpecifications": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Resource representing current tenant metadata",
+      "name": "service/tenant",
+      "operations": [
+        {
+          "description": "Lists a collection of tenant access settings. or Get the Global policy definition of the Api Management service. or Get tenant access information details",
+          "displayName": "Get tenant access settings or Get tenant policy configuration or Get tenant access information",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Set policy configuration for the tenant or Update tenant access information details or Update tenant access information details",
+          "displayName": "Set tenant policy configuration or Update tenant access information or Update tenant access information",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove policy configuration for the tenant",
+          "displayName": "Remove tenant policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get tenant access information details",
+          "displayName": "Get tenant access information",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/listSecrets/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate primary access key",
+          "displayName": "Regenerate primary key",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/regeneratePrimaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate secondary access key",
+          "displayName": "Regenerate secondary key",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/regenerateSecondaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Runs a deployment task to apply changes from the specified git branch to the configuration in database.",
+          "displayName": "Runs a deployment task to apply changes from the specified git branch",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/deploy/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates commit with configuration snapshot to the specified branch in the repository",
+          "displayName": "Creates commit with configuration snapshot",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/save/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates changes from the specified git branch",
+          "displayName": "Validates changes from the specified branch",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Results of async operations",
+      "name": "service/tenant/operationResults",
+      "operations": [
+        {
+          "description": "Get list of operation results or Get result of a specific operation",
+          "displayName": "Get operation results or Get operation result",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Get status of last synchronization",
+      "name": "service/tenant/syncState",
+      "operations": [
+        {
+          "description": "Get status of last git synchronization",
+          "displayName": "Get status of last synchronization",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenant/syncState/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Groups",
+      "name": "service/groups",
+      "operations": [
+        {
+          "description": "Lists a collection of groups defined within a service instance. or Gets the details of the group specified by its identifier.",
+          "displayName": "Get groups list or Get group details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/groups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a group. or Updates the details of the group specified by its identifier.",
+          "displayName": "Create group or Update group",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/groups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific group of the API Management service instance.",
+          "displayName": "Remove group",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/groups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Group users",
+      "name": "service/groups/users",
+      "operations": [
+        {
+          "description": "Lists a collection of user entities associated with the group.",
+          "displayName": "Get group users list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/groups/users/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Add existing user to existing group",
+          "displayName": "Add user to group",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/groups/users/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove existing user from existing group.",
+          "displayName": "Remove user from group",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/groups/users/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "User accounts",
+      "name": "service/users",
+      "operations": [
+        {
+          "description": "Lists a collection of registered users in the specified service instance. or Gets the details of the user specified by its identifier.",
+          "displayName": "Get users list or Get user details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a user. or Updates the details of the user specified by its identifier.",
+          "displayName": "Register new user or Update user",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific user.",
+          "displayName": "Remove user",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves a redirection URL containing an authentication token for signing a given user into the developer portal.",
+          "displayName": "Generage SSO URL",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/generateSsoUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Shared Access Authorization Token for the User.",
+          "displayName": "Get token",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/token/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Developer groups assigned to user",
+      "name": "service/users/groups",
+      "operations": [
+        {
+          "description": "Lists all user groups.",
+          "displayName": "Get user groups list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/groups/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "User subscriptions",
+      "name": "service/users/subscriptions",
+      "operations": [
+        {
+          "description": "Lists the collection of subscriptions of the specified user.",
+          "displayName": "Get user subscriptions list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/subscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Products",
+      "name": "service/products",
+      "operations": [
+        {
+          "description": "Lists a collection of products in the specified service instance. or Gets the details of the product specified by its identifier.",
+          "displayName": "Get product list or Get product details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a product. or Update existing product details.",
+          "displayName": "Create product or Update product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete product.",
+          "displayName": "Remove product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "APIs added to product",
+      "name": "service/products/apis",
+      "operations": [
+        {
+          "description": "Lists a collection of the APIs associated with a product.",
+          "displayName": "Get product APIs list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/apis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds an API to the specified product.",
+          "displayName": "Add API to product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/apis/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified API from the specified product.",
+          "displayName": "Remove API from product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/apis/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product subscriptions",
+      "name": "service/products/subscriptions",
+      "operations": [
+        {
+          "description": "Lists the collection of subscriptions to the specified product.",
+          "displayName": "Get product subscriptions list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/subscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product policies configuration",
+      "name": "service/products/policies",
+      "operations": [
+        {
+          "description": "Get the policy configuration at the Product level. or Get the policy configuration at the Product level.",
+          "displayName": "Get Product policies or Get Product policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the Product.",
+          "displayName": "Set Product policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Product.",
+          "displayName": "Remove Product policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Developer groups associated with product",
+      "name": "service/products/groups",
+      "operations": [
+        {
+          "description": "Lists the collection of developer groups associated with the specified product.",
+          "displayName": "Get product groups list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/groups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds the association between the specified developer group with the specified product.",
+          "displayName": "Associate group with product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/groups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the association between the specified group and product.",
+          "displayName": "Delete group with product association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/groups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags associated with the Product",
+      "name": "service/products/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the Product. or Get tag associated with the Product.",
+          "displayName": "Get product tags or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Product.",
+          "displayName": "Associate Tag with Product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Product.",
+          "displayName": "Delete Tag with Product association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product subscriptions",
+      "name": "service/subscriptions",
+      "operations": [
+        {
+          "description": "Lists all subscriptions of the API Management service instance. or Gets the specified Subscription entity (without keys).",
+          "displayName": "Get subscriptions list or Get subscripiton details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/subscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the subscription of specified user to the specified product. or Updates the details of a subscription specified by its identifier.",
+          "displayName": "Subscribe to product or Update subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/subscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified subscription.",
+          "displayName": "Delete subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/subscriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates primary key of existing subscription of the API Management service instance.",
+          "displayName": "Regenerate subscription PK",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/subscriptions/regeneratePrimaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates secondary key of existing subscription of the API Management service instance.",
+          "displayName": "Regenerate subscription SK",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/subscriptions/regenerateSecondaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the specified Subscription keys.",
+          "displayName": "Get subscripiton keys",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/subscriptions/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "APIs",
+      "name": "service/apis",
+      "operations": [
+        {
+          "description": "Lists all APIs of the API Management service instance. or Gets the details of the API specified by its identifier.",
+          "displayName": "Get API list or Get API details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new or updates existing specified API of the API Management service instance. or Updates the specified API of the API Management service instance.",
+          "displayName": "Create API or Update API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified API of the API Management service instance.",
+          "displayName": "Remove API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API operations",
+      "name": "service/apis/operations",
+      "operations": [
+        {
+          "description": "Lists a collection of the operations for the specified API. or Gets the details of the API Operation specified by its identifier.",
+          "displayName": "Get API operations or Get API operation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new operation in the API or updates an existing one. or Updates the details of the operation in the API specified by its identifier.",
+          "displayName": "Create API operation or Update API operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified operation in the API.",
+          "displayName": "Remove API operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Operation policies configuration",
+      "name": "service/apis/operations/policies",
+      "operations": [
+        {
+          "description": "Get the list of policy configuration at the API Operation level. or Get the policy configuration at the API Operation level.",
+          "displayName": "Get API Operation policies or Get API operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the API Operation level.",
+          "displayName": "Set API operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Api Operation.",
+          "displayName": "Remove API Operation policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags associated with the Operation",
+      "name": "service/apis/operations/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the Operation. or Get tag associated with the Operation.",
+          "displayName": "Get tags associated with the Operation or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Operation.",
+          "displayName": "Associate Tag with Operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Operation.",
+          "displayName": "Delete Tag with Operation association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API revisions",
+      "name": "service/apis/revisions",
+      "operations": [
+        {
+          "description": "Lists all revisions of an API.",
+          "displayName": "Get revisions for an API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/revisions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes all revisions of an API",
+          "displayName": "Delete revisions of an API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/revisions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API releases",
+      "name": "service/apis/releases",
+      "operations": [
+        {
+          "description": "Lists all releases of an API. An API release is created when making an API Revision current. Releases are also used to rollback to previous revisions. Results will be paged and can be constrained by the $top and $skip parameters. or Returns the details of an API release.",
+          "displayName": "Get revisions for an API or Get API release details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/releases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes all releases of the API or Deletes the specified release in the API.",
+          "displayName": "Removes all releases of the API or Delete API release",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/releases/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Release for the API. or Updates the details of the release of the API specified by its identifier.",
+          "displayName": "Create API release or Update API release",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/releases/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API policies configuration",
+      "name": "service/apis/policies",
+      "operations": [
+        {
+          "description": "Get the policy configuration at the API level. or Get the policy configuration at the API level.",
+          "displayName": "Get API policies or Get API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the API.",
+          "displayName": "Set API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Api.",
+          "displayName": "Remove API policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API associated products",
+      "name": "service/apis/products",
+      "operations": [
+        {
+          "description": "Lists all Products, which the API is part of.",
+          "displayName": "Get products associated with the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/products/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schemas associated with the API",
+      "name": "service/apis/schemas",
+      "operations": [
+        {
+          "description": "Get the schema configuration at the API level. or Get the schema configuration at the API level.",
+          "displayName": "Gets the schemas stored for a given API or Gets schemas for the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates schema configuration for the API.",
+          "displayName": "Sets schema used by the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/schemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the schema configuration at the Api.",
+          "displayName": "Removes schema for the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/schemas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API issues",
+      "name": "service/apis/issues",
+      "operations": [
+        {
+          "description": "Lists all issues associated with the specified API. or Gets the details of the Issue for an API specified by its identifier.",
+          "displayName": "Get API Issues or API Management issue details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Issue for an API or updates an existing one. or Updates an existing issue for an API.",
+          "displayName": "Adds issue or Updates issue",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Issue from an API.",
+          "displayName": "Removes issue",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issue Attachments",
+      "name": "service/apis/issues/attachments",
+      "operations": [
+        {
+          "description": "Lists all attachments for the Issue associated with the specified API. or Gets the details of the issue Attachment for an API specified by its identifier.",
+          "displayName": "Get attachments or Get attachments details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/attachments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Attachment for the Issue in an API or updates an existing one.",
+          "displayName": "Add issue attachment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/attachments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified comment from an Issue.",
+          "displayName": "Remove attachments",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/attachments/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issue Comments",
+      "name": "service/apis/issues/comments",
+      "operations": [
+        {
+          "description": "Lists all comments for the Issue associated with the specified API. or Gets the details of the issue Comment for an API specified by its identifier.",
+          "displayName": "Get comments or Get comment details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/comments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Comment for the Issue in an API or updates an existing one.",
+          "displayName": "Add api comment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/comments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified comment from an Issue.",
+          "displayName": "Removes comment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/issues/comments/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags descriptions",
+      "name": "service/apis/tagDescriptions",
+      "operations": [
+        {
+          "description": "Lists all Tags descriptions in scope of API. Model similar to swagger - tagDescription is defined on API level but tag may be assigned to the Operations or Get Tag description in scope of API",
+          "displayName": "Tags descriptions in scope of API or Get Tag metadata",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tagDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create/Update tag description in scope of the Api.",
+          "displayName": "Create/Change Tag metadata",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tagDescriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete tag description for the Api.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tagDescriptions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API/Tag associations",
+      "name": "service/apis/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the API. or Get tag associated with the API.",
+          "displayName": "Get tags associated with the API or Get Tag associated with API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Api.",
+          "displayName": "Add Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Api.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags - Operation associations",
+      "name": "service/apis/operationsByTags",
+      "operations": [
+        {
+          "description": "Lists a collection of operations associated with tags.",
+          "displayName": "Get Operation-Tag associations list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operationsByTags/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API diagnostics",
+      "name": "service/apis/diagnostics",
+      "operations": [
+        {
+          "description": "Lists all diagnostics of an API. or Gets the details of the Diagnostic for an API specified by its identifier.",
+          "displayName": "Get diagnostics list or Get diagnostic details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/diagnostics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Diagnostic for an API or updates an existing one. or Updates the details of the Diagnostic for an API specified by its identifier.",
+          "displayName": "Add diagnostic or Update diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/diagnostics/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Diagnostic from an API.",
+          "displayName": "Remove diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/diagnostics/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tenant policies configuration",
+      "name": "service/policies",
+      "operations": [
+        {
+          "description": "Lists all the Global Policy definitions of the Api Management service. or Get the Global policy definition of the Api Management service.",
+          "displayName": "Get Tenant policies or Get Tenant policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the global policy configuration of the Api Management service.",
+          "displayName": "Set Tenant policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the global policy configuration of the Api Management Service.",
+          "displayName": "Remove Tenant policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "By time report",
+      "name": "service/reports",
+      "operations": [
+        {
+          "description": "Get report aggregated by time periods or Get report aggregated by geographical region or Get report aggregated by developers. or Get report aggregated by products. or Get report aggregated by APIs or Get report aggregated by operations or Get report aggregated by subscription. or Get requests reporting data",
+          "displayName": "Get by time report or Get by region report or Get by developer repoer or Get by product report or Get by API report or Get by operation report or Get by subscription report or Get requests data report",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/reports/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of policy snippets",
+      "name": "service/policySnippets",
+      "operations": [
+        {
+          "description": "Lists all policy snippets.",
+          "displayName": "Get policy snippets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policySnippets/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificates",
+      "name": "service/certificates",
+      "operations": [
+        {
+          "description": "Lists a collection of all certificates in the specified service instance. or Gets the details of the certificate specified by its identifier.",
+          "displayName": "Get certificates list or Get cerificate details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/certificates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the certificate being used for authentication with the backend.",
+          "displayName": "Add certificate",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/certificates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific certificate.",
+          "displayName": "Remove certificate",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/certificates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes certificate by fetching it from Key Vault.",
+          "displayName": "Refresh certificate from KeyVault",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/certificates/refreshSecret/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Loggers",
+      "name": "service/loggers",
+      "operations": [
+        {
+          "description": "Lists a collection of loggers in the specified service instance. or Gets the details of the logger specified by its identifier.",
+          "displayName": "Get loggers list or Get logger details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/loggers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a logger. or Updates an existing logger.",
+          "displayName": "Add logger or Update logger",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/loggers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified logger.",
+          "displayName": "Remove logger",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/loggers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OAuth Authorization servers",
+      "name": "service/authorizationServers",
+      "operations": [
+        {
+          "description": "Lists a collection of authorization servers defined within a service instance. or Gets the details of the authorization server without secrets.",
+          "displayName": "Get authorization service list or Get authorization server details without secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationServers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new authorization server or updates an existing authorization server. or Updates the details of the authorization server specified by its identifier.",
+          "displayName": "Create new authorization server or Update existing authorization server",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationServers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific authorization server instance.",
+          "displayName": "Remove authorization server",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationServers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets secrets for the authorization server.",
+          "displayName": "Get authorization server secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationServers/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backends",
+      "name": "service/backends",
+      "operations": [
+        {
+          "description": "Lists a collection of backends in the specified service instance. or Gets the details of the backend specified by its identifier.",
+          "displayName": "Get backends list or Get backend details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/backends/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a backend. or Updates an existing backend.",
+          "displayName": "Add backend or Update backend",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/backends/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified backend.",
+          "displayName": "Remove backend",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/backends/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Notifies the APIM proxy to create a new connection to the backend after the specified timeout. If no timeout was specified, timeout of 2 minutes is used.",
+          "displayName": "Create Request",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/backends/reconnect/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of all email templates",
+      "name": "service/templates",
+      "operations": [
+        {
+          "description": "Gets all email templates or Gets API Management email template details",
+          "displayName": "Get email templates or Get email template details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/templates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update API Management email template or Updates API Management email template",
+          "displayName": "Create or update email template or Update email template",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/templates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reset default API Management email template",
+          "displayName": "Reset default email template",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/templates/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of properties. Properties are used to manage constant string values across all API configurations or policies.",
+      "name": "service/properties",
+      "operations": [
+        {
+          "description": "Lists a collection of properties defined within a service instance. or Gets the details of the property specified by its identifier.",
+          "displayName": "Get all properties or Get property details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/properties/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a property. or Updates the specific property.",
+          "displayName": "Create property or Update property value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/properties/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific property from the API Management service instance.",
+          "displayName": "Remove property",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/properties/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the secrets of the property specified by its identifier.",
+          "displayName": "Get property secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/properties/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of all ApiManagement Publisher Notifications",
+      "name": "service/notifications",
+      "operations": [
+        {
+          "description": "Lists a collection of properties defined within a service instance. or Gets the details of the Notification specified by its identifier.",
+          "displayName": "Get all publisher notifications or Get publisher notification details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update API Management publisher notification.",
+          "displayName": "Create publisher notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recipient Emails associated with a notification",
+      "name": "service/notifications/recipientEmails",
+      "operations": [
+        {
+          "description": "Gets the list of the Notification Recipient Emails subscribed to a notification.",
+          "displayName": "Get Email Recipients associated with Publisher Notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/recipientEmails/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds the Email address to the list of Recipients for the Notification.",
+          "displayName": "Create new email recipient",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/recipientEmails/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes the email from the list of Notification.",
+          "displayName": "Removes email associated with notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/recipientEmails/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recipient Users associated with a notification",
+      "name": "service/notifications/recipientUsers",
+      "operations": [
+        {
+          "description": "Gets the list of the Notification Recipient User subscribed to the notification.",
+          "displayName": "Get recipient users for the Notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/recipientUsers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds the API Management User to the list of Recipients for the Notification.",
+          "displayName": "Add user to notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/recipientUsers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes the API Management user from the list of Notification.",
+          "displayName": "Removes user from notification recipients",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/notifications/recipientUsers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OpenID Connect Providers",
+      "name": "service/openidConnectProviders",
+      "operations": [
+        {
+          "description": "Lists of all the OpenId Connect Providers. or Gets specific OpenID Connect Provider without secrets.",
+          "displayName": "Get OpenID providers list or Get OpenID Connect Provider details without secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/openidConnectProviders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the OpenID Connect Provider. or Updates the specific OpenID Connect Provider.",
+          "displayName": "Create new OpenID Connect Provider or Update existing OpenID Connect Provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/openidConnectProviders/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific OpenID Connect Provider of the API Management service instance.",
+          "displayName": "Remove OpenID Connect Provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/openidConnectProviders/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets specific OpenID Connect Provider secrets.",
+          "displayName": "Get OpenID Connect Provider secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/openidConnectProviders/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Quotas",
+      "name": "service/quotas",
+      "operations": [
+        {
+          "description": "Get values for quota",
+          "displayName": "Get quota values",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/quotas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Set quota counter current value",
+          "displayName": "Set quota counter",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/quotas/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Quotas",
+      "name": "service/quotas/periods",
+      "operations": [
+        {
+          "description": "Get quota counter value for period",
+          "displayName": "Get quota values",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/quotas/periods/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Set quota counter current value",
+          "displayName": "Set quota counter",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/quotas/periods/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Identity Providers",
+      "name": "service/identityProviders",
+      "operations": [
+        {
+          "description": "Lists a collection of Identity Provider configured in the specified service instance. or Gets the configuration details of the identity Provider without secrets.",
+          "displayName": "Get Identity providers list or Get Identity Provider details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/identityProviders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the IdentityProvider configuration. or Updates an existing IdentityProvider configuration.",
+          "displayName": "Create new Identity Provider or Update existing Identity Provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/identityProviders/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified identity provider configuration.",
+          "displayName": "Remove Identity Provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/identityProviders/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Identity Provider secrets.",
+          "displayName": "Get Identity Provider secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/identityProviders/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Portal Settings",
+      "name": "service/portalSettings",
+      "operations": [
+        {
+          "description": "Lists a collection of portal settings. or Get Sign In Settings for the Portal or Get Sign Up Settings for the Portal or Get Delegation Settings for the Portal.",
+          "displayName": "Get portal settings or Get Sign In Settings or Get Sign Up Settings or Get Delegation Settings",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Sign-In settings. or Create or Update Sign-In settings. or Update Sign Up settings or Update Sign Up settings or Update Delegation settings. or Create or Update Delegation settings.",
+          "displayName": "Update Settings or Update Settings or Update Settings or Update Settings or Update Settings or Update Settings",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalSettings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets validation key of portal delegation settings. or Get media content blob container uri.",
+          "displayName": "Get property secrets or Get media content blob container uri",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalSettings/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Diagnostics",
+      "name": "service/diagnostics",
+      "operations": [
+        {
+          "description": "Lists all diagnostics of the API Management service instance. or Gets the details of the Diagnostic specified by its identifier.",
+          "displayName": "Get diagnostics list or Get diagnostic details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/diagnostics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Diagnostic or updates an existing one. or Updates the details of the Diagnostic specified by its identifier.",
+          "displayName": "Add diagnostic or Update diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/diagnostics/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Diagnostic.",
+          "displayName": "Remove diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/diagnostics/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags",
+      "name": "service/tags",
+      "operations": [
+        {
+          "description": "Lists a collection of tags defined within a service instance. or Gets the details of the tag specified by its identifier.",
+          "displayName": "Get Tags list or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a tag. or Updates the details of the tag specified by its identifier.",
+          "displayName": "Add Tag or Update Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific tag of the API Management service instance.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "TagResources",
+      "name": "service/tagResources",
+      "operations": [
+        {
+          "description": "Lists a collection of resources associated with tags.",
+          "displayName": "Get Tags Resources",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tagResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags - Apis associations",
+      "name": "service/apisByTags",
+      "operations": [
+        {
+          "description": "Lists a collection of apis associated with tags.",
+          "displayName": "Get Api-Tag associations list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apisByTags/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags - Products associations",
+      "name": "service/productsByTags",
+      "operations": [
+        {
+          "description": "Lists a collection of products associated with tags.",
+          "displayName": "Get Product-Tag associations list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/productsByTags/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Send password reset confirmation",
+      "name": "service/users/confirmations",
+      "operations": [
+        {
+          "description": "Sends confirmation",
+          "displayName": "Send",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/confirmations/send/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ApiVersionSets",
+      "name": "service/apiVersionSets",
+      "operations": [
+        {
+          "description": "Lists a collection of API Version Sets in the specified service instance. or Gets the details of the Api Version Set specified by its identifier.",
+          "displayName": "Get version set list or Get versionSet details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apiVersionSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Api Version Set. or Updates the details of the Api VersionSet specified by its identifier.",
+          "displayName": "Create VersionSet or Update VersionSet",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apiVersionSets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Api Version Set.",
+          "displayName": "Remove VersionSet",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apiVersionSets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Version entities associated with VersionSet",
+      "name": "service/apiVersionSets/versions",
+      "operations": [
+        {
+          "description": "Get list of version entities",
+          "displayName": "Get VersionSet version entity list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apiVersionSets/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content types",
+      "name": "service/contentTypes",
+      "operations": [
+        {
+          "description": "Returns list of content types or Returns content type",
+          "displayName": "Get content types or Get all",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/contentTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes content type.",
+          "displayName": "Delete content item",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/contentTypes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new content type",
+          "displayName": "Create content item",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/contentTypes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content items",
+      "name": "service/contentTypes/contentItems",
+      "operations": [
+        {
+          "description": "Returns list of content items or Returns content item details",
+          "displayName": "Get all or Get content item details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/contentTypes/contentItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new content item or Updates specified content item",
+          "displayName": "Create content item or Update content item",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/contentTypes/contentItems/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes specified content item.",
+          "displayName": "Delete content item",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/contentTypes/contentItems/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Get user identities list",
+      "name": "service/users/identities",
+      "operations": [
+        {
+          "description": "List of all user identities.",
+          "displayName": "List of user Identities.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/identities/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Service Regions",
+      "name": "service/regions",
+      "operations": [
+        {
+          "description": "Lists all azure regions in which the service exists.",
+          "displayName": "List of all azure regions in which the service exists.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/regions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of all API Management issues",
+      "name": "service/issues",
+      "operations": [
+        {
+          "description": "Lists a collection of issues in the specified service instance. or Gets API Management issue details",
+          "displayName": "Lists a collection of issues in the specified service instance. or Get the issue details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/issues/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "External caches",
+      "name": "service/caches",
+      "operations": [
+        {
+          "description": "Lists a collection of all external Caches in the specified service instance. or Gets the details of the Cache specified by its identifier.",
+          "displayName": "Lists a collection of all external Caches in the specified service instance. or Get cache details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/caches/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an External Cache to be used in Api Management instance. or Updates the details of the cache specified by its identifier.",
+          "displayName": "Create cache or Update cache",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/caches/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Cache.",
+          "displayName": "Remove cache",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/caches/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "User Keys",
+      "name": "service/users/keys",
+      "operations": [
+        {
+          "description": "Get keys associated with user",
+          "displayName": "Get user keys",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/users/keys/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tenant policies configuration",
+      "name": "service/policy",
+      "operations": [
+        {
+          "description": "Get the policy configuration at Tenant level",
+          "displayName": "Get Tenant policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policy/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create policy configuration at Tenant level",
+          "displayName": "Create Tenant policy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policy/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the policy configuration at Tenant level",
+          "displayName": "Delete Tenant policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policy/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API policies configuration",
+      "name": "service/apis/policy",
+      "operations": [
+        {
+          "description": "Get the policy configuration at API level",
+          "displayName": "Get API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/policy/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create policy configuration at API level",
+          "displayName": "Create API policy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/policy/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the policy configuration at API level",
+          "displayName": "Delete API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/policy/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Operation policies configuration",
+      "name": "service/apis/operations/policy",
+      "operations": [
+        {
+          "description": "Get the policy configuration at Operation level",
+          "displayName": "Get API Operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/policy/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create policy configuration at Operation level",
+          "displayName": "Create API Operation policy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/policy/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the policy configuration at Operation level",
+          "displayName": "Delete API Operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/operations/policy/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product policies configuration",
+      "name": "service/products/policy",
+      "operations": [
+        {
+          "description": "Get the policy configuration at Product level",
+          "displayName": "Get Product policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/policy/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create policy configuration at Product level",
+          "displayName": "Create Product policy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/policy/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the policy configuration at Product level",
+          "displayName": "Delete Product policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/policy/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Gateways",
+      "name": "service/gateways",
+      "operations": [
+        {
+          "description": "Lists a collection of gateways registered with service instance. or Gets the details of the Gateway specified by its identifier.",
+          "displayName": "Get gateways list or Get gateway details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an Gateway to be used in Api Management instance. or Updates the details of the gateway specified by its identifier.",
+          "displayName": "Create gateway or Update gateway",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Gateway.",
+          "displayName": "Remove gateway",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves gateway keys.",
+          "displayName": "Get gateway keys",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/listKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates specified gateway key invalidationg any tokens created with it.",
+          "displayName": "Regenerate key",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/regenerateKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Shared Access Authorization Token for the gateway.",
+          "displayName": "Get token",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/generateToken/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Fetches configuration for specified self-hosted gateway",
+          "displayName": "Get self-hosted gateway configuration",
+          "isDataAction": true,
+          "name": "Microsoft.ApiManagement/service/gateways/getConfiguration/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of policy descriptions",
+      "name": "service/policyDescriptions",
+      "operations": [
+        {
+          "description": "Lists all policy descriptions.",
+          "displayName": "Get policy descriptions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyDescriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Gateway hostname configurations",
+      "name": "service/gateways/hostnameConfigurations",
+      "operations": [
+        {
+          "description": "Lists the collection of hostname configurations for the specified gateway. or Get details of a hostname configuration",
+          "displayName": "Get hostname configuration list or Get hostname configuration details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/hostnameConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Request subscription for a new product",
+          "displayName": "Request product subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/hostnameConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified hostname configuration.",
+          "displayName": "Remove hostname configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/hostnameConfigurations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "APIs added to Gateway",
+      "name": "service/gateways/apis",
+      "operations": [
+        {
+          "description": "Lists a collection of the APIs associated with a gateway.",
+          "displayName": "Get Gateway APIs list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/apis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds an API to the specified Gateway.",
+          "displayName": "Add API to Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/apis/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified API from the specified Gateway.",
+          "displayName": "Remove API from Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/apis/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of named values. Named values are used to manage constant string values across all API configurations or policies.",
+      "name": "service/namedValues",
+      "operations": [
+        {
+          "description": "Lists a collection of named values defined within a service instance. or Gets the details of the named value specified by its identifier.",
+          "displayName": "Get all named values or Get named value details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/namedValues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates named value. or Updates the specific named value.",
+          "displayName": "Create named value or Update named value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/namedValues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific named value from the API Management service instance.",
+          "displayName": "Remove named value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/namedValues/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the secret of the named value specified by its identifier.",
+          "displayName": "Get the value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/namedValues/listValue/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes named value by fetching it from Key Vault.",
+          "displayName": "Refresh certificate from KeyVault",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/namedValues/refreshSecret/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deleted API Management Service",
+      "name": "deletedservices",
+      "operations": [
+        {
+          "description": "Get deleted API Management Services which can be restored within the soft-delete period",
+          "displayName": "Get deleted API Management Services",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/deletedservices/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resource representing current tenant settings",
+      "name": "service/settings",
+      "operations": [
+        {
+          "description": "Lists a collection of tenant settings. Always empty. Use /settings/public instead",
+          "displayName": "Get portal settings",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/settings/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management Private Link Group Resource",
+      "name": "service/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get Private Link Group resources",
+          "displayName": "Get Private Link Group Resources",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Certificates assigned to Gateway as Certificate Authorities",
+      "name": "service/gateways/certificateAuthorities",
+      "operations": [
+        {
+          "description": "Get Gateway CAs list. or Get assigned Certificate Authority details.",
+          "displayName": "Get Gateway Certificate Authority list or Get assigned Certificate Authority details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/certificateAuthorities/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds an API to the specified Gateway.",
+          "displayName": "Assign Certificate to Gateway as Certificate Authority",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/certificateAuthorities/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Unassign Certificate Authority from Gateway.",
+          "displayName": "Unassign Certificate Authority from Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/certificateAuthorities/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PortalRevisions",
+      "name": "service/portalRevisions",
+      "operations": [
+        {
+          "description": "Lists a collection of developer portal revision entities. or Gets developer portal revision specified by its identifier.",
+          "displayName": "Get developer portal revision list or Get developer portal revision details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalRevisions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new developer portal revision. or Updates the description of specified portal revision or makes it current.",
+          "displayName": "Create developer portal revision or Update developer portal revision",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalRevisions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deleted API Management Service",
+      "name": "locations/deletedservices",
+      "operations": [
+        {
+          "description": "Delete API Management Service without the option to restore it",
+          "displayName": "Purge API Management Service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/locations/deletedservices/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management Event Grid Filters",
+      "name": "service/eventGridFilters",
+      "operations": [
+        {
+          "description": "Set Event Grid Filters",
+          "displayName": "Set Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/eventGridFilters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Event Grid Filters",
+          "displayName": "Delete Event Grid Filters",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/eventGridFilters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Event Grid Filter",
+          "displayName": "Get Event Grid Filter",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/eventGridFilters/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management Private Endpoint Connections",
+      "name": "service/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connections",
+          "displayName": "Get Private Endpoint Connections by Name",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Or Reject Private Endpoint Connections",
+          "displayName": "Approve Or Reject Private Endpoint Connections by Name",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connections",
+          "displayName": "Delete Private Endpoint Connections by Name",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management Private Endpoint Connection Proxy",
+      "name": "service/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create the private endpoint connection proxy",
+          "displayName": "Create private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the private endpoint connection proxy",
+          "displayName": "Delete private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate the private endpoint connection proxy",
+          "displayName": "Validate private endpoint connection proxy",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Management Private Endpoint Connection Proxy",
+      "name": "service/privateEndpointConnectionProxies/operationresults",
+      "operations": [
+        {
+          "description": "View the result of private endpoint connection operations in the management portal",
+          "displayName": "Api Management private endpoint operation results (read)",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/privateEndpointConnectionProxies/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Outbound Network Dependencies Endpoints",
+      "name": "service/outboundNetworkDependenciesEndpoints",
+      "operations": [
+        {
+          "description": "Gets the outbound network dependency status of resources on which the service depends on.",
+          "displayName": "Gets the outbound network dependencies endpoints of the service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/outboundNetworkDependenciesEndpoints/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schemas",
+      "name": "service/schemas",
+      "operations": [
+        {
+          "description": "Lists a collection of schemas registered. or Gets the details of the Schema specified by its identifier.",
+          "displayName": "Get schemas list or Get schema details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an Schema to be used in Api Management instance.",
+          "displayName": "Create schema",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/schemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Schema.",
+          "displayName": "Remove schema",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/schemas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API revisions",
+      "name": "service/tenants/apis/revisions",
+      "operations": [
+        {
+          "description": "Lists all revisions of an API.",
+          "displayName": "Get revisions for an API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/revisions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes all revisions of an API",
+          "displayName": "Delete revisions of an API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/revisions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API releases",
+      "name": "service/tenants/apis/releases",
+      "operations": [
+        {
+          "description": "Lists all releases of an API. An API release is created when making an API Revision current. Releases are also used to rollback to previous revisions. Results will be paged and can be constrained by the $top and $skip parameters. or Returns the details of an API release.",
+          "displayName": "Get revisions for an API or Get API release details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/releases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes all releases of the API or Deletes the specified release in the API.",
+          "displayName": "Removes all releases of the API or Delete API release",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/releases/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Release for the API. or Updates the details of the release of the API specified by its identifier.",
+          "displayName": "Create API release or Update API release",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/releases/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API operations",
+      "name": "service/tenants/apis/operations",
+      "operations": [
+        {
+          "description": "Lists a collection of the operations for the specified API. or Gets the details of the API Operation specified by its identifier.",
+          "displayName": "Get API operations or Get API operation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new operation in the API or updates an existing one. or Updates the details of the operation in the API specified by its identifier.",
+          "displayName": "Create API operation or Update API operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified operation in the API.",
+          "displayName": "Remove API operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Operation policies configuration",
+      "name": "service/tenants/apis/operations/policies",
+      "operations": [
+        {
+          "description": "Get the list of policy configuration at the API Operation level. or Get the policy configuration at the API Operation level.",
+          "displayName": "Get API Operation policies or Get API operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the API Operation level.",
+          "displayName": "Set API operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Api Operation.",
+          "displayName": "Remove API Operation policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags associated with the Operation",
+      "name": "service/tenants/apis/operations/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the Operation. or Get tag associated with the Operation.",
+          "displayName": "Get tags associated with the Operation or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Operation.",
+          "displayName": "Associate Tag with Operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Operation.",
+          "displayName": "Delete Tag with Operation association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operations/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API associated products",
+      "name": "service/tenants/apis/products",
+      "operations": [
+        {
+          "description": "Lists all Products, which the API is part of.",
+          "displayName": "Get products associated with the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/products/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API policies configuration",
+      "name": "service/tenants/apis/policies",
+      "operations": [
+        {
+          "description": "Get the policy configuration at the API level. or Get the policy configuration at the API level.",
+          "displayName": "Get API policies or Get API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the API.",
+          "displayName": "Set API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Api.",
+          "displayName": "Remove API policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schemas associated with the API",
+      "name": "service/tenants/apis/schemas",
+      "operations": [
+        {
+          "description": "Get the schema configuration at the API level. or Get the schema configuration at the API level.",
+          "displayName": "Gets the schemas stored for a given API or Gets schemas for the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates schema configuration for the API.",
+          "displayName": "Sets schema used by the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/schemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the schema configuration at the Api.",
+          "displayName": "Removes schema for the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/schemas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API diagnostics",
+      "name": "service/tenants/apis/diagnostics",
+      "operations": [
+        {
+          "description": "Lists all diagnostics of an API. or Gets the details of the Diagnostic for an API specified by its identifier.",
+          "displayName": "Get diagnostics list or Get diagnostic details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/diagnostics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Diagnostic for an API or updates an existing one. or Updates the details of the Diagnostic for an API specified by its identifier.",
+          "displayName": "Add diagnostic or Update diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/diagnostics/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Diagnostic from an API.",
+          "displayName": "Remove diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/diagnostics/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags descriptions",
+      "name": "service/tenants/apis/tagDescriptions",
+      "operations": [
+        {
+          "description": "Lists all Tags descriptions in scope of API. Model similar to swagger - tagDescription is defined on API level but tag may be assigned to the Operations or Get Tag description in scope of API",
+          "displayName": "Tags descriptions in scope of API or Get Tag metadata",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tagDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create/Update tag description in scope of the Api.",
+          "displayName": "Create/Change Tag metadata",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tagDescriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete tag description for the Api.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tagDescriptions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API/Tag associations",
+      "name": "service/tenants/apis/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the API. or Get tag associated with the API.",
+          "displayName": "Get tags associated with the API or Get Tag associated with API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Api.",
+          "displayName": "Add Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Api.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags - Operation associations",
+      "name": "service/tenants/apis/operationsByTags",
+      "operations": [
+        {
+          "description": "Lists a collection of operations associated with tags.",
+          "displayName": "Get Operation-Tag associations list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/operationsByTags/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Keys",
+      "name": "service/tenants/keys",
+      "operations": [
+        {
+          "description": "Get a list of keys or Get details of key",
+          "displayName": "Get keys list or Get key details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/keys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Key to an existing Existing Entity or Update existing key details. This operation can be used to renew key.",
+          "displayName": "Create a Key or Update Key",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/keys/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete key. This operation can be used to delete key.",
+          "displayName": "Delete key",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/keys/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate primary key",
+          "displayName": "Regenerate PK",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/keys/regeneratePrimaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate secondary key",
+          "displayName": "Regenerate SK",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/keys/regenerateSecondaryKey/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationProvider",
+      "name": "service/authorizationProviders",
+      "operations": [
+        {
+          "description": "Lists AuthorizationProvider within a service instance or Gets a AuthorizationProvider",
+          "displayName": "Get TokenTrovider list or Get AuthorizationProvider details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a AuthorizationProvider",
+          "displayName": "Create a AuthorizationProvider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a AuthorizationProvider",
+          "displayName": "Deletes AuthorizationProvider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authorization",
+      "name": "service/authorizationProviders/authorizations",
+      "operations": [
+        {
+          "description": "Lists Authorization or Get Authorization",
+          "displayName": "Get Authorization list or Get Authorization details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/authorizations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Authorization",
+          "displayName": "Create Authorization",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/authorizations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Authorization",
+          "displayName": "Deletes a Authorization",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/authorizations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Authorization Permission",
+      "name": "service/authorizationProviders/authorizations/permission",
+      "operations": [
+        {
+          "description": "Lists Authorization Permissions or Get Authorization Permission",
+          "displayName": "Get Authorization Permission list or Get Authorization Permission details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/authorizations/permission/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Authorization Permission",
+          "displayName": "Create Authorization Permission",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/authorizations/permission/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Authorization Permission",
+          "displayName": "Deletes a Authorization Permission",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/authorizationProviders/authorizations/permission/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "portalConfigs",
+      "name": "service/portalConfigs",
+      "operations": [
+        {
+          "description": "Lists a collection of developer portal config entities. or Gets developer portal config specified by its identifier.",
+          "displayName": "Get developer portal config list or Get developer portal config details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalConfigs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new developer portal config. or Updates the description of specified portal config or makes it current.",
+          "displayName": "Create developer portal config or Update developer portal config",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalConfigs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets validation key of portal delegation settings.",
+          "displayName": "Get property secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalConfigs/listDelegationSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policy fragments",
+      "name": "service/policyFragments",
+      "operations": [
+        {
+          "description": "Gets all policy fragments. or Gets a policy fragment.",
+          "displayName": "Get policy fragments or Get policy fragment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyFragments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a policy fragment.",
+          "displayName": "Set policy fragment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyFragments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a policy fragment.",
+          "displayName": "Delete policy fragment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyFragments/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists policy resources that reference the policy fragment.",
+          "displayName": "List policy fragment references",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyFragments/listReferences/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspaces",
+      "name": "service/workspaces",
+      "operations": [
+        {
+          "description": "Lists a collection of Workspaces defined within a service instance. or Gets the details of the Workspace specified by its identifier.",
+          "displayName": "Get list of Workspaces or Workspace details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Workspace. or Updates the details of the Workspace specified by its identifier.",
+          "displayName": "Add Workspace or Update Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Workspace of the API Management service instance.",
+          "displayName": "Remove Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace NamedValues",
+      "name": "service/workspaces/namedValues",
+      "operations": [
+        {
+          "description": "Lists a collection of named values defined within a service instance. or Gets the details of the named value specified by its identifier.",
+          "displayName": "Get all named values or Get named value details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/namedValues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates named value. or Updates the specific named value.",
+          "displayName": "Create named value or Update named value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/namedValues/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific named value from the API Management service instance.",
+          "displayName": "Remove named value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/namedValues/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the secret of the named value specified by its identifier.",
+          "displayName": "Get the value",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/namedValues/listValue/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes named value by fetching it from Key Vault.",
+          "displayName": "Refresh certificate from KeyVault",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/namedValues/refreshSecret/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace APIs",
+      "name": "service/workspaces/apis",
+      "operations": [
+        {
+          "description": "Lists all APIs of the API Management service instance. or Gets the details of the API specified by its identifier.",
+          "displayName": "Get API list or Get API details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new or updates existing specified API of the API Management service instance. or Updates the specified API of the API Management service instance.",
+          "displayName": "Create API or Update API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified API of the API Management service instance.",
+          "displayName": "Remove API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API operations",
+      "name": "service/workspaces/apis/operations",
+      "operations": [
+        {
+          "description": "Lists a collection of the operations for the specified API. or Gets the details of the API Operation specified by its identifier.",
+          "displayName": "Get API operations or Get API operation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new operation in the API or updates an existing one. or Updates the details of the operation in the API specified by its identifier.",
+          "displayName": "Create API operation or Update API operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified operation in the API.",
+          "displayName": "Remove API operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Operation policies configuration",
+      "name": "service/workspaces/apis/operations/policies",
+      "operations": [
+        {
+          "description": "Get the list of policy configuration at the API Operation level. or Get the policy configuration at the API Operation level.",
+          "displayName": "Get API Operation policies or Get API operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the API Operation level.",
+          "displayName": "Set API operation policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Api Operation.",
+          "displayName": "Remove API Operation policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags associated with the Operation",
+      "name": "service/workspaces/apis/operations/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the Operation. or Get tag associated with the Operation.",
+          "displayName": "Get tags associated with the Operation or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Operation.",
+          "displayName": "Associate Tag with Operation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Operation.",
+          "displayName": "Delete Tag with Operation association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API associated products",
+      "name": "service/workspaces/apis/products",
+      "operations": [
+        {
+          "description": "Lists all Products, which the API is part of.",
+          "displayName": "Get products associated with the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/products/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API policies configuration",
+      "name": "service/workspaces/apis/policies",
+      "operations": [
+        {
+          "description": "Get the policy configuration at the API level. or Get the policy configuration at the API level.",
+          "displayName": "Get API policies or Get API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the API.",
+          "displayName": "Set API policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Api.",
+          "displayName": "Remove API policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags descriptions",
+      "name": "service/workspaces/apis/tagDescriptions",
+      "operations": [
+        {
+          "description": "Lists all Tags descriptions in scope of API. Model similar to swagger - tagDescription is defined on API level but tag may be assigned to the Operations or Get Tag description in scope of API",
+          "displayName": "Tags descriptions in scope of API or Get Tag metadata",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tagDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create/Update tag description in scope of the Api.",
+          "displayName": "Create/Change Tag metadata",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tagDescriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete tag description for the Api.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tagDescriptions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API/Tag associations",
+      "name": "service/workspaces/apis/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the API. or Get tag associated with the API.",
+          "displayName": "Get tags associated with the API or Get Tag associated with API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Api.",
+          "displayName": "Add Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Api.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags - Operation associations",
+      "name": "service/workspaces/apis/operationsByTags",
+      "operations": [
+        {
+          "description": "Lists a collection of operations associated with tags.",
+          "displayName": "Get Operation-Tag associations list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/operationsByTags/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schemas associated with the API",
+      "name": "service/workspaces/apis/schemas",
+      "operations": [
+        {
+          "description": "Get the schema configuration at the API level. or Get the schema configuration at the API level.",
+          "displayName": "Gets the schemas stored for a given API or Gets schemas for the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates schema configuration for the API.",
+          "displayName": "Sets schema used by the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/schemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the schema configuration at the Api.",
+          "displayName": "Removes schema for the API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/schemas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Document describing the API schema",
+      "name": "service/workspaces/apis/schemas/document",
+      "operations": [
+        {
+          "description": "Get the document describing the Schema",
+          "displayName": "Get the document for the schema",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/schemas/document/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the document describing the Schema",
+          "displayName": "Update the document for the schema",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/schemas/document/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace ApiVersionSets",
+      "name": "service/workspaces/apiVersionSets",
+      "operations": [
+        {
+          "description": "Lists a collection of API Version Sets in the specified service instance. or Gets the details of the Api Version Set specified by its identifier.",
+          "displayName": "Get version set list or Get versionSet details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apiVersionSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Api Version Set. or Updates the details of the Api VersionSet specified by its identifier.",
+          "displayName": "Create VersionSet or Update VersionSet",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apiVersionSets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Api Version Set.",
+          "displayName": "Remove VersionSet",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apiVersionSets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Version entities associated with VersionSet",
+      "name": "service/workspaces/apiVersionSets/versions",
+      "operations": [
+        {
+          "description": "Get list of version entities",
+          "displayName": "Get VersionSet version entity list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apiVersionSets/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product subscriptions",
+      "name": "service/workspaces/subscriptions",
+      "operations": [
+        {
+          "description": "Lists all subscriptions of the API Management service instance. or Gets the specified Subscription entity (without keys).",
+          "displayName": "Get subscriptions list or Get subscripiton details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the subscription of specified user to the specified product. or Updates the details of a subscription specified by its identifier.",
+          "displayName": "Subscribe to product or Update subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified subscription.",
+          "displayName": "Delete subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates primary key of existing subscription of the API Management service instance.",
+          "displayName": "Regenerate subscription PK",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/regeneratePrimaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerates secondary key of existing subscription of the API Management service instance.",
+          "displayName": "Regenerate subscription SK",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/regenerateSecondaryKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the specified Subscription keys.",
+          "displayName": "Get subscripiton keys",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Products",
+      "name": "service/workspaces/products",
+      "operations": [
+        {
+          "description": "Lists a collection of products in the specified service instance. or Gets the details of the product specified by its identifier.",
+          "displayName": "Get product list or Get product details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a product. or Update existing product details.",
+          "displayName": "Create product or Update product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete product.",
+          "displayName": "Remove product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "APIs added to product",
+      "name": "service/workspaces/products/apis",
+      "operations": [
+        {
+          "description": "Lists a collection of the APIs associated with a product.",
+          "displayName": "Get product APIs list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/apis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds an API to the specified product.",
+          "displayName": "Add API to product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/apis/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified API from the specified product.",
+          "displayName": "Remove API from product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/apis/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Developer groups associated with product",
+      "name": "service/workspaces/products/groups",
+      "operations": [
+        {
+          "description": "Lists the collection of developer groups associated with the specified product.",
+          "displayName": "Get product groups list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/groups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds the association between the specified developer group with the specified product.",
+          "displayName": "Associate group with product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/groups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the association between the specified group and product.",
+          "displayName": "Delete group with product association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/groups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product subscriptions",
+      "name": "service/workspaces/products/subscriptions",
+      "operations": [
+        {
+          "description": "Lists the collection of subscriptions to the specified product.",
+          "displayName": "Get product subscriptions list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/subscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product policies configuration",
+      "name": "service/workspaces/products/policies",
+      "operations": [
+        {
+          "description": "Get the policy configuration at the Product level. or Get the policy configuration at the Product level.",
+          "displayName": "Get Product policies or Get Product policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates policy configuration for the Product.",
+          "displayName": "Set Product policy configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/policies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the policy configuration at the Product.",
+          "displayName": "Remove Product policy configuration from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags associated with the Product",
+      "name": "service/workspaces/products/tags",
+      "operations": [
+        {
+          "description": "Lists all Tags associated with the Product. or Get tag associated with the Product.",
+          "displayName": "Get product tags or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Assign tag to the Product.",
+          "displayName": "Associate Tag with Product",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach the tag from the Product.",
+          "displayName": "Delete Tag with Product association",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

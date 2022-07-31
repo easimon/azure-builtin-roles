@@ -1,0 +1,269 @@
+{
+  "displayName": "Microsoft Custom Providers",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.CustomProviders",
+  "name": "Microsoft.CustomProviders",
+  "operations": [
+    {
+      "description": "Registers Subscription with Microsoft.CustomProviders resource provider",
+      "displayName": "Register Subscription for Custom Providers",
+      "isDataAction": false,
+      "name": "Microsoft.CustomProviders/register/action",
+      "origin": "User, System",
+      "properties": null
+    },
+    {
+      "description": "Unregisters Subscription with Microsoft.CustomProviders resource provider",
+      "displayName": "Unregister Subscription for Custom Providers",
+      "isDataAction": false,
+      "name": "Microsoft.CustomProviders/unregister/action",
+      "origin": "User, System",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Custom Resource Provider ",
+      "name": "resourceproviders",
+      "operations": [
+        {
+          "description": "Gets the Custom Resource Provider Manifest",
+          "displayName": "Read Custom Resource Provider",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Writes the Custom Resource Provider Manifest",
+          "displayName": "Write Custom Resource Provider",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Custom Resource Provider Manifest",
+          "displayName": "Delete Custom Resource Provider",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/delete",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of resourceproviders",
+      "name": "resourceproviders/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for Custom Resource Providers",
+          "displayName": "Read resourceproviders log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Audit logs for MiniRP calls",
+                  "name": "AuditLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of resourceproviders",
+      "name": "resourceproviders/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for Custom Resource Providers",
+          "displayName": "Read resourceproviders metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "System",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Http Method",
+                      "name": "HttpMethod"
+                    },
+                    {
+                      "displayName": "Call Path",
+                      "name": "CallPath"
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode"
+                    }
+                  ],
+                  "displayDescription": "Successful requests made by the custom provider",
+                  "displayName": "Successful Requests",
+                  "name": "SuccessfullRequests",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT15M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "dimensions": [
+                    {
+                      "displayName": "Http Method",
+                      "name": "HttpMethod"
+                    },
+                    {
+                      "displayName": "Call Path",
+                      "name": "CallPath"
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "name": "StatusCode"
+                    }
+                  ],
+                  "displayDescription": "Gets the available logs for Custom Resource Providers",
+                  "displayName": "Failed Requests",
+                  "name": "FailedRequests",
+                  "supportedAggregationTypes": [
+                    "Total"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT15M",
+                    "PT1H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of resourceproviders",
+      "name": "resourceproviders/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the available logs for Custom Resource Providers",
+          "displayName": "Read resourceproviders log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Gets the available logs for Custom Resource Providers",
+          "displayName": "Read resourceproviders log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Associations",
+      "name": "associations",
+      "operations": [
+        {
+          "description": "Gets the association resource",
+          "displayName": "Read association",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/associations/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Writes the association resource",
+          "displayName": "Write association",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/associations/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Deletes the association resource",
+          "displayName": "Delete association",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/associations/delete",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Associations",
+      "name": "resourceproviders/associations",
+      "operations": [
+        {
+          "description": "This is used for internal purposes.",
+          "displayName": "Read association",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/associations/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "This is used for internal purposes.",
+          "displayName": "Write association",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/associations/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "This is used for internal purposes.",
+          "displayName": "Delete association",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/associations/delete",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Status.",
+      "name": "resourceproviders/operationstatuses",
+      "operations": [
+        {
+          "description": "Reads the operation status for the resource.",
+          "displayName": "Get the Operation Status.",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/resourceproviders/operationstatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Status.",
+      "name": "locations/operationstatuses",
+      "operations": [
+        {
+          "description": "Reads the operation status for the resource.",
+          "displayName": "Get the Operation Status.",
+          "isDataAction": false,
+          "name": "Microsoft.CustomProviders/locations/operationstatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

@@ -1,0 +1,760 @@
+{
+  "displayName": "Microsoft.NetworkCloud",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.NetworkCloud",
+  "name": "Microsoft.NetworkCloud",
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.NetworkCloud",
+      "displayName": "Register the Microsoft.NetworkCloud",
+      "isDataAction": false,
+      "name": "Microsoft.NetworkCloud/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.NetworkCloud",
+      "displayName": "Unregister the Microsoft.NetworkCloud",
+      "isDataAction": false,
+      "name": "Microsoft.NetworkCloud/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "racks",
+      "name": "racks",
+      "operations": [
+        {
+          "description": "Get a list of racks in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "Racks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of racks in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "Racks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided rack. The API returns 200 OK when the operation is successful.",
+          "displayName": "Racks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new rack or update properties of the existing one. The API returns 200 OK in case of the successful update. 201 Created is returned when the operation is performed asynchronously.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "displayName": "Racks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided rack. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "Racks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of the provided rack, or update the tags associated with the rack. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "Racks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "bareMetalMachines",
+      "name": "bareMetalMachines",
+      "operations": [
+        {
+          "description": "Get a list of bare metal machines in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "BareMetalMachines_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of bare metal machines in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "BareMetalMachines_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided bare metal machine. The API returns 200 OK when the operation is successful.",
+          "displayName": "BareMetalMachines_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new bare metal machine or update the properties of the existing one. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "displayName": "BareMetalMachines_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided bare metal machine. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of the provided bare metal machine, or update tags associated with the bare metal machine. Properties and tag updates can be done independently. The API returns 200 OK when the operation is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cordon the provided bare metal machine's Kubernetes node. The API returns 202 Accepted as the operation is performed.",
+          "displayName": "BareMetalMachines_Cordon",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/cordon/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Power off the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_PowerOff",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/powerOff/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reimage the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_Reimage",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/reimage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restart the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_Restart",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/restart/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run the command or the script on the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously. The URL to storage account with the command execution results and the command exit code can be retrieved from the operation status API once available.",
+          "displayName": "BareMetalMachines_RunCommand",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/runCommand/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run the parameterized tcpdump command against the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously. The URL to storage account with the command execution results and the command exit code can be retrieved from the operation status API once available.",
+          "displayName": "BareMetalMachines_RunTcpdump",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/runTcpdump/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_Start",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/start/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Uncordon the provided bare metal machine's Kubernetes node. The API returns 202 Accepted as the operation is performed.",
+          "displayName": "BareMetalMachines_Uncordon",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/uncordon/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "rackManifests",
+      "name": "rackManifests",
+      "operations": [
+        {
+          "description": "Get a list of rack manifests in the provided subscription. The API returns 200 OK when the API is successful.",
+          "displayName": "RackManifests_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackManifests/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of rack manifests in the provided resource group. The API returns 200 OK when the API is successful.",
+          "displayName": "RackManifests_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackManifests/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided rack manifest. The API returns 200 OK when the operation is successful.",
+          "displayName": "RackManifests_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackManifests/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new rack manifest or update the properties of the existing rack manifest. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "RackManifests_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackManifests/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided rack manifest. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "RackManifests_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackManifests/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch the properties of the provided rack manifest, or update the tags assigned to the rack manifest. Properties and tag updates can be done independently. The API returns 200 OK when the API is successful.",
+          "displayName": "RackManifests_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackManifests/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workloadNetworks",
+      "name": "workloadNetworks",
+      "operations": [
+        {
+          "description": "Get a list of workload networks in the provided subscription.  The API returns 200 OK when the API is successful.",
+          "displayName": "WorkloadNetworks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/workloadNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of workload networks in the provided resource group.  The API returns 200 OK when the API is successful.",
+          "displayName": "WorkloadNetworks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/workloadNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided workload network. The API returns 200 OK when the API operation is successful.",
+          "displayName": "WorkloadNetworks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/workloadNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new workload network or update the properties of the existing workload network. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "WorkloadNetworks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/workloadNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided workload network. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "WorkloadNetworks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/workloadNetworks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the provided workload network. The API returns 200 OK when the API is successful.",
+          "displayName": "WorkloadNetworks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/workloadNetworks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "clusterManagers",
+      "name": "clusterManagers",
+      "operations": [
+        {
+          "description": "Get a list of cluster managers in the provided subscription.",
+          "displayName": "ClusterManagers_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of cluster managers in the provided resource group.",
+          "displayName": "ClusterManagers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the properties of the provided cluster manager.",
+          "displayName": "ClusterManagers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new cluster manager or update properties of the cluster manager if it exists. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "ClusterManagers_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided cluster manager.The API returns 200 OK when the cluster manager is deleted successfully. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "ClusterManagers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of the provided cluster manager, or update the tags assigned to the cluster manager. Properties and tag updates can be done independently. The API returns 200 OK when the operation is successful.",
+          "displayName": "ClusterManagers_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "clusters",
+      "name": "clusters",
+      "operations": [
+        {
+          "description": "Get a list of clusters in the provided subscription.",
+          "displayName": "Clusters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of clusters in the provided resource group.",
+          "displayName": "Clusters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided cluster.",
+          "displayName": "Clusters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new cluster or update the properties of the cluster if it exists. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "Clusters_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "Clusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch the properties of the provided cluster, or update the tags associated with the cluster. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "Clusters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deploy the cluster to the provided rack. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "Clusters_Deploy",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/deploy/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the version of the provided cluster to one of the available supported versions. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "Clusters_UpdateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/updateVersion/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "virtualMachines",
+      "name": "virtualMachines",
+      "operations": [
+        {
+          "description": "Get a list of virtual machines in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "VirtualMachines_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of virtual machines in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "VirtualMachines_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided virtual machine. The API returns 200 OK when the operation is successful.",
+          "displayName": "VirtualMachines_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new virtual machine or update the properties of the existing virtual machine. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "VirtualMachines_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided virtual machine. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "VirtualMachines_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the virtual machine. The API returns 200 OK when the operation is successful.",
+          "displayName": "VirtualMachines_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Power off the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "VirtualMachines_PowerOff",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/powerOff/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reimage the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "VirtualMachines_Reimage",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/reimage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restart the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "VirtualMachines_Restart",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/restart/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "VirtualMachines_Start",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/start/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "hybridAksManagementDomains",
+      "name": "hybridAksManagementDomains",
+      "operations": [
+        {
+          "description": "Get a list of Hybrid AKS management domains in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksManagementDomains_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksManagementDomains/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of Hybrid AKS management domains in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksManagementDomains_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksManagementDomains/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided Hybrid AKS management domain. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksManagementDomains_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksManagementDomains/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new Hybrid AKS management domain or update properties of the existing Hybrid AKS management domain. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "HybridAksManagementDomains_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksManagementDomains/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided Hybrid AKS management domain. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "HybridAksManagementDomains_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksManagementDomains/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the provided Hybrid AKS management domain. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksManagementDomains_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksManagementDomains/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "rackSkus",
+      "name": "rackSkus",
+      "operations": [
+        {
+          "description": "Get a list of rack SKUs in the provided subscription. The API returns 200 OK when the API is successful.",
+          "displayName": "RackSkus_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackSkus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the properties of the provided rack SKU. The API returns 200 OK when the operation is successful.",
+          "displayName": "RackSkus_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/rackSkus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "hybridAksVirtualMachines",
+      "name": "hybridAksVirtualMachines",
+      "operations": [
+        {
+          "description": "Get a list of Hybrid AKS virtual machines in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksVirtualMachines_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of Hybrid AKS virtual machines in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksVirtualMachines_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided Hybrid AKS virtual machine. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksVirtualMachines_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new Hybrid AKS virtual machine or update the existing one. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "displayName": "HybridAksVirtualMachines_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided Hybrid AKS virtual machine. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "HybridAksVirtualMachines_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the Hybrid AKS virtual machine. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksVirtualMachines_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Power off the provided Hybrid AKS virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "HybridAksVirtualMachines_PowerOff",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/powerOff/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restart the provided Hybrid AKS virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "HybridAksVirtualMachines_Restart",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/restart/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start the provided Hybrid AKS virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "HybridAksVirtualMachines_Start",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksVirtualMachines/start/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "hybridAksClusters",
+      "name": "hybridAksClusters",
+      "operations": [
+        {
+          "description": "Get a list of additional details related to Hybrid AKS provisioned clusters in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksClusters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of additional details for Hybrid AKS provisioned clusters in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksClusters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the additional details related to the provided Hybrid AKS provisioned cluster. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksClusters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create new additional details related to the Hybrid AKS provisioned cluster or update the existing one. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "displayName": "HybridAksClusters_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the additional details related to the provided Hybrid AKS provisioned cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "HybridAksClusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksClusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the additional details related to the Hybrid AKS provisioned cluster. The API returns 200 OK when the operation is successful.",
+          "displayName": "HybridAksClusters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/hybridAksClusters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}

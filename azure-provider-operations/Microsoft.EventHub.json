@@ -1,0 +1,2217 @@
+{
+  "displayName": "Microsoft Azure EventHub",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.EventHub",
+  "name": "Microsoft.EventHub",
+  "operations": [
+    {
+      "description": "Checks availability of namespace under given subscription. This API is deprecated please use CheckNameAvailabiltiy instead.",
+      "displayName": "Get namespace availability.",
+      "isDataAction": false,
+      "name": "Microsoft.EventHub/checkNamespaceAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Checks availability of namespace under given subscription.",
+      "displayName": "Get namespace availability.",
+      "isDataAction": false,
+      "name": "Microsoft.EventHub/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the subscription for the EventHub resource provider and enables the creation of EventHub resources",
+      "displayName": "Registers the EventHub Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.EventHub/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Registers the EventHub Resource Provider",
+      "displayName": "Registers the EventHub Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.EventHub/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Namespace",
+      "name": "namespaces",
+      "operations": [
+        {
+          "description": "Create a Namespace Resource and Update its properties. Tags and Capacity of the Namespace are the properties which can be updated.",
+          "displayName": "Create Or Update Namespace ",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the list of Namespace Resource Description",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Resource",
+          "displayName": "Delete Namespace",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates Namespace Authorization Rule. This API is depricated. Please use a PUT call to update the Namespace Authorization Rule instead.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Updates Namespace Authorization Rule (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove ACS namespace",
+          "displayName": "Remove ACS namespace",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/removeAcsNamepsace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action to Join the Network Security Perimeter. This action is used to perform linked access by NSP RP.",
+          "displayName": "Action to Join the Network Security Perimeter",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/joinPerimeter/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/operationresults",
+      "operations": [
+        {
+          "description": "Get the status of Namespace operation",
+          "displayName": "Get Namespace Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationRules",
+      "name": "namespaces/authorizationRules",
+      "operations": [
+        {
+          "description": "Get the list of Namespaces Authorization Rules description.",
+          "displayName": "Get Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Namespace level Authorization Rules and update its properties. The Authorization Rules Access Rights, the Primary and Secondary Keys can be updated.",
+          "displayName": "Create or Update Namespace Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Namespace Authorization Rule. The Default Namespace Authorization Rule cannot be deleted. ",
+          "displayName": "Delete Namespace Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to the Namespace",
+          "displayName": "Get Namespace Listkeys",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace",
+      "name": "namespaces/messagingPlan",
+      "operations": [
+        {
+          "description": "Gets the Messaging Plan for a namespace. This API is deprecated. Properties exposed via the MessagingPlan resource are moved to the (parent) Namespace resource in later API versions.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Get Messaging Plan (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/messagingPlan/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Messaging Plan for a namespace. This API is deprecated. Properties exposed via the MessagingPlan resource are moved to the (parent) Namespace resource in later API versions.. This operation is not supported on API version 2017-04-01.",
+          "displayName": "Create or Update Messaging Plan (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/messagingPlan/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventHub",
+      "name": "namespaces/eventhubs",
+      "operations": [
+        {
+          "description": "Create or Update EventHub properties.",
+          "displayName": "Create or Update EventHub",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of EventHub Resource Descriptions",
+          "displayName": "Get EventHub",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete EventHub Resource",
+          "displayName": "Delete EventHub",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to update EventHub. This operation is not supported on API version 2017-04-01. Authorization Rules. Please use a PUT call to update Authorization Rule.",
+          "displayName": "Update EventHub Authorization Rules (Deprecated)",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventHub AuthorizationRules",
+      "name": "namespaces/eventhubs/authorizationRules",
+      "operations": [
+        {
+          "description": " Get the list of EventHub Authorization Rules",
+          "displayName": " Get EventHub Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create EventHub Authorization Rules and Update its properties. The Authorization Rules Access Rights can be updated.",
+          "displayName": "Create or Update EventHub Authorization Rule",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete EventHub Authorization Rules",
+          "displayName": "Delete EventHub Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Connection String to EventHub",
+          "displayName": "List EventHub keys",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate the Primary or Secondary key to the Resource",
+          "displayName": "Resource Regeneratekeys",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/regenerateKeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ConsumerGroup",
+      "name": "namespaces/eventHubs/consumergroups",
+      "operations": [
+        {
+          "description": "Create or Update ConsumerGroup properties.",
+          "displayName": "Create or Update ConsumerGroup",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventHubs/consumergroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of ConsumerGroup Resource Descriptions",
+          "displayName": "Get ConsumerGroup",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventHubs/consumergroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete ConsumerGroup Resource",
+          "displayName": "Delete ConsumerGroup",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/eventHubs/consumergroups/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sku",
+      "name": "sku",
+      "operations": [
+        {
+          "description": "Get list of Sku Resource Descriptions",
+          "displayName": "Get Sku",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/sku/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SkuRegions",
+      "name": "sku/regions",
+      "operations": [
+        {
+          "description": "Get list of SkuRegions Resource Descriptions",
+          "displayName": "Get SkuRegions",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/sku/regions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Get Operations",
+          "displayName": "Get Operations",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EventHub Resource Provider",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Deletes the VNet rules in EventHub Resource Provider for the specified VNet",
+          "displayName": "Deletes the VNet rules in EventHub Resource Provider for the specified VNet",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/locations/deleteVirtualNetworkOrSubnets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SchemaGroup",
+      "name": "namespaces/schemagroups",
+      "operations": [
+        {
+          "description": "Create or Update SchemaGroup properties.",
+          "displayName": "Create or Update SchemaGroup",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/schemagroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of SchemaGroup Resource Descriptions",
+          "displayName": "Get SchemaGroup",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/schemagroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Operation to delete SchemaGroup Resource",
+          "displayName": "Delete SchemaGroup",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/schemagroups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace metrics",
+      "name": "namespaces/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace metrics Resource Descriptions",
+          "displayName": "Get Namespace metrics",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Successful Requests for Microsoft.EventHub.",
+                  "displayName": "Successful Requests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "SuccessfulRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Server Errors for Microsoft.EventHub.",
+                  "displayName": "Server Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "ServerErrors",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "User Errors for Microsoft.EventHub.",
+                  "displayName": "User Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "UserErrors",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "QuotaExceeded"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Quota Exceeded Errors for Microsoft.EventHub.",
+                  "displayName": "Quota Exceeded Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "QuotaExceededErrors",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ServerBusy"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Throttled Requests for Microsoft.EventHub.",
+                  "displayName": "Throttled Requests.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "ThrottledRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incoming Requests for Microsoft.EventHub.",
+                  "displayName": "Incoming Requests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "IncomingRequests",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incoming Messages for Microsoft.EventHub.",
+                  "displayName": "Incoming Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingMessages",
+                  "isDimensionRequired": false,
+                  "name": "IncomingMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Outgoing Messages for Microsoft.EventHub.",
+                  "displayName": "Outgoing Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "OutgoingMessages",
+                  "isDimensionRequired": false,
+                  "name": "OutgoingMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Incoming Bytes for Microsoft.EventHub.",
+                  "displayName": "Incoming Bytes.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingBytes",
+                  "isDimensionRequired": false,
+                  "name": "IncomingBytes",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Outgoing Bytes for Microsoft.EventHub.",
+                  "displayName": "Outgoing Bytes.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "OutgoingBytes",
+                  "isDimensionRequired": false,
+                  "name": "OutgoingBytes",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total Active Connections for Microsoft.EventHub.",
+                  "displayName": "ActiveConnections",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "NamespaceActiveConnections",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ActiveConnections",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Connections Opened for Microsoft.EventHub.",
+                  "displayName": "Connections Opened.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ConnectionOpen",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ConnectionsOpened",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Connections Closed for Microsoft.EventHub.",
+                  "displayName": "Connections Closed.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ConnectionClose",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ConnectionsClosed",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Capture Backlog for Microsoft.EventHub.",
+                  "displayName": "Capture Backlog.",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "ArchiveBacklog",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "CaptureBacklog",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Captured Messages for Microsoft.EventHub.",
+                  "displayName": "Captured Messages.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ArchivedMessages",
+                  "isDimensionRequired": false,
+                  "name": "CapturedMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Captured Bytes for Microsoft.EventHub.",
+                  "displayName": "Captured Bytes.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ArchivedBytes",
+                  "isDimensionRequired": false,
+                  "name": "CapturedBytes",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Size of an EventHub in Bytes.",
+                  "displayName": "Size",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntitySize",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "Size",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total incoming send requests for a namespace (Deprecated)",
+                  "displayName": "Incoming Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "INREQS",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total successful requests for a namespace (Deprecated)",
+                  "displayName": "Successful Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "SUCCREQ",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total failed requests for a namespace (Deprecated)",
+                  "displayName": "Failed Requests (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "FAILREQ",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total server busy errors for a namespace (Deprecated)",
+                  "displayName": "Server Busy Errors (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "SVRBSY",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total internal server errors for a namespace (Deprecated)",
+                  "displayName": "Internal Server Errors (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "INTERR",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total failed requests for a namespace (Deprecated)",
+                  "displayName": "Other Errors (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "MISCERR",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total incoming messages for a namespace. This metric is deprecated. Please use Incoming Messages metric instead (Deprecated)",
+                  "displayName": "Incoming Messages (obsolete) (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "INMSGS",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total incoming messages for a namespace (Deprecated)",
+                  "displayName": "Incoming Messages (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHINMSGS",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total outgoing messages for a namespace. This metric is deprecated. Please use Outgoing Messages metric instead (Deprecated)",
+                  "displayName": "Outgoing Messages (obsolete) (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "OUTMSGS",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total outgoing messages for a namespace (Deprecated)",
+                  "displayName": "Outgoing Messages (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHOUTMSGS",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub incoming message throughput for a namespace. This metric is deprecated. Please use Incoming bytes metric instead (Deprecated)",
+                  "displayName": "Incoming bytes (obsolete) (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHINMBS",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub incoming message throughput for a namespace (Deprecated)",
+                  "displayName": "Incoming bytes (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHINBYTES",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub outgoing message throughput for a namespace. This metric is deprecated. Please use Outgoing bytes metric instead (Deprecated)",
+                  "displayName": "Outgoing bytes (obsolete) (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHOUTMBS",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub outgoing message throughput for a namespace (Deprecated)",
+                  "displayName": "Outgoing bytes (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHOUTBYTES",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub archive messages in backlog for a namespace (Deprecated)",
+                  "displayName": "Archive backlog messages (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHABL",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub archived messages in a namespace (Deprecated)",
+                  "displayName": "Archive messages (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHAMSGS",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Event Hub archived message throughput in a namespace (Deprecated)",
+                  "displayName": "Archive message throughput (Deprecated)",
+                  "fillGapWithZero": true,
+                  "name": "EHAMBS",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Primary"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Replica"
+                    }
+                  ],
+                  "displayDescription": "CPU usage metric for Premium SKU namespaces.",
+                  "displayName": "CPU",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "NamespaceCpuUsage",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "metricFilterPattern": "(?i)^premium$",
+                  "name": "NamespaceCpuUsage",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Primary"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Replica"
+                    }
+                  ],
+                  "displayDescription": "Memory usage metric for Premium SKU namespaces.",
+                  "displayName": "Memory Usage",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "NamespaceWorkingSet64",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "metricFilterPattern": "(?i)^premium$",
+                  "name": "NamespaceMemoryUsage",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Cluster metrics",
+      "name": "clusters/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Cluster metrics Resource Descriptions",
+          "displayName": "Get Cluster metrics",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/clusters/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Successful Requests for Microsoft.EventHub.",
+                  "displayName": "Successful Requests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "SuccessfulRequests",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Server Errors for Microsoft.EventHub.",
+                  "displayName": "Server Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "ServerErrors",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "User Errors for Microsoft.EventHub.",
+                  "displayName": "User Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "UserErrors",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "QuotaExceeded"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Quota Exceeded Errors for Microsoft.EventHub.",
+                  "displayName": "Quota Exceeded Errors.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "QuotaExceededErrors",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ServerBusy"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Throttled Requests for Microsoft.EventHub.",
+                  "displayName": "Throttled Requests.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "ThrottledRequests",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Incoming Requests for Microsoft.EventHub.",
+                  "displayName": "Incoming Requests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingRequests",
+                  "isDimensionRequired": false,
+                  "name": "IncomingRequests",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Incoming Messages for Microsoft.EventHub.",
+                  "displayName": "Incoming Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingMessages",
+                  "isDimensionRequired": false,
+                  "name": "IncomingMessages",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Outgoing Messages for Microsoft.EventHub.",
+                  "displayName": "Outgoing Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "OutgoingMessages",
+                  "isDimensionRequired": false,
+                  "name": "OutgoingMessages",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Incoming Bytes for Microsoft.EventHub.",
+                  "displayName": "Incoming Bytes.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "IncomingBytes",
+                  "isDimensionRequired": false,
+                  "name": "IncomingBytes",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Outgoing Bytes for Microsoft.EventHub.",
+                  "displayName": "Outgoing Bytes.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "OutgoingBytes",
+                  "isDimensionRequired": false,
+                  "name": "OutgoingBytes",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total Active Connections for Microsoft.EventHub.",
+                  "displayName": "ActiveConnections",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "NamespaceActiveConnections",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ActiveConnections",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Connections Opened for Microsoft.EventHub.",
+                  "displayName": "Connections Opened.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ConnectionOpen",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ConnectionsOpened",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Connections Closed for Microsoft.EventHub.",
+                  "displayName": "Connections Closed.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ConnectionClose",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ConnectionsClosed",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Capture Backlog for Microsoft.EventHub.",
+                  "displayName": "Capture Backlog.",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "ArchiveBacklog",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "CaptureBacklog",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Captured Messages for Microsoft.EventHub.",
+                  "displayName": "Captured Messages.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ArchivedMessages",
+                  "isDimensionRequired": false,
+                  "name": "CapturedMessages",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Captured Bytes for Microsoft.EventHub.",
+                  "displayName": "Captured Bytes.",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ArchivedBytes",
+                  "isDimensionRequired": false,
+                  "name": "CapturedBytes",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Role",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "CPU utilization for the Event Hub Cluster as a percentage",
+                  "displayName": "CPU",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "Processor\\% Processor Time",
+                  "name": "CPU",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "PerformanceCountersV2",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Role",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Available memory for the Event Hub Cluster as a percentage of total memory.",
+                  "displayName": "Available Memory",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "NodeMemoryUtilization",
+                  "name": "AvailableMemory",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Role",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Size of an EventHub in Bytes.",
+                  "displayName": "Size",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EntitySize",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "Size",
+                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Bytes"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace diagnostic settings",
+      "name": "namespaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Get list of Namespace diagnostic settings Resource Descriptions",
+          "displayName": "Get Namespace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get list of Namespace diagnostic settings Resource Descriptions",
+          "displayName": "Create or Update Namespace diagnostic settings",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Namespace logs",
+      "name": "namespaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Namespace logs Resource Descriptions",
+          "displayName": "Get Namespace logs",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Archive Logs",
+                  "name": "ArchiveLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Operational Logs",
+                  "name": "OperationalLogs"
+                },
+                {
+                  "blobDuration": "PT10M",
+                  "displayName": "Auto Scale Logs",
+                  "name": "AutoScaleLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Kafka Coordinator Logs",
+                  "name": "KafkaCoordinatorLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Kafka User Error Logs",
+                  "name": "KafkaUserErrorLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "VNet/IP Filtering Connection Logs",
+                  "name": "EventHubVNetConnectionEvent"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Customer Managed Key Logs",
+                  "name": "CustomerManagedKeyUserLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Runtime Audit Logs",
+                  "name": "RuntimeAuditLogs"
+                },
+                {
+                  "blobDuration": "PT5M",
+                  "displayName": "Application Metrics Logs",
+                  "name": "ApplicationMetricsLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "DisasterRecoveryConfigurations",
+      "name": "namespaces/disasterrecoveryconfigs",
+      "operations": [
+        {
+          "description": "Checks availability of namespace alias under given subscription.",
+          "displayName": "Get alias availability.",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterrecoveryconfigs/checkNameAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the Disaster Recovery configuration associated with the namespace.",
+          "displayName": "Create or Update Disaster Recovery configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Disaster Recovery configuration associated with the namespace.",
+          "displayName": "Get Disaster Recovery configuration",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Disaster Recovery configuration associated with the namespace. This operation can only be invoked via the primary namespace.",
+          "displayName": "Delete Disaster Recovery configuration",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disables Disaster Recovery and stops replicating changes from primary to secondary namespaces.",
+          "displayName": "Break Pairing",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/breakPairing/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Invokes a GEO DR failover and reconfigures the namespace alias to point to the secondary namespace.",
+          "displayName": "Failover",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/failover/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AuthorizationRules",
+      "name": "namespaces/disasterRecoveryConfigs/authorizationRules",
+      "operations": [
+        {
+          "description": "Get Disaster Recovery Primary Namespace's Authorization Rules",
+          "displayName": "Get Disaster Recovery Primary Namespace's Authorization Rules",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/authorizationRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the authorization rules keys for the Disaster Recovery primary namespace",
+          "displayName": "Gets the authorization rules keys for the Disaster Recovery primary namespace",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/authorizationRules/listkeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Messages",
+      "name": "namespaces/messages",
+      "operations": [
+        {
+          "description": "Send messages",
+          "displayName": "Send messages",
+          "isDataAction": true,
+          "name": "Microsoft.EventHub/namespaces/messages/send/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Receive messages",
+          "displayName": "Receive messages",
+          "isDataAction": true,
+          "name": "Microsoft.EventHub/namespaces/messages/receive/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schemas",
+      "name": "namespaces/schemas",
+      "operations": [
+        {
+          "description": "Retrieve schemas",
+          "displayName": "Retrieve schemas",
+          "isDataAction": true,
+          "name": "Microsoft.EventHub/namespaces/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write schemas",
+          "displayName": "Write schemas",
+          "isDataAction": true,
+          "name": "Microsoft.EventHub/namespaces/schemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete schemas",
+          "displayName": "Delete schemas",
+          "isDataAction": true,
+          "name": "Microsoft.EventHub/namespaces/schemas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "IPFilter",
+      "name": "namespaces/ipFilterRules",
+      "operations": [
+        {
+          "description": "Get IP Filter Resource",
+          "displayName": "Get IP Filter Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/ipFilterRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create IP Filter Resource",
+          "displayName": "Create IP Filter Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/ipFilterRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete IP Filter Resource",
+          "displayName": "Delete IP Filter Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/ipFilterRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Network Rule",
+      "name": "namespaces/virtualNetworkRules",
+      "operations": [
+        {
+          "description": "Gets VNET Rule Resource",
+          "displayName": "Gets VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/virtualNetworkRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/virtualNetworkRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/virtualNetworkRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Rule Set",
+      "name": "namespaces/networkrulesets",
+      "operations": [
+        {
+          "description": "Gets NetworkRuleSet Resource",
+          "displayName": "Gets NetworkRuleSet Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkrulesets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkrulesets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkrulesets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Rule Set",
+      "name": "namespaces/networkruleset",
+      "operations": [
+        {
+          "description": "Gets NetworkRuleSet Resource",
+          "displayName": "Gets NetworkRuleSet Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkruleset/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create VNET Rule Resource",
+          "displayName": "Create VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkruleset/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete VNET Rule Resource",
+          "displayName": "Delete VNET Rule Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkruleset/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cluster",
+      "name": "clusters",
+      "operations": [
+        {
+          "description": "Gets the Cluster Resource Description",
+          "displayName": "Get Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or modifies an existing Cluster resource.",
+          "displayName": "Write on Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/clusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing Cluster resource.",
+          "displayName": "Delete Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/clusters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "availableClusterRegions",
+      "operations": [
+        {
+          "description": "Read operation to list available pre-provisioned clusters by Azure region.",
+          "displayName": "List available clusters read operation",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/availableClusterRegions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "clusters/namespaces",
+      "operations": [
+        {
+          "description": "List namespace ARM IDs for namespaces within a cluster.",
+          "displayName": "List namespaces within a cluster read operation",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/clusters/namespaces/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "clusters/operationresults",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous cluster operation.",
+          "displayName": "Get Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/clusters/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection Proxy",
+      "name": "namespaces/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Validate Private Endpoint Connection Proxy",
+          "displayName": "Validate Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Private Endpoint Connection Proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Private Endpoint Connection Proxy",
+          "displayName": "Create Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Private Endpoint Connection Proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "namespaces/privateEndpointConnectionProxies/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionProxies/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Endpoint Connection",
+      "name": "namespaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Get Private Endpoint Connection",
+          "displayName": "Get Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Private Endpoint Connection",
+          "displayName": "Create or Update Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes Private Endpoint Connection",
+          "displayName": "Removes Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PrivateLinks",
+      "name": "namespaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets the resource types that support private endpoint connections",
+          "displayName": "Gets the resource types that support private endpoint connections",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Non Resource Operation",
+      "name": "namespaces/privateEndpointConnections/operationstatus",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous private endpoint operation",
+          "displayName": "Private endpoint operation status",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/privateEndpointConnections/operationstatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Association Proxies",
+      "name": "namespaces/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "Create NetworkSecurityPerimeterAssociationProxies",
+          "displayName": "Create NetworkSecurityPerimeterAssociationProxies",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get NetworkSecurityPerimeterAssociationProxies",
+          "displayName": "Get NetworkSecurityPerimeterAssociationProxies",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete NetworkSecurityPerimeterAssociationProxies",
+          "displayName": "Delete NetworkSecurityPerimeterAssociationProxies",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reconcile NetworkSecurityPerimeterAssociationProxies",
+          "displayName": "Reconcile NetworkSecurityPerimeterAssociationProxies",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/reconcile/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Configurations",
+      "name": "namespaces/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "Get Network Security Perimeter Configurations",
+          "displayName": "Get Network Security Perimeter Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reconcile Network Security Perimeter Configurations",
+          "displayName": "Reconcile Network Security Perimeter Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterConfigurations/reconcile/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}
