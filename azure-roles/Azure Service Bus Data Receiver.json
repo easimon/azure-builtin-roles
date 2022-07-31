@@ -1,0 +1,25 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for receive access to Azure Service Bus resources.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/4f6d3b9b-027b-4f4c-9142-0e5a2a2247e0",
+  "name": "4f6d3b9b-027b-4f4c-9142-0e5a2a2247e0",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ServiceBus/*/queues/read",
+        "Microsoft.ServiceBus/*/topics/read",
+        "Microsoft.ServiceBus/*/topics/subscriptions/read"
+      ],
+      "dataActions": [
+        "Microsoft.ServiceBus/*/receive/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Service Bus Data Receiver",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

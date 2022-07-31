@@ -1,0 +1,26 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Has access to Read and Test functions under LUIS.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/18e81cdc-4e98-4e29-a639-e7d10c5a6226",
+  "name": "18e81cdc-4e98-4e29-a639-e7d10c5a6226",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LUIS/*/read",
+        "Microsoft.CognitiveServices/accounts/LUIS/apps/testdatasets/write"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Cognitive Services LUIS Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

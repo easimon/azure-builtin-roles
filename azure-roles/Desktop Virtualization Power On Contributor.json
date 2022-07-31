@@ -1,0 +1,27 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "This role is in preview and subject to change. Provide permission to the Azure Virtual Desktop Resource Provider to start virtual machines.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/489581de-a3bd-480d-9518-53dea7416b33",
+  "name": "489581de-a3bd-480d-9518-53dea7416b33",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/virtualMachines/start/action",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/instanceView/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Desktop Virtualization Power On Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

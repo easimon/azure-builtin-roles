@@ -1,0 +1,25 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for send access to Azure Service Bus resources.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/69a216fc-b8fb-44d8-bc22-1f3c2cd27a39",
+  "name": "69a216fc-b8fb-44d8-bc22-1f3c2cd27a39",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ServiceBus/*/queues/read",
+        "Microsoft.ServiceBus/*/topics/read",
+        "Microsoft.ServiceBus/*/topics/subscriptions/read"
+      ],
+      "dataActions": [
+        "Microsoft.ServiceBus/*/send/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Service Bus Data Sender",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

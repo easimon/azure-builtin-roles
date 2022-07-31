@@ -1,0 +1,58 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows read/write access to most objects in a namespace.This role does not allow viewing or modifying roles or role bindings. However, this role allows accessing Secrets and running Pods as any ServiceAccount in the namespace, so it can be used to gain the API access levels of any ServiceAccount in the namespace. Applying this role at cluster scope will give access across all namespaces.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/a7ffa36f-339b-4b5c-8bdf-e2c188b2c0eb",
+  "name": "a7ffa36f-339b-4b5c-8bdf-e2c188b2c0eb",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "dataActions": [
+        "Microsoft.ContainerService/managedClusters/apps/controllerrevisions/read",
+        "Microsoft.ContainerService/managedClusters/apps/daemonsets/*",
+        "Microsoft.ContainerService/managedClusters/apps/deployments/*",
+        "Microsoft.ContainerService/managedClusters/apps/replicasets/*",
+        "Microsoft.ContainerService/managedClusters/apps/statefulsets/*",
+        "Microsoft.ContainerService/managedClusters/autoscaling/horizontalpodautoscalers/*",
+        "Microsoft.ContainerService/managedClusters/batch/cronjobs/*",
+        "Microsoft.ContainerService/managedClusters/batch/jobs/*",
+        "Microsoft.ContainerService/managedClusters/configmaps/*",
+        "Microsoft.ContainerService/managedClusters/endpoints/*",
+        "Microsoft.ContainerService/managedClusters/events.k8s.io/events/read",
+        "Microsoft.ContainerService/managedClusters/events/read",
+        "Microsoft.ContainerService/managedClusters/extensions/daemonsets/*",
+        "Microsoft.ContainerService/managedClusters/extensions/deployments/*",
+        "Microsoft.ContainerService/managedClusters/extensions/ingresses/*",
+        "Microsoft.ContainerService/managedClusters/extensions/networkpolicies/*",
+        "Microsoft.ContainerService/managedClusters/extensions/replicasets/*",
+        "Microsoft.ContainerService/managedClusters/limitranges/read",
+        "Microsoft.ContainerService/managedClusters/namespaces/read",
+        "Microsoft.ContainerService/managedClusters/networking.k8s.io/ingresses/*",
+        "Microsoft.ContainerService/managedClusters/networking.k8s.io/networkpolicies/*",
+        "Microsoft.ContainerService/managedClusters/persistentvolumeclaims/*",
+        "Microsoft.ContainerService/managedClusters/pods/*",
+        "Microsoft.ContainerService/managedClusters/policy/poddisruptionbudgets/*",
+        "Microsoft.ContainerService/managedClusters/replicationcontrollers/*",
+        "Microsoft.ContainerService/managedClusters/replicationcontrollers/*",
+        "Microsoft.ContainerService/managedClusters/resourcequotas/read",
+        "Microsoft.ContainerService/managedClusters/secrets/*",
+        "Microsoft.ContainerService/managedClusters/serviceaccounts/*",
+        "Microsoft.ContainerService/managedClusters/services/*"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Kubernetes Service RBAC Writer",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

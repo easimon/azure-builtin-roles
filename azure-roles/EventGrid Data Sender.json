@@ -1,0 +1,27 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows send access to event grid events.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/d5a91429-5739-47e2-a06b-3470a27159e7",
+  "name": "d5a91429-5739-47e2-a06b-3470a27159e7",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.EventGrid/topics/read",
+        "Microsoft.EventGrid/domains/read",
+        "Microsoft.EventGrid/partnerNamespaces/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "dataActions": [
+        "Microsoft.EventGrid/events/send/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "EventGrid Data Sender",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

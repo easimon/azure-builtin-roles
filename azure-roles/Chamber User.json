@@ -1,0 +1,27 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you view everything under your HPC Workbench chamber, but not make any changes.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/4447db05-44ed-4da3-ae60-6cbece780e32",
+  "name": "4447db05-44ed-4da3-ae60-6cbece780e32",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HpcWorkbench/instances/chambers/*/read",
+        "Microsoft.HpcWorkbench/instances/chambers/workloads/*",
+        "Microsoft.HpcWorkbench/instances/chambers/getUploadUri/action",
+        "Microsoft.HpcWorkbench/instances/consortiums/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Chamber User",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

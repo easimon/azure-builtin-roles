@@ -1,0 +1,24 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Provides permission to backup vault to perform disk restore.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/b50d9833-a0cb-478e-945f-707fcc997c13",
+  "name": "b50d9833-a0cb-478e-945f-707fcc997c13",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Compute/disks/read"
+      ],
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Disk Restore Operator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

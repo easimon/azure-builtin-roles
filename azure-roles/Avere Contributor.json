@@ -1,0 +1,44 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Can create and manage an Avere vFXT cluster.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/4f8fab4f-1852-4a58-a46a-8eaf358af14a",
+  "name": "4f8fab4f-1852-4a58-a46a-8eaf358af14a",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Compute/*/read",
+        "Microsoft.Compute/availabilitySets/*",
+        "Microsoft.Compute/proximityPlacementGroups/*",
+        "Microsoft.Compute/virtualMachines/*",
+        "Microsoft.Compute/disks/*",
+        "Microsoft.Network/*/read",
+        "Microsoft.Network/networkInterfaces/*",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Storage/*/read",
+        "Microsoft.Storage/storageAccounts/*",
+        "Microsoft.Support/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/resources/read"
+      ],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Avere Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

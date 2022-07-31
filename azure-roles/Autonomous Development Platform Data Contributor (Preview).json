@@ -1,0 +1,37 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants permissions to upload and manage new Autonomous Development Platform measurements.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/b8b15564-4fa6-4a59-ab12-03e1d9594795",
+  "name": "b8b15564-4fa6-4a59-ab12-03e1d9594795",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AutonomousDevelopmentPlatform/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "dataActions": [
+        "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/discoveries/*",
+        "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/uploads/*",
+        "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/states/new/*",
+        "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurementCollections/*",
+        "Microsoft.AutonomousDevelopmentPlatform/accounts/measurementCollections/*",
+        "Microsoft.AutonomousDevelopmentPlatform/workspaces/read",
+        "Microsoft.AutonomousDevelopmentPlatform/workspaces/discoveries/*",
+        "Microsoft.AutonomousDevelopmentPlatform/workspaces/uploads/*",
+        "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/states/new/*",
+        "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurementCollections/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/states/new/changeState/action",
+        "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/states/new/changeState/action"
+      ]
+    }
+  ],
+  "roleName": "Autonomous Development Platform Data Contributor (Preview)",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

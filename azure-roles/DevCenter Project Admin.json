@@ -1,0 +1,53 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Provides access to manage project resources.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/331c37c6-af14-46d9-b9f4-e1909e1b95a0",
+  "name": "331c37c6-af14-46d9-b9f4-e1909e1b95a0",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DevCenter/projects/*",
+        "Microsoft.Fidalgo/projects/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "dataActions": [
+        "Microsoft.DevCenter/projects/users/devboxes/adminStart/action",
+        "Microsoft.DevCenter/projects/users/devboxes/adminStop/action",
+        "Microsoft.DevCenter/projects/users/devboxes/adminRead/action",
+        "Microsoft.DevCenter/projects/users/devboxes/adminWrite/action",
+        "Microsoft.DevCenter/projects/users/devboxes/adminDelete/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userStop/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userStart/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userGetRemoteConnection/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userRead/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userWrite/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userDelete/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/adminStart/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/adminStop/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/adminRead/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/adminWrite/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/adminDelete/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userStop/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userStart/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userGetRdpFileContent/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userRead/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userWrite/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userDelete/action"
+      ],
+      "notActions": [
+        "Microsoft.DevCenter/projects/write",
+        "Microsoft.DevCenter/projects/delete",
+        "Microsoft.Fidalgo/projects/write",
+        "Microsoft.Fidalgo/projects/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "DevCenter Project Admin",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

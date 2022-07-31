@@ -1,0 +1,43 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Lets you submit, monitor, and manage your own jobs but not create or delete Data Lake Analytics accounts.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/47b7735b-770e-4598-a7da-8b91488b4c88",
+  "name": "47b7735b-770e-4598-a7da-8b91488b4c88",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.BigAnalytics/accounts/*",
+        "Microsoft.DataLakeAnalytics/accounts/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "dataActions": [],
+      "notActions": [
+        "Microsoft.BigAnalytics/accounts/Delete",
+        "Microsoft.BigAnalytics/accounts/TakeOwnership/action",
+        "Microsoft.BigAnalytics/accounts/Write",
+        "Microsoft.DataLakeAnalytics/accounts/Delete",
+        "Microsoft.DataLakeAnalytics/accounts/TakeOwnership/action",
+        "Microsoft.DataLakeAnalytics/accounts/Write",
+        "Microsoft.DataLakeAnalytics/accounts/dataLakeStoreAccounts/Write",
+        "Microsoft.DataLakeAnalytics/accounts/dataLakeStoreAccounts/Delete",
+        "Microsoft.DataLakeAnalytics/accounts/storageAccounts/Write",
+        "Microsoft.DataLakeAnalytics/accounts/storageAccounts/Delete",
+        "Microsoft.DataLakeAnalytics/accounts/firewallRules/Write",
+        "Microsoft.DataLakeAnalytics/accounts/firewallRules/Delete",
+        "Microsoft.DataLakeAnalytics/accounts/computePolicies/Write",
+        "Microsoft.DataLakeAnalytics/accounts/computePolicies/Delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Data Lake Analytics Developer",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

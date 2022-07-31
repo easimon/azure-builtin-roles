@@ -1,0 +1,30 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "View, edit training images and create, add, remove, or delete the image tags. Labelers can view the project but can’t update anything other than training images and tags.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/88424f51-ebe7-446f-bc41-7fa16989e96c",
+  "name": "88424f51-ebe7-446f-bc41-7fa16989e96c",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read"
+      ],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/*/read",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/predictions/query/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/images/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/tags/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/images/suggested/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/tagsandregions/suggestions/action"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/export/read"
+      ]
+    }
+  ],
+  "roleName": "Cognitive Services Custom Vision Labeler",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

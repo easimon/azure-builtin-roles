@@ -1,0 +1,36 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Create, read, modify, and delete Account Filters, Streaming Policies, Content Key Policies, and Transforms; read-only access to other Media Services resources. Cannot create Jobs, Assets or Streaming resources.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/c4bba371-dacd-4a26-b320-7250bca963ae",
+  "name": "c4bba371-dacd-4a26-b320-7250bca963ae",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Media/mediaservices/*/read",
+        "Microsoft.Media/mediaservices/assets/listStreamingLocators/action",
+        "Microsoft.Media/mediaservices/streamingLocators/listPaths/action",
+        "Microsoft.Media/mediaservices/accountFilters/*",
+        "Microsoft.Media/mediaservices/streamingPolicies/*",
+        "Microsoft.Media/mediaservices/contentKeyPolicies/*",
+        "Microsoft.Media/mediaservices/transforms/*"
+      ],
+      "dataActions": [],
+      "notActions": [
+        "Microsoft.Media/mediaservices/contentKeyPolicies/getPolicyPropertiesWithSecrets/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Media Services Policy Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
