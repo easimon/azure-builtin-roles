@@ -1,9 +1,13 @@
-# Monitor/Archive of built-in Azure Role Definitions
+# Monitor/Archive of Azure IAM Definitions
 
-Frequently updated list of built-in Azure Roles (not Azure AD roles) to track changes over time.
-Inspired by [MAMIP Monitor AWS Managed IAM Policies](https://github.com/z0ph/MAMIP).
+Frequently updated list of
 
-This is a work in progress. At the moment it only scrapes Azure Role Definitions
+- Built-in Azure Role Definitions (not Azure AD roles)
+- Azure Providers and their operations (to be used as `actions`/`dataActions` in role definitions)
+
+to track changes over time. Inspired by [MAMIP Monitor AWS Managed IAM Policies](https://github.com/z0ph/MAMIP).
+
+This is a work in progress. At the moment it only scrapes definitions
 on a schedule, and pushes changes to this repository.
 
 ## TODO list
