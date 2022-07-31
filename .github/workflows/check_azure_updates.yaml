@@ -1,0 +1,32 @@
+name: Check for Azure Role Definition Updates
+
+on:
+  workflow_dispatch:
+
+env:
+  ROLES_DIR: azure-roles
+
+permissions:
+  id-token: write
+  contents: write
+
+jobs:
+  check-for-updates:
+    name: Check for updates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Azure login
+        uses: Azure/login@v1.4.5
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Fetch current role definitions
+        run: ./scripts/update.sh "${{ env.ROLES_DIR }}"
+      - name: Check for differences
+        run: |
+          ./scripts/process-additions.sh "${{ env.ROLES_DIR }}"
+          ./scripts/process-removals.sh "${{ env.ROLES_DIR }}"
+          ./scripts/process-modifications.sh "${{ env.ROLES_DIR }}"
