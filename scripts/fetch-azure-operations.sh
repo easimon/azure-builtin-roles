@@ -13,9 +13,12 @@ find "${OPERATIONS_DIR}" -type f -name '*.json' -delete
 
 readarray -t PROVIDERS < <(az provider operation list -ojson | jq -rc '.[].name')
 
+echo "Updating ${OPERATIONS_DIR}."
 for PROVIDER in "${PROVIDERS[@]}"; do
+  echo "  Updating ${PROVIDER}."
   az provider operation show -ojson --namespace "${PROVIDER}" \
     > "${OPERATIONS_DIR}/${PROVIDER}.json"
 done
 
+echo "Reformatting ${OPERATIONS_DIR}."
 find "${OPERATIONS_DIR}" -type f -name '*.json' -exec "${SCRIPT_DIR}/_reformat.sh" {} \;
