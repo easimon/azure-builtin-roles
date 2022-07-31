@@ -2,6 +2,9 @@ name: Check for Azure Role Definition Updates
 
 on:
   workflow_dispatch:
+  schedule:
+    # do not schedule to the full hour to be friendly to github runners
+    - cron: "17 * * * *"
 
 env:
   ROLES_DIR: azure-roles
