@@ -1,0 +1,41 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Has access to Read and Test functions under Language portal",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/7628b7b8-a8b2-4cdc-b46f-e9b35248918e",
+  "name": "7628b7b8-a8b2-4cdc-b46f-e9b35248918e",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/*/read",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/*/read",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/projects/export/action",
+        "Microsoft.CognitiveServices/accounts/Language/*/read",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/export/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-text/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-dataverse/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/jobs/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/jobscancel/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/jobscancel/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/jobs/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-knowledgebases/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnaMaker/*"
+      ]
+    }
+  ],
+  "roleName": "Cognitive Services Language Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

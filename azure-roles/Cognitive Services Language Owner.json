@@ -1,0 +1,31 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Has access to all Read, Test, Write, Deploy and Delete functions under Language portal",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/f07febfe-79bc-46b1-8b37-790e26e6e498",
+  "name": "f07febfe-79bc-46b1-8b37-790e26e6e498",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.CognitiveServices/accounts/listkeys/action",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/*",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/*",
+        "Microsoft.CognitiveServices/accounts/Language/*",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnaMaker/*"
+      ]
+    }
+  ],
+  "roleName": "Cognitive Services Language Owner",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

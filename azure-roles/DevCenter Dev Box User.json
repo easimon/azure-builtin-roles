@@ -1,0 +1,39 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Provides access to create and manage dev boxes.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/45d50f46-0b78-4001-a660-4198cbe8cd05",
+  "name": "45d50f46-0b78-4001-a660-4198cbe8cd05",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DevCenter/projects/read",
+        "Microsoft.DevCenter/projects/*/read",
+        "Microsoft.Fidalgo/projects/read",
+        "Microsoft.Fidalgo/projects/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "dataActions": [
+        "Microsoft.DevCenter/projects/users/devboxes/userStop/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userStart/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userGetRemoteConnection/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userRead/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userWrite/action",
+        "Microsoft.DevCenter/projects/users/devboxes/userDelete/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userStop/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userStart/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userGetRdpFileContent/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userRead/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userWrite/action",
+        "Microsoft.Fidalgo/projects/users/virtualMachines/userDelete/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "DevCenter Dev Box User",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}

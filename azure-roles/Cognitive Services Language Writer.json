@@ -1,0 +1,36 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": " Has access to all Read, Test, and Write functions under Language Portal",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/f2310ca1-dc64-4889-bb49-c8e0fa3d47a8",
+  "name": "f2310ca1-dc64-4889-bb49-c8e0fa3d47a8",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/*",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/*",
+        "Microsoft.CognitiveServices/accounts/Language/*",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/projects/publish/action",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/projects/deployments/write",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnaMaker/*",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/delete",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/deployments/write",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/deployments/delete",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/deployments/swap/action"
+      ]
+    }
+  ],
+  "roleName": "Cognitive Services Language Writer",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
