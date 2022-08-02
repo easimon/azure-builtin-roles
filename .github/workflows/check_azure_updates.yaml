@@ -35,6 +35,8 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Update to most recent HEAD
+        run: git pull -r
       - name: Fetch current ${{ matrix.type }}
         run: ./scripts/${{ matrix.script }} "${{ matrix.dir }}"
       - name: Check for differences
