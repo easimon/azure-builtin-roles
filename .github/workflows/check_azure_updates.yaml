@@ -13,6 +13,8 @@ permissions:
 jobs:
   update:
     strategy:
+      # git commit/push operations of different categories could
+      # interfere with each other, so execute them sequentially
       max-parallel: 1
       fail-fast: true
       matrix:
