@@ -24,6 +24,14 @@
           "name": "Microsoft.Storage/locations/deleteVirtualNetworkOrSubnets/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -454,6 +462,14 @@
           "displayName": "Account HnsOn Migration",
           "isDataAction": false,
           "name": "Microsoft.Storage/storageAccounts/hnsonmigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/networkSecurityPerimeterConfigurations/action",
           "origin": null,
           "properties": null
         },
@@ -3097,12 +3113,12 @@
       ]
     },
     {
-      "displayName": "",
+      "displayName": "Object Replication Restore Point Marker",
       "name": "storageAccounts/objectReplicationPolicies/restorePointMarkers",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "Create object replication restore point marker",
+          "displayName": "Put Object Replication Restore Point Marker",
           "isDataAction": false,
           "name": "Microsoft.Storage/storageAccounts/objectReplicationPolicies/restorePointMarkers/write",
           "origin": null,
@@ -3111,20 +3127,28 @@
       ]
     },
     {
-      "displayName": "",
+      "displayName": "Object Replication Restore Point",
       "name": "storageAccounts/restorePoints",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "Delete object replication restore point",
+          "displayName": "Delete Object Replication Restore Point",
           "isDataAction": false,
           "name": "Microsoft.Storage/storageAccounts/restorePoints/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": null,
-          "displayName": null,
+          "description": "Get object replication restore point",
+          "displayName": "Get Object Replication Restore Point",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/restorePoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List object replication restore points",
+          "displayName": "List Object Replication Restore Points",
           "isDataAction": false,
           "name": "Microsoft.Storage/storageAccounts/restorePoints/read",
           "origin": null,
@@ -3263,6 +3287,20 @@
           "displayName": null,
           "isDataAction": false,
           "name": "Microsoft.Storage/storageTasks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "storageAccounts/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/networkSecurityPerimeterConfigurations/read",
           "origin": null,
           "properties": null
         }
