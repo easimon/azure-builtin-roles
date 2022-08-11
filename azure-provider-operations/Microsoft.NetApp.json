@@ -82,8 +82,8 @@
           "properties": null
         },
         {
-          "description": "",
-          "displayName": "",
+          "description": "A list of replications",
+          "displayName": "List Replications",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/ListReplications/action",
           "origin": "user,system",
@@ -150,6 +150,14 @@
           "displayName": "Revert the relocation of volume.",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/RevertRelocation/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Migrate Volume Backups to BackupVault.",
+          "displayName": "Migrate Volume Backups to BackupVault.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/MigrateBackups/action",
           "origin": "user,system",
           "properties": null
         }
@@ -933,6 +941,14 @@
           "name": "Microsoft.NetApp/netAppAccounts/RenewCredentials/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Migrate Account Backups to BackupVault.",
+          "displayName": "Migrate Account Backups to BackupVault.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/MigrateBackups/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -1483,8 +1499,8 @@
       "name": "netAppAccounts/capacityPools/volumes/BackupStatus",
       "operations": [
         {
-          "description": "",
-          "displayName": "",
+          "description": "Get the status of the backup for a volume",
+          "displayName": "Get volume's backup status",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/BackupStatus/read",
           "origin": "user,system",
@@ -1527,8 +1543,8 @@
       "name": "netAppAccounts/capacityPools/volumes/RestoreStatus",
       "operations": [
         {
-          "description": "",
-          "displayName": "",
+          "description": "Get the status of the restore for a volume",
+          "displayName": "Get volume's restore status",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/RestoreStatus/read",
           "origin": "user,system",
@@ -1665,28 +1681,6 @@
           "displayName": "Read a regionInfo resource.",
           "isDataAction": false,
           "name": "Microsoft.NetApp/locations/RegionInfo/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Backup Vault resource type.",
-      "name": "netAppAccounts/backupVaults",
-      "operations": [
-        {
-          "description": "Reads a Backup Vault resource.",
-          "displayName": "Read Backup Vault resource",
-          "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/backupVaults/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Writes a Backup Vault resource.",
-          "displayName": "Write Backup Vault resource",
-          "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/backupVaults/write",
           "origin": "user,system",
           "properties": null
         }
