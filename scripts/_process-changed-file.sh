@@ -7,6 +7,7 @@ set -euo pipefail
 : "${3:?Usage $0 <file> <definition-type> <difftype>}"
 
 : "${GITHUB_REPOSITORY:=easimon/azure-builtin-roles}"
+: "${TWEET_PATH:=out}"
 COMMIT_BASE_URL="https://github.com/${GITHUB_REPOSITORY}/commit"
 
 FILE="$1"
@@ -45,7 +46,5 @@ ${COMMIT_URL}
 EOTWEET
 )"
 
-## TODO: actually create tweet
-echo "=== TWEET ==="
-echo "${TWEET}"
-echo "=== TWEND ==="
+mkdir -p "${TWEET_PATH}"
+echo "${TWEET}" | jq --raw-input --slurp -c . > "${TWEET_PATH}/${DEFINITION_NAME}.tweet"
