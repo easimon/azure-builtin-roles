@@ -7,8 +7,6 @@ Frequently updated list of
 
 to track changes over time. Inspired by [MAMIP Monitor AWS Managed IAM Policies](https://github.com/z0ph/MAMIP).
 
-This is a work in progress.
-
 ## What it does
 
 There is a [scheduled workflow](.github/workflows/check_azure_updates.yaml) that does the following steps:
@@ -23,7 +21,7 @@ There is a [scheduled workflow](.github/workflows/check_azure_updates.yaml) that
 ## TODO list
 
 - Monitor AAD roles
-- Add twitter bot support, similar to [MAMIP](https://twitter.com/mamip_aws)
+- ~~Add twitter bot support, similar to [MAMIP](https://twitter.com/mamip_aws)~~
 
 ## Caveats
 
