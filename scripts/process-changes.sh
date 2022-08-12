@@ -25,6 +25,10 @@ case "${DIR}" in
     ;;
 esac
 
+# create empty dummy file, so artifacts up/download does not fail
+mkdir -p "${TWEET_PATH}"
+echo > "${TWEET_PATH}/dummy.tweet"
+
 "${SCRIPT_DIR}/_process-additions.sh" "${DIR}" "${DEFINITION_TYPE}"
 "${SCRIPT_DIR}/_process-removals.sh" "${DIR}" "${DEFINITION_TYPE}"
 "${SCRIPT_DIR}/_process-modifications.sh" "${DIR}" "${DEFINITION_TYPE}"
