@@ -1,0 +1,17 @@
+name: Send a Tweet
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tweet:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: Eomm/why-don-t-you-tweet@v1
+        env:
+          TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+        with:
+          tweet-message: "Hi, this is a test!"
