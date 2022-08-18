@@ -2,7 +2,24 @@
   "displayName": "Microsoft.HybridContainerService",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.HybridContainerService",
   "name": "Microsoft.HybridContainerService",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.HybridContainerService",
+      "displayName": "Register the Microsoft.HybridContainerService",
+      "isDataAction": false,
+      "name": "Microsoft.HybridContainerService/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.HybridContainerService",
+      "displayName": "Unregister the Microsoft.HybridContainerService",
+      "isDataAction": false,
+      "name": "Microsoft.HybridContainerService/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "provisionedClusters",
@@ -13,7 +30,7 @@
           "displayName": "ProvisionedClusters_Get",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/provisionedClusters/read",
-          "origin": "System",
+          "origin": null,
           "properties": null
         },
         {
@@ -21,7 +38,7 @@
           "displayName": "ProvisionedClusters_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/provisionedClusters/write",
-          "origin": "System",
+          "origin": null,
           "properties": null
         },
         {
@@ -29,7 +46,7 @@
           "displayName": "ProvisionedClusters_Delete",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/provisionedClusters/delete",
-          "origin": "System",
+          "origin": null,
           "properties": null
         },
         {
@@ -37,15 +54,15 @@
           "displayName": "ProvisionedClusters_Update",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/provisionedClusters/write",
-          "origin": "System",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Gets the Hybrid AKS provisioned cluster in a Resource group",
+          "description": "Gets the Hybrid AKS provisioned cluster in a resource group",
           "displayName": "ProvisionedClusters_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/provisionedClusters/read",
-          "origin": "System",
+          "origin": null,
           "properties": null
         },
         {
@@ -53,7 +70,235 @@
           "displayName": "ProvisionedClusters_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/provisionedClusters/read",
-          "origin": "System",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Locations/operationStatuses",
+      "name": "Locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/Locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/Locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusters/hybridIdentityMetadata",
+      "name": "provisionedClusters/hybridIdentityMetadata",
+      "operations": [
+        {
+          "description": "Get the hybrid identity metadata proxy resource.",
+          "displayName": "HybridIdentityMetadata_Get",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/hybridIdentityMetadata/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the hybrid identity metadata proxy resource that facilitates the managed identity provisioning.",
+          "displayName": "HybridIdentityMetadata_Put",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/hybridIdentityMetadata/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the hybrid identity metadata proxy resource.",
+          "displayName": "HybridIdentityMetadata_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/hybridIdentityMetadata/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the hybrid identity metadata proxy resource in a cluster.",
+          "displayName": "HybridIdentityMetadata_ListByCluster",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/hybridIdentityMetadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusters/agentPools",
+      "name": "provisionedClusters/agentPools",
+      "operations": [
+        {
+          "description": "Gets the agent pool in the Hybrid AKS provisioned cluster",
+          "displayName": "agentPool_Get",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/agentPools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the agent pool in the Hybrid AKS provisioned cluster",
+          "displayName": "agentPool_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/agentPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the agent pool in the Hybrid AKS provisioned cluster",
+          "displayName": "agentPool_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/agentPools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the agent pool in the Hybrid AKS provisioned cluster",
+          "displayName": "agentPool_Update",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/agentPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the agent pools in the Hybrid AKS provisioned cluster",
+          "displayName": "agentPool_ListByProvisionedCluster",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/agentPools/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "virtualNetworks",
+      "name": "virtualNetworks",
+      "operations": [
+        {
+          "description": "Gets the Hybrid AKS virtual network",
+          "displayName": "virtualNetworks_Retrieve",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/virtualNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Puts the Hybrid AKS virtual network",
+          "displayName": "virtualNetworks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/virtualNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Hybrid AKS virtual network",
+          "displayName": "virtualNetworks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/virtualNetworks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patches the Hybrid AKS virtual network",
+          "displayName": "virtualNetworks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/virtualNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the Hybrid AKS virtual networks by resource group",
+          "displayName": "virtualNetworks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/virtualNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the Hybrid AKS virtual networks by subscription",
+          "displayName": "virtualNetworks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/virtualNetworks/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "storageSpaces",
+      "name": "storageSpaces",
+      "operations": [
+        {
+          "description": "Gets the Hybrid AKS storage space object",
+          "displayName": "storageSpaces_Retrieve",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/storageSpaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Puts the Hybrid AKS storage object",
+          "displayName": "storageSpaces_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/storageSpaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Hybrid AKS storage object",
+          "displayName": "storageSpaces_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/storageSpaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patches the Hybrid AKS storage object",
+          "displayName": "storageSpaces_Update",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/storageSpaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the Hybrid AKS storage object by resource group",
+          "displayName": "storageSpaces_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/storageSpaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the Hybrid AKS storage object by subscription",
+          "displayName": "storageSpaces_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/storageSpaces/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "Operations",
+      "operations": [
+        {
+          "description": "read Operations",
+          "displayName": "read_Operations",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/Operations/read",
+          "origin": null,
           "properties": null
         }
       ]
