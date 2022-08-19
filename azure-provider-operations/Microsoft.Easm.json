@@ -86,6 +86,14 @@
           "name": "Microsoft.Easm/workspaces/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Retrieve a workspace by workspaceName.",
+          "displayName": "Workspaces_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/read",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -130,6 +138,236 @@
           "displayName": "Labels_Update",
           "isDataAction": false,
           "name": "Microsoft.Easm/workspaces/labels/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/assets",
+      "operations": [
+        {
+          "description": "Retrieve a list of assets for the provided search parameters.",
+          "displayName": "Assets_List",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/assets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Perform a background datasheet export of assets matching the provided filter.  The response contains the information of the running export task.",
+          "displayName": "Assets_Export",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/assets/export/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve an asset by assetId.",
+          "displayName": "Assets_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/assets/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/assets/links",
+      "operations": [
+        {
+          "description": "Retrieve linked asset details for the provided assetId.",
+          "displayName": "Assets_Links",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/assets/links/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/dataConnections",
+      "operations": [
+        {
+          "description": "Retrieve a list of data connections.",
+          "displayName": "DataConnections_List",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/dataConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve a data connection with a given dataConnectionName.",
+          "displayName": "DataConnections_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/dataConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate a data connection with a given dataConnectionName.",
+          "displayName": "DataConnections_Validate",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/dataConnections/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/discoGroups",
+      "operations": [
+        {
+          "description": "Retrieve a list of disco group for the provided search parameters.",
+          "displayName": "DiscoGroups_List",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve a disco group with a given discoGroupName.",
+          "displayName": "DiscoGroups_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run a disco group with a given discoGroupName.",
+          "displayName": "DiscoGroups_Run",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoGroups/run/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate a disco group with a given discoGroupName.",
+          "displayName": "DiscoGroups_Validate",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoGroups/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/discoGroups/runs",
+      "operations": [
+        {
+          "description": "Retrieve a collection of disco run results for a disco group with a given discoGroupName.",
+          "displayName": "DiscoGroups_ListRuns",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoGroups/runs/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/discoTemplates",
+      "operations": [
+        {
+          "description": "Retrieve a list of disco templates for the provided search parameters.",
+          "displayName": "DiscoTemplates_List",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoTemplates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve a disco template with a given discoTemplateId.",
+          "displayName": "DiscoTemplates_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/discoTemplates/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/reports/assets",
+      "operations": [
+        {
+          "description": "Retrieve the most recent snapshot of asset summary values for the snapshot request.",
+          "displayName": "Reports_Snapshot",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/reports/assets/snapshot/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve asset summary details for the summary request.",
+          "displayName": "Reports_Summarize",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/reports/assets/summarize/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/savedFilters",
+      "operations": [
+        {
+          "description": "Retrieve a list of saved filters for the provided search parameters.",
+          "displayName": "SavedFilters_List",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/savedFilters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve a saved filter by savedFilterName.",
+          "displayName": "SavedFilters_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/savedFilters/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces",
+      "name": "workspaces/tasks",
+      "operations": [
+        {
+          "description": "Retrieve a list of tasks for the provided search parameters.",
+          "displayName": "Tasks_List",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/tasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve a task by taskId.",
+          "displayName": "Tasks_Get",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/tasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel a task by taskId.",
+          "displayName": "Tasks_Cancel",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/tasks/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Download task data for the provided taskId.",
+          "displayName": "Tasks_Download",
+          "isDataAction": true,
+          "name": "Microsoft.Easm/workspaces/tasks/download/action",
           "origin": null,
           "properties": null
         }
