@@ -152,10 +152,26 @@
       "name": "apiCollections",
       "operations": [
         {
-          "description": "Upon user requesting collections for a subscription, return the collections data to UI",
-          "displayName": "V2ApiCollections_List",
+          "description": "Determine whether an APIM API Collection is onboarded to Defender for APIs. If the APIM API Collection is onboarded to Defender for APIs, the system will monitor the APIs within the APIM API Collection for intrusive behaviors and provide alerts for attacks that have been detected.",
+          "displayName": "V3APICollectionOnboardingState_Get",
           "isDataAction": false,
           "name": "Microsoft.ApiSecurity/apiCollections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Onboard an APIM API Collection to Defender for APIs. The system will start monitoring the APIs within the APIM API Collection for intrusive behaviors and provide alerts for attacks that have been detected.",
+          "displayName": "V3APICollectionOnboarding_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ApiSecurity/apiCollections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Offboard an APIM API Collection from Defender for APIs. The system will stop monitoring the APIs within the APIM API Collection for intrusive behaviors.",
+          "displayName": "V3APICollectionOffboarding_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ApiSecurity/apiCollections/delete",
           "origin": null,
           "properties": null
         }
