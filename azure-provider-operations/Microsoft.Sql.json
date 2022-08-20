@@ -728,6 +728,14 @@
           "name": "Microsoft.Sql/managedInstances/failover/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Determine if user is allowed to do cross subscription PITR operations",
+          "displayName": "Cross Subscription PITR",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/managedInstances/crossSubscriptionPITR/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -1788,8 +1796,8 @@
       "name": "virtualClusters",
       "operations": [
         {
-          "description": "Synchronizes the DNS server configuration on an Azure SQL Virtual Cluster with the configuration of the Azure Virtual Network where the Virtual Cluster is located.",
-          "displayName": "Synchronize DNS server configuration on Azure SQL Virtual Cluster",
+          "description": "Performs virtual cluster dns servers.",
+          "displayName": "Performs virtual cluster dns servers.",
           "isDataAction": false,
           "name": "Microsoft.Sql/virtualClusters/updateManagedInstanceDnsServers/action",
           "origin": null,
@@ -1804,8 +1812,8 @@
           "properties": null
         },
         {
-          "description": "Updates virtual cluster tags.",
-          "displayName": "Update Virtual cluster.",
+          "description": "Creates or updates the virtual clusters.",
+          "displayName": "Creates or updates the virtual clusters.",
           "isDataAction": false,
           "name": "Microsoft.Sql/virtualClusters/write",
           "origin": null,
@@ -6220,6 +6228,14 @@
           "name": "Microsoft.Sql/managedInstances/databases/backupLongTermRetentionPolicies/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Updates a long term retention policy for a managed database",
+          "displayName": "Update long term retention policy",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/managedInstances/databases/backupLongTermRetentionPolicies/delete",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -7070,12 +7086,12 @@
       ]
     },
     {
-      "displayName": "Azure SQL Managed Database",
+      "displayName": "Managed database move operations",
       "name": "locations/managedDatabaseMoveOperationResults",
       "operations": [
         {
           "description": "Gets Managed Instance database move operation result.",
-          "displayName": "Get Managed Instance database move operation result.",
+          "displayName": "Get managed database move operation.",
           "isDataAction": false,
           "name": "Microsoft.Sql/locations/managedDatabaseMoveOperationResults/read",
           "origin": null,
@@ -8253,15 +8269,15 @@
       "operations": [
         {
           "description": "Change the sql vulnerability assessment baseline set for a given database",
-          "displayName": "Set database Sql vulnerability assessment  baseline set",
+          "displayName": "Set database Sql vulnerability assessment baseline set",
           "isDataAction": false,
           "name": "Microsoft.Sql/servers/databases/sqlVulnerabilityAssessments/baselines/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List the Sql Vulnerability Assessment baseline set by  Sql Vulnerability Assessments",
-          "displayName": "List the Sql Vulnerability Assessment baseline set by  Sql Vulnerability Assessments",
+          "description": "List the Sql Vulnerability Assessment baseline set by Sql Vulnerability Assessments",
+          "displayName": "List the Sql Vulnerability Assessment baseline set by Sql Vulnerability Assessments",
           "isDataAction": false,
           "name": "Microsoft.Sql/servers/databases/sqlVulnerabilityAssessments/baselines/read",
           "origin": null,
