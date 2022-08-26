@@ -152,6 +152,14 @@
           "properties": null
         },
         {
+          "description": "Replace the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_Replace",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/replace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Restart the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
           "displayName": "BareMetalMachines_Restart",
           "isDataAction": false,
@@ -168,10 +176,10 @@
           "properties": null
         },
         {
-          "description": "Run the parameterized tcpdump command against the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously. The URL to storage account with the command execution results and the command exit code can be retrieved from the operation status API once available.",
-          "displayName": "BareMetalMachines_RunTcpdump",
+          "description": "Run and retrieve output from read only commands on the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_RunReadCommands",
           "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/bareMetalMachines/runTcpdump/action",
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/runReadCommands/action",
           "origin": null,
           "properties": null
         },
@@ -188,6 +196,14 @@
           "displayName": "BareMetalMachines_Uncordon",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/bareMetalMachines/uncordon/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate the hardware of the provided bare metal machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "displayName": "BareMetalMachines_ValidateHardware",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/bareMetalMachines/validateHardware/action",
           "origin": null,
           "properties": null
         }
@@ -750,6 +766,114 @@
           "displayName": "HybridAksClusters_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/hybridAksClusters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "l3Networks",
+      "name": "l3Networks",
+      "operations": [
+        {
+          "description": "Get a list of layer 3 (L3) networks in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "L3Networks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l3Networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of layer 3 (L3) networks in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "L3Networks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l3Networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided layer 3 (L3) network. The API returns 200 OK when the operation is successful.",
+          "displayName": "L3Networks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l3Networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new layer 3 (L3) network or update the properties of the existing L3 network. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "L3Networks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l3Networks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided layer 3 (L3) network. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "L3Networks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l3Networks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the provided layer 3 (L3) network. The API returns 200 OK when the operation is successful.",
+          "displayName": "L3Networks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l3Networks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "disks",
+      "name": "disks",
+      "operations": [
+        {
+          "description": "Get a list of disks in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "Disks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/disks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of disks in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "Disks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/disks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided disk. The API returns 200 OK when the operation is successful.",
+          "displayName": "Disks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/disks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new disk or update the properties of the disk if it exists. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "displayName": "Disks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/disks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided disk. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "Disks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/disks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the disk. The API returns 200 OK when the operation is successful.",
+          "displayName": "Disks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/disks/write",
           "origin": null,
           "properties": null
         }
