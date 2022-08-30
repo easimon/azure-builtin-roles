@@ -136,42 +136,50 @@
       ]
     },
     {
-      "displayName": "RegisteredSubscriptions",
-      "name": "RegisteredSubscriptions",
+      "displayName": "registeredSubscriptions",
+      "name": "registeredSubscriptions",
       "operations": [
         {
-          "description": "Reads registered subscriptions",
-          "displayName": "Gets/Lists registered subscriptions",
+          "description": "read registeredSubscriptions",
+          "displayName": "read_registeredSubscriptions",
           "isDataAction": false,
-          "name": "Microsoft.LoadTestService/RegisteredSubscriptions/read",
+          "name": "Microsoft.LoadTestService/registeredSubscriptions/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Locations/Quotas",
-      "name": "Locations/Quotas",
+      "displayName": "locations/quotas",
+      "name": "locations/quotas",
       "operations": [
         {
-          "description": "Read Quotas for Azure Load test Service Quota Buckets",
-          "displayName": "Read Quotas",
+          "description": "Get/List the available quotas for quota buckets per region per subscription.",
+          "displayName": "Get/List Quotas",
           "isDataAction": false,
-          "name": "Microsoft.LoadTestService/Locations/Quotas/read",
+          "name": "Microsoft.LoadTestService/locations/quotas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Check Quota Availability on quota bucket per region per subscription.",
+          "displayName": "Quotas CheckAvailability",
+          "isDataAction": false,
+          "name": "Microsoft.LoadTestService/locations/quotas/checkAvailability/action",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Outbound Network Dependencies Endpoints",
-      "name": "loadtests/outboundNetworkDependenciesEndpoints",
+      "displayName": "loadTests/outboundNetworkDependenciesEndpoints",
+      "name": "loadTests/outboundNetworkDependenciesEndpoints",
       "operations": [
         {
-          "description": "Lists the outbound network dependency endpoints for a Load test instance",
-          "displayName": "List Outbound Network Dependency Endpoints",
+          "description": "Lists the endpoints that agents may call as part of load testing.",
+          "displayName": "List OutboundNetworkDependenciesEndpoints",
           "isDataAction": false,
-          "name": "Microsoft.LoadTestService/loadtests/outboundNetworkDependenciesEndpoints/read",
+          "name": "Microsoft.LoadTestService/loadTests/outboundNetworkDependenciesEndpoints/read",
           "origin": null,
           "properties": null
         }
