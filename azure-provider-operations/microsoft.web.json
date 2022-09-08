@@ -154,6 +154,14 @@
           "properties": null
         },
         {
+          "description": "Create the artifacts in a Logic App.",
+          "displayName": "Create the artifacts in a Logic App",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/deployWorkflowArtifacts/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
           "description": "Functions Web Apps.",
           "displayName": "Functions Web Apps",
           "isDataAction": false,
@@ -380,6 +388,14 @@
           "displayName": "Get Web App Deployment Slot",
           "isDataAction": false,
           "name": "Microsoft.Web/sites/slots/Read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create the artifacts in a deployment slot in a Logic App.",
+          "displayName": "Create the artifacts in a deployment slot in a Logic App",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/slots/deployWorkflowArtifacts/action",
           "origin": "user,system",
           "properties": null
         },
@@ -878,6 +894,14 @@
           "displayName": "Upgrade an App Service Environment",
           "isDataAction": false,
           "name": "Microsoft.Web/hostingEnvironments/upgrade/Action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Send test upgrade notification for an App Service Environment",
+          "displayName": "Send test upgrade notification for an App Service Environment",
+          "isDataAction": false,
+          "name": "Microsoft.Web/hostingEnvironments/testUpgradeAvailableNotification/Action",
           "origin": "user,system",
           "properties": null
         },
@@ -13012,6 +13036,62 @@
           "displayName": "Delete Web App slot's single connection string",
           "isDataAction": false,
           "name": "microsoft.web/sites/slots/config/web/connectionstrings/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web Apps Workflows",
+      "name": "sites/workflows",
+      "operations": [
+        {
+          "description": "List the workflows in a Logic App.",
+          "displayName": "List the workflows in a Logic App",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/workflows/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web Apps Workflows",
+      "name": "sites/slots/workflows",
+      "operations": [
+        {
+          "description": "List the workflows in a deployment slot in a Logic App.",
+          "displayName": "List the workflows in a deployment slot in a Logic App",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/slots/workflows/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web Apps Workflows",
+      "name": "sites/workflowsconfiguration",
+      "operations": [
+        {
+          "description": "Get workflow app's configuration information by its ID in a Logic App.",
+          "displayName": "Get workflow app's configuration information by its ID in a Logic App",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/workflowsconfiguration/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web Apps Workflows",
+      "name": "sites/slots/workflowsconfiguration",
+      "operations": [
+        {
+          "description": "Get workflow app's configuration information by its ID in a deployment slot in a Logic App.",
+          "displayName": "Get workflow app's configuration information by its ID in a deployment slot in a Logic App",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/slots/workflowsconfiguration/read",
           "origin": "user,system",
           "properties": null
         }
