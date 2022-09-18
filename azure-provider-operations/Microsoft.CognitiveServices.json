@@ -11235,6 +11235,14 @@
           "properties": null
         },
         {
+          "description": "Submit a Generate question answers Job request.",
+          "displayName": "Submit Generate Question Answers Job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/generate-questionanswers/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Analyzes the input conversation.",
           "displayName": "Analyze_Conversations",
           "isDataAction": true,
@@ -11247,6 +11255,54 @@
           "displayName": "Request text analysis over a collection of documents.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates a new project or updates an existing one.",
+          "displayName": "Create project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes a project.",
+          "displayName": "Delete project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers a job to export a project's data.",
+          "displayName": "Export project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/:export/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the details of a project.\r\nLists the existing projects.*",
+          "displayName": "Get project details|List projects*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers a job to import a project. If a project with the same name already exists, the data of that project is replaced.",
+          "displayName": "Import project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/:import/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers a training job for a project.",
+          "displayName": "Train project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/:train/action",
           "origin": "user",
           "properties": null
         }
@@ -12850,6 +12906,378 @@
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/encryptionScopes/delete",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "generate-questionsanswers*",
+      "name": "accounts/Language/generate-questionanswers/jobs",
+      "operations": [
+        {
+          "description": "Get QA generation Job Status.",
+          "displayName": "Get Question Answer Generation Job Status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/generate-questionanswers/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "resources*",
+      "name": "accounts/Language/resources",
+      "operations": [
+        {
+          "description": "Assign new Azure resources to a project to allow deploying new deployments to them.",
+          "displayName": "Assign deployment resources",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/resources/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Unassign resources from a project.",
+          "displayName": "Delete deployment resources",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/resources/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the deployments resources assigned to the project.",
+          "displayName": "Gets deployment resources",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/resources/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/resources/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing deployment resources job.",
+          "displayName": "Get deployment resources status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/resources/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/resources/assign/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing assign deployment resources job.",
+          "displayName": "Get assign deployment resources status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/resources/assign/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/resources/unassign/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing unassign deployment resources job.",
+          "displayName": "Get unassign deployment resources status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/resources/unassign/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/train/jobs",
+      "operations": [
+        {
+          "description": "Triggers a cancellation for a running training job.",
+          "displayName": "Cancel training",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/train/jobs/:cancel/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the status for a training job.\r\nLists the non-expired training jobs created for a project.*",
+          "displayName": "Get training status|List training jobs*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/train/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "deployments*",
+      "name": "accounts/Language/deployments",
+      "operations": [
+        {
+          "description": "Deletes a project deployment.",
+          "displayName": "Delete deployment",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/deployments/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the details of a deployment.\r\nLists the deployments belonging to a project.*",
+          "displayName": "Get deployment details|List deployments*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/deployments/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Swaps two existing deployments with each other.",
+          "displayName": "Swap deployments",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/deployments/:swap/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates a new deployment or replaces an existing one.",
+          "displayName": "Update deployment",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/deployments/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/deployments/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing deployment job.",
+          "displayName": "Get deployment status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/deployments/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/deployments/swap/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing swap deployment job.",
+          "displayName": "Gets swap deployments status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/deployments/swap/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "models*",
+      "name": "accounts/Language/models",
+      "operations": [
+        {
+          "description": "Deletes an existing trained model.",
+          "displayName": "Delete trained model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/models/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the details of a trained model.\r\nLists the trained models belonging to a project.*",
+          "displayName": "Get trained model details|List trained models*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/models/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Restores the snapshot of this trained model to be the current working directory of the project.",
+          "displayName": "Load trained model snapshot to the working directory.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/models/:load-snapshot/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/models/load-snapshot/jobs",
+      "operations": [
+        {
+          "description": "Gets the status for loading a snapshot.",
+          "displayName": "Get load snapshot status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/models/load-snapshot/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "result*",
+      "name": "accounts/Language/models/evaluation/result",
+      "operations": [
+        {
+          "description": "Gets the detailed results of the evaluation for a trained model. This includes the raw inference results for the data included in the evaluation process.",
+          "displayName": "Get trained model evaluation result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/models/evaluation/result/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "summary-result*",
+      "name": "accounts/Language/models/evaluation/summary-result",
+      "operations": [
+        {
+          "description": "Gets the evaluation summary of a trained model. The summary includes high level performance measurements of the model e.g., F1, Precision, Recall, etc.",
+          "displayName": "Get trained model evaluation summary",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/models/evaluation/summary-result/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/copy/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing copy project job.",
+          "displayName": "Get copy project status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/copy/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/export/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an export job. Once job completes, returns the project metadata, and assets.",
+          "displayName": "Get export status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/export/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "result*",
+      "name": "accounts/Language/export/jobs/result",
+      "operations": [
+        {
+          "description": "Gets the result of an export job.",
+          "displayName": "Get export result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/export/jobs/result/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/import/jobs",
+      "operations": [
+        {
+          "description": "Gets the status for an import.",
+          "displayName": "Get import status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/import/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "deletion-jobs*",
+      "name": "accounts/Language/global/deletion-jobs",
+      "operations": [
+        {
+          "description": "Gets the status for a project deletion job.",
+          "displayName": "Get project deletion status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/global/deletion-jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "resources*",
+      "name": "accounts/Language/global/deployments/resources",
+      "operations": [
+        {
+          "description": "Gets the deployments to which an Azure resource is assigned.",
+          "displayName": "Gets resource deployments",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/global/deployments/resources/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "languages*",
+      "name": "accounts/Language/global/languages",
+      "operations": [
+        {
+          "description": "Lists the supported languages for the given project type.",
+          "displayName": "List supported languages",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/global/languages/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "prebuilt-entities*",
+      "name": "accounts/Language/global/prebuilt-entities",
+      "operations": [
+        {
+          "description": "Lists the supported prebuilt entities that can be used while creating composed entities.",
+          "displayName": "List supported prebuilt entities",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/global/prebuilt-entities/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "training-config-versions*",
+      "name": "accounts/Language/global/training-config-versions",
+      "operations": [
+        {
+          "description": "Lists the support training config version for a given project type.",
+          "displayName": "List training config versions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/global/training-config-versions/read",
+          "origin": "user",
           "properties": null
         }
       ]
