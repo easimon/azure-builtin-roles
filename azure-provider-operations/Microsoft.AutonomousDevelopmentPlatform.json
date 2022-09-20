@@ -225,6 +225,14 @@
           "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/states/new/runValidations/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Run Processing Steps for New Measurements",
+          "displayName": "Run Processing Steps for New Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/states/new/runProcessing/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -307,6 +315,14 @@
           "displayName": "Run Validations for Operational Measurements",
           "isDataAction": true,
           "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/states/operational/runValidations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run Processing Steps for Operational Measurements",
+          "displayName": "Run Processing Steps for Operational Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/states/operational/runProcessing/action",
           "origin": null,
           "properties": null
         }
@@ -551,6 +567,14 @@
           "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/states/new/runValidations/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Run Processing Steps for New Measurements",
+          "displayName": "Run Processing Steps for New Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/states/new/runProcessing/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -633,6 +657,14 @@
           "displayName": "Run Validations for Operational Measurements",
           "isDataAction": true,
           "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/states/operational/runValidations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run Processing Steps for Operational Measurements",
+          "displayName": "Run Processing Steps for Operational Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/states/operational/runProcessing/action",
           "origin": null,
           "properties": null
         }
@@ -783,6 +815,14 @@
           "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/classifications/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Delete a measurement classification.",
+          "displayName": "Delete measurement classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/classifications/delete",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -803,6 +843,182 @@
           "displayName": "Write data stream classifications",
           "isDataAction": true,
           "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/classifications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a data stream classification.",
+          "displayName": "Delete data stream classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/classifications/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Measurements",
+      "name": "accounts/dataPools/measurements",
+      "operations": [
+        {
+          "description": "Read and list measurement metadata & list data streams within measurement",
+          "displayName": "Read Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create/upload a new measurement object ",
+          "displayName": "Write New Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an existing measurement object (this is GDPR delete) ",
+          "displayName": "Delete Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Metadata of Measurements e.g. to fix failed validation",
+          "displayName": "Update Metadata of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/updateMetadata/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Change State of Measurements",
+          "displayName": "Change State of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/changeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run Validations for Measurements",
+          "displayName": "Run Validations for Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/runValidations/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Streams of Measurements",
+      "name": "accounts/dataPools/measurements/dataStreams",
+      "operations": [
+        {
+          "description": "Read Data Streams of Measurements",
+          "displayName": "Read Data Streams of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/dataStreams/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create and Write Data Streams of Measurements",
+          "displayName": "Write Data Streams of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/dataStreams/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Data Streams of Measurements",
+          "displayName": "Delete Data Streams of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/accounts/dataPools/measurements/dataStreams/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Measurements",
+      "name": "workspaces/measurements",
+      "operations": [
+        {
+          "description": "Read and list measurement data & list data streams within measurement",
+          "displayName": "Read Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Write Measurements",
+          "displayName": "Create or Write Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Measurements",
+          "displayName": "Delete Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Metadata of Measurements",
+          "displayName": "Update Metadata of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/updateMetadata/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Change State of Measurements",
+          "displayName": "Change State of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/changeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run Validations for Measurements",
+          "displayName": "Run Validations for Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/runValidations/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data Streams of Measurements",
+      "name": "workspaces/measurements/dataStreams",
+      "operations": [
+        {
+          "description": "Read Data Streams of Measurements",
+          "displayName": "Read Data Streams of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Data Streams of Measurements",
+          "displayName": "Delete Data Streams of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write Data Streams of Measurements",
+          "displayName": "Write Data Streams of Measurements",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/write",
           "origin": null,
           "properties": null
         }
