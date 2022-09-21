@@ -63,6 +63,11 @@
                 },
                 {
                   "blobDuration": "PT1H",
+                  "displayName": "Pipelines",
+                  "name": "Pipelines"
+                },
+                {
+                  "blobDuration": "PT1H",
                   "displayName": "Data Assets",
                   "name": "DataAssets"
                 },
@@ -119,6 +124,28 @@
                   "fillGapWithZero": "true",
                   "internalMetricName": "ComputationCount",
                   "name": "ComputationCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline Name",
+                      "name": "PipelineName"
+                    }
+                  ],
+                  "displayDescription": "Number of created pipelines",
+                  "displayName": "Created Pipelines",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "PipelineCount",
+                  "name": "PipelineCount",
                   "supportedAggregationTypes": [
                     "Maximum"
                   ],
