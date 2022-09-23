@@ -186,6 +186,86 @@
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/validateConfiguration/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Provisions the underlying hardware.",
+          "displayName": "NetworkFabrics_provision",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/provision/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deprovisions the underlying hardware.",
+          "displayName": "NetworkFabrics_deprovision",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/deprovision/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores the configuration to last known good config.",
+          "displayName": "NetworkFabrics_restoreConfig",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/restoreConfig/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the underlying hardware.",
+          "displayName": "NetworkFabrics_upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the status of the ManagementNetworkConfiguration.",
+          "displayName": "NetworkFabrics_getManagementNetworkConfigurationStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getManagementNetworkConfigurationStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables layer 2 for the path of the Network Fabric.",
+          "displayName": "NetworkFabrics_enableNniLayer2",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/enableNniLayer2/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables layer 3 for the path of the Network Fabric.",
+          "displayName": "NetworkFabrics_enableNniLayer3",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/enableNniLayer3/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disables layer 2 for the path of the Network Fabric.",
+          "displayName": "NetworkFabrics_disableNniLayer2",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/disableNniLayer2/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disables layer 3 for the path of the Network Fabric.",
+          "displayName": "NetworkFabrics_disableNniLayer3",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/disableNniLayer3/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates status of the path of the Network Fabric.",
+          "displayName": "NetworkFabrics_getNniStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getNniStatus/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -294,6 +374,70 @@
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Reboots the NetworkDevice.",
+          "displayName": "NetworkDevices_reboot",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/reboot/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores the configuration the NetworkDevice.",
+          "displayName": "NetworkDevices_restoreConfig",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/restoreConfig/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the version NetworkDevice.",
+          "displayName": "NetworkDevices_updateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updateVersion/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "GenerateSupportPackage of the NetworkDevice.",
+          "displayName": "NetworkDevices_generateSupportPackage",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/generateSupportPackage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update PDU power cycle of the NetworkDevice.",
+          "displayName": "NetworkDevices_updatePowerCycle",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updatePowerCycle/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the status of the NetworkDevice.",
+          "displayName": "NetworkDevices_getStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the static interface maps of the NetworkDevice.",
+          "displayName": "NetworkDevices_getStaticInterfaceMaps",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getStaticInterfaceMaps/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the running interface maps for the NetworkDevice.",
+          "displayName": "NetworkDevices_getDynamicInterfaceMaps",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getDynamicInterfaceMaps/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -335,9 +479,25 @@
         },
         {
           "description": "Implements Network Interfaces list by resource group GET method.",
-          "displayName": "NetworkInterfaces_ListByResourceGroup",
+          "displayName": "NetworkInterfaces_List",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/networkInterfaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the running status of the NetworkInterface.",
+          "displayName": "NetworkInterfaces_getStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/networkInterfaces/getStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update the admin state of NetworkInterface.",
+          "displayName": "NetworkInterfaces_updateAdminState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/networkInterfaces/updateAdminState/action",
           "origin": null,
           "properties": null
         }
@@ -380,6 +540,38 @@
           "properties": null
         },
         {
+          "description": "Enables isolation domain across the fabric or on specified racks.",
+          "displayName": "L2IsolationDomains_updateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Clears ARP tables for this Isolation Domain.",
+          "displayName": "L2IsolationDomains_clearArpTable",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/clearArpTable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Clears IPv6 neighbors for this Isolation Domain.",
+          "displayName": "L2IsolationDomains_clearNeighborTable",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/clearNeighborTable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Clears IPv6 neighbors for this Isolation Domain.",
+          "displayName": "L2IsolationDomains_getArpEntries",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/getArpEntries/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Implements L2IsolationDomains list by resource group GET method.",
           "displayName": "L2IsolationDomains_ListByResourceGroup",
           "isDataAction": false,
@@ -398,22 +590,22 @@
       ]
     },
     {
-      "displayName": "l3IsolationDomains/northboundNetworks",
-      "name": "l3IsolationDomains/northboundNetworks",
+      "displayName": "l3IsolationDomains/northBoundNetworks",
+      "name": "l3IsolationDomains/northBoundNetworks",
       "operations": [
         {
           "description": "Implements NorthBoundNetworks GET method.",
           "displayName": "NorthBoundNetworks_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northboundNetworks/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Implements NorthboundNetwork PUT method.",
-          "displayName": "NorthboundNetworks_Create",
+          "description": "Implements ExternalNetwork PUT method.",
+          "displayName": "NorthBoundNetworks_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northboundNetworks/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/write",
           "origin": null,
           "properties": null
         },
@@ -421,7 +613,7 @@
           "description": "Implements NorthBoundNetworks DELETE method.",
           "displayName": "NorthBoundNetworks_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northboundNetworks/delete",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/delete",
           "origin": null,
           "properties": null
         },
@@ -429,61 +621,149 @@
           "description": "API to update certain properties of the NorthBoundNetworks resource.",
           "displayName": "NorthBoundNetworks_Update",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northboundNetworks/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Implements North Bound Networks list by resource group GET method.",
-          "displayName": "NorthBoundNetworks_ListByResourceGroup",
+          "displayName": "NorthBoundNetworks_List",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northboundNetworks/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Administrative State for externalNetwork.",
+          "displayName": "NorthBoundNetworks_updateAdminState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/updateAdminState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update BGP for externalNetwork.",
+          "displayName": "NorthBoundNetworks_updateBgpState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/updateBgpState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update BfdForBgp for externalNetwork.",
+          "displayName": "NorthBoundNetworks_updateBfdForBgpState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/updateBfdForBgpState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "clearIpv6Neighbors for externalNetwork.",
+          "displayName": "NorthBoundNetworks_clearIpv6Neighbors",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/clearIpv6Neighbors/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "clearArpEntries for externalNetwork.",
+          "displayName": "NorthBoundNetworks_clearArpEntries",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/northBoundNetworks/clearArpEntries/action",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "l3IsolationDomains/southboundNetworks",
-      "name": "l3IsolationDomains/southboundNetworks",
+      "displayName": "l3IsolationDomains/southBoundNetworks",
+      "name": "l3IsolationDomains/southBoundNetworks",
       "operations": [
         {
-          "description": "Implements SouthboundNetworks GET method.",
-          "displayName": "SouthboundNetworks_Get",
+          "description": "Implements SouthBoundNetworks GET method.",
+          "displayName": "SouthBoundNetworks_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southboundNetworks/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Implements SouthboundNetwork PUT method.",
-          "displayName": "SouthboundNetworks_Create",
+          "description": "Implements SouthBoundNetwork PUT method.",
+          "displayName": "SouthBoundNetworks_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southboundNetworks/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Implements SouthboundNetworks DELETE method.",
-          "displayName": "SouthboundNetworks_Delete",
+          "description": "Implements SouthBoundNetworks DELETE method.",
+          "displayName": "SouthBoundNetworks_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southboundNetworks/delete",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "API to update certain properties of the SouthboundNetworks resource.",
-          "displayName": "SouthboundNetworks_Update",
+          "description": "API to update certain properties of the SouthBoundNetworks resource.",
+          "displayName": "SouthBoundNetworks_Update",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southboundNetworks/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Implements South Bound Networks list by resource group GET method.",
-          "displayName": "SouthBoundNetworks_ListByResourceGroup",
+          "description": "Implements SouthBoundNetworks list by resource group GET method.",
+          "displayName": "SouthBoundNetworks_List",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southboundNetworks/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Administrative state of  SouthBoundNetworks on resources referred by their resource ids.",
+          "displayName": "SouthBoundNetworks_updateAdminState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/updateAdminState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
+          "displayName": "SouthBoundNetworks_updateBgpState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/updateBgpState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update BfdForBgp for internalNetwork.",
+          "displayName": "SouthBoundNetworks_updateBfdForBgpState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/updateBfdForBgpState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "clearIpv6Neighbors for internalNetwork.",
+          "displayName": "SouthBoundNetworks_clearIpv6Neighbors",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/clearIpv6Neighbors/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "clearArpEntries for internalNetwork.",
+          "displayName": "SouthBoundNetworks_clearArpEntries",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/clearArpEntries/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update BfdForStaticRoutes for internalNetwork.",
+          "displayName": "SouthBoundNetworks_updateBfdForStaticRoutesState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/southBoundNetworks/updateBfdForStaticRoutesState/action",
           "origin": null,
           "properties": null
         }
@@ -538,6 +818,38 @@
           "displayName": "L3IsolationDomains_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables racks for this Isolation Domain.",
+          "displayName": "L3IsolationDomains_updateAdminState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/updateAdminState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update administrative state of option B on CE devices",
+          "displayName": "L3IsolationDomains_updateOptionBAdminState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/updateOptionBAdminState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Clears ARP tables for this Isolation Domain.",
+          "displayName": "L3IsolationDomains_clearArpTable",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearArpTable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Clears IPv6 neighbor tables for this Isolation Domain.",
+          "displayName": "L3IsolationDomains_clearNeighborTable",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearNeighborTable/action",
           "origin": null,
           "properties": null
         }
