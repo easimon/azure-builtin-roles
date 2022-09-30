@@ -11305,6 +11305,14 @@
           "name": "Microsoft.CognitiveServices/accounts/Language/:train/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Triggers a job to migrate one or more LUIS apps.",
+          "displayName": "Migrate Luis app",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/:migratefromluis/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -13277,6 +13285,34 @@
           "displayName": "List training config versions",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Language/global/training-config-versions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "modelguidance*",
+      "name": "accounts/Language/analyze-text/internal/projects/models/modelguidance",
+      "operations": [
+        {
+          "description": "Get trained model guidance.",
+          "displayName": "AnalyzeText_Internal_Models_GetTrainedModelGuidance",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/models/modelguidance/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/migratefromluis/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of a migration job of a batch of LUIS apps.",
+          "displayName": "Get migration status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/migratefromluis/jobs/read",
           "origin": "user",
           "properties": null
         }
