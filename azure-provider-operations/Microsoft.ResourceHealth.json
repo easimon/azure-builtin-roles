@@ -68,6 +68,14 @@
           "name": "Microsoft.ResourceHealth/events/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Get SSecurity Advisories for a given subscription",
+          "displayName": "Get Service Health Security Advisories",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceHealth/events/securityAdvisories/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -188,14 +196,28 @@
       ]
     },
     {
-      "displayName": "",
+      "displayName": "Potential Outages",
       "name": "potentialoutages",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "Get Potential Outages for given subscription",
+          "displayName": "Get Potential Outages",
           "isDataAction": false,
           "name": "Microsoft.ResourceHealth/potentialoutages/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Security Advisories Restricted",
+      "name": "events/securityAdvisories",
+      "operations": [
+        {
+          "description": "Get Security Advisories for a given subscription with restricted view of properities",
+          "displayName": "Get Service Health Security Advisories Restricted",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceHealth/events/securityAdvisories/read",
           "origin": null,
           "properties": null
         }
