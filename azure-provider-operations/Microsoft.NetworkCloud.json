@@ -1088,6 +1088,152 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "cloudServicesNetworks",
+      "name": "cloudServicesNetworks",
+      "operations": [
+        {
+          "description": "Get a list of cloud services networks in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "CloudServicesNetworks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/cloudServicesNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of cloud services networks in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "CloudServicesNetworks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/cloudServicesNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided cloud services network. The API returns 200 OK when the operation is successful.",
+          "displayName": "CloudServicesNetworks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/cloudServicesNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new cloud services network or update the properties of the existing cloud services network. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "CloudServicesNetworks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/cloudServicesNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided cloud services network. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "CloudServicesNetworks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/cloudServicesNetworks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the provided cloud services network. The API returns 200 OK when the operation is successful.",
+          "displayName": "CloudServicesNetworks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/cloudServicesNetworks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "l2Networks",
+      "name": "l2Networks",
+      "operations": [
+        {
+          "description": "Get a list of layer 2 (L2) networks in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "displayName": "L2Networks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l2Networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of layer 2 (L2) networks in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "displayName": "L2Networks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l2Networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided layer 2 (L2) network. The API returns 200 OK when the operation is successful.",
+          "displayName": "L2Networks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l2Networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new layer 2 (L2) network or update the properties of the existing L2 network. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "L2Networks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l2Networks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided L2 network. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "L2Networks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l2Networks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the provided layer 2 (L2) network. The API returns 200 OK when the operation is successful.",
+          "displayName": "L2Networks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/l2Networks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "clusters/admissions",
+      "name": "clusters/admissions",
+      "operations": [
+        {
+          "description": "Generate a CA signing certificate that can be used to produce certificates for bare metal machine access within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
+          "displayName": "Admissions_GenerateCASigningCertificate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/admissions/generateCASigningCertificate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generates a standard access SSH certificate that can be used to access bare metal machines within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
+          "displayName": "Admissions_GenerateSshCertificate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/admissions/generateSshCertificate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate a super user access SSH certificate that can be used to access bare metal machines within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
+          "displayName": "Admissions_GenerateSshSudoCertificate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/admissions/generateSshSudoCertificate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves the public x.509 certificate for bare metal machine that can be used to add to the known hosts of a jump server within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
+          "displayName": "Admissions_RetrieveHostCACertificate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/admissions/retrieveHostCACertificate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
