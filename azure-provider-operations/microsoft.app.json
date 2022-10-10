@@ -69,7 +69,7 @@
           "description": "Get Auth Token for Container App Dev APIs to get log stream, exec or port forward from a container",
           "displayName": "Auth Token for Container App Dev APIs",
           "isDataAction": false,
-          "name": "microsoft.app/containerapps/getauthtoken/action",
+          "name": "microsoft.app/containerapps/authtoken/action",
           "origin": "user, system",
           "properties": null
         }
@@ -223,9 +223,9 @@
         },
         {
           "description": "Get Auth Token for Managed Environment Dev APIs to get log stream, exec or port forward from a container",
-          "displayName": "Auth Token for Managed Environment Dev APIs",
+          "displayName": "Auth Token fo Managed Environment Dev APIs",
           "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/getauthtoken/action",
+          "name": "microsoft.app/managedenvironments/authtoken/action",
           "origin": "user, system",
           "properties": null
         },
@@ -398,14 +398,6 @@
           "name": "microsoft.app/managedenvironments/daprcomponents/delete",
           "origin": "user, system",
           "properties": null
-        },
-        {
-          "description": "List Secrets of a Dapr Component",
-          "displayName": "List Dapr Component Secrets",
-          "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/daprcomponents/listsecrets/action",
-          "origin": "user, system",
-          "properties": null
         }
       ]
     },
@@ -452,190 +444,14 @@
       ]
     },
     {
-      "displayName": "Connected Environment",
-      "name": "connectedenvironments",
-      "operations": [
-        {
-          "description": "Create or update a Connected Environment",
-          "displayName": "Create or Update Connected Environment",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a Connected Environment",
-          "displayName": "Delete Connected Environment",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a Connected Environment",
-          "displayName": "Read Connected Environment",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Connected Environment",
-      "name": "locations/connectedenvironmentoperationstatuses",
-      "operations": [
-        {
-          "description": "Get a Connected Environment Long Running Operation Status",
-          "displayName": "Read Connected Environment Operation Status",
-          "isDataAction": false,
-          "name": "microsoft.app/locations/connectedenvironmentoperationstatuses/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Connected Environment",
-      "name": "locations/connectedenvironmentoperationresults",
-      "operations": [
-        {
-          "description": "Get a Connected Environment Long Running Operation Result",
-          "displayName": "Read Connected Environment Operation Result",
-          "isDataAction": false,
-          "name": "microsoft.app/locations/connectedenvironmentoperationresults/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Connected Environment Storage",
-      "name": "connectedenvironments/storages",
-      "operations": [
-        {
-          "description": "Get storage for a Connected Environment.",
-          "displayName": "Read Connected Environment Storage.",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/storages/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or Update a storage of Connected Environment.",
-          "displayName": "Create or Update a Connected Environment Storage.",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/storages/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a storage of Connected Environment.",
-          "displayName": "Delete a Connected Environment Storage",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/storages/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Connected Environment Dapr Component",
-      "name": "connectedenvironments/daprcomponents",
-      "operations": [
-        {
-          "description": "Create or Update Connected Environment Dapr Component",
-          "displayName": "Create or Update Connected Environment Dapr Component",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/daprcomponents/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Read Connected Environment Dapr Component",
-          "displayName": "Read Connected Environment Dapr Component",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/daprcomponents/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete Connected Environment Dapr Component",
-          "displayName": "Delete Connected Environment Dapr Component",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/daprcomponents/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Certificate",
-      "name": "connectedenvironments/certificates",
-      "operations": [
-        {
-          "description": "Create or update a Connected Environment Certificate",
-          "displayName": "Create or Update Connected Environment Certificate",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/certificates/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a Connected Environment's Certificate",
-          "displayName": "Read Connected Environment Certificate",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/certificates/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a Connected Environment's Certificate",
-          "displayName": "Delete Connected Environment's Certificate",
-          "isDataAction": false,
-          "name": "microsoft.app/connectedenvironments/certificates/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Managed Environment",
-      "name": "managedenvironments/workloadprofilestates",
+      "name": "currentworkloadprofilestates",
       "operations": [
         {
           "description": "Get Current Workload Profile States for Premium Cluster",
           "displayName": "Read Current Workload Profile State",
           "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/workloadprofilestates/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Billing Meter",
-      "name": "locations/billingmeters",
-      "operations": [
-        {
-          "description": "Get Billing Meters in a Region",
-          "displayName": "Read Billing Meter",
-          "isDataAction": false,
-          "name": "microsoft.app/locations/billingmeters/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Workload Profile",
-      "name": "locations/availablemanagedenvironmentsworkloadprofiletypes",
-      "operations": [
-        {
-          "description": "Get Available Workload Profile Types in a Region",
-          "displayName": "Read Available Workload Profile Types",
-          "isDataAction": false,
-          "name": "microsoft.app/locations/availablemanagedenvironmentsworkloadprofiletypes/read",
+          "name": "microsoft.app/currentworkloadprofilestates/read",
           "origin": "user, system",
           "properties": null
         }
