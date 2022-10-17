@@ -69,7 +69,7 @@
           "description": "Get Auth Token for Container App Dev APIs to get log stream, exec or port forward from a container",
           "displayName": "Auth Token for Container App Dev APIs",
           "isDataAction": false,
-          "name": "microsoft.app/containerapps/authtoken/action",
+          "name": "microsoft.app/containerapps/getauthtoken/action",
           "origin": "user, system",
           "properties": null
         }
@@ -223,9 +223,9 @@
         },
         {
           "description": "Get Auth Token for Managed Environment Dev APIs to get log stream, exec or port forward from a container",
-          "displayName": "Auth Token fo Managed Environment Dev APIs",
+          "displayName": "Auth Token for Managed Environment Dev APIs",
           "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/authtoken/action",
+          "name": "microsoft.app/managedenvironments/getauthtoken/action",
           "origin": "user, system",
           "properties": null
         },
@@ -398,6 +398,14 @@
           "name": "microsoft.app/managedenvironments/daprcomponents/delete",
           "origin": "user, system",
           "properties": null
+        },
+        {
+          "description": "List Secrets of a Dapr Component",
+          "displayName": "List Dapr Component Secrets",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/listsecrets/action",
+          "origin": "user, system",
+          "properties": null
         }
       ]
     },
@@ -558,6 +566,14 @@
           "name": "microsoft.app/connectedenvironments/daprcomponents/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "List Secrets of a Dapr Component",
+          "displayName": "List Dapr Component Secrets",
+          "isDataAction": false,
+          "name": "microsoft.app/connectedenvironments/daprcomponents/listsecrets/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -593,13 +609,41 @@
     },
     {
       "displayName": "Managed Environment",
-      "name": "currentworkloadprofilestates",
+      "name": "managedenvironments/workloadprofilestates",
       "operations": [
         {
           "description": "Get Current Workload Profile States for Premium Cluster",
           "displayName": "Read Current Workload Profile State",
           "isDataAction": false,
-          "name": "microsoft.app/currentworkloadprofilestates/read",
+          "name": "microsoft.app/managedenvironments/workloadprofilestates/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Meter",
+      "name": "locations/billingmeters",
+      "operations": [
+        {
+          "description": "Get Billing Meters in a Region",
+          "displayName": "Read Billing Meter",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/billingmeters/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workload Profile",
+      "name": "locations/availablemanagedenvironmentsworkloadprofiletypes",
+      "operations": [
+        {
+          "description": "Get Available Workload Profile Types in a Region",
+          "displayName": "Read Available Workload Profile Types",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/availablemanagedenvironmentsworkloadprofiletypes/read",
           "origin": "user, system",
           "properties": null
         }
