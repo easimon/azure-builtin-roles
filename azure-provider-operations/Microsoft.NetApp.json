@@ -176,6 +176,14 @@
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/PopulateAvailabilityZone/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Get group Id list for a given user for an Ldap enabled volume",
+          "displayName": "Get group Id list for Ldap User",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/GetGroupIdListForLdapUser/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -763,6 +771,58 @@
                     "P1D"
                   ],
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
+                  "displayDescription": "Total bytes transferred for last backup operation.",
+                  "displayName": "Volume Backup Operation Last Transferred Bytes",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "CbsVolumeOperationBackupTransferredBytes",
+                  "isInternal": false,
+                  "name": "CbsVolumeOperationBackupTransferredBytes",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
+                  "displayDescription": "Total bytes transferred for last backup restore operation.",
+                  "displayName": "Volume Backup Restore Operation Last Transferred Bytes",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "CbsVolumeOperationRestoreTransferredBytes",
+                  "isInternal": false,
+                  "name": "CbsVolumeOperationRestoreTransferredBytes",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Bytes"
                 },
                 {
                   "aggregationType": "Average",
