@@ -1,0 +1,33 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Ability to view files, models, deployments. Readers can't make any changes They can inference",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/5e0bd9bd-7b93-4f28-af87-19fc36ad61bd",
+  "name": "5e0bd9bd-7b93-4f28-af87-19fc36ad61bd",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/OpenAI/*/read",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/search/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/generate/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/write",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/search/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/completions/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/embeddings/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/completions/write"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Cognitive Services OpenAI User",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
