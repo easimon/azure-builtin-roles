@@ -162,14 +162,6 @@
           "name": "Microsoft.MobileNetwork/mobileNetworks/read",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Lists the IDs of all provisioned SIMs in a mobile network",
-          "displayName": "MobileNetworks_ListSimIds",
-          "isDataAction": false,
-          "name": "Microsoft.MobileNetwork/mobileNetworks/listSimIds/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -186,7 +178,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates a network slice.",
+          "description": "Creates or updates a network slice. Must be created in the same location as its parent mobile network.",
           "displayName": "Slices_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/mobileNetworks/slices/write",
@@ -232,7 +224,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates a SIM policy.",
+          "description": "Creates or updates a SIM policy. Must be created in the same location as its parent mobile network.",
           "displayName": "SimPolicies_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/mobileNetworks/simPolicies/write",
@@ -278,7 +270,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates a service.",
+          "description": "Creates or updates a service. Must be created in the same location as its parent mobile network.",
           "displayName": "Services_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/mobileNetworks/services/write",
@@ -324,7 +316,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates a data network.",
+          "description": "Creates or updates a data network. Must be created in the same location as its parent mobile network.",
           "displayName": "DataNetworks_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/mobileNetworks/dataNetworks/write",
@@ -408,6 +400,30 @@
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Roll back the specified packet core control plane to the previous version, \"rollbackVersion\". Multiple consecutive rollbacks are not possible. This action may cause a service outage.",
+          "displayName": "PacketCoreControlPlane_Rollback",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/rollback/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reinstall the specified packet core control plane. This action will remove any transaction state from the packet core to return it to a known state. This action will cause a service outage.",
+          "displayName": "PacketCoreControlPlane_Reinstall",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/reinstall/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Collect a diagnostics package for the specified packet core control plane. This action will upload the diagnostics to a storage account.",
+          "displayName": "PacketCoreControlPlane_CollectDiagnosticsPackage",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/collectDiagnosticsPackage/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -424,7 +440,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates a packet core data plane.",
+          "description": "Creates or updates a packet core data plane. Must be created in the same location as its parent packet core control plane.",
           "displayName": "PacketCoreDataPlanes_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/write",
@@ -470,7 +486,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates an attached data network.",
+          "description": "Creates or updates an attached data network. Must be created in the same location as its parent packet core data plane.",
           "displayName": "AttachedDataNetworks_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/write",
@@ -516,7 +532,7 @@
           "properties": null
         },
         {
-          "description": "Creates or updates a mobile network site.",
+          "description": "Creates or updates a mobile network site. Must be created in the same location as its parent mobile network.",
           "displayName": "Sites_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/mobileNetworks/sites/write",
@@ -524,7 +540,7 @@
           "properties": null
         },
         {
-          "description": "Deletes the specified mobile network site.",
+          "description": "Deletes the specified mobile network site. This will also delete any network functions that are a part of this site.",
           "displayName": "Sites_Delete",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/mobileNetworks/sites/delete",
@@ -553,6 +569,30 @@
       "displayName": "simGroups",
       "name": "simGroups",
       "operations": [
+        {
+          "description": "Bulk upload SIMs to a SIM group.",
+          "displayName": "Sim_BulkUpload",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/simGroups/uploadSims/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Bulk delete SIMs from a SIM group.",
+          "displayName": "Sim_BulkDelete",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/simGroups/deleteSims/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Bulk upload SIMs in encrypted form to a SIM group. The SIM credentials must be encrypted.",
+          "displayName": "Sim_BulkUploadEncrypted",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/simGroups/uploadEncryptedSims/action",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Gets information about the specified SIM group.",
           "displayName": "SimGroups_Get",
@@ -633,7 +673,7 @@
         },
         {
           "description": "Gets all the SIMs in a SIM group.",
-          "displayName": "Sims_ListBySimGroup",
+          "displayName": "Sims_ListByGroup",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/simGroups/sims/read",
           "origin": null,
@@ -655,7 +695,7 @@
         },
         {
           "description": "Lists all supported packet core control planes versions.",
-          "displayName": "PacketCoreControlPlaneVersions_ListByResourceGroup",
+          "displayName": "PacketCoreControlPlaneVersions_List",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlaneVersions/read",
           "origin": null,
