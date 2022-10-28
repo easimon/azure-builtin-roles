@@ -338,6 +338,54 @@
                     "PT1H"
                   ],
                   "unit": "BitsPerSecond"
+                },
+                {
+                  "aggregationType": "Sum",
+                  "dimensions": [
+                    {
+                      "displayName": "Connection Identifier",
+                      "name": "ConnectionId"
+                    },
+                    {
+                      "displayName": "Session IP Address",
+                      "name": "SessionIp"
+                    }
+                  ],
+                  "displayDescription": "Flap Events Count in all the connection",
+                  "displayName": "Connection Flap Events Count",
+                  "name": "FlapCounts",
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Connection Identifier",
+                      "name": "ConnectionId"
+                    },
+                    {
+                      "displayName": "Session IP Address",
+                      "name": "SessionIp"
+                    },
+                    {
+                      "displayName": "Traffic Class",
+                      "name": "TrafficClass"
+                    }
+                  ],
+                  "displayDescription": "Packets Drop rate in bits per second",
+                  "displayName": "Packets Drop Rate",
+                  "name": "PacketDropRate",
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT1H"
+                  ],
+                  "unit": "BitsPerSecond"
                 }
               ]
             }
