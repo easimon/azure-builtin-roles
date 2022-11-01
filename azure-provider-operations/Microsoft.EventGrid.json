@@ -2572,6 +2572,14 @@
           "name": "Microsoft.EventGrid/partnerNamespaces/eventChannels/channelReadinessStateChange/action",
           "origin": "User,System",
           "properties": null
+        },
+        {
+          "description": "Set provisioning status of event channel to idle",
+          "displayName": "Set provisioning status of EventChannel to idle",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/eventChannels/SetEventChannelToIdle/action",
+          "origin": "System",
+          "properties": null
         }
       ]
     },
@@ -2601,6 +2609,22 @@
           "isDataAction": false,
           "name": "Microsoft.EventGrid/partnerTopics/delete",
           "origin": "User,System",
+          "properties": null
+        },
+        {
+          "description": "Set provisioning status of partner topic to idle",
+          "displayName": "Set provisioning status of PartnerTopic to idle",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/setToIdleState/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Re-link an idle PartnerTopic to a newly created channel",
+          "displayName": "Re-link a PartnerTopic to a newly created channel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerTopics/reLinkPartnerTopic/action",
+          "origin": "System",
           "properties": null
         },
         {
@@ -2664,6 +2688,14 @@
           "name": "Microsoft.EventGrid/partnerNamespaces/channels/getFullUrl/action",
           "origin": "User,System",
           "properties": null
+        },
+        {
+          "description": "Set provisioning status of channel to idle",
+          "displayName": "Set provisioning status of Channel to idle",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerNamespaces/channels/SetChannelToIdle/action",
+          "origin": "System",
+          "properties": null
         }
       ]
     },
@@ -2708,6 +2740,22 @@
           "displayName": "Get Channel details of activated PartnerDestination",
           "isDataAction": false,
           "name": "Microsoft.EventGrid/partnerDestinations/getPartnerDestinationChannelInfo/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Set provisioning status of partner destination to idle",
+          "displayName": "Set provisioning status of PartnerDestination to idle",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/setToIdleState/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Re-link an idle partner destination to a newly created channel",
+          "displayName": "Re-link a PartnerDestination to a newly created channel",
+          "isDataAction": false,
+          "name": "Microsoft.EventGrid/partnerDestinations/reLinkPartnerDestination/action",
           "origin": "System",
           "properties": null
         }
