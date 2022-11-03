@@ -1388,6 +1388,42 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Key",
+      "name": "managedHSMs/keys",
+      "operations": [
+        {
+          "description": "List the keys in a specified managed hsm, or read the current version of a specified key.",
+          "displayName": "Read Key",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/keys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the first version of a new key if it does not exist. If it already exists, then the existing key is returned without any modification. This API does not create subsequent versions, and does not update existing keys.",
+          "displayName": "Create Key (if not exist)",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/keys/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Key Version",
+      "name": "managedHSMs/keys/versions",
+      "operations": [
+        {
+          "description": "List the versions of a specified key, or read the specified version of a key.",
+          "displayName": "Read Key Version",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/managedHSMs/keys/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
