@@ -699,6 +699,70 @@
                     "Total"
                   ],
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Total time taken for a bulk operation to complete.",
+                  "displayName": "Bulk Operation Latency (preview)",
+                  "fillGapWithZero": true,
+                  "name": "BulkOperationLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "The number of twins, models, or relationships processed by a bulk operation.",
+                  "displayName": "Bulk Operation Entity Count (preview)",
+                  "fillGapWithZero": false,
+                  "name": "BulkOperationEntityCount",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
                 }
               ]
             }
