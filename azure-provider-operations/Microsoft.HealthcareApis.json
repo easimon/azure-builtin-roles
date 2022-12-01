@@ -1639,6 +1639,97 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Azure service log definition.",
+      "name": "workspaces/analyticsconnectors/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for the Azure service.",
+          "displayName": "Read the Azure service log definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/analyticsconnectors/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Diagnostic logs for Analytics Connector",
+                  "name": "DiagnosticLogs"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service diagnostic settings.",
+      "name": "workspaces/analyticsconnectors/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic settings for the Azure service.",
+          "displayName": "Read Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/analyticsconnectors/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic settings for the Azure service.",
+          "displayName": "Write Azure service diagnostic settings.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/analyticsconnectors/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure service metrics settings.",
+      "name": "workspaces/analyticsconnectors/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the metrics settings for the Azure service.",
+          "displayName": "Read the Azure service metrics definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.HealthcareApis/workspaces/analyticsconnectors/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Sum",
+                  "category": "Availability",
+                  "dimensions": [
+                    {
+                      "displayName": "The operation performed by the Azure Analytics Connector for FHIR",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "The resource name of the Azure Analytics Connector for FHIR",
+                      "name": "ResourceName"
+                    },
+                    {
+                      "displayName": "The name of the health check",
+                      "name": "HealthCheckName"
+                    }
+                  ],
+                  "displayDescription": "The health status of analytics connector",
+                  "displayName": "Analytics Connector Health Status ",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "name": "AnalyticsConnectorHealthStatus",
+                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
+                  "sourceMdmNamespace": "Shoebox2",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
