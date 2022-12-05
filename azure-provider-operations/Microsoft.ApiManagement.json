@@ -2641,6 +2641,14 @@
           "properties": null
         },
         {
+          "description": "Gets the Shared Access Authorization Token for the gateway.",
+          "displayName": "Get token",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/gateways/token/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Fetches configuration for specified self-hosted gateway",
           "displayName": "Get self-hosted gateway configuration",
           "isDataAction": true,
@@ -3517,6 +3525,14 @@
           "name": "Microsoft.ApiManagement/service/portalConfigs/listDelegationSecrets/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Get media content blob container uri.",
+          "displayName": "Get media content blob container uri",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/portalConfigs/listMediaContentSecrets/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -3725,50 +3741,6 @@
       ]
     },
     {
-      "displayName": "Tags associated with the Operation",
-      "name": "service/workspaces/apis/operations/tags",
-      "operations": [
-        {
-          "description": "Lists all Tags associated with the Operation. or Get tag associated with the Operation.",
-          "displayName": "Get tags associated with the Operation or Tag details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/tags/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Assign tag to the Operation.",
-          "displayName": "Associate Tag with Operation",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/tags/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Detach the tag from the Operation.",
-          "displayName": "Delete Tag with Operation association",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/operations/tags/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "API associated products",
-      "name": "service/workspaces/apis/products",
-      "operations": [
-        {
-          "description": "Lists all Products, which the API is part of.",
-          "displayName": "Get products associated with the API",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/products/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "API policies configuration",
       "name": "service/workspaces/apis/policies",
       "operations": [
@@ -3793,80 +3765,6 @@
           "displayName": "Remove API policy configuration from policies",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/workspaces/apis/policies/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Tags descriptions",
-      "name": "service/workspaces/apis/tagDescriptions",
-      "operations": [
-        {
-          "description": "Lists all Tags descriptions in scope of API. Model similar to swagger - tagDescription is defined on API level but tag may be assigned to the Operations or Get Tag description in scope of API",
-          "displayName": "Tags descriptions in scope of API or Get Tag metadata",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/tagDescriptions/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create/Update tag description in scope of the Api.",
-          "displayName": "Create/Change Tag metadata",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/tagDescriptions/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete tag description for the Api.",
-          "displayName": "Remove Tag",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/tagDescriptions/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "API/Tag associations",
-      "name": "service/workspaces/apis/tags",
-      "operations": [
-        {
-          "description": "Lists all Tags associated with the API. or Get tag associated with the API.",
-          "displayName": "Get tags associated with the API or Get Tag associated with API",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/tags/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Assign tag to the Api.",
-          "displayName": "Add Tag",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/tags/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Detach the tag from the Api.",
-          "displayName": "Remove Tag",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/tags/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Tags - Operation associations",
-      "name": "service/workspaces/apis/operationsByTags",
-      "operations": [
-        {
-          "description": "Lists a collection of operations associated with tags.",
-          "displayName": "Get Operation-Tag associations list",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/apis/operationsByTags/read",
           "origin": null,
           "properties": null
         }
@@ -4053,80 +3951,6 @@
       ]
     },
     {
-      "displayName": "APIs added to product",
-      "name": "service/workspaces/products/apis",
-      "operations": [
-        {
-          "description": "Lists a collection of the APIs associated with a product.",
-          "displayName": "Get product APIs list",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/apis/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Adds an API to the specified product.",
-          "displayName": "Add API to product",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/apis/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the specified API from the specified product.",
-          "displayName": "Remove API from product",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/apis/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Developer groups associated with product",
-      "name": "service/workspaces/products/groups",
-      "operations": [
-        {
-          "description": "Lists the collection of developer groups associated with the specified product.",
-          "displayName": "Get product groups list",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/groups/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Adds the association between the specified developer group with the specified product.",
-          "displayName": "Associate group with product",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/groups/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the association between the specified group and product.",
-          "displayName": "Delete group with product association",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/groups/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Product subscriptions",
-      "name": "service/workspaces/products/subscriptions",
-      "operations": [
-        {
-          "description": "Lists the collection of subscriptions to the specified product.",
-          "displayName": "Get product subscriptions list",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/subscriptions/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Product policies configuration",
       "name": "service/workspaces/products/policies",
       "operations": [
@@ -4151,36 +3975,6 @@
           "displayName": "Remove Product policy configuration from policies",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/workspaces/products/policies/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Tags associated with the Product",
-      "name": "service/workspaces/products/tags",
-      "operations": [
-        {
-          "description": "Lists all Tags associated with the Product. or Get tag associated with the Product.",
-          "displayName": "Get product tags or Tag details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/tags/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Assign tag to the Product.",
-          "displayName": "Associate Tag with Product",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/tags/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Detach the tag from the Product.",
-          "displayName": "Delete Tag with Product association",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/products/tags/delete",
           "origin": null,
           "properties": null
         }
@@ -4331,6 +4125,426 @@
           "displayName": "Remove GraphQL API policy configuration from policies",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/tenants/apis/resolvers/policies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product-Group links resource",
+      "name": "service/products/groupLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of product-group links in the specified service instance. or Get product-group details.",
+          "displayName": "Get links or Get product-group details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/groupLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a product-group link.",
+          "displayName": "Create product-group link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/groupLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete product-group link.",
+          "displayName": "Remove product-group link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/groupLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product-API links resource",
+      "name": "service/products/apiLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of product-API links in the specified service instance. or Get product-API details.",
+          "displayName": "Get links or Get product-API details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/apiLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a product-API link.",
+          "displayName": "Create product-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/apiLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete product-API link.",
+          "displayName": "Remove product-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/products/apiLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tag-API links resource",
+      "name": "service/tags/apiLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of Tag-API links in the specified service instance. or Get Tag-API details.",
+          "displayName": "Get links or Get Tag-API details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/apiLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Tag-API link.",
+          "displayName": "Create Tag-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/apiLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Tag-API link.",
+          "displayName": "Remove Tag-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/apiLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tag-product links resource",
+      "name": "service/tags/productLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of Tag-product links in the specified service instance. or Get Tag-product details.",
+          "displayName": "Get links or Get Tag-product details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/productLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Tag-product link.",
+          "displayName": "Create Tag-product link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/productLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Tag-product link.",
+          "displayName": "Remove Tag-product link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/productLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tag-operation links resource",
+      "name": "service/tags/operationLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of Tag-operation links in the specified service instance. or Get Tag-operation details.",
+          "displayName": "Get links or Get Tag-operation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/operationLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Tag-operation link.",
+          "displayName": "Create Tag-operation link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/operationLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Tag-operation link.",
+          "displayName": "Remove Tag-operation link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tags/operationLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product-Group links resource",
+      "name": "service/workspaces/products/groupLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of product-group links in the specified service instance. or Get product-group details.",
+          "displayName": "Get links or Get product-group details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/groupLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a product-group link.",
+          "displayName": "Create product-group link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/groupLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete product-group link.",
+          "displayName": "Remove product-group link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/groupLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Product-API links resource",
+      "name": "service/workspaces/products/apiLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of product-API links in the specified service instance. or Get product-API details.",
+          "displayName": "Get links or Get product-API details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/apiLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a product-API link.",
+          "displayName": "Create product-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/apiLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete product-API link.",
+          "displayName": "Remove product-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/products/apiLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tags",
+      "name": "service/workspaces/tags",
+      "operations": [
+        {
+          "description": "Lists a collection of tags defined within a service instance. or Gets the details of the tag specified by its identifier.",
+          "displayName": "Get Tags list or Tag details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a tag. or Updates the details of the tag specified by its identifier.",
+          "displayName": "Add Tag or Update Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific tag of the API Management service instance.",
+          "displayName": "Remove Tag",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tag-API links resource",
+      "name": "service/workspaces/tags/apiLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of Tag-API links in the specified service instance. or Get Tag-API details.",
+          "displayName": "Get links or Get Tag-API details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/apiLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Tag-API link.",
+          "displayName": "Create Tag-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/apiLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Tag-API link.",
+          "displayName": "Remove Tag-API link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/apiLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tag-product links resource",
+      "name": "service/workspaces/tags/productLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of Tag-product links in the specified service instance. or Get Tag-product details.",
+          "displayName": "Get links or Get Tag-product details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/productLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Tag-product link.",
+          "displayName": "Create Tag-product link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/productLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Tag-product link.",
+          "displayName": "Remove Tag-product link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/productLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tag-operation links resource",
+      "name": "service/workspaces/tags/operationLinks",
+      "operations": [
+        {
+          "description": "Lists a collection of Tag-operation links in the specified service instance. or Get Tag-operation details.",
+          "displayName": "Get links or Get Tag-operation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/operationLinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Tag-operation link.",
+          "displayName": "Create Tag-operation link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/operationLinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Tag-operation link.",
+          "displayName": "Remove Tag-operation link",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/tags/operationLinks/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recipient Users associated with a notification",
+      "name": "service/workspaces/notifications/recipientUsers",
+      "operations": [
+        {
+          "description": "Gets the list of the Notification Recipient User subscribed to the notification.",
+          "displayName": "Get recipient users for the Notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/notifications/recipientUsers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds the API Management User to the list of Recipients for the Notification.",
+          "displayName": "Add user to notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/notifications/recipientUsers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes the API Management user from the list of Notification.",
+          "displayName": "Removes user from notification recipients",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/notifications/recipientUsers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recipient Emails associated with a notification",
+      "name": "service/workspaces/notifications/recipientEmails",
+      "operations": [
+        {
+          "description": "Gets the list of the Notification Recipient Emails subscribed to a notification.",
+          "displayName": "Get Email Recipients associated with Publisher Notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/notifications/recipientEmails/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Adds the Email address to the list of Recipients for the Notification.",
+          "displayName": "Create new email recipient",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/notifications/recipientEmails/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes the email from the list of Notification.",
+          "displayName": "Removes email associated with notification",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/notifications/recipientEmails/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace schemas",
+      "name": "service/workspaces/schemas",
+      "operations": [
+        {
+          "description": "Lists a collection of schemas registered. or Gets the details of the Schema specified by its identifier.",
+          "displayName": "Get schemas list or Get schema details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an Schema to be used in Api Management instance.",
+          "displayName": "Create schema",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/schemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes specific Schema.",
+          "displayName": "Remove schema",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/schemas/delete",
           "origin": null,
           "properties": null
         }
