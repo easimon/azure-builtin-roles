@@ -4,6 +4,14 @@
   "name": "Microsoft.DevCenter",
   "operations": [
     {
+      "description": "action checkNameAvailability",
+      "displayName": "action_checkNameAvailability",
+      "isDataAction": false,
+      "name": "Microsoft.DevCenter/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
       "description": "Register the subscription for Microsoft.DevCenter",
       "displayName": "Register the Microsoft.DevCenter",
       "isDataAction": false,
@@ -720,9 +728,17 @@
       ]
     },
     {
-      "displayName": "RegisteredSubscriptions",
-      "name": "RegisteredSubscriptions",
+      "displayName": "registeredSubscriptions",
+      "name": "registeredSubscriptions",
       "operations": [
+        {
+          "description": "read registeredSubscriptions",
+          "displayName": "read_registeredSubscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/registeredSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Reads registered subscriptions",
           "displayName": "Gets/Lists registered subscriptions",
@@ -824,6 +840,22 @@
           "name": "Microsoft.DevCenter/projects/users/devboxes/userDelete/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Allows a user to read upcoming actions.",
+          "displayName": "Projects_Users_DevBoxes_UserUpcomingActionRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userUpcomingActionRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to skip or delay upcoming actions.",
+          "displayName": "Projects_Users_DevBoxes_UserUpcomingActionManage",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userUpcomingActionManage/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -892,6 +924,28 @@
           "displayName": "Projects_Environments_AdminAction",
           "isDataAction": true,
           "name": "Microsoft.DevCenter/projects/users/environments/adminAction/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/allowedEnvironmentTypes",
+      "name": "projects/allowedEnvironmentTypes",
+      "operations": [
+        {
+          "description": "Lists allowed environment types for a project.",
+          "displayName": "ProjectAllowedEnvironmentTypes_List",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/allowedEnvironmentTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an allowed environment type.",
+          "displayName": "ProjectAllowedEnvironmentTypes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/allowedEnvironmentTypes/read",
           "origin": null,
           "properties": null
         }
