@@ -132,6 +132,14 @@
           "properties": null
         },
         {
+          "description": "Get Global Rulestack associated with the Firewall",
+          "displayName": "Firewalls_getGlobalRulestack",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/getGlobalRulestack/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Log Profile for Firewall",
           "displayName": "Firewalls_getLogProfile",
           "isDataAction": false,
@@ -153,14 +161,6 @@
       "displayName": "localRulestacks",
       "name": "localRulestacks",
       "operations": [
-        {
-          "description": "List of countries for Rulestack",
-          "displayName": "LocalRulestacks_listCountries",
-          "isDataAction": false,
-          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/listCountries/action",
-          "origin": null,
-          "properties": null
-        },
         {
           "description": "List LocalRulestackResource resources by subscription ID",
           "displayName": "LocalRulestacks_ListBySubscription",
@@ -230,6 +230,22 @@
           "displayName": "LocalRulestacks_listAdvancedSecurityObjects",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/listAdvancedSecurityObjects/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List of AppIds for LocalRulestack ApiVersion",
+          "displayName": "LocalRulestacks_listAppIds",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/listAppIds/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List of countries for Rulestack",
+          "displayName": "LocalRulestacks_listCountries",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/listCountries/action",
           "origin": null,
           "properties": null
         },
@@ -332,6 +348,14 @@
           "displayName": "GlobalRulestack_listAdvancedSecurityObjects",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/globalRulestacks/listAdvancedSecurityObjects/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List of AppIds for GlobalRulestack ApiVersion",
+          "displayName": "GlobalRulestack_listAppIds",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/globalRulestacks/listAppIds/action",
           "origin": null,
           "properties": null
         },
@@ -710,6 +734,82 @@
           "displayName": "PrefixListLocalRulestack_Delete",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/prefixlists/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "globalRulestacks/certificates",
+      "name": "globalRulestacks/certificates",
+      "operations": [
+        {
+          "description": "List CertificateObjectGlobalRulestackResource resources by Tenant",
+          "displayName": "CertificateObjectGlobalRulestack_List",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/globalRulestacks/certificates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CertificateObjectGlobalRulestackResource",
+          "displayName": "CertificateObjectGlobalRulestack_Get",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/globalRulestacks/certificates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CertificateObjectGlobalRulestackResource",
+          "displayName": "CertificateObjectGlobalRulestack_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/globalRulestacks/certificates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CertificateObjectGlobalRulestackResource",
+          "displayName": "CertificateObjectGlobalRulestack_Delete",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/globalRulestacks/certificates/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "localRulestacks/certificates",
+      "name": "localRulestacks/certificates",
+      "operations": [
+        {
+          "description": "List CertificateObjectLocalRulestackResource resources by LocalRulestacks",
+          "displayName": "CertificateObjectLocalRulestack_ListByLocalRulestacks",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/certificates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CertificateObjectLocalRulestackResource",
+          "displayName": "CertificateObjectLocalRulestack_Get",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/certificates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CertificateObjectLocalRulestackResource",
+          "displayName": "CertificateObjectLocalRulestack_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/certificates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CertificateObjectLocalRulestackResource",
+          "displayName": "CertificateObjectLocalRulestack_Delete",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/localRulestacks/certificates/delete",
           "origin": null,
           "properties": null
         }
