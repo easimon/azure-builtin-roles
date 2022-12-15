@@ -4495,12 +4495,6 @@
                   "displayName": "App Service Platform logs",
                   "logFilterPattern": "^((?!functionapp).)*$",
                   "name": "AppServicePlatformLogs"
-                },
-                {
-                  "blobDuration": "PT5M",
-                  "displayName": "Workflow Runtime Logs",
-                  "logFilterPattern": "(?:^|\\W)workflowapp(?:$|\\W)",
-                  "name": "WorkflowRuntime"
                 }
               ],
               "metricSpecifications": null
@@ -10364,14 +10358,6 @@
           "name": "Microsoft.Web/staticSites/zipdeploy/action",
           "origin": "user,system",
           "properties": null
-        },
-        {
-          "description": "Show details for Database Connections for a Static Site",
-          "displayName": "Show Static Site Database Connections Details",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/showDatabaseConnections/action",
-          "origin": "user,system",
-          "properties": null
         }
       ]
     },
@@ -10510,14 +10496,6 @@
           "displayName": "Deploy to Static Site Build",
           "isDataAction": false,
           "name": "Microsoft.Web/staticSites/builds/zipdeploy/action",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Show details for Database Connections for a Static Site Build",
-          "displayName": "Show Static Site Build Database Connections Details",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/builds/showDatabaseConnections/action",
           "origin": "user,system",
           "properties": null
         }
@@ -10788,7 +10766,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "SiteHits",
                   "displayName": "SiteHits",
                   "enableRegionalMdmAccount": false,
@@ -10823,7 +10808,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "SiteErrors",
                   "displayName": "SiteErrors",
                   "enableRegionalMdmAccount": false,
@@ -10858,7 +10850,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "FunctionHits",
                   "displayName": "FunctionHits",
                   "enableRegionalMdmAccount": false,
@@ -10893,7 +10892,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "FunctionErrors",
                   "displayName": "FunctionErrors",
                   "enableRegionalMdmAccount": false,
@@ -10928,77 +10934,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
-                  "displayDescription": "DataApiHits",
-                  "displayName": "DataApiHits",
-                  "enableRegionalMdmAccount": false,
-                  "fillGapWithZero": false,
-                  "isInternal": false,
-                  "metricFilterPattern": null,
-                  "name": "DataApiHits",
-                  "sourceMdmAccount": null,
-                  "sourceMdmNamespace": null,
-                  "supportedTimeGrainTypes": [
-                    "PT5M",
-                    "PT1H",
-                    "P1D"
-                  ],
-                  "supportsInstanceLevelAggregation": false,
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Total",
-                  "availabilities": [
+                  "dimensions": [
                     {
-                      "blobDuration": "P2D",
-                      "timeGrain": "PT1M"
-                    },
-                    {
-                      "blobDuration": "P30D",
-                      "timeGrain": "PT1H"
-                    },
-                    {
-                      "blobDuration": "P90D",
-                      "timeGrain": "P1D"
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
                     }
                   ],
-                  "category": null,
-                  "dimensions": null,
-                  "displayDescription": "DataApiErrors",
-                  "displayName": "DataApiErrors",
-                  "enableRegionalMdmAccount": false,
-                  "fillGapWithZero": false,
-                  "isInternal": false,
-                  "metricFilterPattern": null,
-                  "name": "DataApiErrors",
-                  "sourceMdmAccount": null,
-                  "sourceMdmNamespace": null,
-                  "supportedTimeGrainTypes": [
-                    "PT5M",
-                    "PT1H",
-                    "P1D"
-                  ],
-                  "supportsInstanceLevelAggregation": false,
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Total",
-                  "availabilities": [
-                    {
-                      "blobDuration": "P2D",
-                      "timeGrain": "PT1M"
-                    },
-                    {
-                      "blobDuration": "P30D",
-                      "timeGrain": "PT1H"
-                    },
-                    {
-                      "blobDuration": "P90D",
-                      "timeGrain": "P1D"
-                    }
-                  ],
-                  "category": null,
-                  "dimensions": null,
                   "displayDescription": "BytesSent",
                   "displayName": "Data Out",
                   "enableRegionalMdmAccount": false,
@@ -11033,7 +10976,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "CdnPercentageOf4XX",
                   "displayName": "CdnPercentageOf4XX",
                   "enableRegionalMdmAccount": false,
@@ -11068,7 +11018,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "CdnPercentageOf5XX",
                   "displayName": "CdnPercentageOf5XX",
                   "enableRegionalMdmAccount": false,
@@ -11103,7 +11060,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "CdnRequestCount",
                   "displayName": "CdnRequestCount",
                   "enableRegionalMdmAccount": false,
@@ -11138,7 +11102,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "CdnResponseSize",
                   "displayName": "CdnResponseSize",
                   "enableRegionalMdmAccount": false,
@@ -11173,7 +11144,14 @@
                     }
                   ],
                   "category": null,
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "displayName": "Instance",
+                      "internalName": "ServerName",
+                      "name": "Instance",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": "CdnTotalLatency",
                   "displayName": "CdnTotalLatency",
                   "enableRegionalMdmAccount": false,
@@ -13114,82 +13092,6 @@
           "displayName": "Get workflow app's configuration information by its ID in a deployment slot in a Logic App",
           "isDataAction": false,
           "name": "microsoft.web/sites/slots/workflowsconfiguration/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Static Site Database Connections",
-      "name": "staticSites/databaseConnections",
-      "operations": [
-        {
-          "description": "Delete a Database Connection from a Static Site",
-          "displayName": "Delete Static Site Database Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/databaseConnections/Delete",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Get Static Site Database Connection",
-          "displayName": "Get Static Site Database Connections",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/databaseConnections/Read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create or Update a Database Connection with a Static Site",
-          "displayName": "Create or Update Static Site Database Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/databaseConnections/Write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Show details for a Database Connection for a Static Site",
-          "displayName": "Show Static Site Database Connection Details",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/databaseConnections/show/action",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Static Site Build Database Connection",
-      "name": "staticSites/builds/databaseConnections",
-      "operations": [
-        {
-          "description": "Delete a Database Connection from a Static Site Build",
-          "displayName": "Delete Static Site Build Database Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/builds/databaseConnections/Delete",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Get Static Site Build Database Connections",
-          "displayName": "Get Static Site Build Database Connections",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/builds/databaseConnections/Read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create or Update a Database Connection with a Static Site Build",
-          "displayName": "Create or Update Static Site Build Database Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/builds/databaseConnections/Write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Show details for a Database Connection for a Static Site Build",
-          "displayName": "Show Static Site Build Database Connection Details",
-          "isDataAction": false,
-          "name": "Microsoft.Web/staticSites/builds/databaseConnections/show/action",
           "origin": "user,system",
           "properties": null
         }
