@@ -62,71 +62,7 @@
       "name": "catalogs",
       "operations": [
         {
-          "description": "countDevices catalogs",
-          "displayName": "Catalogs_CountDevices",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/countDevices/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "claimDevices catalogs",
-          "displayName": "Catalogs_ClaimDevices",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/claimDevices/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "listDeviceInsights catalogs",
-          "displayName": "Catalogs_ListDeviceInsights",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/listDeviceInsights/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "listDeviceGroups catalogs",
-          "displayName": "Catalogs_ListDeviceGroups",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/listDeviceGroups/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read catalogs",
-          "displayName": "Catalogs_Get",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "write catalogs",
-          "displayName": "Catalogs_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "delete catalogs",
-          "displayName": "Catalogs_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "write catalogs",
-          "displayName": "Catalogs_Update",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read catalogs",
+          "description": "List Catalog resources by subscription ID",
           "displayName": "Catalogs_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/read",
@@ -134,10 +70,74 @@
           "properties": null
         },
         {
-          "description": "read catalogs",
+          "description": "List Catalog resources by resource group",
           "displayName": "Catalogs_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Catalog",
+          "displayName": "Catalogs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Catalog",
+          "displayName": "Catalogs_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Catalog",
+          "displayName": "Catalogs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Catalog",
+          "displayName": "Catalogs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Counts devices in catalog.",
+          "displayName": "Catalogs_CountDevices",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/countDevices/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the device groups for the catalog.",
+          "displayName": "Catalogs_ListDeviceGroups",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/listDeviceGroups/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists device insights for catalog.",
+          "displayName": "Catalogs_ListDeviceInsights",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/listDeviceInsights/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists devices for catalog.",
+          "displayName": "Catalogs_ListDevices",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/listDevices/action",
           "origin": null,
           "properties": null
         }
@@ -148,31 +148,15 @@
       "name": "catalogs/products",
       "operations": [
         {
-          "description": "listDevices products",
-          "displayName": "Products_ListDevices",
+          "description": "List Product resources by Catalog",
+          "displayName": "Products_ListByCatalog",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/listDevices/action",
+          "name": "Microsoft.AzureSphere/catalogs/products/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "countDevices products",
-          "displayName": "Products_CountDevices",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/countDevices/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "generateDefaultDeviceGroups products",
-          "displayName": "Products_GenerateDefaultDeviceGroups",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/generateDefaultDeviceGroups/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read products",
+          "description": "Get a Product",
           "displayName": "Products_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/read",
@@ -180,7 +164,7 @@
           "properties": null
         },
         {
-          "description": "write products",
+          "description": "Create a Product",
           "displayName": "Products_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/write",
@@ -188,7 +172,7 @@
           "properties": null
         },
         {
-          "description": "delete products",
+          "description": "Delete a Product",
           "displayName": "Products_Delete",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/delete",
@@ -196,18 +180,26 @@
           "properties": null
         },
         {
-          "description": "write products",
-          "displayName": "Products_Update",
+          "description": "Counts devices in product.",
+          "displayName": "Products_CountDevices",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/write",
+          "name": "Microsoft.AzureSphere/catalogs/products/countDevices/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "read products",
-          "displayName": "Products_ListByCatalogs",
+          "description": "Generates default device groups for the product.",
+          "displayName": "Products_GenerateDefaultDeviceGroups",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/read",
+          "name": "Microsoft.AzureSphere/catalogs/products/generateDefaultDeviceGroups/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists devices in product.",
+          "displayName": "Products_ListDevices",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/listDevices/action",
           "origin": null,
           "properties": null
         }
@@ -264,23 +256,15 @@
       "name": "catalogs/certificates",
       "operations": [
         {
-          "description": "retrieveCertChain certificates",
-          "displayName": "Certificates_RetrieveCertChain",
+          "description": "List Certificate resources by Catalog",
+          "displayName": "Certificates_ListByCatalog",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/certificates/retrieveCertChain/action",
+          "name": "Microsoft.AzureSphere/catalogs/certificates/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "proofOfPossessionNonce certificates",
-          "displayName": "Certificates_ProofOfPossessionNonce",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/certificates/proofOfPossessionNonce/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read certificates",
+          "description": "Get a Certificate",
           "displayName": "Certificates_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/certificates/read",
@@ -288,10 +272,18 @@
           "properties": null
         },
         {
-          "description": "read certificates",
-          "displayName": "Certificates_ListByCatalogs",
+          "description": "Retrieves cert chain.",
+          "displayName": "Certificates_RetrieveCertChain",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/certificates/read",
+          "name": "Microsoft.AzureSphere/catalogs/certificates/retrieveCertChain/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the proof of possession nonce.",
+          "displayName": "Certificates_RetrieveProofOfPossessionNonce",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/certificates/retrieveProofOfPossessionNonce/action",
           "origin": null,
           "properties": null
         }
@@ -302,23 +294,15 @@
       "name": "catalogs/images",
       "operations": [
         {
-          "description": "metadata images",
-          "displayName": "Images_Metadata",
+          "description": "List Image resources by Catalog",
+          "displayName": "Images_ListByCatalog",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/images/metadata/action",
+          "name": "Microsoft.AzureSphere/catalogs/images/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "upload images",
-          "displayName": "Images_UploadImage",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/images/upload/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read images",
+          "description": "Get a Image",
           "displayName": "Images_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/images/read",
@@ -326,7 +310,7 @@
           "properties": null
         },
         {
-          "description": "write images",
+          "description": "Create a Image",
           "displayName": "Images_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/images/write",
@@ -334,10 +318,10 @@
           "properties": null
         },
         {
-          "description": "read images",
-          "displayName": "Images_ListByCatalogs",
+          "description": "Delete a Image",
+          "displayName": "Images_Delete",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/images/read",
+          "name": "Microsoft.AzureSphere/catalogs/images/delete",
           "origin": null,
           "properties": null
         }
@@ -370,55 +354,15 @@
       "name": "catalogs/products/deviceGroups",
       "operations": [
         {
-          "description": "deploy deviceGroups",
-          "displayName": "DeviceGroups_Deploy",
+          "description": "List DeviceGroup resources by Product",
+          "displayName": "DeviceGroups_ListByProduct",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deploy/action",
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "listDeployments deviceGroups",
-          "displayName": "DeviceGroups_ListDeployments",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/listDeployments/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "listDevices deviceGroups",
-          "displayName": "DeviceGroups_ListDevices",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/listDevices/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "countDevices deviceGroups",
-          "displayName": "DeviceGroups_CountDevices",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/countDevices/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "move deviceGroups",
-          "displayName": "DeviceGroups_Move",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/move/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "remove deviceGroups",
-          "displayName": "DeviceGroups_Remove",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/remove/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read deviceGroups",
+          "description": "Get a DeviceGroup",
           "displayName": "DeviceGroups_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/read",
@@ -426,7 +370,7 @@
           "properties": null
         },
         {
-          "description": "write deviceGroups",
+          "description": "Create a DeviceGroup",
           "displayName": "DeviceGroups_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/write",
@@ -434,7 +378,7 @@
           "properties": null
         },
         {
-          "description": "delete deviceGroups",
+          "description": "Delete a DeviceGroup",
           "displayName": "DeviceGroups_Delete",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/delete",
@@ -442,18 +386,110 @@
           "properties": null
         },
         {
-          "description": "write deviceGroups",
-          "displayName": "DeviceGroups_Update",
+          "description": "Bulk claims the devices.",
+          "displayName": "DeviceGroups_ClaimDevices",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/write",
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/claimDevices/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "read deviceGroups",
-          "displayName": "DeviceGroups_ListByProducts",
+          "description": "Counts devices in device group.",
+          "displayName": "DeviceGroups_CountDevices",
           "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/read",
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/countDevices/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "catalogs/products/deviceGroups/devices",
+      "name": "catalogs/products/deviceGroups/devices",
+      "operations": [
+        {
+          "description": "List Device resources by DeviceGroup",
+          "displayName": "Devices_ListByDeviceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Device",
+          "displayName": "Devices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Device",
+          "displayName": "Devices_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Device",
+          "displayName": "Devices_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Device",
+          "displayName": "Devices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generates the capability image for the device.",
+          "displayName": "Devices_GenerateCapabilityImage",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/generateCapabilityImage/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "catalogs/products/deviceGroups/deployments",
+      "name": "catalogs/products/deviceGroups/deployments",
+      "operations": [
+        {
+          "description": "List Deployment resources by DeviceGroup",
+          "displayName": "Deployments_ListByDeviceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Deployment",
+          "displayName": "Deployments_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Deployment",
+          "displayName": "Deployments_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Deployment",
+          "displayName": "Deployments_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/delete",
           "origin": null,
           "properties": null
         }
