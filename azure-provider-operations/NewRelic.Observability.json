@@ -66,10 +66,42 @@
           "properties": null
         },
         {
+          "description": "List all the app services that have NewRelic agent installed",
+          "displayName": "List App services",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/monitors/listAppServices/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "List all VMs that are sending compute logs for a monitor",
           "displayName": "List VM Hosts",
           "isDataAction": false,
-          "name": "NewRelic.Observability/monitors/hosts/action",
+          "name": "NewRelic.Observability/monitors/listHosts/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Metric rules for a NewRelic resource",
+          "displayName": "Get Metric Rules",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/monitors/getMetricRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Metric status for resources",
+          "displayName": "Get Metric Status",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/monitors/getMetricStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Switches billing for NewRelic monitor resource to Azure",
+          "displayName": "Switch Billing",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/monitors/switchBilling/action",
           "origin": null,
           "properties": null
         }
@@ -156,6 +188,48 @@
           "displayName": "List available Operations in NewRelic.Observability",
           "isDataAction": false,
           "name": "NewRelic.Observability/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ListAccounts",
+      "name": "accounts",
+      "operations": [
+        {
+          "description": "List all Accounts that for a user",
+          "displayName": "List Accounts",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/accounts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Listorganizations",
+      "name": "organizations",
+      "operations": [
+        {
+          "description": "List all organizations for a user",
+          "displayName": "List organizations",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/organizations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ListPlandata",
+      "name": "plans",
+      "operations": [
+        {
+          "description": "List plan data for a account or organization",
+          "displayName": "List plandata",
+          "isDataAction": false,
+          "name": "NewRelic.Observability/plans/read",
           "origin": null,
           "properties": null
         }
