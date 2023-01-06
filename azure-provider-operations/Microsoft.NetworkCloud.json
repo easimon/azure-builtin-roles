@@ -894,7 +894,7 @@
           "properties": null
         },
         {
-          "description": "Update tags associated with the provided cloud services network. The API returns 200 OK when the operation is successful.",
+          "description": "Update properties of the provided cloud services network. The API returns 200 OK when the operation is successful. 202 Accepted is returned when the operation is performed asynchronously.",
           "displayName": "CloudServicesNetworks_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/cloudServicesNetworks/write",
@@ -990,6 +990,168 @@
           "displayName": "Admissions_RetrieveHostCACertificate",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/admissions/retrieveHostCACertificate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "clusters/metricsConfigurations",
+      "name": "clusters/metricsConfigurations",
+      "operations": [
+        {
+          "description": "Get a list of metrics configurations of the cluster in the provided subscription.",
+          "displayName": "MetricsConfigurations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/metricsConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of metrics configurations of the clusters in the provided resource group.",
+          "displayName": "MetricsConfigurations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/metricsConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get metrics configuration of the provided cluster.",
+          "displayName": "MetricsConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/metricsConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the metrics configuration of the provided cluster. The API returns 200 OK in case of the successful update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "MetricsConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/metricsConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the metrics configuration of the provided cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "MetricsConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/metricsConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of metrics configuration for the provided cluster, or update the tags associated with it. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "MetricsConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/metricsConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "clusters/bareMetalMachineKeySets",
+      "name": "clusters/bareMetalMachineKeySets",
+      "operations": [
+        {
+          "description": "Get a list of bare metal machine key sets of the cluster in the provided subscription.",
+          "displayName": "BareMetalMachineKeySets_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of bare metal machine key sets of the cluster in the provided resource group.",
+          "displayName": "BareMetalMachineKeySets_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get bare metal machine key set of the provided cluster.",
+          "displayName": "BareMetalMachineKeySets_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new bare metal machine key set or update the existing one for the provided cluster. The API returns 200 OK in case of the successful update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "BareMetalMachineKeySets_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the bare metal machine key set of the provided cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "BareMetalMachineKeySets_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of bare metal machine key set for the provided cluster, or update the tags associated with it. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "BareMetalMachineKeySets_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "clusters/bmcKeySets",
+      "name": "clusters/bmcKeySets",
+      "operations": [
+        {
+          "description": "Get a list of baseboard management controller key sets of the cluster in the provided subscription.",
+          "displayName": "BmcKeySets_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of baseboard management controller key sets of the cluster in the provided resource group.",
+          "displayName": "BmcKeySets_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get baseboard management controller key set of the provided cluster.",
+          "displayName": "BmcKeySets_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new baseboard management controller key set or update the existing one for the provided cluster. The API returns 200 OK in case of the successful update. 201 Created is returned when the operation is performed asynchronously.",
+          "displayName": "BmcKeySets_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the baseboard management controller key set of the provided cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "BmcKeySets_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of baseboard management controller key set for the provided cluster, or update the tags associated with it. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "displayName": "BmcKeySets_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/write",
           "origin": null,
           "properties": null
         }
