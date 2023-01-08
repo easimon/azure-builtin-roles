@@ -2,42 +2,25 @@
   "displayName": "Microsoft.DataProtection",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataProtection",
   "name": "Microsoft.DataProtection",
-  "operations": [
-    {
-      "description": "Registers subscription for given Resource Provider",
-      "displayName": "Register Resource Provider",
-      "isDataAction": false,
-      "name": "Microsoft.DataProtection/register/action",
-      "origin": "user",
-      "properties": null
-    },
-    {
-      "description": "Unregisters subscription for given Resource Provider",
-      "displayName": "Unregister Resource Provider",
-      "isDataAction": false,
-      "name": "Microsoft.DataProtection/unregister/action",
-      "origin": "user",
-      "properties": null
-    }
-  ],
+  "operations": [],
   "resourceTypes": [
     {
-      "displayName": "Backup Status",
+      "displayName": "Backup Vaults",
       "name": "locations",
       "operations": [
-        {
-          "description": "Check Backup Status for Recovery Services Vaults",
-          "displayName": "Check Backup Status for Vault",
-          "isDataAction": false,
-          "name": "Microsoft.DataProtection/locations/getBackupStatus/action",
-          "origin": "user",
-          "properties": null
-        },
         {
           "description": "Checks if the requested BackupVault Name is Available",
           "displayName": "Check if the requested BackupVault Name is Available",
           "isDataAction": false,
           "name": "Microsoft.DataProtection/locations/checkNameAvailability/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Check Backup Status for Recovery Services Vaults",
+          "displayName": "Check Backup Status for Vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/locations/getBackupStatus/action",
           "origin": "user",
           "properties": null
         }
@@ -226,32 +209,16 @@
           "properties": null
         },
         {
-          "description": "Create BackupVault operation creates an Azure resource of type 'Backup Vault'",
-          "displayName": "Create Backup Vault",
+          "description": "Gets list of Backup Vaults in a Subscription",
+          "displayName": "Get Backup Vaults in a Subscription",
           "isDataAction": false,
           "name": "Microsoft.DataProtection/backupVaults/read",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Create BackupVault operation creates an Azure resource of type 'Backup Vault'",
-          "displayName": "Create Backup Vault",
-          "isDataAction": false,
-          "name": "Microsoft.DataProtection/backupVaults/delete",
           "origin": "user",
           "properties": null
         },
         {
           "description": "Gets list of Backup Vaults in a Resource Group",
           "displayName": "Get Backup Vaults in a Resource Group",
-          "isDataAction": false,
-          "name": "Microsoft.DataProtection/backupVaults/read",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Gets list of Backup Vaults in a Subscription",
-          "displayName": "Get Backup Vaults in a Subscription",
           "isDataAction": false,
           "name": "Microsoft.DataProtection/backupVaults/read",
           "origin": "user",
@@ -410,14 +377,6 @@
       "name": "backupVaults/backupJobs",
       "operations": [
         {
-          "description": "Get Jobs list",
-          "displayName": "Backup Jobs",
-          "isDataAction": false,
-          "name": "Microsoft.DataProtection/backupVaults/backupJobs/read",
-          "origin": "user",
-          "properties": null
-        },
-        {
           "description": "Get Job details",
           "displayName": "Backup Job Object",
           "isDataAction": false,
@@ -533,27 +492,13 @@
     },
     {
       "displayName": "Resource Provider Operation",
-      "name": "subscriptions/providers/locations",
-      "operations": [
-        {
-          "description": "Validates if a feature is supported",
-          "displayName": "Validate if a feature is supported",
-          "isDataAction": false,
-          "name": "Microsoft.DataProtection/subscriptions/providers/locations/checkFeatureSupport/action",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Resource Provider Operation",
-      "name": "operations",
+      "name": "providers/operations",
       "operations": [
         {
           "description": "Operation returns the list of Operations for a Resource Provider",
           "displayName": "List of Operations",
           "isDataAction": false,
-          "name": "Microsoft.DataProtection/operations/read",
+          "name": "Microsoft.DataProtection/providers/operations/read",
           "origin": "user",
           "properties": null
         }
