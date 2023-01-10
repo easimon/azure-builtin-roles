@@ -3766,11 +3766,28 @@
                 {
                   "aggregationType": "Average",
                   "category": "Cluster health",
-                  "displayDescription": "Utilization level in the cluster scope",
-                  "displayName": "Cache utilization",
+                  "displayDescription": "Utilization level in the cluster scope. The metric is deprecated and presented for backward compatibility only, you should use the ‘Cache utilization factor’ metric instead.",
+                  "displayName": "Cache utilization (deprecated)",
                   "enableRegionalMdmAccount": true,
                   "fillGapWithZero": true,
                   "name": "CacheUtilization",
+                  "sourceMdmAccount": "Kusto",
+                  "sourceMdmNamespace": "CustomerMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "category": "Cluster health",
+                  "displayDescription": "Percentage of utilized disk space dedicated for hot cache in the cluster. 100% means that the disk space assigned to hot data is optimally utilized. No action is needed in terms of the cache size. More than 100% means that the cluster's disk space is not large enough to accommodate the hot data, as defined by your caching policies. To ensure that sufficient space is available for all the hot data, the amount of hot data needs to be reduced or the cluster needs to be scaled out. Enabling auto scale is recommended.",
+                  "displayName": "Cache utilization factor",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "name": "CacheUtilizationFactor",
                   "sourceMdmAccount": "Kusto",
                   "sourceMdmNamespace": "CustomerMetrics",
                   "supportedAggregationTypes": [
