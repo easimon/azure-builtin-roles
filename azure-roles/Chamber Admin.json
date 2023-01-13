@@ -2,21 +2,25 @@
   "assignableScopes": [
     "/"
   ],
-  "description": "Lets you manage everything under your HPC Workbench chamber.",
+  "description": "Lets you manage everything under your Modeling and Simulation Workbench chamber.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/4e9b8407-af2e-495b-ae54-bb60a55b1b5a",
   "name": "4e9b8407-af2e-495b-ae54-bb60a55b1b5a",
   "permissions": [
     {
       "actions": [
-        "Microsoft.HpcWorkbench/*/read",
-        "Microsoft.HpcWorkbench/instances/chambers/*",
-        "Microsoft.HpcWorkbench/instances/consortiums/*/read",
+        "Microsoft.ModSimWorkbench/*/read",
+        "Microsoft.ModSimWorkbench/instances/chambers/*",
         "Microsoft.Authorization/*/read",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/resourceGroups/read"
       ],
-      "dataActions": [],
-      "notActions": [],
+      "dataActions": [
+        "Microsoft.ModSimWorkbench/instances/chambers/upload/action",
+        "Microsoft.ModSimWorkbench/instances/chambers/files/*"
+      ],
+      "notActions": [
+        "Microsoft.ModSimWorkbench/instances/chambers/fileRequests/manage/action"
+      ],
       "notDataActions": []
     }
   ],
