@@ -4,8 +4,8 @@
   "name": "Microsoft.DevTestLab",
   "operations": [
     {
-      "description": "Registra a assinatura",
-      "displayName": "Registrar Assinatura",
+      "description": "Registers the subscription",
+      "displayName": "Register Subscription",
       "isDataAction": false,
       "name": "Microsoft.DevTestLab/register/action",
       "origin": null,
@@ -14,7 +14,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "conjuntos de políticas",
+      "displayName": "policy sets",
       "name": "labs/policySets",
       "operations": [
         {
@@ -26,8 +26,8 @@
           "properties": null
         },
         {
-          "description": "Avalia a política do laboratório.",
-          "displayName": "Avaliar política",
+          "description": "Evaluates lab policy.",
+          "displayName": "Evaluate policy",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/policySets/EvaluatePolicies/action",
           "origin": null,
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "displayName": "Laboratórios",
+      "displayName": "Labs",
       "name": "labs",
       "operations": [
         {
@@ -64,56 +64,56 @@
           "properties": null
         },
         {
-          "description": "Liste imagens de disco disponíveis para criação de imagens personalizadas.",
-          "displayName": "VHDs da lista",
+          "description": "List disk images available for custom image creation.",
+          "displayName": "List VHDs",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ListVhds/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gere um URI para carregar imagens de disco personalizadas para um Laboratório.",
-          "displayName": "Gerar URI de upload de imagem",
+          "description": "Generate a URI for uploading custom disk images to a Lab.",
+          "displayName": "Generate image upload URI",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/GenerateUploadUri/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Crie máquinas virtuais em um laboratório.",
-          "displayName": "Criar uma máquina virtual",
+          "description": "Create virtual machines in a lab.",
+          "displayName": "Create a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/CreateEnvironment/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Declare uma máquina virtual declarável aleatória no laboratório.",
-          "displayName": "Declarar qualquer máquina virtual",
+          "description": "Claim a random claimable virtual machine in the lab.",
+          "displayName": "Claim Any Virtual Machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ClaimAnyVm/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Exporta o uso do recurso de laboratório para uma conta de armazenamento",
-          "displayName": "Exporta o uso do recurso de laboratório para uma conta de armazenamento",
+          "description": "Exports the lab resource usage into a storage account",
+          "displayName": "Exports the lab resource usage into a storage account",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ExportResourceUsage/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Importe uma máquina virtual em um laboratório diferente.",
-          "displayName": "Importar uma máquina virtual",
+          "description": "Import a virtual machine into a different lab.",
+          "displayName": "Import a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ImportVirtualMachine/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Verifique se o usuário atual tem um perfil válido no laboratório.",
-          "displayName": "Verificar Perfil de Usuário Atual",
+          "description": "Ensure the current user has a valid profile in the lab.",
+          "displayName": "Ensure Current User Profile",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/EnsureCurrentUserProfile/action",
           "origin": null,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "displayName": "políticas",
+      "displayName": "policies",
       "name": "labs/policySets/policies",
       "operations": [
         {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "displayName": "agendas",
+      "displayName": "schedules",
       "name": "labs/schedules",
       "operations": [
         {
@@ -180,16 +180,16 @@
           "properties": null
         },
         {
-          "description": "Execute um agendamento.",
-          "displayName": "Executar agendamento",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lista todas as agendas aplicáveis",
-          "displayName": "Listar todas as agendas aplicáveis",
+          "description": "Lists all applicable schedules",
+          "displayName": "List all applicable schedules",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/ListApplicable/action",
           "origin": null,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "displayName": "agendas",
+      "displayName": "schedules",
       "name": "schedules",
       "operations": [
         {
@@ -226,16 +226,16 @@
           "properties": null
         },
         {
-          "description": "Execute um agendamento.",
-          "displayName": "Executar agendamento",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Atualiza a Id do recurso de destino da agenda.",
-          "displayName": "Redirecione a agenda.",
+          "description": "Updates a schedule's target resource Id.",
+          "displayName": "Retarget schedule.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Retarget/action",
           "origin": null,
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayName": "agendas",
+      "displayName": "schedules",
       "name": "labs/virtualMachines/schedules",
       "operations": [
         {
@@ -272,8 +272,8 @@
           "properties": null
         },
         {
-          "description": "Execute um agendamento.",
-          "displayName": "Executar agendamento",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/schedules/Execute/action",
           "origin": null,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "displayName": "agendas",
+      "displayName": "schedules",
       "name": "labs/users/serviceFabrics/schedules",
       "operations": [
         {
@@ -310,8 +310,8 @@
           "properties": null
         },
         {
-          "description": "Execute um agendamento.",
-          "displayName": "Executar agendamento",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/schedules/Execute/action",
           "origin": null,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "displayName": "Fontes do artefato",
+      "displayName": "Artifact sources",
       "name": "labs/artifactSources",
       "operations": [
         {
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "displayName": "Artefatos",
+      "displayName": "Artifacts",
       "name": "labs/artifactSources/artifacts",
       "operations": [
         {
@@ -362,8 +362,8 @@
           "properties": null
         },
         {
-          "description": "Gera um modelo ARM para o artefato fornecido, carrega os arquivos necessários para uma conta de armazenamento e valida o artefato gerado.",
-          "displayName": "Gera um modelo ARM para o artefato fornecido",
+          "description": "Generates an ARM template for the given artifact, uploads the required files to a storage account, and validates the generated artifact.",
+          "displayName": "Generates an ARM template for the given artifact",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/artifactSources/artifacts/GenerateArmTemplate/action",
           "origin": null,
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "displayName": "imagens da galeria",
+      "displayName": "gallery images",
       "name": "labs/galleryImages",
       "operations": [
         {
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "displayName": "imagens personalizadas",
+      "displayName": "custom images",
       "name": "labs/customImages",
       "operations": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "displayName": "redes virtuais",
+      "displayName": "virtual networks",
       "name": "labs/virtualNetworks",
       "operations": [
         {
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "displayName": "Máquinas virtuais",
+      "displayName": "Virtual machines",
       "name": "labs/virtualMachines",
       "operations": [
         {
@@ -474,112 +474,112 @@
           "properties": null
         },
         {
-          "description": "Anexe um disco de dados novo ou existente à máquina virtual.",
-          "displayName": "Adicionar ou anexar um disco de dados",
+          "description": "Attach a new or existing data disk to virtual machine.",
+          "displayName": "Add or attach a data disk",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/AddDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Aplicar artefatos à máquina virtual.",
-          "displayName": "Aplicar artefatos à máquina virtual",
+          "description": "Apply artifacts to virtual machine.",
+          "displayName": "Apply artifacts to virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ApplyArtifacts/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Apropriar-se de uma máquina virtual existente",
-          "displayName": "Declarar uma máquina virtual",
+          "description": "Take ownership of an existing virtual machine",
+          "displayName": "Claim a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Claim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Limpa os resultados do artefato da máquina virtual.",
-          "displayName": "Limpar os resultados do artefato",
+          "description": "Clears the artifact results of the virtual machine.",
+          "displayName": "Clear artifact results",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ClearArtifactResults/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Desanexe o disco especificado da máquina virtual.",
-          "displayName": "Desanexar o disco especificado da máquina virtual",
+          "description": "Detach the specified disk from the virtual machine.",
+          "displayName": "Detach the specified disk from the virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/DetachDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Obtém uma cadeia de caracteres que representa o conteúdo do arquivo RDP para a máquina virtual",
-          "displayName": "Obter conteúdo do arquivo RDP",
+          "description": "Gets a string that represents the contents of the RDP file for the virtual machine",
+          "displayName": "Get RDP file contents",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/GetRdpFileContents/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lista as agendas de iniciar/parar aplicáveis, se houver alguma.",
-          "displayName": "Listar todas as agendas aplicáveis",
+          "description": "Lists the applicable start/stop schedules, if any.",
+          "displayName": "List all applicable schedules",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ListApplicableSchedules/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Reimplantar uma máquina virtual",
-          "displayName": "Reimplantar uma máquina virtual",
+          "description": "Redeploy a virtual machine",
+          "displayName": "Redeploy a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Redeploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Redimensione a Máquina Virtual.",
-          "displayName": "Redimensione a Máquina Virtual.",
+          "description": "Resize Virtual Machine.",
+          "displayName": "Resize Virtual Machine.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Resize/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Reinicie a máquina virtual.",
-          "displayName": "Reiniciar a máquina virtual",
+          "description": "Restart a virtual machine.",
+          "displayName": "Restart virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Restart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Inicie a máquina virtual.",
-          "displayName": "Iniciar máquina virtual",
+          "description": "Start a virtual machine.",
+          "displayName": "Start virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Interromper uma máquina virtual",
-          "displayName": "Interromper máquina virtual",
+          "description": "Stop a virtual machine",
+          "displayName": "Stop virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Transferências de todos os discos de dados anexados à máquina virtual a ser possuída pelo usuário atual.",
-          "displayName": "Transferir os discos de dados para o usuário atual.",
+          "description": "Transfers all data disks attached to the virtual machine to be owned by the current user.",
+          "displayName": "Transfer data disks to the current user.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/TransferDisks/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Liberar propriedade de uma máquina virtual existente",
-          "displayName": "Cancelar a declaração da máquina virtual",
+          "description": "Release ownership of an existing virtual machine",
+          "displayName": "Unclaim a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/UnClaim/action",
           "origin": null,
@@ -588,7 +588,7 @@
       ]
     },
     {
-      "displayName": "Fórmulas",
+      "displayName": "Formulas",
       "name": "labs/formulas",
       "operations": [
         {
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "displayName": "custos",
+      "displayName": "costs",
       "name": "labs/costs",
       "operations": [
         {
@@ -668,16 +668,16 @@
           "properties": null
         },
         {
-          "description": "Anexe e crie a concessão do disco para a máquina virtual.",
-          "displayName": "Anexar disco",
+          "description": "Attach and create the lease of the disk to the virtual machine.",
+          "displayName": "Attach disk",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Attach/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Desanexe e interrompa a concessão do disco anexado à máquina virtual.",
-          "displayName": "Desanexar e interromper a concessão do disco anexado à máquina virtual",
+          "description": "Detach and break the lease of the disk attached to the virtual machine.",
+          "displayName": "Detach and break the lease of the disk attached to the virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Detach/action",
           "origin": null,
@@ -686,7 +686,7 @@
       ]
     },
     {
-      "displayName": "perfis do usuário",
+      "displayName": "user profiles",
       "name": "labs/users",
       "operations": [
         {
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "displayName": "Canais de Notificação",
+      "displayName": "Notification Channels",
       "name": "labs/notificationChannels",
       "operations": [
         {
@@ -744,8 +744,8 @@
           "properties": null
         },
         {
-          "description": "Envie uma notificação para o canal fornecido.",
-          "displayName": "Notificar",
+          "description": "Send notification to provided channel.",
+          "displayName": "Notify",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/notificationChannels/Notify/action",
           "origin": null,
@@ -754,7 +754,7 @@
       ]
     },
     {
-      "displayName": "segredos",
+      "displayName": "secrets",
       "name": "labs/users/secrets",
       "operations": [
         {
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "displayName": "operações",
+      "displayName": "operations",
       "name": "locations/operations",
       "operations": [
         {
@@ -798,7 +798,7 @@
       ]
     },
     {
-      "displayName": "Modelos do Azure Resource Manager",
+      "displayName": "Azure Resource Manager templates",
       "name": "labs/artifactSources/armTemplates",
       "operations": [
         {
@@ -812,7 +812,7 @@
       ]
     },
     {
-      "displayName": "ambientes",
+      "displayName": "environments",
       "name": "labs/users/environments",
       "operations": [
         {
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "displayName": "Executores de serviço",
+      "displayName": "Service runners",
       "name": "labs/serviceRunners",
       "operations": [
         {
@@ -900,24 +900,24 @@
           "properties": null
         },
         {
-          "description": "Iniciar um service fabric.",
-          "displayName": "Iniciar service fabric",
+          "description": "Start a service fabric.",
+          "displayName": "Start service fabric",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Interromper um service fabric",
-          "displayName": "Interromper service fabric",
+          "description": "Stop a service fabric",
+          "displayName": "Stop service fabric",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lista as agendas de iniciar/parar aplicáveis, se houver alguma.",
-          "displayName": "Listar todas as agendas aplicáveis",
+          "description": "Lists the applicable start/stop schedules, if any.",
+          "displayName": "List all applicable schedules",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/ListApplicableSchedules/action",
           "origin": null,
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "displayName": "Centrais do laboratório",
+      "displayName": "Lab centers",
       "name": "labCenters",
       "operations": [
         {
@@ -956,7 +956,7 @@
       ]
     },
     {
-      "displayName": "Pools de Máquina Virtual",
+      "displayName": "Virtual Machine Pools",
       "name": "labs/vmPools",
       "operations": [
         {
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "displayName": "Galerias Compartilhadas",
+      "displayName": "Shared Galleries",
       "name": "labs/sharedGalleries",
       "operations": [
         {
@@ -1016,7 +1016,7 @@
       ]
     },
     {
-      "displayName": "Imagens Compartilhadas",
+      "displayName": "Shared Images",
       "name": "labs/sharedGalleries/sharedImages",
       "operations": [
         {
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "displayName": "Segredos do Laboratório",
+      "displayName": "Lab Secrets",
       "name": "labs/secrets",
       "operations": [
         {
