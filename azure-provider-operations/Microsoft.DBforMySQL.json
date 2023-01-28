@@ -1374,6 +1374,22 @@
       "name": "flexibleServers",
       "operations": [
         {
+          "description": "Creates a server backup for long term with specific backup name and export it.",
+          "displayName": "Create MySQL Server LTR BackupAndExport",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/backupAndExport/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate that the server is ready for backup.",
+          "displayName": "Validate MySQL Server BackupAndExport",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/validateBackup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Returns the list of servers or gets the properties for the specified server.",
           "displayName": "List/Get MySQL Servers",
           "isDataAction": false,
@@ -1402,6 +1418,14 @@
           "displayName": null,
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/checkHaReplica/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates configurations for the specified server.",
+          "displayName": "Batch Update Server Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/updateConfigurations/action",
           "origin": null,
           "properties": null
         },
@@ -1510,8 +1534,8 @@
       "name": "flexibleServers/backups",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "Creates a server backup with specific backup name.",
+          "displayName": "Create MySQL Server Backup",
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/backups/write",
           "origin": null,
@@ -1694,6 +1718,14 @@
           "properties": null
         },
         {
+          "description": "Deletes an existing private endpoint connection proxy",
+          "displayName": "Delete Azure Database for MySQL Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Creates a private endpoint connection proxy with the specified parameters or updates the properties or tags for the specified private endpoint connection proxy.",
           "displayName": "Create/Update Azure Database for MySQL Private Endpoint Connection Proxy",
           "isDataAction": false,
@@ -1706,6 +1738,58 @@
           "displayName": "Validate Azure Database for MySQL Private Endpoint Connection Creation by NRP",
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Database for MySQL Private Endpoint Connection",
+      "name": "flexibleServers/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Returns the list of private endpoint connections or gets the properties for the specified private endpoint connection.",
+          "displayName": "List/Get Azure Database for MySQL Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection",
+          "displayName": "Delete Azure Database for MySQL Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Database for MySQL Private Link Resource",
+      "name": "flexibleServers/privateLinkResources",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the private link resources for the corresponding MySQL Server",
+          "displayName": "Get the private link resources for the corresponding MySQL Server",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateLinkResources/read",
           "origin": null,
           "properties": null
         }
