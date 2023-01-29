@@ -18,30 +18,6 @@
       "name": "Microsoft.StorageCache/preflight/action",
       "origin": null,
       "properties": null
-    },
-    {
-      "description": "Validates the subnets for Amlfilesystem",
-      "displayName": "Check the subnets for Amlfilesystem",
-      "isDataAction": false,
-      "name": "Microsoft.StorageCache/checkAmlFSSubnets/action",
-      "origin": null,
-      "properties": null
-    },
-    {
-      "description": "Calculate the number of ips needed",
-      "displayName": "Returns the subnet size required the Amlfilesystem",
-      "isDataAction": false,
-      "name": "Microsoft.StorageCache/getRequiredAmlFSSubnetsSize/action",
-      "origin": null,
-      "properties": null
-    },
-    {
-      "description": "Azure HPC Cache resource provider",
-      "displayName": "Unregister the cache resource provider",
-      "isDataAction": false,
-      "name": "Microsoft.StorageCache/unregister/action",
-      "origin": null,
-      "properties": null
     }
   ],
   "resourceTypes": [
@@ -122,14 +98,6 @@
           "displayName": "Stop the cache",
           "isDataAction": false,
           "name": "Microsoft.StorageCache/caches/Stop/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates support information (GSI) or debug information for a cache.",
-          "displayName": "Create debugInfo for a cache",
-          "isDataAction": false,
-          "name": "Microsoft.StorageCache/caches/debugInfo/action",
           "origin": null,
           "properties": null
         },
@@ -256,50 +224,10 @@
           "properties": null
         },
         {
-          "description": "Updates the storage target IP address from a custom DNS server or from an Azure Storage private endpoint",
-          "displayName": "Refresh DNS in a cache's Storage Target",
-          "isDataAction": false,
-          "name": "Microsoft.StorageCache/caches/storageTargets/dnsRefersh/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "",
           "displayName": "",
           "isDataAction": false,
           "name": "Microsoft.StorageCache/caches/storageTargets/flush/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Disables client access to a cache's storage target. But doesn't permanently remove the storage target from the cache.",
-          "displayName": "Stop the storage target from serving requests temporarily",
-          "isDataAction": false,
-          "name": "Microsoft.StorageCache/caches/storageTargets/suspend/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Puts a suspended storage target back into service",
-          "displayName": "Resume a cache's storage taget",
-          "isDataAction": false,
-          "name": "Microsoft.StorageCache/caches/storageTargets/resume/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Marks all cached files from the cache's storage target as out of date. The next time a client requests these files, they will be fetched from the back-end storage system.",
-          "displayName": "Discard cached files from this storage target",
-          "isDataAction": false,
-          "name": "Microsoft.StorageCache/caches/storageTargets/invalidate/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Restores the Cache's storage target's settings to their default values",
-          "displayName": "Restore storage target settings to defaults",
-          "isDataAction": false,
-          "name": "Microsoft.StorageCache/caches/storageTargets/restoreDefaults/action",
           "origin": null,
           "properties": null
         }
@@ -480,14 +408,14 @@
       ]
     },
     {
-      "displayName": "Cache, Amlfilesystem",
-      "name": "usages",
+      "displayName": "",
+      "name": "checkAmlFSSubnets",
       "operations": [
         {
-          "description": "Lists the usage quota for cache or Amlfilesystem",
-          "displayName": "Get quota for Cache or Amlfilesystem",
+          "description": "",
+          "displayName": "",
           "isDataAction": false,
-          "name": "Microsoft.StorageCache/usages/read",
+          "name": "Microsoft.StorageCache/checkAmlFSSubnets/CheckAmlFSSubnets/action",
           "origin": null,
           "properties": null
         }
