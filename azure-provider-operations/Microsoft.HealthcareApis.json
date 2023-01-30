@@ -1701,83 +1701,29 @@
               "metricSpecifications": [
                 {
                   "aggregationType": "Sum",
-                  "category": "Health",
+                  "category": "Availability",
                   "dimensions": [
                     {
-                      "displayName": "The operation performed by the Analytics Connector",
+                      "displayName": "The operation performed by the Azure Analytics Connector for FHIR",
                       "name": "Operation"
                     },
                     {
+                      "displayName": "The resource name of the Azure Analytics Connector for FHIR",
+                      "name": "ResourceName"
+                    },
+                    {
                       "displayName": "The name of the health check",
-                      "name": "Component"
+                      "name": "HealthCheckName"
                     }
                   ],
                   "displayDescription": "The health status of analytics connector",
-                  "displayName": "Analytics Connector Health Status",
+                  "displayName": "Analytics Connector Health Status ",
                   "enableRegionalMdmAccount": true,
                   "fillGapWithZero": false,
                   "name": "AnalyticsConnectorHealthStatus",
                   "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
                   "sourceMdmNamespace": "Shoebox2",
                   "unit": "Count"
-                },
-                {
-                  "aggregationType": "Sum",
-                  "category": "Availability",
-                  "dimensions": [],
-                  "displayDescription": "The size of data successfully processed by the analytics connector",
-                  "displayName": "Analytics Connector Successful Data Size",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": false,
-                  "name": "AnalyticsConnectorSuccessfulDataSize",
-                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
-                  "sourceMdmNamespace": "Shoebox2",
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Sum",
-                  "category": "Availability",
-                  "dimensions": [],
-                  "displayDescription": "The amount of data successfully processed by the analytics connector",
-                  "displayName": "Analytics Connector Successful Resource Count",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": false,
-                  "name": "AnalyticsConnectorSuccessfulResourceCount",
-                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
-                  "sourceMdmNamespace": "Shoebox2",
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Sum",
-                  "category": "Errors",
-                  "dimensions": [
-                    {
-                      "displayName": "The type of error",
-                      "name": "ErrorType"
-                    },
-                    {
-                      "displayName": "The operation performed by the analytics connector",
-                      "name": "Operation"
-                    }
-                  ],
-                  "displayDescription": "The total number of errors logged by the analytics connector",
-                  "displayName": "Analytics Connector Total Error Count",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": false,
-                  "name": "AnalyticsConnectorTotalErrors",
-                  "sourceMdmAccount": "MicrosoftHealthcareApis2Shoebox",
-                  "sourceMdmNamespace": "Shoebox2",
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Average",
-                  "category": "Latency",
-                  "dimensions": [],
-                  "displayDescription": "The response latency of the service.",
-                  "displayName": "Analytics Connector Process Latency",
-                  "fillGapWithZero": false,
-                  "name": "AnalyticsConnectorResourceLatency",
-                  "unit": "Milliseconds"
                 }
               ]
             }
