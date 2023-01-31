@@ -4,10 +4,18 @@
   "name": "Microsoft.IoTFirmwareDefense",
   "operations": [
     {
-      "description": "Registers the subscription for the IoT Firmware Defense Provider and enables the creation of firmware groups.",
-      "displayName": "Registers the IoT Firmware Defense Provider",
+      "description": "Register the subscription for Microsoft.IoTFirmwareDefense",
+      "displayName": "Register the Microsoft.IoTFirmwareDefense",
       "isDataAction": false,
       "name": "Microsoft.IoTFirmwareDefense/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.IoTFirmwareDefense",
+      "displayName": "Unregister the Microsoft.IoTFirmwareDefense",
+      "isDataAction": false,
+      "name": "Microsoft.IoTFirmwareDefense/unregister/action",
       "origin": null,
       "properties": null
     }
@@ -18,18 +26,50 @@
       "name": "firmwareGroups",
       "operations": [
         {
-          "description": "Read firmwareGroups",
-          "displayName": "Gets/List firmwareGroups resources",
+          "description": "Get firmware group.",
+          "displayName": "FirmwareGroup_Get",
           "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/Read",
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update firmwareGroups/firmwares resources",
-          "displayName": "Update firmwareGroups/firmwares resources",
+          "description": "The operation to create or update a firmwareGroups resource.",
+          "displayName": "FirmwareGroups_Create",
           "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/Action",
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to delete a firmware group.",
+          "displayName": "FirmwareGroup_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to update a firmware groups.",
+          "displayName": "FirmwareGroup_Update",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to get a url for file upload.",
+          "displayName": "FirmwareGroup_GenerateUploadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/generateUploadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all of firmwareGroups in the specified subscription.",
+          "displayName": "FirmwareGroup_List",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/read",
           "origin": null,
           "properties": null
         }
@@ -40,26 +80,144 @@
       "name": "firmwareGroups/firmwares",
       "operations": [
         {
-          "description": "Read firmwareGroups/firmwares",
-          "displayName": "Gets/List firmwareGroups/firmwares resources",
+          "description": "Get firmware.",
+          "displayName": "Firmware_Get",
           "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/Read",
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete firmwareGroups/firmwares resources",
-          "displayName": "Delete firmwareGroups/firmwares resources",
+          "description": "The operation to create a firmware.",
+          "displayName": "Firmware_Create",
           "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/Delete",
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create/Update firmwareGroups/firmwares resources",
-          "displayName": "Create/Update firmwareGroups/firmwares resources",
+          "description": "The operation to delete a firmware.",
+          "displayName": "Firmware_Delete",
           "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/Write",
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to update firmware.",
+          "displayName": "Firmware_Update",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all of firmwares inside firmware group.",
+          "displayName": "Firmware_ListByFirmwareGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to a url for file upload.",
+          "displayName": "Firmware_GetUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/getUploadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to a url for file download.",
+          "displayName": "Firmware_GenerateDownloadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateDownloadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to a url for tar file download.",
+          "displayName": "Firmware_GenerateFilesystemDownloadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateFilesystemDownloadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to get a scan summary.",
+          "displayName": "Firmware_GetSummary",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to list all components result for a firmware.",
+          "displayName": "Firmware_GenerateComponentList",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateComponentList/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to get component details for a firmware.",
+          "displayName": "Firmware_GenerateComponentDetails",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateComponentDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to list all binary hardening result for a firmware.",
+          "displayName": "Firmware_GenerateBinaryHardeningList",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateBinaryHardeningList/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to list the binary hardening summary percentages for a firmware.",
+          "displayName": "Firmware_GenerateBinaryHardeningSummary",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateBinaryHardeningSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to get binary hardening details for a firmware.",
+          "displayName": "Firmware_GenerateBinaryHardeningDetails",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateBinaryHardeningDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to list all cve results for a firmware.",
+          "displayName": "Firmware_GenerateCveList",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateCveList/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to provide a high level summary of the CVEs reported for the firmware image.",
+          "displayName": "Firmware_GenerateCveSummary",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/firmwareGroups/firmwares/generateCveSummary/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/operations/read",
           "origin": null,
           "properties": null
         }
