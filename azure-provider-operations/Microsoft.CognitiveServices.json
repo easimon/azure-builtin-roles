@@ -1891,6 +1891,38 @@
           "name": "Microsoft.CognitiveServices/accounts/ContentModerator/termlists/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "A sync API for harmful content analysis for image",
+          "displayName": "Analyze Image",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/image:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "An API to trigger harmful content analysis for image batch",
+          "displayName": "Analyze Image In Batch",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/image:batchanalyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A sync API for harmful content analysis for text",
+          "displayName": "Analyze Text",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "An API for triggering harmful content analysis of text batch",
+          "displayName": "Analyze Text In Batch",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text:batchanalyze/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -13181,6 +13213,94 @@
           "displayName": "Lists assigned resource deployments",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/global/deployments/resources/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "lists*",
+      "name": "accounts/ContentModerator/text/lists",
+      "operations": [
+        {
+          "description": "Updates an Text List by listId, , if listId not exists, create a new Text List",
+          "displayName": "Create Or Update Text List",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/lists/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes Text List with the list Id equal to list Id passed.",
+          "displayName": "Delete Text List By listId",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/lists/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get All Text Lists\r\nReturns text list details of the Text List with list Id equal to list Id passed.*",
+          "displayName": "Get All Text Lists|Get Text List By listId*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/lists/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "items*",
+      "name": "accounts/ContentModerator/text/lists/items",
+      "operations": [
+        {
+          "description": "Create Item In Text List",
+          "displayName": "Create Item In Text List",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/lists/items/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete Item By itemId and listId",
+          "displayName": "Delete Item By itemId and listId",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/lists/items/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get All Items By listId\r\nGet Item By itemId and listId*",
+          "displayName": "Get All Items By listId|Get Item By itemId and listId*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/lists/items/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "analyzeresults*",
+      "name": "accounts/ContentModerator/text/analyzeresults",
+      "operations": [
+        {
+          "description": "An API to get harmful content analysis results for text batch",
+          "displayName": "Get Text Batch Analyze Results",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/text/analyzeresults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "analyzeresults*",
+      "name": "accounts/ContentModerator/image/analyzeresults",
+      "operations": [
+        {
+          "description": "An API to get harmful content analysis results for image batch",
+          "displayName": "Get Image Batch Analyze Results",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentModerator/image/analyzeresults/read",
           "origin": "user",
           "properties": null
         }
