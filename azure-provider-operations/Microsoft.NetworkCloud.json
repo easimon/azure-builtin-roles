@@ -26,7 +26,7 @@
       "name": "racks",
       "operations": [
         {
-          "description": "Get a list of racks in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "description": "Get a list of racks in the provided subscription.",
           "displayName": "Racks_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/read",
@@ -34,7 +34,7 @@
           "properties": null
         },
         {
-          "description": "Get a list of racks in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "description": "Get a list of racks in the provided resource group.",
           "displayName": "Racks_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/read",
@@ -42,7 +42,7 @@
           "properties": null
         },
         {
-          "description": "Get properties of the provided rack. The API returns 200 OK when the operation is successful.",
+          "description": "Get properties of the provided rack.",
           "displayName": "Racks_Get",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/read",
@@ -50,7 +50,7 @@
           "properties": null
         },
         {
-          "description": "Create a new rack or update properties of the existing one. The API returns 200 OK in case of the successful update. 201 Created is returned when the operation is performed asynchronously.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "description": "Create a new rack or update properties of the existing one.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
           "displayName": "Racks_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/write",
@@ -58,7 +58,7 @@
           "properties": null
         },
         {
-          "description": "Delete the provided rack. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Delete the provided rack.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
           "displayName": "Racks_Delete",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/delete",
@@ -66,7 +66,7 @@
           "properties": null
         },
         {
-          "description": "Patch properties of the provided rack, or update the tags associated with the rack. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Patch properties of the provided rack, or update the tags associated with the rack. Properties and tag updates can be done independently.",
           "displayName": "Racks_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/write",
@@ -1078,7 +1078,7 @@
           "properties": null
         },
         {
-          "description": "Create a new baseboard management controller key set or update the existing one for the provided cluster. The API returns 200 OK in case of the successful update. 201 Created is returned when the operation is performed asynchronously.",
+          "description": "Create a new baseboard management controller key set or update the existing one for the provided cluster.",
           "displayName": "BmcKeySets_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/write",
@@ -1086,7 +1086,7 @@
           "properties": null
         },
         {
-          "description": "Delete the baseboard management controller key set of the provided cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Delete the baseboard management controller key set of the provided cluster.",
           "displayName": "BmcKeySets_Delete",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/delete",
@@ -1094,7 +1094,7 @@
           "properties": null
         },
         {
-          "description": "Patch properties of baseboard management controller key set for the provided cluster, or update the tags associated with it. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Patch properties of baseboard management controller key set for the provided cluster, or update the tags associated with it. Properties and tag updates can be done independently.",
           "displayName": "BmcKeySets_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/bmcKeySets/write",
@@ -1152,6 +1152,60 @@
           "displayName": "Consoles_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/consoles/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "volumes",
+      "name": "volumes",
+      "operations": [
+        {
+          "description": "Get a list of volumes in the provided subscription.",
+          "displayName": "Volumes_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/volumes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of volumes in the provided resource group.",
+          "displayName": "Volumes_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/volumes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided volume.",
+          "displayName": "Volumes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/volumes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new volume or update the properties of the existing one.",
+          "displayName": "Volumes_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/volumes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided volume.",
+          "displayName": "Volumes_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/volumes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the provided volume.",
+          "displayName": "Volumes_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/volumes/write",
           "origin": null,
           "properties": null
         }
