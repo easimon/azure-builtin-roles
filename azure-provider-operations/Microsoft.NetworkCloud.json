@@ -336,7 +336,7 @@
           "properties": null
         },
         {
-          "description": "Create a new cluster or update the properties of the cluster if it exists. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "description": "Create a new cluster or update the properties of the cluster if it exists.",
           "displayName": "Clusters_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/write",
@@ -344,7 +344,7 @@
           "properties": null
         },
         {
-          "description": "Delete the provided cluster. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Delete the provided cluster.",
           "displayName": "Clusters_Delete",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/delete",
@@ -352,7 +352,7 @@
           "properties": null
         },
         {
-          "description": "Patch the properties of the provided cluster, or update the tags associated with the cluster. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Patch the properties of the provided cluster, or update the tags associated with the cluster. Properties and tag updates can be done independently.",
           "displayName": "Clusters_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/write",
@@ -360,7 +360,7 @@
           "properties": null
         },
         {
-          "description": "Deploy the cluster to the provided rack. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "description": "Deploy the cluster to the provided rack.",
           "displayName": "Clusters_Deploy",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/deploy/action",
@@ -368,7 +368,7 @@
           "properties": null
         },
         {
-          "description": "Update the version of the provided cluster to one of the available supported versions. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "description": "Update the version of the provided cluster to one of the available supported versions.",
           "displayName": "Clusters_UpdateVersion",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/updateVersion/action",
@@ -382,7 +382,7 @@
       "name": "virtualMachines",
       "operations": [
         {
-          "description": "Get a list of virtual machines in the provided subscription. The API returns 200 OK when the operation is successful.",
+          "description": "Get a list of virtual machines in the provided subscription.",
           "displayName": "VirtualMachines_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/read",
@@ -390,7 +390,7 @@
           "properties": null
         },
         {
-          "description": "Get a list of virtual machines in the provided resource group. The API returns 200 OK when the operation is successful.",
+          "description": "Get a list of virtual machines in the provided resource group.",
           "displayName": "VirtualMachines_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/read",
@@ -398,7 +398,7 @@
           "properties": null
         },
         {
-          "description": "Get properties of the provided virtual machine. The API returns 200 OK when the operation is successful.",
+          "description": "Get properties of the provided virtual machine.",
           "displayName": "VirtualMachines_Get",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/read",
@@ -406,7 +406,7 @@
           "properties": null
         },
         {
-          "description": "Create a new virtual machine or update the properties of the existing virtual machine. The API returns 200 OK in case of the successful creation or update. 201 Created is returned when the operation is performed asynchronously.",
+          "description": "Create a new virtual machine or update the properties of the existing virtual machine.",
           "displayName": "VirtualMachines_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/write",
@@ -414,7 +414,7 @@
           "properties": null
         },
         {
-          "description": "Delete the provided virtual machine. The API returns 200 OK when the deletion is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Delete the provided virtual machine.",
           "displayName": "VirtualMachines_Delete",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/delete",
@@ -422,7 +422,7 @@
           "properties": null
         },
         {
-          "description": "Patch the properties of the provided virtual machine, or update the tags associated with the virtual machine. Properties and tag updates can be done independently. The API returns 200 OK when the update is successful. 202 Accepted is returned when the operation is performed asynchronously.",
+          "description": "Patch the properties of the provided virtual machine, or update the tags associated with the virtual machine. Properties and tag updates can be done independently.",
           "displayName": "VirtualMachines_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/write",
@@ -430,7 +430,23 @@
           "properties": null
         },
         {
-          "description": "Power off the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "description": "Attach volume to the provided virtual machine.",
+          "displayName": "VirtualMachines_AttachVolume",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/attachVolume/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Detach volume from the provided virtual machine.",
+          "displayName": "VirtualMachines_DetachVolume",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/virtualMachines/detachVolume/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Power off the provided virtual machine.",
           "displayName": "VirtualMachines_PowerOff",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/powerOff/action",
@@ -438,7 +454,7 @@
           "properties": null
         },
         {
-          "description": "Reimage the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "description": "Reimage the provided virtual machine.",
           "displayName": "VirtualMachines_Reimage",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/reimage/action",
@@ -446,7 +462,7 @@
           "properties": null
         },
         {
-          "description": "Restart the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "description": "Restart the provided virtual machine.",
           "displayName": "VirtualMachines_Restart",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/restart/action",
@@ -454,7 +470,7 @@
           "properties": null
         },
         {
-          "description": "Start the provided virtual machine. The API returns 202 Accepted as the operation is performed asynchronously.",
+          "description": "Start the provided virtual machine.",
           "displayName": "VirtualMachines_Start",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/start/action",
