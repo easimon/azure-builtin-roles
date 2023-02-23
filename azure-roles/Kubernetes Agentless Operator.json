@@ -1,0 +1,24 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Grants Microsoft Defender for Cloud access to Azure Kubernetes Services",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/d5a2ae44-610b-4500-93be-660a0c5f5ca6",
+  "name": "d5a2ae44-610b-4500-93be-660a0c5f5ca6",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete",
+        "Microsoft.ContainerService/managedClusters/read"
+      ],
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Kubernetes Agentless Operator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
