@@ -2,7 +2,24 @@
   "displayName": "Microsoft Billing",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Billing",
   "name": "Microsoft.Billing",
-  "operations": [],
+  "operations": [
+    {
+      "description": null,
+      "displayName": "Validate Address",
+      "isDataAction": false,
+      "name": "Microsoft.Billing/validateAddress/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": null,
+      "displayName": "Registers the resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.Billing/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "Billing Property",
@@ -31,10 +48,42 @@
       "name": "billingAccounts/billingSubscriptions",
       "operations": [
         {
+          "description": "Lists the subscriptions for a billing account. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement, Microsoft Partner Agreement or Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_ListByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Download invoice using download link from list",
-          "displayName": "Download Invoice Documents",
+          "displayName": "Download Invoice",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/downloadDocuments/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Move Billing Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/move/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Validate Subscription Move Parameters",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/validateMoveEligibility/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the properties of a billing subscription. Cost center can only be updated for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "BillingSubscriptions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/write",
           "origin": null,
           "properties": null
         }
@@ -51,6 +100,14 @@
           "name": "Microsoft.Billing/invoices/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Download invoice using download link from list",
+          "displayName": "Download Invoice",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/invoices/download/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -63,6 +120,1514 @@
           "displayName": "List/Get Billing Periods(s)",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "List of operations supported by provider.",
+          "displayName": "Operations_List",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Enrollment Accounts",
+      "name": "enrollmentAccounts",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Enrollment Account(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/enrollmentAccounts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agreements",
+      "name": "billingAccounts/agreements",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Agreement(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/agreements/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Accounts",
+      "name": "billingAccounts",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Account(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Update Billing Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Lists Invoice Sections with create subscription permission.",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/listInvoiceSectionsWithCreateSubscriptionPermission/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Confirm Transition",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/confirmTransition/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Create Billing Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Address",
+      "name": "validateAddress",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Validates address.",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/validateAddress/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Profiles",
+      "name": "billingAccounts/billingProfiles",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Profile(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete Billing Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Purchase a SEAT product",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/purchaseProduct/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Get price for a  SEAT product",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/priceProduct/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Create Invoice Section [deprecated]",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "List Billing Profiles With View Pricesheet Permissions",
+      "name": "billingAccounts/listBillingProfilesWithViewPricesheetPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List Billing Profiles with ViewPricesheet permission",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/listBillingProfilesWithViewPricesheetPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Customers",
+      "name": "billingAccounts/customers",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Customer(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Initiate transfer of resource",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/initiateTransfer/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Invoice Sections",
+      "name": "billingAccounts/invoiceSections",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Create Invoice Section",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/invoiceSections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Provides a billing profile user with corresponding access to an invoice section.",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/invoiceSections/elevate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "List/Get Invoice Section(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/invoiceSections/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Invoice Sections",
+      "name": "billingAccounts/billingProfiles/invoiceSections",
+      "operations": [
+        {
+          "description": "Lists the invoice sections that a user has access to. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "InvoiceSections_ListByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "InvoiceSections_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pricesheet",
+      "name": "billingAccounts/billingProfiles/pricesheet",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Download Pricesheet by Billing Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/pricesheet/download/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pricesheet",
+      "name": "billingAccounts/billingProfiles/invoices/pricesheet",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Download Pricesheet by Invoice",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoices/pricesheet/download/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Departments",
+      "name": "billingAccounts/departments",
+      "operations": [
+        {
+          "description": "Lists the departments that a user has access to. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "Departments_ListByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Update Department by Department Id",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Products",
+      "name": "billingAccounts/products",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Product(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/products/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Move Product",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/products/move/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Validate Product Move Parameters",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/products/validateMoveEligibility/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Products",
+      "name": "billingAccounts/billingProfiles/products",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Product(s) by billing profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/products/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Products",
+      "name": "billingAccounts/billingProfiles/invoiceSections/products",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Move Product",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/products/transfer/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Move Product",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/products/move/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Validate Product Move Parameters",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/products/validateMoveEligibility/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Billing Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/billingProfiles/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Billing Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/customers/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Customer",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/billingProfiles/invoiceSections/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Invoice Section",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/enrollmentAccounts/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Enrollment Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/departments/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Department",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Assignments",
+      "name": "billingAccounts/billingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Create / Update BillingRoleAssignment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Assignments",
+      "name": "billingAccounts/enrollmentAccounts/billingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Create / Update BillingRoleAssignment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/billingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Assignments",
+      "name": "billingAccounts/departments/billingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Create / Update BillingRoleAssignment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/billingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/billingProfiles/invoiceSections/billingSubscriptions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Move Billing Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingSubscriptions/transfer/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Move Billing Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingSubscriptions/move/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Validate Subscription Move Parameters",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingSubscriptions/validateMoveEligibility/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Update Billing Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingSubscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the subscriptions that are billed to an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "BillingSubscriptions_ListByInvoiceSection",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Customers",
+      "name": "billingAccounts/billingProfiles/customers",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Customer(s) by Billing Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/customers/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Enrollment Accounts",
+      "name": "billingAccounts/enrollmentAccounts",
+      "operations": [
+        {
+          "description": "Lists the enrollment accounts for a billing account. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "EnrollmentAccounts_ListByBillingAccountName",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Delete an Enrollment Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Invoices",
+      "name": "billingAccounts/invoices",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Download invoice",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/invoices/download/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Invoices",
+      "name": "billingAccounts/billingProfiles/invoices",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Download invoice for billing profile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoices/download/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Departments",
+      "name": "departments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "[deprecated] List/Get Department(s)",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/departments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Transfers",
+      "name": "billingAccounts/customers/transfers",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Delete customer transfer",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/transfers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Get customer transfers",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/transfers/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Pricesheet",
+      "name": "billingAccounts/invoices/pricesheet",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Download Pricesheet by Invoice",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/invoices/pricesheet/download/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Associated Tenants",
+      "name": "billingAccounts/associatedTenants",
+      "operations": [
+        {
+          "description": "Lists the tenants that can collaborate with the billing account on commerce activities like viewing and downloading invoices, managing payments, making purchases, and managing licenses.",
+          "displayName": "AssociatedTenants_ListByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/associatedTenants/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update an associated tenant for the billing account.",
+          "displayName": "AssociatedTenants_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/associatedTenants/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Delete Billing Profile Eligibility",
+      "name": "billingAccounts/billingProfiles/validateDeleteBillingProfileEligibility",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Validate Delete Eligibility",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/validateDeleteBillingProfileEligibility/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Refund Eligibility",
+      "name": "billingAccounts/billingProfiles/invoices/validateRefundEligibility",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Validate Refund Eligibility",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoices/validateRefundEligibility/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Delete Invoice Section Eligibility",
+      "name": "billingAccounts/billingProfiles/invoiceSections/validateDeleteInvoiceSectionEligibility",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Validate Delete Eligibility",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/validateDeleteInvoiceSectionEligibility/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policies",
+      "name": "billingAccounts/policies",
+      "operations": [
+        {
+          "description": "Get the policies for a billing account of Enterprise Agreement type.",
+          "displayName": "Policies_GetByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the policies for a billing account of Enterprise Agreement type.",
+          "displayName": "Policies_CreateOrUpdateByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/policies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policies",
+      "name": "billingAccounts/billingProfiles/policies",
+      "operations": [
+        {
+          "description": "Lists the policies for a billing profile. This operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "Policies_GetByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the policies for a billing profile. This operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "Policies_CreateOrUpdateByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/policies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Policies",
+      "name": "billingAccounts/customers/policies",
+      "operations": [
+        {
+          "description": "Lists the policies for a customer. This operation is supported only for billing accounts with agreement type Microsoft Partner Agreement.",
+          "displayName": "Policies_GetByCustomer",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/policies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the policies for a customer. This operation is supported only for billing accounts with agreement type Microsoft Partner Agreement.",
+          "displayName": "Policies_CreateOrUpdateByCustomer",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/policies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Billing Account scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/billingProfiles/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Billing Profile scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/billingProfiles/invoiceSections/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Invoice Section scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/customers/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Customer scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/enrollmentAccounts/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Enrollment Account scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/departments/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Enrollment Department scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resolve Billing Role Assignments",
+      "name": "billingAccounts/resolveBillingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Resolve Billing Role Assignments",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/resolveBillingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resolve Billing Role Assignments",
+      "name": "billingAccounts/billingProfiles/resolveBillingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Resolve Billing Role Assignments",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/resolveBillingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resolve Billing Role Assignments",
+      "name": "billingAccounts/billingProfiles/invoiceSections/resolveBillingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Resolve Billing Role Assignments",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/resolveBillingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resolve Billing Role Assignments",
+      "name": "billingAccounts/customers/resolveBillingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Resolve Billing Role Assignments",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/resolveBillingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Results",
+      "name": "billingAccounts/operationResults",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Get operation status for a resolve billing role assignmnets operation",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Purchase Product",
+      "name": "billingAccounts/purchaseProduct",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Purchase a billing subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/purchaseProduct/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Split",
+      "name": "billingAccounts/billingSubscriptions/split",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Split a billing subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/split/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Merge",
+      "name": "billingAccounts/billingSubscriptions/merge",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Merge two billing subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/merge/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cancel",
+      "name": "billingAccounts/billingSubscriptions/cancel",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Cancel an azure billing subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/cancel/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/enrollmentAccounts/billingSubscriptions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Update Billing Subscriptions Cost Center",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/billingSubscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the subscriptions for an enrollment account. The operation is supported for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_ListByEnrollmentAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Add Department",
+      "name": "billingAccounts/addDepartment",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Add Department",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/addDepartment/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Add Enrollment Account",
+      "name": "billingAccounts/addEnrollmentAccount",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Add an Enrollment Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/addEnrollmentAccount/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Enrollment Accounts",
+      "name": "billingAccounts/departments/enrollmentAccounts",
+      "operations": [
+        {
+          "description": "Lists the enrollment accounts for a department. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "EnrollmentAccounts_ListByDepartmentName",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/enrollmentAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Update an Enrollment Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/enrollmentAccounts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Add Enrollment Account",
+      "name": "billingAccounts/departments/addEnrollmentAccount",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Add an Enrollment Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/addEnrollmentAccount/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Remove",
+      "name": "billingAccounts/departments/enrollmentAccounts/remove",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Delete an Enrollment Account by Department",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/enrollmentAccounts/remove/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Activate",
+      "name": "billingAccounts/enrollmentAccounts/activate",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Activate an Enrollment Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/activate/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Activation Status",
+      "name": "billingAccounts/enrollmentAccounts/activationStatus",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Get status of Enrollment Account activation",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/activationStatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Transfer Billing Subscriptions",
+      "name": "billingAccounts/enrollmentAccounts/transferBillingSubscriptions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Transfer billing subscriptions - AOT/SOT",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/transferBillingSubscriptions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Notification Contacts",
+      "name": "billingAccounts/notificationContacts",
+      "operations": [
+        {
+          "description": "Lists the NotificationContacts for the given billing account. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "NotificationContacts_ListByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/notificationContacts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a notification contact by ID. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "NotificationContacts_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/notificationContacts/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscription Aliases",
+      "name": "billingAccounts/billingSubscriptionAliases",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Subscription Aliases",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptionAliases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": "Create / Update Billing Subscription Alias",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptionAliases/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Access",
+      "name": "billingAccounts/billingProfiles/customers/checkAccess",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Allows/Disallows an access request at Customer scope",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/customers/checkAccess/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/billingProfiles/customers/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Customer",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/customers/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/billingProfiles/departments/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Billing Profile Department",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Permissions",
+      "name": "billingAccounts/billingProfiles/enrollmentAccounts/billingPermissions",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "List/Get Billing Permissions by Billing Profile Account",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/enrollmentAccounts/billingPermissions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resolve Billing Role Assignments",
+      "name": "billingAccounts/billingProfiles/customers/resolveBillingRoleAssignments",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Resolve Billing Role Assignments",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/customers/resolveBillingRoleAssignments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on a billing account. The operation is supported for billing accounts with agreement type Microsoft Partner Agreement, Microsoft Customer Agreement or Enterprise Agreement.",
+          "displayName": "RoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/billingProfiles/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on a billing profile. The operation is supported for billing accounts with agreement type Microsoft Partner Agreement or Microsoft Customer Agreement.",
+          "displayName": "BillingProfileRoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/billingProfiles/invoiceSections/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "InvoiceSectionRoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/customers/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on a customer. The operation is supported only for billing accounts with agreement type Microsoft Partner Agreement.",
+          "displayName": "CustomerRoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/enrollmentAccounts/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on a enrollment account. The operation is supported for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "AccountRoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/departments/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on a department. The operation is supported for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "DepartmentRoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Role Definitions",
+      "name": "billingAccounts/billingProfiles/departments/billingRoleDefinitions",
+      "operations": [
+        {
+          "description": "Gets the definition for a role on a department. The operation is supported for billing profiles with agreement type Enterprise Agreement.",
+          "displayName": "BillingProfileDepartmentRoleDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/billingRoleDefinitions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/billingProfiles/billingSubscriptions",
+      "operations": [
+        {
+          "description": "Get a billing subscription by billing profile ID and billing subscription ID. This operation is supported only for billing accounts of type Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_GetByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Move",
+      "name": "billingAccounts/billingSubscriptions/move",
+      "operations": [
+        {
+          "description": "Moves a subscription's charges to a new invoice section. The new invoice section must belong to the same billing profile as the existing invoice section. This operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "BillingSubscriptions_Move",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/move/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Move Eligibility",
+      "name": "billingAccounts/billingSubscriptions/validateMoveEligibility",
+      "operations": [
+        {
+          "description": "Validates if a subscription's charges can be moved to a new invoice section. This operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "BillingSubscriptions_ValidateMove",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/validateMoveEligibility/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/departments/billingSubscriptions",
+      "operations": [
+        {
+          "description": "Lists the subscriptions for a department. The operation is supported for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_ListByDepartments",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/billingProfiles/departments/billingSubscriptions",
+      "operations": [
+        {
+          "description": "List billing subscriptions by billing profile ID and department name. This operation is supported only for billing accounts of type Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_ListByBillingProfileByDepartment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/billingProfiles/enrollmentAccounts/billingSubscriptions",
+      "operations": [
+        {
+          "description": "List billing subscriptions by billing profile ID and enrollment account name. This operation is supported only for billing accounts of type Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_ListByEnrollmentAccountByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/enrollmentAccounts/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Subscriptions",
+      "name": "billingAccounts/customers/billingSubscriptions",
+      "operations": [
+        {
+          "description": "Lists the subscriptions for a customer. The operation is supported only for billing accounts with agreement type Microsoft Partner Agreement.",
+          "displayName": "BillingSubscriptions_ListByCustomer",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/customers/billingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Departments",
+      "name": "billingAccounts/billingProfiles/departments",
+      "operations": [
+        {
+          "description": "Lists the departments that a user has access to. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingProfileDepartments_ListByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Enrollment Accounts",
+      "name": "billingAccounts/billingProfiles/enrollmentAccounts",
+      "operations": [
+        {
+          "description": "Lists the enrollment accounts for a specific billing account and a billing profile belonging to it.",
+          "displayName": "BillingProfileEnrollmentAccounts_ListByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/enrollmentAccounts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Enrollment Accounts",
+      "name": "billingAccounts/billingProfiles/departments/enrollmentAccounts",
+      "operations": [
+        {
+          "description": "Get list of enrollment accounts using billing profile ID and department ID",
+          "displayName": "BillingProfileEnrollmentAccounts_ListByDepartmentName",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/enrollmentAccounts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Notification Contacts",
+      "name": "billingAccounts/billingProfiles/notificationContacts",
+      "operations": [
+        {
+          "description": "Lists the NotificationContacts for the given billing profile. The operation is supported only for billing profiles with agreement type Enterprise Agreement.",
+          "displayName": "NotificationContactsByBillingProfile_ListByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/notificationContacts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Delete Eligibility",
+      "name": "billingAccounts/billingProfiles/invoiceSections/validateDeleteEligibility",
+      "operations": [
+        {
+          "description": "Validates if the invoice section can be deleted. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "InvoiceSections_ValidateDeleteEligibility",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/validateDeleteEligibility/write",
           "origin": null,
           "properties": null
         }
