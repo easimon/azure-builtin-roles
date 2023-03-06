@@ -1374,18 +1374,10 @@
       "name": "flexibleServers",
       "operations": [
         {
-          "description": "Creates a server backup for long term with specific backup name and export it.",
-          "displayName": "Create MySQL Server LTR BackupAndExport",
+          "description": null,
+          "displayName": null,
           "isDataAction": false,
-          "name": "Microsoft.DBforMySQL/flexibleServers/backupAndExport/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Validate that the server is ready for backup.",
-          "displayName": "Validate MySQL Server BackupAndExport",
-          "isDataAction": false,
-          "name": "Microsoft.DBforMySQL/flexibleServers/validateBackup/action",
+          "name": "Microsoft.DBforMySQL/flexibleServers/resetGtid/action",
           "origin": null,
           "properties": null
         },
@@ -1410,6 +1402,30 @@
           "displayName": "Delete MySQL Server",
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/checkServerVersionUpgradeAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a server backup for long term with specific backup name and export it.",
+          "displayName": "Create MySQL Server LTR BackupAndExport",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/backupAndExport/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validate that the server is ready for backup.",
+          "displayName": "Validate MySQL Server BackupAndExport",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/validateBackup/action",
           "origin": null,
           "properties": null
         },
@@ -1486,7 +1502,7 @@
       ]
     },
     {
-      "displayName": "Virtual Network",
+      "displayName": "Auto Migration Operations",
       "name": "locations",
       "operations": [
         {
@@ -1506,10 +1522,26 @@
           "properties": null
         },
         {
+          "description": "Return the List of MySQL scheduled auto migrations",
+          "displayName": "List/Get MySQL Scheduled Migrations",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/locations/listMigrations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Performs a migration assessment with the specified parameters.",
           "displayName": "Get Migration Assessment",
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/locations/assessForMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the scheduled migration for MySQL Server",
+          "displayName": "Update MySQL scheduled migration",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/locations/updateMigration/action",
           "origin": null,
           "properties": null
         }
@@ -1768,6 +1800,14 @@
           "displayName": "Delete Azure Database for MySQL Private Endpoint Connection",
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approves or rejects an existing private endpoint connection",
+          "displayName": "Approve or Reject Azure Database for MySQL Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnections/write",
           "origin": null,
           "properties": null
         }
