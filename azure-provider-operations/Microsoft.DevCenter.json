@@ -678,6 +678,14 @@
           "name": "Microsoft.DevCenter/projects/pools/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Triggers a refresh of the pool status.",
+          "displayName": "Pools_RunHealthChecks",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/pools/runHealthChecks/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -856,6 +864,22 @@
           "name": "Microsoft.DevCenter/projects/users/devboxes/userUpcomingActionManage/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Allows a user to read dev box actions.",
+          "displayName": "Projects_Users_DevBoxes_UserActionRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userActionRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows a user to skip or delay dev box actions.",
+          "displayName": "Projects_Users_DevBoxes_UserActionManage",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/userActionManage/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -946,6 +970,20 @@
           "displayName": "ProjectAllowedEnvironmentTypes_Get",
           "isDataAction": false,
           "name": "Microsoft.DevCenter/projects/allowedEnvironmentTypes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkConnections/outboundNetworkDependenciesEndpoints",
+      "name": "networkConnections/outboundNetworkDependenciesEndpoints",
+      "operations": [
+        {
+          "description": "Lists the endpoints that agents may call as part of Dev Box service administration. These FQDNs should be allowed for outbound access in order for the Dev Box service to function.",
+          "displayName": "NetworkConnections_ListOutboundNetworkDependenciesEndpoints",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/networkConnections/outboundNetworkDependenciesEndpoints/read",
           "origin": null,
           "properties": null
         }
