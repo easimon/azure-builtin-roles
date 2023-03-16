@@ -11341,6 +11341,22 @@
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/train/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Copies an existing project to another Azure resource.",
+          "displayName": "Copy project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/copy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Generates a copy project operation authorization to the current target Azure resource.",
+          "displayName": "Copy project authorization",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/authorize-copy/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -11443,6 +11459,14 @@
           "displayName": "Load trained model snapshot to the working directory.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/models/load-snapshot/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers evaluation operation on a trained model.",
+          "displayName": "Evaluate model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/models/evaluate/action",
           "origin": "user",
           "properties": null
         }
@@ -11675,6 +11699,22 @@
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/train/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Copies an existing project to another Azure resource.",
+          "displayName": "Copy project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/copy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Generates a copy project operation authorization to the current target Azure resource.",
+          "displayName": "Copy project authorization",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/authorize-copy/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -11791,6 +11831,14 @@
           "displayName": "Load trained model snapshot to the working directory.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/models/load-snapshot/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers evaluation operation on a trained model.",
+          "displayName": "Evaluate model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/models/evaluate/action",
           "origin": "user",
           "properties": null
         }
@@ -12621,6 +12669,22 @@
           "displayName": "AnalyzeText_Internal_AutoTag_TriggerAutoTaggingJob",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/autotag/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Trigger GPT job.",
+          "displayName": "AnalyzeText_Internal_GPT_TriggerGptJob",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/run-gpt/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Trigger job to submit decisions on accepting, rejecting, or modifying GPT predictions.",
+          "displayName": "AnalyzeText_Internal_GPT_TriggerSubmitGptPredictionDecisionsJob",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/submit-gpt-prediction-decisions/action",
           "origin": "user",
           "properties": null
         }
@@ -13477,6 +13541,240 @@
           "displayName": "Creates a completion for the chat message",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/chat/completions/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-text/projects/models/evaluate/jobs",
+      "operations": [
+        {
+          "description": "Gets the status for an evaluation job.",
+          "displayName": "Get evaluation status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/models/evaluate/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "exported-models*",
+      "name": "accounts/Language/analyze-text/projects/exported-models",
+      "operations": [
+        {
+          "description": "Creates a new exported model or replaces an existing one.",
+          "displayName": "Create or replace exported model.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/exported-models/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing exported model.",
+          "displayName": "Delete exported model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/exported-models/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the details of an exported model.\r\nLists the exported models belonging to a project.*",
+          "displayName": "Get exported model details|List exported models*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/exported-models/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "manifest*",
+      "name": "accounts/Language/analyze-text/projects/exported-models/manifest",
+      "operations": [
+        {
+          "description": "Gets the details and URL needed to download the exported model.",
+          "displayName": "Get exported model manifest",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/exported-models/manifest/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-text/projects/exported-models/jobs",
+      "operations": [
+        {
+          "description": "Gets the status for an existing job to create or update an exported model.",
+          "displayName": "Get exported model status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/exported-models/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-text/projects/copy/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing copy project job.",
+          "displayName": "Get copy project status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/copy/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "prebuilt-entities*",
+      "name": "accounts/Language/analyze-text/projects/global/prebuilt-entities",
+      "operations": [
+        {
+          "description": "Lists the supported prebuilt entities that can be used while creating composed entities.",
+          "displayName": "List supported prebuilt entities",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/projects/global/prebuilt-entities/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-text/internal/projects/run-gpt/jobs",
+      "operations": [
+        {
+          "description": "Get GPT prediction jobs.\r\nGet GPT predictions status and result details.*",
+          "displayName": "AnalyzeText_Internal_GPT_GetGptJobsList|AnalyzeText_Internal_GPT_GetGptJobStatus*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/run-gpt/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "gpt-predictions*",
+      "name": "accounts/Language/analyze-text/internal/projects/gpt-predictions",
+      "operations": [
+        {
+          "description": "Get GPT predictions result.",
+          "displayName": "AnalyzeText_Internal_GPT_GetGptPredictions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/gpt-predictions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-text/internal/projects/submit-gpt-prediction-decisions/jobs",
+      "operations": [
+        {
+          "description": "Get submit GPT prediction decisions job status and result details.",
+          "displayName": "AnalyzeText_Internal_GPT_GetSubmitGptPredictionDecisionsJobStatus",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-text/internal/projects/submit-gpt-prediction-decisions/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-conversations/projects/models/evaluate/jobs",
+      "operations": [
+        {
+          "description": "Gets the status for an evaluation job.",
+          "displayName": "Get evaluation status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/models/evaluate/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-conversations/projects/copy/jobs",
+      "operations": [
+        {
+          "description": "Gets the status of an existing copy project job.",
+          "displayName": "Get copy project status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/projects/copy/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects*",
+      "name": "accounts/Language/analyze-conversations/internal/projects",
+      "operations": [
+        {
+          "description": "Trigger GPT job.",
+          "displayName": "GPT_TriggerGptJob",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/internal/projects/run-gpt/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Trigger job to submit decisions on accepting, rejecting, or modifying GPT predictions.",
+          "displayName": "GPT_TriggerSubmitGptPredictionDecisionsJob",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/internal/projects/submit-gpt-prediction-decisions/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-conversations/internal/projects/run-gpt/jobs",
+      "operations": [
+        {
+          "description": "Get GPT prediction jobs.\r\nGet GPT predictions status and result details.*",
+          "displayName": "GPT_GetGptJobsList|GPT_GetGptJobStatus*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/internal/projects/run-gpt/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "gpt-predictions*",
+      "name": "accounts/Language/analyze-conversations/internal/projects/gpt-predictions",
+      "operations": [
+        {
+          "description": "Get GPT predictions result.",
+          "displayName": "GPT_GetGptPredictions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/internal/projects/gpt-predictions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-conversations/internal/projects/submit-gpt-prediction-decisions/jobs",
+      "operations": [
+        {
+          "description": "Get submit GPT prediction decisions job status and result details.",
+          "displayName": "GPT_GetSubmitGptPredictionDecisionsJobStatus",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/internal/projects/submit-gpt-prediction-decisions/jobs/read",
           "origin": "user",
           "properties": null
         }
