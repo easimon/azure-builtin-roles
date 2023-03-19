@@ -5,9 +5,25 @@
   "operations": [
     {
       "description": "Register a subscription to a resource provider.",
-      "displayName": "Register a subscription to a resource provider.",
+      "displayName": "Register Subscription",
       "isDataAction": false,
       "name": "Microsoft.OperationalInsights/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "UnRegister a subscription to a resource provider.",
+      "displayName": "UnRegister Subscription",
+      "isDataAction": false,
+      "name": "Microsoft.OperationalInsights/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Perform Query Pack Action.",
+      "displayName": "Perform Query Pack Action",
+      "isDataAction": false,
+      "name": "Microsoft.OperationalInsights/querypacks/action",
       "origin": null,
       "properties": null
     },
@@ -61,7 +77,7 @@
           "description": "Generates Registration Certificate for the workspace. This Certificate is used to connect Microsoft System Center Operation Manager to the workspace.",
           "displayName": "Generates Registration Certificate for Workspace.",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/generateregistrationcertificate/action",
+          "name": "Microsoft.OperationalInsights/workspaces/generateRegistrationCertificate/action",
           "origin": null,
           "properties": null
         },
@@ -69,7 +85,7 @@
           "description": "Retrieves the shared keys for the workspace. These keys are used to connect Microsoft Operational Insights agents to the workspace.",
           "displayName": "List Workspace Shared Keys",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
+          "name": "Microsoft.OperationalInsights/workspaces/sharedkeys/action",
           "origin": null,
           "properties": null
         },
@@ -82,6 +98,14 @@
           "properties": null
         },
         {
+          "description": "Regenerates the specified workspace shared key",
+          "displayName": "regenerated shared key of the workspace",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/regenerateSharedKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Executes a search query",
           "displayName": "Search Workspace Data",
           "isDataAction": false,
@@ -90,18 +114,10 @@
           "properties": null
         },
         {
-          "description": "Delete specified data from workspace",
-          "displayName": "Delete specified data from workspace",
+          "description": "Delete specified data by query from workspace.",
+          "displayName": "Purge Data",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/purge/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Regenerates the specified workspace shared key",
-          "displayName": "regenerated shared key of the workspace",
-          "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/regeneratesharedkey/action",
           "origin": null,
           "properties": null
         },
@@ -146,21 +162,21 @@
       ]
     },
     {
-      "displayName": "Shared Keys",
-      "name": "workspaces/sharedKeys",
+      "displayName": "Workspace",
+      "name": "workspaces/sharedkeys",
       "operations": [
         {
           "description": "Retrieves the shared keys for the workspace. These keys are used to connect Microsoft Operational Insights agents to the workspace.",
           "displayName": "List Workspace Shared Keys",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/sharedKeys/read",
+          "name": "Microsoft.OperationalInsights/workspaces/sharedkeys/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "List Keys",
+      "displayName": "Workspace",
       "name": "workspaces/listKeys",
       "operations": [
         {
@@ -175,13 +191,13 @@
     },
     {
       "displayName": "Management Group",
-      "name": "workspaces/managementGroups",
+      "name": "workspaces/managementgroups",
       "operations": [
         {
           "description": "Gets the names and metadata for System Center Operations Manager management groups connected to this workspace.",
           "displayName": "Get Management Groups for Workspace",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/managementGroups/read",
+          "name": "Microsoft.OperationalInsights/workspaces/managementgroups/read",
           "origin": null,
           "properties": null
         }
@@ -220,24 +236,24 @@
       "name": "workspaces/datasources",
       "operations": [
         {
-          "description": "Get datasources under a workspace.",
-          "displayName": "Get datasources under a workspace.",
+          "description": "Get data source under a workspace.",
+          "displayName": "Get Data Source",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/datasources/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create/Update datasources under a workspace.",
-          "displayName": "Create/Update datasources under a workspace.",
+          "description": "Upsert Data Source",
+          "displayName": "Upsert Data Source",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/datasources/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete datasources under a workspace.",
-          "displayName": "Delete datasources under a workspace.",
+          "description": "Delete data source under a workspace.",
+          "displayName": "Delete Data Source",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/datasources/delete",
           "origin": null,
@@ -250,7 +266,7 @@
       "name": "workspaces/savedSearches",
       "operations": [
         {
-          "description": "Gets a saved search query",
+          "description": "Gets a saved search query.",
           "displayName": "Get Saved Search",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/savedSearches/read",
@@ -277,13 +293,13 @@
     },
     {
       "displayName": "Notification Settings",
-      "name": "workspaces/notificationSettings",
+      "name": "workspaces/notificationsettings",
       "operations": [
         {
           "description": "Get the user's notification settings for the workspace.",
           "displayName": "Get Notification Settings",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/notificationSettings/read",
+          "name": "Microsoft.OperationalInsights/workspaces/notificationsettings/read",
           "origin": null,
           "properties": null
         },
@@ -291,7 +307,7 @@
           "description": "Set the user's notification settings for the workspace.",
           "displayName": "Put Notification Settings",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/notificationSettings/write",
+          "name": "Microsoft.OperationalInsights/workspaces/notificationsettings/write",
           "origin": null,
           "properties": null
         },
@@ -299,7 +315,7 @@
           "description": "Delete the user's notification settings for the workspace.",
           "displayName": "Delete Notification Settings",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/notificationSettings/delete",
+          "name": "Microsoft.OperationalInsights/workspaces/notificationsettings/delete",
           "origin": null,
           "properties": null
         }
@@ -307,29 +323,29 @@
     },
     {
       "displayName": "Configuration Scope",
-      "name": "workspaces/configurationScopes",
+      "name": "workspaces/configurationscopes",
       "operations": [
         {
-          "description": "Get Configuration Scope",
+          "description": "Get configuration scope in a workspace.",
           "displayName": "Get Configuration Scope",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/configurationScopes/read",
+          "name": "Microsoft.OperationalInsights/workspaces/configurationscopes/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Set Configuration Scope",
-          "displayName": "Set Configuration Scope",
+          "description": "Create configuration scope in a workspace.",
+          "displayName": "Create Configuration Scope",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/configurationScopes/write",
+          "name": "Microsoft.OperationalInsights/workspaces/configurationscopes/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Configuration Scope",
+          "description": "Delete configuration scope in a workspace.",
           "displayName": "Delete Configuration Scope",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/configurationScopes/delete",
+          "name": "Microsoft.OperationalInsights/workspaces/configurationscopes/delete",
           "origin": null,
           "properties": null
         }
@@ -337,40 +353,40 @@
     },
     {
       "displayName": "Linked Services",
-      "name": "workspaces/linkedServices",
+      "name": "workspaces/linkedservices",
       "operations": [
         {
           "description": "Get linked services under given workspace.",
-          "displayName": "Get linked services under given workspace.",
+          "displayName": "Get Linked Service",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/linkedServices/read",
+          "name": "Microsoft.OperationalInsights/workspaces/linkedservices/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create/Update linked services under given workspace.",
-          "displayName": "Create/Update linked services under given workspace.",
+          "description": "Create or update linked services under given workspace.",
+          "displayName": "Upsert Linked Service",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/linkedServices/write",
+          "name": "Microsoft.OperationalInsights/workspaces/linkedservices/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Delete linked services under given workspace.",
-          "displayName": "Delete linked services under given workspace.",
+          "displayName": "Delete Linked service",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/linkedServices/delete",
+          "name": "Microsoft.OperationalInsights/workspaces/linkedservices/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Intelligence Packs",
+      "displayName": "Intelligence Pack",
       "name": "workspaces/intelligencepacks",
       "operations": [
         {
-          "description": "Lists all intelligence packs that are visible for a given worksapce and also lists whether the pack is enabled or disabled for that workspace.",
+          "description": "Lists all intelligence packs that are visible for a given workspace and also lists whether the pack is enabled or disabled for that workspace.",
           "displayName": "List Intelligence Packs",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/intelligencepacks/read",
@@ -396,12 +412,12 @@
       ]
     },
     {
-      "displayName": "analytics",
+      "displayName": "Analytics",
       "name": "workspaces/analytics",
       "operations": [
         {
           "description": "Search using new engine.",
-          "displayName": "Search using new engine.",
+          "displayName": "Search",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/analytics/query/action",
           "origin": null,
@@ -410,12 +426,12 @@
       ]
     },
     {
-      "displayName": "analytics",
+      "displayName": "Analytics",
       "name": "workspaces/analytics/query/schema",
       "operations": [
         {
           "description": "Get search schema V2.",
-          "displayName": "Get search schema V2.",
+          "displayName": "Get Search Schema V2",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/analytics/query/schema/read",
           "origin": null,
@@ -424,12 +440,12 @@
       ]
     },
     {
-      "displayName": "analytics",
+      "displayName": "Analytics",
       "name": "workspaces/api",
       "operations": [
         {
           "description": "Search using new engine.",
-          "displayName": "Search using new engine.",
+          "displayName": "Search",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/api/query/action",
           "origin": null,
@@ -438,12 +454,12 @@
       ]
     },
     {
-      "displayName": "analytics",
+      "displayName": "Analytics",
       "name": "workspaces/api/query/schema",
       "operations": [
         {
           "description": "Get search schema V2.",
-          "displayName": "Get search schema V2.",
+          "displayName": "Get Search Schema V2",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/api/query/schema/read",
           "origin": null,
@@ -453,13 +469,13 @@
     },
     {
       "displayName": "Deleted Workspace",
-      "name": "linkTargets",
+      "name": "linktargets",
       "operations": [
         {
           "description": "Lists workspaces in soft deleted period.",
           "displayName": "List Deleted Workspaces",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/linkTargets/read",
+          "name": "Microsoft.OperationalInsights/linktargets/read",
           "origin": null,
           "properties": null
         }
@@ -2321,9 +2337,17 @@
       ]
     },
     {
-      "displayName": "Workspaces",
+      "displayName": "Workspace Operations",
       "name": "workspaces/search",
       "operations": [
+        {
+          "description": "Get search results. Deprecated.",
+          "displayName": "Get search results. Deprecated.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/search/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get search results. Deprecated.",
           "displayName": "Get Search Results",
@@ -2335,9 +2359,17 @@
       ]
     },
     {
-      "displayName": "Workspaces",
-      "name": "workspaces/savedsearches/results",
+      "displayName": "Saved Search",
+      "name": "workspaces/savedSearches/results",
       "operations": [
+        {
+          "description": "Get saved searches results. Deprecated.",
+          "displayName": "Get Saved Searches Results",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/results/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get saved searches results. Deprecated",
           "displayName": "Get Saved Searches Results",
@@ -2356,6 +2388,14 @@
           "description": "Lists all of the available OperationalInsights Rest API operations.",
           "displayName": "Get Operations List",
           "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all of the available OperationalInsights Rest API operations.",
+          "displayName": "Get Operations List",
+          "isDataAction": false,
           "name": "microsoft.operationalinsights/operations/read",
           "origin": null,
           "properties": null
@@ -2363,12 +2403,12 @@
       ]
     },
     {
-      "displayName": "Upgrade Translation Failures",
+      "displayName": "Workspace",
       "name": "workspaces/upgradetranslationfailures",
       "operations": [
         {
           "description": "Get Search Upgrade Translation Failure log for the workspace",
-          "displayName": "Get translation failure log",
+          "displayName": "Get Translation Failure Log",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/upgradetranslationfailures/read",
           "origin": null,
@@ -2377,7 +2417,7 @@
       ]
     },
     {
-      "displayName": "Gateways",
+      "displayName": "Gateway",
       "name": "workspaces/gateways",
       "operations": [
         {
@@ -2391,9 +2431,17 @@
       ]
     },
     {
-      "displayName": "Rules",
+      "displayName": "Rule",
       "name": "workspaces/rules",
       "operations": [
+        {
+          "description": "Get alert rule.",
+          "displayName": "Get Alert Rule",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/rules/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get all alert rules.",
           "displayName": "Get all alert rules",
@@ -2465,9 +2513,17 @@
       ]
     },
     {
-      "displayName": "Workspaces",
+      "displayName": "Workspace",
       "name": "workspaces/operations",
       "operations": [
+        {
+          "description": "Gets the status of an OperationalInsights workspace operation.",
+          "displayName": "Get Operations Status",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/operations/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Gets the status of an OperationalInsights workspace operation.",
           "displayName": "Get Operations Status",
@@ -2493,9 +2549,17 @@
       ]
     },
     {
-      "displayName": "OperationStatus",
-      "name": "locations/operationStatuses",
+      "displayName": "Operation Status",
+      "name": "locations/operationstatuses",
       "operations": [
+        {
+          "description": "Get Log Analytics Azure Async Operation Status",
+          "displayName": "Get Log Analytics Azure Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/locations/operationstatuses/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get Log Analytics Azure Async Operation Status.",
           "displayName": "Get Log Analytics Azure Async Operation Status",
@@ -2507,9 +2571,33 @@
       ]
     },
     {
-      "displayName": "ScopedPrivateLinkProxy",
-      "name": "workspaces/scopedPrivateLinkProxies",
+      "displayName": "Scoped Private Link Proxy",
+      "name": "workspaces/scopedprivatelinkproxies",
       "operations": [
+        {
+          "description": "Get Scoped Private Link Proxy",
+          "displayName": "Get Scoped Private Link Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/scopedprivatelinkproxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put Scoped Private Link Proxy",
+          "displayName": "Put Scoped Private Link Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/scopedprivatelinkproxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Scoped Private Link Proxy",
+          "displayName": "Delete Scoped Private Link Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/scopedprivatelinkproxies/delete",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get Scoped Private Link Proxy.",
           "displayName": "Get Scoped Private Link Proxy",
@@ -2568,20 +2656,20 @@
     },
     {
       "displayName": "Deleted Workspace",
-      "name": "deletedWorkspaces",
+      "name": "deletedworkspaces",
       "operations": [
         {
           "description": "Lists workspaces in soft deleted period.",
           "displayName": "List Deleted Workspaces",
           "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/deletedWorkspaces/read",
+          "name": "Microsoft.OperationalInsights/deletedworkspaces/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Available Service Tiers",
+      "displayName": "Available Service Tier",
       "name": "workspaces/availableservicetiers",
       "operations": [
         {
@@ -2595,9 +2683,33 @@
       ]
     },
     {
-      "displayName": "DataExports",
-      "name": "workspaces/dataExports",
+      "displayName": "Data Export",
+      "name": "workspaces/dataexports",
       "operations": [
+        {
+          "description": "Get data export.",
+          "displayName": "Get Data Export",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/dataexports/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update specific data export.",
+          "displayName": "Upsert Data Export",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/dataexports/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete specific Data Export/",
+          "displayName": "Delete Data Export",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/dataexports/delete",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get specific data export.",
           "displayName": "Get data export",
@@ -2625,9 +2737,33 @@
       ]
     },
     {
-      "displayName": "Views",
+      "displayName": "View",
       "name": "workspaces/views",
       "operations": [
+        {
+          "description": "Get workspace view.",
+          "displayName": "Get View",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/views/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete workspace view.",
+          "displayName": "Delete View",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/views/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update workspace view.",
+          "displayName": "Upsert View",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/views/write",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get workspace views.",
           "displayName": "Get views",
@@ -2660,6 +2796,14 @@
       "operations": [
         {
           "description": "Get the Service Map of a resource.",
+          "displayName": "Get the Service Map of a resource.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/features/generateMap/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Service Map of a resource.",
           "displayName": "Get the Service Map of a resource",
           "isDataAction": false,
           "name": "microsoft.operationalinsights/workspaces/features/generateMap/read",
@@ -2670,8 +2814,16 @@
     },
     {
       "displayName": "ServerGroupsMembers",
-      "name": "workspaces/features/servergroups/members",
+      "name": "workspaces/features/serverGroups/members",
       "operations": [
+        {
+          "description": "Get the Server Groups Members of a resource.",
+          "displayName": "Get the Server Groups Members of a resource",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/features/serverGroups/members/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Get Server Group Members of a resource.",
           "displayName": "Get Server Group Members of a resource",
@@ -2701,6 +2853,14 @@
       "name": "workspaces/features/machineGroups",
       "operations": [
         {
+          "description": "Get the Service Map Machine Groups of a resource.",
+          "displayName": "Get the Service Map Machine Groups of a resource",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/features/machineGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Get the Service Map Machine Groups.",
           "displayName": "Get the Service Map Machine Groups",
           "isDataAction": false,
@@ -2711,9 +2871,33 @@
       ]
     },
     {
-      "displayName": "QueryPacks",
+      "displayName": "Query Pack",
       "name": "querypacks",
       "operations": [
+        {
+          "description": "Get Query Pack.",
+          "displayName": "Get Query Pack",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update  Query Pack.",
+          "displayName": "Upsert Query Pack",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Query Pack.",
+          "displayName": "Delete Query Pack",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/delete",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Create or Update Query Packs.",
           "displayName": "Create or Update Query Packs",
@@ -2872,6 +3056,30 @@
       "displayName": "Tables",
       "name": "workspaces/tables",
       "operations": [
+        {
+          "description": "Create or update a log analytics table.",
+          "displayName": "Create or update a log analytics table.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/tables/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a log analytics table.",
+          "displayName": "Get a log analytics table.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/tables/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a log analytics table.",
+          "displayName": "Delete a log analytics table.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/tables/delete",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Create or update a log analytics table.",
           "displayName": "Create or update a log analytics table",
@@ -10285,6 +10493,14 @@
       "operations": [
         {
           "description": "Run a search job.",
+          "displayName": "Run a search job.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/searchJobs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Run a search job.",
           "displayName": "Run a search job",
           "isDataAction": false,
           "name": "microsoft.operationalinsights/workspaces/searchJobs/write",
@@ -10297,6 +10513,14 @@
       "displayName": "Restore Logs",
       "name": "workspaces/restoreLogs",
       "operations": [
+        {
+          "description": "Restore data from a table.",
+          "displayName": "Restore data from a table.",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/restoreLogs/write",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Restore data from a table.",
           "displayName": "Restore data from a table",
@@ -11058,6 +11282,64 @@
           "displayName": "Read ChaosStudioExperimentEventLogs data",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/query/ChaosStudioExperimentEventLogs/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schedule",
+      "name": "workspaces/schedules",
+      "operations": [
+        {
+          "description": "Get scheduled saved search.",
+          "displayName": "Get Management Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/schedules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete scheduled saved search.",
+          "displayName": "Delete Management Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/schedules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update scheduled saved search.",
+          "displayName": "Upsert Management Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/schedules/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Action",
+      "name": "workspaces/schedules/actions",
+      "operations": [
+        {
+          "description": "Get Management Configuration action.",
+          "displayName": "Get Management Configuration Action",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/schedules/actions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ClientGroupsMembers",
+      "name": "workspaces/features/clientGroups/members",
+      "operations": [
+        {
+          "description": "Get the Client Groups Members of a resource.",
+          "displayName": "Get the Client Groups Members of a resource",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/features/clientGroups/members/read",
           "origin": null,
           "properties": null
         }
