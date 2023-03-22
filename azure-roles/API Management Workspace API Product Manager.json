@@ -1,0 +1,27 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Has read access to entities in the workspace and read and write access to entities for publishing APIs. This role should be assigned on the workspace scope.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/73c2c328-d004-4c5e-938c-35c6f5679a1f",
+  "name": "73c2c328-d004-4c5e-938c-35c6f5679a1f",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ApiManagement/service/workspaces/*/read",
+        "Microsoft.ApiManagement/service/workspaces/products/*",
+        "Microsoft.ApiManagement/service/workspaces/subscriptions/*",
+        "Microsoft.ApiManagement/service/workspaces/groups/*",
+        "Microsoft.ApiManagement/service/workspaces/tags/*",
+        "Microsoft.ApiManagement/service/workspaces/notifications/*",
+        "Microsoft.Authorization/*/read"
+      ],
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "API Management Workspace API Product Manager",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
