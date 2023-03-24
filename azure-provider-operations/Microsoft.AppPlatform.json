@@ -3515,6 +3515,14 @@
           "name": "Microsoft.AppPlatform/Spring/buildServices/getResourceUploadUrl/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Create or Update the Build Services for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps Build Services",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/write",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -3595,6 +3603,14 @@
           "name": "Microsoft.AppPlatform/Spring/buildServices/builders/delete",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "List deployments using the Builders for a specific Azure Spring Apps service instance",
+          "displayName": "List deployments using the Builder Microsoft Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/listUsingDeployments/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -3615,6 +3631,14 @@
           "displayName": "Write Microsoft Azure Spring Apps Builds",
           "isDataAction": false,
           "name": "Microsoft.AppPlatform/Spring/buildServices/builds/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Builds for a specific Azure Spring Apps service instance",
+          "displayName": "Delete Microsoft Azure Spring Apps Builds",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/buildServices/builds/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -3751,6 +3775,14 @@
           "displayName": "List environment variables secret for Microsoft Azure Spring Apps Spring Cloud Gateway",
           "isDataAction": false,
           "name": "Microsoft.AppPlatform/Spring/gateways/listEnvSecrets/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restart the Spring Cloud Gateway for a specific Azure Spring Apps service instance",
+          "displayName": "Restart Microsoft Azure Spring Apps Spring Cloud Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/gateways/restart/action",
           "origin": "user,system",
           "properties": null
         }
@@ -4057,14 +4089,148 @@
       ]
     },
     {
-      "displayName": "The Builder of Microsoft Azure Spring Apps",
-      "name": "Spring/buildServices/builders/listUsingDeployments",
+      "displayName": "RuntimeVersions",
+      "name": "runtimeVersions",
       "operations": [
         {
-          "description": "List deployments using the Builders for a specific Azure Spring Apps service instance",
-          "displayName": "List deployments using the Builder Microsoft Azure Spring Apps",
+          "description": "Get runtime versions of Microsoft Azure Spring Apps",
+          "displayName": "Get runtime versions in Azure Spring Apps",
           "isDataAction": false,
-          "name": "Microsoft.AppPlatform/Spring/buildServices/builders/listUsingDeployments/read",
+          "name": "Microsoft.AppPlatform/runtimeVersions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring Operation Result",
+      "name": "Spring/operationResults",
+      "operations": [
+        {
+          "description": "Read resource operation result",
+          "displayName": "Get operation result",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring Operation Status",
+      "name": "Spring/operationStatuses",
+      "operations": [
+        {
+          "description": "Read resource operation Status",
+          "displayName": "Get operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/operationStatuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring/configServers Operation Result",
+      "name": "Spring/configServers/operationResults",
+      "operations": [
+        {
+          "description": "Read resource operation result",
+          "displayName": "Get operation result",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configServers/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring/configServers Operation Status",
+      "name": "Spring/configServers/operationStatuses",
+      "operations": [
+        {
+          "description": "Read resource operation Status",
+          "displayName": "Get operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/configServers/operationStatuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring/apps Operation Result",
+      "name": "Spring/apps/operationResults",
+      "operations": [
+        {
+          "description": "Read resource operation result",
+          "displayName": "Get operation result",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring/apps Operation Status",
+      "name": "Spring/apps/operationStatuses",
+      "operations": [
+        {
+          "description": "Read resource operation Status",
+          "displayName": "Get operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/operationStatuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring/apps/deployments Operation Result",
+      "name": "Spring/apps/deployments/operationResults",
+      "operations": [
+        {
+          "description": "Read resource operation result",
+          "displayName": "Get operation result",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.AppPlatform/Spring/apps/deployments Operation Status",
+      "name": "Spring/apps/deployments/operationStatuses",
+      "operations": [
+        {
+          "description": "Read resource operation Status",
+          "displayName": "Get operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/apps/deployments/operationStatuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The Container Registry of Microsoft Azure Spring Apps",
+      "name": "Spring/containerRegistries",
+      "operations": [
+        {
+          "description": "Get the Container Registry for a specific Azure Spring Apps service instance",
+          "displayName": "Read Microsoft Azure Spring Apps Container Registry",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/containerRegistries/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the Container Registry for a specific Azure Spring Apps service instance",
+          "displayName": "Write Microsoft Azure Spring Apps Container Registry",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/containerRegistries/write",
           "origin": "user,system",
           "properties": null
         }
