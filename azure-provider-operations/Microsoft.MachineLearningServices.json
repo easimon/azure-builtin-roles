@@ -80,6 +80,22 @@
           "name": "Microsoft.MachineLearningServices/workspaces/privateEndpointConnectionsApproval/action",
           "origin": "system",
           "properties": null
+        },
+        {
+          "description": "Allows action on the Machine Learning Services FeatureSet(s)",
+          "displayName": "Allows action on the Machine Learning Services FeatureSet(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featuresets/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Allows action on the Machine Learning Services FeatureEntity(s)",
+          "displayName": "Allows action on the Machine Learning Services FeatureEntity(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featurestoreentities/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -4634,66 +4650,6 @@
       ]
     },
     {
-      "displayName": "Machine Learning Service FeatureStore",
-      "name": "featurestores/featuresets",
-      "operations": [
-        {
-          "description": "Gets the Machine Learning Services FeatureSet(s)",
-          "displayName": "Gets the Machine Learning Services FeatureSet(s)",
-          "isDataAction": false,
-          "name": "Microsoft.MachineLearningServices/featurestores/featuresets/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Creates or Updates the Machine Learning Services FeatureSet(s)",
-          "displayName": "Creates or Updates the Machine Learning Services FeatureSet(s)",
-          "isDataAction": false,
-          "name": "Microsoft.MachineLearningServices/featurestores/featuresets/write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Delete the Machine Learning Services FeatureSet(s)",
-          "displayName": "Delete the Machine Learning Services FeatureSet(s)",
-          "isDataAction": false,
-          "name": "Microsoft.MachineLearningServices/featurestores/featuresets/delete",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Machine Learning Service FeatureStore",
-      "name": "featurestores/featureentities",
-      "operations": [
-        {
-          "description": "Gets the Machine Learning Services FeatureEntity(s)",
-          "displayName": "Gets the Machine Learning Services FeatureEntity(s)",
-          "isDataAction": false,
-          "name": "Microsoft.MachineLearningServices/featurestores/featureentities/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Creates or Updates the Machine Learning Services FeatureEntity(s)",
-          "displayName": "Creates or Updates the Machine Learning Services FeatureEntity(s)",
-          "isDataAction": false,
-          "name": "Microsoft.MachineLearningServices/featurestores/featureentities/write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Delete the Machine Learning Services FeatureEntity(s)",
-          "displayName": "Delete the Machine Learning Services FeatureEntity(s)",
-          "isDataAction": false,
-          "name": "Microsoft.MachineLearningServices/featurestores/featureentities/delete",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Machine Learning Services Asset",
       "name": "workspaces/assets/stage",
       "operations": [
@@ -4730,6 +4686,66 @@
           "displayName": "Deletes the Machine Learning Services registry(ies) regions(s)",
           "isDataAction": false,
           "name": "Microsoft.MachineLearningServices/registries/regions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machine Learning Service FeatureStore",
+      "name": "workspaces/featuresets",
+      "operations": [
+        {
+          "description": "Gets the Machine Learning Services FeatureSet(s)",
+          "displayName": "Gets the Machine Learning Services FeatureSet(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featuresets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the Machine Learning Services FeatureSet(s)",
+          "displayName": "Creates or Updates the Machine Learning Services FeatureSet(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featuresets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Machine Learning Services FeatureSet(s)",
+          "displayName": "Delete the Machine Learning Services FeatureSet(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featuresets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machine Learning Service FeatureStore",
+      "name": "workspaces/featurestoreentities",
+      "operations": [
+        {
+          "description": "Gets the Machine Learning Services FeatureEntity(s)",
+          "displayName": "Gets the Machine Learning Services FeatureEntity(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featurestoreentities/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates the Machine Learning Services FeatureEntity(s)",
+          "displayName": "Creates or Updates the Machine Learning Services FeatureEntity(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featurestoreentities/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the Machine Learning Services FeatureEntity(s)",
+          "displayName": "Delete the Machine Learning Services FeatureEntity(s)",
+          "isDataAction": false,
+          "name": "Microsoft.MachineLearningServices/workspaces/featurestoreentities/delete",
           "origin": "user,system",
           "properties": null
         }
