@@ -106,6 +106,14 @@
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Approve or reject a connection to a Private Endpoint resource of Microsoft.Network provider",
+          "displayName": "Approve or reject a Private Endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/PrivateEndpointConnectionsApproval/action",
+          "origin": "system",
+          "properties": null
         }
       ]
     },
@@ -114,8 +122,8 @@
       "name": "cloudHsmClusters/privateLinkResources",
       "operations": [
         {
-          "description": "Get the available private link resources for the specified instance of Cloud HSM.",
-          "displayName": "Get private link resources for the specified instance of Cloud HSM.",
+          "description": "Get the available private link resources of an existing CloudHsm",
+          "displayName": "Get the private link resources",
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateLinkResources/read",
           "origin": "system",
@@ -129,7 +137,7 @@
       "operations": [
         {
           "description": "View the state of a connection to a Private Endpoint resource of Microsoft.Network provider",
-          "displayName": "View state of Private Endpoint connection",
+          "displayName": "View the state of Private Endpoint connection",
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateEndpointConnections/read",
           "origin": "system",
@@ -137,7 +145,7 @@
         },
         {
           "description": "Change the state of a connection to a Private Endpoint resource of Microsoft.Network provider",
-          "displayName": "Change state of Private Endpoint connection",
+          "displayName": "Change the state of Private Endpoint connection",
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateEndpointConnections/write",
           "origin": "system",
@@ -154,12 +162,12 @@
       ]
     },
     {
-      "displayName": "Private Endpoint Connection Proxy",
+      "displayName": "CloudHsm",
       "name": "cloudHsmClusters/privateEndpointConnectionProxies",
       "operations": [
         {
           "description": "View the state of a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
-          "displayName": "View state of Private Endpoint Connection Proxy",
+          "displayName": "View the state of Private Endpoint Connection Proxy",
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateEndpointConnectionProxies/read",
           "origin": "system",
@@ -167,7 +175,7 @@
         },
         {
           "description": "Change the state of a connection proxy to a Private Endpoint resource of Microsoft.Network provider",
-          "displayName": "Change state of Private Endpoint Connection Proxy",
+          "displayName": "Change the state of Private Endpoint Connection Proxy",
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateEndpointConnectionProxies/write",
           "origin": "system",
@@ -187,6 +195,20 @@
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateEndpointConnectionProxies/validate/action",
           "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Long Run Operation Result",
+      "name": "locations/cloudHsmOperationResults",
+      "operations": [
+        {
+          "description": "Check the result of a long run operation",
+          "displayName": "Check Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/locations/cloudHsmOperationResults/read",
+          "origin": null,
           "properties": null
         }
       ]
