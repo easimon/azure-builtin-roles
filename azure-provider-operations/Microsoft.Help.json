@@ -1,8 +1,116 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft.Help",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Help",
   "name": "Microsoft.Help",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Checks whether the resource name is used or not for the resource type",
+      "displayName": "Check resource name availability",
+      "isDataAction": false,
+      "name": "Microsoft.Help/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "DiscoverSolutions",
+      "name": "discoverySolutions",
+      "operations": [
+        {
+          "description": "Returns list of solutions",
+          "displayName": "Discover available solutions",
+          "isDataAction": false,
+          "name": "Microsoft.Help/discoverySolutions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Diagnostics",
+      "name": "diagnostics",
+      "operations": [
+        {
+          "description": "Reads or creates an diagnostic resource to troubleshoot an issue",
+          "displayName": "Read or create an diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.Help/diagnostics/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Diagnostics/OperationResults",
+      "name": "diagnostics/operationResults",
+      "operations": [
+        {
+          "description": "Gets the result of the asynchronous diagnostic operation",
+          "displayName": "Get diagnostic operation results",
+          "isDataAction": false,
+          "name": "Microsoft.Help/diagnostics/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Solutions",
+      "name": "solutions",
+      "operations": [
+        {
+          "description": "Reads or creates an solution result",
+          "displayName": "Read or create an solution",
+          "isDataAction": false,
+          "name": "Microsoft.Help/solutions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Solutions/OperationResults",
+      "name": "solutions/operationResults",
+      "operations": [
+        {
+          "description": "Gets the result of the asynchronous solution operation",
+          "displayName": "Get solution operation results",
+          "isDataAction": false,
+          "name": "Microsoft.Help/solutions/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Troubleshooters",
+      "name": "troubleshooters",
+      "operations": [
+        {
+          "description": "This role can create, read, continue and restart a troubleshooter.",
+          "displayName": "Can perform Create, Read, Continue and restart actions on a Troubleshooter instance.",
+          "isDataAction": false,
+          "name": "Microsoft.Help/troubleshooters/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists all operations available on Microsoft.Help resource provide",
+          "displayName": "List Operations",
+          "isDataAction": false,
+          "name": "Microsoft.Help/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
