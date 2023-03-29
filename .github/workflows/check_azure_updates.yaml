@@ -67,7 +67,7 @@ jobs:
         id: create-matrix
         run: |
           TWEETS="$(cat "${TWEET_PATH}"/*.tweet | jq --slurp -c .)"
-          echo "::set-output name=tweets::${TWEETS}"
+          echo "tweets=${TWEETS}" > "${GITHUB_OUTPUT}"
     outputs:
       tweets: ${{ steps.create-matrix.outputs.tweets }}
 
