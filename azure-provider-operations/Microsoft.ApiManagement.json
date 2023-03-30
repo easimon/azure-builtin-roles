@@ -120,6 +120,14 @@
           "name": "Microsoft.ApiManagement/service/notifications/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Validates Tenant Policy Restrictions",
+          "displayName": "Validates Restrictions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/validatePolicies/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -2660,7 +2668,7 @@
           "description": "Forces gateway to reset all issued debug credentials",
           "displayName": "Reset debug credentials",
           "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/gateways/resetDebugCredentials/action",
+          "name": "Microsoft.ApiManagement/service/gateways/invalidateDebugCredentials/action",
           "origin": null,
           "properties": null
         },
@@ -4957,6 +4965,96 @@
           "displayName": "Create publisher notification",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/workspaces/notifications/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Documentations",
+      "name": "service/workspaces/documentations",
+      "operations": [
+        {
+          "description": "Lists all Documentations of the API Management service instance. or Gets the details of the documentation specified by its identifier.",
+          "displayName": "Get documentations list or Get documentation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/documentations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a documentation. or Updates the specified documentation of the API Management service instance.",
+          "displayName": "Create documentation or Update documentation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/documentations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete documentation.",
+          "displayName": "Remove documentation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/documentations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Tenant policies configuration",
+      "name": "service/policyRestrictions",
+      "operations": [
+        {
+          "description": "Lists all the Global Policy Restrictions of the Api Management service. or Get the Global policy restriction of the Api Management service.",
+          "displayName": "Get Policy Restrictions or Get Tenant policy restriction",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyRestrictions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the global policy restriction of the Api Management service. or Updates the global policy restriction of the Api Management service.",
+          "displayName": "Set Tenant policy restriction or Update Tenant policy restriction",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyRestrictions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the global policy restriction of the Api Management Service.",
+          "displayName": "Remove Tenant policy restriction from policies",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/policyRestrictions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "documentations",
+      "name": "service/documentations",
+      "operations": [
+        {
+          "description": "Lists all Documentations of the API Management service instance. or Gets the details of the documentation specified by its identifier.",
+          "displayName": "Get documentations list or Get documentation details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/documentations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a documentation. or Updates the specified documentation of the API Management service instance.",
+          "displayName": "Create documentation or Update documentation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/documentations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete documentation.",
+          "displayName": "Remove documentation",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/documentations/delete",
           "origin": null,
           "properties": null
         }
