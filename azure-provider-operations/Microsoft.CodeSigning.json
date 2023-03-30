@@ -2,31 +2,56 @@
   "displayName": "Microsoft.CodeSigning",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.CodeSigning",
   "name": "Microsoft.CodeSigning",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Registers the subscription for Microsoft CodeSigning resource provider.",
+      "displayName": "Registers Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.CodeSigning/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription for Microsoft CodeSigning resource provider.",
+      "displayName": "Unregisters Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.CodeSigning/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Checks code signing account name availability globally.",
+      "displayName": "Checks Account Name Availability",
+      "isDataAction": false,
+      "name": "Microsoft.CodeSigning/checknameavailability/action",
+      "origin": "System",
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
-      "displayName": "codeSigningAccounts",
+      "displayName": "CodeSigningAccounts",
       "name": "codeSigningAccounts",
       "operations": [
         {
-          "description": "Read codeSigningAccounts",
-          "displayName": "Gets/List codeSigningAccounts resources",
+          "description": "Reads code signing accounts resources.",
+          "displayName": "Reads Code Signing Accounts",
           "isDataAction": false,
           "name": "Microsoft.CodeSigning/codeSigningAccounts/Read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Writes codeSigningAccounts",
-          "displayName": "Create/update codeSigningAccounts resources",
+          "description": "Creates or updates code signing account.",
+          "displayName": "Creates/Updates Code Signing Accounts",
           "isDataAction": false,
           "name": "Microsoft.CodeSigning/codeSigningAccounts/Write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes codeSigningAccounts",
-          "displayName": "Deletes codeSigningAccounts resource",
+          "description": "Deletes code signing accounts.",
+          "displayName": "Deletes Code Signing Accounts",
           "isDataAction": false,
           "name": "Microsoft.CodeSigning/codeSigningAccounts/Delete",
           "origin": null,
@@ -35,36 +60,12 @@
       ]
     },
     {
-      "displayName": "certificateProfiles",
+      "displayName": "CertificateProfiles",
       "name": "certificateProfiles",
       "operations": [
         {
-          "description": "Read certificateProfiles",
-          "displayName": "Gets/List certificateProfiles resources",
-          "isDataAction": false,
-          "name": "Microsoft.CodeSigning/certificateProfiles/Read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Writes certificateProfiles",
-          "displayName": "Create/update certificateProfiles resources",
-          "isDataAction": false,
-          "name": "Microsoft.CodeSigning/certificateProfiles/Write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes certificateProfiles",
-          "displayName": "Deletes certificateProfiles resource",
-          "isDataAction": false,
-          "name": "Microsoft.CodeSigning/certificateProfiles/Delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Sign provided files using specified certificate profile",
-          "displayName": "Sign provided files",
+          "description": "Signs provided files using specified certificate profile.",
+          "displayName": "Signs Files",
           "isDataAction": true,
           "name": "Microsoft.CodeSigning/certificateProfiles/Sign/action",
           "origin": null,
@@ -77,19 +78,85 @@
       "name": "IdentityVerification",
       "operations": [
         {
-          "description": "Get/List identity or business verification requests",
-          "displayName": "Get/List identity or business verification requests",
+          "description": "Reads identity verification requests for the subscription.",
+          "displayName": "Reads Identity Verification Requests",
           "isDataAction": true,
           "name": "Microsoft.CodeSigning/IdentityVerification/Read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create/update identity or business verification request",
-          "displayName": "Create/update identity or business verification request",
+          "description": "Creates or updates identity verification requests",
+          "displayName": "Creates/Updates Identity Verification Request",
           "isDataAction": true,
           "name": "Microsoft.CodeSigning/IdentityVerification/Write",
           "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "CertificateProfiles",
+      "name": "codeSigningAccounts/certificateProfiles",
+      "operations": [
+        {
+          "description": "Reads code signing accounts.",
+          "displayName": "Reads Code Signing Accounts",
+          "isDataAction": false,
+          "name": "Microsoft.CodeSigning/codeSigningAccounts/certificateProfiles/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes or updates certificate profiles.",
+          "displayName": "Creates/Updates Certificate Profiles",
+          "isDataAction": false,
+          "name": "Microsoft.CodeSigning/codeSigningAccounts/certificateProfiles/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes certificate profiles.",
+          "displayName": "Deletes Certificate Profiles",
+          "isDataAction": false,
+          "name": "Microsoft.CodeSigning/codeSigningAccounts/certificateProfiles/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists available operations for Microsoft CodeSigning resource provider.",
+          "displayName": "Lists Available Operations",
+          "isDataAction": false,
+          "name": "Microsoft.CodeSigning/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OperationStatuses",
+      "name": "locations/operationstatuses",
+      "operations": [
+        {
+          "description": "Lists operation statuses for Microsoft CodeSigning resource provider.",
+          "displayName": "Lists Operation Statuses",
+          "isDataAction": false,
+          "name": "Microsoft.CodeSigning/locations/operationstatuses/read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Writes or updates operation statuses for Microsoft CodeSigning resource provider.",
+          "displayName": "Writes/Updates Operation Statuses",
+          "isDataAction": false,
+          "name": "Microsoft.CodeSigning/locations/operationstatuses/write",
+          "origin": "System",
           "properties": null
         }
       ]
