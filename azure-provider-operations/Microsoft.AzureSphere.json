@@ -118,6 +118,14 @@
           "properties": null
         },
         {
+          "description": "Lists deployments for catalog.",
+          "displayName": "Catalogs_ListDeployments",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/listDeployments/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "List the device groups for the catalog.",
           "displayName": "Catalogs_ListDeviceGroups",
           "isDataAction": false,
@@ -156,7 +164,7 @@
           "properties": null
         },
         {
-          "description": "Get a Product",
+          "description": "Get a Product. '.default' and '.unassigned' are system defined values and cannot be used for product name.",
           "displayName": "Products_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/read",
@@ -164,7 +172,7 @@
           "properties": null
         },
         {
-          "description": "Create a Product",
+          "description": "Create a Product. '.default' and '.unassigned' are system defined values and cannot be used for product name.",
           "displayName": "Products_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/write",
@@ -172,7 +180,7 @@
           "properties": null
         },
         {
-          "description": "Delete a Product",
+          "description": "Delete a Product. '.default' and '.unassigned' are system defined values and cannot be used for product name'",
           "displayName": "Products_Delete",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/delete",
@@ -180,7 +188,15 @@
           "properties": null
         },
         {
-          "description": "Counts devices in product.",
+          "description": "Update a Product. '.default' and '.unassigned' are system defined values and cannot be used for product name.",
+          "displayName": "Products_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Counts devices in product. '.default' and '.unassigned' are system defined values and cannot be used for product name.",
           "displayName": "Products_CountDevices",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/countDevices/action",
@@ -188,18 +204,10 @@
           "properties": null
         },
         {
-          "description": "Generates default device groups for the product.",
+          "description": "Generates default device groups for the product. '.default' and '.unassigned' are system defined values and cannot be used for product name.",
           "displayName": "Products_GenerateDefaultDeviceGroups",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/generateDefaultDeviceGroups/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists devices in product.",
-          "displayName": "Products_ListDevices",
-          "isDataAction": false,
-          "name": "Microsoft.AzureSphere/catalogs/products/listDevices/action",
           "origin": null,
           "properties": null
         }
@@ -286,7 +294,7 @@
       "name": "catalogs/products/deviceGroups",
       "operations": [
         {
-          "description": "List DeviceGroup resources by Product",
+          "description": "List DeviceGroup resources by Product. '.default' and '.unassigned' are system defined values and cannot be used for product name.",
           "displayName": "DeviceGroups_ListByProduct",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/read",
@@ -294,7 +302,7 @@
           "properties": null
         },
         {
-          "description": "Get a DeviceGroup",
+          "description": "Get a DeviceGroup. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "DeviceGroups_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/read",
@@ -302,7 +310,7 @@
           "properties": null
         },
         {
-          "description": "Create a DeviceGroup",
+          "description": "Create a DeviceGroup. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "DeviceGroups_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/write",
@@ -310,7 +318,7 @@
           "properties": null
         },
         {
-          "description": "Delete a DeviceGroup",
+          "description": "Delete a DeviceGroup. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "DeviceGroups_Delete",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/delete",
@@ -318,7 +326,15 @@
           "properties": null
         },
         {
-          "description": "Bulk claims the devices.",
+          "description": "Update a DeviceGroup. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
+          "displayName": "DeviceGroups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Bulk claims the devices. Use '.unassigned' or '.default' for the device group and product names when bulk claiming devices to a catalog only.",
           "displayName": "DeviceGroups_ClaimDevices",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/claimDevices/action",
@@ -326,7 +342,7 @@
           "properties": null
         },
         {
-          "description": "Counts devices in device group.",
+          "description": "Counts devices in device group. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "DeviceGroups_CountDevices",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/countDevices/action",
@@ -340,7 +356,7 @@
       "name": "catalogs/products/deviceGroups/devices",
       "operations": [
         {
-          "description": "List Device resources by DeviceGroup",
+          "description": "List Device resources by DeviceGroup. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "Devices_ListByDeviceGroup",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/read",
@@ -348,7 +364,7 @@
           "properties": null
         },
         {
-          "description": "Get a Device",
+          "description": "Get a Device. Use '.unassigned' or '.default' for the device group and product names when a device does not belong to a device group and product.",
           "displayName": "Devices_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/read",
@@ -356,7 +372,7 @@
           "properties": null
         },
         {
-          "description": "Create a Device",
+          "description": "Create a Device. Use '.unassigned' or '.default' for the device group and product names to claim a device to the catalog only.",
           "displayName": "Devices_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/write",
@@ -372,7 +388,7 @@
           "properties": null
         },
         {
-          "description": "Update a Device",
+          "description": "Update a Device. Use '.unassigned' or '.default' for the device group and product names to move a device to the catalog level.",
           "displayName": "Devices_Update",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/write",
@@ -380,7 +396,7 @@
           "properties": null
         },
         {
-          "description": "Generates the capability image for the device.",
+          "description": "Generates the capability image for the device. Use '.unassigned' or '.default' for the device group and product names to generate the image for a device that does not belong to a specific device group and product.",
           "displayName": "Devices_GenerateCapabilityImage",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/devices/generateCapabilityImage/action",
@@ -394,7 +410,7 @@
       "name": "catalogs/products/deviceGroups/deployments",
       "operations": [
         {
-          "description": "List Deployment resources by DeviceGroup",
+          "description": "List Deployment resources by DeviceGroup. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "Deployments_ListByDeviceGroup",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/read",
@@ -402,7 +418,7 @@
           "properties": null
         },
         {
-          "description": "Get a Deployment",
+          "description": "Get a Deployment. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "Deployments_Get",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/read",
@@ -410,7 +426,7 @@
           "properties": null
         },
         {
-          "description": "Create a Deployment",
+          "description": "Create a Deployment. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "Deployments_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/write",
@@ -418,7 +434,7 @@
           "properties": null
         },
         {
-          "description": "Delete a Deployment",
+          "description": "Delete a Deployment. '.default' and '.unassigned' are system defined values and cannot be used for product or device group name.",
           "displayName": "Deployments_Delete",
           "isDataAction": false,
           "name": "Microsoft.AzureSphere/catalogs/products/deviceGroups/deployments/delete",
