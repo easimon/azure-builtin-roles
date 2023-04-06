@@ -246,6 +246,40 @@
                     "PT1H"
                   ],
                   "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Session IP Address",
+                      "name": "SessionIP"
+                    }
+                  ],
+                  "displayDescription": "Primary Peering Session State",
+                  "displayName": "Primary Peering Session State",
+                  "name": "PrimaryPeeringSessionAvailability",
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Session IP Address",
+                      "name": "SessionIP"
+                    }
+                  ],
+                  "displayDescription": "Backup Peering Session State",
+                  "displayName": "Backup Peering Session State",
+                  "name": "BackupPeeringSessionAvailability",
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT1H"
+                  ],
+                  "unit": "Count"
                 }
               ]
             }
@@ -386,6 +420,38 @@
                     "PT1H"
                   ],
                   "unit": "BitsPerSecond"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Prefix Name",
+                      "name": "RegisteredPrefixName"
+                    }
+                  ],
+                  "displayDescription": "Median prefix latency",
+                  "displayName": "Prefix Latency",
+                  "name": "RegisteredPrefixLatency",
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Asn Name",
+                      "name": "RegisteredAsnName"
+                    }
+                  ],
+                  "displayDescription": "Average of median Customer prefix latency",
+                  "displayName": "Average Customer Prefix Latency",
+                  "name": "AverageCustomerPrefixLatency",
+                  "supportedTimeGrainTypes": [
+                    "PT1H"
+                  ],
+                  "unit": "Milliseconds"
                 }
               ]
             }
