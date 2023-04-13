@@ -13831,6 +13831,116 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Computer Vision Service",
+      "name": "accounts/ComputerVision/retrieval",
+      "operations": [
+        {
+          "description": "Get search suggestions for the user, given the query text that the user has entered so far.",
+          "displayName": "GetSuggestions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/suggest/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Perform a search using the specified search query and parameters.",
+          "displayName": "Search",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/search/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Search indexes using the specified search query and parameters.",
+          "displayName": "Search Indexes",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes:query/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Index Operations",
+      "name": "accounts/ComputerVision/retrieval/indexes",
+      "operations": [
+        {
+          "description": "Delete an index.",
+          "displayName": "DeleteIngestionIndex",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Document Operations",
+      "name": "accounts/ComputerVision/retrieval/indexes/documents",
+      "operations": [
+        {
+          "description": "Create a document in an index. If the index doesn't exist, then it will be created automatically.\r\nUpdate a document.*",
+          "displayName": "CreateIngestionDocument|UpdateIngestionDocument*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/documents/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a document.",
+          "displayName": "Delete Ingestion Document",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/documents/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get a list of documents within an index.",
+          "displayName": "Get Ingestion Documents",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/documents/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Document Operations",
+      "name": "accounts/ComputerVision/retrieval/documents",
+      "operations": [
+        {
+          "description": "Get a list of all documents.",
+          "displayName": "GetAllIngestionDocuments",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/documents/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Face Group Operations",
+      "name": "accounts/ComputerVision/retrieval/facegroups",
+      "operations": [
+        {
+          "description": "Get the list of available face groups for a user.",
+          "displayName": "ListFaceGroups",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/facegroups/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Update the properties of a face group.",
+          "displayName": "UpdateFaceGroup",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/facegroups/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
