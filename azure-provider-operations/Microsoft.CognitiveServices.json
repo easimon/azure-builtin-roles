@@ -13941,6 +13941,72 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Content Safety",
+      "name": "accounts/ContentSafety",
+      "operations": [
+        {
+          "description": "A sync API for harmful content analysis for image.",
+          "displayName": "Analyze Image",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/image:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A sync API for harmful content analysis for text.",
+          "displayName": "Analyze Text",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text:analyze/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Text Blocklists",
+      "name": "accounts/ContentSafety/text/blocklists",
+      "operations": [
+        {
+          "description": "Get or List Text Blocklist",
+          "displayName": "Get or List Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates a text blocklist, if blocklistName does not exist, create a new blocklist.",
+          "displayName": "Create or Update Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes a text blocklist.",
+          "displayName": "Delete Text Blocklist By blocklistName",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Text Blockitems",
+      "name": "accounts/ContentSafety/text/blocklists/blockitems",
+      "operations": [
+        {
+          "description": "Get blockItem By blockItemId from a text blocklist.",
+          "displayName": "Get or List BlockItems from a Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/blockitems/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
