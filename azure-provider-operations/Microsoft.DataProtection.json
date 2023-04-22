@@ -2,7 +2,24 @@
   "displayName": "Microsoft.DataProtection",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataProtection",
   "name": "Microsoft.DataProtection",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Registers subscription for given Resource Provider",
+      "displayName": "Register Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataProtection/register/action",
+      "origin": "user",
+      "properties": null
+    },
+    {
+      "description": "Unregisters subscription for given Resource Provider",
+      "displayName": "Unregister Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.DataProtection/unregister/action",
+      "origin": "user",
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "Backup Vaults",
@@ -409,6 +426,14 @@
       "name": "backupVaults/backupJobs",
       "operations": [
         {
+          "description": "Get Jobs list",
+          "displayName": "Backup Jobs",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/backupJobs/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Get Job details",
           "displayName": "Backup Job Object",
           "isDataAction": false,
@@ -531,6 +556,52 @@
           "displayName": "List of Operations",
           "isDataAction": false,
           "name": "Microsoft.DataProtection/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs",
+      "name": "subscriptions/resourceGroups/providers/locations",
+      "operations": [
+        {
+          "description": "Returns recovery points from secondary region for cross region restore enabled Backup Vaults.",
+          "displayName": "Fetch secondary recovery points.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers cross region restore operation on given backup instance.",
+          "displayName": "Trigger cross region restore.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/crossRegionRestore/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Performs validations for cross region restore operation.",
+          "displayName": "Validate cross region restore",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/validateCrossRegionRestore/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "List cross region restore jobs of backup instance from secondary region.",
+          "displayName": "Fetch cross region restore jobs.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJobs/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get cross region restore job details from secondary region.",
+          "displayName": "Fetch cross region restore job.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJob/action",
           "origin": "user",
           "properties": null
         }
