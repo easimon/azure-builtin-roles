@@ -1208,8 +1208,8 @@
       "name": "assessmentprojects/groups/assessmentsSummary",
       "operations": [
         {
-          "description": "Gets the Assessment summary of a group",
-          "displayName": "Gets the Assessment summary of a group",
+          "description": "Assessment summary of group",
+          "displayName": "Assessment summary of group",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/groups/assessmentsSummary/read",
           "origin": "user,system",
@@ -1222,7 +1222,7 @@
       "name": "assessmentprojects/groups/sqlAssessments",
       "operations": [
         {
-          "description": "Gets the properties of a SQL assessment",
+          "description": "Gets the properties of an SQL assessment",
           "displayName": "Get SQL Assessment",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/read",
@@ -1238,16 +1238,16 @@
           "properties": null
         },
         {
-          "description": "Deletes a SQL assessment",
-          "displayName": "Delete a SQL Assessment",
+          "description": "Deletes an SQL assessment",
+          "displayName": "Delete SQL Assessment",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/delete",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Downloads a SQL assessment report's URL",
-          "displayName": "Download a SQL assessment URL",
+          "description": "Downloads an SQL assessment report's URL",
+          "displayName": "Download an SQL assessment URL",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/downloadurl/action",
           "origin": "user,system",
@@ -1338,7 +1338,7 @@
           "properties": null
         },
         {
-          "description": "Gets the properties of a WebApp assessment",
+          "description": "Gets the properties of an WebApp assessment",
           "displayName": "Get WebApp Assessment",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/read",
@@ -1354,7 +1354,7 @@
           "properties": null
         },
         {
-          "description": "Deletes a WebApp assessment",
+          "description": "Deletes an WebApp assessment",
           "displayName": "Delete WebApp Assessment",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/delete",
@@ -1488,7 +1488,7 @@
           "properties": null
         },
         {
-          "description": "Gets the properties of a business case",
+          "description": "Gets the properties of an business case",
           "displayName": "Get Business case",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/businesscases/read",
@@ -1496,8 +1496,8 @@
           "properties": null
         },
         {
-          "description": "Downloads a Business Case report's URL",
-          "displayName": "Download a Business Case URL",
+          "description": "Downloads an Business Case report's URL",
+          "displayName": "Download an Business Case URL",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/businesscases/report/action",
           "origin": "user,system",
@@ -1514,12 +1514,12 @@
       ]
     },
     {
-      "displayName": "IaaS summary",
+      "displayName": "IAAS summary",
       "name": "assessmentprojects/businesscases/iaassummaries",
       "operations": [
         {
-          "description": "Gets the IaaS summary of the business case",
-          "displayName": "Get IaaS summary",
+          "description": "Gets the IAAS summary of the business case",
+          "displayName": "Get IAAS summary",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/businesscases/iaassummaries/read",
           "origin": "user,system",
@@ -1542,14 +1542,316 @@
       ]
     },
     {
-      "displayName": "PaaS summary",
+      "displayName": "PAAS summary",
       "name": "assessmentprojects/businesscases/paassummaries",
       "operations": [
         {
-          "description": "Gets the PaaS summary of the business case",
-          "displayName": "Get PaaS summary",
+          "description": "Gets the PAAS summary of the business case",
+          "displayName": "Get PAAS summary",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentprojects/businesscases/paassummaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/deployedResources",
+      "operations": [
+        {
+          "description": "Gets the details of the deployed resource",
+          "displayName": "Gets the deployed resource",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/deployedResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/migrateAgents",
+      "operations": [
+        {
+          "description": "Gets the details of the modernizeProject agent",
+          "displayName": "Gets the MigrateAgent",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/migrateAgents/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates the modernizeProject agent",
+          "displayName": "Puts the MigrateAgent",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/migrateAgents/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the modernizeProject agent",
+          "displayName": "Deletes the MigrateAgent",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/migrateAgents/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refreshes the modernizeProject agent",
+          "displayName": "Refreshes the MigrateAgent",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/migrateAgents/refresh/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/migrateAgents/operations",
+      "operations": [
+        {
+          "description": "Tracks the results of an asynchronous operation on the modernizeProject agent",
+          "displayName": "Gets the MigrateAgent operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/migrateAgents/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects",
+      "operations": [
+        {
+          "description": "Gets the details of the modernize project",
+          "displayName": "Gets the modernize project",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates the modernizeProject",
+          "displayName": "Puts the modernizeProject",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Removes the modernizeProject",
+          "displayName": "Deletes the modernizeProject",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/statistics",
+      "operations": [
+        {
+          "description": "Gets the statistics for the modernizeProject",
+          "displayName": "Gets the modernizeProject statistics",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/statistics/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/operations",
+      "operations": [
+        {
+          "description": "Tracks the results of an asynchronous operation on the modernizeProject",
+          "displayName": "Gets the modernizeProject operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/jobs",
+      "operations": [
+        {
+          "description": "Gets the details of the job",
+          "displayName": "Gets the workflow",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/jobs/operations",
+      "operations": [
+        {
+          "description": "Tracks the results of an asynchronous operation on the job",
+          "displayName": "Gets the workflow operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/jobs/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/workloadDeployments",
+      "operations": [
+        {
+          "description": "Gets the details of the workload deployment",
+          "displayName": "Gets the workload deployment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates the workload deployment",
+          "displayName": "Puts the workload deployment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Removes the workload deployment",
+          "displayName": "Deletes the workload deployment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs the build container image action on the workload deployment",
+          "displayName": "Build container image",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/buildContainerImage/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs the test migrate on the workload deployment",
+          "displayName": "Performs test migrate",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/testMigrate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs the test migrate cleanup on the workload deployment",
+          "displayName": "Performs test migrate cleanup",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/testMigrateCleanup/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs migrate on the workload deployment",
+          "displayName": "Performs migrate",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/migrate/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/workloadDeployments/getSecrets",
+      "operations": [
+        {
+          "description": "Gets the secrets of the workload deployment",
+          "displayName": "Gets the workload deployment secrets",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/getSecrets/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/workloadDeployments/operations",
+      "operations": [
+        {
+          "description": "Tracks the results of an asynchronous operation on the workload deployment",
+          "displayName": "Gets the workload deployment operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadDeployments/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/workloadInstances",
+      "operations": [
+        {
+          "description": "Gets the details of the workload instance",
+          "displayName": "Gets the workload instance",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadInstances/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates the workload instance in the given modernizeProject",
+          "displayName": "Puts the workload instance",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadInstances/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the workload instance in the given modernizeProject",
+          "displayName": "Deletes the workload instance",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadInstances/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs complete migrate on the workload instance",
+          "displayName": "Performs complete migrate",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadInstances/completeMigration/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs disable replicate on the workload instance",
+          "displayName": "Performs disable replicate",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadInstances/disableReplication/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Modernization Resource",
+      "name": "modernizeProjects/workloadInstances/operations",
+      "operations": [
+        {
+          "description": "Tracks the results of an asynchronous operation on the workload instance",
+          "displayName": "Gets the workload instance operation status",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/modernizeProjects/workloadInstances/operations/read",
           "origin": "user,system",
           "properties": null
         }
