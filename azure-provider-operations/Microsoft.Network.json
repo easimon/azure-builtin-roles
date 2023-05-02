@@ -179,7 +179,7 @@
         },
         {
           "description": "Sets Azure Network Manager Configuration",
-          "displayName": "Sets Azure Network Manager Configuration",
+          "displayName": "Set Azure Network Manager Configuration",
           "isDataAction": false,
           "name": "Microsoft.Network/locations/setAzureNetworkManagerConfiguration/action",
           "origin": "system",
@@ -380,7 +380,7 @@
           "properties": null
         },
         {
-          "description": "List Network Manager Effective Connectivity Configurations",
+          "description": "Lists Network Manager Effective Connectivity Configurations",
           "displayName": "List Network Manager Effective Connectivity Configurations",
           "isDataAction": false,
           "name": "Microsoft.Network/virtualNetworks/listNetworkManagerEffectiveConnectivityConfigurations/action",
@@ -388,7 +388,7 @@
           "properties": null
         },
         {
-          "description": "List Network Manager Effective Security Admin Rules",
+          "description": "Lists Network Manager Effective Security Admin Rules",
           "displayName": "List Network Manager Effective Security Admin Rules",
           "isDataAction": false,
           "name": "Microsoft.Network/virtualNetworks/listNetworkManagerEffectiveSecurityAdminRules/action",
@@ -9843,7 +9843,7 @@
                   ],
                   "displayDescription": "The percentage of successful health probes from the HTTP/S proxy to backends",
                   "displayName": "Backend Health Percentage",
-                  "fillGapWithZero": true,
+                  "fillGapWithZero": false,
                   "isInternal": false,
                   "name": "BackendHealthPercentage",
                   "supportedTimeGrainTypes": [
@@ -14971,7 +14971,7 @@
           "properties": null
         },
         {
-          "description": "List Active Security Admin Rules",
+          "description": "Lists Active Security Admin Rules",
           "displayName": "List Active Security Admin Rules",
           "isDataAction": false,
           "name": "Microsoft.Network/networkManagers/listActiveSecurityAdminRules/action",
@@ -14979,10 +14979,18 @@
           "properties": null
         },
         {
-          "description": "List Active Security User Rules",
+          "description": "Lists Active Security User Rules",
           "displayName": "List Active Security User Rules",
           "isDataAction": false,
           "name": "Microsoft.Network/networkManagers/listActiveSecurityUserRules/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists Active Connectivity Configurations",
+          "displayName": "List Active Connectivity Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/listActiveConnectivityConfigurations/action",
           "origin": null,
           "properties": null
         }
@@ -15627,6 +15635,178 @@
           "displayName": "Deletes a Analysis Run",
           "isDataAction": false,
           "name": "Microsoft.Network/networkVerifiers/analysisIntents/analysisRuns/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Network Manager Configuration Request",
+      "name": "locations/setAzureNetworkManagerConfiguration",
+      "operations": [
+        {
+          "description": "Permission for calling Set Azure Network Manager Configuration operation. This read permission, not setAzureNetworkManagerConfiguration/action, is required to call Set Azure Network Manager Configuration.",
+          "displayName": "Set Azure Network Manager Configuration Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/locations/setAzureNetworkManagerConfiguration/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Network",
+      "name": "virtualNetworks/listNetworkManagerEffectiveConnectivityConfigurations",
+      "operations": [
+        {
+          "description": "Permission for calling List Network Manager Effective Connectivity Configurations operation. This read permission, not listNetworkManagerEffectiveConnectivityConfigurations/action, is required to call List Network Manager Effective Connectivity Configurations.",
+          "displayName": "List Network Manager Effective Connectivity Configurations Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/virtualNetworks/listNetworkManagerEffectiveConnectivityConfigurations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Network",
+      "name": "virtualNetworks/listNetworkManagerEffectiveSecurityAdminRules",
+      "operations": [
+        {
+          "description": "Permission for calling List Network Manager Effective Security Admin Rules operation. This read permission, not listNetworkManagerEffectiveSecurityAdminRules/action, is required to call List Network Manager Effective Security Admin Rules.",
+          "displayName": "List Network Manager Effective Security Admin Rules Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/virtualNetworks/listNetworkManagerEffectiveSecurityAdminRules/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "InboundSecurityRule",
+      "name": "networkVirtualAppliances/inboundSecurityRules",
+      "operations": [
+        {
+          "description": "Get a InboundSecurityRule",
+          "displayName": "Get a InboundSecurityRule",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkVirtualAppliances/inboundSecurityRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a InboundSecurityRule",
+          "displayName": "Create or update a InboundSecurityRule",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkVirtualAppliances/inboundSecurityRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a InboundSecurityRule",
+          "displayName": "Delete a InboundSecurityRule",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkVirtualAppliances/inboundSecurityRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Diagnostic Settings Proxy",
+      "name": "networkSecurityPerimeters/profiles/diagnosticSettingsProxies",
+      "operations": [
+        {
+          "description": "Gets a Network Security Perimeter Diagnostic Settings Proxy",
+          "displayName": "Gets a Network Security Perimeter Diagnostic Settings Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/profiles/diagnosticSettingsProxies/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Backing Resource Association",
+      "name": "networkSecurityPerimeters/backingResourceAssociations",
+      "operations": [
+        {
+          "description": "Gets a Network Security Perimeter Backing Resource Association",
+          "displayName": "Gets a Network Security Perimeter Backing Resource Association",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/backingResourceAssociations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Network Security Perimeter Backing Resource Association",
+          "displayName": "Creates or Updates a Network Security Perimeter Backing Resource Association",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/backingResourceAssociations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Network Security Perimeter Backing Resource Association",
+          "displayName": "Deletes a Network Security Perimeter Backing Resource Association",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/backingResourceAssociations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Associable Resources",
+      "name": "locations/perimeterAssociableResourceTypes",
+      "operations": [
+        {
+          "description": "Gets Network Security Perimeter Associable Resources",
+          "displayName": "Gets Network Security Perimeter Associable Resources",
+          "isDataAction": false,
+          "name": "Microsoft.Network/locations/perimeterAssociableResourceTypes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Manager",
+      "name": "networkManagers/listActiveSecurityAdminRules",
+      "operations": [
+        {
+          "description": "Permission for calling List Active Security Admin Rules operation. This read permission, not listActiveSecurityAdminRules/action, is required to call List Active Security Admin Rules.",
+          "displayName": "List Active Security Admin Rules Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/listActiveSecurityAdminRules/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Manager",
+      "name": "networkManagers/listActiveSecurityUserRules",
+      "operations": [
+        {
+          "description": "Permission for calling List Active Security User Rules operation. This read permission, not listActiveSecurityUserRules/action, is required to call List Active Security User Rules.",
+          "displayName": "List Active Security User Rules Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/listActiveSecurityUserRules/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Manager",
+      "name": "networkManagers/listActiveConnectivityConfigurations",
+      "operations": [
+        {
+          "description": "Permission for calling List Active Connectivity Configurations operation. This read permission, not listActiveConnectivityConfigurations/action, is required to call List Active Connectivity Configurations.",
+          "displayName": "List Active Connectivity Configurations Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/listActiveConnectivityConfigurations/read",
           "origin": null,
           "properties": null
         }
