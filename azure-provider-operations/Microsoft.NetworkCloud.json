@@ -1008,8 +1008,8 @@
       "name": "clusters/bareMetalMachineKeySets",
       "operations": [
         {
-          "description": "Get a list of bare metal machine key sets of the cluster in the provided resource group.",
-          "displayName": "BareMetalMachineKeySets_ListByResourceGroup",
+          "description": "Get a list of bare metal machine key sets for the provided cluster.",
+          "displayName": "bareMetalMachineKeySets_ListByCluster",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets/read",
           "origin": null,
@@ -1100,8 +1100,8 @@
       "name": "virtualMachines/consoles",
       "operations": [
         {
-          "description": "Get a list of virtual machine consoles in the provided resource group.",
-          "displayName": "Consoles_ListByResourceGroup",
+          "description": "Get a list of consoles for the provided virtual machine.",
+          "displayName": "consoles_ListByVirtualMachine",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/virtualMachines/consoles/read",
           "origin": null,
@@ -1204,6 +1204,52 @@
           "displayName": "read_registeredSubscriptions",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registeredSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "kubernetesClusters/agentPools",
+      "name": "kubernetesClusters/agentPools",
+      "operations": [
+        {
+          "description": "Get a list of agent pools for the provided Kubernetes cluster.",
+          "displayName": "agentPools_ListByKubernetesCluster",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesClusters/agentPools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided Kubernetes cluster agent pool.",
+          "displayName": "AgentPools_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesClusters/agentPools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new Kubernetes cluster agent pool or update the properties of the existing one.",
+          "displayName": "AgentPools_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesClusters/agentPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided Kubernetes cluster agent pool.",
+          "displayName": "AgentPools_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesClusters/agentPools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch the properties of the provided Kubernetes cluster agent pool, or update the tags associated with the Kubernetes cluster agent pool. Properties and tag updates can be done independently.",
+          "displayName": "AgentPools_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesClusters/agentPools/write",
           "origin": null,
           "properties": null
         }
