@@ -9043,7 +9043,7 @@
       ]
     },
     {
-      "displayName": "engines",
+      "displayName": "Engines",
       "name": "accounts/OpenAI/engines",
       "operations": [
         {
@@ -9075,6 +9075,22 @@
           "displayName": "Sample from the model via POST request.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/generate/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "(Intended for browsers only.) Stream generated text from the model via GET request. This method is provided because the browser-native EventSource method can only send GET requests. It supports a more limited set of configuration options than the POST variant.",
+          "displayName": "(Intended for browsers only.) Stream generated text from the model via GET request. This method is provided because the browser-native EventSource method can only send GET requests. It supports a more limited set of configuration options than the POST variant.\nIf you'd like to stream results from th",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/generate/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create a completion from a chosen model",
+          "displayName": "Create a completion from a chosen model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/action",
           "origin": "user",
           "properties": null
         }
@@ -10161,7 +10177,7 @@
       ]
     },
     {
-      "displayName": "deployments",
+      "displayName": "Deployments",
       "name": "accounts/OpenAI/deployments",
       "operations": [
         {
@@ -10181,32 +10197,32 @@
           "properties": null
         },
         {
-          "description": "Deletes a deployment.",
-          "displayName": "Deployments_Delete",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/delete",
-          "origin": "user",
-          "properties": null
-        },
-        {
           "description": "Gets information about deployments.",
-          "displayName": "Deployments_Get",
+          "displayName": "Reading deployment metadata",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/read",
           "origin": "user",
           "properties": null
         },
         {
-          "description": "Updates deployments.",
-          "displayName": "Deployments_Update",
+          "description": "Create or update deployments.",
+          "displayName": "Create or update deployments",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/write",
           "origin": "user",
           "properties": null
         },
         {
+          "description": "Delete deployment.",
+          "displayName": "Delete deployments",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Return the embeddings for a given prompt.",
-          "displayName": "Deployments_Embed",
+          "displayName": "Create embeddings",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/embeddings/action",
           "origin": "user",
@@ -11089,50 +11105,20 @@
       ]
     },
     {
-      "displayName": "OpenAI",
-      "name": "accounts/OpenAI",
-      "operations": [
-        {
-          "description": "Creates a deployment owned by the Azure OpenAI resource.",
-          "displayName": "Deployments_Create",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/action",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Creates a file owned by the Azure OpenAI resource by uploading data.",
-          "displayName": "Files_Upload",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/files/action",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Creates a fine-tuned model.",
-          "displayName": "FineTunes_Create",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes/action",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Generates an image from a text caption",
-          "displayName": "Generates an image from a text caption",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/text-to-image/action",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "files",
+      "displayName": "Files",
       "name": "accounts/OpenAI/files",
       "operations": [
         {
-          "description": "Deletes files.",
-          "displayName": "Files_Delete",
+          "description": "Upload or import files.",
+          "displayName": "Upload or import files",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/files/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete files.",
+          "displayName": "Delete files",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/files/delete",
           "origin": "user",
@@ -11140,51 +11126,29 @@
         },
         {
           "description": "Gets information about files.",
-          "displayName": "Files_List",
+          "displayName": "Read file metadata",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/files/read",
           "origin": "user",
           "properties": null
-        },
-        {
-          "description": "Creates a file by uploading data.",
-          "displayName": "Files_Import",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/files/import/action",
-          "origin": "user",
-          "properties": null
         }
       ]
     },
     {
-      "displayName": "content",
-      "name": "accounts/OpenAI/files/content",
-      "operations": [
-        {
-          "description": "Gets the content of the specified file.",
-          "displayName": "Files_GetFileContent",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/files/content/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "fine-tunes",
+      "displayName": "Fine-tunes",
       "name": "accounts/OpenAI/fine-tunes",
       "operations": [
         {
-          "description": "Cancels the adaptation of a fine-tuned model.",
-          "displayName": "FineTunes_Cancel",
+          "description": "Creates or cancels adaptation of a model.",
+          "displayName": "Create or cancel Fine-tunes",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes/cancel/action",
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes/write",
           "origin": "user",
           "properties": null
         },
         {
-          "description": "Deletes a fine-tuned model.",
-          "displayName": "FineTunes_Delete",
+          "description": "Delete the adaptation of a model.",
+          "displayName": "Delete Fine-tunes",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes/delete",
           "origin": "user",
@@ -11192,7 +11156,7 @@
         },
         {
           "description": "Gets information about fine-tuned models.",
-          "displayName": "FineTunes_List",
+          "displayName": "Read fine-tune metadata",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes/read",
           "origin": "user",
@@ -11201,26 +11165,12 @@
       ]
     },
     {
-      "displayName": "events",
-      "name": "accounts/OpenAI/fine-tunes/events",
-      "operations": [
-        {
-          "description": "Gets event information for a fine-tuning model adaptation.",
-          "displayName": "FineTunes_GetEvents",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes/events/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "models",
+      "displayName": "Models",
       "name": "accounts/OpenAI/models",
       "operations": [
         {
-          "description": "Gets information about fine-tuned models",
-          "displayName": "Models_List",
+          "description": "Gets information about models",
+          "displayName": "Read model metadata",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/models/read",
           "origin": "user",
@@ -12855,7 +12805,7 @@
       ]
     },
     {
-      "displayName": "Get OpenAI Info",
+      "displayName": "Get OpenAPI (swagger) Info",
       "name": "accounts/OpenAI/openapi",
       "operations": [
         {
@@ -12869,56 +12819,14 @@
       ]
     },
     {
-      "displayName": "Stream generated text from the model via GET request.",
-      "name": "accounts/OpenAI/engines/generate",
-      "operations": [
-        {
-          "description": "(Intended for browsers only.) Stream generated text from the model via GET request. This method is provided because the browser-native EventSource method can only send GET requests. It supports a more limited set of configuration options than the POST variant.",
-          "displayName": "(Intended for browsers only.) Stream generated text from the model via GET request. This method is provided because the browser-native EventSource method can only send GET requests. It supports a more limited set of configuration options than the POST variant.\nIf you'd like to stream results from th",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/generate/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Create a completion from a chosen model",
+      "displayName": "Stream generated text from the model via GET request",
       "name": "accounts/OpenAI/engines/completions",
       "operations": [
         {
-          "description": "Create a completion from a chosen model",
-          "displayName": "Create a completion from a chosen model",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/write",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Stream generated text from the model via GET request",
-      "name": "accounts/OpenAI/engines/completions/browser_stream",
-      "operations": [
-        {
           "description": "(Intended for browsers only.) Stream generated text from the model via GET request. This method is provided because the browser-native EventSource method can only send GET requests. It supports a more limited set of configuration options than the POST variant.",
-          "displayName": "(Intended for browsers only.) Stream generated text from the model via GET request. This method is provided because the browser-native EventSource method can only send GET requests. It supports a more limited set of configuration options than the POST variant.\nIf you'd like to stream results from th",
+          "displayName": "Stream generated text from the model via GET request",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/browser_stream/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Create a completion from a chosen model",
-      "name": "accounts/OpenAI/deployments/completions",
-      "operations": [
-        {
-          "description": "Create a completion from a chosen model",
-          "displayName": "Create a completion from a chosen model",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/completions/write",
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/browser_stream/action",
           "origin": "user",
           "properties": null
         }
@@ -13399,20 +13307,6 @@
       ]
     },
     {
-      "displayName": "operations*",
-      "name": "accounts/OpenAI/text-to-image/operations",
-      "operations": [
-        {
-          "description": "Returns the status of the text-to-image operation",
-          "displayName": "Returns the status of the text-to-image operation",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/OpenAI/text-to-image/operations/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Managing Form Recognizers",
       "name": "accounts/FormRecognizer/classification/analyze",
       "operations": [
@@ -13541,7 +13435,7 @@
       ]
     },
     {
-      "displayName": "deployments",
+      "displayName": "Deployments",
       "name": "accounts/OpenAI/deployments/chat",
       "operations": [
         {
@@ -14095,6 +13989,34 @@
           "displayName": "DBDataAnswer",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Knowledge/dbdata/answer/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deployments",
+      "name": "accounts/OpenAI/deployments/plugins/chat",
+      "operations": [
+        {
+          "description": "Creates a completion for the chat message with plugins",
+          "displayName": "Creates a completion for the chat message with plugins",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/deployments/plugins/chat/completions/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Images",
+      "name": "accounts/OpenAI/images",
+      "operations": [
+        {
+          "description": "Create image generations.",
+          "displayName": "Create image generations",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/images/generations/action",
           "origin": "user",
           "properties": null
         }
