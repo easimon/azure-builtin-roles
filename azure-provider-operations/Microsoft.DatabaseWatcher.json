@@ -1,8 +1,170 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft.DatabaseWatcher",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DatabaseWatcher",
   "name": "Microsoft.DatabaseWatcher",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.DatabaseWatcher",
+      "displayName": "Register the Microsoft.DatabaseWatcher",
+      "isDataAction": false,
+      "name": "Microsoft.DatabaseWatcher/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.DatabaseWatcher",
+      "displayName": "Unregister the Microsoft.DatabaseWatcher",
+      "isDataAction": false,
+      "name": "Microsoft.DatabaseWatcher/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "watchers",
+      "name": "watchers",
+      "operations": [
+        {
+          "description": "List Watcher resources by subscription ID",
+          "displayName": "Watchers_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Watcher resources by resource group",
+          "displayName": "Watchers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Watcher",
+          "displayName": "Watchers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Watcher",
+          "displayName": "Watchers_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Watcher",
+          "displayName": "Watchers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Watcher",
+          "displayName": "Watchers_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action to start monitoring all targets configured for a given database watcher.",
+          "displayName": "Watchers_Start",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/start/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action to stop monitoring all targets configured for a given database watcher.",
+          "displayName": "Watchers_Stop",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/stop/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "watchers/targets",
+      "name": "watchers/targets",
+      "operations": [
+        {
+          "description": "List Target resources by Watcher",
+          "displayName": "Targets_ListByWatcher",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/targets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Target",
+          "displayName": "Targets_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/targets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Target",
+          "displayName": "Targets_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/targets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Target",
+          "displayName": "Targets_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/watchers/targets/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "Operations",
+      "operations": [
+        {
+          "description": "read Operations",
+          "displayName": "read_Operations",
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseWatcher/Operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
