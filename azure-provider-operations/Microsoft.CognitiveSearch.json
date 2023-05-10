@@ -4,7 +4,7 @@
   "name": "Microsoft.CognitiveSearch",
   "operations": [
     {
-      "description": "Register the subscription for Microsoft.CognitiveSearch",
+      "description": "Register the subscription for Microsoft.CognitiveSearch.",
       "displayName": "Register the Microsoft.CognitiveSearch",
       "isDataAction": false,
       "name": "Microsoft.CognitiveSearch/register/action",
@@ -26,16 +26,16 @@
       "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "read operationStatuses",
-          "displayName": "read_operationStatuses",
+          "description": "Read the operation statuses. This operation is in preview and subject to change.",
+          "displayName": "Get Operation Statuses",
           "isDataAction": false,
           "name": "Microsoft.CognitiveSearch/locations/operationStatuses/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write operationStatuses",
-          "displayName": "write_operationStatuses",
+          "description": "Create or update the operation statuses. This operation is in preview and subject to change.",
+          "displayName": "Set Operation Statuses",
           "isDataAction": false,
           "name": "Microsoft.CognitiveSearch/locations/operationStatuses/write",
           "origin": null,
@@ -48,8 +48,8 @@
       "name": "Operations",
       "operations": [
         {
-          "description": "read Operations",
-          "displayName": "read_Operations",
+          "description": "List all available operations of Microsoft.CognitiveSearch provider. This operation is in preview and subject to change.",
+          "displayName": "List all available operations",
           "isDataAction": false,
           "name": "Microsoft.CognitiveSearch/Operations/read",
           "origin": null,
@@ -62,24 +62,24 @@
       "name": "indexes",
       "operations": [
         {
-          "description": "List Index resources by subscription ID",
-          "displayName": "IndexOperations_ListBySubscription",
+          "description": "Read the cognitive search serverless index. This operation is in preview and subject to change.",
+          "displayName": "Get Cognitive Search Index",
           "isDataAction": false,
           "name": "Microsoft.CognitiveSearch/indexes/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a Index",
-          "displayName": "IndexOperations_CreateOrUpdate",
+          "description": "Create or update the cognitive search serverless index. This operation is in preview and subject to change.",
+          "displayName": "Create or Update Cognitive Search Index",
           "isDataAction": false,
           "name": "Microsoft.CognitiveSearch/indexes/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a search index",
-          "displayName": "IndexOperations_Delete",
+          "description": "Delete the cognitive search serverless index. This operation is in preview and subject to change.",
+          "displayName": "Delete Cognitive Search Index",
           "isDataAction": false,
           "name": "Microsoft.CognitiveSearch/indexes/delete",
           "origin": null,
@@ -92,17 +92,17 @@
       "name": "indexes/schema",
       "operations": [
         {
-          "description": "Read Index schema",
-          "displayName": "IndexSchemaOperations_Read",
-          "isDataAction": false,
+          "description": "Read the cognitive search serverless index schema. This operation is in preview and subject to change.",
+          "displayName": "Get Cognitive Search Index Schema",
+          "isDataAction": true,
           "name": "Microsoft.CognitiveSearch/indexes/schema/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create or edit Index schema",
-          "displayName": "IndexSchemaOperations_CreateOrUpdate",
-          "isDataAction": false,
+          "description": "Create, update or delete the cognitive search serverless index schema. This operation is in preview and subject to change.",
+          "displayName": "Create or Update Cognitive Search Index Schema",
+          "isDataAction": true,
           "name": "Microsoft.CognitiveSearch/indexes/schema/write",
           "origin": null,
           "properties": null
@@ -114,26 +114,18 @@
       "name": "indexes/documents",
       "operations": [
         {
-          "description": "Read Index documents",
-          "displayName": "IndexDocumentOperations_Read",
+          "description": "Read documents from the cognitive search serverless index. This operation is in preview and subject to change.",
+          "displayName": "Get Documents",
           "isDataAction": true,
           "name": "Microsoft.CognitiveSearch/indexes/documents/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create or edit Index dpcuments",
-          "displayName": "IndexDocumentOperations_CreateOrUpdate",
+          "description": "Upload documents or modify existing documents in the cognitive search serverless index. This operation is in preview and subject to change.",
+          "displayName": "Create or Update Documents",
           "isDataAction": true,
           "name": "Microsoft.CognitiveSearch/indexes/documents/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete Index documents",
-          "displayName": "IndexDocumentOperations_Delete",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveSearch/indexes/documents/delete",
           "origin": null,
           "properties": null
         }
