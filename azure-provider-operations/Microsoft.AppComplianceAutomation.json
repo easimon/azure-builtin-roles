@@ -20,6 +20,22 @@
       "properties": null
     },
     {
+      "description": "List the storage accounts which are in use by related reports",
+      "displayName": "Reports_ListInUseStorageAccount",
+      "isDataAction": false,
+      "name": "Microsoft.AppComplianceAutomation/listInUseStorageAccounts/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "action checkNameAvailability",
+      "displayName": "action_checkNameAvailability",
+      "isDataAction": false,
+      "name": "Microsoft.AppComplianceAutomation/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
       "description": "Register the subscription for Microsoft.AppComplianceAutomation",
       "displayName": "Register the Microsoft.AppComplianceAutomation",
       "isDataAction": false,
@@ -116,6 +132,22 @@
           "name": "Microsoft.AppComplianceAutomation/reports/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Synchronize attestation record from app compliance.",
+          "displayName": "Reports_SyncCertRecord",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/syncCertRecord/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Checks the report's nested resource name availability, e.g: Webhooks, Evidences, Snapshots.",
+          "displayName": "Reports_NestedResourceCheckNameAvailability",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/checkNameAvailability/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -190,6 +222,52 @@
           "displayName": "Webhooks_Update",
           "isDataAction": false,
           "name": "Microsoft.AppComplianceAutomation/reports/webhooks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "reports/evidences",
+      "name": "reports/evidences",
+      "operations": [
+        {
+          "description": "Returns a paginated list of evidences for a specified report.",
+          "displayName": "Evidences_ListByReport",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/evidences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the evidence metadata",
+          "displayName": "Evidences_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/evidences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update an evidence a specified report",
+          "displayName": "Evidences_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/evidences/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an existent evidence from a specified report",
+          "displayName": "Evidences_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/evidences/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Download evidence file.",
+          "displayName": "Evidences_Download",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/evidences/download/action",
           "origin": null,
           "properties": null
         }
