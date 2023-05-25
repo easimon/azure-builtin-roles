@@ -1869,10 +1869,26 @@
           "properties": null
         },
         {
+          "description": "Notify RP that an associated NSP has profile updates.",
+          "displayName": "Notify NSP updates available",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/notifyNetworkSecurityPerimeterUpdatesAvailable/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Approve or reject a private endpoint connection",
           "displayName": "Approve Private Endpoint Connection",
           "isDataAction": false,
           "name": "Microsoft.Devices/iotHubs/privateEndpointConnectionsApproval/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reconcile NSP configuration profile from NSP RP",
+          "displayName": "Reconcile NSP configuration",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterConfigurations/Action",
           "origin": null,
           "properties": null
         }
@@ -3021,6 +3037,50 @@
           "displayName": "Get Location Based Provisioning Service Operation Result",
           "isDataAction": false,
           "name": "Microsoft.Devices/locations/provisioningserviceoperationresults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/NetworkSecurityPerimeters",
+      "name": "iotHubs/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "List all NSP configurations associated with the IotHub",
+          "displayName": "List NSP configurations",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterConfigurations/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/NetworkSecurityPerimeters",
+      "name": "iotHubs/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "List all NSP association proxies associated with the IotHub",
+          "displayName": "List NSP association proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put an NSP association proxy on the IotHub to associate the resource with the NSP",
+          "displayName": "Put NSP association proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an NSP association proxy to disassociate the IotHub resource from the NSP",
+          "displayName": "Delete NSP association proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Delete",
           "origin": null,
           "properties": null
         }
