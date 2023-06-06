@@ -354,6 +354,30 @@
       "name": "packetCoreControlPlanes",
       "operations": [
         {
+          "description": "Roll back the specified packet core control plane to the previous version, \"rollbackVersion\". Multiple consecutive rollbacks are not possible. This action may cause a service outage.",
+          "displayName": "PacketCoreControlPlanes_Rollback",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/rollback/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reinstall the specified packet core control plane. This action will remove any transaction state from the packet core to return it to a known state. This action will cause a service outage.",
+          "displayName": "PacketCoreControlPlanes_Reinstall",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/reinstall/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Collect a diagnostics package for the specified packet core control plane. This action will upload the diagnostics to a storage account.",
+          "displayName": "PacketCoreControlPlanes_CollectDiagnosticsPackage",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/collectDiagnosticsPackage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Gets information about the specified packet core control plane.",
           "displayName": "PacketCoreControlPlanes_Get",
           "isDataAction": false,
@@ -378,7 +402,7 @@
           "properties": null
         },
         {
-          "description": "Updates packet core control planes tags.",
+          "description": "Patch packet core control plane resource.",
           "displayName": "PacketCoreControlPlanes_UpdateTags",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/write",
@@ -398,30 +422,6 @@
           "displayName": "PacketCoreControlPlanes_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Roll back the specified packet core control plane to the previous version, \"rollbackVersion\". Multiple consecutive rollbacks are not possible. This action may cause a service outage.",
-          "displayName": "PacketCoreControlPlanes_Rollback",
-          "isDataAction": false,
-          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/rollback/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reinstall the specified packet core control plane. This action will remove any transaction state from the packet core to return it to a known state. This action will cause a service outage.",
-          "displayName": "PacketCoreControlPlanes_Reinstall",
-          "isDataAction": false,
-          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/reinstall/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Collect a diagnostics package for the specified packet core control plane. This action will upload the diagnostics to a storage account.",
-          "displayName": "PacketCoreControlPlanes_CollectDiagnosticsPackage",
-          "isDataAction": false,
-          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/collectDiagnosticsPackage/action",
           "origin": null,
           "properties": null
         }
@@ -524,6 +524,14 @@
       "name": "mobileNetworks/sites",
       "operations": [
         {
+          "description": "Deletes a packet core under the specified mobile network site.",
+          "displayName": "Sites_DeletePacketCore",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/sites/deletePacketCore/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Gets information about the specified mobile network site.",
           "displayName": "Sites_Get",
           "isDataAction": false,
@@ -618,7 +626,7 @@
           "properties": null
         },
         {
-          "description": "Updates SIM group tags.",
+          "description": "Patch SIM group resource.",
           "displayName": "SimGroups_UpdateTags",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/simGroups/write",
@@ -696,6 +704,22 @@
         {
           "description": "Lists all supported packet core control planes versions.",
           "displayName": "PacketCoreControlPlaneVersions_List",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlaneVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets information about the specified packet core control plane version.",
+          "displayName": "PacketCoreControlPlaneVersions_GetBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlaneVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all supported packet core control planes versions.",
+          "displayName": "PacketCoreControlPlaneVersions_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlaneVersions/read",
           "origin": null,
