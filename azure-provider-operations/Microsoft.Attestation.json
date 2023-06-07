@@ -53,6 +53,14 @@
           "name": "Microsoft.Attestation/attestationProviders/PrivateEndpointConnectionsApproval/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Action to join the Network Security Perimeter, used by linked access checks by NRP.",
+          "displayName": "Action to join the NSP.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/attestationProviders/joinPerimeter/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -190,6 +198,72 @@
           "displayName": "AzureAttestation",
           "isDataAction": false,
           "name": "Microsoft.Attestation/attestationProviders/operationStatus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NSP Association Proxy resource name.",
+      "name": "attestationProviders/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "Network Security Perimeter Association Proxy read description.",
+          "displayName": "NSP Association Proxy read operation.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/attestationProviders/networkSecurityPerimeterAssociationProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Network Security Perimeter Association Proxy write description.",
+          "displayName": "NSP Association Proxy write operation.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/attestationProviders/networkSecurityPerimeterAssociationProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Network Security Perimeter Association Proxy delete description.",
+          "displayName": "NSP Association Proxy delete operation.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/attestationProviders/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Notify NSP Updates Available resource name.",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Check if the configuration of the Network Security Perimeter needs updating.",
+          "displayName": "Check the NSP for configuration updates.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Configuration.",
+      "name": "attestationProviders/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "Network Security Perimeter Configuration read description.",
+          "displayName": "NSP Configuration read operation.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/attestationProviders/networkSecurityPerimeterConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reconcile the Network Security Perimeter Configuration stored in a Microsoft Azure Attestation with NRP's (Microsoft.Network Resource Provider) copy.",
+          "displayName": "Reconcile NSP Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Attestation/attestationProviders/networkSecurityPerimeterConfigurations/reconcile/action",
           "origin": null,
           "properties": null
         }
