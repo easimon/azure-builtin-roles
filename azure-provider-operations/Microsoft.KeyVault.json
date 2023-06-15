@@ -64,6 +64,14 @@
           "name": "Microsoft.KeyVault/vaults/PrivateEndpointConnectionsApproval/action",
           "origin": "system",
           "properties": null
+        },
+        {
+          "description": "Action to join the Network Security Perimeter, used by linked access checks by NRP.",
+          "displayName": "Action to join the Network Security Perimeter",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/joinPerimeter/action",
+          "origin": "system",
+          "properties": null
         }
       ]
     },
@@ -314,6 +322,14 @@
           "isDataAction": false,
           "name": "Microsoft.KeyVault/locations/deleteVirtualNetworkOrSubnets/action",
           "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Check if the configuration of the Network Security Perimeter needs updating.",
+          "displayName": "Check the Network Security Perimeter for configuration updates.",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
+          "origin": "system",
           "properties": null
         }
       ]
@@ -1421,6 +1437,58 @@
           "isDataAction": false,
           "name": "Microsoft.KeyVault/managedHSMs/keys/versions/read",
           "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Association Proxy",
+      "name": "vaults/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "Delete an association proxy to a Network Security Perimeter resource of Microsoft.Network provider.",
+          "displayName": "Delete a Network Security Perimeter Association Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete an association proxy to a Network Security Perimeter resource of Microsoft.Network provider.",
+          "displayName": "Delete a Network Security Perimeter Association Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/networkSecurityPerimeterAssociationProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Change the state of an association to a Network Security Perimeter resource of Microsoft.Network provider",
+          "displayName": "Change state of Network Security Perimeter Association",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/networkSecurityPerimeterAssociationProxies/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter Configuration",
+      "name": "vaults/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "Read the Network Security Perimeter configuration stored in a vault.",
+          "displayName": "Read Network Security Perimeter configuration ",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/networkSecurityPerimeterConfigurations/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Reconcile the Network Security Perimeter configuration stored in a vault with NRP's (Microsoft.Network Resource Provider) copy.",
+          "displayName": "Reconcile Network Security Perimeter configuration ",
+          "isDataAction": false,
+          "name": "Microsoft.KeyVault/vaults/networkSecurityPerimeterConfigurations/reconcile/action",
+          "origin": "system",
           "properties": null
         }
       ]
