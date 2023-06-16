@@ -1,5 +1,7 @@
 # Monitor/Archive of Azure IAM Definitions
 
+## Twitter account has been suspended, so tweeting is disabled until this is resolved
+
 Frequently updated list of
 
 - Built-in Azure Role Definitions (not Azure AD roles)
