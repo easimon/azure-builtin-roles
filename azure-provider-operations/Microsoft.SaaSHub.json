@@ -60,14 +60,14 @@
       ]
     },
     {
-      "displayName": "Operations",
-      "name": "Operations",
+      "displayName": "operations",
+      "name": "operations",
       "operations": [
         {
-          "description": "read Operations",
-          "displayName": "read_Operations",
+          "description": "read operations",
+          "displayName": "read_operations",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/Operations/read",
+          "name": "Microsoft.SaaSHub/operations/read",
           "origin": null,
           "properties": null
         }
@@ -110,7 +110,7 @@
           "properties": null
         },
         {
-          "description": "Cancels a SaaSHub cloud service.",
+          "description": "Deletes a SaaSHub cloud service resource.",
           "displayName": "CloudServices_Delete",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/cloudServices/delete",
@@ -122,6 +122,46 @@
           "displayName": "CloudServices_Update",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/cloudServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels a SaaSHub cloud service.",
+          "displayName": "CloudServices_Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Merges multiple cloud service resources into one target cloud service resource. The resource name in URL is the target, and the list of source cloud service resource and quantity will be specified in request payload",
+          "displayName": "CloudServices_Merge",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/merge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether the request payload can update an existing cloud service resource.",
+          "displayName": "CloudServices_CanUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/canUpdate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether an existing cloud service resource can be cancelled.",
+          "displayName": "CloudServices_CanCancel",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/canCancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether the source cloud service resource can be merged to target cloud service resource.",
+          "displayName": "CloudServices_CanMerge",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/canMerge/action",
           "origin": null,
           "properties": null
         }
@@ -136,6 +176,28 @@
           "displayName": "read_registeredSubscriptions",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/registeredSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/locations/operationStatuses/write",
           "origin": null,
           "properties": null
         }
