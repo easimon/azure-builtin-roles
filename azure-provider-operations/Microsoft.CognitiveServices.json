@@ -13871,6 +13871,22 @@
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/imagewithtext:analyze/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Analyze content by project when the project is deployed with a policy. ",
+          "displayName": "Analyze content by project when the project is deployed with a policy. ",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A sync API to deploy policy for a project.",
+          "displayName": "Deploy policy for a project. ",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects:deploy/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -13901,6 +13917,30 @@
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/delete",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Updates a text blocklist, if blocklistName does not exist, create a new blocklist.",
+          "displayName": "Create Or Update Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes a text blocklist.",
+          "displayName": "Delete Text Blocklist By blocklistName",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get all text blocklists details.\r\nReturns text blocklist details.*",
+          "displayName": "Get All Text Blocklists|Get Text Blocklist By blocklistName*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/read",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -13911,6 +13951,14 @@
         {
           "description": "Get blockItem By blockItemId from a text blocklist.",
           "displayName": "Get or List BlockItems from a Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/blockitems/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get all blockItems in a text blocklist\r\nGet blockItem By blockItemId from a text blocklist.*",
+          "displayName": "Get All BlockItems By blocklistName|Get BlockItem By blocklistName And blockItemId*",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/blockitems/read",
           "origin": "user",
@@ -14156,6 +14204,162 @@
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/raiPolicies/delete",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "text*",
+      "name": "accounts/ContentSafety/text",
+      "operations": [
+        {
+          "description": "Remove blockItems from a text blocklist. You can remove at most 100 BlockItems in one request.",
+          "displayName": "Remove BlockItems From Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists:removeblockitems/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "blocklists:addblockitems*",
+      "name": "accounts/ContentSafety/text/blocklists:addblockitems",
+      "operations": [
+        {
+          "description": "Add blockItems to a text blocklist. You can add at most 100 BlockItems in one request.",
+          "displayName": "Add BlockItems To Text Blocklist",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists:addblockitems/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects*",
+      "name": "accounts/ContentSafety/projects",
+      "operations": [
+        {
+          "description": "Update a project if project does exist, create a new project if not. Note that modality cannot be updated.",
+          "displayName": "Create or update a project.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a project by name.",
+          "displayName": "Delete a project by project name.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns project details.\r\nList projects.*",
+          "displayName": "Get project detailed information by project name.|List projects.*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "deployhistory*",
+      "name": "accounts/ContentSafety/projects/deployhistory",
+      "operations": [
+        {
+          "description": "List deployment history of a project.",
+          "displayName": "List deployment history of a project.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/deployhistory/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "rejectcounts*",
+      "name": "accounts/ContentSafety/metrics/rejectcounts",
+      "operations": [
+        {
+          "description": "List API reject counts at different timestamps given a time range. Default maxpagesize is 1000.",
+          "displayName": "List API reject counts at different timestamps given a time range.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/rejectcounts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "requestcounts*",
+      "name": "accounts/ContentSafety/metrics/categories/severities/requestcounts",
+      "operations": [
+        {
+          "description": "List API request count at different timestamps of a specific category and a specific severity given a time range",
+          "displayName": "List API request count at different timestamps of a specific category and a specific severity given a time range",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/categories/severities/requestcounts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "requestcounts*",
+      "name": "accounts/ContentSafety/metrics/requestcounts",
+      "operations": [
+        {
+          "description": "List API request counts at different timestamps given a time range. Default maxpagesize is 1000.",
+          "displayName": "List API request counts at different timestamps given a time range.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/requestcounts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "requestlatencies*",
+      "name": "accounts/ContentSafety/metrics/requestlatencies",
+      "operations": [
+        {
+          "description": "List API request latencies at different timestamps given a time range. Default maxpagesize is 1000.",
+          "displayName": "List API request latencies at different timestamps given a time range.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/requestlatencies/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "blocklisttopterms*",
+      "name": "accounts/ContentSafety/metrics/blocklisttopterms",
+      "operations": [
+        {
+          "description": "List top terms hit in blocklist at different timestamps.",
+          "displayName": "List top terms hit in blocklist at different timestamps.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklisttopterms/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "blocklisthitcalls*",
+      "name": "accounts/ContentSafety/metrics/blocklisthitcalls",
+      "operations": [
+        {
+          "description": "Show blocklist hit request count at different timestamps.",
+          "displayName": "Show blocklist hit request count at different timestamps.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklisthitcalls/read",
+          "origin": "user",
           "properties": null
         }
       ]
