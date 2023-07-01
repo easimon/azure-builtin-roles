@@ -180,14 +180,6 @@
           "properties": null
         },
         {
-          "description": "Validates the current configuration to ensure the provision action succeeds.",
-          "displayName": "NetworkFabrics_validateConfiguration",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/validateConfiguration/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Provisions the underlying resources in the given Network Fabric instance.",
           "displayName": "NetworkFabrics_provision",
           "isDataAction": false,
@@ -208,14 +200,6 @@
           "displayName": "NetworkFabrics_restoreConfig",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/restoreConfig/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Upgrades the underlying resources in the given Network Fabric Instance.",
-          "displayName": "NetworkFabrics_upgrade",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/upgrade/action",
           "origin": null,
           "properties": null
         },
@@ -264,6 +248,62 @@
           "displayName": "NetworkFabrics_getNniStatus",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getNniStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the version of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes the configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_refreshConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/refreshConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Workload Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_UpdateWorkloadManagementBfdConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/updateWorkloadManagementBfdConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Infra Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_UpdateInfraManagementBfdConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/updateInfraManagementBfdConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates the configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/validateConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Topology of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_GetTopology",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getTopology/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Atomic update of the given Network Fabric instance. Sync update of NFA resources at Fabric level.",
+          "displayName": "NetworkFabrics_CommitConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitConfiguration/action",
           "origin": null,
           "properties": null
         }
@@ -438,6 +478,30 @@
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/getDynamicInterfaceMaps/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Refreshes the configuration the Network Device.",
+          "displayName": "NetworkDevices_RefreshConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/refreshConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Administrative state of the Network Device.",
+          "displayName": "NetworkDevices_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the version of the Network Device.",
+          "displayName": "NetworkDevices_Upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/upgrade/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -580,6 +644,22 @@
           "properties": null
         },
         {
+          "description": "Validates the configuration of the resources.",
+          "displayName": "L2IsolationDomains_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/validateConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Commits the configuration of the given resources.",
+          "displayName": "L2IsolationDomains_CommitConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/commitConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Displays L2IsolationDomains list by resource group GET method.",
           "displayName": "L2IsolationDomains_ListByResourceGroup",
           "isDataAction": false,
@@ -696,6 +776,22 @@
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearNeighborTable/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Validates the configuration of the resources.",
+          "displayName": "L3IsolationDomains_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/validateConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Commits the configuration of the given resources.",
+          "displayName": "L3IsolationDomains_CommitConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/commitConfiguration/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -748,6 +844,30 @@
           "displayName": "AccessControlLists_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/accessControlLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "AccessControlLists_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/accessControlLists/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "AccessControlLists_Resync",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/accessControlLists/resync/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "AccessControlLists_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/accessControlLists/validateConfiguration/action",
           "origin": null,
           "properties": null
         }
@@ -912,6 +1032,30 @@
           "name": "Microsoft.ManagedNetworkFabric/routePolicies/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Updated the admin state for this Route Policy.",
+          "displayName": "RoutePolicies_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/routePolicies/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates the configuration of the resources.",
+          "displayName": "RoutePolicies_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/routePolicies/validateConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Commits the configuration of the given resources.",
+          "displayName": "RoutePolicies_CommitConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/routePolicies/commitConfiguration/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -969,9 +1113,17 @@
         },
         {
           "description": "Executes update operation to enable or disable administrative State for externalNetwork.",
-          "displayName": "ExternalNetworks_updateAdministrativeState",
+          "displayName": "ExternalNetworks_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/externalNetworks/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Static Route BFD for external Network.",
+          "displayName": "ExternalNetworks_UpdateStaticRouteBfdAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/externalNetworks/updateStaticRouteBfdAdministrativeState/action",
           "origin": null,
           "properties": null
         },
@@ -1079,9 +1231,25 @@
         },
         {
           "description": "Update Administrative state of  InternalNetworks on resources referred by their resource ids.",
-          "displayName": "InternalNetworks_updateAdministrativeState",
+          "displayName": "InternalNetworks_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
+          "displayName": "InternalNetworks_UpdateBgpAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBgpAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Static Route BFD administrative state for internalNetwork.",
+          "displayName": "InternalNetworks_UpdateStaticRouteBfdAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateStaticRouteBfdAdministrativeState/action",
           "origin": null,
           "properties": null
         },
@@ -1576,6 +1744,22 @@
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Updates the NPB Static Route BFD Administrative State.",
+          "displayName": "NetworkToNetworkInterconnects_updateNpbStaticRouteBfdAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateNpbStaticRouteBfdAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Admin State.",
+          "displayName": "NetworkToNetworkInterconnects_updateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -1766,6 +1950,370 @@
           "displayName": "GNOIMaintenances_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoimaintenances/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "internetGateways",
+      "name": "internetGateways",
+      "operations": [
+        {
+          "description": "Implements Gateway GET method.",
+          "displayName": "InternetGateways_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGateways/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Network Fabric Service Internet Gateway resource instance.",
+          "displayName": "InternetGateways_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGateways/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Execute a delete on Network Fabric Service Internet Gateway.",
+          "displayName": "InternetGateways_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGateways/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Execute patch on Network Fabric Service Internet Gateway.",
+          "displayName": "InternetGateways_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGateways/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays Internet Gateways list by resource group GET method.",
+          "displayName": "InternetGateways_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGateways/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays Internet Gateways list by subscription GET method.",
+          "displayName": "InternetGateways_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGateways/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "internetGatewayRules",
+      "name": "internetGatewayRules",
+      "operations": [
+        {
+          "description": "Gets an Internet Gateway Rule resource.",
+          "displayName": "InternetGatewayRules_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates an Internet Gateway rule resource.",
+          "displayName": "InternetGatewayRules_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements Internet Gateway Rules DELETE method.",
+          "displayName": "InternetGatewayRules_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "API to update certain properties of the Internet Gateway Rule resource.",
+          "displayName": "InternetGatewayRules_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements Internet Gateway Rules list by resource group GET method.",
+          "displayName": "InternetGatewayRules_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all Internet Gateway rules in the given subscription.",
+          "displayName": "InternetGatewayRules_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkPacketBrokers",
+      "name": "networkPacketBrokers",
+      "operations": [
+        {
+          "description": "Retrieves details of this Network Packet Broker.",
+          "displayName": "NetworkPacketBrokers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkPacketBrokers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Network Packet Broker.",
+          "displayName": "NetworkPacketBrokers_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkPacketBrokers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Network Packet Broker.",
+          "displayName": "NetworkPacketBrokers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkPacketBrokers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "API to update certain properties of the Network Packet Broker resource.",
+          "displayName": "NetworkPacketBrokers_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkPacketBrokers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays NetworkPacketBrokers list by resource group GET method.",
+          "displayName": "NetworkPacketBrokers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkPacketBrokers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays Network Packet Brokers list by subscription GET method.",
+          "displayName": "NetworkPacketBrokers_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkPacketBrokers/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkTaps",
+      "name": "networkTaps",
+      "operations": [
+        {
+          "description": "Retrieves details of this Network Tap.",
+          "displayName": "NetworkTaps_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Network Tap.",
+          "displayName": "NetworkTaps_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Network Tap.",
+          "displayName": "NetworkTaps_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "API to update certain properties of the Network Tap resource.",
+          "displayName": "NetworkTaps_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays Network Taps list by resource group GET method.",
+          "displayName": "NetworkTaps_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays Network Taps list by subscription GET method.",
+          "displayName": "NetworkTaps_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "NetworkTaps_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "NetworkTaps_Resync",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTaps/resync/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkTapRules",
+      "name": "networkTapRules",
+      "operations": [
+        {
+          "description": "Get Network Tap Rule resource details.",
+          "displayName": "NetworkTapRules_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create Network Tap Rule resource.",
+          "displayName": "NetworkTapRules_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Network Tap Rule resource.",
+          "displayName": "NetworkTapRules_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update certain properties of the Network Tap Rule resource.",
+          "displayName": "NetworkTapRules_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Tap Rule resources in the given resource group.",
+          "displayName": "NetworkTapRules_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Tap Rule resources in the given subscription.",
+          "displayName": "NetworkTapRules_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "NetworkTapRules_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "NetworkTapRules_Resync",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/resync/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the operation to the underlying resources.",
+          "displayName": "NetworkTapRules_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkTapRules/validateConfiguration/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "neighborGroups",
+      "name": "neighborGroups",
+      "operations": [
+        {
+          "description": "Gets the Neighbor Group.",
+          "displayName": "NeighborGroups_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the Neighbor Group PUT method.",
+          "displayName": "NeighborGroups_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements Neighbor Group DELETE method.",
+          "displayName": "NeighborGroups_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Neighbor Group.",
+          "displayName": "NeighborGroups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays NeighborGroups list by resource group GET method.",
+          "displayName": "NeighborGroups_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays NeighborGroups list by subscription GET method.",
+          "displayName": "NeighborGroups_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/read",
           "origin": null,
           "properties": null
         }
