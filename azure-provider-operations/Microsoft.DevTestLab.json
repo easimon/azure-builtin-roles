@@ -4,8 +4,8 @@
   "name": "Microsoft.DevTestLab",
   "operations": [
     {
-      "description": "Registriert das Abonnement.",
-      "displayName": "Abonnement registrieren",
+      "description": "Hiermee wordt het abonnement geregistreerd",
+      "displayName": "Abonnement registreren",
       "isDataAction": false,
       "name": "Microsoft.DevTestLab/register/action",
       "origin": null,
@@ -14,7 +14,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Richtliniensätze",
+      "displayName": "beleidssets",
       "name": "labs/policySets",
       "operations": [
         {
@@ -26,8 +26,8 @@
           "properties": null
         },
         {
-          "description": "Wertet die Richtlinie des Labs aus.",
-          "displayName": "Richtlinie auswerten",
+          "description": "Hiermee wordt het labbeleid geëvalueerd.",
+          "displayName": "Beleid evalueren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/policySets/EvaluatePolicies/action",
           "origin": null,
@@ -64,56 +64,56 @@
           "properties": null
         },
         {
-          "description": "Listet Datenträgerimages für die benutzerdefinierte Imageerstellung aus.",
-          "displayName": "VHDs auflisten",
+          "description": "Schijfinstallatiekopieën vermelden die beschikbaar zijn voor het maken van een aangepaste installatiekopie.",
+          "displayName": "VHD's vermelden",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ListVhds/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Generiert einen URI zum Hochladen benutzerdefinierter Datenträgerimages in ein Lab.",
-          "displayName": "Imageupload-URI generieren",
+          "description": "Hiermee wordt een URI gegenereerd voor het uploaden van aangepaste installatiekopieën naar een lab.",
+          "displayName": "URI voor het uploaden van de installatiekopie genereren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/GenerateUploadUri/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Erstellt virtuelle Computer in einem Lab.",
-          "displayName": "Virtuellen Computer erstellen",
+          "description": "Virtuele machines in een lab maken.",
+          "displayName": "Een virtuele machine maken",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/CreateEnvironment/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Beanspruchen Sie einen abrufbaren virtuellen Computer im Lab.",
-          "displayName": "Beanspruchen Sie einen beliebigen virtuellen Computer.",
+          "description": "Een willekeurige claimbare virtuele machine in het lab claimen.",
+          "displayName": "Een virtuele machine claimen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ClaimAnyVm/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Exportiert die Lab-Ressourcenverwendung in ein Speicherkonto.",
-          "displayName": "Exportiert die Lab-Ressourcenverwendung in ein Speicherkonto.",
+          "description": "Hiermee wordt het labresourcegebruik naar een opslagaccount geëxporteerd",
+          "displayName": "Hiermee wordt het labresourcegebruik naar een opslagaccount geëxporteerd",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ExportResourceUsage/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hiermit importieren Sie einen virtuellen Computer in ein anderes Lab.",
-          "displayName": "Virtuellen Computer importieren",
+          "description": "Een virtuele machine importeren in een ander lab.",
+          "displayName": "Een virtuele machine importeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ImportVirtualMachine/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stellen Sie sicher, dass der aktuelle Benutzer über ein gültiges Profil im Lab verfügt.",
-          "displayName": "Aktuelles Benutzerprofil sicherstellen",
+          "description": "Controleren of de huidige gebruiker een geldig profiel in het lab heeft.",
+          "displayName": "Profiel van huidige gebruiker controleren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/EnsureCurrentUserProfile/action",
           "origin": null,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "displayName": "Richtlinien",
+      "displayName": "beleid",
       "name": "labs/policySets/policies",
       "operations": [
         {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "displayName": "Zeitpläne",
+      "displayName": "planningen",
       "name": "labs/schedules",
       "operations": [
         {
@@ -180,16 +180,16 @@
           "properties": null
         },
         {
-          "description": "Führt einen Zeitplan aus.",
-          "displayName": "Zeitplan ausführen",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Listet alle anwendbaren Zeitpläne auf.",
-          "displayName": "Alle anwendbaren Zeitpläne auflisten",
+          "description": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
+          "displayName": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/ListApplicable/action",
           "origin": null,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "displayName": "Zeitpläne",
+      "displayName": "planningen",
       "name": "schedules",
       "operations": [
         {
@@ -226,16 +226,16 @@
           "properties": null
         },
         {
-          "description": "Führt einen Zeitplan aus.",
-          "displayName": "Zeitplan ausführen",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Aktualisiert die Ziel-Ressourcen-ID eines Zeitplans.",
-          "displayName": "Weisen Sie den Zeitplan neu zu.",
+          "description": "Hiermee wordt de doelresource-id van een schema bijgewerkt.",
+          "displayName": "Nieuw doel voor het schema instellen.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Retarget/action",
           "origin": null,
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayName": "Zeitpläne",
+      "displayName": "planningen",
       "name": "labs/virtualMachines/schedules",
       "operations": [
         {
@@ -272,8 +272,8 @@
           "properties": null
         },
         {
-          "description": "Führt einen Zeitplan aus.",
-          "displayName": "Zeitplan ausführen",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/schedules/Execute/action",
           "origin": null,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "displayName": "Zeitpläne",
+      "displayName": "planningen",
       "name": "labs/users/serviceFabrics/schedules",
       "operations": [
         {
@@ -310,8 +310,8 @@
           "properties": null
         },
         {
-          "description": "Führt einen Zeitplan aus.",
-          "displayName": "Zeitplan ausführen",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/schedules/Execute/action",
           "origin": null,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "displayName": "Artefaktquellen",
+      "displayName": "Artefactbronnen",
       "name": "labs/artifactSources",
       "operations": [
         {
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "displayName": "Artefakte",
+      "displayName": "Artefacten",
       "name": "labs/artifactSources/artifacts",
       "operations": [
         {
@@ -362,8 +362,8 @@
           "properties": null
         },
         {
-          "description": "Generiert eine ARM-Vorlage für das angegebene Artefakt, lädt die erforderlichen Dateien in ein Speicherkonto hoch und überprüft das generierte Artefakt.",
-          "displayName": "Generiert eine ARM-Vorlage für das angegebene Artefakt.",
+          "description": "Hiermee wordt een ARM-sjabloon gegenereerd voor het betreffende artefact, worden de vereiste bestanden naar een opslagaccount geüpload en wordt het gegenereerde artefact gevalideerd.",
+          "displayName": "Hiermee wordt een ARM-sjabloon voor het betreffende artefact gegenereerd",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/artifactSources/artifacts/GenerateArmTemplate/action",
           "origin": null,
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "displayName": "Katalogimages",
+      "displayName": "galerieafbeeldingen",
       "name": "labs/galleryImages",
       "operations": [
         {
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "displayName": "benutzerdefinierte Images",
+      "displayName": "aangepaste installatiekopieën",
       "name": "labs/customImages",
       "operations": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "displayName": "virtuelle Netzwerke",
+      "displayName": "virtuele netwerken",
       "name": "labs/virtualNetworks",
       "operations": [
         {
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "displayName": "Virtuelle Computer",
+      "displayName": "Virtuele machines",
       "name": "labs/virtualMachines",
       "operations": [
         {
@@ -474,112 +474,112 @@
           "properties": null
         },
         {
-          "description": "Fügt einen neuen oder vorhandenen Datenträger an einen virtuellen Computer an.",
-          "displayName": "Datenträger hinzufügen oder anfügen",
+          "description": "Een nieuwe of bestaande gegevensschijf aan een virtuele machine koppelen.",
+          "displayName": "Een gegevensschijf toevoegen of koppelen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/AddDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Wendet Artefakte auf den virtuellen Computer an.",
-          "displayName": "Artefakte auf virtuellen Computer anwenden",
+          "description": "Artefacten op de virtuele machine toepassen.",
+          "displayName": "Artefacten op de virtuele machine toepassen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ApplyArtifacts/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Besitz für einen vorhandenen virtuellen Computer übernehmen",
-          "displayName": "Virtuellen Computer beanspruchen",
+          "description": "Eigendom overnemen van een bestaande virtuele machine",
+          "displayName": "Een virtuele machine claimen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Claim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Löscht die Artefaktergebnisse des virtuellen Computers.",
-          "displayName": "Artefaktergebnisse löschen",
+          "description": "Hiermee worden de artefactresultaten van de virtuele machine gewist.",
+          "displayName": "Artefactresultaten wissen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ClearArtifactResults/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Trennt den angegebenen Datenträger vom virtuellen Computer.",
-          "displayName": "Angegebenen Datenträger vom virtuellen Computer trennen",
+          "description": "Koppel de opgegeven schijf los van de virtuele machine.",
+          "displayName": "De opgegeven schijf loskoppelen van de virtuele machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/DetachDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hiermit wird eine Zeichenfolge abgerufen, die den Inhalt der RDP-Datei für den virtuellen Computer darstellt.",
-          "displayName": "Inhalt der RDP-Datei abrufen",
+          "description": "Hiermee wordt een tekenreeks opgehaald die de inhoud van het RDP-bestand voor de virtuele machine vertegenwoordigt",
+          "displayName": "Inhoud van RDP-bestand ophalen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/GetRdpFileContents/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Listet die anwendbaren Zeitpläne zum Starten/Beenden auf, sofern vorhanden.",
-          "displayName": "Alle anwendbaren Zeitpläne auflisten",
+          "description": "Hier worden de van toepassing zijnde schema's voor starten/stoppen weergegeven, indien van toepassing.",
+          "displayName": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ListApplicableSchedules/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hiermit stellen Sie einen virtuellen Computer erneut bereit.",
-          "displayName": "Virtuellen Computer erneut bereitstellen",
+          "description": "Een virtuele machine opnieuw implementeren",
+          "displayName": "Een virtuele machine opnieuw implementeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Redeploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hiermit ändern Sie die Größe des virtuellen Computers.",
-          "displayName": "Größe des virtuellen Computers ändern",
+          "description": "De grootte van de virtuele machine aanpassen.",
+          "displayName": "De grootte van de virtuele machine aanpassen.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Resize/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hiermit starten Sie einen virtuellen Computer neu.",
-          "displayName": "Virtuellen Computer neu starten",
+          "description": "Start een virtuele machine opnieuw.",
+          "displayName": "Virtuele machine opnieuw starten",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Restart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Startet einen virtuellen Computer.",
-          "displayName": "Virtuellen Computer starten",
+          "description": "Een virtuele machine starten.",
+          "displayName": "Virtuele machine starten",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Beendet einen virtuellen Computer.",
-          "displayName": "Virtuellen Computer beenden",
+          "description": "Een virtuele machine stoppen",
+          "displayName": "Virtuele machine stoppen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Überträgt den Besitz aller dem virtuellen Computer angefügten Datenträger auf den aktuellen Benutzer.",
-          "displayName": "Datenträger auf den aktuellen Benutzer übertragen",
+          "description": "Hiermee worden alle gegevensschijven overgedragen die zijn gekoppeld aan de virtuele machine eigendom die eigendom moeten worden van de huidige gebruiker.",
+          "displayName": "Gegevensschijven overdragen naar de huidige gebruiker.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/TransferDisks/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hiermit geben Sie den Besitz eines vorhandenen virtuellen Computers frei.",
-          "displayName": "Anspruch auf virtuellen Computer aufheben",
+          "description": "Eigendom van een bestaande virtuele machine vrijgeven",
+          "displayName": "Claim op een virtuele machine ongedaan maken",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/UnClaim/action",
           "origin": null,
@@ -588,7 +588,7 @@
       ]
     },
     {
-      "displayName": "Formeln",
+      "displayName": "Formules",
       "name": "labs/formulas",
       "operations": [
         {
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "displayName": "Kosten",
+      "displayName": "kosten",
       "name": "labs/costs",
       "operations": [
         {
@@ -668,16 +668,16 @@
           "properties": null
         },
         {
-          "description": "Fügt die Lease des Datenträgers an den virtuellen Computer an und erstellt sie.",
-          "displayName": "Datenträger anfügen",
+          "description": "Koppel en maak de lease van de schijf aan de virtuele machine.",
+          "displayName": "Schijf koppelen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Attach/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Trennt und unterbricht die Lease des an den virtuellen Computer angefügten Datenträgers.",
-          "displayName": "Lease des an den virtuellen Computer angefügten Datenträgers trennen und unterbrechen",
+          "description": "De lease van de aan de virtuele machine gekoppelde schijf losmaken en verbreken.",
+          "displayName": "De lease van de aan de virtuele machine gekoppelde schijf losmaken en verbreken",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Detach/action",
           "origin": null,
@@ -686,7 +686,7 @@
       ]
     },
     {
-      "displayName": "Benutzerprofile",
+      "displayName": "gebruikersprofielen",
       "name": "labs/users",
       "operations": [
         {
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "displayName": "Benachrichtigungskanäle",
+      "displayName": "Meldingskanalen",
       "name": "labs/notificationChannels",
       "operations": [
         {
@@ -744,8 +744,8 @@
           "properties": null
         },
         {
-          "description": "Sendet eine Benachrichtigung an den angegebenen Kanal.",
-          "displayName": "Benachrichtigen",
+          "description": "Verzend een melding naar het opgegeven kanaal.",
+          "displayName": "Melden",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/notificationChannels/Notify/action",
           "origin": null,
@@ -754,7 +754,7 @@
       ]
     },
     {
-      "displayName": "Geheimnisse",
+      "displayName": "geheimen",
       "name": "labs/users/secrets",
       "operations": [
         {
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "displayName": "Vorgänge",
+      "displayName": "bewerkingen",
       "name": "locations/operations",
       "operations": [
         {
@@ -798,7 +798,7 @@
       ]
     },
     {
-      "displayName": "Azure Resource Manager-Vorlagen",
+      "displayName": "Azure Resource Manager-sjablonen",
       "name": "labs/artifactSources/armTemplates",
       "operations": [
         {
@@ -812,7 +812,7 @@
       ]
     },
     {
-      "displayName": "Umgebungen",
+      "displayName": "omgevingen",
       "name": "labs/users/environments",
       "operations": [
         {
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "displayName": "Service Runner",
+      "displayName": "Servicerunners",
       "name": "labs/serviceRunners",
       "operations": [
         {
@@ -900,24 +900,24 @@
           "properties": null
         },
         {
-          "description": "Startet ein Service Fabric.",
-          "displayName": "Service Fabric starten",
+          "description": "Een service fabric starten.",
+          "displayName": "Service fabric starten",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Beendet ein Service Fabric.",
-          "displayName": "Service Fabric beenden",
+          "description": "Een service fabric stoppen.",
+          "displayName": "Service fabric stoppen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Listet die anwendbaren Zeitpläne zum Starten/Beenden auf, sofern vorhanden.",
-          "displayName": "Alle anwendbaren Zeitpläne auflisten",
+          "description": "Hier worden de van toepassing zijnde schema's voor starten/stoppen weergegeven, indien van toepassing.",
+          "displayName": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/ListApplicableSchedules/action",
           "origin": null,
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "displayName": "Lab-Center",
+      "displayName": "Labcenters",
       "name": "labCenters",
       "operations": [
         {
@@ -956,7 +956,7 @@
       ]
     },
     {
-      "displayName": "VM-Pools",
+      "displayName": "Virtuele-machinegroepen",
       "name": "labs/vmPools",
       "operations": [
         {
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "displayName": "Freigegebene Kataloge",
+      "displayName": "Gedeelde galerieën",
       "name": "labs/sharedGalleries",
       "operations": [
         {
@@ -1016,7 +1016,7 @@
       ]
     },
     {
-      "displayName": "Freigegebene Images",
+      "displayName": "Gedeelde installatiekopieën",
       "name": "labs/sharedGalleries/sharedImages",
       "operations": [
         {
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "displayName": "Labgeheimnisse",
+      "displayName": "Labgeheimen",
       "name": "labs/secrets",
       "operations": [
         {
