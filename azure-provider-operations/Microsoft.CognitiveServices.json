@@ -13387,6 +13387,70 @@
           "name": "Microsoft.CognitiveServices/accounts/SpeechServices/issuetoken/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "This method can be used to allow copying a model from another speech resource.",
+          "displayName": "Authorize Copy Model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models:authorizecopy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "This method is obsolete and will be removed in future API version. Please use models/{id}:copy instead.",
+          "displayName": "Copy Model To",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models:copyto/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "This method can be used to copy a model from this speech resource to a target one.",
+          "displayName": "Copy Model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models:copy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates a new evaluation.",
+          "displayName": "Creates Evaluation",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/evaluations/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates a new model.",
+          "displayName": "Creates a new model.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates a new project.",
+          "displayName": "Creates Project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "The request body of the POST request sent to the registered web hook URL is of the same shape as in the GET request for a specific hook.",
+          "displayName": "Ping Web Hook",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/webhooks:ping/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "The payload will be generated from the last entity that would have invoked the web hook. If no entity is present for none of the registered event types,",
+          "displayName": "Test Web Hook",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/webhooks:test/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -14359,6 +14423,578 @@
           "displayName": "Show blocklist hit request count at different timestamps.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklisthitcalls/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "datasets*",
+      "name": "accounts/SpeechServices/datasets",
+      "operations": [
+        {
+          "description": "Commit block list to complete the upload of the dataset.",
+          "displayName": "Commit Block List",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/blocks:commit/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified dataset.",
+          "displayName": "Delete Dataset",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets a list of datasets for the authenticated subscription.\r\nGets the dataset identified by the given ID.*",
+          "displayName": "Get Datasets|Get Dataset*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates the mutable details of the dataset identified by its ID.\r\nUploads and creates a new dataset by getting the data from a specified URL or starts waiting for data blocks to be uploaded.*",
+          "displayName": "Update Dataset|Create Dataset*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Uploads data and creates a new dataset.",
+          "displayName": "Upload Dataset From Form",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/upload/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locales*",
+      "name": "accounts/SpeechServices/datasets/locales",
+      "operations": [
+        {
+          "description": "Gets a list of supported locales for datasets.",
+          "displayName": "Get Supported Locales for Datasets",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/locales/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "files*",
+      "name": "accounts/SpeechServices/datasets/files",
+      "operations": [
+        {
+          "description": "Gets one specific file (identified with fileId) from a dataset (identified with id).\r\nGets the files of the dataset identified by the given ID.*",
+          "displayName": "Get Dataset File|Get Dataset Files*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/files/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "blocks*",
+      "name": "accounts/SpeechServices/datasets/blocks",
+      "operations": [
+        {
+          "description": "Gets the list of uploaded blocks for this dataset.",
+          "displayName": "Get Uploaded Blocks",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/blocks/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Upload a block of data for the dataset. The maximum size of the block is 8MiB.",
+          "displayName": "Upload Data Block",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/datasets/blocks/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "endpoints*",
+      "name": "accounts/SpeechServices/endpoints",
+      "operations": [
+        {
+          "description": "Creates a new endpoint.\r\nUpdates the metadata of the endpoint identified by the given ID.*",
+          "displayName": "Create Endpoint.|Update Endpoint*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes the endpoint identified by the given ID.",
+          "displayName": "Delete Endpoint",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the endpoint identified by the given ID.\r\nGets the list of endpoints for the authenticated subscription.*",
+          "displayName": "Get Endpoint|Get Endpoints*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "logs*",
+      "name": "accounts/SpeechServices/endpoints/files/logs",
+      "operations": [
+        {
+          "description": "Deletes one audio or transcription log that have been stored for a given endpoint.\r\nThe deletion process is done asynchronously and can take up to one day depending on the amount of log files.*",
+          "displayName": "Delete Custom Model Endpoint Log|Delete All Custom Model Endpoint Logs*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/files/logs/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets a specific audio or transcription log for a given endpoint.\r\nGets the list of audio and transcription logs that have been stored for a given endpoint.*",
+          "displayName": "Get Custom Model Endpoint Log|Get Endpoint Logs*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/files/logs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "logs*",
+      "name": "accounts/SpeechServices/endpoints/base/files/logs",
+      "operations": [
+        {
+          "description": "Deletes one audio or transcription log that have been stored when using the default base model of a given language.\r\nDeletion process is done asynchronously and can take up to one day depending on the amount of log files.*",
+          "displayName": "Delete Base Model Endpoint Logs|Delete All Base Model Endpoint Logs*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/base/files/logs/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets a specific audio or transcription log for the default base model in a given language.\r\nGets the list of audio and transcription logs that have been stored when using the default base model of a given language.*",
+          "displayName": "Get Base Model Endpoint Log|Get Base Model Logs*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/base/files/logs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locales*",
+      "name": "accounts/SpeechServices/endpoints/locales",
+      "operations": [
+        {
+          "description": "Gets a list of supported locales for endpoint creations.",
+          "displayName": "Get Supported Locales for Endpoints",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/endpoints/locales/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "transcriptions*",
+      "name": "accounts/SpeechServices/transcriptions",
+      "operations": [
+        {
+          "description": "Creates a new transcription.\r\nUpdates the mutable details of the transcription identified by its ID.*",
+          "displayName": "Create Transcription|Update Transcription*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/transcriptions/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified transcription task.",
+          "displayName": "Delete Transcription",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/transcriptions/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets a list of transcriptions for the authenticated subscription.\r\nGets the transcription identified by the given ID.*",
+          "displayName": "Get Transcriptions|Get Transcription*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/transcriptions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locales*",
+      "name": "accounts/SpeechServices/transcriptions/locales",
+      "operations": [
+        {
+          "description": "Gets a list of supported locales for offline transcriptions.",
+          "displayName": "Get Supported Locales for Transcriptions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/transcriptions/locales/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "files*",
+      "name": "accounts/SpeechServices/transcriptions/files",
+      "operations": [
+        {
+          "description": "Gets one specific file (identified with fileId) from a transcription (identified with id).\r\nGets the files of the transcription identified by the given ID.*",
+          "displayName": "Get Transcription File|Get Transcription Files*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/transcriptions/files/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "webhooks*",
+      "name": "accounts/SpeechServices/webhooks",
+      "operations": [
+        {
+          "description": "If the property secret in the configuration is present and contains a non-empty string, it will be used to create a SHA256 hash of the payload with\r\nIf the property secret in the configuration is omitted or contains an empty string, future callbacks won't contain X-MicrosoftSpeechServices-Signature*",
+          "displayName": "Create Web Hook|Update Web Hook*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/webhooks/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes the web hook identified by the given ID.",
+          "displayName": "Delete Web Hook",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/webhooks/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the list of web hooks for the authenticated subscription.\r\nGets the web hook identified by the given ID.*",
+          "displayName": "Get Web Hooks|Get Web Hook*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/webhooks/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "evaluations*",
+      "name": "accounts/SpeechServices/evaluations",
+      "operations": [
+        {
+          "description": "Deletes the evaluation identified by the given ID.",
+          "displayName": "Delete Evaluation",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/evaluations/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the evaluation identified by the given ID.\r\nGets the list of evaluations for the authenticated subscription.*",
+          "displayName": "Get Evaluation|Get Evaluations*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/evaluations/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates the mutable details of the evaluation identified by its id.",
+          "displayName": "Update Evaluation",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/evaluations/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locales*",
+      "name": "accounts/SpeechServices/evaluations/locales",
+      "operations": [
+        {
+          "description": "Gets a list of supported locales for evaluations.",
+          "displayName": "Get Supported Locales for Evaluations",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/evaluations/locales/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "files*",
+      "name": "accounts/SpeechServices/evaluations/files",
+      "operations": [
+        {
+          "description": "Gets one specific file (identified with fileId) from an evaluation (identified with id).\r\nGets the files of the evaluation identified by the given ID.*",
+          "displayName": "Get Evaluation File|Get Evaluation Files*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/evaluations/files/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "models*",
+      "name": "accounts/SpeechServices/models",
+      "operations": [
+        {
+          "description": "Deletes the model identified by the given ID.",
+          "displayName": "Delete Model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the list of custom models for the authenticated subscription.\r\nGets the model identified by the given ID.*",
+          "displayName": "Get Models|Get Model*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates the metadata of the model identified by the given ID.",
+          "displayName": "Update Model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locales*",
+      "name": "accounts/SpeechServices/models/locales",
+      "operations": [
+        {
+          "description": "Gets a list of supported locales for model adaptation.",
+          "displayName": "Get Supported Locales for Models",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/locales/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "files*",
+      "name": "accounts/SpeechServices/models/files",
+      "operations": [
+        {
+          "description": "Gets one specific file (identified with fileId) from a model (identified with id).\r\nGets the files of the model identified by the given ID.*",
+          "displayName": "Get Model File|Get Model Files*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/files/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "base*",
+      "name": "accounts/SpeechServices/models/base",
+      "operations": [
+        {
+          "description": "Gets the base model identified by the given ID.\r\nGets the list of base models for the authenticated subscription.*",
+          "displayName": "Get Base Model|Get Base Models*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/base/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "manifest*",
+      "name": "accounts/SpeechServices/models/base/manifest",
+      "operations": [
+        {
+          "description": "Returns an manifest for this base model which can be used in an on-premise container.",
+          "displayName": "Get Base Model Manifest",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/base/manifest/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "manifest*",
+      "name": "accounts/SpeechServices/models/manifest",
+      "operations": [
+        {
+          "description": "Returns an manifest for this model which can be used in an on-premise container.",
+          "displayName": "Get Model Manifest",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/models/manifest/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects*",
+      "name": "accounts/SpeechServices/projects",
+      "operations": [
+        {
+          "description": "Deletes the project identified by the given ID.",
+          "displayName": "Delete Project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the list of projects for the authenticated subscription.\r\nGets the project identified by the given ID.*",
+          "displayName": "Get Projects|Get Project*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates the project identified by the given ID.",
+          "displayName": "Update Project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "datasets*",
+      "name": "accounts/SpeechServices/projects/datasets",
+      "operations": [
+        {
+          "description": "Gets the list of datasets for specified project.",
+          "displayName": "Get Datasets",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/datasets/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "endpoints*",
+      "name": "accounts/SpeechServices/projects/endpoints",
+      "operations": [
+        {
+          "description": "Gets the list of endpoints for specified project.",
+          "displayName": "Get Endpoints",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/endpoints/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "evaluations*",
+      "name": "accounts/SpeechServices/projects/evaluations",
+      "operations": [
+        {
+          "description": "Gets the list of evaluations for specified project.",
+          "displayName": "Get Evaluations for Project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/evaluations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "models*",
+      "name": "accounts/SpeechServices/projects/models",
+      "operations": [
+        {
+          "description": "Gets the list of models for specified project.",
+          "displayName": "Get Models for Project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/models/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locales*",
+      "name": "accounts/SpeechServices/projects/locales",
+      "operations": [
+        {
+          "description": "Gets the list of supported locales.",
+          "displayName": "Get Supported Locales for Projects",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/locales/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "transcriptions*",
+      "name": "accounts/SpeechServices/projects/transcriptions",
+      "operations": [
+        {
+          "description": "Gets the list of transcriptions for specified project.",
+          "displayName": "Get Transcriptions for Project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/projects/transcriptions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "copy*",
+      "name": "accounts/SpeechServices/operations/models/copy",
+      "operations": [
+        {
+          "description": "Gets the operation identified by the given ID.",
+          "displayName": "Get Model Copy",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/operations/models/copy/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "healthstatus*",
+      "name": "accounts/SpeechServices/healthstatus",
+      "operations": [
+        {
+          "description": "Returns the overall health of the service and optionally of the different subcomponents.",
+          "displayName": "Get Health Status",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/healthstatus/read",
           "origin": "user",
           "properties": null
         }
