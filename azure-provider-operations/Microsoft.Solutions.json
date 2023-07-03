@@ -1,19 +1,19 @@
 {
-  "displayName": "Microsoft.Solutions",
+  "displayName": "Microsoft Solutions",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Solutions",
   "name": "Microsoft.Solutions",
   "operations": [
     {
-      "description": "Register the subscription for Microsoft.Solutions",
-      "displayName": "Register the Microsoft.Solutions",
+      "description": "Register to Solutions.",
+      "displayName": "Register Solutions",
       "isDataAction": false,
       "name": "Microsoft.Solutions/register/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Unregister the subscription for Microsoft.Solutions",
-      "displayName": "Unregister the Microsoft.Solutions",
+      "description": "Unregisters from Solutions.",
+      "displayName": "Unregister Solutions",
       "isDataAction": false,
       "name": "Microsoft.Solutions/unregister/action",
       "origin": null,
@@ -22,230 +22,170 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "applicationDefinitions",
+      "displayName": "Application Definition",
       "name": "applicationDefinitions",
       "operations": [
         {
-          "description": "Gets the managed application definition.",
-          "displayName": "ApplicationDefinitions_Get",
+          "description": "Retrieves a list of application definitions.",
+          "displayName": "List Application Definitions",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applicationDefinitions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or updates a managed application definition.",
-          "displayName": "ApplicationDefinitions_CreateOrUpdate",
+          "description": "Add or modify an application definition.",
+          "displayName": "Add Application Definition",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applicationDefinitions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes the managed application definition.",
-          "displayName": "ApplicationDefinitions_Delete",
+          "description": "Removes an application definition.",
+          "displayName": "Remove Application Definition",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applicationDefinitions/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Updates the managed application definition.",
-          "displayName": "ApplicationDefinitions_Update",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applicationDefinitions/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists the managed application definitions in a resource group.",
-          "displayName": "ApplicationDefinitions_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applicationDefinitions/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the application definitions within a subscription.",
-          "displayName": "ApplicationDefinitions_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applicationDefinitions/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "applications",
+      "displayName": "Application",
       "name": "applications",
       "operations": [
         {
-          "description": "Gets the managed application.",
-          "displayName": "Applications_Get",
+          "description": "Retrieves a list of applications.",
+          "displayName": "List Applications",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applications/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or updates a managed application.",
-          "displayName": "Applications_CreateOrUpdate",
+          "description": "Creates an application.",
+          "displayName": "Create Application",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applications/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes the managed application.",
-          "displayName": "Applications_Delete",
+          "description": "Removes an application.",
+          "displayName": "Remove Application",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applications/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates an existing managed application.",
-          "displayName": "Applications_Update",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applications/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the applications within a resource group.",
-          "displayName": "Applications_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applications/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the applications within a subscription.",
-          "displayName": "Applications_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applications/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Refresh Permissions for application.",
-          "displayName": "Applications_RefreshPermissions",
+          "description": "Refreshes application permission(s).",
+          "displayName": "Refresh application permission(s)",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applications/refreshPermissions/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List allowed upgrade plans for application.",
-          "displayName": "Applications_ListAllowedUpgradePlans",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applications/listAllowedUpgradePlans/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update access for application.",
-          "displayName": "Applications_UpdateAccess",
+          "description": "Updates application access.",
+          "displayName": "Update application access",
           "isDataAction": false,
           "name": "Microsoft.Solutions/applications/updateAccess/action",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "List tokens for application.",
-          "displayName": "Applications_ListTokens",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/applications/listTokens/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
     {
-      "displayName": "locations/operationstatuses",
-      "name": "locations/operationstatuses",
+      "displayName": "Operation Status",
+      "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "read operationstatuses",
-          "displayName": "read_operationstatuses",
+          "description": "Reads the operation status for the resource.",
+          "displayName": "Get the Operation Status",
           "isDataAction": false,
-          "name": "Microsoft.Solutions/locations/operationstatuses/read",
+          "name": "Microsoft.Solutions/locations/operationStatuses/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write operationstatuses",
-          "displayName": "write_operationstatuses",
+          "description": "Writes the operation status for the resource.",
+          "displayName": "Write the Operation Status.",
           "isDataAction": false,
-          "name": "Microsoft.Solutions/locations/operationstatuses/write",
+          "name": "Microsoft.Solutions/locations/operationStatuses/write",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "jitRequests",
+      "displayName": "JitRequests",
       "name": "jitRequests",
       "operations": [
         {
-          "description": "Gets the JIT request.",
-          "displayName": "JitRequests_Get",
+          "description": "Retrieves a list of JitRequests",
+          "displayName": "List JitRequests",
           "isDataAction": false,
           "name": "Microsoft.Solutions/jitRequests/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or updates the JIT request.",
-          "displayName": "jitRequests_CreateOrUpdate",
+          "description": "Creates a JitRequest",
+          "displayName": "Create JitRequest",
           "isDataAction": false,
           "name": "Microsoft.Solutions/jitRequests/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes the JIT request.",
-          "displayName": "jitRequests_Delete",
+          "description": "Remove a JitRequest",
+          "displayName": "Remove JitRequest",
           "isDataAction": false,
           "name": "Microsoft.Solutions/jitRequests/delete",
           "origin": null,
           "properties": null
-        },
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
         {
-          "description": "Updates the JIT request.",
-          "displayName": "JitRequests_Update",
+          "description": "Gets the list of operations.",
+          "displayName": "Get operations",
           "isDataAction": false,
-          "name": "Microsoft.Solutions/jitRequests/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all JIT requests within the subscription.",
-          "displayName": "jitRequests_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/jitRequests/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all JIT requests within the resource group.",
-          "displayName": "jitRequests_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.Solutions/jitRequests/read",
+          "name": "Microsoft.Solutions/operations/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "operations",
-      "name": "operations",
+      "displayName": "Application Definition",
+      "name": "applicationDefinitions/applicationArtifacts",
       "operations": [
         {
-          "description": "read operations",
-          "displayName": "read_operations",
+          "description": "Lists application artifacts of application definition.",
+          "displayName": "List application artifacts of application definition",
           "isDataAction": false,
-          "name": "Microsoft.Solutions/operations/read",
+          "name": "Microsoft.Solutions/applicationDefinitions/applicationArtifacts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Application",
+      "name": "applications/applicationArtifacts",
+      "operations": [
+        {
+          "description": "Lists application artifacts.",
+          "displayName": "List application artifacts",
+          "isDataAction": false,
+          "name": "Microsoft.Solutions/applications/applicationArtifacts/read",
           "origin": null,
           "properties": null
         }
