@@ -722,10 +722,10 @@
                       "name": "Protocol"
                     }
                   ],
-                  "displayDescription": "Total time taken for a bulk operation to complete.",
-                  "displayName": "Bulk Operation Latency (preview)",
+                  "displayDescription": "Total time taken for an import job to complete.",
+                  "displayName": "Import Job Latency",
                   "fillGapWithZero": true,
-                  "name": "BulkOperationLatency",
+                  "name": "ImportJobLatency",
                   "supportedAggregationTypes": [
                     "Average",
                     "Minimum",
@@ -752,10 +752,10 @@
                       "name": "Result"
                     }
                   ],
-                  "displayDescription": "The number of twins, models, or relationships processed by a bulk operation.",
-                  "displayName": "Bulk Operation Entity Count (preview)",
+                  "displayDescription": "The number of twins, models, or relationships processed by an import job.",
+                  "displayName": "Import Job Entity Count",
                   "fillGapWithZero": false,
-                  "name": "BulkOperationEntityCount",
+                  "name": "ImportJobEntityCount",
                   "supportedAggregationTypes": [
                     "Average",
                     "Minimum",
@@ -850,20 +850,6 @@
       ]
     },
     {
-      "displayName": "Operation Result",
-      "name": "digitalTwinsInstances/operationsResults",
-      "operations": [
-        {
-          "description": "Read any Operation Result",
-          "displayName": "Read Operation Result",
-          "isDataAction": false,
-          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/operationsResults/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Digital Twins Resource Provider",
       "name": "locations",
       "operations": [
@@ -872,20 +858,6 @@
           "displayName": "Check Name Availability",
           "isDataAction": false,
           "name": "Microsoft.DigitalTwins/locations/checkNameAvailability/action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Operation Result",
-      "name": "locations/operationsResults",
-      "operations": [
-        {
-          "description": "Read any Operation Result",
-          "displayName": "Read Operation Result",
-          "isDataAction": false,
-          "name": "Microsoft.DigitalTwins/locations/operationsResults/read",
           "origin": null,
           "properties": null
         }
@@ -1016,36 +988,6 @@
       ]
     },
     {
-      "displayName": "Bulk Import Job",
-      "name": "jobs/import",
-      "operations": [
-        {
-          "description": "Read any Bulk Import Job",
-          "displayName": "Read Bulk Import Job",
-          "isDataAction": true,
-          "name": "Microsoft.DigitalTwins/jobs/import/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create any Bulk Import Job",
-          "displayName": "Write Bulk Import Job",
-          "isDataAction": true,
-          "name": "Microsoft.DigitalTwins/jobs/import/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete any Bulk Import Job",
-          "displayName": "Delete Bulk Import Job",
-          "isDataAction": true,
-          "name": "Microsoft.DigitalTwins/jobs/import/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "NetworkSecurityPerimeterAssociationProxies",
       "name": "digitalTwinsInstances/networkSecurityPerimeterAssociationProxies",
       "operations": [
@@ -1100,6 +1042,138 @@
           "displayName": "Write Ingress Endpoint",
           "isDataAction": false,
           "name": "Microsoft.DigitalTwins/digitalTwinsInstances/ingressEndpoints/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Bulk Import Job",
+      "name": "jobs/imports",
+      "operations": [
+        {
+          "description": "Read any Bulk Import Job",
+          "displayName": "Read Bulk Import Job",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/jobs/imports/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create any Bulk Import Job",
+          "displayName": "Write Bulk Import Job",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/jobs/imports/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Bulk Import Job",
+          "displayName": "Delete Bulk Import Job",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/jobs/imports/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel any Bulk Import Job",
+          "displayName": "Cancel Bulk Import Job",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/jobs/imports/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Bulk Delete Job",
+      "name": "jobs/delete",
+      "operations": [
+        {
+          "description": "Read any Bulk Delete Job",
+          "displayName": "Read Bulk Delete Job",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/jobs/delete/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create any Bulk Delete Job",
+          "displayName": "Write Bulk Delete Job",
+          "isDataAction": true,
+          "name": "Microsoft.DigitalTwins/jobs/delete/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Time Series Database Connection",
+      "name": "digitalTwinsInstances/timeSeriesDatabaseConnections",
+      "operations": [
+        {
+          "description": "Delete any time series database connection of a Digital Twins resource",
+          "displayName": "Delete Time Series Database Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/timeSeriesDatabaseConnections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read any time series database connection of a Digital Twins resource",
+          "displayName": "Read Time Series Database Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/timeSeriesDatabaseConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create any time series database connection of a Digital Twins resource",
+          "displayName": "Write Time Series Database Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/timeSeriesDatabaseConnections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Result",
+      "name": "digitalTwinsInstances/operationResults",
+      "operations": [
+        {
+          "description": "Read any Operation Result",
+          "displayName": "Read Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/digitalTwinsInstances/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Result",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Read any Operation Result",
+          "displayName": "Read Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/locations/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Status",
+      "name": "locations/operationsStatuses",
+      "operations": [
+        {
+          "description": "Read any Operation Status",
+          "displayName": "Read Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.DigitalTwins/locations/operationsStatuses/read",
           "origin": null,
           "properties": null
         }
