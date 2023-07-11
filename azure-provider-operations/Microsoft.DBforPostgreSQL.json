@@ -1592,6 +1592,30 @@
       "name": "flexibleServers",
       "operations": [
         {
+          "description": "Checks the availability of the given migration name.",
+          "displayName": "Check the availability of the given migration name.",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/checkMigrationNameAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start long term backup for a server",
+          "displayName": "Start long term backup for a server",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/startLtrBackup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Checks if a server is ready for a long term backup",
+          "displayName": "Checks if a server is ready for a long term backup",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/ltrPreBackup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Return the list of servers or gets the properties for the specified server.",
           "displayName": "List/Get PostgreSQL server",
           "isDataAction": false,
@@ -1628,14 +1652,6 @@
           "displayName": null,
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/resetQueryPerformanceInsightData/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Checks the availability of the given migration name.",
-          "displayName": "Check the availability of the given migration name.",
-          "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/checkMigrationNameAvailability/action",
           "origin": null,
           "properties": null
         },
@@ -2188,6 +2204,42 @@
           "displayName": "Approve or Reject Azure Database for PostgreSQL - Flexible Server Private Endpoint Connection",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PostgreSQL Flexible Server Log Files",
+      "name": "flexibleServers/logFiles",
+      "operations": [
+        {
+          "description": "Return a list of server log Files for a PostgreSQL Flexible server with File download links",
+          "displayName": "List/Get PostgreSQL Flexible Server Log Files",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/logFiles/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PostgreSQL Server Long term backup operation.",
+      "name": "flexibleServers/ltrBackupOperations",
+      "operations": [
+        {
+          "description": "Returns the PostgreSQL server long term backup operation tracking by backup name.",
+          "displayName": "Get PostgreSQL server long term backup operation by backup name",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/ltrBackupOperations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the list of  PostgreSQL server long term backup operation tracking.",
+          "displayName": "List/Get PostgreSQL server long term backup operation",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/ltrBackupOperations/read",
           "origin": null,
           "properties": null
         }
