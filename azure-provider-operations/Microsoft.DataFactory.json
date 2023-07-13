@@ -744,9 +744,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime copy capacity utilization",
+                  "displayName": "Copy capacity utilization of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimeCopyCapacityUtilization",
+                  "name": "MVNetIRCopyCapacityUtilization",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Percent"
@@ -760,9 +760,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime copy available capacity percentage",
+                  "displayName": "Copy available capacity percentage of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimeCopyAvailableCapacityPercentage",
+                  "name": "MVNetIRCopyAvailableCapacityPCT",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Percent"
@@ -776,9 +776,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime copy waiting queue length",
+                  "displayName": "Copy waiting queue length of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimeCopyWaitingQueueLength",
+                  "name": "MVNetIRCopyWaitingQueueLength",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Count"
@@ -792,9 +792,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime pipeline capacity utilization",
+                  "displayName": "Pipeline capacity utilization of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimePipelineCapacityUtilization",
+                  "name": "MVNetIRPipelineCapacityUtilization",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Percent"
@@ -808,9 +808,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime pipeline available capacity percentage",
+                  "displayName": "Pipeline available capacity percentage of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimePipelineAvailableCapacityPercentage",
+                  "name": "MVNetIRPipelineAvailableCapacityPCT",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Percent"
@@ -824,9 +824,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime pipeline waiting queue length",
+                  "displayName": "Pipeline waiting queue length of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimePipelineWaitingQueueLength",
+                  "name": "MVNetIRPipelineWaitingQueueLength",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Count"
@@ -840,9 +840,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime external capacity utilization",
+                  "displayName": "External capacity utilization of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimeExternalCapacityUtilization",
+                  "name": "MVNetIRExternalCapacityUtilization",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Percent"
@@ -856,9 +856,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime external available capacity percentage",
+                  "displayName": "External available capacity percentage of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimeExternalAvailableCapacityPercentage",
+                  "name": "MVNetIRExternalAvailableCapacityPCT",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Percent"
@@ -872,9 +872,9 @@
                       "toBeExportedForShoebox": true
                     }
                   ],
-                  "displayName": "Integration runtime external waiting queue length",
+                  "displayName": "External waiting queue length of MVNet integration runtime",
                   "enableRegionalMdmAccount": "false",
-                  "name": "IntegrationRuntimeExternalWaitingQueueLength",
+                  "name": "MVNetIRExternalWaitingQueueLength",
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "ADFMetrics",
                   "unit": "Count"
@@ -2071,6 +2071,24 @@
                   "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
                   "sourceMdmNamespace": "AirflowMetrics",
                   "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [
+                    {
+                      "displayName": "Integration Runtime",
+                      "name": "IntegrationRuntimeName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayName": "Airflow Integration Runtime Node Count",
+                  "enableRegionalMdmAccount": "false",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "AirflowIntegrationRuntimeNodeCount",
+                  "name": "AirflowIntegrationRuntimeNodeCount",
+                  "sourceMdmAccount": "MicrosoftDataFactoryProdShoebox",
+                  "sourceMdmNamespace": "AirflowMetrics",
+                  "unit": "Count"
                 }
               ]
             }
