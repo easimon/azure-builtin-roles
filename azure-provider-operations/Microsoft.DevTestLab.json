@@ -4,8 +4,8 @@
   "name": "Microsoft.DevTestLab",
   "operations": [
     {
-      "description": "Registers the subscription",
-      "displayName": "Register Subscription",
+      "description": "Hiermee wordt het abonnement geregistreerd",
+      "displayName": "Abonnement registreren",
       "isDataAction": false,
       "name": "Microsoft.DevTestLab/register/action",
       "origin": null,
@@ -14,7 +14,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "policy sets",
+      "displayName": "beleidssets",
       "name": "labs/policySets",
       "operations": [
         {
@@ -26,8 +26,8 @@
           "properties": null
         },
         {
-          "description": "Evaluates lab policy.",
-          "displayName": "Evaluate policy",
+          "description": "Hiermee wordt het labbeleid geëvalueerd.",
+          "displayName": "Beleid evalueren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/policySets/EvaluatePolicies/action",
           "origin": null,
@@ -64,56 +64,56 @@
           "properties": null
         },
         {
-          "description": "List disk images available for custom image creation.",
-          "displayName": "List VHDs",
+          "description": "Schijfinstallatiekopieën vermelden die beschikbaar zijn voor het maken van een aangepaste installatiekopie.",
+          "displayName": "VHD's vermelden",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ListVhds/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Generate a URI for uploading custom disk images to a Lab.",
-          "displayName": "Generate image upload URI",
+          "description": "Hiermee wordt een URI gegenereerd voor het uploaden van aangepaste installatiekopieën naar een lab.",
+          "displayName": "URI voor het uploaden van de installatiekopie genereren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/GenerateUploadUri/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create virtual machines in a lab.",
-          "displayName": "Create a virtual machine",
+          "description": "Virtuele machines in een lab maken.",
+          "displayName": "Een virtuele machine maken",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/CreateEnvironment/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Claim a random claimable virtual machine in the lab.",
-          "displayName": "Claim Any Virtual Machine",
+          "description": "Een willekeurige claimbare virtuele machine in het lab claimen.",
+          "displayName": "Een virtuele machine claimen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ClaimAnyVm/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Exports the lab resource usage into a storage account",
-          "displayName": "Exports the lab resource usage into a storage account",
+          "description": "Hiermee wordt het labresourcegebruik naar een opslagaccount geëxporteerd",
+          "displayName": "Hiermee wordt het labresourcegebruik naar een opslagaccount geëxporteerd",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ExportResourceUsage/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Import a virtual machine into a different lab.",
-          "displayName": "Import a virtual machine",
+          "description": "Een virtuele machine importeren in een ander lab.",
+          "displayName": "Een virtuele machine importeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ImportVirtualMachine/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Ensure the current user has a valid profile in the lab.",
-          "displayName": "Ensure Current User Profile",
+          "description": "Controleren of de huidige gebruiker een geldig profiel in het lab heeft.",
+          "displayName": "Profiel van huidige gebruiker controleren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/EnsureCurrentUserProfile/action",
           "origin": null,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "displayName": "policies",
+      "displayName": "beleid",
       "name": "labs/policySets/policies",
       "operations": [
         {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "planningen",
       "name": "labs/schedules",
       "operations": [
         {
@@ -180,16 +180,16 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists all applicable schedules",
-          "displayName": "List all applicable schedules",
+          "description": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
+          "displayName": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/ListApplicable/action",
           "origin": null,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "planningen",
       "name": "schedules",
       "operations": [
         {
@@ -226,16 +226,16 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates a schedule's target resource Id.",
-          "displayName": "Retarget schedule.",
+          "description": "Hiermee wordt de doelresource-id van een schema bijgewerkt.",
+          "displayName": "Nieuw doel voor het schema instellen.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Retarget/action",
           "origin": null,
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "planningen",
       "name": "labs/virtualMachines/schedules",
       "operations": [
         {
@@ -272,8 +272,8 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/schedules/Execute/action",
           "origin": null,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "planningen",
       "name": "labs/users/serviceFabrics/schedules",
       "operations": [
         {
@@ -310,8 +310,8 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Een schema uitvoeren.",
+          "displayName": "Schema uitvoeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/schedules/Execute/action",
           "origin": null,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "displayName": "Artifact sources",
+      "displayName": "Artefactbronnen",
       "name": "labs/artifactSources",
       "operations": [
         {
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "displayName": "Artifacts",
+      "displayName": "Artefacten",
       "name": "labs/artifactSources/artifacts",
       "operations": [
         {
@@ -362,8 +362,8 @@
           "properties": null
         },
         {
-          "description": "Generates an ARM template for the given artifact, uploads the required files to a storage account, and validates the generated artifact.",
-          "displayName": "Generates an ARM template for the given artifact",
+          "description": "Hiermee wordt een ARM-sjabloon gegenereerd voor het betreffende artefact, worden de vereiste bestanden naar een opslagaccount geüpload en wordt het gegenereerde artefact gevalideerd.",
+          "displayName": "Hiermee wordt een ARM-sjabloon voor het betreffende artefact gegenereerd",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/artifactSources/artifacts/GenerateArmTemplate/action",
           "origin": null,
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "displayName": "gallery images",
+      "displayName": "galerieafbeeldingen",
       "name": "labs/galleryImages",
       "operations": [
         {
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "displayName": "custom images",
+      "displayName": "aangepaste installatiekopieën",
       "name": "labs/customImages",
       "operations": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "displayName": "virtual networks",
+      "displayName": "virtuele netwerken",
       "name": "labs/virtualNetworks",
       "operations": [
         {
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "displayName": "Virtual machines",
+      "displayName": "Virtuele machines",
       "name": "labs/virtualMachines",
       "operations": [
         {
@@ -474,112 +474,112 @@
           "properties": null
         },
         {
-          "description": "Attach a new or existing data disk to virtual machine.",
-          "displayName": "Add or attach a data disk",
+          "description": "Een nieuwe of bestaande gegevensschijf aan een virtuele machine koppelen.",
+          "displayName": "Een gegevensschijf toevoegen of koppelen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/AddDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Apply artifacts to virtual machine.",
-          "displayName": "Apply artifacts to virtual machine",
+          "description": "Artefacten op de virtuele machine toepassen.",
+          "displayName": "Artefacten op de virtuele machine toepassen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ApplyArtifacts/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Take ownership of an existing virtual machine",
-          "displayName": "Claim a virtual machine",
+          "description": "Eigendom overnemen van een bestaande virtuele machine",
+          "displayName": "Een virtuele machine claimen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Claim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Clears the artifact results of the virtual machine.",
-          "displayName": "Clear artifact results",
+          "description": "Hiermee worden de artefactresultaten van de virtuele machine gewist.",
+          "displayName": "Artefactresultaten wissen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ClearArtifactResults/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Detach the specified disk from the virtual machine.",
-          "displayName": "Detach the specified disk from the virtual machine",
+          "description": "Koppel de opgegeven schijf los van de virtuele machine.",
+          "displayName": "De opgegeven schijf loskoppelen van de virtuele machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/DetachDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets a string that represents the contents of the RDP file for the virtual machine",
-          "displayName": "Get RDP file contents",
+          "description": "Hiermee wordt een tekenreeks opgehaald die de inhoud van het RDP-bestand voor de virtuele machine vertegenwoordigt",
+          "displayName": "Inhoud van RDP-bestand ophalen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/GetRdpFileContents/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the applicable start/stop schedules, if any.",
-          "displayName": "List all applicable schedules",
+          "description": "Hier worden de van toepassing zijnde schema's voor starten/stoppen weergegeven, indien van toepassing.",
+          "displayName": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ListApplicableSchedules/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Redeploy a virtual machine",
-          "displayName": "Redeploy a virtual machine",
+          "description": "Een virtuele machine opnieuw implementeren",
+          "displayName": "Een virtuele machine opnieuw implementeren",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Redeploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Resize Virtual Machine.",
-          "displayName": "Resize Virtual Machine.",
+          "description": "De grootte van de virtuele machine aanpassen.",
+          "displayName": "De grootte van de virtuele machine aanpassen.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Resize/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Restart a virtual machine.",
-          "displayName": "Restart virtual machine",
+          "description": "Start een virtuele machine opnieuw.",
+          "displayName": "Virtuele machine opnieuw starten",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Restart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Start a virtual machine.",
-          "displayName": "Start virtual machine",
+          "description": "Een virtuele machine starten.",
+          "displayName": "Virtuele machine starten",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stop a virtual machine",
-          "displayName": "Stop virtual machine",
+          "description": "Een virtuele machine stoppen",
+          "displayName": "Virtuele machine stoppen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Transfers all data disks attached to the virtual machine to be owned by the current user.",
-          "displayName": "Transfer data disks to the current user.",
+          "description": "Hiermee worden alle gegevensschijven overgedragen die zijn gekoppeld aan de virtuele machine eigendom die eigendom moeten worden van de huidige gebruiker.",
+          "displayName": "Gegevensschijven overdragen naar de huidige gebruiker.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/TransferDisks/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Release ownership of an existing virtual machine",
-          "displayName": "Unclaim a virtual machine",
+          "description": "Eigendom van een bestaande virtuele machine vrijgeven",
+          "displayName": "Claim op een virtuele machine ongedaan maken",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/UnClaim/action",
           "origin": null,
@@ -588,7 +588,7 @@
       ]
     },
     {
-      "displayName": "Formulas",
+      "displayName": "Formules",
       "name": "labs/formulas",
       "operations": [
         {
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "displayName": "costs",
+      "displayName": "kosten",
       "name": "labs/costs",
       "operations": [
         {
@@ -668,16 +668,16 @@
           "properties": null
         },
         {
-          "description": "Attach and create the lease of the disk to the virtual machine.",
-          "displayName": "Attach disk",
+          "description": "Koppel en maak de lease van de schijf aan de virtuele machine.",
+          "displayName": "Schijf koppelen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Attach/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Detach and break the lease of the disk attached to the virtual machine.",
-          "displayName": "Detach and break the lease of the disk attached to the virtual machine",
+          "description": "De lease van de aan de virtuele machine gekoppelde schijf losmaken en verbreken.",
+          "displayName": "De lease van de aan de virtuele machine gekoppelde schijf losmaken en verbreken",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Detach/action",
           "origin": null,
@@ -686,7 +686,7 @@
       ]
     },
     {
-      "displayName": "user profiles",
+      "displayName": "gebruikersprofielen",
       "name": "labs/users",
       "operations": [
         {
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "displayName": "Notification Channels",
+      "displayName": "Meldingskanalen",
       "name": "labs/notificationChannels",
       "operations": [
         {
@@ -744,8 +744,8 @@
           "properties": null
         },
         {
-          "description": "Send notification to provided channel.",
-          "displayName": "Notify",
+          "description": "Verzend een melding naar het opgegeven kanaal.",
+          "displayName": "Melden",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/notificationChannels/Notify/action",
           "origin": null,
@@ -754,7 +754,7 @@
       ]
     },
     {
-      "displayName": "secrets",
+      "displayName": "geheimen",
       "name": "labs/users/secrets",
       "operations": [
         {
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "displayName": "operations",
+      "displayName": "bewerkingen",
       "name": "locations/operations",
       "operations": [
         {
@@ -798,7 +798,7 @@
       ]
     },
     {
-      "displayName": "Azure Resource Manager templates",
+      "displayName": "Azure Resource Manager-sjablonen",
       "name": "labs/artifactSources/armTemplates",
       "operations": [
         {
@@ -812,7 +812,7 @@
       ]
     },
     {
-      "displayName": "environments",
+      "displayName": "omgevingen",
       "name": "labs/users/environments",
       "operations": [
         {
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "displayName": "Service runners",
+      "displayName": "Servicerunners",
       "name": "labs/serviceRunners",
       "operations": [
         {
@@ -900,24 +900,24 @@
           "properties": null
         },
         {
-          "description": "Start a service fabric.",
-          "displayName": "Start service fabric",
+          "description": "Een service fabric starten.",
+          "displayName": "Service fabric starten",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stop a service fabric",
-          "displayName": "Stop service fabric",
+          "description": "Een service fabric stoppen.",
+          "displayName": "Service fabric stoppen",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the applicable start/stop schedules, if any.",
-          "displayName": "List all applicable schedules",
+          "description": "Hier worden de van toepassing zijnde schema's voor starten/stoppen weergegeven, indien van toepassing.",
+          "displayName": "Hiermee worden alle van toepassing zijnde schema's weergegeven",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/ListApplicableSchedules/action",
           "origin": null,
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "displayName": "Lab centers",
+      "displayName": "Labcenters",
       "name": "labCenters",
       "operations": [
         {
@@ -956,7 +956,7 @@
       ]
     },
     {
-      "displayName": "Virtual Machine Pools",
+      "displayName": "Virtuele-machinegroepen",
       "name": "labs/vmPools",
       "operations": [
         {
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "displayName": "Shared Galleries",
+      "displayName": "Gedeelde galerieën",
       "name": "labs/sharedGalleries",
       "operations": [
         {
@@ -1016,7 +1016,7 @@
       ]
     },
     {
-      "displayName": "Shared Images",
+      "displayName": "Gedeelde installatiekopieën",
       "name": "labs/sharedGalleries/sharedImages",
       "operations": [
         {
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "displayName": "Lab Secrets",
+      "displayName": "Labgeheimen",
       "name": "labs/secrets",
       "operations": [
         {
