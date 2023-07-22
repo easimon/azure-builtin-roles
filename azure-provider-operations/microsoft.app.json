@@ -546,8 +546,8 @@
           "properties": null
         },
         {
-          "description": "Stop a Container Apps Job's execution",
-          "displayName": "Stop a Container Apps Job's execution",
+          "description": "Stop multiple Container Apps Job executions",
+          "displayName": "Stop multiple Container Apps Job executions",
           "isDataAction": false,
           "name": "microsoft.app/jobs/stop/action",
           "origin": "user, system",
@@ -695,13 +695,27 @@
     },
     {
       "displayName": "Container App Source Control",
-      "name": "containerapps/sourcecontrols/operationresults",
+      "name": "locations/sourcecontroloperationstatuses",
+      "operations": [
+        {
+          "description": "Get a Container App Source Control Long Running Operation Status",
+          "displayName": "Read Container App Source Control Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/sourcecontroloperationstatuses/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Container App Source Control",
+      "name": "locations/sourcecontroloperationresults",
       "operations": [
         {
           "description": "Get Container App Source Control Long Running Operation Result",
           "displayName": "Get Container App Source Control Operation Result",
           "isDataAction": false,
-          "name": "microsoft.app/containerapps/sourcecontrols/operationresults/read",
+          "name": "microsoft.app/locations/sourcecontroloperationresults/read",
           "origin": "user, system",
           "properties": null
         }
