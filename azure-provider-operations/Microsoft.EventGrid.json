@@ -3660,6 +3660,74 @@
                   "sourceMdmAccount": "AzureEventGrid",
                   "sourceMdmNamespace": "ResourceMetricsV2",
                   "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "DropReason"
+                    }
+                  ],
+                  "displayDescription": "The number of dropped sessions by the namespace.",
+                  "displayName": "MQTT: Dropped Sessions",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "Mqtt.DroppedSessions",
+                  "isDimensionRequired": false,
+                  "name": "Mqtt.DroppedSessions",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetricsV2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [],
+                  "displayDescription": "The number of successful routed messages by the namespace.",
+                  "displayName": "MQTT: Successful Routed Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "Mqtt.SuccessfulRoutedMessages",
+                  "isDimensionRequired": false,
+                  "name": "Mqtt.SuccessfulRoutedMessages",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetricsV2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "Error"
+                    }
+                  ],
+                  "displayDescription": "The number of failed routed messages by the namespace.",
+                  "displayName": "MQTT: Failed Routed Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "Mqtt.FailedRoutedMessages",
+                  "isDimensionRequired": false,
+                  "name": "Mqtt.FailedRoutedMessages",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetricsV2",
+                  "unit": "Count"
                 }
               ]
             }
