@@ -732,50 +732,304 @@
       "name": "radioAccessNetworks",
       "operations": [
         {
-          "description": "Gets information about the specified RAN.",
-          "displayName": "RANs_Get",
+          "description": "Gets information about the specified radio access network.",
+          "displayName": "RadioAccessNetworks_Get",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/radioAccessNetworks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or updates a RAN.",
-          "displayName": "RANs_CreateOrUpdate",
+          "description": "Creates or updates a radio access network.",
+          "displayName": "RadioAccessNetworks_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/radioAccessNetworks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes the specified RAN.",
-          "displayName": "RANs_Delete",
+          "description": "Deletes the specified radio access network.",
+          "displayName": "RadioAccessNetworks_Delete",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/radioAccessNetworks/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates RAN tags.",
-          "displayName": "RANs_UpdateTags",
+          "description": "Updates a radio access network.",
+          "displayName": "RadioAccessNetworks_Update",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/radioAccessNetworks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets all the RANs in a subscription.",
-          "displayName": "RANs_ListBySubscription",
+          "description": "Gets all the radio access networks in a subscription.",
+          "displayName": "RadioAccessNetworks_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/radioAccessNetworks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets all the RANs in a resource group.",
-          "displayName": "RANs_ListByResourceGroup",
+          "description": "Gets all the radio access networks in a resource group.",
+          "displayName": "RadioAccessNetworks_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/radioAccessNetworks/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "mobileNetworks/edgeNetworkSecurityGroups",
+      "name": "mobileNetworks/edgeNetworkSecurityGroups",
+      "operations": [
+        {
+          "description": "Gets information about the specified Edge Network Security Group.",
+          "displayName": "EdgeNetworkSecurityGroups_Get",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/edgeNetworkSecurityGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Edge Network Security Group. Must be created in the same location as its parent mobile network.",
+          "displayName": "EdgeNetworkSecurityGroups_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/edgeNetworkSecurityGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Edge Network Security Group.",
+          "displayName": "EdgeNetworkSecurityGroups_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/edgeNetworkSecurityGroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates Edge Network Security Group.",
+          "displayName": "EdgeNetworkSecurityGroups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/edgeNetworkSecurityGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all Edge Network Security Groups in the mobile network.",
+          "displayName": "EdgeNetworkSecurityGroups_ListByMobileNetwork",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/edgeNetworkSecurityGroups/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/routingInfo",
+      "name": "packetCoreControlPlanes/routingInfo",
+      "operations": [
+        {
+          "description": "Get the routing information for the control plane access interface on the packet core.",
+          "displayName": "RoutingInfo_PacketCoreControlPlane",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/routingInfo/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "mobileNetworks/wifiSsids",
+      "name": "mobileNetworks/wifiSsids",
+      "operations": [
+        {
+          "description": "Gets information about the specified Wi-Fi SSID.",
+          "displayName": "WifiSsids_Get",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/wifiSsids/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Wi-Fi SSID. Must be created in the same location as its parent mobile network.",
+          "displayName": "WifiSsids_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/wifiSsids/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Wi-Fi SSID.",
+          "displayName": "WifiSsids_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/wifiSsids/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates Wi-Fi SSID.",
+          "displayName": "WifiSsids_Update",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/wifiSsids/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all Wi-Fi SSIDs in the mobile network.",
+          "displayName": "WifiSsids_ListByMobileNetwork",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/mobileNetworks/wifiSsids/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/ues",
+      "name": "packetCoreControlPlanes/ues",
+      "operations": [
+        {
+          "description": "List all UEs and their state in a packet core.",
+          "displayName": "UeInformation_List",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/ues/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/ues/extendedInformation",
+      "name": "packetCoreControlPlanes/ues/extendedInformation",
+      "operations": [
+        {
+          "description": "Gets extended information about the specified UE from the packet core.",
+          "displayName": "ExtendedUeInformation_Get",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/ues/extendedInformation/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/packetCoreDataPlanes/routingInfo",
+      "name": "packetCoreControlPlanes/packetCoreDataPlanes/routingInfo",
+      "operations": [
+        {
+          "description": "Get the routing information for the user plane access interface on the packet core.",
+          "displayName": "RoutingInfo_PacketCoreDataPlane",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/routingInfo/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks",
+      "name": "packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks",
+      "operations": [
+        {
+          "description": "Gets information about the specified Edge Virtual Network.",
+          "displayName": "EdgeVirtualNetworks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an Edge Virtual Network .",
+          "displayName": "EdgeVirtualNetworks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Edge Virtual Network.",
+          "displayName": "EdgeVirtualNetworks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update Edge Virtual Network resource.",
+          "displayName": "EdgeVirtualNetworks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all the Edge Virtual Networks in a resource group.",
+          "displayName": "EdgeVirtualNetworks_ListByPacketCoreDataPlane",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/edgeVirtualNetworks/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids",
+      "name": "packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids",
+      "operations": [
+        {
+          "description": "Gets information about the specified Wi-Fi Attached SSID.",
+          "displayName": "AttachedWifiSSIDs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an Wi-Fi Attached SSID. Must be created in the same location as its parent packet core data plane.",
+          "displayName": "AttachedWifiSSIDs_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Wi-Fi Attached SSID.",
+          "displayName": "AttachedWifiSSIDs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates an Wi-Fi Attached SSID.",
+          "displayName": "AttachedWifiSSIDs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets all the Wi-Fi Attached SSIDs associated with a packet core data plane.",
+          "displayName": "AttachedWifiSSIDs_ListByPacketCoreDataPlane",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/routingInfo",
+      "name": "packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/routingInfo",
+      "operations": [
+        {
+          "description": "Get the routing information for the user plane data interface corresponding to this attached DN.",
+          "displayName": "RoutingInfo_AttachedDataNetwork",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/routingInfo/read",
           "origin": null,
           "properties": null
         }
