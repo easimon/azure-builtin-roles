@@ -756,38 +756,154 @@
       ]
     },
     {
-      "displayName": "monitors/db2JobConfigurations",
-      "name": "monitors/db2JobConfigurations",
+      "displayName": "sapDiscoverySites",
+      "name": "sapDiscoverySites",
       "operations": [
         {
-          "description": "Gets a list of db2 job configurations for the specified subscription, resource group, and monitor name.",
-          "displayName": "Db2JobConfigurations_List",
+          "description": "Gets a SAP Migration discovery site resource.",
+          "displayName": "SAPDiscoverySites_Get",
           "isDataAction": false,
-          "name": "Microsoft.Workloads/monitors/db2JobConfigurations/read",
+          "name": "Microsoft.Workloads/sapDiscoverySites/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets db2 job configuration for the specified subscription, resource group, and monitor name.",
-          "displayName": "Db2JobConfigurations_Get",
+          "description": "Creates a discovery site for SAP Migration.",
+          "displayName": "SAPDiscoverySites_Create",
           "isDataAction": false,
-          "name": "Microsoft.Workloads/monitors/db2JobConfigurations/read",
+          "name": "Microsoft.Workloads/sapDiscoverySites/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates a db2 job configuration for the specified subscription, resource group, and monitor name.",
-          "displayName": "Db2JobConfigurations_Create",
+          "description": "Deletes a SAP Migration discovery site resource and its child resources, that is the associated SAP Instances and Server Instances.",
+          "displayName": "SAPDiscoverySites_Delete",
           "isDataAction": false,
-          "name": "Microsoft.Workloads/monitors/db2JobConfigurations/write",
+          "name": "Microsoft.Workloads/sapDiscoverySites/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes a db2 job configuration with the specified subscription, resource group, and monitor name.",
-          "displayName": "Db2JobConfigurations_Delete",
+          "description": "SAPDiscoverySites_Update.",
+          "displayName": "SAPDiscoverySites_Update",
           "isDataAction": false,
-          "name": "Microsoft.Workloads/monitors/db2JobConfigurations/delete",
+          "name": "Microsoft.Workloads/sapDiscoverySites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets all SAP Migration discovery site resources in a Resource Group.",
+          "displayName": "SAPDiscoverySites_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets all SAP Migration discovery site resources in a Subscription.",
+          "displayName": "SAPDiscoverySites_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Import a SAP Migration discovery site resource and it's child resources, that is the SAP instances and Server instances.",
+          "displayName": "SAPDiscoverySites_ImportEntities",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/importEntities/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sapDiscoverySites/sapInstances",
+      "name": "sapDiscoverySites/sapInstances",
+      "operations": [
+        {
+          "description": "Gets the SAP Instance resource.",
+          "displayName": "SAPInstances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the SAP Instance resource. <br><br>This will be used by service only. PUT operation on this resource by end user will return a Bad Request error.",
+          "displayName": "SAPInstances_Create",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the SAP Instance resource. <br><br>This will be used by service only. Delete operation on this resource by end user will return a Bad Request error. You can delete the parent resource, which is the SAP Migration discovery site resource, using the delete operation on it.",
+          "displayName": "SAPInstances_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the SAP Instance resource.",
+          "displayName": "SAPInstances_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the SAP Instance resources for the given SAP Migration discovery site resource.",
+          "displayName": "SAPInstances_List",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sapDiscoverySites/sapInstances/serverInstances",
+      "name": "sapDiscoverySites/sapInstances/serverInstances",
+      "operations": [
+        {
+          "description": "Gets the Server Instance resource.",
+          "displayName": "ServerInstances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/serverInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the Server Instance resource. <br><br>This will be used by service only. PUT operation on this resource by end user will return a Bad Request error.",
+          "displayName": "ServerInstances_Create",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/serverInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Server Instance resource. <br><br>This will be used by service only. Delete operation on this resource by end user will return a Bad Request error. You can delete the parent resource, which is the SAP Migration discovery site resource, using the delete operation on it.",
+          "displayName": "ServerInstances_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/serverInstances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Server Instance resource. This operation on a resource by end user will return a Bad Request error.",
+          "displayName": "ServerInstances_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/serverInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the Server Instance resources for the given SAP Instance resource.",
+          "displayName": "ServerInstances_List",
+          "isDataAction": false,
+          "name": "Microsoft.Workloads/sapDiscoverySites/sapInstances/serverInstances/read",
           "origin": null,
           "properties": null
         }
