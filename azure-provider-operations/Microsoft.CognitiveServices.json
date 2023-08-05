@@ -13825,6 +13825,22 @@
           "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes:query/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Performs a image-based search on the specified index. The request accepts either image Url or base64 encoded image string.",
+          "displayName": "SearchByImage",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes:querybyimage/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Performs a text-based search on the specified index.",
+          "displayName": "SearchByText",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes:querybytext/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -13833,10 +13849,26 @@
       "name": "accounts/ComputerVision/retrieval/indexes",
       "operations": [
         {
-          "description": "Delete an index.",
+          "description": "Deletes an index and all its associated ingestion documents.",
           "displayName": "DeleteIngestionIndex",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "This method creates an index, which can then be used to ingest documents.\r\nUpdates an index with the specified name.*",
+          "displayName": "CreateIndex|UpdateIndex*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Retrieves the index with the specified name.\r\nRetrieves a list of all indexes across all ingestions.*",
+          "displayName": "GetIndex|ListIndexes*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/read",
           "origin": "user",
           "properties": null
         }
@@ -15023,6 +15055,28 @@
           "displayName": "List whitelist features.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/features/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ingestions*",
+      "name": "accounts/ComputerVision/retrieval/indexes/ingestions",
+      "operations": [
+        {
+          "description": "Ingestion request can have either video or image payload at once, but not both.",
+          "displayName": "CreateIngestion",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/ingestions/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the ingestion status for the specified index and ingestion name.\r\nRetrieves all ingestions for the specific index.*",
+          "displayName": "GetIngestion|ListIngestions*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval/indexes/ingestions/read",
           "origin": "user",
           "properties": null
         }
