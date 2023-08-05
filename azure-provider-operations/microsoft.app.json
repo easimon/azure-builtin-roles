@@ -18,6 +18,14 @@
       "name": "microsoft.app/unregister/action",
       "origin": "user, system",
       "properties": null
+    },
+    {
+      "description": "Get Subscription Verification Id used for verifying custom domains",
+      "displayName": "Get Subscription Custom Domain Verification Id",
+      "isDataAction": false,
+      "name": "microsoft.app/getcustomdomainverificationid/action",
+      "origin": "user, system",
+      "properties": null
     }
   ],
   "resourceTypes": [
@@ -875,6 +883,34 @@
           "isDataAction": false,
           "name": "microsoft.app/connectedenvironments/certificates/delete",
           "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Quota Usages",
+      "name": "locations/usages",
+      "operations": [
+        {
+          "description": "Get Quota Usages in a Region",
+          "displayName": "Read Quota Usages",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/usages/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Quota Usages",
+      "name": "managedenvironments/usages",
+      "operations": [
+        {
+          "description": "Get Quota Usages in a Managed Environment",
+          "displayName": "Read Managed Environment Quota Usages",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/usages/read",
+          "origin": "user, system",
           "properties": null
         }
       ]
