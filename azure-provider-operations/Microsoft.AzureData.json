@@ -1,0 +1,86 @@
+{
+  "displayName": "Microsoft Azure Data",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.AzureData",
+  "name": "Microsoft.AzureData",
+  "operations": [
+    {
+      "description": "Register Subscription with Microsoft.AzureData resource provider",
+      "displayName": "Register Subscription for AzureData",
+      "isDataAction": false,
+      "name": "Microsoft.AzureData/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregister Subscription with Microsoft.AzureData resource provider",
+      "displayName": "Unregister Subscription for AzureData",
+      "isDataAction": false,
+      "name": "Microsoft.AzureData/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "SQL Server registration",
+      "name": "sqlServerRegistrations",
+      "operations": [
+        {
+          "description": "Retrive details of SQL Server registration",
+          "displayName": "Get SQL Server registration details",
+          "isDataAction": false,
+          "name": "Microsoft.AzureData/sqlServerRegistrations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a new or change properties of existing SQL Server registration",
+          "displayName": "Create a new or update existing SQL Server registration",
+          "isDataAction": false,
+          "name": "Microsoft.AzureData/sqlServerRegistrations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete existing SQL Server registration",
+          "displayName": "Delete existing SQL Server registration",
+          "isDataAction": false,
+          "name": "Microsoft.AzureData/sqlServerRegistrations/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Registered SQL Server",
+      "name": "sqlServerRegistrations/sqlServers",
+      "operations": [
+        {
+          "description": "Retrieve details of SQL Server",
+          "displayName": "Get SQL Server instance details",
+          "isDataAction": false,
+          "name": "Microsoft.AzureData/sqlServerRegistrations/sqlServers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a new or change properties of existing SQL Server",
+          "displayName": "Create new or update existing SQL Server",
+          "isDataAction": false,
+          "name": "Microsoft.AzureData/sqlServerRegistrations/sqlServers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete existing SQL Server ",
+          "displayName": "Delete existing SQL Server",
+          "isDataAction": false,
+          "name": "Microsoft.AzureData/sqlServerRegistrations/sqlServers/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}
