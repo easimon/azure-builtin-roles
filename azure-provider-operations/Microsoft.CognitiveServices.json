@@ -14005,30 +14005,6 @@
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/delete",
           "origin": "user",
           "properties": null
-        },
-        {
-          "description": "Updates a text blocklist, if blocklistName does not exist, create a new blocklist.",
-          "displayName": "Create Or Update Text Blocklist",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/write",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Deletes a text blocklist.",
-          "displayName": "Delete Text Blocklist By blocklistName",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/delete",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Get all text blocklists details.\r\nReturns text blocklist details.*",
-          "displayName": "Get All Text Blocklists|Get Text Blocklist By blocklistName*",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/read",
-          "origin": "user",
-          "properties": null
         }
       ]
     },
@@ -14039,14 +14015,6 @@
         {
           "description": "Get blockItem By blockItemId from a text blocklist.",
           "displayName": "Get or List BlockItems from a Text Blocklist",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/blockitems/read",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Get all blockItems in a text blocklist\r\nGet blockItem By blockItemId from a text blocklist.*",
-          "displayName": "Get All BlockItems By blocklistName|Get BlockItem By blocklistName And blockItemId*",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists/blockitems/read",
           "origin": "user",
@@ -14297,34 +14265,6 @@
       ]
     },
     {
-      "displayName": "text*",
-      "name": "accounts/ContentSafety/text",
-      "operations": [
-        {
-          "description": "Remove blockItems from a text blocklist. You can remove at most 100 BlockItems in one request.",
-          "displayName": "Remove BlockItems From Text Blocklist",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists:removeblockitems/action",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "blocklists:addblockitems*",
-      "name": "accounts/ContentSafety/text/blocklists:addblockitems",
-      "operations": [
-        {
-          "description": "Add blockItems to a text blocklist. You can add at most 100 BlockItems in one request.",
-          "displayName": "Add BlockItems To Text Blocklist",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/blocklists:addblockitems/write",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "projects*",
       "name": "accounts/ContentSafety/projects",
       "operations": [
@@ -14355,98 +14295,56 @@
       ]
     },
     {
-      "displayName": "deployhistory*",
-      "name": "accounts/ContentSafety/projects/deployhistory",
-      "operations": [
-        {
-          "description": "List deployment history of a project.",
-          "displayName": "List deployment history of a project.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/deployhistory/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "rejectcounts*",
-      "name": "accounts/ContentSafety/metrics/rejectcounts",
-      "operations": [
-        {
-          "description": "List API reject counts at different timestamps given a time range. Default maxpagesize is 1000.",
-          "displayName": "List API reject counts at different timestamps given a time range.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/rejectcounts/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "requestcounts*",
-      "name": "accounts/ContentSafety/metrics/categories/severities/requestcounts",
-      "operations": [
-        {
-          "description": "List API request count at different timestamps of a specific category and a specific severity given a time range",
-          "displayName": "List API request count at different timestamps of a specific category and a specific severity given a time range",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/categories/severities/requestcounts/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "requestcounts*",
-      "name": "accounts/ContentSafety/metrics/requestcounts",
+      "displayName": "request counts",
+      "name": "accounts/ContentSafety/metrics/requestCounts",
       "operations": [
         {
           "description": "List API request counts at different timestamps given a time range. Default maxpagesize is 1000.",
-          "displayName": "List API request counts at different timestamps given a time range.",
+          "displayName": "List API Request Counts At Different Timestamps Given A Time Range.",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/requestcounts/read",
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/requestCounts/read",
           "origin": "user",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "requestlatencies*",
-      "name": "accounts/ContentSafety/metrics/requestlatencies",
+      "displayName": "request latencies",
+      "name": "accounts/ContentSafety/metrics/requestLatencies",
       "operations": [
         {
           "description": "List API request latencies at different timestamps given a time range. Default maxpagesize is 1000.",
-          "displayName": "List API request latencies at different timestamps given a time range.",
+          "displayName": "List API Request Latencies At Different Timestamps Given A Time Range.",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/requestlatencies/read",
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/requestLatencies/read",
           "origin": "user",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "blocklisttopterms*",
-      "name": "accounts/ContentSafety/metrics/blocklisttopterms",
+      "displayName": "blocklist top terms",
+      "name": "accounts/ContentSafety/metrics/blocklistTopTerms",
       "operations": [
         {
           "description": "List top terms hit in blocklist at different timestamps.",
-          "displayName": "List top terms hit in blocklist at different timestamps.",
+          "displayName": "List Top Terms Hit In Blocklist At Different Timestamps.",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklisttopterms/read",
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklistTopTerms/read",
           "origin": "user",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "blocklisthitcalls*",
-      "name": "accounts/ContentSafety/metrics/blocklisthitcalls",
+      "displayName": "blocklist hit calls*",
+      "name": "accounts/ContentSafety/metrics/blocklistHitCalls",
       "operations": [
         {
           "description": "Show blocklist hit request count at different timestamps.",
-          "displayName": "Show blocklist hit request count at different timestamps.",
+          "displayName": "Show Blocklist Hit Request Count At Different Timestamps.",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklisthitcalls/read",
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/blocklistHitCalls/read",
           "origin": "user",
           "properties": null
         }
@@ -15201,6 +15099,34 @@
           "displayName": "Get Batch Status (Internal)",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ComputerVision/batch/status/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "request counts for categories",
+      "name": "accounts/ContentSafety/metrics/categories/requestCounts",
+      "operations": [
+        {
+          "description": "List API request count at different timestamps of a specific category given a time range.",
+          "displayName": "List API Request Count At Different Timestamps Of A Specific Category Given A Time Range.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/categories/requestCounts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "whitelist features",
+      "name": "accounts/ContentSafety/whitelist/features",
+      "operations": [
+        {
+          "description": "Get whitelist features.",
+          "displayName": "List Whitelist Features.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/whitelist/features/read",
           "origin": "user",
           "properties": null
         }
