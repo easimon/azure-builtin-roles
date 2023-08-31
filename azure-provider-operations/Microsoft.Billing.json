@@ -293,7 +293,7 @@
       "operations": [
         {
           "description": null,
-          "displayName": "List/Get Customer(s)",
+          "displayName": "Get Customer by Id on Billing Account Scope",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/customers/read",
           "origin": null,
@@ -1666,8 +1666,8 @@
       "name": "billingAccounts/billingProfiles/validateRefundEligibility",
       "operations": [
         {
-          "description": null,
-          "displayName": "Validate Refund Eligibility for a Billing Profile",
+          "description": "Validates whether the billing profile has any invoices eligible for an expedited refund. The operation is supported for billing accounts with the agreement type Microsoft Customer Agreement and the account type Individual.",
+          "displayName": "BillingProfiles_ValidateRefundEligibility",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/validateRefundEligibility/write",
           "origin": null,
@@ -1726,6 +1726,34 @@
           "displayName": "promotions_get",
           "isDataAction": false,
           "name": "Microsoft.Billing/promotions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Accounts",
+      "name": "billingAccounts/addPaymentTerms",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Add payment terms",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/addPaymentTerms/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Accounts",
+      "name": "billingAccounts/cancelPaymentTerms",
+      "operations": [
+        {
+          "description": null,
+          "displayName": "Cancel payment terms",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/cancelPaymentTerms/write",
           "origin": null,
           "properties": null
         }
