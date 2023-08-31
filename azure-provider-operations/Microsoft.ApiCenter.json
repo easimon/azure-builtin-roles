@@ -122,52 +122,6 @@
       ]
     },
     {
-      "displayName": "Api Deployment",
-      "name": "services/workspaces/apis/versions/deployments",
-      "operations": [
-        {
-          "description": "Creates or updates API Deployment.",
-          "displayName": "Create or Update API Deployment.",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/deployments/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Checks if specified API Deployment exists.",
-          "displayName": "Check API Deployment exists.",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/deployments/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Returns the details of the specified API deployment.",
-          "displayName": "Get Api Deployment",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/deployments/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Returns paginated collection of API deployments.",
-          "displayName": "List API deployments",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/deployments/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Deletes specified API deployment.",
-          "displayName": "Delete API deployment.",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/deployments/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "API Environments",
       "name": "services/workspaces/environments",
       "operations": [
@@ -206,33 +160,9 @@
       ]
     },
     {
-      "displayName": "API",
+      "displayName": "ApiVersion",
       "name": "services/workspaces/apis/versions",
       "operations": [
-        {
-          "description": "Exports API specification file.",
-          "displayName": "Export API specification",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/exportSpecification/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Imports API specification file.",
-          "displayName": "Import API specification",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/importSpecification/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Imports API Specification file.",
-          "displayName": "Import API Specification",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/importSpecification/action",
-          "origin": "user, system",
-          "properties": null
-        },
         {
           "description": "Creates or updates API version.",
           "displayName": "Create or Update API version.",
@@ -390,6 +320,112 @@
           "displayName": "Read all resource types available for Microsoft.ApiCenter resource provider",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/resourceTypes/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Spec",
+      "name": "services/workspaces/apis/versions/definitions",
+      "operations": [
+        {
+          "description": "Exports API definition file.",
+          "displayName": "Export API definition",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/exportSpecification/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks status of individual import operation",
+          "displayName": "Import API definition status check",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/importSpecification/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Imports API definition file.",
+          "displayName": "Import API definition",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/importSpecification/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates API Spec.",
+          "displayName": "Create or Update API Spec.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified API definition.",
+          "displayName": "Delete API definition.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API definition",
+      "name": "services/workspaces/apis/versions/definition",
+      "operations": [
+        {
+          "description": "Returns the details of the specified API definition.",
+          "displayName": "Get API definition",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definition/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API Deployment",
+      "name": "services/workspaces/apis/deployments",
+      "operations": [
+        {
+          "description": "Creates or updates API Deployment.",
+          "displayName": "Create or Update API Deployment.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks if specified API Deployment exists.",
+          "displayName": "Check API Deployment exists.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified API deployment.",
+          "displayName": "Get API Deployment",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of API deployments.",
+          "displayName": "List API deployments",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified API deployment.",
+          "displayName": "Delete API deployment.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/delete",
           "origin": "user, system",
           "properties": null
         }
