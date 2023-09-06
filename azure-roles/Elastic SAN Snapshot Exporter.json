@@ -1,0 +1,34 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "description": "Allows for creating and exporting Snapshot of Elastic San Volume",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/1c4770c0-34f7-4110-a1ea-a5855cc7a939",
+  "name": "1c4770c0-34f7-4110-a1ea-a5855cc7a939",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ElasticSan/elasticSans/*/read",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/snapshots/write",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/snapshots/delete",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/snapshots/beginGetAccess/action",
+        "Microsoft.ElasticSan/locations/*",
+        "Microsoft.Compute/locations/*",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Compute/disks/delete",
+        "Microsoft.Compute/snapshots/read",
+        "Microsoft.Compute/snapshots/write",
+        "Microsoft.Compute/snapshots/delete"
+      ],
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Elastic SAN Snapshot Exporter",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions"
+}
