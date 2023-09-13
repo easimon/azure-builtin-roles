@@ -2,6 +2,8 @@
   "assignableScopes": [
     "/"
   ],
+  "createdBy": null,
+  "createdOn": "2020-07-02T17:53:05.572829+00:00",
   "description": "Allows read-only access to see most objects in a namespace. It does not allow viewing roles or role bindings. This role does not allow viewing Secrets, since reading the contents of Secrets enables access to ServiceAccount credentials in the namespace, which would allow API access as any ServiceAccount in the namespace (a form of privilege escalation). Applying this role at cluster scope will give access across all namespaces.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/7f6c6a51-bcf8-42ba-9220-52d62157d7db",
   "name": "7f6c6a51-bcf8-42ba-9220-52d62157d7db",
@@ -13,6 +15,8 @@
         "Microsoft.Resources/subscriptions/read",
         "Microsoft.Resources/subscriptions/resourceGroups/read"
       ],
+      "condition": null,
+      "conditionVersion": null,
       "dataActions": [
         "Microsoft.ContainerService/managedClusters/apps/controllerrevisions/read",
         "Microsoft.ContainerService/managedClusters/apps/daemonsets/read",
@@ -52,5 +56,7 @@
   ],
   "roleName": "Azure Kubernetes Service RBAC Reader",
   "roleType": "BuiltInRole",
-  "type": "Microsoft.Authorization/roleDefinitions"
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2023-04-26T15:25:34.683267+00:00"
 }
