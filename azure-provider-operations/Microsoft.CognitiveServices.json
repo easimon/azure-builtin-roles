@@ -1451,6 +1451,62 @@
           "name": "Microsoft.CognitiveServices/accounts/ComputerVision/imageanalysis:segment/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Run the image rectification operation against an image with 4 control points provided in the parameter.",
+          "displayName": "ImageComposition_Rectify",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/imagecomposition:rectify/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Run the image stitching operation against a sequence of images.",
+          "displayName": "ImageComposition_Stitch",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/imagecomposition:stitch/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Cancel model training.",
+          "displayName": "CancelModelTraining",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/models:cancel/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Run the planogram matching operation against a planogram and a product understanding result.",
+          "displayName": "PlanogramCompliance_Match",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/planogramcompliance:match/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Return vector from an image.",
+          "displayName": "VectorizeImage",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval:vectorizeimage/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Return vector from a text.",
+          "displayName": "VectorizeText",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/retrieval:vectorizetext/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Perform grounding on the input image with the generated text.",
+          "displayName": "Infer",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/grounding/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -15185,6 +15241,66 @@
           "displayName": "List API Reject Counts At Different Timestamps Given A Time Range.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/metrics/rejectCounts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "evaluations*",
+      "name": "accounts/ComputerVision/models/evaluations",
+      "operations": [
+        {
+          "description": "Evaluate an existing model.",
+          "displayName": "EvaluateModel",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/models/evaluations/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a model evaluation. A model evaluation can be deleted if it is in the 'Succeeded' or 'Failed' states.",
+          "displayName": "DeleteModelEvaluation",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/models/evaluations/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get information about a specific model evaluation.\r\nGet a list of the available evaluations for a model.*",
+          "displayName": "GetModelEvaluation|GetModelEvaluations*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/models/evaluations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "runs*",
+      "name": "accounts/ComputerVision/productrecognition/runs",
+      "operations": [
+        {
+          "description": "Run the product recognition against a model with an image.",
+          "displayName": "ProductRecognition_Create",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/productrecognition/runs/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a product recognition run. A product recognition run can be deleted if it is in the 'Succeeded' or 'Failed' states.",
+          "displayName": "ProductRecognition_Delete",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/productrecognition/runs/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get information about a specific product recognition run.\r\nList all product recognition run of a model.*",
+          "displayName": "ProductRecognition_Get|ProductRecognition_List*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ComputerVision/productrecognition/runs/read",
           "origin": "user",
           "properties": null
         }
