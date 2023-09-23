@@ -7061,130 +7061,6 @@
       ]
     },
     {
-      "displayName": "Graph",
-      "name": "databaseAccounts/graphs",
-      "operations": [
-        {
-          "description": "Create a Graph.",
-          "displayName": "Write Graph",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Read a Graph or list all the graphs.",
-          "displayName": "Read graph(s)",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a Graph.",
-          "displayName": "Delete Graph",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Graph",
-      "name": "databaseAccounts/graphs/operationResults",
-      "operations": [
-        {
-          "description": "Read status of the asynchronous operation.",
-          "displayName": "Read operation results",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/operationResults/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Graph throughput setting",
-      "name": "databaseAccounts/graphs/throughputSettings",
-      "operations": [
-        {
-          "description": "Update a Graph throughput.",
-          "displayName": "Write Graph throughput",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Read a Graph throughput.",
-          "displayName": "Read Graph throughput",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Migrate Graph offer to autoscale.",
-          "displayName": "Migrate Graph offer to autoscale",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/migrateToAutoscale/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Migrate a Graph throughput offer to manual throughput.",
-          "displayName": "Migrate a Graph throughput offer to manual throughput",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/migrateToManualThroughput/action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Graph throughput setting",
-      "name": "databaseAccounts/graphs/throughputSettings/operationResults",
-      "operations": [
-        {
-          "description": "Read status of the asynchronous operation.",
-          "displayName": "Read operation results",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/operationResults/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Graph throughput setting",
-      "name": "databaseAccounts/graphs/throughputSettings/migrateToAutoscale/operationResults",
-      "operations": [
-        {
-          "description": "Read status of the asynchronous operation.",
-          "displayName": "Read operation results",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/migrateToAutoscale/operationResults/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Graph throughput setting",
-      "name": "databaseAccounts/graphs/throughputSettings/migrateToManualThroughput/operationResults",
-      "operations": [
-        {
-          "description": "Read status of the asynchronous operation.",
-          "displayName": "Read operation results",
-          "isDataAction": false,
-          "name": "Microsoft.DocumentDB/databaseAccounts/graphs/throughputSettings/migrateToManualThroughput/operationResults/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "SQL Container",
       "name": "databaseAccounts/sqlDatabases/containers/partitionMerge/operationResults",
       "operations": [
@@ -7311,6 +7187,194 @@
           "displayName": "Microsoft.DocumentDB/databaseAccounts/networkSecurityPerimeterConfigurations/read",
           "isDataAction": false,
           "name": "Microsoft.DocumentDB/databaseAccounts/networkSecurityPerimeterConfigurations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mongo Cluster",
+      "name": "mongoClusters",
+      "operations": [
+        {
+          "description": "Reads a Mongo Cluster or list all Mongo Clusters.",
+          "displayName": "Read Mongo Clusters",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update the properties or tags of the specified Mongo Cluster.",
+          "displayName": "Create or Update Mongo Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Mongo Cluster.",
+          "displayName": "Deletes a Mongo Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Manage a private endpoint connection of Mongo Cluster",
+          "displayName": "Approve Mongo Cluster Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/PrivateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List connection strings for a given Mongo Cluster",
+          "displayName": "List Mongo Cluster Connection Strings",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/listConnectionStrings/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mongo Cluster Firewall Rule",
+      "name": "mongoClusters/firewallRules",
+      "operations": [
+        {
+          "description": "Reads a firewall rule or lists all firewall rules for the specified Mongo Cluster.",
+          "displayName": "Read Mongo Cluster Firewall Rules",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/firewallRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update a firewall rule on a specified Mongo Cluster.",
+          "displayName": "Create/Update Mongo Cluster Firewall Rule",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/firewallRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing firewall rule for the specified Mongo Cluster.",
+          "displayName": "Delete Mongo Cluster Firewall Rule",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/firewallRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mongo Cluster Users",
+      "name": "mongoClusters/users",
+      "operations": [
+        {
+          "description": "Reads a user or lists all users for the specified Mongo Cluster.",
+          "displayName": "Read Mongo Cluster Users",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/users/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update a user on a specified Mongo Cluster.",
+          "displayName": "Create/Update Mongo Cluster User",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/users/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing user for the specified Mongo Cluster.",
+          "displayName": "Delete Mongo Cluster User",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/users/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mongo Cluster Private Endpoint Connection Proxies",
+      "name": "mongoClusters/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Reads a private endpoint connection proxy for the specified Mongo Cluster.",
+          "displayName": "Read Mongo Cluster Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnectionProxies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update a private endpoint connection proxy on a specified Mongo Cluster.",
+          "displayName": "Create/Update Mongo Cluster Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnectionProxies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection proxy for the specified Mongo Cluster.",
+          "displayName": "Delete Mongo Cluster Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnectionProxies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates private endpoint connection proxy for the specified Mongo Cluster.",
+          "displayName": "Validate Mongo Cluster Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnectionProxies/validate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mongo Cluster Private Link Resources",
+      "name": "mongoClusters/privateLinkResources",
+      "operations": [
+        {
+          "description": "Reads a private link resource or lists all private link resource for the specified Mongo Cluster.",
+          "displayName": "Read Private Link Resources",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Mongo Cluster Private Endpoint Connections",
+      "name": "mongoClusters/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Reads a private endpoint connection or lists all private endpoint connection for the specified Mongo Cluster.",
+          "displayName": "Read Mongo Cluster Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update a private endpoint connection on a specified Mongo Cluster.",
+          "displayName": "Create/Update Mongo Cluster Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection for the specified Mongo Cluster.",
+          "displayName": "Delete Mongo Cluster Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.DocumentDB/mongoClusters/privateEndpointConnections/delete",
           "origin": null,
           "properties": null
         }
