@@ -10,14 +10,6 @@
       "name": "Microsoft.Storage/register/action",
       "origin": null,
       "properties": null
-    },
-    {
-      "description": null,
-      "displayName": null,
-      "isDataAction": false,
-      "name": "Microsoft.Storage/register/action",
-      "origin": null,
-      "properties": null
     }
   ],
   "resourceTypes": [
@@ -38,14 +30,6 @@
           "displayName": null,
           "isDataAction": false,
           "name": "Microsoft.Storage/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": null,
-          "displayName": null,
-          "isDataAction": false,
-          "name": "Microsoft.Storage/locations/previewActions/action",
           "origin": null,
           "properties": null
         }
@@ -2353,14 +2337,6 @@
       "name": "operations",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
-          "isDataAction": false,
-          "name": "Microsoft.Storage/operations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Polls the status of an asynchronous operation.",
           "displayName": "Poll Asynchronous Operation",
           "isDataAction": false,
@@ -3261,6 +3237,14 @@
           "properties": null
         },
         {
+          "description": "List run statuses of a storage task",
+          "displayName": "List Storage Task Run Reports",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/executionsummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "List all storage task assignments of a storage task",
           "displayName": "List Storage Task Assignments by Storage Task",
           "isDataAction": false,
@@ -3376,13 +3360,13 @@
     },
     {
       "displayName": "",
-      "name": "storageAccounts/storageTaskAssignments",
+      "name": "storageAccounts/storageTasks",
       "operations": [
         {
           "description": null,
           "displayName": null,
           "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/storageTaskAssignments/delete",
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/delete",
           "origin": null,
           "properties": null
         },
@@ -3390,7 +3374,7 @@
           "description": null,
           "displayName": null,
           "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/storageTaskAssignments/read",
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/read",
           "origin": null,
           "properties": null
         },
@@ -3398,35 +3382,23 @@
           "description": null,
           "displayName": null,
           "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/storageTaskAssignments/write",
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/executionsummary/action",
           "origin": null,
           "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "",
-      "name": "storageAccounts/reports",
-      "operations": [
+        },
         {
           "description": null,
           "displayName": null,
           "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/reports/read",
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/assignmentexecutionsummary/action",
           "origin": null,
           "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "",
-      "name": "storageAccounts/storageTaskAssignments/reports",
-      "operations": [
+        },
         {
           "description": null,
           "displayName": null,
           "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/storageTaskAssignments/reports/read",
+          "name": "Microsoft.Storage/storageAccounts/storageTasks/write",
           "origin": null,
           "properties": null
         }
