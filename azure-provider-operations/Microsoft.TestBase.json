@@ -632,7 +632,7 @@
       "name": "testBaseAccounts/draftPackages",
       "operations": [
         {
-          "description": "Lists all the draft packages under a Test Base Account.",
+          "description": "Lists all the draft packages under a test base account.",
           "displayName": "DraftPackages_ListByTestBaseAccount",
           "isDataAction": false,
           "name": "Microsoft.TestBase/testBaseAccounts/draftPackages/read",
@@ -709,6 +709,14 @@
       "displayName": "testBaseAccounts/actionRequests",
       "name": "testBaseAccounts/actionRequests",
       "operations": [
+        {
+          "description": "Get the action request under the specified test base account.",
+          "displayName": "ActionRequests_Get",
+          "isDataAction": false,
+          "name": "Microsoft.TestBase/testBaseAccounts/actionRequests/read",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Create (submit) an action request.",
           "displayName": "ActionRequests_Put",
@@ -824,7 +832,7 @@
           "properties": null
         },
         {
-          "description": "Gets a Test Base Custom Image.",
+          "description": "Gets a test base custom image.",
           "displayName": "CustomImages_Get",
           "isDataAction": false,
           "name": "Microsoft.TestBase/testBaseAccounts/customImages/read",
@@ -854,7 +862,7 @@
       "name": "testBaseAccounts/vhds",
       "operations": [
         {
-          "description": "Lists all the VHDs under a Test Base Account.",
+          "description": "Lists all the VHDs under a test base account.",
           "displayName": "VHDs_ListByTestBaseAccount",
           "isDataAction": false,
           "name": "Microsoft.TestBase/testBaseAccounts/vhds/read",
@@ -986,6 +994,28 @@
           "displayName": "ChatSession_Chat",
           "isDataAction": false,
           "name": "Microsoft.TestBase/testBaseAccounts/chatSessions/chat/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "testBaseAccounts/freeHourBalances",
+      "name": "testBaseAccounts/freeHourBalances",
+      "operations": [
+        {
+          "description": "Return the Test Base free hour balances list.",
+          "displayName": "FreeHourBalances_List",
+          "isDataAction": false,
+          "name": "Microsoft.TestBase/testBaseAccounts/freeHourBalances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Return the Test Base free hour balance.",
+          "displayName": "FreeHourBalances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.TestBase/testBaseAccounts/freeHourBalances/read",
           "origin": null,
           "properties": null
         }
