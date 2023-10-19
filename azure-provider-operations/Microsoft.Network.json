@@ -11488,6 +11488,22 @@
           "name": "Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Attaches Web application firewall policy to application gateway for containers",
+          "displayName": "Attaches Web application firewall policy to application gateway for containers",
+          "isDataAction": false,
+          "name": "Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/attachWafPolicyToAgc/action",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Detaches Web application firewall policy from application gateway for containers",
+          "displayName": "Detaches Web application firewall policy from application gateway for containers",
+          "isDataAction": false,
+          "name": "Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/detachWafPolicyFromAgc/action",
+          "origin": "system",
+          "properties": null
         }
       ]
     },
@@ -15921,6 +15937,264 @@
           "displayName": "Gets Packet Tagging",
           "isDataAction": false,
           "name": "Microsoft.Network/locations/getPacketTagging/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Watcher",
+      "name": "networkWatchers/ipFlowVerify",
+      "operations": [
+        {
+          "description": "Returns whether the packet is allowed or denied to or from a particular destination.",
+          "displayName": "Verify Ip Flow",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkWatchers/ipFlowVerify/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Watcher",
+      "name": "networkWatchers/nextHop",
+      "operations": [
+        {
+          "description": "For a specified target and destination IP address, return the next hop type and next hope IP address.",
+          "displayName": "Gets the next hop from a VM",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkWatchers/nextHop/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Watcher",
+      "name": "networkWatchers/networkConfigurationDiagnostic",
+      "operations": [
+        {
+          "description": "Diagnostic of network configuration.",
+          "displayName": "Network Configuration Diagnostic",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkWatchers/networkConfigurationDiagnostic/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Watcher",
+      "name": "networkWatchers/connectivityCheck",
+      "operations": [
+        {
+          "description": "Verifies the possibility of establishing a direct TCP connection from a virtual machine to a given endpoint including another VM or an arbitrary remote server.",
+          "displayName": "Check Connectivity",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkWatchers/connectivityCheck/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DNS record set of type DS",
+      "name": "dnszones/DS",
+      "operations": [
+        {
+          "description": "Gets DNS record set of type DS",
+          "displayName": "Gets DNS record set of type DS",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/DS/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates DNS record set of type DS",
+          "displayName": "Creates or updates DNS record set of type DS",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/DS/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the DNS record set of type DS",
+          "displayName": "Deletes the DNS record set of type DS",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/DS/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DNS record set of type TLSA",
+      "name": "dnszones/TLSA",
+      "operations": [
+        {
+          "description": "Gets DNS record set of type TLSA",
+          "displayName": "Gets DNS record set of type TLSA",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/TLSA/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates DNS record set of type TLSA",
+          "displayName": "Creates or updates DNS record set of type TLSA",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/TLSA/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the DNS record set of type TLSA",
+          "displayName": "Deletes the DNS record set of type TLSA",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/TLSA/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DNSSEC configuration for a DNS zone",
+      "name": "dnszones/dnssecConfigs/default",
+      "operations": [
+        {
+          "description": "Gets the DNSSEC configuration for a DNS zone",
+          "displayName": "Gets the DNSSEC configuration for a DNS zone",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/dnssecConfigs/default/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the DNSSEC configuration for a DNS zone",
+          "displayName": "Creates or updates the DNSSEC configuration for a DNS zone",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/dnssecConfigs/default/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the DNSSEC configuration for a DNS zone",
+          "displayName": "Deletes the DNSSEC configuration for a DNS zone",
+          "isDataAction": false,
+          "name": "Microsoft.Network/dnszones/dnssecConfigs/default/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ConnectionPolicy",
+      "name": "virtualHubs/connectionPolicies",
+      "operations": [
+        {
+          "description": "Gets Connection Policy child resource of Virtual Hub",
+          "displayName": "Gets Connection Policy child resource of Virtual Hub",
+          "isDataAction": false,
+          "name": "Microsoft.Network/virtualHubs/connectionPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates Connection Policy child resource of Virtual Hub",
+          "displayName": "Creates or Updates Connection Policy child resource of Virtual Hub",
+          "isDataAction": false,
+          "name": "Microsoft.Network/virtualHubs/connectionPolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Connection Policy child resource of Virtual Hub",
+          "displayName": "Deletes Connection Policy child resource of Virtual Hub",
+          "isDataAction": false,
+          "name": "Microsoft.Network/virtualHubs/connectionPolicies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ipam Pool",
+      "name": "networkManagers/ipamPools",
+      "operations": [
+        {
+          "description": "Gets a Ipam Pool",
+          "displayName": "Gets a Ipam Pool",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/ipamPools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a Ipam Pool",
+          "displayName": "Creates or Updates a Ipam Pool",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/ipamPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Ipam Pool",
+          "displayName": "Deletes a Ipam Pool",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/ipamPools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action permission for associate resources to Ipam Pool",
+          "displayName": "Associate resources to Ipam Pool",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Action permission for list Associated Resource To Ipam Pool",
+          "displayName": "List Associated Resource To Ipam Pool",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/ipamPools/associatedResources/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ipam Pool",
+      "name": "networkManagers/associatedResources",
+      "operations": [
+        {
+          "description": "Permission for calling List Associated Resource To Ipam Pool operation. This read permission, not associatedResources/action, is required to call List Ipam Pool Associated Resources.",
+          "displayName": "List Associated Resource To Ipam Pool Permission",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkManagers/associatedResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Firewall",
+      "name": "azureFirewalls/providers/Microsoft.Insights/DiagnosticSettings",
+      "operations": [
+        {
+          "description": "Get the diagnostic settings of Azure Firewalls",
+          "displayName": "Get diagnostic settings of Azure Firewalls",
+          "isDataAction": false,
+          "name": "Microsoft.Network/azureFirewalls/providers/Microsoft.Insights/DiagnosticSettings/Read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the diagnostic settings of Azure Firewalls",
+          "displayName": "Create or update diagnostic settings of Azure Firewalls",
+          "isDataAction": false,
+          "name": "Microsoft.Network/azureFirewalls/providers/Microsoft.Insights/DiagnosticSettings/Write",
           "origin": "system",
           "properties": null
         }
