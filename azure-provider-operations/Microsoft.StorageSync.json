@@ -469,6 +469,37 @@
                   "unit": "Bytes"
                 },
                 {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Sync Group Name",
+                      "name": "SyncGroupName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Server Name",
+                      "name": "ServerName",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Server Endpoint Name",
+                      "name": "ServerEndpointName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Indicates if the server endpoint is in low disk space mode or not (1=yes; 0=no)",
+                  "displayName": "Cloud tiering low disk space mode",
+                  "fillGapWithZero": false,
+                  "name": "StorageSyncLowDiskModeCount",
+                  "supportedAggregationTypes": [
+                    "Count",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
                   "aggregationType": "Average",
                   "dimensions": [
                     {
