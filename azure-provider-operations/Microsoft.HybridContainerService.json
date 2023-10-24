@@ -72,6 +72,30 @@
           "name": "Microsoft.HybridContainerService/provisionedClusters/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Upgrading the node image version of a cluster applies the newest OS and runtime updates to the nodes.",
+          "displayName": "ProvisionedClusters_UpgradeNodeImageVersionForEntireCluster",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/upgradeNodeImageVersionForEntireCluster/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the AAD user credentials of a provisioned cluster used only in direct mode.",
+          "displayName": "ProvisionedClusters_ListClusterUserCredentials",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/listClusterUserCredential/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the admin credentials of a provisioned cluster used only in direct mode.",
+          "displayName": "ProvisionedClusters_ListClusterAdminCredentials",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/listClusterAdminCredential/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -298,6 +322,256 @@
           "displayName": "read_Operations",
           "isDataAction": false,
           "name": "Microsoft.HybridContainerService/Operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusters/upgradeProfiles",
+      "name": "provisionedClusters/upgradeProfiles",
+      "operations": [
+        {
+          "description": "read upgradeProfiles",
+          "displayName": "ProvisionedClusters_GetUpgradeProfile",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusters/upgradeProfiles/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "kubernetesVersions",
+      "name": "kubernetesVersions",
+      "operations": [
+        {
+          "description": "Gets the supported kubernetes versions from the underlying custom location",
+          "displayName": "GetKubernetesVersions",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/kubernetesVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Puts the kubernetes version resource type",
+          "displayName": "PutKubernetesVersions",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/kubernetesVersions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the kubernetes versions resource type",
+          "displayName": "DeleteKubernetesVersions",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/kubernetesVersions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the supported kubernetes versions from the underlying custom location",
+          "displayName": "KubernetesVersions_List",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/kubernetesVersions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "skus",
+      "name": "skus",
+      "operations": [
+        {
+          "description": "Gets the supported VM skus from the underlying custom location",
+          "displayName": "GetVMSkus",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/skus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Puts the VM SKUs resource type",
+          "displayName": "PutVMSkus",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/skus/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Vm Sku resource type",
+          "displayName": "DeleteVMSkus",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/skus/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the supported VM SKUs from the underlying custom location",
+          "displayName": "VMSkus_List",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/skus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusterInstances",
+      "name": "provisionedClusterInstances",
+      "operations": [
+        {
+          "description": "Gets the Hybrid AKS provisioned cluster instance",
+          "displayName": "provisionedClusterInstances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the Hybrid AKS provisioned cluster instance",
+          "displayName": "provisionedClusterInstances_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Hybrid AKS provisioned cluster instance",
+          "displayName": "provisionedClusterInstances_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Hybrid AKS provisioned cluster instances associated with the connected cluster",
+          "displayName": "provisionedClusterInstances_List",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrading the node image version of a cluster applies the newest OS and runtime updates to the nodes.",
+          "displayName": "provisionedClusterInstances_UpgradeNodeImageVersionForEntireCluster",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/upgradeNodeImageVersionForEntireCluster/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the AAD user credentials of a provisioned cluster instance used only in direct mode.",
+          "displayName": "provisionedClusterInstances_ListClusterUserCredentials",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/listClusterUserCredential/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the admin credentials of a provisioned cluster instance used only in direct mode.",
+          "displayName": "provisionedClusterInstances_ListClusterAdminCredentials",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/listClusterAdminCredential/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusterInstances/agentPools",
+      "name": "provisionedClusterInstances/agentPools",
+      "operations": [
+        {
+          "description": "Gets the agent pool in the Hybrid AKS provisioned cluster instance",
+          "displayName": "agentPool_Get",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the agent pool in the Hybrid AKS provisioned cluster instance",
+          "displayName": "agentPool_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the agent pool in the Hybrid AKS provisioned cluster instance",
+          "displayName": "agentPool_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the agent pool in the Hybrid AKS provisioned cluster instance",
+          "displayName": "agentPool_Update",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the agent pools in the Hybrid AKS provisioned cluster instance",
+          "displayName": "agentPool_ListByProvisionedCluster",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusterInstances/hybridIdentityMetadata",
+      "name": "provisionedClusterInstances/hybridIdentityMetadata",
+      "operations": [
+        {
+          "description": "Get the hybrid identity metadata proxy resource.",
+          "displayName": "HybridIdentityMetadata_Get",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/hybridIdentityMetadata/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the hybrid identity metadata proxy resource that facilitates the managed identity provisioning.",
+          "displayName": "HybridIdentityMetadata_Put",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/hybridIdentityMetadata/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the hybrid identity metadata proxy resource.",
+          "displayName": "HybridIdentityMetadata_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/hybridIdentityMetadata/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the hybrid identity metadata proxy resource in a provisioned cluster instance.",
+          "displayName": "HybridIdentityMetadata_ListByCluster",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/hybridIdentityMetadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisionedClusterInstances/upgradeProfiles",
+      "name": "provisionedClusterInstances/upgradeProfiles",
+      "operations": [
+        {
+          "description": "read upgradeProfiles",
+          "displayName": "provisionedClusterInstances_GetUpgradeProfile",
+          "isDataAction": false,
+          "name": "Microsoft.HybridContainerService/provisionedClusterInstances/upgradeProfiles/read",
           "origin": null,
           "properties": null
         }
