@@ -763,6 +763,70 @@
                     "Total"
                   ],
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Total time taken for a delete job to complete.",
+                  "displayName": "Delete Job Latency",
+                  "fillGapWithZero": true,
+                  "name": "DeleteJobLatency",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Milliseconds"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Result",
+                      "name": "Result"
+                    }
+                  ],
+                  "displayDescription": "The number of models, twins, and relationships deleted by a delete job.",
+                  "displayName": "Delete Job Entity Count",
+                  "fillGapWithZero": false,
+                  "name": "DeleteJobEntityCount",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
                 }
               ]
             }
