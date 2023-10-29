@@ -22,64 +22,6 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Artifact Set Definition",
-      "name": "artifactSetDefinitions",
-      "operations": [
-        {
-          "description": "Creates an Artifact Set Definition which describes the set of artifact to capture for a given Chaos Experiment.",
-          "displayName": "Create an Artifact Set Definition.",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/artifactSetDefinitions/write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Gets all Artifact Set Definitions that extend a Chaos Experiment resource.",
-          "displayName": "Gets all Artifact Set Definitions",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/artifactSetDefinitions/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Deletes all Artifact Set Definitions that extend a Chaos Experiment resource.",
-          "displayName": "Delete Artifact Set Definitions",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/artifactSetDefinitions/delete",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifact Set Snapshot",
-      "name": "artifactSetSnapshots",
-      "operations": [
-        {
-          "description": "Gets all Artifact Set Snapshots that extend a Chaos Experiment resource.",
-          "displayName": "Gets all Artifact Set Snapshots.",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/artifactSetSnapshots/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifact Snapshot",
-      "name": "artifactSetSnapshots/artifactSnapshots",
-      "operations": [
-        {
-          "description": "Gets all Artifact Snapshots that extend a Artifact Set Snapshot.",
-          "displayName": "Gets all Artifact Snapshots.",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/artifactSetSnapshots/artifactSnapshots/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Target",
       "name": "targets",
       "operations": [
@@ -186,34 +128,6 @@
       ]
     },
     {
-      "displayName": "Chaos Experiment Execution Status",
-      "name": "experiments/statuses",
-      "operations": [
-        {
-          "description": "Gets all chaos experiment execution statuses for a given chaos experiment.",
-          "displayName": "Gets all Chaos Experiment execution statuses.",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/experiments/statuses/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Chaos Experiment Execution Detail",
-      "name": "experiments/executionDetails",
-      "operations": [
-        {
-          "description": "Gets all chaos experiment execution details for a given chaos experiment.",
-          "displayName": "Gets all Chaos Experiment execution details.",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/experiments/executionDetails/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "TargetType",
       "name": "locations/targetTypes",
       "operations": [
@@ -292,6 +206,92 @@
           "displayName": "Gets an Operation Result.",
           "isDataAction": false,
           "name": "Microsoft.Chaos/locations/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Set Definition",
+      "name": "artifactSetDefinitions",
+      "operations": [
+        {
+          "description": "Creates an Artifact Set Definition which describes the set of artifact to capture for a given Chaos Experiment.",
+          "displayName": "Create an Artifact Set Definition.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetDefinitions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets all Artifact Set Definitions that extend a Chaos Experiment resource.",
+          "displayName": "Gets all Artifact Set Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetDefinitions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes all Artifact Set Definitions that extend a Chaos Experiment resource.",
+          "displayName": "Delete Artifact Set Definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetDefinitions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Set Snapshot",
+      "name": "artifactSetSnapshots",
+      "operations": [
+        {
+          "description": "Gets all Artifact Set Snapshots that extend a Chaos Experiment resource.",
+          "displayName": "Gets all Artifact Set Snapshots.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetSnapshots/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Snapshot",
+      "name": "artifactSetSnapshots/artifactSnapshots",
+      "operations": [
+        {
+          "description": "Gets all Artifact Snapshots that extend a Artifact Set Snapshot.",
+          "displayName": "Gets all Artifact Snapshots.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/artifactSetSnapshots/artifactSnapshots/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Chaos Experiment Execution Status",
+      "name": "experiments/statuses",
+      "operations": [
+        {
+          "description": "Gets all chaos experiment execution statuses for a given chaos experiment.",
+          "displayName": "Gets all Chaos Experiment execution statuses.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/statuses/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Chaos Experiment Execution Detail",
+      "name": "experiments/executionDetails",
+      "operations": [
+        {
+          "description": "Gets all chaos experiment execution details for a given chaos experiment.",
+          "displayName": "Gets all Chaos Experiment execution details.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/experiments/executionDetails/read",
           "origin": "user,system",
           "properties": null
         }
