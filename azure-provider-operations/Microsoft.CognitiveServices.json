@@ -14041,10 +14041,18 @@
           "properties": null
         },
         {
-          "description": "A sync API to deploy policy for a project.",
-          "displayName": "Deploy policy for a project. ",
+          "description": "A synchronous API for the analysis of protected material.",
+          "displayName": "Analyze Protected Material",
           "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects:deploy/action",
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text:detectprotectedmaterial/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A synchronous API for the analysis of text jailbreak.",
+          "displayName": "Analyze Text Jailbreak",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text:detectjailbreak/action",
           "origin": "user",
           "properties": null
         }
@@ -14332,36 +14340,6 @@
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/raiPolicies/delete",
           "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "projects*",
-      "name": "accounts/ContentSafety/projects",
-      "operations": [
-        {
-          "description": "Update a project if project does exist, create a new project if not. Note that modality cannot be updated.",
-          "displayName": "Create or update a project.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/write",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Delete a project by name.",
-          "displayName": "Delete a project by project name.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/delete",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Returns project details.\r\nList projects.*",
-          "displayName": "Get project detailed information by project name.|List projects.*",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/projects/read",
-          "origin": "user",
           "properties": null
         }
       ]
@@ -15414,6 +15392,36 @@
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/management/modelscaleset/deployment/write",
           "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cognitive Services API Account",
+      "name": "capacityReservations",
+      "operations": [
+        {
+          "description": "Reads API accounts.",
+          "displayName": "Read API Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/capacityReservations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes API Accounts.",
+          "displayName": "Write API Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/capacityReservations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes API accounts",
+          "displayName": "Delete API Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/capacityReservations/delete",
+          "origin": "user,system",
           "properties": null
         }
       ]
