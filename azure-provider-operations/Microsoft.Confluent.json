@@ -8,7 +8,7 @@
       "displayName": "Validations",
       "isDataAction": false,
       "name": "Microsoft.Confluent/validations/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -16,7 +16,7 @@
       "displayName": "Registers the Microsoft.Confluent Resource Provider",
       "isDataAction": false,
       "name": "Microsoft.Confluent/register/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -24,7 +24,7 @@
       "displayName": "Unregisters the Microsoft.Confluent Resource Provider",
       "isDataAction": false,
       "name": "Microsoft.Confluent/unregister/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -32,21 +32,21 @@
       "displayName": "Check Name Availability",
       "isDataAction": false,
       "name": "Microsoft.Confluent/checkNameAvailability/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     }
   ],
   "resourceTypes": [
     {
-      "displayName": "Agreements",
+      "displayName": "agreements",
       "name": "agreements",
       "operations": [
         {
           "description": "List all the marketplace agreements",
-          "displayName": "List agreements",
+          "displayName": "Gets/List agreement resources",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/agreements/read",
-          "origin": null,
+          "name": "Microsoft.Confluent/agreements/Read",
+          "origin": "System",
           "properties": null
         },
         {
@@ -54,7 +54,7 @@
           "displayName": "Accept terms",
           "isDataAction": false,
           "name": "Microsoft.Confluent/agreements/write",
-          "origin": null,
+          "origin": "System",
           "properties": null
         }
       ]
@@ -68,7 +68,7 @@
           "displayName": "Get/List organization resources",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/Read",
-          "origin": null,
+          "origin": "System",
           "properties": null
         },
         {
@@ -76,7 +76,7 @@
           "displayName": "Create/Update organization resources",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/Write",
-          "origin": null,
+          "origin": "System",
           "properties": null
         },
         {
@@ -84,7 +84,7 @@
           "displayName": "Delete organization resources",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/Delete",
-          "origin": null,
+          "origin": "System",
           "properties": null
         },
         {
@@ -92,7 +92,7 @@
           "displayName": "Access and accounts scenarios of Microsoft.Confluent",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/access/action",
-          "origin": null,
+          "origin": "System",
           "properties": null
         }
       ]
@@ -106,7 +106,7 @@
           "displayName": "Gets/Lists registered subscriptions",
           "isDataAction": false,
           "name": "Microsoft.Confluent/RegisteredSubscriptions/read",
-          "origin": null,
+          "origin": "System",
           "properties": null
         }
       ]
@@ -120,7 +120,7 @@
           "displayName": "Get locations",
           "isDataAction": false,
           "name": "Microsoft.Confluent/locations/read",
-          "origin": null,
+          "origin": "System",
           "properties": null
         }
       ]
@@ -134,7 +134,7 @@
           "displayName": "Get operation statuses",
           "isDataAction": false,
           "name": "Microsoft.Confluent/locations/operationStatuses/read",
-          "origin": null,
+          "origin": "System",
           "properties": null
         },
         {
@@ -142,7 +142,7 @@
           "displayName": "Write operation statuses",
           "isDataAction": false,
           "name": "Microsoft.Confluent/locations/operationStatuses/write",
-          "origin": null,
+          "origin": "System",
           "properties": null
         }
       ]
@@ -156,7 +156,21 @@
           "displayName": "List available Microsoft.Confluent operations",
           "isDataAction": false,
           "name": "Microsoft.Confluent/operations/read",
-          "origin": null,
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "access",
+      "name": "organizations/access/deleteRoleBinding",
+      "operations": [
+        {
+          "description": "Delete confluent roles of user in confluent organization",
+          "displayName": "Delete confluent roles of user in confluent organization",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/deleteRoleBinding/delete",
+          "origin": "System",
           "properties": null
         }
       ]
