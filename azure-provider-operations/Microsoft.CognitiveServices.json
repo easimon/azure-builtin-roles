@@ -924,7 +924,7 @@
         },
         {
           "description": "Creates a new person in a person directory.",
-          "displayName": "PersonDirectory Person - Create|BiometricStorage Person - Create",
+          "displayName": "PersonDirectory Person - Create",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/action",
           "origin": "user",
@@ -10879,16 +10879,16 @@
       "name": "accounts/Face/persons",
       "operations": [
         {
-          "description": "Delete an existing person from person directory. The persistedFaceId(s), userData, person name and face feature(s) in the person entry will all be deleted.\r\nDelete an existing person from biometric storage The persistedFaceId(s), userData, person name and face feature(s) in the person entry will all be deleted.*",
-          "displayName": "PersonDirectory Person - Delete|BiometricStorage Person - Delete*",
+          "description": "Delete an existing person from person directory. The persistedFaceId(s), userData, person name and face feature(s) in the person entry will all be deleted.\r\nDelete an existing person from person directory The persistedFaceId(s), userData, person name and face feature(s) in the person entry will all be deleted.*",
+          "displayName": "PersonDirectory Person - Delete",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/delete",
           "origin": "user",
           "properties": null
         },
         {
-          "description": "Retrieve a person's name and userData from person directory.\r\nList all persons�� information in person directory, including personId, name, and userData.*\r\nRetrieve a person's name and userData from biometric storage.*\r\nList all persons�� information in biometric storage, including personId, name, and userData.*",
-          "displayName": "PersonDirectory Person - Get|PersonDirectory Person - List*|BiometricStorage Person - Get*|BiometricStorage Person - List*",
+          "description": "Retrieve a person's name and userData from person directory.\r\nList all persons�� information in person directory, including personId, name, and userData.*\r\nRetrieve a person's name and userData from person directory.*\r\nList all persons�� information in person directory, including personId, name, and userData.*",
+          "displayName": "PersonDirectory Person - Get|PersonDirectory Person - List",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/read",
           "origin": "user",
@@ -10896,7 +10896,7 @@
         },
         {
           "description": "Update name or userData of a person.\r\nUpdate name or userData of a person.*",
-          "displayName": "PersonDirectory Person - Update|BiometricStorage Person - Update*",
+          "displayName": "PersonDirectory Person - Update",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/write",
           "origin": "user",
@@ -10909,16 +10909,16 @@
       "name": "accounts/Face/persons/recognitionmodels/persistedfaces",
       "operations": [
         {
-          "description": "Add a face to a person (see <a href=\"/docs/services/face-v1-0-preview/operations/5f063c5279ef2ecd2da02bbc\">PersonDirectory Person - Create</a>) for face identification or verification. To deal with an image containing\r\nUpdate a person persisted face's userData field.*\r\nAdd a face to a person (see <a href=\"/docs/services/563879b61984550e40cbbe8d/operations/5f063c5279ef2ecd2da02bbc\">BiometricStorage Person - Create</a>) for face identification or verification. To deal with an image containing*\r\nUpdate a person persisted face's userData field.*",
-          "displayName": "PersonDirectory Person - Add Face|PersonDirectory Person - Update Face*|BiometricStorage Person - Add Face*|BiometricStorage Person - Update Face*",
+          "description": "Add a face to a person (see <a href=\"/docs/services/face-v1-0-preview/operations/5f063c5279ef2ecd2da02bbc\">PersonDirectory Person - Create</a>) for face identification or verification. To deal with an image containing\r\nUpdate a person persisted face's userData field.*\r\nAdd a face to a person (see <a href=\"/docs/services/563879b61984550e40cbbe8d/operations/5f063c5279ef2ecd2da02bbc\">PersonDirectory Person - Create</a>) for face identification or verification. To deal with an image containing*\r\nUpdate a person persisted face's userData field.*",
+          "displayName": "PersonDirectory Person - Add Face|PersonDirectory Person - Update Face",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/recognitionmodels/persistedfaces/write",
           "origin": "user",
           "properties": null
         },
         {
-          "description": "Delete a face from a person in person directory by specified personId and persistedFaceId.\r\nDelete a face from a person in biometric storage by specified personId and persistedFaceId.*",
-          "displayName": "PersonDirectory Person - Delete Face|BiometricStorage Person - Delete Face*",
+          "description": "Delete a face from a person in person directory by specified personId and persistedFaceId.\r\nDelete a face from a person in person directory by specified personId and persistedFaceId.*",
+          "displayName": "PersonDirectory Person - Delete Face",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/recognitionmodels/persistedfaces/delete",
           "origin": "user",
@@ -10926,7 +10926,7 @@
         },
         {
           "description": "Retrieve person face information. The persisted person face is specified by its personId. recognitionModel, and persistedFaceId.\r\nRetrieve a person's persistedFaceIds representing the registered person face feature(s). *\r\nRetrieve person face information. The persisted person face is specified by its personId. recognitionModel, and persistedFaceId.*\r\nRetrieve a person's persistedFaceIds representing the registered person face feature(s). *",
-          "displayName": "PersonDirectory Person - Get Face|PersonDirectory Person - List Faces*|BiometricStorage Person - Get Face*|BiometricStorage Person - List Faces*",
+          "displayName": "PersonDirectory Person - Get Face|PersonDirectory Person - List Faces",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/recognitionmodels/persistedfaces/read",
           "origin": "user",
@@ -10943,64 +10943,6 @@
           "displayName": "PersonDirectory Person - List DynamicPersonGroup References",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/persons/dynamicpersongroupreferences/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "searchscopereferences*",
-      "name": "accounts/Face/persons/searchscopereferences",
-      "operations": [
-        {
-          "description": "List all searchscopes a person has been referenced by in biometric storage.",
-          "displayName": "BiometricStorage Person - List SearchScope References",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/Face/persons/searchscopereferences/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "searchscopes*",
-      "name": "accounts/Face/searchscopes",
-      "operations": [
-        {
-          "description": "Creates a new search scope with specified searchScopeId, name, and user-provided userData.\r\nUpdate an existing search scope name, userData, add, or remove persons. The properties keep unchanged if they are not in request body.*",
-          "displayName": "BiometricStorage SearchScope - Create|BiometricStorage SearchScope - Update*",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/Face/searchscopes/write",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Deletes an existing search scope with specified searchScopeId. Deleting this search scope only delete the references to persons data. To delete actual person see <a href=\"/docs/services/563879b61984550e40cbbe8d/operations/5f0665dada63d10033991e45\">BiometricStorage Person - Delete</a>.",
-          "displayName": "BiometricStorage SearchScope - Delete",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/Face/searchscopes/delete",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Retrieve the information of a search scope, including its name and userData. This API returns search scope information\r\nList all existing search scopes by searchScopeId along with name and userData.*",
-          "displayName": "BiometricStorage SearchScope - Get|BiometricStorage SearchScope - List*",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/Face/searchscopes/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "persons*",
-      "name": "accounts/Face/searchscopes/persons",
-      "operations": [
-        {
-          "description": "List all persons in the specified search scope.",
-          "displayName": "BiometricStorage SearchScope - List Persons",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/Face/searchscopes/persons/read",
           "origin": "user",
           "properties": null
         }
@@ -15408,6 +15350,106 @@
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/capacityReservations/delete",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session - Create",
+      "name": "accounts/Face/detectLiveness/singleModal",
+      "operations": [
+        {
+          "description": "<p>Creates a session for a client to perform liveness detection.</p>",
+          "displayName": "Face - DetectLiveness SingleModal - Session Create",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLiveness/singleModal/sessions/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session - Create",
+      "name": "accounts/Face/detectlivenessWithVerify/singleModal",
+      "operations": [
+        {
+          "description": "<p>Creates a session for a client to perform liveness detection with verify.</p>",
+          "displayName": "Face - DetectLivenessWithVerify SingleModal - Session Create",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectlivenessWithVerify/singleModal/sessions/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session - Delete",
+      "name": "accounts/Face/detectLiveness/singleModal/sessions",
+      "operations": [
+        {
+          "description": "<p>Deletes a liveness detection session.</p>",
+          "displayName": "Face - DetectLiveness SingleModal - Session Delete",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLiveness/singleModal/sessions/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "<p>Reads the state of detectLiveness/singleModal session.</p>",
+          "displayName": "Face - DetectLiveness SingleModal - Session Result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLiveness/singleModal/sessions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session - Delete",
+      "name": "accounts/Face/detectLivenessWithVerify/singleModal/sessions",
+      "operations": [
+        {
+          "description": "<p>Deletes a liveness detection with verify session.</p>",
+          "displayName": "Face - DetectLivenessWithVerify SingleModal - Session Delete",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLivenessWithVerify/singleModal/sessions/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "<p>Reads the state of detectLivenessWithVerify/singleModal session.</p>",
+          "displayName": "Face - DetectLivenessWithVerify SingleModal - Session Result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLivenessWithVerify/singleModal/sessions/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session - GetResult|Session - Audit",
+      "name": "accounts/Face/detectLiveness/singleModal/sessions/audit",
+      "operations": [
+        {
+          "description": "<p>List audit entries for detectLiveness/singleModal.</p>",
+          "displayName": "Face - DetectLiveness SingleModal - Session Audit Requests",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLiveness/singleModal/sessions/audit/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session - GetResult|Session - Audit",
+      "name": "accounts/Face/detectLivenessWithVerify/singleModal/sessions/audit",
+      "operations": [
+        {
+          "description": "<p>List audit entries for detectLivenessWithVerify/singleModal.</p>",
+          "displayName": "Face - DetectLivenessWithVerify SingleModal - Session Audit Requests",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Face/detectLivenessWithVerify/singleModal/sessions/audit/read",
+          "origin": "user",
           "properties": null
         }
       ]
