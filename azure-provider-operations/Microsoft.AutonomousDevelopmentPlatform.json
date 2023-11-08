@@ -857,14 +857,6 @@
       "name": "workspaces/measurements",
       "operations": [
         {
-          "description": "Correct New Measurement",
-          "displayName": "Correct New Measurement",
-          "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/correct/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Read and list measurement data & list data streams within measurement",
           "displayName": "Read Measurements",
           "isDataAction": true,
@@ -919,14 +911,6 @@
           "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/runProcessing/action",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Perform an action on a Measurement via its State Machines",
-          "displayName": "Perform an action on a Measurement via its State Machines",
-          "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/stateMachines/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -961,60 +945,96 @@
       ]
     },
     {
-      "displayName": "Datasets",
-      "name": "workspaces/datasets",
+      "displayName": "Data Catalog",
+      "name": "workspaces/dataCatalogs/data",
       "operations": [
         {
-          "description": "Read Datasets",
-          "displayName": "Read Datasets",
+          "description": "Query data from Data Catalog that is in the workspace",
+          "displayName": "Query Data Catalog",
           "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/datasets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Write Datasets",
-          "displayName": "Write Datasets",
-          "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/datasets/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete Datasets",
-          "displayName": "Delete Datasets",
-          "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/datasets/delete",
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/dataCatalogs/data/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Datasets Versions",
-      "name": "workspaces/datasets/versions",
+      "displayName": "Classification schemas",
+      "name": "workspaces/classificationSchemas",
       "operations": [
         {
-          "description": "Read Datasets Versions",
-          "displayName": "Read Datasets Versions",
+          "description": "Read classification schemas",
+          "displayName": "Read classification schemas",
           "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/datasets/versions/read",
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/classificationSchemas/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Write Datasets Versions",
-          "displayName": "Write Datasets Versions",
+          "description": "Register a new classification schema in the given workspace.",
+          "displayName": "Write classification schemas",
           "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/datasets/versions/write",
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/classificationSchemas/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Classifications",
+      "name": "workspaces/measurements/classifications",
+      "operations": [
+        {
+          "description": "Read measurement classifications",
+          "displayName": "Read measurement classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/classifications/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Datasets Versions",
-          "displayName": "Delete Datasets Versions",
+          "description": "Create or update a measurement classification.",
+          "displayName": "Write measurement classifications",
           "isDataAction": true,
-          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/datasets/versions/delete",
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/classifications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a measurement classification.",
+          "displayName": "Delete measurement classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/classifications/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Classifications",
+      "name": "workspaces/measurements/dataStreams/classifications",
+      "operations": [
+        {
+          "description": "Read data stream classifications",
+          "displayName": "Read data stream classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/classifications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a data stream classification.",
+          "displayName": "Write data stream classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/classifications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a data stream classification.",
+          "displayName": "Delete data stream classifications",
+          "isDataAction": true,
+          "name": "Microsoft.AutonomousDevelopmentPlatform/workspaces/measurements/dataStreams/classifications/delete",
           "origin": null,
           "properties": null
         }
