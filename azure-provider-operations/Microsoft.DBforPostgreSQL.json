@@ -1592,30 +1592,6 @@
       "name": "flexibleServers",
       "operations": [
         {
-          "description": "Checks the availability of the given migration name.",
-          "displayName": "Check the availability of the given migration name.",
-          "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/checkMigrationNameAvailability/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Start long term backup for a server",
-          "displayName": "Start long term backup for a server",
-          "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/startLtrBackup/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Checks if a server is ready for a long term backup",
-          "displayName": "Checks if a server is ready for a long term backup",
-          "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/ltrPreBackup/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Return the list of servers or gets the properties for the specified server.",
           "displayName": "List/Get PostgreSQL server",
           "isDataAction": false,
@@ -1656,6 +1632,14 @@
           "properties": null
         },
         {
+          "description": "Checks the availability of the given migration name.",
+          "displayName": "Check the availability of the given migration name.",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/checkMigrationNameAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Creates a server administrator with the specified parameters or update the properties or tags for the specified server administrator.",
           "displayName": "Create/Update PostgreSQL server administrator",
           "isDataAction": false,
@@ -1684,6 +1668,38 @@
           "displayName": "Stops an existing server",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/stop/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/getSourceDatabaseList/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/testConnectivity/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start long term backup for a server",
+          "displayName": "Start long term backup for a server",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/startLtrBackup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Checks if a server is ready for a long term backup",
+          "displayName": "Checks if a server is ready for a long term backup",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/ltrPreBackup/action",
           "origin": null,
           "properties": null
         }
@@ -2247,13 +2263,13 @@
     },
     {
       "displayName": "Azure Database for PostgreSQL - Flexible Server Virtual Endpoint",
-      "name": "flexibleServers/virtualendpoint",
+      "name": "flexibleServers/virtualendpoints",
       "operations": [
         {
           "description": "Creates or Updates VirtualEndpoint",
           "displayName": "VirtualEndpoint Create or Update operation",
           "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoint/write",
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoints/write",
           "origin": null,
           "properties": null
         },
@@ -2261,7 +2277,7 @@
           "description": "Patches the VirtualEndpoint. Currently patch does a full replace",
           "displayName": "VirtualEndpoint Patch operation",
           "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoint/write",
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoints/write",
           "origin": null,
           "properties": null
         },
@@ -2269,7 +2285,7 @@
           "description": "Deletes the VirtualEndpoint",
           "displayName": "VirtualEndpoint Delete operation",
           "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoint/delete",
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoints/delete",
           "origin": null,
           "properties": null
         },
@@ -2277,7 +2293,7 @@
           "description": "Gets the VirtualEndpoint details",
           "displayName": "VirtualEndpoint Get operation",
           "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoint/read",
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoints/read",
           "origin": null,
           "properties": null
         },
@@ -2285,7 +2301,7 @@
           "description": "Lists the VirtualEndpoints",
           "displayName": "VirtualEndpoint List operation",
           "isDataAction": false,
-          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoint/read",
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/virtualendpoints/read",
           "origin": null,
           "properties": null
         }
