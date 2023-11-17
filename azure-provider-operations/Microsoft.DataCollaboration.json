@@ -22,233 +22,6 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Workspace",
-      "name": "workspaces/providers/Microsoft.Insights/diagnosticSettings",
-      "operations": [
-        {
-          "description": "Gets the diagnostic setting for the resource.",
-          "displayName": "Read diagnostic setting",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/diagnosticSettings/read",
-          "origin": "system",
-          "properties": null
-        },
-        {
-          "description": "Creates or updates the diagnostic setting for the resource.",
-          "displayName": "Write diagnostic setting",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/diagnosticSettings/write",
-          "origin": "system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "The log definition of workspace",
-      "name": "workspaces/providers/Microsoft.Insights/logDefinitions",
-      "operations": [
-        {
-          "description": "Gets the available logs for workspace.",
-          "displayName": "Read workspace log definitions",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/logDefinitions/read",
-          "origin": "system",
-          "properties": {
-            "serviceSpecification": {
-              "logSpecifications": [
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Computations",
-                  "name": "Computations"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Pipelines",
-                  "name": "Pipelines"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Data Assets",
-                  "name": "DataAssets"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Pipelines",
-                  "name": "Pipelines"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Proposals",
-                  "name": "Proposals"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Scripts",
-                  "name": "Scripts"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Collaboration Audit",
-                  "name": "CollaborationAudit"
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "displayName": "The metric definition of workspace",
-      "name": "workspaces/providers/Microsoft.Insights/metricDefinitions",
-      "operations": [
-        {
-          "description": "Gets the available metrics for workspace.",
-          "displayName": "Read workspace metric definitions",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/metricDefinitions/read",
-          "origin": "system",
-          "properties": {
-            "serviceSpecification": {
-              "metricSpecifications": [
-                {
-                  "aggregationType": "Maximum",
-                  "dimensions": [
-                    {
-                      "displayName": "Computation Name",
-                      "name": "ComputationName"
-                    }
-                  ],
-                  "displayDescription": "Number of created computations",
-                  "displayName": "Created Computations",
-                  "enableRegionalMdmAccount": "true",
-                  "fillGapWithZero": "true",
-                  "internalMetricName": "ComputationCount",
-                  "name": "ComputationCount",
-                  "supportedAggregationTypes": [
-                    "Maximum"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Maximum",
-                  "dimensions": [
-                    {
-                      "displayName": "Pipeline Name",
-                      "name": "PipelineName"
-                    }
-                  ],
-                  "displayDescription": "Number of created pipelines",
-                  "displayName": "Created Pipelines",
-                  "enableRegionalMdmAccount": "true",
-                  "fillGapWithZero": "true",
-                  "internalMetricName": "PipelineCount",
-                  "name": "PipelineCount",
-                  "supportedAggregationTypes": [
-                    "Maximum"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Maximum",
-                  "dimensions": [
-                    {
-                      "displayName": "DataAsset Name",
-                      "name": "DataAssetName"
-                    }
-                  ],
-                  "displayDescription": "Number of created data assets",
-                  "displayName": "Created Data Assets",
-                  "enableRegionalMdmAccount": "true",
-                  "fillGapWithZero": "true",
-                  "internalMetricName": "DataAssetCount",
-                  "name": "DataAssetCount",
-                  "supportedAggregationTypes": [
-                    "Maximum"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Maximum",
-                  "dimensions": [
-                    {
-                      "displayName": "Pipeline Name",
-                      "name": "PipelineName"
-                    }
-                  ],
-                  "displayDescription": "Number of created pipelines",
-                  "displayName": "Created Pipelines",
-                  "enableRegionalMdmAccount": "true",
-                  "fillGapWithZero": "true",
-                  "internalMetricName": "PipelineCount",
-                  "name": "PipelineCount",
-                  "supportedAggregationTypes": [
-                    "Maximum"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Maximum",
-                  "dimensions": [
-                    {
-                      "displayName": "Proposal Name",
-                      "name": "ProposalName"
-                    }
-                  ],
-                  "displayDescription": "Number of created proposals",
-                  "displayName": "Created Proposals",
-                  "enableRegionalMdmAccount": "true",
-                  "fillGapWithZero": "true",
-                  "internalMetricName": "ProposalCount",
-                  "name": "ProposalCount",
-                  "supportedAggregationTypes": [
-                    "Maximum"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Maximum",
-                  "dimensions": [
-                    {
-                      "displayName": "Script Name",
-                      "name": "ScriptName"
-                    }
-                  ],
-                  "displayDescription": "Number of created scripts",
-                  "displayName": "Created Scripts",
-                  "enableRegionalMdmAccount": "true",
-                  "fillGapWithZero": "true",
-                  "internalMetricName": "ScriptCount",
-                  "name": "ScriptCount",
-                  "supportedAggregationTypes": [
-                    "Maximum"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
       "displayName": "ConsumerInvitation",
       "name": "locations/consumerInvitations",
       "operations": [
@@ -279,6 +52,80 @@
           "displayName": "Reads all available operations in Ci Resource Provider.",
           "isDataAction": false,
           "name": "Microsoft.DataCollaboration/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Computation",
+      "name": "workspaces/computations/computationRevisions",
+      "operations": [
+        {
+          "description": "Reads a Computation.",
+          "displayName": "Read Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/computationRevisions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Computation",
+      "name": "workspaces/computations",
+      "operations": [
+        {
+          "description": "Deletes a Computation.",
+          "displayName": "Delete Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a Computation.",
+          "displayName": "Read Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a Computation.",
+          "displayName": "Write Computation",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/computations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ConstrainedResource",
+      "name": "workspaces/constrainedResources",
+      "operations": [
+        {
+          "description": "Deletes a ConstrainedResource.",
+          "displayName": "Delete ConstrainedResource",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a ConstrainedResource.",
+          "displayName": "Read ConstrainedResource",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a ConstrainedResource.",
+          "displayName": "Write ConstrainedResource",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/write",
           "origin": null,
           "properties": null
         }
@@ -375,6 +222,72 @@
       ]
     },
     {
+      "displayName": "ManagedPrivateEndpoint",
+      "name": "workspaces/managedPrivateEndpoints",
+      "operations": [
+        {
+          "description": "Deletes a ManagedPrivateEndpoint.",
+          "displayName": "Delete ManagedPrivateEndpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a ManagedPrivateEndpoint.",
+          "displayName": "Read ManagedPrivateEndpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a ManagedPrivateEndpoint.",
+          "displayName": "Write ManagedPrivateEndpoint",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PipelineRun",
+      "name": "workspaces/pipelineRuns",
+      "operations": [
+        {
+          "description": "Actions a PipelineRun.",
+          "displayName": "Action PipelineRun",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a PipelineRun.",
+          "displayName": "Read PipelineRun",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "PipelineStepRun",
+      "name": "workspaces/pipelineRuns/pipelineStepRuns",
+      "operations": [
+        {
+          "description": "Reads a PipelineStepRun.",
+          "displayName": "Read PipelineStepRun",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/pipelineStepRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
       "displayName": "Pipeline",
       "name": "workspaces/pipelines",
       "operations": [
@@ -451,6 +364,44 @@
           "displayName": "Read PipelineStep",
           "isDataAction": false,
           "name": "Microsoft.DataCollaboration/workspaces/pipelines/pipelineSteps/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ComputationReference",
+      "name": "workspaces/proposals/computationReferences",
+      "operations": [
+        {
+          "description": "Deletes a ComputationReference.",
+          "displayName": "Delete ComputationReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads a ComputationReference.",
+          "displayName": "Read ComputationReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Actions a ComputationReference.",
+          "displayName": "Action ComputationReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/resolve/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Writes a ComputationReference.",
+          "displayName": "Write ComputationReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/write",
           "origin": null,
           "properties": null
         }
@@ -729,6 +680,247 @@
       ]
     },
     {
+      "displayName": "VirtualOutputReference",
+      "name": "workspaces/proposals/virtualOutputReferences",
+      "operations": [
+        {
+          "description": "Reads a VirtualOutputReference.",
+          "displayName": "Read VirtualOutputReference",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/proposals/virtualOutputReferences/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace",
+      "name": "workspaces/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The log definition of workspace",
+      "name": "workspaces/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs for workspace.",
+          "displayName": "Read workspace log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Computations",
+                  "name": "Computations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Pipelines",
+                  "name": "Pipelines"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Data Assets",
+                  "name": "DataAssets"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Pipelines",
+                  "name": "Pipelines"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Proposals",
+                  "name": "Proposals"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Scripts",
+                  "name": "Scripts"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Collaboration Audit",
+                  "name": "CollaborationAudit"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "The metric definition of workspace",
+      "name": "workspaces/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for workspace.",
+          "displayName": "Read workspace metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DataCollaboration/workspaces/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Computation Name",
+                      "name": "ComputationName"
+                    }
+                  ],
+                  "displayDescription": "Number of created computations",
+                  "displayName": "Created Computations",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "ComputationCount",
+                  "name": "ComputationCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline Name",
+                      "name": "PipelineName"
+                    }
+                  ],
+                  "displayDescription": "Number of created pipelines",
+                  "displayName": "Created Pipelines",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "PipelineCount",
+                  "name": "PipelineCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "DataAsset Name",
+                      "name": "DataAssetName"
+                    }
+                  ],
+                  "displayDescription": "Number of created data assets",
+                  "displayName": "Created Data Assets",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "DataAssetCount",
+                  "name": "DataAssetCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Pipeline Name",
+                      "name": "PipelineName"
+                    }
+                  ],
+                  "displayDescription": "Number of created pipelines",
+                  "displayName": "Created Pipelines",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "PipelineCount",
+                  "name": "PipelineCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Proposal Name",
+                      "name": "ProposalName"
+                    }
+                  ],
+                  "displayDescription": "Number of created proposals",
+                  "displayName": "Created Proposals",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "ProposalCount",
+                  "name": "ProposalCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Script Name",
+                      "name": "ScriptName"
+                    }
+                  ],
+                  "displayDescription": "Number of created scripts",
+                  "displayName": "Created Scripts",
+                  "enableRegionalMdmAccount": "true",
+                  "fillGapWithZero": "true",
+                  "internalMetricName": "ScriptCount",
+                  "name": "ScriptCount",
+                  "supportedAggregationTypes": [
+                    "Maximum"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
       "displayName": "Script",
       "name": "workspaces/scripts",
       "operations": [
@@ -767,198 +959,6 @@
           "displayName": "Read Script",
           "isDataAction": false,
           "name": "Microsoft.DataCollaboration/workspaces/scripts/scriptRevisions/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "PipelineRun",
-      "name": "workspaces/pipelineRuns",
-      "operations": [
-        {
-          "description": "Actions a PipelineRun.",
-          "displayName": "Action PipelineRun",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/cancel/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reads a PipelineRun.",
-          "displayName": "Read PipelineRun",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "PipelineStepRun",
-      "name": "workspaces/pipelineRuns/pipelineStepRuns",
-      "operations": [
-        {
-          "description": "Reads a PipelineStepRun.",
-          "displayName": "Read PipelineStepRun",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/pipelineRuns/pipelineStepRuns/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "ConstrainedResource",
-      "name": "workspaces/constrainedResources",
-      "operations": [
-        {
-          "description": "Deletes a ConstrainedResource.",
-          "displayName": "Delete ConstrainedResource",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reads a ConstrainedResource.",
-          "displayName": "Read ConstrainedResource",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Writes a ConstrainedResource.",
-          "displayName": "Write ConstrainedResource",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/constrainedResources/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "VirtualOutputReference",
-      "name": "workspaces/proposals/virtualOutputReferences",
-      "operations": [
-        {
-          "description": "Reads a VirtualOutputReference.",
-          "displayName": "Read VirtualOutputReference",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/proposals/virtualOutputReferences/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "ManagedPrivateEndpoint",
-      "name": "workspaces/managedPrivateEndpoints",
-      "operations": [
-        {
-          "description": "Deletes a ManagedPrivateEndpoint.",
-          "displayName": "Delete ManagedPrivateEndpoint",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reads a ManagedPrivateEndpoint.",
-          "displayName": "Read ManagedPrivateEndpoint",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Writes a ManagedPrivateEndpoint.",
-          "displayName": "Write ManagedPrivateEndpoint",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/managedPrivateEndpoints/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Computation",
-      "name": "workspaces/computations/computationRevisions",
-      "operations": [
-        {
-          "description": "Reads a Computation.",
-          "displayName": "Read Computation",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/computations/computationRevisions/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Computation",
-      "name": "workspaces/computations",
-      "operations": [
-        {
-          "description": "Deletes a Computation.",
-          "displayName": "Delete Computation",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/computations/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reads a Computation.",
-          "displayName": "Read Computation",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/computations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Writes a Computation.",
-          "displayName": "Write Computation",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/computations/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "ComputationReference",
-      "name": "workspaces/proposals/computationReferences",
-      "operations": [
-        {
-          "description": "Deletes a ComputationReference.",
-          "displayName": "Delete ComputationReference",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reads a ComputationReference.",
-          "displayName": "Read ComputationReference",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Actions a ComputationReference.",
-          "displayName": "Action ComputationReference",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/resolve/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Writes a ComputationReference.",
-          "displayName": "Write ComputationReference",
-          "isDataAction": false,
-          "name": "Microsoft.DataCollaboration/workspaces/proposals/computationReferences/write",
           "origin": null,
           "properties": null
         }
