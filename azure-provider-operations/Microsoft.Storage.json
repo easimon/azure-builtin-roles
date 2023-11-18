@@ -2469,14 +2469,6 @@
       "name": "storageAccounts/fileServices",
       "operations": [
         {
-          "description": "Restore file share",
-          "displayName": "Restore File Share",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "List file services",
           "displayName": "List File Services",
           "isDataAction": false,
@@ -2763,6 +2755,14 @@
           "displayName": "Put File Share",
           "isDataAction": false,
           "name": "Microsoft.Storage/storageAccounts/fileServices/shares/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restore file share",
+          "displayName": "Restore File Share",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageAccounts/fileServices/shares/restore/action",
           "origin": null,
           "properties": null
         }
@@ -3261,22 +3261,6 @@
           "properties": null
         },
         {
-          "description": "List all storage task assignments of a storage task",
-          "displayName": "List Storage Task Assignments by Storage Task",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/storageTasks/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List all versions of a storage task",
-          "displayName": "List Storage Task Versions",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/storageTasks/read",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Promote specific version of storage task to current version",
           "displayName": "Promote Storage Task Version",
           "isDataAction": false,
@@ -3289,14 +3273,6 @@
           "displayName": "Put Storage Task",
           "isDataAction": false,
           "name": "Microsoft.Storage/storageTasks/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": null,
-          "displayName": null,
-          "isDataAction": false,
-          "name": "Microsoft.Storage/storageTasks/previewActions/action",
           "origin": null,
           "properties": null
         }
@@ -3427,6 +3403,48 @@
           "displayName": null,
           "isDataAction": false,
           "name": "Microsoft.Storage/storageAccounts/storageTaskAssignments/reports/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Task Run Statuses",
+      "name": "storageTasks/reports",
+      "operations": [
+        {
+          "description": "List run statuses of a storage task",
+          "displayName": "List Storage Task Run Reports",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/reports/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Task Assignments",
+      "name": "storageTasks/storageTaskAssignments",
+      "operations": [
+        {
+          "description": "List all storage task assignments of a storage task",
+          "displayName": "List Storage Task Assignments by Storage Task",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/storageTaskAssignments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Tasks",
+      "name": "storageTasks/versions",
+      "operations": [
+        {
+          "description": "List all versions of a storage task",
+          "displayName": "List Storage Task Versions",
+          "isDataAction": false,
+          "name": "Microsoft.Storage/storageTasks/versions/read",
           "origin": null,
           "properties": null
         }
