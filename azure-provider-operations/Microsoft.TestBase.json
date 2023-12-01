@@ -789,7 +789,7 @@
         },
         {
           "description": "This endpoint allows initiating an on-demand run for a specific test configuration identified by the testConfigurationId within the specified organizationId. It triggers the execution of multiple packages with the provided payload parameters.",
-          "displayName": "TestConfigurations_RunTest",
+          "displayName": "TestConfiguration_RunTest",
           "isDataAction": false,
           "name": "Microsoft.TestBase/testBaseAccounts/testConfigurations/runTest/action",
           "origin": null,
@@ -1062,6 +1062,20 @@
           "displayName": "Credentials_Update",
           "isDataAction": false,
           "name": "Microsoft.TestBase/testBaseAccounts/credentials/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "testBaseAccounts/testConfigurations/testResults",
+      "name": "testBaseAccounts/testConfigurations/testResults",
+      "operations": [
+        {
+          "description": "Lists all the Test Results of packages associated with a test configuration. Can be filtered by testPassId (specific test configuration run).",
+          "displayName": "TestConfigurationTestResults_List",
+          "isDataAction": false,
+          "name": "Microsoft.TestBase/testBaseAccounts/testConfigurations/testResults/read",
           "origin": null,
           "properties": null
         }
