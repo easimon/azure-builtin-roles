@@ -34,6 +34,14 @@
           "properties": null
         },
         {
+          "description": "Patches specified service.",
+          "displayName": "Partially updates service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
           "description": "Returns the details of the specified service.",
           "displayName": "Get service",
           "isDataAction": false,
@@ -62,6 +70,14 @@
           "displayName": "Delete service",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Imports API from API Management instance.",
+          "displayName": "Import APIM API",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/importFromApim/action",
           "origin": "user, system",
           "properties": null
         },
@@ -346,14 +362,6 @@
           "properties": null
         },
         {
-          "description": "Checks status of individual import operation",
-          "displayName": "Import API definition status check",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/importSpecification/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
           "description": "Imports API definition file.",
           "displayName": "Import API definition",
           "isDataAction": false,
@@ -434,6 +442,34 @@
           "displayName": "Delete API deployment.",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API",
+      "name": "services/workspaces/apis/versions/definitions/operationResults",
+      "operations": [
+        {
+          "description": "Checks status of individual import operation",
+          "displayName": "Import API definition status check",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/operationResults/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API",
+      "name": "services/operationResults",
+      "operations": [
+        {
+          "description": "Checks status of individual import operation",
+          "displayName": "Import APIM API status check",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/operationResults/read",
           "origin": "user, system",
           "properties": null
         }
