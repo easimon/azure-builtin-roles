@@ -50,7 +50,7 @@ jobs:
       - name: Upload Tweets
         uses: actions/upload-artifact@v4
         with:
-          name: tweets
+          name: tweets-${{ matrix.type }}
           path: ${{ env.TWEET_PATH }}/
           if-no-files-found: ignore
 
@@ -61,12 +61,11 @@ jobs:
       - name: Download Tweets
         uses: actions/download-artifact@v4
         with:
-          name: tweets
           path: ${{ env.TWEET_PATH }}/
       - name: Create Matrix
         id: create-matrix
         run: |
-          TWEETS="$(cat "${TWEET_PATH}"/*.tweet | jq --slurp -c .)"
+          TWEETS="$(cat "${TWEET_PATH}"/*/*.tweet | jq --slurp -c .)"
           echo "tweets=${TWEETS}" > "${GITHUB_OUTPUT}"
     outputs:
       tweets: ${{ steps.create-matrix.outputs.tweets }}
