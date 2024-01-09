@@ -4,6 +4,14 @@
   "name": "Microsoft.HybridConnectivity",
   "operations": [
     {
+      "description": "Retrieve AWS Cloud Formation template",
+      "displayName": "GenerateAwsTemplate_Post",
+      "isDataAction": false,
+      "name": "Microsoft.HybridConnectivity/generateAwsTemplate/action",
+      "origin": null,
+      "properties": null
+    },
+    {
       "description": "Register the subscription for Microsoft.HybridConnectivity",
       "displayName": "Register the Microsoft.HybridConnectivity",
       "isDataAction": false,
@@ -134,66 +142,6 @@
       ]
     },
     {
-      "displayName": "publicCloudConnectors",
-      "name": "publicCloudConnectors",
-      "operations": [
-        {
-          "description": "Create or update the publicCloudConnectors resource.",
-          "displayName": "Create/Update publicCloudConnectors",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/publicCloudConnectors/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets/List publicCloudConnectors resource.",
-          "displayName": "Get/List publicCloudConnectors",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/publicCloudConnectors/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes publicCloudConnectors resource.",
-          "displayName": "Deletes publicCloudConnectors",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/publicCloudConnectors/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "solutionConfiguration",
-      "name": "solutionConfigurations",
-      "operations": [
-        {
-          "description": "Create or update the solutionConfiguration resource.",
-          "displayName": "Create/Update solutionConfiguration",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/solutionConfigurations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets/List solution configuration resource.",
-          "displayName": "Get/List solution configurations",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/solutionConfigurations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes solution configuration resource.",
-          "displayName": "Deletes solution configuration",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/solutionConfigurations/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "solutionTypes",
       "name": "solutionTypes",
       "operations": [
@@ -208,14 +156,30 @@
       ]
     },
     {
-      "displayName": "inventory",
-      "name": "inventory",
+      "displayName": "solutionConfiguration",
+      "name": "solutionConfiguration",
       "operations": [
         {
-          "description": "Get or list of inventory.",
-          "displayName": "Get/List inventory",
+          "description": "Create or update the solutionConfiguration resource.",
+          "displayName": "Create/Update solutionConfiguration",
           "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/inventory/read",
+          "name": "Microsoft.HybridConnectivity/solutionConfiguration/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets/List solution configuration resource.",
+          "displayName": "Get/List solution configurations",
+          "isDataAction": false,
+          "name": "Microsoft.HybridConnectivity/solutionConfiguration/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes solution configuration resource.",
+          "displayName": "Deletes solution configuration",
+          "isDataAction": false,
+          "name": "Microsoft.HybridConnectivity/solutionConfiguration/delete",
           "origin": null,
           "properties": null
         }
