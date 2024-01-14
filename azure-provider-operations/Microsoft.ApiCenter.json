@@ -96,8 +96,8 @@
       "name": "services/workspaces/apis",
       "operations": [
         {
-          "description": "List APs inside a catalog",
-          "displayName": "List APIs",
+          "description": "Read APIs from an API Center.",
+          "displayName": "Read APIs",
           "isDataAction": true,
           "name": "Microsoft.ApiCenter/services/workspaces/apis/read",
           "origin": "user, system",
@@ -146,9 +146,17 @@
       ]
     },
     {
-      "displayName": "API Environments",
+      "displayName": "ApiEnvironment",
       "name": "services/workspaces/environments",
       "operations": [
+        {
+          "description": "Read API environments from an API Center.",
+          "displayName": "Read API environments",
+          "isDataAction": true,
+          "name": "Microsoft.ApiCenter/services/workspaces/environments/read",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Returns paginated collection of environments",
           "displayName": "List environments",
@@ -187,6 +195,14 @@
       "displayName": "ApiVersion",
       "name": "services/workspaces/apis/versions",
       "operations": [
+        {
+          "description": "Read API versions from an API Center.",
+          "displayName": "Read API versions",
+          "isDataAction": true,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Creates or updates API version.",
           "displayName": "Create or Update API version.",
@@ -354,6 +370,14 @@
       "name": "services/workspaces/apis/versions/definitions",
       "operations": [
         {
+          "description": "Read API definitions from an API Center.",
+          "displayName": "Read API definitions",
+          "isDataAction": true,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
           "description": "Exports API definition file.",
           "displayName": "Export API definition",
           "isDataAction": false,
@@ -405,6 +429,14 @@
       "displayName": "API Deployment",
       "name": "services/workspaces/apis/deployments",
       "operations": [
+        {
+          "description": "Read API deployments from an API Center.",
+          "displayName": "Read API deployments",
+          "isDataAction": true,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/deployments/read",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Creates or updates API Deployment.",
           "displayName": "Create or Update API Deployment.",
