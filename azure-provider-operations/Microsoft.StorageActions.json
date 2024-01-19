@@ -1,8 +1,126 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft Storage Actions",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.StorageActions",
   "name": "Microsoft.StorageActions",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": null,
+      "displayName": null,
+      "isDataAction": false,
+      "name": "Microsoft.StorageActions/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Storage Task",
+      "name": "storageTasks",
+      "operations": [
+        {
+          "description": "Deletes an existing storage task",
+          "displayName": "Delete Storage Task",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the properties for the specified storage task",
+          "displayName": "Get Storage Task",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Promote specific version of storage task to current version",
+          "displayName": "Promote Storage Task Version",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/promote/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates storage task",
+          "displayName": "Put Storage Task",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Task Run Statuses",
+      "name": "storageTasks/reports",
+      "operations": [
+        {
+          "description": "List run statuses of a storage task",
+          "displayName": "List Storage Task Run Reports",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/reports/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Task Assignments",
+      "name": "storageTasks/storageTaskAssignments",
+      "operations": [
+        {
+          "description": "List all storage task assignments of a storage task",
+          "displayName": "List Storage Task Assignments by Storage Task",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/storageTaskAssignments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Storage Tasks",
+      "name": "storageTasks/versions",
+      "operations": [
+        {
+          "description": "List all versions of a storage task",
+          "displayName": "List Storage Task Versions",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/storageTasks/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/locations/previewActions/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "operations",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
