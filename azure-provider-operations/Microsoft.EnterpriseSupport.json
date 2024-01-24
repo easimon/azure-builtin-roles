@@ -1,8 +1,114 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft EnterpriseSupport",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.EnterpriseSupport",
   "name": "Microsoft.EnterpriseSupport",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Register the Enterprise Support resource provider and enable creation of resources",
+      "displayName": "Registers the Enterprise Support Resource Provider",
+      "isDataAction": true,
+      "name": "Microsoft.EnterpriseSupport/register/Action",
+      "origin": "System",
+      "properties": null
+    },
+    {
+      "description": "Register the Enterprise Support resource provider and enable creation of resources",
+      "displayName": "Registers the Enterprise Support Resource Provider",
+      "isDataAction": true,
+      "name": "Microsoft.EnterpriseSupport/enterpriseSupports/Action",
+      "origin": "System",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "enterpriseSupports",
+      "name": "enterpriseSupports",
+      "operations": [
+        {
+          "description": "Reads Enterprise Support resources",
+          "displayName": "Gets/Lists the Enterprise Support resources",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/enterpriseSupports/Read",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Writes Enterprise Support resources",
+          "displayName": "Creates/Updates the Enterprise Support resources",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/enterpriseSupports/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Enterprise Support resources",
+          "displayName": "Deletes the Enterprise Support resources",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/enterpriseSupports/Delete",
+          "origin": "User, System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EnterpriseSupport Service",
+      "name": "services",
+      "operations": [
+        {
+          "description": "Read EnterpriseSupport resources",
+          "displayName": "Read EnterpriseSupport resource",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/services/read",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Writes EnterpriseSupport resources",
+          "displayName": "Write EnterpriseSupport resource",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/services/write",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Deletes EnterpriseSupport resources",
+          "displayName": "Delete EnterpriseSupport resource",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/services/delete",
+          "origin": "User, System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operations",
+      "name": "Operations",
+      "operations": [
+        {
+          "description": "Read the operations for all resource types.",
+          "displayName": "Read resource provider operations",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/Operations/read",
+          "origin": "User, System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Result",
+      "name": "locations/operationresults",
+      "operations": [
+        {
+          "description": "Read the status of an asynchronous operation.",
+          "displayName": "Read Operation Result.",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/locations/operationresults/read",
+          "origin": "User, System",
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
