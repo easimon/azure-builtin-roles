@@ -1,8 +1,578 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft Data Replication",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DataReplication",
   "name": "Microsoft.DataReplication",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Registers the subscription for the Microsoft.DataReplication resource provider",
+      "displayName": "Registers Microsoft Data Replication",
+      "isDataAction": false,
+      "name": "Microsoft.DataReplication/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Fabric Agents",
+      "name": "replicationFabrics/fabricAgents",
+      "operations": [
+        {
+          "description": "Reads any fabric agent",
+          "displayName": "Read fabric agent",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists the fabric agents",
+          "displayName": "Lists the fabric agents",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any fabric agent",
+          "displayName": "Writes fabric agent",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates any fabric agent",
+          "displayName": "Updates the fabric agent",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Deletes any fabric agents",
+          "displayName": "Deletes fabric agent",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/delete",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Fabrics",
+      "name": "replicationFabrics",
+      "operations": [
+        {
+          "description": "Refreshes any fabric agent",
+          "displayName": "Refreshes fabric agent",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Reads any fabrics",
+          "displayName": "Read Fabric",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists all fabrics",
+          "displayName": "Lists the fabrics",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any fabric",
+          "displayName": "Writes the fabric",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates any fabric",
+          "displayName": "Updates the fabric",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Deletes any fabrics",
+          "displayName": "Deletes the fabric",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/delete",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Fabric Agents",
+      "name": "replicationFabrics/fabricAgents/operation",
+      "operations": [
+        {
+          "description": "Gets the operation status of the fabric agents",
+          "displayName": "Gets the operation status of the fabric agent",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/fabricAgents/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Alert Settings",
+      "name": "replicationVaults/alertSettings",
+      "operations": [
+        {
+          "description": "Reads any alert setting",
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/alertSettings/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists alert settings",
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/alertSettings/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any alert setting",
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/alertSettings/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates any alert setting",
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/alertSettings/write",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Fabrics",
+      "name": "replicationFabrics/operation",
+      "operations": [
+        {
+          "description": "Gets the operation status of the fabrics",
+          "displayName": "Gets the operation status of the fabric",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationFabrics/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Policies",
+      "name": "replicationVaults/replicationPolicies",
+      "operations": [
+        {
+          "description": "Reads any replication policy",
+          "displayName": "Reads replication policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationPolicies/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Listss replication policies",
+          "displayName": "Listss replication policies",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationPolicies/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any replication policy",
+          "displayName": "Writes replication policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationPolicies/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates replication policy",
+          "displayName": "Updates replication policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationPolicies/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Deletes any replication policies",
+          "displayName": "Deletes replication policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationPolicies/delete",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Policies",
+      "name": "replicationVaults/replicationPolicies/operation",
+      "operations": [
+        {
+          "description": "Reads the operation status of the replication policy",
+          "displayName": "Gets the operation status of the replication policy",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationPolicies/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "replicationVaults/protectedItems",
+      "operations": [
+        {
+          "description": "Reads any protected item",
+          "displayName": "Get protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists protected items",
+          "displayName": "Lists protected items",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any protected item",
+          "displayName": "Writes protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates any protected item",
+          "displayName": "Updates protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Deletes any protected item",
+          "displayName": "Deletes protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/delete",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "replicationVaults",
+      "operations": [
+        {
+          "description": "Performs resync on any protected item",
+          "displayName": "Performs resync on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs test failover on any protected item",
+          "displayName": "Performs test failover on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs test failover cleanup on any protected item",
+          "displayName": "Performs test failover cleanup on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs planned failover on any protected item",
+          "displayName": "Performs planned failover on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs unplanned failover on any protected item",
+          "displayName": "Performs unplanned failover on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs commit failover on any protected item",
+          "displayName": "Performs commit failover on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs cancel failover on any protected item",
+          "displayName": "Performs cancel failover on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs change recovery point on any protected item",
+          "displayName": "Performs change recovery point on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Performs reprotect on any protected item",
+          "displayName": "Performs reprotect on protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/recoveryPlans/action",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Gets any vault",
+          "displayName": "Gets the vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists vaults",
+          "displayName": "Lists vaults",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any vault",
+          "displayName": "Writes vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates any vault",
+          "displayName": "Updates vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Deletes any vaults",
+          "displayName": "Deletes vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/delete",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Gets the statistics of any vault",
+          "displayName": "Gets the statistics of the vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "replicationVaults/protectedItems/operation",
+      "operations": [
+        {
+          "description": "Gets operation status of any protected item",
+          "displayName": "Gets operation status of protected item",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "replicationVaults/recoveryPlans",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/recoveryPlans/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/recoveryPlans/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/recoveryPlans/delete",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "replicationVaults/recoveryPlans/operation",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/recoveryPlans/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "replicationVaults/protectedItems/recoveryPoints",
+      "operations": [
+        {
+          "description": "Gets any recovery point info",
+          "displayName": "Gets the recovery point info",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/recoveryPoints/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists recovery points",
+          "displayName": "Lists the recovery points",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/protectedItems/recoveryPoints/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Extensions",
+      "name": "replicationVaults/replicationExtensions",
+      "operations": [
+        {
+          "description": "Gets any replication extension",
+          "displayName": "Gets the replication extension",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationExtensions/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Lists replication extensions",
+          "displayName": "Lists the replication extensions",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationExtensions/read",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Writes any replication extension",
+          "displayName": "Writes the replication extension",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationExtensions/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Updates any replication extension",
+          "displayName": "Updates the replication extension",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationExtensions/write",
+          "origin": "userandsystem",
+          "properties": null
+        },
+        {
+          "description": "Deletes any replication extensions",
+          "displayName": "Deletes replication extension",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationExtensions/delete",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Extensions",
+      "name": "replicationVaults/replicationExtensions/operation",
+      "operations": [
+        {
+          "description": "Gets operation status of any replication extension",
+          "displayName": "Gets the operation status of the replication extension",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/replicationExtensions/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Vaults",
+      "name": "replicationVaults/operation",
+      "operations": [
+        {
+          "description": "Gets operation status of any vault",
+          "displayName": "Gets operation status on the vault",
+          "isDataAction": false,
+          "name": "Microsoft.DataReplication/replicationVaults/operation/read",
+          "origin": "userandsystem",
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
