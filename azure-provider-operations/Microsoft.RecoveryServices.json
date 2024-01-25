@@ -210,6 +210,14 @@
           "name": "Microsoft.RecoveryServices/Vaults/backupJobs/read",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Cancel the Job",
+          "displayName": "Cancel Jobs",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupJobs/retry/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -2501,16 +2509,16 @@
           "properties": null
         },
         {
-          "description": "Get ResourceGuard proxy operation gets an object representing the Azure resource of type 'ResourceGuard proxy'",
-          "displayName": "Get ResourceGuard proxy",
+          "description": "Get the list of ResourceGuard proxies for a resource",
+          "displayName": "Get the list of ResourceGuard proxies for a resource",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/read",
           "origin": "user",
           "properties": null
         },
         {
-          "description": "Get the list of ResourceGuard proxies for a resource",
-          "displayName": "Get the list of ResourceGuard proxies for a resource",
+          "description": "Get ResourceGuard proxy operation gets an object representing the Azure resource of type 'ResourceGuard proxy'",
+          "displayName": "Get ResourceGuard proxy",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/read",
           "origin": "user",
@@ -2683,6 +2691,20 @@
           "displayName": "Get tiering cost operation status",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupTieringCost/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs",
+      "name": "Vaults/backupJobs/backupChildJobs",
+      "operations": [
+        {
+          "description": "Returns all Job Objects",
+          "displayName": "Get Jobs",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupJobs/backupChildJobs/read",
           "origin": "user",
           "properties": null
         }
