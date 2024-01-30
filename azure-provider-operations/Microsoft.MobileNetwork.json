@@ -832,8 +832,16 @@
       "name": "packetCoreControlPlanes/routingInfo",
       "operations": [
         {
-          "description": "Get the routing information for the control plane access interface on the packet core.",
-          "displayName": "RoutingInfo_PacketCoreControlPlane",
+          "description": "List all of the routing information for the packet core.",
+          "displayName": "RoutingInfo_List",
+          "isDataAction": false,
+          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/routingInfo/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the routing information for the packet core.",
+          "displayName": "RoutingInfo_Get",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/routingInfo/read",
           "origin": null,
@@ -910,20 +918,6 @@
           "displayName": "ExtendedUeInformation_Get",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/ues/extendedInformation/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "packetCoreControlPlanes/packetCoreDataPlanes/routingInfo",
-      "name": "packetCoreControlPlanes/packetCoreDataPlanes/routingInfo",
-      "operations": [
-        {
-          "description": "Get the routing information for the user plane access interface on the packet core.",
-          "displayName": "RoutingInfo_PacketCoreDataPlane",
-          "isDataAction": false,
-          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/routingInfo/read",
           "origin": null,
           "properties": null
         }
@@ -1016,20 +1010,6 @@
           "displayName": "AttachedWifiSSIDs_ListByPacketCoreDataPlane",
           "isDataAction": false,
           "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedWifiSsids/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/routingInfo",
-      "name": "packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/routingInfo",
-      "operations": [
-        {
-          "description": "Get the routing information for the user plane data interface corresponding to this attached DN.",
-          "displayName": "RoutingInfo_AttachedDataNetwork",
-          "isDataAction": false,
-          "name": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks/routingInfo/read",
           "origin": null,
           "properties": null
         }
