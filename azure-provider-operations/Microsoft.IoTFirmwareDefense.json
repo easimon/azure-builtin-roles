@@ -298,46 +298,6 @@
       "name": "workspaces/firmwares",
       "operations": [
         {
-          "description": "Lists all of firmwares inside a workspace.",
-          "displayName": "Firmware_ListByWorkspace",
-          "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get firmware.",
-          "displayName": "Firmware_Get",
-          "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "The operation to create a firmware.",
-          "displayName": "Firmware_Create",
-          "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "The operation to delete a firmware.",
-          "displayName": "Firmware_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "The operation to update firmware.",
-          "displayName": "Firmware_Update",
-          "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "The operation to a url for file download.",
           "displayName": "Firmware_GenerateDownloadUrl",
           "isDataAction": false,
@@ -454,6 +414,190 @@
           "displayName": "Firmware_ListGenerateCryptoKeyList",
           "isDataAction": false,
           "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/generateCryptoKeyList/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all of firmwares inside a workspace.",
+          "displayName": "Firmwares_ListByWorkspace",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get firmware.",
+          "displayName": "Firmwares_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to create a firmware.",
+          "displayName": "Firmwares_Create",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to delete a firmware.",
+          "displayName": "Firmwares_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to update firmware.",
+          "displayName": "Firmwares_Update",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to a url for file download.",
+          "displayName": "Firmwares_GenerateDownloadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/generateDownloadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "The operation to a url for tar file download.",
+          "displayName": "Firmwares_GenerateFilesystemDownloadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/generateFilesystemDownloadUrl/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/sbomComponents",
+      "name": "workspaces/firmwares/sbomComponents",
+      "operations": [
+        {
+          "description": "Lists SBOM analysis results of a firmware.",
+          "displayName": "SbomComponents_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/sbomComponents/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/binaryHardeningResults",
+      "name": "workspaces/firmwares/binaryHardeningResults",
+      "operations": [
+        {
+          "description": "Lists binary hardening analysis results of a firmware.",
+          "displayName": "BinaryHardening_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/binaryHardeningResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/cryptoCertificates",
+      "name": "workspaces/firmwares/cryptoCertificates",
+      "operations": [
+        {
+          "description": "Lists cryptographic certificate analysis results found in a firmware.",
+          "displayName": "CryptoCertificates_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/cryptoCertificates/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/cryptoKeys",
+      "name": "workspaces/firmwares/cryptoKeys",
+      "operations": [
+        {
+          "description": "Lists cryptographic key analysis results found in a firmware.",
+          "displayName": "CryptoKeys_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/cryptoKeys/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/passwordHashes",
+      "name": "workspaces/firmwares/passwordHashes",
+      "operations": [
+        {
+          "description": "Lists password hash analysis results of a firmware.",
+          "displayName": "PasswordHashes_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/passwordHashes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/cves",
+      "name": "workspaces/firmwares/cves",
+      "operations": [
+        {
+          "description": "Lists CVE analysis results of a firmware.",
+          "displayName": "Cves_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/cves/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/firmwares/summaries",
+      "name": "workspaces/firmwares/summaries",
+      "operations": [
+        {
+          "description": "Lists analysis result summary names of a firmware. To fetch the full summary data, get that summary by name.",
+          "displayName": "Summaries_ListByFirmware",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/summaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get an analysis result summary of a firmware by name.",
+          "displayName": "Summaries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/summaries/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/locations/operationStatuses/write",
           "origin": null,
           "properties": null
         }
