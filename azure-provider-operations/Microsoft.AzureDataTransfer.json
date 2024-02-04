@@ -18,6 +18,22 @@
       "name": "Microsoft.AzureDataTransfer/unregister/action",
       "origin": null,
       "properties": null
+    },
+    {
+      "description": "Lists approved schemas for Azure Data Transfer.",
+      "displayName": "AzureDataTransfer_listApprovedSchemas",
+      "isDataAction": false,
+      "name": "Microsoft.AzureDataTransfer/listApprovedSchemas/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Validates a schema for Azure Data Transfer.",
+      "displayName": "AzureDataTransfer_validateSchema",
+      "isDataAction": false,
+      "name": "Microsoft.AzureDataTransfer/validateSchema/action",
+      "origin": null,
+      "properties": null
     }
   ],
   "resourceTypes": [
@@ -62,6 +78,30 @@
       "name": "pipelines",
       "operations": [
         {
+          "description": "Approves the specified connection in a pipeline.",
+          "displayName": "Pipelines_ApproveConnection",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/approveConnection/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Rejects the specified connection in a pipeline.",
+          "displayName": "Pipelines_RejectConnection",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/rejectConnection/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the schemas for the specified connection in a pipeline.",
+          "displayName": "ListSchemas_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/listSchemas/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Gets pipeline resource.",
           "displayName": "Pipelines_Get",
           "isDataAction": false,
@@ -94,30 +134,6 @@
           "properties": null
         },
         {
-          "description": "Approves the specified connection in a pipeline.",
-          "displayName": "Pipelines_ApproveConnection",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/approveConnection/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Rejects the specified connection in a pipeline.",
-          "displayName": "Pipelines_RejectConnection",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/rejectConnection/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all pending connections for a pipeline.",
-          "displayName": "GeneratePendingConnections_List",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/generatePendingConnections/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Gets pipelines in a resource group.",
           "displayName": "Pipelines_ListByResourceGroup",
           "isDataAction": false,
@@ -139,6 +155,30 @@
       "displayName": "connections",
       "name": "connections",
       "operations": [
+        {
+          "description": "Links the connection to its pending connection.",
+          "displayName": "Connections_Link",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/connections/link/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all pending connections for a connection.",
+          "displayName": "ListPendingConnections_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/connections/listPendingConnections/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all pending flows for a connection.",
+          "displayName": "ListPendingFlows_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/connections/listPendingFlows/action",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Gets connection resource.",
           "displayName": "Connections_Get",
@@ -168,22 +208,6 @@
           "displayName": "Connections_Update",
           "isDataAction": false,
           "name": "Microsoft.AzureDataTransfer/connections/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Links the connection to its pending connection.",
-          "displayName": "Connections_Link",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/connections/link/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all pending flows for a connection.",
-          "displayName": "GeneratePendingFlows_List",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/connections/generatePendingFlows/action",
           "origin": null,
           "properties": null
         },
