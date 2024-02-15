@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2022-06-28T23:42:01.665258+00:00",
+  "createdOn": "2022-06-29T05:48:13.230747+00:00",
   "description": "Provide permission to the Azure Virtual Desktop Resource Provider to start virtual machines.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/489581de-a3bd-480d-9518-53dea7416b33",
   "name": "489581de-a3bd-480d-9518-53dea7416b33",
@@ -16,7 +16,14 @@
         "Microsoft.Authorization/*/read",
         "Microsoft.Insights/alertRules/*",
         "Microsoft.Resources/deployments/*",
-        "Microsoft.Resources/subscriptions/resourceGroups/read"
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/operations/read",
+        "Microsoft.HybridCompute/locations/operationresults/read",
+        "Microsoft.HybridCompute/locations/operationstatus/read",
+        "Microsoft.AzureStackHCI/virtualMachineInstances/read",
+        "Microsoft.AzureStackHCI/virtualMachineInstances/start/action",
+        "Microsoft.AzureStackHCI/operations/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -29,5 +36,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-01-22T16:09:31.637869+00:00"
+  "updatedOn": "2024-02-14T16:30:12.604697+00:00"
 }
