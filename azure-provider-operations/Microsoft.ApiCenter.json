@@ -366,7 +366,7 @@
       ]
     },
     {
-      "displayName": "API Spec",
+      "displayName": "API definition",
       "name": "services/workspaces/apis/versions/definitions",
       "operations": [
         {
@@ -374,6 +374,14 @@
           "displayName": "Read API definitions",
           "isDataAction": true,
           "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Updates analysis results for specified API definition.",
+          "displayName": "Update API definition analysis state",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/updateAnalysisState/action",
           "origin": "user, system",
           "properties": null
         },
@@ -576,6 +584,20 @@
           "displayName": "Delete Event Grid filter",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/eventGridFilters/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API definition",
+      "name": "services/workspaces/apis/versions/definitions/analysisResults",
+      "operations": [
+        {
+          "description": "Returns analysis report for specified API definition.",
+          "displayName": "Get API definition analysis report",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/analysisResults/read",
           "origin": "user, system",
           "properties": null
         }
