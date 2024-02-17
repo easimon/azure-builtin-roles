@@ -478,20 +478,6 @@
       ]
     },
     {
-      "displayName": "hybridAksClusters/restartNode",
-      "name": "hybridAksClusters",
-      "operations": [
-        {
-          "description": "Restart a targeted node of a Hybrid AKS cluster.",
-          "displayName": "HybridAksClusters_RestartNode",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/hybridAksClusters/restartNode/action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "l3Networks",
       "name": "l3Networks",
       "operations": [
@@ -772,44 +758,6 @@
           "displayName": "L2Networks_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/l2Networks/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "clusters/admissions/generateCASigningCertificate",
-      "name": "clusters/admissions",
-      "operations": [
-        {
-          "description": "Generate a CA signing certificate that can be used to produce certificates for bare metal machine access within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
-          "displayName": "Admissions_GenerateCASigningCertificate",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/admissions/generateCASigningCertificate/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Generates a standard access SSH certificate that can be used to access bare metal machines within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
-          "displayName": "Admissions_GenerateSshCertificate",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/admissions/generateSshCertificate/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Generate a super user access SSH certificate that can be used to access bare metal machines within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
-          "displayName": "Admissions_GenerateSshSudoCertificate",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/admissions/generateSshSudoCertificate/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Retrieves the public x.509 certificate for bare metal machine that can be used to add to the known hosts of a jump server within the provided cluster. The API returns 200 OK with a certificate in a JSON response.",
-          "displayName": "Admissions_RetrieveHostCACertificate",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/admissions/retrieveHostCACertificate/action",
           "origin": null,
           "properties": null
         }
@@ -1362,6 +1310,220 @@
           "displayName": "KubernetesClusterFeatures_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/kubernetesClusters/features/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "edgeClusterMachineSkus",
+      "name": "edgeClusterMachineSkus",
+      "operations": [
+        {
+          "description": "Get a list of edge cluster machine SKUs in the provided subscription.",
+          "displayName": "EdgeClusterMachineSkus_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusterMachineSkus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the properties of the specified edge cluster machine SKU.",
+          "displayName": "EdgeClusterMachineSkus_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusterMachineSkus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "edgeClusters",
+      "name": "edgeClusters",
+      "operations": [
+        {
+          "description": "Get a list of edge clusters in the provided subscription.",
+          "displayName": "EdgeClusters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of edge clusters in the provided resource group.",
+          "displayName": "EdgeClusters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided the edge cluster.",
+          "displayName": "EdgeClusters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new edge cluster or update properties of the edge cluster if it exists.",
+          "displayName": "EdgeClusters_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided edge cluster.",
+          "displayName": "EdgeClusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of the provided edge cluster, or update the tags assigned to the edge cluster. Properties and tag updates can be done independently.",
+          "displayName": "EdgeClusters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generates and returns the kubernetes configuration credentials for the edge cluster.",
+          "displayName": "EdgeClusters_ListClusterUserCredential",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/listClusterUserCredential/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Prepares and stages the images to the edge cluster nodes for the specified runtime version.",
+          "displayName": "EdgeClusters_StageRuntime",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusters/stageRuntime/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "registrationHubs",
+      "name": "registrationHubs",
+      "operations": [
+        {
+          "description": "Get a list of registration hubs in the provided subscription.",
+          "displayName": "RegistrationHubs_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of registration hubs in the provided resource group.",
+          "displayName": "RegistrationHubs_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided registration hub.",
+          "displayName": "RegistrationHubs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new registration hub or update properties of the existing one.",
+          "displayName": "RegistrationHubs_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided registration hub.",
+          "displayName": "RegistrationHubs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of the provided registration hub, or update the tags associated with the registration hub. Properties and tag updates can be done independently.",
+          "displayName": "RegistrationHubs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "edgeClusterSkus",
+      "name": "edgeClusterSkus",
+      "operations": [
+        {
+          "description": "Get a list of edge cluster SKUs in the provided subscription.",
+          "displayName": "EdgeClusterSkus_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusterSkus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the properties of the specified edge cluster SKU.",
+          "displayName": "EdgeClusterSkus_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/edgeClusterSkus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "registrationHubs/images",
+      "name": "registrationHubs/images",
+      "operations": [
+        {
+          "description": "Get a list of images in the provided registration hub.",
+          "displayName": "RegistrationHubImages_ListByRegistrationHub",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided registration hub image.",
+          "displayName": "RegistrationHubImages_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new registration hub image or update properties of the existing one.",
+          "displayName": "RegistrationHubImages_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/images/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided registration hub image.",
+          "displayName": "RegistrationHubImages_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/images/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch properties of the provided registration hub image, or update the tags associated with the registration hub image. Properties and tag updates can be done independently.",
+          "displayName": "RegistrationHubImages_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/images/write",
           "origin": null,
           "properties": null
         }
