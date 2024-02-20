@@ -1374,14 +1374,6 @@
       "name": "flexibleServers",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
-          "isDataAction": false,
-          "name": "Microsoft.DBforMySQL/flexibleServers/resetGtid/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Returns the list of servers or gets the properties for the specified server.",
           "displayName": "List/Get MySQL Servers",
           "isDataAction": false,
@@ -1409,7 +1401,39 @@
           "description": null,
           "displayName": null,
           "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/validateEstimateHighAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Return whether the replication is able to migration.",
+          "displayName": "Get replication status for auto migration",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/getReplicationStatusForMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/resetGtid/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/checkServerVersionUpgradeAvailability/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Determines if user is allowed to approve a private endpoint connection",
+          "displayName": "Private Endpoint Connections Approval",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/privateEndpointConnectionsApproval/action",
           "origin": null,
           "properties": null
         },
@@ -1888,6 +1912,42 @@
           "displayName": "Update Advanced Threat Protection Setting",
           "isDataAction": false,
           "name": "Microsoft.DBforMySQL/flexibleServers/advancedThreatProtectionSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "MySQL Server Supported Feature",
+      "name": "flexibleServers/supportedFeatures",
+      "operations": [
+        {
+          "description": "Return the list of the MySQL Server Supported Features",
+          "displayName": "List the MySQL Server Supported Features",
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/supportedFeatures/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "MySQL Server Backup",
+      "name": "flexibleServers/backupsv2",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/backupsv2/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DBforMySQL/flexibleServers/backupsv2/read",
           "origin": null,
           "properties": null
         }
