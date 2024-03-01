@@ -1101,6 +1101,142 @@
                     }
                   ],
                   "displayDescription": "The count of all successful notifications.",
+                  "displayName": "FCMv1 Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.success",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials (FCMv1 result: Sender Id Mismatch, Unauthorized, or Forbidden).",
+                  "displayName": "FCMv1 Authorization Errors (Invalid Credentials)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.invalidcredentials",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the registrationId in the registration was not recognized (FCMv1 result: Invalid registration, Missing Registration, Not registered, Not found, or Gone).",
+                  "displayName": "FCMv1 Bad Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.badchannel",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because FCMv1 throttled this app (FCMv1 Result: Quota Exceeded or 429).",
+                  "displayName": "FCMv1 Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1v1.throttled",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the payload was not formatted correctly (FCMv1 result: Invalid TTL, Invalid parameters, or Invalid data key).",
+                  "displayName": "FCMv1 Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.invalidnotificationformat",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the payload was too large (FCMv1 result: Message too big).",
+                  "displayName": "FCMv1 Invalid Notification Size Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.invalidnotificationsize",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the registrationId in the registration is not associated to the current app (FCMv1 result: Invalid package name).",
+                  "displayName": "FCMv1 Wrong Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.wrongchannel",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of errors communicating with FCMv1.",
+                  "displayName": "FCMv1 Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.fcmv1.pnserror",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
                   "displayName": "MPNS Successful Notifications",
                   "fillGapWithZero": true,
                   "name": "outgoing.mpns.success",
