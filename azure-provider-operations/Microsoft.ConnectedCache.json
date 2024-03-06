@@ -148,8 +148,24 @@
       "name": "ispCustomers",
       "operations": [
         {
+          "description": "This api gets information about all ispCustomer resources under the given subscription",
+          "displayName": "IspCustomers_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/ispCustomers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This api gets the information about all ispCustomer resources under the given subscription and resource group",
+          "displayName": "IspCustomers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/ispCustomers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Gets the ispCustomer resource information using this get call",
-          "displayName": "ispCustomers_Get",
+          "displayName": "IspCustomers_Get",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/read",
           "origin": null,
@@ -157,7 +173,7 @@
         },
         {
           "description": "This api creates an ispCustomer with the specified create parameters",
-          "displayName": "ispCustomers_CreateOrUpdate",
+          "displayName": "IspCustomers_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/write",
           "origin": null,
@@ -165,7 +181,7 @@
         },
         {
           "description": "This api deletes an existing ispCustomer resource",
-          "displayName": "ispCustomers_Delete",
+          "displayName": "IspCustomers_Delete",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/delete",
           "origin": null,
@@ -173,25 +189,9 @@
         },
         {
           "description": "This api updates an existing ispCustomer resource",
-          "displayName": "ispCustomers_Update",
+          "displayName": "IspCustomers_Update",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "This api gets the information about all ispCustomer resources under the given subscription and resource group",
-          "displayName": "ispCustomers_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/ispCustomers/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "This api gets information about all ispCustomer resources under the given subscription",
-          "displayName": "ispCustomers_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/ispCustomers/read",
           "origin": null,
           "properties": null
         }
@@ -202,8 +202,16 @@
       "name": "ispCustomers/ispCacheNodes",
       "operations": [
         {
+          "description": "This api retrieves information about all ispCacheNode resources under the given subscription and resource group",
+          "displayName": "IspCacheNodesOperations_ListByIspCustomerResource",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "This api gets ispCacheNode resource information",
-          "displayName": "ispCacheNodes_Get",
+          "displayName": "IspCacheNodesOperations_Get",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/read",
           "origin": null,
@@ -211,7 +219,7 @@
         },
         {
           "description": "This api creates an ispCacheNode with the specified create parameters",
-          "displayName": "ispCacheNodes_CreateOrUpdate",
+          "displayName": "IspCacheNodesOperations_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/write",
           "origin": null,
@@ -219,7 +227,7 @@
         },
         {
           "description": "This api deletes an existing ispCacheNode resource",
-          "displayName": "ispCacheNodes_Delete",
+          "displayName": "IspCacheNodesOperations_Delete",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/delete",
           "origin": null,
@@ -227,33 +235,25 @@
         },
         {
           "description": "This api updates an existing ispCacheNode resource",
-          "displayName": "ispCacheNodes_Update",
+          "displayName": "IspCacheNodesOperations_Update",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api retrieves information about all ispCacheNode resources under the given subscription and resource group",
-          "displayName": "ispCacheNodes_ListByCustomers",
+          "description": "This api gets secrets of the ispCacheNode resource install details",
+          "displayName": "IspCacheNodesOperations_GetCacheNodeInstallDetails",
           "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/read",
+          "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/getCacheNodeInstallDetails/action",
           "origin": null,
           "properties": null
         },
         {
           "description": "This api gets ispCacheNode resource information",
-          "displayName": "ispCacheNodes_getBgpCidrs",
+          "displayName": "IspCacheNodesOperations_GetBgpCidrs",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/getBgpCidrs/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "This api gets secrets of the ispCacheNode resource install details",
-          "displayName": "ispCacheNodes_getCacheNodeInstallDetails",
-          "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/ispCustomers/ispCacheNodes/getCacheNodeInstallDetails/action",
           "origin": null,
           "properties": null
         }
@@ -286,50 +286,50 @@
       "name": "enterpriseMccCustomers",
       "operations": [
         {
-          "description": "This api gets the enterpriseMccCustomers resource information using this get call",
-          "displayName": "enterpriseMccCustomers_Get",
+          "description": "This api gets information about all enterpriseMccCustomer resources under the given subscription",
+          "displayName": "EnterpriseMccCustomers_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api creates an enterpriseMccCustomer with the specified create parameters",
-          "displayName": "enterpriseMccCustomers_CreateOrUpdate",
+          "description": "This api gets the information about all enterprise mcc customer resources under the given subscription and resource group",
+          "displayName": "EnterpriseMccCustomers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the enterprise mcc customer resource information using this get call",
+          "displayName": "EnterpriseMccCustomers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This api creates an enterprise mcc customer with the specified create parameters",
+          "displayName": "EnterpriseMccCustomers_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api deletes an existing enterpriseMccCustomer resource",
-          "displayName": "enterpriseMccCustomers_Delete",
+          "description": "This api deletes an existing enterprise mcc customer resource",
+          "displayName": "EnterpriseMccCustomers_Delete",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api updates an existing enterpriseMccCustomer resource",
-          "displayName": "enterpriseMccCustomers_Update",
+          "description": "This api updates an existing enterprise mcc customer resource",
+          "displayName": "EnterpriseMccCustomers_Update",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "This api gets the information about all enterprise Mcc Customer resources under the given subscription and resource group",
-          "displayName": "enterpriseMccCustomers_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "This api gets information about all enterprise mcc customer resources under the given subscription",
-          "displayName": "enterpriseMccCustomers_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/read",
           "origin": null,
           "properties": null
         }
@@ -340,48 +340,56 @@
       "name": "enterpriseMccCustomers/enterpriseMccCacheNodes",
       "operations": [
         {
-          "description": "This api gets enterpriseMccCacheNode resource information",
-          "displayName": "enterpriseMccCacheNodes_Get",
+          "description": "This api gets secrets of the enterprise Mcc CacheNode resource install details",
+          "displayName": "enterpriseMccCacheNodes_getCacheNodeInstallDetails",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/getCacheNodeInstallDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This api retrieves information about all ispCacheNode resources under the given subscription and resource group",
+          "displayName": "EnterpriseMccCacheNodesOperations_ListByEnterpriseMccCustomerResource",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api creates an enterpriseMccCacheNode with the specified create parameters",
-          "displayName": "enterpriseMccCacheNodes_CreateOrUpdate",
+          "description": "This api gets ispCacheNode resource information",
+          "displayName": "EnterpriseMccCacheNodesOperations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This api creates an ispCacheNode with the specified create parameters",
+          "displayName": "EnterpriseMccCacheNodesOperations_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api deletes an existing enterpriseMccCacheNode resource",
-          "displayName": "enterpriseMccCacheNodes_Delete",
+          "description": "This api deletes an existing ispCacheNode resource",
+          "displayName": "EnterpriseMccCacheNodesOperations_Delete",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api updates an existing enterpriseMccCacheNode resource",
-          "displayName": "enterpriseMccCacheNodes_Update",
+          "description": "This api updates an existing ispCacheNode resource",
+          "displayName": "EnterpriseMccCacheNodesOperations_Update",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "This api retrieves information about all enterpriseMccCacheNode resources under the given subscription and resource group",
-          "displayName": "enterpriseMccCacheNodes_ListByCustomers",
-          "isDataAction": false,
-          "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "This api gets secrets of the enterprise Mcc CacheNode resource install details",
-          "displayName": "enterpriseMccCacheNodes_getCacheNodeInstallDetails",
+          "description": "This api gets secrets of the ispCacheNode resource install details",
+          "displayName": "EnterpriseMccCacheNodesOperations_GetCacheNodeInstallDetails",
           "isDataAction": false,
           "name": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes/getCacheNodeInstallDetails/action",
           "origin": null,
