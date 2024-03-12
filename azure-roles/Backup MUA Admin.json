@@ -1,0 +1,52 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-03-08T09:37:14.326898+00:00",
+  "description": "Backup MultiUser-Authorization. Can create/delete ResourceGuard ",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/c2a970b4-16a7-4a51-8c84-8a8ea6ee0bb8",
+  "name": "c2a970b4-16a7-4a51-8c84-8a8ea6ee0bb8",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DataProtection/*/read",
+        "Microsoft.DataProtection/*/resourceGuards/write",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/write",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/delete",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/read",
+        "Microsoft.DataProtection/locations/operationResults/read",
+        "Microsoft.DataProtection/locations/operationStatus/read",
+        "Microsoft.DataProtection/locations/getBackupStatus/action",
+        "Microsoft.DataProtection/locations/checkFeatureSupport/action",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/operationStatus/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/read",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/write",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/delete",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/unlockDelete/action",
+        "Microsoft.DataProtection/subscriptions/providers/resourceGuards/read",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/{operationName}/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Backup MUA Admin",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-03-08T09:37:14.326898+00:00"
+}
