@@ -4,6 +4,22 @@
   "name": "Microsoft.CostManagement",
   "operations": [
     {
+      "description": "List Microsoft benefit utilization summaries in storage.",
+      "displayName": "Writes Microsoft benefit utilization summaries to storage",
+      "isDataAction": false,
+      "name": "Microsoft.CostManagement/generateBenefitUtilizationSummariesReport/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "List Microsoft Reserved Instances utilization details in storage.",
+      "displayName": "Writes Microsoft Reserved Instances utilization details to storage",
+      "isDataAction": false,
+      "name": "Microsoft.CostManagement/generateReservationDetailsReport/action",
+      "origin": null,
+      "properties": null
+    },
+    {
       "description": "Query usage data by a scope.",
       "displayName": "Query usage data",
       "isDataAction": false,
@@ -440,6 +456,62 @@
           "displayName": "List budgets",
           "isDataAction": false,
           "name": "Microsoft.CostManagement/budgets/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "BenefitRecommendations",
+      "name": "benefitRecommendations",
+      "operations": [
+        {
+          "description": "List  single or shared recommendations for Microsoft benefits.",
+          "displayName": "List Microsoft benefit recommendations",
+          "isDataAction": false,
+          "name": "Microsoft.CostManagement/benefitRecommendations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "BenefitUtilizationSummaries",
+      "name": "benefitUtilizationSummaries",
+      "operations": [
+        {
+          "description": "List benefit utilization summaries.",
+          "displayName": "List Microsoft benefit utilization summaries",
+          "isDataAction": false,
+          "name": "Microsoft.CostManagement/benefitUtilizationSummaries/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "BenefitUtilizationSummariesOperationResults",
+      "name": "benefitUtilizationSummariesOperationResults",
+      "operations": [
+        {
+          "description": "Gets Microsoft benefit utilization summaries asynchronous operation results.",
+          "displayName": "Gets Microsoft benefit utilization summaries asynchronous operation results",
+          "isDataAction": false,
+          "name": "Microsoft.CostManagement/benefitUtilizationSummariesOperationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "reservationDetailsOperationResults",
+      "name": "reservationDetailsOperationResults",
+      "operations": [
+        {
+          "description": "Gets Microsoft Reserved Instances utilization summaries asynchronous operation results.",
+          "displayName": "Gets Microsoft Reserved Instances asynchronous operation results",
+          "isDataAction": false,
+          "name": "Microsoft.CostManagement/reservationDetailsOperationResults/read",
           "origin": null,
           "properties": null
         }
