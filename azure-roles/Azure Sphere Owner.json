@@ -20,7 +20,9 @@
         "Microsoft.Resources/subscriptions/read",
         "Microsoft.Management/managementGroups/read",
         "Microsoft.Resources/deployments/*",
-        "Microsoft.Support/*"
+        "Microsoft.Support/*",
+        "Microsoft.Insights/DiagnosticSettings/*",
+        "Microsoft.Insights/DiagnosticSettingsCategories/Read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -32,7 +34,7 @@
       "actions": [
         "Microsoft.Authorization/roleAssignments/write"
       ],
-      "condition": "@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{8b9dfcab4b774632a6df94bd07820648,c8ae62795a0b4cb2b3f0d4d62845742c,6d994134994b4a599974f479f0b227fb,5a382001fe3641ffbba48bf06bd54da9}",
+      "condition": "@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{8b9dfcab4b774632a6df94bd07820648,c8ae62795a0b4cb2b3f0d4d62845742c,6d994134994b4a599974f479f0b227fb,5a382001fe3641ffbba48bf06bd54da9,749f88d5cbae40b8bcfce573ddc772fa,43d0d8ad25c7471493378ba259a9fe05}",
       "conditionVersion": "2.0",
       "dataActions": [],
       "notActions": [],
@@ -42,7 +44,7 @@
       "actions": [
         "Microsoft.Authorization/roleAssignments/delete"
       ],
-      "condition": "@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{8b9dfcab4b774632a6df94bd07820648,c8ae62795a0b4cb2b3f0d4d62845742c,6d994134994b4a599974f479f0b227fb,5a382001fe3641ffbba48bf06bd54da9}",
+      "condition": "@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{8b9dfcab4b774632a6df94bd07820648,c8ae62795a0b4cb2b3f0d4d62845742c,6d994134994b4a599974f479f0b227fb,5a382001fe3641ffbba48bf06bd54da9,749f88d5cbae40b8bcfce573ddc772fa,43d0d8ad25c7471493378ba259a9fe05}",
       "conditionVersion": "2.0",
       "dataActions": [],
       "notActions": [],
@@ -53,5 +55,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-02-01T23:40:30.738766+00:00"
+  "updatedOn": "2024-03-12T15:09:00.907512+00:00"
 }
