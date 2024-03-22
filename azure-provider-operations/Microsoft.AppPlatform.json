@@ -4405,6 +4405,14 @@
           "name": "Microsoft.AppPlatform/Spring/ApplicationConfigurationService/logstream/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Read the configuration content (for example, application-prod.yaml) pulled by Application Configuration Service for a specific Azure Spring Apps service instance",
+          "displayName": "Get configuration content of Application Configuration Service from Microsoft Azure Spring Apps",
+          "isDataAction": true,
+          "name": "Microsoft.AppPlatform/Spring/ApplicationConfigurationService/read",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -4417,6 +4425,82 @@
           "displayName": "Get the streaming log of Spring Cloud Gateway from Microsoft Azure Spring Apps",
           "isDataAction": true,
           "name": "Microsoft.AppPlatform/Spring/SpringCloudGateway/logstream/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The job of Microsoft Azure Spring Apps",
+      "name": "Spring/jobs",
+      "operations": [
+        {
+          "description": "Get the job for a specific Azure Spring Apps service instance",
+          "displayName": "Get the details of a job in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update the job for a specific Azure Spring Apps service instance",
+          "displayName": "Update configurations of a job in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the job for a specific Azure Spring Apps service instance",
+          "displayName": "Delete a job in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Start the execution for a specific job",
+          "displayName": "Start a job in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List environment variables secret of the job for a specific Azure Spring Apps service instance",
+          "displayName": "List environment variables secret for Microsoft Azure Spring Apps Job",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/listEnvSecrets/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "The job execution of Microsoft Azure Spring Apps",
+      "name": "Spring/jobs/executions",
+      "operations": [
+        {
+          "description": "Get the job execution for a specific Azure Spring Apps service instance",
+          "displayName": "Get the details of a job execution in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/executions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Cancel the execution for a specific job",
+          "displayName": "Cancel a job in Azure Spring Apps",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/executions/cancel/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List environment variables secret of the job execution for a specific Azure Spring Apps service instance",
+          "displayName": "List environment variables secret for Microsoft Azure Spring Apps job execution",
+          "isDataAction": false,
+          "name": "Microsoft.AppPlatform/Spring/jobs/executions/listEnvSecrets/action",
           "origin": "user,system",
           "properties": null
         }
