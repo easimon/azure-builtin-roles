@@ -178,10 +178,50 @@
           "properties": null
         },
         {
+          "description": "Split clone from parent volume to make it a standalone volume",
+          "displayName": "Split clone from parent volume",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/splitCloneFromParent/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
           "description": "Re-establish a previously deleted replication between 2 volumes that have a common ad-hoc or policy-based snapshots",
           "displayName": "Re-establish volume replication",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/reestablishReplication/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Peers ANF cluster to OnPrem cluster for migration",
+          "displayName": "Peer migration clusters",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/peerClusterForOnPremMigration/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a SVM peering and returns a command to be run on the external ontap to accept it. Once the SVMs have been peered a SnapMirror will be created.",
+          "displayName": "Start a SVM peering for OnPrem migration snapmirror relationship.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/createOnPremMigrationReplication/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a data transfer on the volume replication. Updating the data on the destination side.",
+          "displayName": "Perform a replication transfer",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/performReplicationTransfer/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Finalize OnPrem migration by doing a final sync on the replication, break and release the replication and break cluster peering if no other migration is active.",
+          "displayName": "Finalize OnPrem migration",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeOnPremMigration/action",
           "origin": "user,system",
           "properties": null
         }
@@ -1103,6 +1143,30 @@
           "name": "Microsoft.NetApp/netAppAccounts/migrateBackups/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Change an account's existing AKV/HSM encryption with another instance of either AKV/HSM.",
+          "displayName": "Change key vault for account",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/changeKeyVault/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get an account's key vault information, including subnet and private endpoint encryption pairs that have access to the key vault.",
+          "displayName": "Get account's key vault status",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/getKeyVaultStatus/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Migrate volumes under an encryption sibling set from Microsoft-managed key to Customer-managed key or vice versa.",
+          "displayName": "Migrate encryption for account",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/migrateEncryption/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -1811,6 +1875,130 @@
           "displayName": "Delete a Backup Vault Resource",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/backupVaults/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Volumes resource type",
+      "name": "netAppAccounts/capacityPools/volumes/backupStatus",
+      "operations": [
+        {
+          "description": "Get the status of the backup for a volume",
+          "displayName": "Get volume's backup status",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backupStatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Volumes resource type",
+      "name": "netAppAccounts/capacityPools/volumes/restoreStatus",
+      "operations": [
+        {
+          "description": "Get the status of the restore for a volume",
+          "displayName": "Get volume's restore status",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/restoreStatus/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Snapshot Policies resource type",
+      "name": "netAppAccounts/snapshotPolicies/listVolumes",
+      "operations": [
+        {
+          "description": "List volumes connected to snapshot policy",
+          "displayName": "List connected volumes",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/snapshotPolicies/listVolumes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup resource type",
+      "name": "netAppAccounts/capacityPools/volumes/backups",
+      "operations": [
+        {
+          "description": "Reads a backup resource.",
+          "displayName": "Read backup resource.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes a backup resource.",
+          "displayName": "Write backup resource.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a backup resource.",
+          "displayName": "Delete backup resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restores files from a backup resource",
+          "displayName": "Single File Backup Restore",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/restoreFiles/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Vault resource type",
+      "name": "netAppAccounts/vaults",
+      "operations": [
+        {
+          "description": "Reads a vault resource.",
+          "displayName": "Read vault resource.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/vaults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Account backup resource type",
+      "name": "netAppAccounts/accountBackups",
+      "operations": [
+        {
+          "description": "Reads an account backup resource.",
+          "displayName": "Read an account backup resource.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/accountBackups/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes an account backup resource.",
+          "displayName": "Write an account backup resource.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/accountBackups/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an account backup resource.",
+          "displayName": "Delete an account backup resource.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/accountBackups/delete",
           "origin": "user,system",
           "properties": null
         }
