@@ -3,13 +3,14 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2022-04-14T09:39:02.281337+00:00",
+  "createdOn": "2022-04-14T05:37:28.411607+00:00",
   "description": "Grants a user/group the ability to create, delete and manage clusters within a given cluster pool. Cluster Admin can also run workloads, monitor, and manage all user activity on these clusters.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/fd036e6b-1266-47a0-b0bb-a05d04831731",
   "name": "fd036e6b-1266-47a0-b0bb-a05d04831731",
   "permissions": [
     {
       "actions": [
+        "Microsoft.Authorization/*/read",
         "Microsoft.HDInsight/clusterPools/clusters/read",
         "Microsoft.HDInsight/clusterPools/clusters/write",
         "Microsoft.HDInsight/clusterPools/clusters/delete",
@@ -18,6 +19,8 @@
         "Microsoft.HDInsight/clusterPools/clusters/jobs/read",
         "Microsoft.HDInsight/clusterPools/clusters/runjob/action",
         "Microsoft.HDInsight/clusterpools/clusters/serviceconfigs/read",
+        "Microsoft.HDInsight/clusterPools/clusters/availableupgrades/read",
+        "Microsoft.HDInsight/clusterPools/clusters/upgrade/action",
         "Microsoft.ResourceHealth/availabilityStatuses/read",
         "Microsoft.Resources/deployments/operations/read",
         "Microsoft.Resources/deployments/*/read",
@@ -49,5 +52,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2023-09-06T15:24:09.333094+00:00"
+  "updatedOn": "2024-03-25T15:06:25.065570+00:00"
 }
