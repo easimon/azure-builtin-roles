@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2023-12-07T16:26:07.364952+00:00",
+  "createdOn": "2023-12-05T16:13:20.760245+00:00",
   "description": "Enclave Owner Role to access the resources of Microsoft.Mission stored with RPSAAS.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/3d5f3eff-eb94-473d-91e3-7aac74d6c0bb",
   "name": "3d5f3eff-eb94-473d-91e3-7aac74d6c0bb",
@@ -25,7 +25,26 @@
         "Microsoft.Mission/virtualEnclaves/workloads/read",
         "Microsoft.Mission/virtualEnclaves/workloads/write",
         "Microsoft.Mission/virtualEnclaves/workloads/delete",
-        "Microsoft.Mission/communities/read"
+        "Microsoft.Mission/communities/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Mission/communities/communityEndpoints/read",
+        "Microsoft.Mission/communities/transitHubs/read",
+        "Microsoft.Mission/enclaveConnections/read",
+        "Microsoft.Mission/enclaveConnections/write",
+        "Microsoft.Mission/enclaveConnections/delete",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/write",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/delete"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -38,5 +57,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2023-12-07T16:26:07.364952+00:00"
+  "updatedOn": "2024-03-25T15:06:26.386866+00:00"
 }
