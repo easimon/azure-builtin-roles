@@ -12,6 +12,22 @@
       "properties": null
     },
     {
+      "description": "Unregisters Subscription with Microsoft.Migrate resource provider",
+      "displayName": "Unregister Subscription for Microsoft.Migrate",
+      "isDataAction": false,
+      "name": "Microsoft.Migrate/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Registers Subscription with Microsoft.Migrate resource provider",
+      "displayName": "Register Subscription for Microsoft.Migrate",
+      "isDataAction": false,
+      "name": "Microsoft.Migrate/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
       "description": "Registers Subscription with Microsoft.Migrate resource provider",
       "displayName": "Register Subscription for Migrate",
       "isDataAction": false,
@@ -30,11 +46,11 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Microsoft.Migrate/assessmentprojects",
+      "displayName": "operations",
       "name": "Operations",
       "operations": [
         {
-          "description": "Lists operations available on Microsoft.Migrate resource provider",
+          "description": "Reads the exposed operations",
           "displayName": "Read",
           "isDataAction": false,
           "name": "Microsoft.Migrate/Operations/read",
@@ -44,190 +60,14 @@
       ]
     },
     {
-      "displayName": "Projects",
-      "name": "projects",
-      "operations": [
-        {
-          "description": "Gets the properties of a project",
-          "displayName": "Get Project",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Creates a new project or updates an existing project",
-          "displayName": "Create or Update Project",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Deletes the project",
-          "displayName": "Delete Project",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Gets shared keys for the project",
-          "displayName": "Get Project keys",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/keys/action",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Machines",
-      "name": "projects/machines",
-      "operations": [
-        {
-          "description": "Gets the properties of a machine",
-          "displayName": "Get Machine",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/machines/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Groups",
-      "name": "projects/groups",
-      "operations": [
-        {
-          "description": "Get the properties of a group",
-          "displayName": "Get Group",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Creates a new group or updates an existing group",
-          "displayName": "Create or Update Group",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Deletes a group",
-          "displayName": "Delete Group",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/delete",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Assessments",
-      "name": "projects/groups/assessments",
-      "operations": [
-        {
-          "description": "Gets the properties of an assessment",
-          "displayName": "Get Assessment",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/assessments/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Creates a new assessment or updates an existing assessment",
-          "displayName": "Create or Update Assessment",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/assessments/write",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Deletes an assessment",
-          "displayName": "Delete Assessment",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/assessments/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Downloads an assessment report's URL",
-          "displayName": "Download an assessment URL",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/assessments/downloadurl/action",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Assessed Machines",
-      "name": "projects/groups/assessments/assessedmachines",
-      "operations": [
-        {
-          "description": "Get the properties of an assessed machine",
-          "displayName": "Get Assessed Machine",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/groups/assessments/assessedmachines/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Check Name Availability",
-      "name": "locations",
-      "operations": [
-        {
-          "description": "Checks availability of the resouce name for the given subscription in the given location",
-          "displayName": "Check Name Availability",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/locations/checknameavailability/action",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Assessment Options",
-      "name": "locations/assessmentOptions",
-      "operations": [
-        {
-          "description": "Gets the assessment options which are available in the given location",
-          "displayName": "List Assessment Options",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/locations/assessmentOptions/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Assessments",
-      "name": "projects/assessments",
-      "operations": [
-        {
-          "description": "Lists assessments within a project",
-          "displayName": "Lists Assessments",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/projects/assessments/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Migrate Projects ",
-      "name": "migrateprojects",
+      "name": "migrateProjects",
       "operations": [
         {
           "description": "Gets the properties of migrate project",
           "displayName": "Get Migrate Project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/read",
+          "name": "Microsoft.Migrate/migrateProjects/read",
           "origin": "user,system",
           "properties": null
         },
@@ -235,7 +75,7 @@
           "description": "Creates a new migrate project or updates an existing migrate project",
           "displayName": "Create or Update Migrate Project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/write",
+          "name": "Microsoft.Migrate/migrateProjects/write",
           "origin": "user,system",
           "properties": null
         },
@@ -243,7 +83,7 @@
           "description": "Deletes a migrate project",
           "displayName": "Delete Migrate Project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/delete",
+          "name": "Microsoft.Migrate/migrateProjects/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -251,7 +91,7 @@
           "description": "Registers tool to a migrate project",
           "displayName": "Register tool",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/registerTool/action",
+          "name": "Microsoft.Migrate/migrateProjects/registerTool/action",
           "origin": "user,system",
           "properties": null
         },
@@ -259,7 +99,7 @@
           "description": "Refreshes the migrate project summary",
           "displayName": "Refresh the migrate project summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/RefreshSummary/action",
+          "name": "Microsoft.Migrate/migrateProjects/RefreshSummary/action",
           "origin": "user,system",
           "properties": null
         },
@@ -267,7 +107,7 @@
           "description": "Provides the tool registration details",
           "displayName": "Provides the tool registration details",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/registrationDetails/action",
+          "name": "Microsoft.Migrate/migrateProjects/registrationDetails/action",
           "origin": "user,system",
           "properties": null
         }
@@ -275,13 +115,13 @@
     },
     {
       "displayName": "Migrate project solution ",
-      "name": "migrateprojects/solutions",
+      "name": "migrateProjects/solutions",
       "operations": [
         {
           "description": "Gets the properties of migrate project solution",
           "displayName": "Get Migrate project solution",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/solutions/read",
+          "name": "Microsoft.Migrate/migrateProjects/solutions/read",
           "origin": "user,system",
           "properties": null
         },
@@ -289,7 +129,7 @@
           "description": "Creates a new migrate project solution or updates an existing migrate project solution",
           "displayName": "Create or update migrate project solution",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/solutions/write",
+          "name": "Microsoft.Migrate/migrateProjects/solutions/write",
           "origin": "user,system",
           "properties": null
         },
@@ -297,7 +137,7 @@
           "description": "Deletes a  migrate project solution",
           "displayName": "Delete migrate project solution",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/solutions/Delete",
+          "name": "Microsoft.Migrate/migrateProjects/solutions/Delete",
           "origin": "user,system",
           "properties": null
         },
@@ -305,7 +145,7 @@
           "description": "Gets the migrate project solution configuration",
           "displayName": "Get migrate project solution configuration",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/solutions/getconfig/action",
+          "name": "Microsoft.Migrate/migrateProjects/solutions/getconfig/action",
           "origin": "user,system",
           "properties": null
         },
@@ -313,7 +153,7 @@
           "description": "Clean up the migrate project solution data",
           "displayName": "Clean up data",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/solutions/cleanupData/action",
+          "name": "Microsoft.Migrate/migrateProjects/solutions/cleanupData/action",
           "origin": "user,system",
           "properties": null
         }
@@ -321,13 +161,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "migrateprojects/machines",
+      "name": "migrateProjects/machines",
       "operations": [
         {
           "description": "Gets the properties of a machine",
           "displayName": "Get Machine",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/machines/read",
+          "name": "Microsoft.Migrate/migrateProjects/machines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -335,13 +175,13 @@
     },
     {
       "displayName": "Databases",
-      "name": "migrateprojects/Databases",
+      "name": "migrateProjects/Databases",
       "operations": [
         {
           "description": "Gets the properties of a database",
           "displayName": "Get database",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/Databases/read",
+          "name": "Microsoft.Migrate/migrateProjects/Databases/read",
           "origin": "user,system",
           "properties": null
         }
@@ -349,13 +189,13 @@
     },
     {
       "displayName": "Database Instances",
-      "name": "migrateprojects/DatabaseInstances",
+      "name": "migrateProjects/DatabaseInstances",
       "operations": [
         {
           "description": "Gets the properties of a database instance",
           "displayName": "Get database instance",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/DatabaseInstances/read",
+          "name": "Microsoft.Migrate/migrateProjects/DatabaseInstances/read",
           "origin": "user,system",
           "properties": null
         }
@@ -363,13 +203,13 @@
     },
     {
       "displayName": "Migrate Events",
-      "name": "migrateprojects/MigrateEvents",
+      "name": "migrateProjects/MigrateEvents",
       "operations": [
         {
           "description": "Gets the properties of a migrate events.",
           "displayName": "Get migrate events",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/MigrateEvents/read",
+          "name": "Microsoft.Migrate/migrateProjects/MigrateEvents/read",
           "origin": "user,system",
           "properties": null
         },
@@ -377,7 +217,7 @@
           "description": "Deletes a migrate event",
           "displayName": "Delete migrate event",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/MigrateEvents/Delete",
+          "name": "Microsoft.Migrate/migrateProjects/MigrateEvents/Delete",
           "origin": "user,system",
           "properties": null
         }
@@ -385,13 +225,13 @@
     },
     {
       "displayName": "Assessment Projects",
-      "name": "assessmentprojects",
+      "name": "assessmentProjects",
       "operations": [
         {
           "description": "Gets the properties of assessment project",
           "displayName": "Get assessment Project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/read",
+          "name": "Microsoft.Migrate/assessmentProjects/read",
           "origin": "user,system",
           "properties": null
         },
@@ -399,7 +239,7 @@
           "description": "Creates a new assessment project or updates an existing assessment project",
           "displayName": "Create or Update Assessment Project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/write",
+          "name": "Microsoft.Migrate/assessmentProjects/write",
           "origin": "user,system",
           "properties": null
         },
@@ -407,7 +247,7 @@
           "description": "Deletes the assessment project",
           "displayName": "Delete Assessment Project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -415,7 +255,7 @@
           "description": "Initiates replication planner for the set of resources included in the request body",
           "displayName": "Initiates replication planner for the set of resources included in the request body",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/startreplicationplanner/action",
+          "name": "Microsoft.Migrate/assessmentProjects/startreplicationplanner/action",
           "origin": "user,system",
           "properties": null
         }
@@ -423,13 +263,13 @@
     },
     {
       "displayName": "HyperV Collector",
-      "name": "assessmentprojects/hypervcollectors",
+      "name": "assessmentProjects/hypervcollectors",
       "operations": [
         {
           "description": "Gets the properties of HyperV collector",
           "displayName": "Get HyperV collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/hypervcollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/hypervcollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -437,7 +277,7 @@
           "description": "Creates a new HyperV collector or updates an existing HyperV collector",
           "displayName": "Create or Update HyperV collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/hypervcollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/hypervcollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -445,7 +285,7 @@
           "description": "Deletes the HyperV collector",
           "displayName": "Delete HyperV collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/hypervcollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/hypervcollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -453,13 +293,13 @@
     },
     {
       "displayName": "VMware Collector",
-      "name": "assessmentprojects/vmwarecollectors",
+      "name": "assessmentProjects/vmwarecollectors",
       "operations": [
         {
           "description": "Gets the properties of VMware collector",
           "displayName": "Get VMware collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/vmwarecollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/vmwarecollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -467,7 +307,7 @@
           "description": "Creates a new VMware collector or updates an existing VMware collector",
           "displayName": "Create or Update VMware collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/vmwarecollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/vmwarecollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -475,7 +315,7 @@
           "description": "Deletes the VMware collector",
           "displayName": "Delete VMware collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/vmwarecollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/vmwarecollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -483,13 +323,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "assessmentprojects/machines",
+      "name": "assessmentProjects/machines",
       "operations": [
         {
           "description": "Gets the properties of a machine",
           "displayName": "Get Machine",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/machines/read",
+          "name": "Microsoft.Migrate/assessmentProjects/machines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -497,13 +337,13 @@
     },
     {
       "displayName": "Groups",
-      "name": "assessmentprojects/groups",
+      "name": "assessmentProjects/groups",
       "operations": [
         {
           "description": "Get the properties of a group",
           "displayName": "Get Group",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/read",
           "origin": "user,system",
           "properties": null
         },
@@ -511,7 +351,7 @@
           "description": "Creates a new group or updates an existing group",
           "displayName": "Create or Update Group",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/write",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/write",
           "origin": "user,system",
           "properties": null
         },
@@ -519,7 +359,7 @@
           "description": "Deletes a group",
           "displayName": "Delete Group",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -527,7 +367,7 @@
           "description": "Update group by adding or removing machines",
           "displayName": "Update machines in group",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/updateMachines/action",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/updateMachines/action",
           "origin": "user,system",
           "properties": null
         }
@@ -535,13 +375,13 @@
     },
     {
       "displayName": "Assessments",
-      "name": "assessmentprojects/assessments",
+      "name": "assessmentProjects/assessments",
       "operations": [
         {
           "description": "Lists assessments within a project",
           "displayName": "Lists Assessments",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/assessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/assessments/read",
           "origin": "user,system",
           "properties": null
         }
@@ -549,13 +389,13 @@
     },
     {
       "displayName": "Assessments",
-      "name": "assessmentprojects/groups/assessments",
+      "name": "assessmentProjects/groups/assessments",
       "operations": [
         {
           "description": "Gets the properties of an assessment",
           "displayName": "Get Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/assessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -563,7 +403,7 @@
           "description": "Creates a new assessment or updates an existing assessment",
           "displayName": "Create or Update Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/assessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -571,7 +411,7 @@
           "description": "Deletes an assessment",
           "displayName": "Delete Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/assessments/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -579,7 +419,7 @@
           "description": "Downloads an assessment report's URL",
           "displayName": "Download an assessment URL",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/assessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         }
@@ -587,13 +427,13 @@
     },
     {
       "displayName": "Assessed Machines",
-      "name": "assessmentprojects/groups/assessments/assessedmachines",
+      "name": "assessmentProjects/groups/assessments/assessedmachines",
       "operations": [
         {
           "description": "Get the properties of an assessed machine",
           "displayName": "Get Assessed Machine",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/assessments/assessedmachines/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/assessments/assessedmachines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -601,13 +441,13 @@
     },
     {
       "displayName": "Assessment Options",
-      "name": "assessmentprojects/assessmentOptions",
+      "name": "assessmentProjects/assessmentOptions",
       "operations": [
         {
           "description": "Gets the assessment options which are available in the given location",
           "displayName": "List Assessment Options",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/assessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/assessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -615,13 +455,13 @@
     },
     {
       "displayName": "Server Collector",
-      "name": "assessmentprojects/servercollectors",
+      "name": "assessmentProjects/servercollectors",
       "operations": [
         {
           "description": "Gets the properties of Server collector",
           "displayName": "Get Server collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/servercollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/servercollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -629,7 +469,7 @@
           "description": "Creates a new Server collector or updates an existing Server collector",
           "displayName": "Create or Update Server collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/servercollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/servercollectors/write",
           "origin": "user,system",
           "properties": null
         }
@@ -637,13 +477,13 @@
     },
     {
       "displayName": "Import Collector",
-      "name": "assessmentprojects/importcollectors",
+      "name": "assessmentProjects/importcollectors",
       "operations": [
         {
           "description": "Gets the properties of Import collector",
           "displayName": "Get Import collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/importcollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/importcollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -651,7 +491,7 @@
           "description": "Creates a new Import collector or updates an existing Import collector",
           "displayName": "Create or Update Import collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/importcollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/importcollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -659,7 +499,7 @@
           "description": "Deletes the Import collector",
           "displayName": "Delete Import collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/importcollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/importcollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -667,13 +507,13 @@
     },
     {
       "displayName": "Virtual Desktop User",
-      "name": "migrateprojects/VirtualDesktopUsers",
+      "name": "migrateProjects/VirtualDesktopUsers",
       "operations": [
         {
           "description": "Gets the properties of a virtual desktop user",
           "displayName": "Gets the properties of a virtual desktop user",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/VirtualDesktopUsers/read",
+          "name": "Microsoft.Migrate/migrateProjects/VirtualDesktopUsers/read",
           "origin": "user,system",
           "properties": null
         }
@@ -681,13 +521,13 @@
     },
     {
       "displayName": "Web Server",
-      "name": "migrateprojects/WebServers",
+      "name": "migrateProjects/WebServers",
       "operations": [
         {
           "description": "Gets the properties of a web server",
           "displayName": "Gets the properties of a web server",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/WebServers/read",
+          "name": "Microsoft.Migrate/migrateProjects/WebServers/read",
           "origin": "user,system",
           "properties": null
         }
@@ -695,13 +535,13 @@
     },
     {
       "displayName": "Web site",
-      "name": "migrateprojects/WebSites",
+      "name": "migrateProjects/WebSites",
       "operations": [
         {
           "description": "Gets the properties of a web site",
           "displayName": "Gets the properties of a web site",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/WebSites/read",
+          "name": "Microsoft.Migrate/migrateProjects/WebSites/read",
           "origin": "user,system",
           "properties": null
         }
@@ -709,13 +549,13 @@
     },
     {
       "displayName": "AVS Assessments",
-      "name": "assessmentprojects/groups/avsAssessments",
+      "name": "assessmentProjects/groups/avsAssessments",
       "operations": [
         {
           "description": "Gets the properties of an AVS assessment",
           "displayName": "Get AVS Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/avsAssessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -723,7 +563,7 @@
           "description": "Creates a new AVS assessment or updates an existing AVS assessment",
           "displayName": "Create or Update AVS Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/avsAssessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -731,7 +571,7 @@
           "description": "Deletes an AVS assessment",
           "displayName": "Delete AVS Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/avsAssessments/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -739,7 +579,7 @@
           "description": "Downloads an AVS assessment report's URL",
           "displayName": "Download an AVS assessment URL",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/avsAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         }
@@ -747,13 +587,13 @@
     },
     {
       "displayName": "AVS Assessed Machines",
-      "name": "assessmentprojects/groups/avsAssessments/avsassessedmachines",
+      "name": "assessmentProjects/groups/avsAssessments/avsassessedmachines",
       "operations": [
         {
           "description": "Get the properties of an AVS assessed machine",
           "displayName": "Get AVS Assessed Machine",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/avsAssessments/avsassessedmachines/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/avsAssessments/avsassessedmachines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -761,13 +601,13 @@
     },
     {
       "displayName": "AVS Assessment Options",
-      "name": "assessmentprojects/avsAssessmentOptions",
+      "name": "assessmentProjects/avsAssessmentOptions",
       "operations": [
         {
           "description": "Gets the AVS assessment options which are available in the given location",
           "displayName": "List AVS Assessment Options",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/avsAssessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/avsAssessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -775,13 +615,13 @@
     },
     {
       "displayName": "Assessments Summary",
-      "name": "assessmentprojects/assessmentsSummary",
+      "name": "assessmentProjects/assessmentsSummary",
       "operations": [
         {
           "description": "Gets the assessments summary which are available in the given location",
           "displayName": "List Assessments summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/assessmentsSummary/read",
+          "name": "Microsoft.Migrate/assessmentProjects/assessmentsSummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -789,13 +629,13 @@
     },
     {
       "displayName": "Private Endpoint Connection Proxy",
-      "name": "assessmentprojects/privateEndpointConnectionProxies",
+      "name": "assessmentProjects/privateEndpointConnectionProxies",
       "operations": [
         {
           "description": "Get Private Endpoint Connection Proxy",
           "displayName": "Get Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/read",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnectionProxies/read",
           "origin": "user,system",
           "properties": null
         },
@@ -803,7 +643,7 @@
           "description": "Validate a Private Endpoint Connection Proxy",
           "displayName": "Validate a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/validate/action",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnectionProxies/validate/action",
           "origin": "user,system",
           "properties": null
         },
@@ -811,7 +651,7 @@
           "description": "Create or Update a Private Endpoint Connection Proxy",
           "displayName": "Create or Update a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/write",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnectionProxies/write",
           "origin": "user,system",
           "properties": null
         },
@@ -819,7 +659,7 @@
           "description": "Delete a Private Endpoint Connection Proxy",
           "displayName": "Delete a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnectionProxies/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnectionProxies/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -827,13 +667,13 @@
     },
     {
       "displayName": "Private Endpoint Connection",
-      "name": "assessmentprojects/privateEndpointConnections",
+      "name": "assessmentProjects/privateEndpointConnections",
       "operations": [
         {
           "description": "Get Private Endpoint Connection",
           "displayName": "Get Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnections/read",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnections/read",
           "origin": "user,system",
           "properties": null
         },
@@ -841,7 +681,7 @@
           "description": "Update a Private Endpoint Connection",
           "displayName": "Update a Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnections/write",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnections/write",
           "origin": "user,system",
           "properties": null
         },
@@ -849,7 +689,7 @@
           "description": "Delete a Private Endpoint Connection",
           "displayName": "Delete a Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateEndpointConnections/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/privateEndpointConnections/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -857,13 +697,13 @@
     },
     {
       "displayName": "Private Link Resource",
-      "name": "assessmentprojects/privateLinkResources",
+      "name": "assessmentProjects/privateLinkResources",
       "operations": [
         {
           "description": "Get Private Link Resource",
           "displayName": "Get Private Link Resource",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/privateLinkResources/read",
+          "name": "Microsoft.Migrate/assessmentProjects/privateLinkResources/read",
           "origin": "user,system",
           "properties": null
         }
@@ -871,13 +711,13 @@
     },
     {
       "displayName": "Private Endpoint Connection Proxy",
-      "name": "migrateprojects/privateEndpointConnectionProxies",
+      "name": "migrateProjects/privateEndpointConnectionProxies",
       "operations": [
         {
           "description": "Get Private Endpoint Connection Proxy",
           "displayName": "Get Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/read",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnectionProxies/read",
           "origin": "user,system",
           "properties": null
         },
@@ -885,7 +725,7 @@
           "description": "Validate a Private Endpoint Connection Proxy",
           "displayName": "Validate a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/validate/action",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnectionProxies/validate/action",
           "origin": "user,system",
           "properties": null
         },
@@ -893,7 +733,7 @@
           "description": "Create or Update a Private Endpoint Connection Proxy",
           "displayName": "Create or Update a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/write",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnectionProxies/write",
           "origin": "user,system",
           "properties": null
         },
@@ -901,7 +741,7 @@
           "description": "Delete a Private Endpoint Connection Proxy",
           "displayName": "Delete a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnectionProxies/delete",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnectionProxies/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -909,13 +749,13 @@
     },
     {
       "displayName": "Private Endpoint Connection",
-      "name": "migrateprojects/privateEndpointConnections",
+      "name": "migrateProjects/privateEndpointConnections",
       "operations": [
         {
           "description": "Get Private Endpoint Connection",
           "displayName": "Get Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnections/read",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnections/read",
           "origin": "user,system",
           "properties": null
         },
@@ -923,7 +763,7 @@
           "description": "Update a Private Endpoint Connection",
           "displayName": "Update a Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnections/write",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnections/write",
           "origin": "user,system",
           "properties": null
         },
@@ -931,7 +771,7 @@
           "description": "Delete a Private Endpoint Connection",
           "displayName": "Delete a Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateEndpointConnections/delete",
+          "name": "Microsoft.Migrate/migrateProjects/privateEndpointConnections/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -939,13 +779,13 @@
     },
     {
       "displayName": "Private Link Resource",
-      "name": "migrateprojects/privateLinkResources",
+      "name": "migrateProjects/privateLinkResources",
       "operations": [
         {
           "description": "Get Private Link Resource",
           "displayName": "Get Private Link Resource",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateprojects/privateLinkResources/read",
+          "name": "Microsoft.Migrate/migrateProjects/privateLinkResources/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1131,13 +971,13 @@
     },
     {
       "displayName": "SQL Collector",
-      "name": "assessmentprojects/sqlcollectors",
+      "name": "assessmentProjects/sqlcollectors",
       "operations": [
         {
           "description": "Gets the properties of SQL collector",
           "displayName": "Get SQL collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/sqlcollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/sqlcollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1145,7 +985,7 @@
           "description": "Creates a new SQL collector or updates an existing SQL collector",
           "displayName": "Create or Update SQL collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/sqlcollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/sqlcollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1153,7 +993,7 @@
           "description": "Deletes the SQL collector",
           "displayName": "Delete SQL collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/sqlcollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/sqlcollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -1161,13 +1001,13 @@
     },
     {
       "displayName": "Webapp Collector",
-      "name": "assessmentprojects/webappcollectors",
+      "name": "assessmentProjects/webappcollectors",
       "operations": [
         {
           "description": "Gets the properties of Webapp collector",
           "displayName": "Get Webapp collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/webappcollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/webappcollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1175,7 +1015,7 @@
           "description": "Creates a new Webapp collector or updates an existing Webapp collector",
           "displayName": "Create or Update Webapp collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/webappcollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/webappcollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1183,7 +1023,7 @@
           "description": "Deletes the Webapp collector",
           "displayName": "Delete Webapp collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/webappcollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/webappcollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -1191,13 +1031,13 @@
     },
     {
       "displayName": "SQL Assessment Options",
-      "name": "assessmentprojects/sqlAssessmentOptions",
+      "name": "assessmentProjects/sqlAssessmentOptions",
       "operations": [
         {
           "description": "Gets the SQL assessment options which are available in the given location",
           "displayName": "List SQL Assessment Options",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/sqlAssessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/sqlAssessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1205,13 +1045,13 @@
     },
     {
       "displayName": "Assessment summary of group",
-      "name": "assessmentprojects/groups/assessmentsSummary",
+      "name": "assessmentProjects/groups/assessmentsSummary",
       "operations": [
         {
           "description": "Assessment summary of group",
           "displayName": "Assessment summary of group",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/assessmentsSummary/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/assessmentsSummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1219,13 +1059,13 @@
     },
     {
       "displayName": "SQL Assessments",
-      "name": "assessmentprojects/groups/sqlAssessments",
+      "name": "assessmentProjects/groups/sqlAssessments",
       "operations": [
         {
           "description": "Gets the properties of an SQL assessment",
           "displayName": "Get SQL Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1233,7 +1073,7 @@
           "description": "Creates a new SQL assessment or updates an existing SQL assessment",
           "displayName": "Create or Update SQL Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1241,7 +1081,7 @@
           "description": "Deletes an SQL assessment",
           "displayName": "Delete SQL Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -1249,7 +1089,7 @@
           "description": "Downloads an SQL assessment report's URL",
           "displayName": "Download an SQL assessment URL",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         }
@@ -1257,13 +1097,13 @@
     },
     {
       "displayName": "Sql Assessment summary",
-      "name": "assessmentprojects/groups/sqlAssessments/summaries",
+      "name": "assessmentProjects/groups/sqlAssessments/summaries",
       "operations": [
         {
           "description": "Gets Sql Assessment summary of group",
           "displayName": "Gets Sql assessment summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/summaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/summaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1271,13 +1111,13 @@
     },
     {
       "displayName": "Recommended Assessed Entities",
-      "name": "assessmentprojects/groups/sqlAssessments/recommendedAssessedEntities",
+      "name": "assessmentProjects/groups/sqlAssessments/recommendedAssessedEntities",
       "operations": [
         {
           "description": "Get the properties of recommended assessed entity",
           "displayName": "Get Recommended Assessed Entity",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/recommendedAssessedEntities/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/recommendedAssessedEntities/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1285,13 +1125,13 @@
     },
     {
       "displayName": "Assessed SQL instances",
-      "name": "assessmentprojects/groups/sqlAssessments/assessedSqlInstances",
+      "name": "assessmentProjects/groups/sqlAssessments/assessedSqlInstances",
       "operations": [
         {
           "description": "Get the properties of assessed SQL instances",
           "displayName": "Get assessed SQL instances",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/assessedSqlInstances/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/assessedSqlInstances/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1299,13 +1139,13 @@
     },
     {
       "displayName": "Assessed SQL databases",
-      "name": "assessmentprojects/groups/sqlAssessments/assessedSqlDatabases",
+      "name": "assessmentProjects/groups/sqlAssessments/assessedSqlDatabases",
       "operations": [
         {
           "description": "Get the properties of assessed SQL databses",
           "displayName": "Get assessed SQL databses",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/assessedSqlDatabases/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/assessedSqlDatabases/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1313,13 +1153,13 @@
     },
     {
       "displayName": "Assessed SQL machines",
-      "name": "assessmentprojects/groups/sqlAssessments/assessedSqlMachines",
+      "name": "assessmentProjects/groups/sqlAssessments/assessedSqlMachines",
       "operations": [
         {
           "description": "Get the properties of assessed SQL machines",
           "displayName": "Get assessed SQL machines",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/sqlAssessments/assessedSqlMachines/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/sqlAssessments/assessedSqlMachines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1327,13 +1167,13 @@
     },
     {
       "displayName": "WebApp Resource",
-      "name": "assessmentprojects/groups/webappAssessments",
+      "name": "assessmentProjects/groups/webappAssessments",
       "operations": [
         {
           "description": "Downloads WebApp assessment report's URL",
           "displayName": "Download WebApp assessment URL",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1341,7 +1181,7 @@
           "description": "Gets the properties of an WebApp assessment",
           "displayName": "Get WebApp Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1349,7 +1189,7 @@
           "description": "Creates a new WebApp assessment or updates an existing WebApp assessment",
           "displayName": "Create or Update WebApp Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1357,7 +1197,7 @@
           "description": "Deletes an WebApp assessment",
           "displayName": "Delete WebApp Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -1365,13 +1205,13 @@
     },
     {
       "displayName": "Assessed WebApps",
-      "name": "assessmentprojects/groups/webappAssessments/assessedwebApps",
+      "name": "assessmentProjects/groups/webappAssessments/assessedwebApps",
       "operations": [
         {
           "description": "Get the properties of assessed WebApps",
           "displayName": "Get assessed WebApps",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/assessedwebApps/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/assessedwebApps/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1379,13 +1219,13 @@
     },
     {
       "displayName": "WebApp service plan",
-      "name": "assessmentprojects/groups/webappAssessments/webappServicePlans",
+      "name": "assessmentProjects/groups/webappAssessments/webappServicePlans",
       "operations": [
         {
           "description": "Get the properties of WebApp service plan",
           "displayName": "Get WebApp service plan",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/webappServicePlans/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/webappServicePlans/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1393,13 +1233,13 @@
     },
     {
       "displayName": "WebApp Assessment Options",
-      "name": "assessmentprojects/webAppAssessmentOptions",
+      "name": "assessmentProjects/webAppAssessmentOptions",
       "operations": [
         {
           "description": "Gets the WebApp assessment options which are available in the given location",
           "displayName": "List WebApp Assessment Options",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/webAppAssessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/webAppAssessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1407,13 +1247,13 @@
     },
     {
       "displayName": "Project summary",
-      "name": "assessmentprojects/projectsummary",
+      "name": "assessmentProjects/projectsummary",
       "operations": [
         {
           "description": "Gets the properties of project summary",
           "displayName": "Gets the Project summary ",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/projectsummary/read",
+          "name": "Microsoft.Migrate/assessmentProjects/projectsummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1421,13 +1261,13 @@
     },
     {
       "displayName": "Replication Planner Job",
-      "name": "assessmentprojects/replicationplannerjobs",
+      "name": "assessmentProjects/replicationplannerjobs",
       "operations": [
         {
           "description": "Gets the properties of an replication planner jobs",
           "displayName": "Get Replication Job",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/replicationplannerjobs/read",
+          "name": "Microsoft.Migrate/assessmentProjects/replicationplannerjobs/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1435,13 +1275,13 @@
     },
     {
       "displayName": "Evaluated Machines",
-      "name": "assessmentprojects/businesscases/evaluatedmachines",
+      "name": "assessmentProjects/businesscases/evaluatedmachines",
       "operations": [
         {
           "description": "Get the properties of an evaluated machine",
           "displayName": "Get Evaluated Machine",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/evaluatedmachines/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/evaluatedmachines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1449,13 +1289,13 @@
     },
     {
       "displayName": "Evaluated SQL Entities",
-      "name": "assessmentprojects/businesscases/evaluatedsqlentities",
+      "name": "assessmentProjects/businesscases/evaluatedsqlentities",
       "operations": [
         {
           "description": "Get the properties of an evaluated SQL entities",
           "displayName": "Get Evaluated SQL entity",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/evaluatedsqlentities/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/evaluatedsqlentities/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1463,13 +1303,13 @@
     },
     {
       "displayName": "Evaluated WebApps",
-      "name": "assessmentprojects/businesscases/evaluatedwebapps",
+      "name": "assessmentProjects/businesscases/evaluatedwebapps",
       "operations": [
         {
           "description": "Get the properties of an Evaluated Webapp ",
           "displayName": "Get Evaluated Webapp",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/evaluatedwebapps/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/evaluatedwebapps/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1477,13 +1317,13 @@
     },
     {
       "displayName": "Business case",
-      "name": "assessmentprojects/businesscases",
+      "name": "assessmentProjects/businesscases",
       "operations": [
         {
           "description": "Gets the compare summary of the business case",
           "displayName": "Get Compare summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/comparesummary/action",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/comparesummary/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1491,7 +1331,7 @@
           "description": "Gets the properties of an business case",
           "displayName": "Get Business case",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1499,7 +1339,7 @@
           "description": "Downloads an Business Case report's URL",
           "displayName": "Download an Business Case URL",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/report/action",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/report/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1507,7 +1347,7 @@
           "description": "Creates a new business case or updates an existing business case",
           "displayName": "Create or Update business case",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/write",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1515,7 +1355,7 @@
           "description": "Delete a Business Case",
           "displayName": "Delete a Business Case",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -1523,13 +1363,13 @@
     },
     {
       "displayName": "IAAS summary",
-      "name": "assessmentprojects/businesscases/iaassummaries",
+      "name": "assessmentProjects/businesscases/iaassummaries",
       "operations": [
         {
           "description": "Gets the IAAS summary of the business case",
           "displayName": "Get IAAS summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/iaassummaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/iaassummaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1537,13 +1377,13 @@
     },
     {
       "displayName": "Overview summary",
-      "name": "assessmentprojects/businesscases/overviewsummaries",
+      "name": "assessmentProjects/businesscases/overviewsummaries",
       "operations": [
         {
           "description": "Gets the overview summary of the business case",
           "displayName": "Get overview summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/overviewsummaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/overviewsummaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1551,13 +1391,13 @@
     },
     {
       "displayName": "PAAS summary",
-      "name": "assessmentprojects/businesscases/paassummaries",
+      "name": "assessmentProjects/businesscases/paassummaries",
       "operations": [
         {
           "description": "Gets the PAAS summary of the business case",
           "displayName": "Get PAAS summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/paassummaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/paassummaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1861,13 +1701,13 @@
     },
     {
       "displayName": "oracle AssessmentOptions",
-      "name": "assessmentprojects/oracleAssessmentOptions",
+      "name": "assessmentProjects/oracleAssessmentOptions",
       "operations": [
         {
           "description": "Gets the properties of the oracle AssessmentOptions",
           "displayName": "Get oracle AssessmentOptions",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1875,13 +1715,13 @@
     },
     {
       "displayName": "oracle Assessments",
-      "name": "assessmentprojects/oracleAssessments",
+      "name": "assessmentProjects/oracleAssessments",
       "operations": [
         {
           "description": "Gets the properties of the oracle Assessment",
           "displayName": "Get oracle Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1889,7 +1729,7 @@
           "description": "Creates a oracle Assessment or updates an existing oracle Assessment",
           "displayName": "Create or update oracle Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1897,7 +1737,7 @@
           "description": "Deletes the oracle Assessment which are available in the given location",
           "displayName": "Delete oracle Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -1905,7 +1745,7 @@
           "description": "Get Blob SAS URI for the oracle AssessmentReport",
           "displayName": "Get oracle AssessmentReport",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         }
@@ -1913,13 +1753,13 @@
     },
     {
       "displayName": "oracle AssessmentSummaries",
-      "name": "assessmentprojects/oracleAssessments/summaries",
+      "name": "assessmentProjects/oracleAssessments/summaries",
       "operations": [
         {
           "description": "Gets the properties of the oracle AssessmentSummary",
           "displayName": "Get oracle AssessmentSummary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/summaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/summaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1927,13 +1767,13 @@
     },
     {
       "displayName": "oracle Collectors",
-      "name": "assessmentprojects/oraclecollectors",
+      "name": "assessmentProjects/oraclecollectors",
       "operations": [
         {
           "description": "Gets the properties of the oracle Collector",
           "displayName": "Get oracle Collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oraclecollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/oraclecollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1941,7 +1781,7 @@
           "description": "Creates a oracle Collector or updates an existing oracle Collector",
           "displayName": "Create or update oracle Collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oraclecollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/oraclecollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1949,7 +1789,7 @@
           "description": "Deletes the oracle Collector which are available in the given location",
           "displayName": "Delete oracle Collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oraclecollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/oraclecollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -1957,13 +1797,13 @@
     },
     {
       "displayName": "assessedInstances",
-      "name": "assessmentprojects/oracleAssessments/assessedInstances",
+      "name": "assessmentProjects/oracleAssessments/assessedInstances",
       "operations": [
         {
           "description": "Gets the properties of the assessedInstances ",
           "displayName": "Get assessedInstances",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/assessedInstances/read",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/assessedInstances/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1971,13 +1811,13 @@
     },
     {
       "displayName": "assessedDatabases",
-      "name": "assessmentprojects/oracleAssessments/assessedDatabases",
+      "name": "assessmentProjects/oracleAssessments/assessedDatabases",
       "operations": [
         {
           "description": "Gets the properties of the assessedDatabases ",
           "displayName": "Get assessedDatabases",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/oracleAssessments/assessedDatabases/read",
+          "name": "Microsoft.Migrate/assessmentProjects/oracleAssessments/assessedDatabases/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1985,13 +1825,13 @@
     },
     {
       "displayName": "springBoot AssessmentOptions",
-      "name": "assessmentprojects/springBootAssessmentOptions",
+      "name": "assessmentProjects/springBootAssessmentOptions",
       "operations": [
         {
           "description": "Gets the properties of the springBoot AssessmentOptions",
           "displayName": "Get springBoot AssessmentOptions",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1999,13 +1839,13 @@
     },
     {
       "displayName": "springBoot Assessments",
-      "name": "assessmentprojects/springBootAssessments",
+      "name": "assessmentProjects/springBootAssessments",
       "operations": [
         {
           "description": "Gets the properties of the springBoot Assessment",
           "displayName": "Get springBoot Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -2013,7 +1853,7 @@
           "description": "Creates a springBoot Assessment or updates an existing springBoot Assessment",
           "displayName": "Create or update springBoot Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -2021,7 +1861,7 @@
           "description": "Deletes the springBoot Assessment which are available in the given location",
           "displayName": "Delete springBoot Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessments/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -2029,7 +1869,7 @@
           "description": "Get Blob SAS URI for the springBoot AssessmentReport",
           "displayName": "Get springBoot AssessmentReport",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         }
@@ -2037,13 +1877,13 @@
     },
     {
       "displayName": "springBoot AssessmentSummaries",
-      "name": "assessmentprojects/springBootAssessments/summaries",
+      "name": "assessmentProjects/springBootAssessments/summaries",
       "operations": [
         {
           "description": "Gets the properties of the springBoot AssessmentSummary",
           "displayName": "Get springBoot AssessmentSummary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessments/summaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessments/summaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2051,13 +1891,13 @@
     },
     {
       "displayName": "springBoot Collectors",
-      "name": "assessmentprojects/springBootcollectors",
+      "name": "assessmentProjects/springBootcollectors",
       "operations": [
         {
           "description": "Gets the properties of the springBoot Collector",
           "displayName": "Get springBoot Collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootcollectors/read",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootcollectors/read",
           "origin": "user,system",
           "properties": null
         },
@@ -2065,7 +1905,7 @@
           "description": "Creates a springBoot Collector or updates an existing springBoot Collector",
           "displayName": "Create or update springBoot Collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootcollectors/write",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootcollectors/write",
           "origin": "user,system",
           "properties": null
         },
@@ -2073,7 +1913,7 @@
           "description": "Deletes the springBoot Collector which are available in the given location",
           "displayName": "Delete springBoot Collector",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootcollectors/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootcollectors/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -2081,13 +1921,13 @@
     },
     {
       "displayName": "assessedApplications",
-      "name": "assessmentprojects/springBootAssessments/assessedApplications",
+      "name": "assessmentProjects/springBootAssessments/assessedApplications",
       "operations": [
         {
           "description": "Gets the properties of the assessedApplications ",
           "displayName": "Get assessedApplications",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/springBootAssessments/assessedApplications/read",
+          "name": "Microsoft.Migrate/assessmentProjects/springBootAssessments/assessedApplications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2095,13 +1935,13 @@
     },
     {
       "displayName": "aks AssessmentOptions",
-      "name": "assessmentprojects/aksAssessmentOptions",
+      "name": "assessmentProjects/aksAssessmentOptions",
       "operations": [
         {
           "description": "Gets the properties of the aks AssessmentOptions",
           "displayName": "Get aks AssessmentOptions",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessmentOptions/read",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessmentOptions/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2109,13 +1949,13 @@
     },
     {
       "displayName": "aks Assessments",
-      "name": "assessmentprojects/aksAssessments",
+      "name": "assessmentProjects/aksAssessments",
       "operations": [
         {
           "description": "Gets the properties of the aks Assessment",
           "displayName": "Get aks Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/read",
           "origin": "user,system",
           "properties": null
         },
@@ -2123,7 +1963,7 @@
           "description": "Creates a aks Assessment or updates an existing aks Assessment",
           "displayName": "Create or update aks Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/write",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/write",
           "origin": "user,system",
           "properties": null
         },
@@ -2131,7 +1971,7 @@
           "description": "Deletes the aks Assessment which are available in the given location",
           "displayName": "Delete aks Assessment",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/delete",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -2139,7 +1979,7 @@
           "description": "Get Blob SAS URI for the aks AssessmentReport",
           "displayName": "Get aks AssessmentReport",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/downloadurl/action",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
         }
@@ -2147,13 +1987,13 @@
     },
     {
       "displayName": "aks AssessmentSummaries",
-      "name": "assessmentprojects/aksAssessments/summaries",
+      "name": "assessmentProjects/aksAssessments/summaries",
       "operations": [
         {
           "description": "Gets the properties of the aks AssessmentSummary",
           "displayName": "Get aks AssessmentSummary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/summaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/summaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2161,13 +2001,13 @@
     },
     {
       "displayName": "assessedwebapps",
-      "name": "assessmentprojects/aksAssessments/assessedwebapps",
+      "name": "assessmentProjects/aksAssessments/assessedwebapps",
       "operations": [
         {
           "description": "Gets the properties of the assessedwebapps ",
           "displayName": "Get assessedwebapps",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/assessedwebapps/read",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/assessedwebapps/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2175,13 +2015,13 @@
     },
     {
       "displayName": "clusters",
-      "name": "assessmentprojects/aksAssessments/clusters",
+      "name": "assessmentProjects/aksAssessments/clusters",
       "operations": [
         {
           "description": "Gets the properties of the clusters ",
           "displayName": "Get clusters",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/clusters/read",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/clusters/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2189,13 +2029,13 @@
     },
     {
       "displayName": "costdetails",
-      "name": "assessmentprojects/aksAssessments/costdetails",
+      "name": "assessmentProjects/aksAssessments/costdetails",
       "operations": [
         {
           "description": "Gets the properties of the costdetails ",
           "displayName": "Get costdetails",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/aksAssessments/costdetails/read",
+          "name": "Microsoft.Migrate/assessmentProjects/aksAssessments/costdetails/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2203,13 +2043,13 @@
     },
     {
       "displayName": "WebApp Resource",
-      "name": "assessmentprojects/webAppAssessments",
+      "name": "assessmentProjects/webAppAssessments",
       "operations": [
         {
           "description": "Lists web app assessments within a project",
           "displayName": "Lists web app assessments within a project",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/webAppAssessments/read",
+          "name": "Microsoft.Migrate/assessmentProjects/webAppAssessments/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2217,13 +2057,13 @@
     },
     {
       "displayName": "Web App Assessment Summary",
-      "name": "assessmentprojects/groups/webappAssessments/summaries",
+      "name": "assessmentProjects/groups/webappAssessments/summaries",
       "operations": [
         {
           "description": "Gets web app assessment summary",
           "displayName": "Gets web app assessment summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/groups/webappAssessments/summaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/groups/webappAssessments/summaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2231,13 +2071,13 @@
     },
     {
       "displayName": "AVS summary",
-      "name": "assessmentprojects/businesscases/avssummaries",
+      "name": "assessmentProjects/businesscases/avssummaries",
       "operations": [
         {
           "description": "Gets the AVS summary of the business case",
           "displayName": "Get AVS summary",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/avssummaries/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/avssummaries/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2245,13 +2085,137 @@
     },
     {
       "displayName": "Evaluated Avs Machines",
-      "name": "assessmentprojects/businesscases/evaluatedavsmachines",
+      "name": "assessmentProjects/businesscases/evaluatedavsmachines",
       "operations": [
         {
           "description": "Get the properties of an evaluated Avs machine",
           "displayName": "Get Evaluated Avs Machine",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/assessmentprojects/businesscases/evaluatedavsmachines/read",
+          "name": "Microsoft.Migrate/assessmentProjects/businesscases/evaluatedavsmachines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation Results",
+      "name": "locations/operationResults",
+      "operations": [
+        {
+          "description": "Locations Operation Results",
+          "displayName": "Read",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/locations/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sap AssessmentOptions",
+      "name": "assessmentProjects/sapAssessmentOptions",
+      "operations": [
+        {
+          "description": "Gets the properties of the sap AssessmentOptions",
+          "displayName": "Get sap AssessmentOptions",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessmentOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sap Assessments",
+      "name": "assessmentProjects/sapAssessments",
+      "operations": [
+        {
+          "description": "Gets the properties of the sap Assessment",
+          "displayName": "Get sap Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a sap Assessment or updates an existing sap Assessment",
+          "displayName": "Create or update sap Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the sap Assessment which are available in the given location",
+          "displayName": "Delete sap Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get Blob SAS URI for the sap AssessmentReport",
+          "displayName": "Get sap AssessmentReport",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessments/downloadurl/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sap AssessmentSummaries",
+      "name": "assessmentProjects/sapAssessments/summaries",
+      "operations": [
+        {
+          "description": "Gets the properties of the sap AssessmentSummary",
+          "displayName": "Get sap AssessmentSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessments/summaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sap Collectors",
+      "name": "assessmentProjects/sapcollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of the sap Collector",
+          "displayName": "Get sap Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapcollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a sap Collector or updates an existing sap Collector",
+          "displayName": "Create or update sap Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapcollectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the sap Collector which are available in the given location",
+          "displayName": "Delete sap Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapcollectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedApplications",
+      "name": "assessmentProjects/sapAssessments/assessedApplications",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedApplications ",
+          "displayName": "Get assessedApplications",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/sapAssessments/assessedApplications/read",
           "origin": "user,system",
           "properties": null
         }
