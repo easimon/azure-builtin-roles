@@ -12,8 +12,8 @@
       "properties": null
     },
     {
-      "description": "Unregisters Subscription with Microsoft.Migrate resource provider",
-      "displayName": "Unregister Subscription for Migrate",
+      "description": "Unregisters Subscription with Microsoft.OffAzure resource provider",
+      "displayName": "Unregister Subscription for Microsoft.OffAzure",
       "isDataAction": false,
       "name": "Microsoft.OffAzure/unregister/action",
       "origin": "user,system",
@@ -21,7 +21,7 @@
     },
     {
       "description": "Registers Subscription with Microsoft.OffAzure resource provider",
-      "displayName": "Register Subscription for Migrate.OffAzure",
+      "displayName": "Register Subscription for Microsoft.OffAzure",
       "isDataAction": false,
       "name": "Microsoft.OffAzure/register/action",
       "origin": "user,system",
@@ -30,7 +30,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Microsoft.OffAzure/VMwareSites",
+      "displayName": "operations",
       "name": "Operations",
       "operations": [
         {
@@ -45,13 +45,13 @@
     },
     {
       "displayName": "HyperVSites",
-      "name": "HyperVSites",
+      "name": "hypervSites",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V site",
           "displayName": "Get Hyper-V site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/read",
+          "name": "Microsoft.OffAzure/hypervSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -59,7 +59,7 @@
           "description": "Creates or updates the Hyper-V site",
           "displayName": "Create or update Hyper-V site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/write",
+          "name": "Microsoft.OffAzure/hypervSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -67,7 +67,7 @@
           "description": "Deletes the Hyper-V site",
           "displayName": "Delete Hyper-V site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/delete",
+          "name": "Microsoft.OffAzure/hypervSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -75,7 +75,7 @@
           "description": "Refreshes the objects within a Hyper-V site",
           "displayName": "Refresh Hyper-V site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/refresh/action",
+          "name": "Microsoft.OffAzure/hypervSites/refresh/action",
           "origin": "user,system",
           "properties": null
         },
@@ -83,7 +83,7 @@
           "description": "Updates the properties for machines in a site",
           "displayName": "Updates properties for machines in a site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/updateProperties/action",
+          "name": "Microsoft.OffAzure/hypervSites/updateProperties/action",
           "origin": "user,system",
           "properties": null
         },
@@ -91,7 +91,7 @@
           "description": "Generates client group members view with dependency map data",
           "displayName": "Generate client group members view ",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/clientGroupMembers/action",
+          "name": "Microsoft.OffAzure/hypervSites/clientGroupMembers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -99,7 +99,7 @@
           "description": "Export the Applications, roles and features of HyperV site machine inventory",
           "displayName": "Export the Applications, roles and features",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/exportApplications/action",
+          "name": "Microsoft.OffAzure/hypervSites/exportApplications/action",
           "origin": "user,system",
           "properties": null
         },
@@ -107,7 +107,7 @@
           "description": "Export the machine Dependency map information of entire HyperV site machine inventory",
           "displayName": "Export Machine Dependency Map",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/exportDependencies/action",
+          "name": "Microsoft.OffAzure/hypervSites/exportDependencies/action",
           "origin": "user,system",
           "properties": null
         },
@@ -115,7 +115,7 @@
           "description": "Export machine errors for the entire HyperV site machine inventory",
           "displayName": "Export machine errors",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/exportMachineErrors/action",
+          "name": "Microsoft.OffAzure/hypervSites/exportMachineErrors/action",
           "origin": "user,system",
           "properties": null
         },
@@ -123,7 +123,7 @@
           "description": "Generates coarse map for the list of machines",
           "displayName": "Generates coarse map for the list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/generateCoarseMap/action",
+          "name": "Microsoft.OffAzure/hypervSites/generateCoarseMap/action",
           "origin": "user,system",
           "properties": null
         },
@@ -131,7 +131,7 @@
           "description": "Generate details HyperV coarse map",
           "displayName": "Generate details HyperV coarse map",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/generateDetailedMap/action",
+          "name": "Microsoft.OffAzure/hypervSites/generateDetailedMap/action",
           "origin": "user,system",
           "properties": null
         },
@@ -139,7 +139,7 @@
           "description": "Lists the server group members for the selected server group.",
           "displayName": "Lists server group members for the selected server group.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/serverGroupMembers/action",
+          "name": "Microsoft.OffAzure/hypervSites/serverGroupMembers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -147,7 +147,7 @@
           "description": "Toggle dependency map switch of a list of machines",
           "displayName": "Toggle dependency map switch of a list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/updateDependencyMapStatus/action",
+          "name": "Microsoft.OffAzure/hypervSites/updateDependencyMapStatus/action",
           "origin": "user,system",
           "properties": null
         }
@@ -155,13 +155,13 @@
     },
     {
       "displayName": "HyperVSites",
-      "name": "HyperVSites/usage",
+      "name": "hypervSites/usage",
       "operations": [
         {
           "description": "Gets the usages of a Hyper-V site",
           "displayName": "Get Hyper-V site usages",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/usage/read",
+          "name": "Microsoft.OffAzure/hypervSites/usage/read",
           "origin": "user,system",
           "properties": null
         }
@@ -169,13 +169,13 @@
     },
     {
       "displayName": "Hosts",
-      "name": "HyperVSites/hosts",
+      "name": "hypervSites/hosts",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V host",
           "displayName": "Get Hyper-V host",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/hosts/read",
+          "name": "Microsoft.OffAzure/hypervSites/hosts/read",
           "origin": "user,system",
           "properties": null
         },
@@ -183,7 +183,7 @@
           "description": "Creates or updates the Hyper-V host",
           "displayName": "Create or update Hyper-V host",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/hosts/write",
+          "name": "Microsoft.OffAzure/hypervSites/hosts/write",
           "origin": "user,system",
           "properties": null
         }
@@ -191,13 +191,13 @@
     },
     {
       "displayName": "Clusters",
-      "name": "HyperVSites/clusters",
+      "name": "hypervSites/clusters",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V cluster",
           "displayName": "Get Hyper-V cluster",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/clusters/read",
+          "name": "Microsoft.OffAzure/hypervSites/clusters/read",
           "origin": "user,system",
           "properties": null
         },
@@ -205,7 +205,7 @@
           "description": "Creates or updates the Hyper-V cluster",
           "displayName": "Create or update Hyper-V cluster",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/clusters/write",
+          "name": "Microsoft.OffAzure/hypervSites/clusters/write",
           "origin": "user,system",
           "properties": null
         }
@@ -213,13 +213,13 @@
     },
     {
       "displayName": "Jobs",
-      "name": "HyperVSites/jobs",
+      "name": "hypervSites/jobs",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V jobs",
           "displayName": "Get Hyper-V jobs",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/jobs/read",
+          "name": "Microsoft.OffAzure/hypervSites/jobs/read",
           "origin": "user,system",
           "properties": null
         }
@@ -227,13 +227,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "HyperVSites/machines",
+      "name": "hypervSites/machines",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V machines",
           "displayName": "Get Hyper-V machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/machines/read",
+          "name": "Microsoft.OffAzure/hypervSites/machines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -241,13 +241,13 @@
     },
     {
       "displayName": "RunAsAccounts",
-      "name": "HyperVSites/runasaccounts",
+      "name": "hypervSites/runasaccounts",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V run as accounts",
           "displayName": "Get Hyper-V run as accounts",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/runasaccounts/read",
+          "name": "Microsoft.OffAzure/hypervSites/runasaccounts/read",
           "origin": "user,system",
           "properties": null
         }
@@ -255,13 +255,13 @@
     },
     {
       "displayName": "OperationsStatus",
-      "name": "HyperVSites/operationsstatus",
+      "name": "hypervSites/operationsstatus",
       "operations": [
         {
           "description": "Gets the properties of a Hyper-V operation status",
           "displayName": "Get Hyper-V operation status",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/operationsstatus/read",
+          "name": "Microsoft.OffAzure/hypervSites/operationsstatus/read",
           "origin": "user,system",
           "properties": null
         }
@@ -269,13 +269,13 @@
     },
     {
       "displayName": "VMwareSites",
-      "name": "VMwareSites",
+      "name": "vmwareSites",
       "operations": [
         {
           "description": "Gets the properties of a VMware site",
           "displayName": "Get VMware site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/read",
+          "name": "Microsoft.OffAzure/vmwareSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -283,7 +283,7 @@
           "description": "Creates or updates the VMware site",
           "displayName": "Create or update VMware site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/write",
+          "name": "Microsoft.OffAzure/vmwareSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -291,7 +291,7 @@
           "description": "Deletes the VMware site",
           "displayName": "Delete VMware site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/delete",
+          "name": "Microsoft.OffAzure/vmwareSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -299,7 +299,7 @@
           "description": "Refreshes the objects within a VMware site",
           "displayName": "Refresh VMware site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/refresh/action",
+          "name": "Microsoft.OffAzure/vmwareSites/refresh/action",
           "origin": "user,system",
           "properties": null
         },
@@ -307,7 +307,7 @@
           "description": "Exports the VMware applications and roles data into xls",
           "displayName": "Exports VMware applications and roles data into xls",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/exportapplications/action",
+          "name": "Microsoft.OffAzure/vmwareSites/exportapplications/action",
           "origin": "user,system",
           "properties": null
         },
@@ -315,7 +315,7 @@
           "description": "Updates the properties for machines in a site",
           "displayName": "Updates properties for machines in a site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/updateProperties/action",
+          "name": "Microsoft.OffAzure/vmwareSites/updateProperties/action",
           "origin": "user,system",
           "properties": null
         },
@@ -323,7 +323,7 @@
           "description": "Updates the tags for machines in a site",
           "displayName": "Updates tags for machines in a site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/updateTags/action",
+          "name": "Microsoft.OffAzure/vmwareSites/updateTags/action",
           "origin": "user,system",
           "properties": null
         },
@@ -331,7 +331,7 @@
           "description": "Generates the coarse map for the list of machines",
           "displayName": "Generates coarse map for the list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/generateCoarseMap/action",
+          "name": "Microsoft.OffAzure/vmwareSites/generateCoarseMap/action",
           "origin": "user,system",
           "properties": null
         },
@@ -339,7 +339,7 @@
           "description": "Generates the Detailed VMware Coarse Map",
           "displayName": "Generates Detailed VMware Coarse Map",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/generateDetailedMap/action",
+          "name": "Microsoft.OffAzure/vmwareSites/generateDetailedMap/action",
           "origin": "user,system",
           "properties": null
         },
@@ -347,7 +347,7 @@
           "description": "Lists the client group members for the selected client group.",
           "displayName": "Lists client group members for the selected client group.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/clientGroupMembers/action",
+          "name": "Microsoft.OffAzure/vmwareSites/clientGroupMembers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -355,7 +355,7 @@
           "description": "Lists the server group members for the selected server group.",
           "displayName": "Lists server group members for the selected server group.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/serverGroupMembers/action",
+          "name": "Microsoft.OffAzure/vmwareSites/serverGroupMembers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -363,7 +363,7 @@
           "description": "Gets the list application information for the selected machines",
           "displayName": "Gets list application information for the selected machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/getApplications/action",
+          "name": "Microsoft.OffAzure/vmwareSites/getApplications/action",
           "origin": "user,system",
           "properties": null
         },
@@ -371,7 +371,7 @@
           "description": "Exports the dependencies information for the selected machines",
           "displayName": "Exports dependencies information for the selected machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/exportDependencies/action",
+          "name": "Microsoft.OffAzure/vmwareSites/exportDependencies/action",
           "origin": "user,system",
           "properties": null
         },
@@ -379,7 +379,7 @@
           "description": "Export machine errors for the entire VMware site machine inventory",
           "displayName": "Export machine errors",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/exportMachineerrors/action",
+          "name": "Microsoft.OffAzure/vmwareSites/exportMachineerrors/action",
           "origin": "user,system",
           "properties": null
         },
@@ -387,7 +387,7 @@
           "description": "Toggle dependency map data of a list of machines",
           "displayName": "Toggle dependency map data of a list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/updateDependencyMapStatus/action",
+          "name": "Microsoft.OffAzure/vmwareSites/updateDependencyMapStatus/action",
           "origin": "user,system",
           "properties": null
         }
@@ -395,13 +395,13 @@
     },
     {
       "displayName": "VMwareSites",
-      "name": "VMwareSites/usage",
+      "name": "vmwareSites/usage",
       "operations": [
         {
           "description": "Gets the usages of a VMware site",
           "displayName": "Get VMware site usages",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/usage/read",
+          "name": "Microsoft.OffAzure/vmwareSites/usage/read",
           "origin": "user,system",
           "properties": null
         }
@@ -409,13 +409,13 @@
     },
     {
       "displayName": "vCenters",
-      "name": "VMwareSites/vcenters",
+      "name": "vmwareSites/vcenters",
       "operations": [
         {
           "description": "Gets the properties of a VMware vCenter",
           "displayName": "Get VMware vCenter",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/vcenters/read",
+          "name": "Microsoft.OffAzure/vmwareSites/vcenters/read",
           "origin": "user,system",
           "properties": null
         },
@@ -423,7 +423,7 @@
           "description": "Creates or updates the VMware vCenter",
           "displayName": "Create or update VMware vCenter",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/vcenters/write",
+          "name": "Microsoft.OffAzure/vmwareSites/vcenters/write",
           "origin": "user,system",
           "properties": null
         },
@@ -431,7 +431,7 @@
           "description": "Delete previously added Vcenter",
           "displayName": "Delete previously added Vcenter",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/vcenters/delete",
+          "name": "Microsoft.OffAzure/vmwareSites/vcenters/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -439,13 +439,13 @@
     },
     {
       "displayName": "Jobs",
-      "name": "VMwareSites/jobs",
+      "name": "vmwareSites/jobs",
       "operations": [
         {
           "description": "Gets the properties of a VMware jobs",
           "displayName": "Get VMware jobs",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/jobs/read",
+          "name": "Microsoft.OffAzure/vmwareSites/jobs/read",
           "origin": "user,system",
           "properties": null
         }
@@ -453,13 +453,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "VMwareSites/machines",
+      "name": "vmwareSites/machines",
       "operations": [
         {
           "description": "Gets the properties of a VMware machines",
           "displayName": "Get VMware machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/machines/read",
+          "name": "Microsoft.OffAzure/vmwareSites/machines/read",
           "origin": "user,system",
           "properties": null
         },
@@ -467,7 +467,7 @@
           "description": "Stops the VMware machines",
           "displayName": "Stops VMware machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/machines/stop/action",
+          "name": "Microsoft.OffAzure/vmwareSites/machines/stop/action",
           "origin": "user,system",
           "properties": null
         },
@@ -475,7 +475,7 @@
           "description": "Start VMware machines",
           "displayName": "Start VMware machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/machines/start/action",
+          "name": "Microsoft.OffAzure/vmwareSites/machines/start/action",
           "origin": "user,system",
           "properties": null
         }
@@ -483,13 +483,13 @@
     },
     {
       "displayName": "RunAsAccounts",
-      "name": "VMwareSites/runasaccounts",
+      "name": "vmwareSites/runasaccounts",
       "operations": [
         {
           "description": "Gets the properties of a VMware run as accounts",
           "displayName": "Get VMware run as accounts",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/runasaccounts/read",
+          "name": "Microsoft.OffAzure/vmwareSites/runasaccounts/read",
           "origin": "user,system",
           "properties": null
         }
@@ -497,13 +497,13 @@
     },
     {
       "displayName": "OperationsStatus",
-      "name": "VMwareSites/operationsstatus",
+      "name": "vmwareSites/operationsstatus",
       "operations": [
         {
           "description": "Gets the properties of a VMware operation status",
           "displayName": "Get VMware operation status",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/operationsstatus/read",
+          "name": "Microsoft.OffAzure/vmwareSites/operationsstatus/read",
           "origin": "user,system",
           "properties": null
         }
@@ -511,13 +511,13 @@
     },
     {
       "displayName": "Register Subscription ",
-      "name": "HyperVSites/healthsummary",
+      "name": "hypervSites/healthsummary",
       "operations": [
         {
           "description": "Gets the health summary for Hyper-V resource",
           "displayName": "Get health summary for Hyper-V resource",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/healthsummary/read",
+          "name": "Microsoft.OffAzure/hypervSites/healthsummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -525,13 +525,13 @@
     },
     {
       "displayName": "Register Subscription ",
-      "name": "VMwareSites/healthsummary",
+      "name": "vmwareSites/healthsummary",
       "operations": [
         {
           "description": "Gets the health summary for VMware resource",
           "displayName": "Get health summary for VMware resource",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/healthsummary/read",
+          "name": "Microsoft.OffAzure/vmwareSites/healthsummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -539,13 +539,13 @@
     },
     {
       "displayName": "ServerSites",
-      "name": "ServerSites",
+      "name": "serverSites",
       "operations": [
         {
           "description": "Gets the properties of a Server site",
           "displayName": "Get Server site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/read",
+          "name": "Microsoft.OffAzure/serverSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -553,7 +553,7 @@
           "description": "Creates or updates the Server site",
           "displayName": "Create or update Server site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/write",
+          "name": "Microsoft.OffAzure/serverSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -561,7 +561,7 @@
           "description": "Deletes the Server site",
           "displayName": "Delete Server site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/delete",
+          "name": "Microsoft.OffAzure/serverSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -569,7 +569,7 @@
           "description": "Refreshes the objects within a Server site",
           "displayName": "Refresh Server site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/refresh/action",
+          "name": "Microsoft.OffAzure/serverSites/refresh/action",
           "origin": "user,system",
           "properties": null
         },
@@ -577,7 +577,7 @@
           "description": "Updates the properties for machines in a site",
           "displayName": "Updates properties for machines in a site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/updateProperties/action",
+          "name": "Microsoft.OffAzure/serverSites/updateProperties/action",
           "origin": "user,system",
           "properties": null
         },
@@ -585,7 +585,7 @@
           "description": "Updates the tags for machines in a site",
           "displayName": "Updates tags for machines in a site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/updateTags/action",
+          "name": "Microsoft.OffAzure/serverSites/updateTags/action",
           "origin": "user,system",
           "properties": null
         },
@@ -593,7 +593,7 @@
           "description": "Generate client group members view with dependency map data",
           "displayName": "Generate client group members view",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/clientGroupMembers/action",
+          "name": "Microsoft.OffAzure/serverSites/clientGroupMembers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -601,7 +601,7 @@
           "description": "Export Applications, Roles and Features of Server Site Inventory",
           "displayName": "Export Applications, Roles and Features of Server Site Inventory",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/exportApplications/action",
+          "name": "Microsoft.OffAzure/serverSites/exportApplications/action",
           "origin": "user,system",
           "properties": null
         },
@@ -609,7 +609,7 @@
           "description": "Export the machine Dependency map information of entire Server site machine inventory",
           "displayName": "Export entire servers machines dependency map",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/exportDependencies/action",
+          "name": "Microsoft.OffAzure/serverSites/exportDependencies/action",
           "origin": "user,system",
           "properties": null
         },
@@ -617,7 +617,7 @@
           "description": "Export machine errors for the entire Server site machine inventory",
           "displayName": "Export machine errors",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/exportMachineErrors/action",
+          "name": "Microsoft.OffAzure/serverSites/exportMachineErrors/action",
           "origin": "user,system",
           "properties": null
         },
@@ -625,7 +625,7 @@
           "description": "Generate Coarse map for the list of machines",
           "displayName": "Generate Coarse map for the list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/generateCoarseMap/action",
+          "name": "Microsoft.OffAzure/serverSites/generateCoarseMap/action",
           "origin": "user,system",
           "properties": null
         },
@@ -633,7 +633,7 @@
           "description": "Generate detailed coarse map for the list of machines",
           "displayName": "Generate detailed coarse map for the list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/generateDetailedMap/action",
+          "name": "Microsoft.OffAzure/serverSites/generateDetailedMap/action",
           "origin": "user,system",
           "properties": null
         },
@@ -641,7 +641,7 @@
           "description": "Generate server group members view with dependency map data",
           "displayName": "Generate server group members view",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/serverGroupMembers/action",
+          "name": "Microsoft.OffAzure/serverSites/serverGroupMembers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -649,7 +649,7 @@
           "description": "Toggle dependency map data of a list of machines",
           "displayName": "Toggle dependency map data of a list of machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/updateDependencyMapStatus/action",
+          "name": "Microsoft.OffAzure/serverSites/updateDependencyMapStatus/action",
           "origin": "user,system",
           "properties": null
         }
@@ -657,13 +657,13 @@
     },
     {
       "displayName": "ServerSites",
-      "name": "ServerSites/usage",
+      "name": "serverSites/usage",
       "operations": [
         {
           "description": "Gets the usages of a Server site",
           "displayName": "Get Server site usages",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/usage/read",
+          "name": "Microsoft.OffAzure/serverSites/usage/read",
           "origin": "user,system",
           "properties": null
         }
@@ -671,13 +671,13 @@
     },
     {
       "displayName": "Jobs",
-      "name": "ServerSites/jobs",
+      "name": "serverSites/jobs",
       "operations": [
         {
           "description": "Gets the properties of a Server jobs",
           "displayName": "Get Server jobs",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/jobs/read",
+          "name": "Microsoft.OffAzure/serverSites/jobs/read",
           "origin": "user,system",
           "properties": null
         }
@@ -685,13 +685,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "ServerSites/machines",
+      "name": "serverSites/machines",
       "operations": [
         {
           "description": "Gets the properties of a Server machines",
           "displayName": "Get Server machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/machines/read",
+          "name": "Microsoft.OffAzure/serverSites/machines/read",
           "origin": "user,system",
           "properties": null
         },
@@ -699,7 +699,7 @@
           "description": "Write the properties of a Server machines",
           "displayName": "Write Server machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/machines/write",
+          "name": "Microsoft.OffAzure/serverSites/machines/write",
           "origin": "user,system",
           "properties": null
         },
@@ -707,7 +707,7 @@
           "description": "Delete the properties of a Server machines",
           "displayName": "Delete Server machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/machines/delete",
+          "name": "Microsoft.OffAzure/serverSites/machines/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -715,13 +715,13 @@
     },
     {
       "displayName": "RunAsAccounts",
-      "name": "ServerSites/runasaccounts",
+      "name": "serverSites/runasaccounts",
       "operations": [
         {
           "description": "Gets the properties of a Server run as accounts",
           "displayName": "Get Server run as accounts",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/runasaccounts/read",
+          "name": "Microsoft.OffAzure/serverSites/runasaccounts/read",
           "origin": "user,system",
           "properties": null
         }
@@ -729,13 +729,13 @@
     },
     {
       "displayName": "OperationsStatus",
-      "name": "ServerSites/operationsstatus",
+      "name": "serverSites/operationsstatus",
       "operations": [
         {
           "description": "Gets the properties of a Server operation status",
           "displayName": "Get Server operation status",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/operationsstatus/read",
+          "name": "Microsoft.OffAzure/serverSites/operationsstatus/read",
           "origin": "user,system",
           "properties": null
         }
@@ -743,13 +743,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "VMwareSites/machines/applications",
+      "name": "vmwareSites/machines/applications",
       "operations": [
         {
           "description": "Gets the properties of a VMware machines applications",
           "displayName": "Gets VMware machines applications",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/machines/applications/read",
+          "name": "Microsoft.OffAzure/vmwareSites/machines/applications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -757,13 +757,13 @@
     },
     {
       "displayName": "ImportSites",
-      "name": "ImportSites",
+      "name": "importSites",
       "operations": [
         {
           "description": "Gets the properties of a Import site",
           "displayName": "Get Import site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/read",
+          "name": "Microsoft.OffAzure/importSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -771,7 +771,7 @@
           "description": "Creates or updates the Import site",
           "displayName": "Create or update Import site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/write",
+          "name": "Microsoft.OffAzure/importSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -779,7 +779,7 @@
           "description": "Deletes the Import site",
           "displayName": "Delete Import site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/delete",
+          "name": "Microsoft.OffAzure/importSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -787,7 +787,7 @@
           "description": "Gets the SAS uri for importing the machines CSV file.",
           "displayName": "Get SAS uri for importing the machines CSV file.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/importuri/action",
+          "name": "Microsoft.OffAzure/importSites/importuri/action",
           "origin": "user,system",
           "properties": null
         },
@@ -795,7 +795,7 @@
           "description": "Gets the SAS uri for exporting the machines CSV file.",
           "displayName": "Get SAS uri for exporting the machines CSV file.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/exporturi/action",
+          "name": "Microsoft.OffAzure/importSites/exporturi/action",
           "origin": "user,system",
           "properties": null
         }
@@ -803,13 +803,13 @@
     },
     {
       "displayName": "Jobs",
-      "name": "ImportSites/jobs",
+      "name": "importSites/jobs",
       "operations": [
         {
           "description": "Gets the properties of a Import jobs",
           "displayName": "Get Import jobs",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/jobs/read",
+          "name": "Microsoft.OffAzure/importSites/jobs/read",
           "origin": "user,system",
           "properties": null
         }
@@ -817,13 +817,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "ImportSites/machines",
+      "name": "importSites/machines",
       "operations": [
         {
           "description": "Gets the properties of a Import machines",
           "displayName": "Get Import machines",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/machines/read",
+          "name": "Microsoft.OffAzure/importSites/machines/read",
           "origin": "user,system",
           "properties": null
         },
@@ -831,7 +831,7 @@
           "description": "Deletes the Import machine",
           "displayName": "Delete Import machine",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ImportSites/machines/delete",
+          "name": "Microsoft.OffAzure/importSites/machines/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -839,13 +839,13 @@
     },
     {
       "displayName": "HyperVSites",
-      "name": "HyperVSites/summary",
+      "name": "hypervSites/summary",
       "operations": [
         {
           "description": "Gets the summary of a Hyper-V site",
           "displayName": "Get Hyper-V site summary",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/summary/read",
+          "name": "Microsoft.OffAzure/hypervSites/summary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -853,13 +853,13 @@
     },
     {
       "displayName": "VMwareSites",
-      "name": "VMwareSites/summary",
+      "name": "vmwareSites/summary",
       "operations": [
         {
           "description": "Gets the summary of a VMware site",
           "displayName": "Get VMware site summary",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/summary/read",
+          "name": "Microsoft.OffAzure/vmwareSites/summary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -867,13 +867,13 @@
     },
     {
       "displayName": "ServerSites",
-      "name": "ServerSites/summary",
+      "name": "serverSites/summary",
       "operations": [
         {
           "description": "Gets the summary of a Server site",
           "displayName": "Get Server site summary",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/summary/read",
+          "name": "Microsoft.OffAzure/serverSites/summary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -881,13 +881,13 @@
     },
     {
       "displayName": "Hosts",
-      "name": "VMwareSites/hosts",
+      "name": "vmwareSites/hosts",
       "operations": [
         {
           "description": "Gets the properties of a VMware hosts",
           "displayName": "Get VMware host",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/hosts/read",
+          "name": "Microsoft.OffAzure/vmwareSites/hosts/read",
           "origin": "user,system",
           "properties": null
         }
@@ -895,13 +895,13 @@
     },
     {
       "displayName": "OperationsStatus",
-      "name": "MasterSites/operationsstatus",
+      "name": "masterSites/operationsstatus",
       "operations": [
         {
           "description": "Gets the properties of a Master site operation status",
           "displayName": "Get Master site  operation status",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/operationsstatus/read",
+          "name": "Microsoft.OffAzure/masterSites/operationsstatus/read",
           "origin": "user,system",
           "properties": null
         }
@@ -909,13 +909,13 @@
     },
     {
       "displayName": "Private Endpoint Connection Proxy",
-      "name": "MasterSites/privateEndpointConnectionProxies",
+      "name": "masterSites/privateEndpointConnectionProxies",
       "operations": [
         {
           "description": "Get Private Endpoint Connection Proxy",
           "displayName": "Get Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/read",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnectionProxies/read",
           "origin": "system",
           "properties": null
         },
@@ -923,7 +923,7 @@
           "description": "Validate a Private Endpoint Connection Proxy",
           "displayName": "Validate a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/validate/action",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnectionProxies/validate/action",
           "origin": "system",
           "properties": null
         },
@@ -931,7 +931,7 @@
           "description": "Create or Update a Private Endpoint Connection Proxy",
           "displayName": "Create or Update a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/write",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnectionProxies/write",
           "origin": "system",
           "properties": null
         },
@@ -939,7 +939,7 @@
           "description": "Delete a Private Endpoint Connection Proxy",
           "displayName": "Delete a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/delete",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnectionProxies/delete",
           "origin": "system",
           "properties": null
         }
@@ -947,13 +947,13 @@
     },
     {
       "displayName": "Private Endpoint Connection",
-      "name": "MasterSites/privateEndpointConnections",
+      "name": "masterSites/privateEndpointConnections",
       "operations": [
         {
           "description": "Get Private Endpoint Connection",
           "displayName": "Get Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnections/read",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnections/read",
           "origin": "user,system",
           "properties": null
         },
@@ -961,7 +961,7 @@
           "description": "Update a Private Endpoint Connection",
           "displayName": "Update a Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnections/write",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnections/write",
           "origin": "user,system",
           "properties": null
         },
@@ -969,7 +969,7 @@
           "description": "Delete a Private Endpoint Connection",
           "displayName": "Delete a Private Endpoint Connection",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnections/delete",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnections/delete",
           "origin": "user,system",
           "properties": null
         }
@@ -977,13 +977,13 @@
     },
     {
       "displayName": "Private Link",
-      "name": "MasterSites/privateLinkResources",
+      "name": "masterSites/privateLinkResources",
       "operations": [
         {
           "description": "Get Private Link Resource",
           "displayName": "Get Private Link Resource",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateLinkResources/read",
+          "name": "Microsoft.OffAzure/masterSites/privateLinkResources/read",
           "origin": "user,system",
           "properties": null
         }
@@ -991,13 +991,13 @@
     },
     {
       "displayName": "Web App Site",
-      "name": "MasterSites/webAppSites",
+      "name": "masterSites/webAppSites",
       "operations": [
         {
           "description": "Gets the properties of a WebApp site",
           "displayName": "Get WebApp site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1005,7 +1005,7 @@
           "description": "Creates or updates the WebApp site",
           "displayName": "Create or update WebApp site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/write",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1013,7 +1013,7 @@
           "description": "Deletes the WebApp site",
           "displayName": "Delete WebApp site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/delete",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -1021,7 +1021,7 @@
           "description": "Refresh Web App For A Given Site",
           "displayName": "Refresh Web App For A Given Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/Refresh/action",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/Refresh/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1029,7 +1029,7 @@
           "description": "Create or Update Web App Properties for a given site",
           "displayName": "Create or Update Web App Properties for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/UpdateProperties/action",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/UpdateProperties/action",
           "origin": "user,system",
           "properties": null
         }
@@ -1037,13 +1037,13 @@
     },
     {
       "displayName": "IIS Web Application",
-      "name": "MasterSites/webAppSites/IISWebApplications",
+      "name": "masterSites/webAppSites/IISWebApplications",
       "operations": [
         {
           "description": "Gets the properties of IIS Web applications.",
           "displayName": "Get IIS Web applications.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/IISWebApplications/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/IISWebApplications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1051,13 +1051,13 @@
     },
     {
       "displayName": "IIS Web Server",
-      "name": "MasterSites/webAppSites/IISWebServers",
+      "name": "masterSites/webAppSites/IISWebServers",
       "operations": [
         {
           "description": "Gets the properties of IIS Web servers.",
           "displayName": "Get IIS Web servers.",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/IISWebServers/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/IISWebServers/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1065,13 +1065,13 @@
     },
     {
       "displayName": "OperationsStatus",
-      "name": "MasterSites/privateEndpointConnectionProxies/operationsstatus",
+      "name": "masterSites/privateEndpointConnectionProxies/operationsstatus",
       "operations": [
         {
           "description": "Get status of a long running operation on a Private Endpoint Connection Proxy",
           "displayName": "Get status of a long running operation on a Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/privateEndpointConnectionProxies/operationsstatus/read",
+          "name": "Microsoft.OffAzure/masterSites/privateEndpointConnectionProxies/operationsstatus/read",
           "origin": "system",
           "properties": null
         }
@@ -1079,13 +1079,13 @@
     },
     {
       "displayName": "Master Site",
-      "name": "MasterSites",
+      "name": "masterSites",
       "operations": [
         {
           "description": "Gets the properties of a Master site",
           "displayName": "Get Master site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/read",
+          "name": "Microsoft.OffAzure/masterSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1093,7 +1093,7 @@
           "description": "Creates or updates the Master site",
           "displayName": "Create or update Master site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/write",
+          "name": "Microsoft.OffAzure/masterSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1101,7 +1101,7 @@
           "description": "Deletes the Master site",
           "displayName": "Delete Master site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/delete",
+          "name": "Microsoft.OffAzure/masterSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -1109,7 +1109,7 @@
           "description": "Register an Appliances Under A Master Site",
           "displayName": "Register an Appliances Under A Master Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/applianceRegistrationInfo/action",
+          "name": "Microsoft.OffAzure/masterSites/applianceRegistrationInfo/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1117,7 +1117,7 @@
           "description": "Retrieves Error Summary For Resources Under A Given Master Site",
           "displayName": "Retrieves Error Summary For Resources Under A Given Master Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/errorSummary/action",
+          "name": "Microsoft.OffAzure/masterSites/errorSummary/action",
           "origin": "user,system",
           "properties": null
         }
@@ -1139,13 +1139,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "VMwareSites/machines/softwareinventory",
+      "name": "vmwareSites/machines/softwareinventory",
       "operations": [
         {
           "description": "Gets VMware machine software inventory data",
           "displayName": "GetsVMware machine software inventory data",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/machines/softwareinventory/read",
+          "name": "Microsoft.OffAzure/vmwareSites/machines/softwareinventory/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1153,13 +1153,13 @@
     },
     {
       "displayName": "VMwareSites",
-      "name": "VMwareSites/errorSummary",
+      "name": "vmwareSites/errorSummary",
       "operations": [
         {
           "description": "Get Error Summary for VMware site inventory",
           "displayName": "Get Error Summary for VMware site inventory",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/VMwareSites/errorSummary/read",
+          "name": "Microsoft.OffAzure/vmwareSites/errorSummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1167,13 +1167,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "HyperVSites/machines/softwareinventory",
+      "name": "hypervSites/machines/softwareinventory",
       "operations": [
         {
           "description": "Gets HyperV machine software inventory data",
           "displayName": "Gets HyperV machine software inventory data",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/machines/softwareinventory/read",
+          "name": "Microsoft.OffAzure/hypervSites/machines/softwareinventory/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1181,13 +1181,13 @@
     },
     {
       "displayName": "HyperVSites",
-      "name": "HyperVSites/errorSummary",
+      "name": "hypervSites/errorSummary",
       "operations": [
         {
           "description": "Gets the error summaries of all the HyperV Site resource inventory",
           "displayName": "Get Error Summary for HyperV site inventory",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/errorSummary/read",
+          "name": "Microsoft.OffAzure/hypervSites/errorSummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1195,13 +1195,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "HyperVSites/machines/applications",
+      "name": "hypervSites/machines/applications",
       "operations": [
         {
           "description": "Get properties of HyperV machine application",
           "displayName": "Gets HyperV VM machine application",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/HyperVSites/machines/applications/read",
+          "name": "Microsoft.OffAzure/hypervSites/machines/applications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1209,13 +1209,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "ServerSites/machines/softwareinventory",
+      "name": "serverSites/machines/softwareinventory",
       "operations": [
         {
           "description": "Gets Server machine software inventory data",
           "displayName": "Gets Server machine software inventory data",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/machines/softwareinventory/read",
+          "name": "Microsoft.OffAzure/serverSites/machines/softwareinventory/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1223,13 +1223,13 @@
     },
     {
       "displayName": "ServerSites",
-      "name": "ServerSites/errorSummary",
+      "name": "serverSites/errorSummary",
       "operations": [
         {
           "description": "Get Error Summary for Server site inventory",
           "displayName": "Get Error Summary for Server site inventory",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/errorSummary/read",
+          "name": "Microsoft.OffAzure/serverSites/errorSummary/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1237,13 +1237,13 @@
     },
     {
       "displayName": "Machines",
-      "name": "ServerSites/machines/applications",
+      "name": "serverSites/machines/applications",
       "operations": [
         {
           "description": "Get server machine installed applications, roles and features",
           "displayName": "Get server machine installed applications, roles and features",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/ServerSites/machines/applications/read",
+          "name": "Microsoft.OffAzure/serverSites/machines/applications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1251,13 +1251,13 @@
     },
     {
       "displayName": "Web App discovery site data sources resource",
-      "name": "MasterSites/webAppSites/DiscoverySiteDataSources",
+      "name": "masterSites/webAppSites/DiscoverySiteDataSources",
       "operations": [
         {
           "description": "Gets Web App Discovery Site Data Source For A Given Site",
           "displayName": "Gets Web App Discovery Site Data Source For A Given Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/DiscoverySiteDataSources/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/DiscoverySiteDataSources/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1265,7 +1265,7 @@
           "description": "Create or Update Web App Discovery Site Data Source For A Given Site",
           "displayName": "Create or Update Web App Discovery Site Data Source For A Given Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/DiscoverySiteDataSources/write",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/DiscoverySiteDataSources/write",
           "origin": "user,system",
           "properties": null
         }
@@ -1273,13 +1273,13 @@
     },
     {
       "displayName": "Web App Extended Machine Resource",
-      "name": "MasterSites/webAppSites/ExtendedMachines",
+      "name": "masterSites/webAppSites/ExtendedMachines",
       "operations": [
         {
           "description": "Get Web App Extended Machines For A Given Site",
           "displayName": "Get Web App Extended Machines For A Given Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/ExtendedMachines/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/ExtendedMachines/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1287,13 +1287,13 @@
     },
     {
       "displayName": "Web app run as accounts resource",
-      "name": "MasterSites/webAppSites/RunAsAccounts",
+      "name": "masterSites/webAppSites/RunAsAccounts",
       "operations": [
         {
           "description": "Get Web App Run As Accounts For A Given Site",
           "displayName": "Get Web App Run As Accounts For A Given Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/RunAsAccounts/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/RunAsAccounts/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1301,13 +1301,13 @@
     },
     {
       "displayName": "Web App Tomcat Web Applications Resource",
-      "name": "MasterSites/webAppSites/TomcatWebApplications",
+      "name": "masterSites/webAppSites/TomcatWebApplications",
       "operations": [
         {
           "description": "Get TomCat Web Applications",
           "displayName": "Get TomCat Web Applications",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/TomcatWebApplications/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/TomcatWebApplications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1315,13 +1315,13 @@
     },
     {
       "displayName": "Web App Tomcat Web Servers Resource",
-      "name": "MasterSites/webAppSites/TomcatWebServers",
+      "name": "masterSites/webAppSites/TomcatWebServers",
       "operations": [
         {
           "description": "Get TomCat Web Servers for a given site",
           "displayName": "Get TomCat Web Servers for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/TomcatWebServers/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/TomcatWebServers/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1329,13 +1329,13 @@
     },
     {
       "displayName": "Web App Web Applications",
-      "name": "MasterSites/webAppSites/WebApplications",
+      "name": "masterSites/webAppSites/WebApplications",
       "operations": [
         {
           "description": "Gets Web App Applications for a given site",
           "displayName": "Gets Web App Applications for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/WebApplications/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/WebApplications/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1343,13 +1343,13 @@
     },
     {
       "displayName": "Web App Web Server",
-      "name": "MasterSites/webAppSites/WebServers",
+      "name": "masterSites/webAppSites/WebServers",
       "operations": [
         {
           "description": "Gets Web App Web Servers",
           "displayName": "Gets Web App Web Servers",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/webAppSites/WebServers/read",
+          "name": "Microsoft.OffAzure/masterSites/webAppSites/WebServers/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1357,13 +1357,13 @@
     },
     {
       "displayName": "Sql Site",
-      "name": "MasterSites/sqlSites",
+      "name": "masterSites/sqlSites",
       "operations": [
         {
           "description": "Gets the Sql Site",
           "displayName": "Gets the Sql Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1371,7 +1371,7 @@
           "description": "Creates or Updates a Sql Site",
           "displayName": "Creates or Updates a Sql Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/write",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/write",
           "origin": "user,system",
           "properties": null
         },
@@ -1379,7 +1379,7 @@
           "description": "Delete a Sql Site",
           "displayName": "Delete a Sql Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/delete",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/delete",
           "origin": "user,system",
           "properties": null
         },
@@ -1387,7 +1387,7 @@
           "description": "Refreshes data for Sql Site",
           "displayName": "Refreshes data for Sql Site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/refresh/action",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/refresh/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1395,7 +1395,7 @@
           "description": "Export Sql servers for the entire Sql site inventory",
           "displayName": "Export Sql servers",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/exportSqlServers/action",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/exportSqlServers/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1403,7 +1403,7 @@
           "description": "Export Sql server errors for the entire Sql site inventory",
           "displayName": "Export Sql server errors",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/exportSqlServerErrors/action",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/exportSqlServerErrors/action",
           "origin": "user,system",
           "properties": null
         },
@@ -1411,7 +1411,7 @@
           "description": "Retrieves Sql Error detailed summary for a resource under a given Sql Site",
           "displayName": "Retrieves Sql Error detailed summary",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/errorDetailedSummary/action",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/errorDetailedSummary/action",
           "origin": "user,system",
           "properties": null
         }
@@ -1419,13 +1419,13 @@
     },
     {
       "displayName": "Sql Discover Site Resource",
-      "name": "MasterSites/sqlSites/discoverySiteDataSources",
+      "name": "masterSites/sqlSites/discoverySiteDataSources",
       "operations": [
         {
           "description": "Gets the Sql Discovery Site Data Source",
           "displayName": "Gets the Sql Discovery Site Data Source",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/discoverySiteDataSources/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/discoverySiteDataSources/read",
           "origin": "user,system",
           "properties": null
         },
@@ -1433,7 +1433,7 @@
           "description": "Creates or Updates the Sql Discovery Site Data Source",
           "displayName": "Creates or Updates the Sql Discovery Site Data Source",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/discoverySiteDataSources/write",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/discoverySiteDataSources/write",
           "origin": "user,system",
           "properties": null
         }
@@ -1441,13 +1441,13 @@
     },
     {
       "displayName": "Sql Operation Status",
-      "name": "MasterSites/sqlSites/operationsStatus",
+      "name": "masterSites/sqlSites/operationsStatus",
       "operations": [
         {
           "description": "Gets Sql Operation Status",
           "displayName": "Gets Sql Operation Status",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/operationsStatus/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/operationsStatus/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1455,13 +1455,13 @@
     },
     {
       "displayName": "Sql Run As Account Resource",
-      "name": "MasterSites/sqlSites/runAsAccounts",
+      "name": "masterSites/sqlSites/runAsAccounts",
       "operations": [
         {
           "description": "Gets Sql Run as Accounts for a given site",
           "displayName": "Gets Sql Run as Accounts for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/runAsAccounts/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/runAsAccounts/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1469,13 +1469,13 @@
     },
     {
       "displayName": "Sql Availability Groups Resource",
-      "name": "MasterSites/sqlSites/sqlAvailabilityGroups",
+      "name": "masterSites/sqlSites/sqlAvailabilityGroups",
       "operations": [
         {
           "description": "Gets Sql Availability Groups for a given site",
           "displayName": "Gets Sql Availability Groups for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/sqlAvailabilityGroups/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/sqlAvailabilityGroups/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1483,13 +1483,13 @@
     },
     {
       "displayName": "Sql Databases",
-      "name": "MasterSites/sqlSites/sqlDatabases",
+      "name": "masterSites/sqlSites/sqlDatabases",
       "operations": [
         {
           "description": "Gets Sql Database for a given site",
           "displayName": "Gets Sql Database for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/sqlDatabases/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/sqlDatabases/read",
           "origin": "user,system",
           "properties": null
         }
@@ -1497,41 +1497,129 @@
     },
     {
       "displayName": "Sql Servers",
-      "name": "MasterSites/sqlSites/sqlServers",
+      "name": "masterSites/sqlSites/sqlServers",
       "operations": [
         {
           "description": "Gets the Sql Servers for a given site",
           "displayName": "Gets the Sql Servers for a given site",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/MasterSites/sqlSites/sqlServers/read",
+          "name": "Microsoft.OffAzure/masterSites/sqlSites/sqlServers/read",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Credentials",
-      "name": "Appliances/credentials",
+      "displayName": "Machine corresponding to POS workloads.",
+      "name": "masterSites/OracleExtendedMachines",
       "operations": [
         {
-          "description": "Creates or updates the credential under appliance resource",
-          "displayName": "Creates or updates the credential under appliance resource",
+          "description": "Gets the extended machines relative to all the Partner Site resource inventory",
+          "displayName": "Gets the extended machines relative to all the Partner Site resource inventory",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/Appliances/credentials/write",
+          "name": "Microsoft.OffAzure/masterSites/OracleExtendedMachines/read",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Credentials",
-      "name": "Appliances",
+      "displayName": "Summary of Discovery Errors.",
+      "name": "masterSites/OracleErrorSummaries",
       "operations": [
         {
-          "description": "Resyncs the credential under appliance resource",
-          "displayName": "Resyncs the credential under appliance resource",
+          "description": "Gets the error summaries of all the Partner Site resource inventory",
+          "displayName": "Gets the error summaries of all the Partner Site resource inventory",
           "isDataAction": false,
-          "name": "Microsoft.OffAzure/Appliances/credentials/action",
+          "name": "Microsoft.OffAzure/masterSites/OracleErrorSummaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Partner Resource Linkage For Sites and CL",
+      "name": "masterSites/OracleResourceLinks",
+      "operations": [
+        {
+          "description": "Gets the resource Linkages of  the Partner Site",
+          "displayName": "Gets the resource Linkages of the Partner Site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/OracleResourceLinks/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the resource Linkages of the Partner Site",
+          "displayName": "Creates or updates the resource Linkages of the Partner Site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/OracleResourceLinks/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the resource Linkages of the Partner Site",
+          "displayName": "Deletes the resource Linkages of the Partner Site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/OracleResourceLinks/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Machine corresponding to POS workloads.",
+      "name": "masterSites/SpringbootExtendedMachines",
+      "operations": [
+        {
+          "description": "Gets the extended machines relative to all the Partner Site resource inventory",
+          "displayName": "Gets the extended machines relative to all the Partner Site resource inventory",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/SpringbootExtendedMachines/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Summary of Discovery Errors.",
+      "name": "masterSites/SpringbootErrorSummaries",
+      "operations": [
+        {
+          "description": "Gets the error summaries of all the Partner Site resource inventory",
+          "displayName": "Gets the error summaries of all the Partner Site resource inventory",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/SpringbootErrorSummaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Partner Resource Linkage For Sites and CL",
+      "name": "masterSites/SpringbootResourceLinks",
+      "operations": [
+        {
+          "description": "Gets the resource Linkages of  the Partner Site",
+          "displayName": "Gets the resource Linkages of the Partner Site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/SpringbootResourceLinks/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the resource Linkages of the Partner Site",
+          "displayName": "Creates or updates the resource Linkages of the Partner Site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/SpringbootResourceLinks/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the resource Linkages of the Partner Site",
+          "displayName": "Deletes the resource Linkages of the Partner Site",
+          "isDataAction": false,
+          "name": "Microsoft.OffAzure/masterSites/SpringbootResourceLinks/delete",
           "origin": "user,system",
           "properties": null
         }
