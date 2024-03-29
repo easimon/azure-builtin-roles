@@ -344,16 +344,16 @@
       "name": "billingAccounts/billingProfiles/invoiceSections",
       "operations": [
         {
-          "description": "Lists the invoice sections that a user has access to. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "InvoiceSections_ListByBillingProfile",
+          "description": null,
+          "displayName": "List Invoice Sections for Billing Profile",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or updates an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "InvoiceSections_CreateOrUpdate",
+          "description": null,
+          "displayName": "Delete Invoice Section",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/write",
           "origin": null,
@@ -776,18 +776,10 @@
       "name": "billingAccounts/associatedTenants",
       "operations": [
         {
-          "description": "Lists the tenants that can collaborate with the billing account on commerce activities like viewing and downloading invoices, managing payments, making purchases, and managing licenses.",
-          "displayName": "AssociatedTenants_ListByBillingAccount",
+          "description": null,
+          "displayName": "List/Get Associated tenant(s)",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/associatedTenants/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update an associated tenant for the billing account.",
-          "displayName": "AssociatedTenants_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.Billing/billingAccounts/associatedTenants/write",
           "origin": null,
           "properties": null
         }
@@ -840,16 +832,16 @@
       "name": "billingAccounts/policies",
       "operations": [
         {
-          "description": "Get the policies for a billing account of Enterprise Agreement type.",
-          "displayName": "Policies_GetByBillingAccount",
+          "description": null,
+          "displayName": "Get policies of a billing account",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/policies/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update the policies for a billing account of Enterprise Agreement type.",
-          "displayName": "Policies_CreateOrUpdateByBillingAccount",
+          "description": null,
+          "displayName": "Update policies of a billing account",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/policies/write",
           "origin": null,
@@ -862,16 +854,16 @@
       "name": "billingAccounts/billingProfiles/policies",
       "operations": [
         {
-          "description": "Lists the policies for a billing profile. This operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "Policies_GetByBillingProfile",
+          "description": null,
+          "displayName": "Get policies of a billing profile",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/policies/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates the policies for a billing profile. This operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "Policies_CreateOrUpdateByBillingProfile",
+          "description": null,
+          "displayName": "Update policies of a billing profile",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/policies/write",
           "origin": null,
@@ -884,16 +876,16 @@
       "name": "billingAccounts/customers/policies",
       "operations": [
         {
-          "description": "Lists the policies for a customer. This operation is supported only for billing accounts with agreement type Microsoft Partner Agreement.",
-          "displayName": "Policies_GetByCustomer",
+          "description": null,
+          "displayName": "Get policies of a customer",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/customers/policies/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates the policies for a customer. This operation is supported only for billing accounts with agreement type Microsoft Partner Agreement.",
-          "displayName": "Policies_CreateOrUpdateByCustomer",
+          "description": null,
+          "displayName": "Update policies of a customer",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/customers/policies/write",
           "origin": null,
@@ -1838,14 +1830,56 @@
       ]
     },
     {
-      "displayName": "Validate Delete Eligibility",
-      "name": "billingAccounts/billingProfiles/invoiceSections/validateDeleteEligibility",
+      "displayName": "Register",
+      "name": "billingAccounts/billingProviders/register",
       "operations": [
         {
-          "description": "Validates if the invoice section can be deleted. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "InvoiceSections_ValidateDeleteEligibility",
+          "description": "API to register the first party application at billing account scope.",
+          "displayName": "BillingAccounts_Register",
           "isDataAction": false,
-          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/validateDeleteEligibility/write",
+          "name": "Microsoft.Billing/billingAccounts/billingProviders/register/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Register",
+      "name": "billingAccounts/billingProfiles/billingProviders/register",
+      "operations": [
+        {
+          "description": "API to register the first party application at billing profile scope.",
+          "displayName": "BillingProfiles_Register",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/billingProviders/register/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Unregister",
+      "name": "billingAccounts/billingProviders/unregister",
+      "operations": [
+        {
+          "description": "API to de-register the first party application at billing account scope.",
+          "displayName": "BillingAccounts_Unregister",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProviders/unregister/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Unregister",
+      "name": "billingAccounts/billingProfiles/billingProviders/unregister",
+      "operations": [
+        {
+          "description": "API to de-register the first party application at billing profile scope.",
+          "displayName": "BillingProfiles_Unregister",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/billingProviders/unregister/write",
           "origin": null,
           "properties": null
         }
