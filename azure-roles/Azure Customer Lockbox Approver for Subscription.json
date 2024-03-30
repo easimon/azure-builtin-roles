@@ -4,7 +4,7 @@
   ],
   "createdBy": null,
   "createdOn": "2023-10-16T15:13:24.847644+00:00",
-  "description": "Can approve Microsoft support requests to access specific resources contained within a subscription, or the subscription itself, when Customer Lockbox for Microsoft Azure is enabled on the tenant where the subscription resides. - in Private Preview, not intended for general use.",
+  "description": "Can approve Microsoft support requests to access specific resources contained within a subscription, or the subscription itself, when Customer Lockbox for Microsoft Azure is enabled on the tenant where the subscription resides. - in Public Preview.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/4dae6930-7baf-46f5-909e-0383bc931c46",
   "name": "4dae6930-7baf-46f5-909e-0383bc931c46",
   "permissions": [
@@ -14,7 +14,8 @@
         "Microsoft.CustomerLockbox/requests/UpdateApproval/action",
         "Microsoft.CustomerLockbox/requests/read",
         "Microsoft.Authorization/*/read",
-        "Microsoft.Resources/subscriptions/resourceGroups/read"
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/eventtypes/values/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -27,5 +28,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2023-11-09T16:39:12.573456+00:00"
+  "updatedOn": "2024-03-29T21:56:18.276137+00:00"
 }
