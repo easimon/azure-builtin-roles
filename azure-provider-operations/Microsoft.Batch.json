@@ -769,6 +769,14 @@
           "name": "Microsoft.Batch/batchAccounts/syncAutoStorageKeys/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Determines if the user is allowed to associate a Batch account with a Network Security Perimeter",
+          "displayName": "Join Network Security Perimeter",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/joinPerimeter/action",
+          "origin": "system",
+          "properties": null
         }
       ]
     },
@@ -796,6 +804,14 @@
           "isDataAction": false,
           "name": "Microsoft.Batch/locations/checkNameAvailability/action",
           "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Notifies the NSP updates available at the given location",
+          "displayName": "Notify NSP Updates Available",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
+          "origin": "system",
           "properties": null
         }
       ]
@@ -1257,6 +1273,72 @@
           "displayName": "Check Preflight",
           "isDataAction": false,
           "name": "Microsoft.Batch/deployments/preflight/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NetworkSecurityPerimeterAssociationProxies",
+      "name": "batchAccounts/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "Gets or lists the NSP association proxies on a Batch account",
+          "displayName": "Get or List NSP Association Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/networkSecurityPerimeterAssociationProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the NSP association proxy on a Batch account",
+          "displayName": "Create or Update NSP Association Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/networkSecurityPerimeterAssociationProxies/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the NSP association proxy on a Batch account",
+          "displayName": "Delete NSP Association Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NetworkSecurityPerimeterConfigurations",
+      "name": "batchAccounts/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "Gets or lists the NSP association configurations on a Batch account",
+          "displayName": "Get or List NSP Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/networkSecurityPerimeterConfigurations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reconciles the NSP association on a Batch account to sync up with the latest configuration from the NSP control plane",
+          "displayName": "Reconcile NSP Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/networkSecurityPerimeterConfigurations/reconcile/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NetworkSecurityPerimeterConfigurations",
+      "name": "batchAccounts/networkSecurityPerimeterConfigurationOperationResults",
+      "operations": [
+        {
+          "description": "Gets the results of a long running NSP configuration operation on a Batch account",
+          "displayName": "Get NSP Configuration Operation Results",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/networkSecurityPerimeterConfigurationOperationResults/read",
           "origin": "user,system",
           "properties": null
         }
