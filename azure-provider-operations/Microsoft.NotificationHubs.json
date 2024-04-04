@@ -828,6 +828,142 @@
                       "timeGrain": "PT1M"
                     }
                   ],
+                  "displayDescription": "The count of pushes that failed because the target is invalid.",
+                  "displayName": "ADM Bad Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.badchannel",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "ADM Authorization Errors (Invalid Credentials)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.invalidcredentials",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed the token provided to ADM is not valid.",
+                  "displayName": "ADM Authorization Errors (Invalid Token)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.invalidtoken",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of throttling.",
+                  "displayName": "ADM Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.throttled",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the format of the notification is invalid.",
+                  "displayName": "ADM Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.invalidnotificationformat",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the notification payload is too large.",
+                  "displayName": "ADM Invalid Notification Size Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.invalidnotificationsize",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "ADM Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.success",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because there was a problem communicating with the PNS.",
+                  "displayName": "ADM Server Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.adm.pnserror",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
                   "displayDescription": "The count of all successful notifications.",
                   "displayName": "APNS Successful Notifications",
                   "fillGapWithZero": true,
@@ -917,6 +1053,227 @@
                   "displayName": "APNS Errors",
                   "fillGapWithZero": true,
                   "name": "outgoing.apns.pnserror",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that were skipped by Baidu.",
+                  "displayName": "Baidu Skipped Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.skipped",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "Baidu Authorization Errors (Invalid Credentials)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.invalidcredentials",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of throttling.",
+                  "displayName": "Baidu Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.throttled",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed the token provided to Baidu is not valid.",
+                  "displayName": "Baidu Authorization Errors (Invalid Token)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.invalidtoken",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the format of the notification is invalid.",
+                  "displayName": "Baidu Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.invalidnotificationformat",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "Baidu Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.success",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because there was a problem communicating with the PNS.",
+                  "displayName": "Baidu Server Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.baidu.pnserror",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "Browser Push Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.browser.success",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the format of the notification is invalid.",
+                  "displayName": "Browser Push Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.browser.invalidnotificationformat",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the notification payload is too large.",
+                  "displayName": "Browser Push Invalid Notification Size Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.browser.invalidnotificationsize",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of throttling.",
+                  "displayName": "Browser Push Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.browser.throttled",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the target is invalid.",
+                  "displayName": "Browser Push Bad Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.browser.badchannel",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of errors communicating with the PNS.",
+                  "displayName": "Browser Push Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.browser.pnserror",
                   "supportedTimeGrainTypes": [
                     "PT1M"
                   ],
@@ -1410,6 +1767,108 @@
                   "displayName": "All Incoming Requests",
                   "fillGapWithZero": true,
                   "name": "incoming.all.requests",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of all successful notifications.",
+                  "displayName": "Xiaomi Successful Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.xiaomi.success",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the target is invalid.",
+                  "displayName": "Xiaomi Bad Channel Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.xiaomi.badchannel",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the PNS did not accept the provided credentials or the credentials are blocked.",
+                  "displayName": "Xiaomi Authorization Errors (Invalid Credentials)",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.xiaomi.invalidcredentials",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because the format of the notification is invalid.",
+                  "displayName": "Xiaomi Invalid Notification Format",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.xiaomi.invalidnotificationformat",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of throttling.",
+                  "displayName": "Xiaomi Throttled Notifications",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.xiaomi.throttled",
+                  "supportedTimeGrainTypes": [
+                    "PT1M"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "The count of pushes that failed because of errors communicating with the PNS.",
+                  "displayName": "Xiaomi Errors",
+                  "fillGapWithZero": true,
+                  "name": "outgoing.xiaomi.pnserror",
                   "supportedTimeGrainTypes": [
                     "PT1M"
                   ],
