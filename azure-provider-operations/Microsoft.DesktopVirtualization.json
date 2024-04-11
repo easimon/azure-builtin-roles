@@ -977,7 +977,7 @@
       "name": "appattachpackages",
       "operations": [
         {
-          "description": "Read the appattachpackages to see packages present.",
+          "description": "Read appattachpackages",
           "displayName": "Read appattachpackages",
           "isDataAction": false,
           "name": "Microsoft.DesktopVirtualization/appattachpackages/read",
@@ -985,10 +985,18 @@
           "properties": null
         },
         {
-          "description": "Update the appattachpackages to save changes.",
-          "displayName": "Update the appattachpackages",
+          "description": "Write appattachpackages",
+          "displayName": "Write appattachpackages",
           "isDataAction": false,
           "name": "Microsoft.DesktopVirtualization/appattachpackages/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete appattachpackages",
+          "displayName": "Delete appattachpackages",
+          "isDataAction": false,
+          "name": "Microsoft.DesktopVirtualization/appattachpackages/delete",
           "origin": null,
           "properties": null
         },
@@ -999,6 +1007,14 @@
           "name": "Microsoft.DesktopVirtualization/appattachpackages/useapplications/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Move appattachpackages to another ResourceGroup or Subscription",
+          "displayName": "Move appattachpackages",
+          "isDataAction": false,
+          "name": "Microsoft.DesktopVirtualization/appattachpackages/move/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -1007,7 +1023,7 @@
       "name": "hostpools/activeSessionhostconfigurations",
       "operations": [
         {
-          "description": "Read the appattachpackages to see configurations present.",
+          "description": "Read the activeSessionhostconfigurations to see configurations present.",
           "displayName": "Read activeSessionhostconfigurations",
           "isDataAction": false,
           "name": "Microsoft.DesktopVirtualization/hostpools/activeSessionhostconfigurations/read",
@@ -1115,7 +1131,7 @@
       "name": "connectionPolicies",
       "operations": [
         {
-          "description": "Read the connectionPolicies to see packages present.",
+          "description": "Read the connectionPolicies.",
           "displayName": "Read connectionPolicies",
           "isDataAction": false,
           "name": "Microsoft.DesktopVirtualization/connectionPolicies/read",
@@ -1127,6 +1143,51 @@
           "displayName": "Update the connectionPolicies",
           "isDataAction": false,
           "name": "Microsoft.DesktopVirtualization/connectionPolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "appattachpackages",
+      "name": "appattachpackages/providers/Microsoft.Insights/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available logs",
+          "displayName": "Read log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.DesktopVirtualization/appattachpackages/providers/Microsoft.Insights/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "displayName": "Management",
+                  "name": "Management"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "appattachpackages",
+      "name": "appattachpackages/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting",
+          "displayName": "Get diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DesktopVirtualization/appattachpackages/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting",
+          "displayName": "Create or update the diagnostic setting",
+          "isDataAction": false,
+          "name": "Microsoft.DesktopVirtualization/appattachpackages/providers/Microsoft.Insights/diagnosticSettings/write",
           "origin": null,
           "properties": null
         }
