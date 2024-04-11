@@ -779,6 +779,49 @@
                     "P1D"
                   ],
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1M",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Policy Name",
+                      "internalName": "WebApplicationFirewallPolicyName",
+                      "name": "PolicyName"
+                    },
+                    {
+                      "displayName": "Rule Name",
+                      "internalName": "WebApplicationFirewallRuleName",
+                      "name": "RuleName"
+                    },
+                    {
+                      "displayName": "Action",
+                      "internalName": "WebApplicationFirewallJsAction",
+                      "name": "Action"
+                    }
+                  ],
+                  "displayDescription": "The number of JS challenge requests evaluated by the Web Application Firewall",
+                  "displayName": "Web Application Firewall JS Challenge Request Count",
+                  "fillGapWithZero": true,
+                  "isInternal": false,
+                  "metricFilterPattern": "Premium_AzureFrontDoor",
+                  "name": "WebApplicationFirewallJsRequestCount",
+                  "supportedTimeGrainTypes": [
+                    "PT1M",
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
                 }
               ]
             }
