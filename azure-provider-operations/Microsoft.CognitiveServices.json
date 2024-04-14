@@ -15303,6 +15303,22 @@
           "name": "Microsoft.CognitiveServices/accounts/raiBlocklists/delete",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Batch adds blocklist items under a blocklist.",
+          "displayName": "Batch add blocklist items under a blocklist.",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiBlocklists/addRaiBlocklistItems/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Batch deletes blocklist items under a blocklist.",
+          "displayName": "Batch delete blocklist items under a blocklist.",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiBlocklists/deleteRaiBlocklistItems/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -16328,6 +16344,114 @@
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/Face/session/sessionimages/read",
           "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "document*",
+      "name": "accounts/TextTranslation/document",
+      "operations": [
+        {
+          "description": "Use this API to submit a bulk (batch) translation request to the Document",
+          "displayName": "Submit a document translation request to the Document Translation service",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/TextTranslation/document/batches/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "batches*",
+      "name": "accounts/TextTranslation/document/batches",
+      "operations": [
+        {
+          "description": "Cancel a currently processing or queued translation.",
+          "displayName": "Cancel a currently processing or queued translation",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/TextTranslation/document/batches/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns a list of batch requests submitted and the status for each\r\nReturns the status for a document translation request.*",
+          "displayName": "Returns a list of batch requests submitted and the status for each request|Returns the status for a document translation request*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/TextTranslation/document/batches/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "documents*",
+      "name": "accounts/TextTranslation/document/batches/documents",
+      "operations": [
+        {
+          "description": "Returns the translation status for a specific document based on the request Id\r\nReturns the status for all documents in a batch document translation request.*",
+          "displayName": "Returns the status for a specific document|Returns the status for all documents in a batch document translation request*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/TextTranslation/document/batches/documents/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "formats*",
+      "name": "accounts/TextTranslation/document/formats",
+      "operations": [
+        {
+          "description": "The list of supported formats supported by the Document Translation",
+          "displayName": "Returns a list of supported document formats",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/TextTranslation/document/formats/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Model",
+      "name": "models",
+      "operations": [
+        {
+          "description": "Reads available models.",
+          "displayName": "Read Available Models",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/models/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Responsible AI policies",
+      "name": "accounts/defenderForAISettings",
+      "operations": [
+        {
+          "description": "Gets all applicable policies under the account including default policies.",
+          "displayName": "Gets Responsible AI policies.",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/defenderForAISettings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update a custom Responsible AI policy.",
+          "displayName": "Puts a custom Responsible AI policy.",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/defenderForAISettings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a custom Responsible AI policy that's not referenced by an existing deployment.",
+          "displayName": "Delete a custom Responsible AI policy.",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/defenderForAISettings/delete",
+          "origin": "user,system",
           "properties": null
         }
       ]
