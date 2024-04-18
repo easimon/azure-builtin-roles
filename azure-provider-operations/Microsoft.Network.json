@@ -12503,14 +12503,6 @@
           "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/read",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Puts Vpn Link Connection Shared Key",
-          "displayName": "Puts Vpn Link Connection Shared Key",
-          "isDataAction": false,
-          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKey/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -15579,6 +15571,14 @@
           "name": "Microsoft.Network/networkSecurityPerimeters/linkReferences/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Reconciles a Network Security Perimeter LinkReference",
+          "displayName": "Reconciles a Network Security Perimeter LinkReference",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/linkReferences/reconcile/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -16311,22 +16311,74 @@
       ]
     },
     {
+      "displayName": "Application Gateway",
+      "name": "applicationGateways/appProtectPolicy",
+      "operations": [
+        {
+          "description": "Get AppProtect policy attached to application gateway resource",
+          "displayName": "Get AppProtect policy attached to application gateway resource",
+          "isDataAction": false,
+          "name": "Microsoft.Network/applicationGateways/appProtectPolicy/getAppProtectPolicy/action",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Attaches AppProtect policy to application gateway at global, path and/or listener level",
+          "displayName": "Attaches AppProtect policy to application gateway at global, path and/or listener level",
+          "isDataAction": false,
+          "name": "Microsoft.Network/applicationGateways/appProtectPolicy/attachAppProtectPolicy/action",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Detaches AppProtect policy from application gateway at global, path and/or listener level",
+          "displayName": "Detaches AppProtect policy from application gateway at global, path and/or listener level",
+          "isDataAction": false,
+          "name": "Microsoft.Network/applicationGateways/appProtectPolicy/detachAppProtectPolicy/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
       "displayName": "Represents a Vpn Link Connection resource",
-      "name": "vpnGateways/vpnConnections/vpnLinkConnections/sharedKey",
+      "name": "vpnGateways/vpnConnections/vpnLinkConnections/sharedKeys",
       "operations": [
         {
           "description": "Gets Vpn Link Connection Shared Key",
           "displayName": "Gets Vpn Link Connection Shared Key",
           "isDataAction": false,
-          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKey/read",
+          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKeys/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Represents a Vpn Link Connection resource",
+      "name": "vpnGateways/vpnConnections/vpnLinkConnections/sharedKeys/default",
+      "operations": [
+        {
+          "description": "Gets Vpn Link Connection Shared Key",
+          "displayName": "Gets Vpn Link Connection Shared Key",
+          "isDataAction": false,
+          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKeys/default/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Resets Vpn Link Connection Shared Key",
-          "displayName": "Resets Vpn Link Connection Shared Key",
+          "description": "Puts Vpn Link Connection Shared Key",
+          "displayName": "Puts Vpn Link Connection Shared Key",
           "isDataAction": false,
-          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKey/reset/action",
+          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKeys/default/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Vpn Link Connection Shared Key",
+          "displayName": "Gets Vpn Link Connection Shared Key",
+          "isDataAction": false,
+          "name": "microsoft.network/vpnGateways/vpnConnections/vpnLinkConnections/sharedKeys/default/listSharedKey/action",
           "origin": null,
           "properties": null
         }
@@ -16334,13 +16386,13 @@
     },
     {
       "displayName": "Firewall Policy Rule Collection Group Draft",
-      "name": "firewallPolicies/ruleCollectionGroups/ruleCollectionGroupsDrafts",
+      "name": "firewallPolicies/ruleCollectionGroups/ruleCollectionGroupDrafts",
       "operations": [
         {
           "description": "Gets a Firewall Policy Rule Collection Group raft",
           "displayName": "Get Firewall Policy Rule Collection Group Draft",
           "isDataAction": false,
-          "name": "Microsoft.Network/firewallPolicies/ruleCollectionGroups/ruleCollectionGroupsDrafts/read",
+          "name": "Microsoft.Network/firewallPolicies/ruleCollectionGroups/ruleCollectionGroupDrafts/read",
           "origin": null,
           "properties": null
         },
@@ -16348,7 +16400,7 @@
           "description": "Creates a Firewall Policy Rule Collection Group Draft or Updates an existing Firewall Policy Rule Collection Group Draft",
           "displayName": "Create or Update Firewall Policy Rule Collection Group Draft",
           "isDataAction": false,
-          "name": "Microsoft.Network/firewallPolicies/ruleCollectionGroups/ruleCollectionGroupsDrafts/write",
+          "name": "Microsoft.Network/firewallPolicies/ruleCollectionGroups/ruleCollectionGroupDrafts/write",
           "origin": null,
           "properties": null
         },
@@ -16356,7 +16408,7 @@
           "description": "Deletes a Firewall Policy Rule Collection Group Draft",
           "displayName": "Delete Firewall Policy Rule Collection Group draft",
           "isDataAction": false,
-          "name": "Microsoft.Network/firewallPolicies/ruleCollectionGroups/ruleCollectionGroupsDrafts/delete",
+          "name": "Microsoft.Network/firewallPolicies/ruleCollectionGroups/ruleCollectionGroupDrafts/delete",
           "origin": null,
           "properties": null
         }
