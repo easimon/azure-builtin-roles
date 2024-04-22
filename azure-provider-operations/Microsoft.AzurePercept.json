@@ -4,14 +4,6 @@
   "name": "Microsoft.AzurePercept",
   "operations": [
     {
-      "description": "action checkNameAvailability",
-      "displayName": "action_checkNameAvailability",
-      "isDataAction": false,
-      "name": "Microsoft.AzurePercept/checkNameAvailability/action",
-      "origin": null,
-      "properties": null
-    },
-    {
       "description": "Register the subscription for Microsoft.AzurePercept",
       "displayName": "Register the Microsoft.AzurePercept",
       "isDataAction": false,
@@ -26,104 +18,80 @@
       "name": "Microsoft.AzurePercept/unregister/action",
       "origin": null,
       "properties": null
+    },
+    {
+      "description": "action checkNameAvailability",
+      "displayName": "action_checkNameAvailability",
+      "isDataAction": false,
+      "name": "Microsoft.AzurePercept/checkNameAvailability/action",
+      "origin": null,
+      "properties": null
     }
   ],
   "resourceTypes": [
     {
-      "displayName": "accounts",
-      "name": "accounts",
+      "displayName": "Locations/OperationStatuses",
+      "name": "Locations/OperationStatuses",
       "operations": [
         {
-          "description": "read accounts",
-          "displayName": "Accounts_ListBySubscription",
+          "description": "read OperationStatuses",
+          "displayName": "read_OperationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/read",
+          "name": "Microsoft.AzurePercept/Locations/OperationStatuses/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "read accounts",
-          "displayName": "Accounts_ListByResourceGroup",
+          "description": "write OperationStatuses",
+          "displayName": "write_OperationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read accounts",
-          "displayName": "Accounts_Get",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update the metadata of an Azure Percept account. Performs a full replacement of the editable properties.",
-          "displayName": "Accounts_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "delete accounts",
-          "displayName": "Accounts_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Partially update an existing Azure Percept account.",
-          "displayName": "Accounts_Update",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/write",
+          "name": "Microsoft.AzurePercept/Locations/OperationStatuses/write",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "accounts/devices",
-      "name": "accounts/devices",
+      "displayName": "accounts/targets",
+      "name": "accounts/targets",
       "operations": [
         {
-          "description": "read devices",
-          "displayName": "Devices_List",
+          "description": "read targets",
+          "displayName": "Targets_List",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/devices/read",
+          "name": "Microsoft.AzurePercept/accounts/targets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "read devices",
-          "displayName": "Devices_Get",
+          "description": "read targets",
+          "displayName": "Targets_Get",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/devices/read",
+          "name": "Microsoft.AzurePercept/accounts/targets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write devices",
-          "displayName": "Devices_CreateOrUpdate",
+          "description": "write targets",
+          "displayName": "Targets_CreateOrUpdate",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/devices/write",
+          "name": "Microsoft.AzurePercept/accounts/targets/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "delete devices",
-          "displayName": "Devices_Delete",
+          "description": "delete targets",
+          "displayName": "Targets_Delete",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/devices/delete",
+          "name": "Microsoft.AzurePercept/accounts/targets/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write devices",
-          "displayName": "Devices_Update",
+          "description": "write targets",
+          "displayName": "Targets_Update",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/devices/write",
+          "name": "Microsoft.AzurePercept/accounts/targets/write",
           "origin": null,
           "properties": null
         }
@@ -186,6 +154,68 @@
           "displayName": "SensorsAction_GetThumbnail",
           "isDataAction": false,
           "name": "Microsoft.AzurePercept/accounts/devices/sensors/getThumbnail/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts/sensors",
+      "name": "accounts/sensors",
+      "operations": [
+        {
+          "description": "read sensors",
+          "displayName": "Sensors_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read sensors",
+          "displayName": "Sensors_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write sensors",
+          "displayName": "Sensors_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "delete sensors",
+          "displayName": "Sensors_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write sensors",
+          "displayName": "Sensors_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "listSensorInfo sensors",
+          "displayName": "SensorsAction_ListSensorInfo",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/listSensorInfo/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "fetchSensorData sensors",
+          "displayName": "SensorsAction_FetchSensorData",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/sensors/fetchSensorData/action",
           "origin": null,
           "properties": null
         }
@@ -298,130 +328,100 @@
       ]
     },
     {
-      "displayName": "Locations/OperationStatuses",
-      "name": "Locations/OperationStatuses",
+      "displayName": "accounts",
+      "name": "accounts",
       "operations": [
         {
-          "description": "read OperationStatuses",
-          "displayName": "read_OperationStatuses",
+          "description": "read accounts",
+          "displayName": "Accounts_ListBySubscription",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/Locations/OperationStatuses/read",
+          "name": "Microsoft.AzurePercept/accounts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write OperationStatuses",
-          "displayName": "write_OperationStatuses",
+          "description": "read accounts",
+          "displayName": "Accounts_ListByResourceGroup",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/Locations/OperationStatuses/write",
+          "name": "Microsoft.AzurePercept/accounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read accounts",
+          "displayName": "Accounts_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update the metadata of an Azure Percept account. Performs a full replacement of the editable properties.",
+          "displayName": "Accounts_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "delete accounts",
+          "displayName": "Accounts_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially update an existing Azure Percept account.",
+          "displayName": "Accounts_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzurePercept/accounts/write",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "accounts/sensors",
-      "name": "accounts/sensors",
+      "displayName": "accounts/devices",
+      "name": "accounts/devices",
       "operations": [
         {
-          "description": "read sensors",
-          "displayName": "Sensors_List",
+          "description": "read devices",
+          "displayName": "Devices_List",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/read",
+          "name": "Microsoft.AzurePercept/accounts/devices/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "read sensors",
-          "displayName": "Sensors_Get",
+          "description": "read devices",
+          "displayName": "Devices_Get",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/read",
+          "name": "Microsoft.AzurePercept/accounts/devices/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write sensors",
-          "displayName": "Sensors_CreateOrUpdate",
+          "description": "write devices",
+          "displayName": "Devices_CreateOrUpdate",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/write",
+          "name": "Microsoft.AzurePercept/accounts/devices/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "delete sensors",
-          "displayName": "Sensors_Delete",
+          "description": "delete devices",
+          "displayName": "Devices_Delete",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/delete",
+          "name": "Microsoft.AzurePercept/accounts/devices/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write sensors",
-          "displayName": "Sensors_Update",
+          "description": "write devices",
+          "displayName": "Devices_Update",
           "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "listSensorInfo sensors",
-          "displayName": "SensorsAction_ListSensorInfo",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/listSensorInfo/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "fetchSensorData sensors",
-          "displayName": "SensorsAction_FetchSensorData",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/sensors/fetchSensorData/action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "accounts/targets",
-      "name": "accounts/targets",
-      "operations": [
-        {
-          "description": "read targets",
-          "displayName": "Targets_List",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/targets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "read targets",
-          "displayName": "Targets_Get",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/targets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "write targets",
-          "displayName": "Targets_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/targets/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "delete targets",
-          "displayName": "Targets_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/targets/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "write targets",
-          "displayName": "Targets_Update",
-          "isDataAction": false,
-          "name": "Microsoft.AzurePercept/accounts/targets/write",
+          "name": "Microsoft.AzurePercept/accounts/devices/write",
           "origin": null,
           "properties": null
         }
