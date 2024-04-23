@@ -26,8 +26,24 @@
       "name": "racks",
       "operations": [
         {
-          "description": "Get a list of racks in the provided subscription.",
-          "displayName": "Racks_ListBySubscription",
+          "description": "Delete the provided rack.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
+          "displayName": "Racks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Join a Nexus rack.",
+          "displayName": "Racks_Join",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/racks/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided rack.",
+          "displayName": "Racks_Get",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/read",
           "origin": null,
@@ -42,8 +58,8 @@
           "properties": null
         },
         {
-          "description": "Get properties of the provided rack.",
-          "displayName": "Racks_Get",
+          "description": "Get a list of racks in the provided subscription.",
+          "displayName": "Racks_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/read",
           "origin": null,
@@ -58,26 +74,10 @@
           "properties": null
         },
         {
-          "description": "Delete the provided rack.\nAll customer initiated requests will be rejected as the life cycle of this resource is managed by the system.",
-          "displayName": "Racks_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/racks/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Patch properties of the provided rack, or update the tags associated with the rack. Properties and tag updates can be done independently.",
           "displayName": "Racks_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/racks/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Join a rack.",
-          "displayName": "Racks_Join",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/racks/join/action",
           "origin": null,
           "properties": null
         }
@@ -222,7 +222,15 @@
       "name": "operations",
       "operations": [
         {
-          "description": "read operations",
+          "description": "Get a list of all available resource provider operations. It contains a URL link to get the next set of results.",
+          "displayName": "Operations_List",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read_operations",
           "displayName": "read_operations",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/operations/read",
@@ -236,7 +244,7 @@
       "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "read operationStatuses",
+          "description": "read_operationStatuses",
           "displayName": "read_operationStatuses",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/locations/operationStatuses/read",
@@ -244,7 +252,7 @@
           "properties": null
         },
         {
-          "description": "write operationStatuses",
+          "description": "write_operationStatuses",
           "displayName": "write_operationStatuses",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/locations/operationStatuses/write",
@@ -312,8 +320,24 @@
       "name": "clusters",
       "operations": [
         {
-          "description": "Get a list of clusters in the provided subscription.",
-          "displayName": "Clusters_ListBySubscription",
+          "description": "Delete the provided cluster.",
+          "displayName": "Clusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deploy the cluster using the rack configuration provided during creation.",
+          "displayName": "Clusters_Deploy",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/deploy/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided cluster.",
+          "displayName": "Clusters_Get",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/read",
           "origin": null,
@@ -328,10 +352,18 @@
           "properties": null
         },
         {
-          "description": "Get properties of the provided cluster.",
-          "displayName": "Clusters_Get",
+          "description": "Get a list of clusters in the provided subscription.",
+          "displayName": "Clusters_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the version of the provided cluster to one of the available supported versions.",
+          "displayName": "Clusters_UpdateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/updateVersion/action",
           "origin": null,
           "properties": null
         },
@@ -344,14 +376,6 @@
           "properties": null
         },
         {
-          "description": "Delete the provided cluster.",
-          "displayName": "Clusters_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Patch the properties of the provided cluster, or update the tags associated with the cluster. Properties and tag updates can be done independently.",
           "displayName": "Clusters_Update",
           "isDataAction": false,
@@ -360,18 +384,18 @@
           "properties": null
         },
         {
-          "description": "Deploy the cluster to the provided rack.",
-          "displayName": "Clusters_Deploy",
+          "description": "Triggers the execution of a runtime protection scan to detect and remediate detected issues, in accordance with the cluster configuration.",
+          "displayName": "Clusters_ScanRuntime",
           "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/deploy/action",
+          "name": "Microsoft.NetworkCloud/clusters/scanRuntime/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update the version of the provided cluster to one of the available supported versions.",
-          "displayName": "Clusters_UpdateVersion",
+          "description": "Trigger the continuation of an update for a cluster with a matching update strategy that has paused after completing a segment of the update.",
+          "displayName": "Clusters_ContinueUpdateVersion",
           "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/updateVersion/action",
+          "name": "Microsoft.NetworkCloud/clusters/continueUpdateVersion/action",
           "origin": null,
           "properties": null
         }
@@ -1046,7 +1070,7 @@
       "name": "registeredSubscriptions",
       "operations": [
         {
-          "description": "read registeredSubscriptions",
+          "description": "read_registeredSubscriptions",
           "displayName": "read_registeredSubscriptions",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registeredSubscriptions/read",
@@ -1260,16 +1284,40 @@
       "name": "registrationHubs/machines",
       "operations": [
         {
-          "description": "Get a list of machines in the provided registration hub.",
-          "displayName": "RegistrationHubMachines_ListByRegistrationHub",
+          "description": "Declines a machine that is pending approval during registration. This effectively “dead ends” this machine and is an explicit refusal to let the machine proceed with further provisioning.",
+          "displayName": "RegistrationHubMachines_Decline",
           "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/registrationHubs/machines/read",
+          "name": "Microsoft.NetworkCloud/registrationHubs/machines/decline/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete the provided registration hub machine.",
+          "displayName": "RegistrationHubMachines_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/machines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Join a Registration Hub's machine.",
+          "displayName": "RegistrationHubMachines_Join",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/machines/join/action",
           "origin": null,
           "properties": null
         },
         {
           "description": "Get properties of the provided registration hub machine.",
           "displayName": "RegistrationHubMachines_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/machines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of machines in the provided registration hub.",
+          "displayName": "RegistrationHubMachines_ListByRegistrationHub",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registrationHubs/machines/read",
           "origin": null,
@@ -1284,26 +1332,10 @@
           "properties": null
         },
         {
-          "description": "Delete the provided registration hub machine.",
-          "displayName": "RegistrationHubMachines_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/registrationHubs/machines/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Patch properties of the provided registration hub machine, or update the tags associated with the registration hub machine. Properties and tag updates can be done independently.",
           "displayName": "RegistrationHubMachines_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registrationHubs/machines/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Declines a machine that is pending approval during registration. This effectively \"dead ends\" this machine and is an explicit refusal to let the machine proceed with further provisioning.",
-          "displayName": "RegistrationHubMachines_Decline",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/registrationHubs/machines/decline/action",
           "origin": null,
           "properties": null
         }
@@ -1452,8 +1484,24 @@
       "name": "registrationHubs",
       "operations": [
         {
-          "description": "Get a list of registration hubs in the provided subscription.",
-          "displayName": "RegistrationHubs_ListBySubscription",
+          "description": "Delete the provided registration hub.",
+          "displayName": "RegistrationHubs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Join a Registration Hub.",
+          "displayName": "RegistrationHubs_Join",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/registrationHubs/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get properties of the provided registration hub.",
+          "displayName": "RegistrationHubs_Get",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registrationHubs/read",
           "origin": null,
@@ -1468,8 +1516,8 @@
           "properties": null
         },
         {
-          "description": "Get properties of the provided registration hub.",
-          "displayName": "RegistrationHubs_Get",
+          "description": "Get a list of registration hubs in the provided subscription.",
+          "displayName": "RegistrationHubs_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registrationHubs/read",
           "origin": null,
@@ -1480,14 +1528,6 @@
           "displayName": "RegistrationHubs_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/registrationHubs/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete the provided registration hub.",
-          "displayName": "RegistrationHubs_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/registrationHubs/delete",
           "origin": null,
           "properties": null
         },
