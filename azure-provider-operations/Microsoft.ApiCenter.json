@@ -74,8 +74,8 @@
           "properties": null
         },
         {
-          "description": "Imports API from API Management instance.",
-          "displayName": "Import APIM API",
+          "description": "Imports resources from one or more API Management instances.",
+          "displayName": "Import from APIM",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/importFromApim/action",
           "origin": "user, system",
@@ -86,6 +86,22 @@
           "displayName": "Export metadata schema",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/exportMetadataSchema/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Validates move resource request",
+          "displayName": "Validate move resource",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/validateMoveResources/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Move resource request",
+          "displayName": "Move resource",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/moveResources/action",
           "origin": "user, system",
           "properties": null
         }
@@ -366,7 +382,7 @@
       ]
     },
     {
-      "displayName": "ApiDefinition",
+      "displayName": "API definition",
       "name": "services/workspaces/apis/versions/definitions",
       "operations": [
         {
@@ -374,6 +390,14 @@
           "displayName": "Read API definitions",
           "isDataAction": true,
           "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Exports API definition file.",
+          "displayName": "Export API definition",
+          "isDataAction": true,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/exportSpecification/action",
           "origin": "user, system",
           "properties": null
         },
@@ -410,24 +434,34 @@
           "properties": null
         },
         {
-          "description": "Deletes specified API definition.",
-          "displayName": "Delete API definition.",
+          "description": "Checks if specified API Spec exists.",
+          "displayName": "Check API Spec exists.",
           "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/delete",
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/read",
           "origin": "user, system",
           "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "API definition",
-      "name": "services/workspaces/apis/versions/definition",
-      "operations": [
+        },
         {
           "description": "Returns the details of the specified API definition.",
           "displayName": "Get API definition",
           "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definition/read",
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of API definition.",
+          "displayName": "List API definitions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified API definition.",
+          "displayName": "Delete API definition.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/delete",
           "origin": "user, system",
           "properties": null
         }
@@ -502,12 +536,12 @@
       ]
     },
     {
-      "displayName": "API",
+      "displayName": "OperationResults",
       "name": "services/operationResults",
       "operations": [
         {
-          "description": "Checks status of individual import operation",
-          "displayName": "Import APIM API status check",
+          "description": "Checks status of an APIM import operation",
+          "displayName": "APIM import status check",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/operationResults/read",
           "origin": "user, system",
@@ -612,6 +646,36 @@
           "displayName": "Read analysis report of an API Center instance",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/analysisReports/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DeletedServices",
+      "name": "deletedServices",
+      "operations": [
+        {
+          "description": "Returns paginated collection of deleted services.",
+          "displayName": "List deleted services",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/deletedServices/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the deleted service.",
+          "displayName": "Get deleted service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/deletedServices/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Purge the soft deleted service.",
+          "displayName": "Purge soft deleted service",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/deletedServices/delete",
           "origin": "user, system",
           "properties": null
         }
