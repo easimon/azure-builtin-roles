@@ -2,17 +2,270 @@
   "displayName": "Microsoft.Edge",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Edge",
   "name": "Microsoft.Edge",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.Edge",
+      "displayName": "Register the Microsoft.Edge",
+      "isDataAction": false,
+      "name": "Microsoft.Edge/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.Edge",
+      "displayName": "Unregister the Microsoft.Edge",
+      "isDataAction": false,
+      "name": "Microsoft.Edge/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
-      "displayName": "RegisteredSubscriptions",
-      "name": "RegisteredSubscriptions",
+      "displayName": "registeredSubscriptions",
+      "name": "registeredSubscriptions",
       "operations": [
         {
-          "description": "Reads registered subscriptions",
-          "displayName": "Gets/Lists registered subscriptions",
+          "description": "read registeredSubscriptions",
+          "displayName": "read_registeredSubscriptions",
           "isDataAction": false,
-          "name": "Microsoft.Edge/RegisteredSubscriptions/read",
+          "name": "Microsoft.Edge/registeredSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sites",
+      "name": "sites",
+      "operations": [
+        {
+          "description": "List Site resources by subscription ID",
+          "displayName": "SitesBySubscription_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Site",
+          "displayName": "SitesBySubscription_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Site",
+          "displayName": "SitesBySubscription_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Site",
+          "displayName": "SitesBySubscription_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Site",
+          "displayName": "SitesBySubscription_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Site resources by resource group",
+          "displayName": "Sites_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Site",
+          "displayName": "Sites_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Site",
+          "displayName": "Sites_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Site",
+          "displayName": "Sites_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Site",
+          "displayName": "Sites_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "updates",
+      "name": "updates",
+      "operations": [
+        {
+          "description": "List Update resources by parent",
+          "displayName": "Updates_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Update",
+          "displayName": "Updates_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create an Update",
+          "displayName": "Updates_CreateOrModify",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an Update",
+          "displayName": "Updates_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Update",
+          "displayName": "Updates_Modify",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "connectivityStatuses",
+      "name": "connectivityStatuses",
+      "operations": [
+        {
+          "description": "List ConnectivityStatus resources by parent",
+          "displayName": "ConnectivityStatuses_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "siteAwareResourceTypes",
+      "name": "siteAwareResourceTypes",
+      "operations": [
+        {
+          "description": "List Singleton SiteAwareResourceTypes Object.",
+          "displayName": "SiteAwareResourceTypes_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/siteAwareResourceTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Site Aware Resource Types",
+          "displayName": "SiteAwareResourceTypes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/siteAwareResourceTypes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/locations/operationStatuses/write",
           "origin": null,
           "properties": null
         }
