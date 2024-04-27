@@ -12,6 +12,14 @@
       "properties": null
     },
     {
+      "description": "Check the availability of name for resource",
+      "displayName": "CheckScopedNameAvailability_Execute",
+      "isDataAction": false,
+      "name": "Microsoft.DevCenter/checkScopedNameAvailability/action",
+      "origin": null,
+      "properties": null
+    },
+    {
       "description": "Register the subscription for Microsoft.DevCenter",
       "displayName": "Register the Microsoft.DevCenter",
       "isDataAction": false,
@@ -202,10 +210,26 @@
           "properties": null
         },
         {
+          "description": "Gets catalog synchronization error details",
+          "displayName": "Catalogs_GetSyncErrorDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/getSyncErrorDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Syncs templates for a template source.",
           "displayName": "Catalogs_Sync",
           "isDataAction": false,
           "name": "Microsoft.DevCenter/devcenters/catalogs/sync/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Connects a catalog to enable syncing.",
+          "displayName": "Catalogs_Connect",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/connect/action",
           "origin": null,
           "properties": null
         }
@@ -1054,6 +1078,136 @@
           "displayName": "Usages_ListByLocation",
           "isDataAction": false,
           "name": "Microsoft.DevCenter/locations/usages/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/catalogs/environmentDefinitions",
+      "name": "devcenters/catalogs/environmentDefinitions",
+      "operations": [
+        {
+          "description": "List environment definitions in the catalog.",
+          "displayName": "EnvironmentDefinitions_ListByCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/environmentDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an environment definition from the catalog.",
+          "displayName": "EnvironmentDefinitions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/environmentDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Environment Definition error details",
+          "displayName": "EnvironmentDefinitions_GetErrorDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/environmentDefinitions/getErrorDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/catalogs",
+      "name": "projects/catalogs",
+      "operations": [
+        {
+          "description": "Lists the catalogs associated with a project.",
+          "displayName": "ProjectCatalogs_List",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an associated project catalog.",
+          "displayName": "ProjectCatalogs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a project catalog.",
+          "displayName": "ProjectCatalogs_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a project catalog resource.",
+          "displayName": "ProjectCatalogs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates a project catalog.",
+          "displayName": "ProjectCatalogs_Patch",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets project catalog synchronization error details",
+          "displayName": "ProjectCatalogs_GetSyncErrorDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/getSyncErrorDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Syncs templates for a template source.",
+          "displayName": "ProjectCatalogs_Sync",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/sync/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Connects a project catalog to enable syncing.",
+          "displayName": "ProjectCatalogs_Connect",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/connect/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/catalogs/environmentDefinitions",
+      "name": "projects/catalogs/environmentDefinitions",
+      "operations": [
+        {
+          "description": "Lists the environment definitions in this project catalog.",
+          "displayName": "EnvironmentDefinitions_ListByProjectCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/environmentDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an environment definition from the catalog.",
+          "displayName": "EnvironmentDefinitions_GetByProjectCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/environmentDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Environment Definition error details",
+          "displayName": "ProjectCatalogEnvironmentDefinitions_GetErrorDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/environmentDefinitions/getErrorDetails/action",
           "origin": null,
           "properties": null
         }
