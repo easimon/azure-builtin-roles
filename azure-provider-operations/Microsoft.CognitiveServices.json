@@ -14053,6 +14053,38 @@
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/analyze/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "A synchronous API for the analysis of image detect incidents.",
+          "displayName": "Analyze Image Detect Incidents",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/image:detectincidents/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A synchronous API for the analysis of text detect incidents.",
+          "displayName": "Analyze Text Detect Incidents",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text:detectincidents/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A synchronous API for the analysis of text on custom category.",
+          "displayName": "Analyze Text on Custom Category",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text:analyzecustomcategory/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "A synchronous API for the automatic review of harmful content",
+          "displayName": "Auto Review Text",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text:autoreview/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -16452,6 +16484,64 @@
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/defenderForAISettings/delete",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Text Autoreviewers",
+      "name": "accounts/ContentSafety/text/autoreviewers",
+      "operations": [
+        {
+          "description": "Delete an auto reviewer or a specific version of it.",
+          "displayName": "AutoReviewerOperations_DeleteAutoReviewer",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/autoreviewers/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get a auto reviewer or a specific version of it.\r\nList latest versions of auto reviewers.*",
+          "displayName": "AutoReviewerOperations_GetAutoReviewer|AutoReviewerOperations_ListAutoReviewers*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/autoreviewers/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create new auto reviewer or a new version of existing auto reviewer.",
+          "displayName": "Create a new version of auto reviewer.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/autoreviewers/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations*",
+      "name": "accounts/ContentSafety/text/autoreviewers/operations",
+      "operations": [
+        {
+          "description": "Get an auto reviewer operation.",
+          "displayName": "Get An Auto Reviewer Operation.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/autoreviewers/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "accounts/ContentSafety/text/categories/operations",
+      "operations": [
+        {
+          "description": "Get an custom category operation.",
+          "displayName": "Get An Custom Category Operation.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/text/categories/operations/read",
+          "origin": "user",
           "properties": null
         }
       ]
