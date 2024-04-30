@@ -1,0 +1,54 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-02-22T11:32:29.673734+00:00",
+  "description": "Lets you enable and configure Microsoft Defender CSPM's sensitive data discovery feature on your storage accounts. Includes an ABAC condition to limit role assignments.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/8480c0f0-4509-4229-9339-7c10018cb8c4",
+  "name": "8480c0f0-4509-4229-9339-7c10018cb8c4",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/write",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Management/managementGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Support/*"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    },
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write"
+      ],
+      "condition": "@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{2a2b9908-6ea1-4ae2-8e65-a410df84e7d1, b8eda974-7b85-4f76-af95-65846b26df6d}",
+      "conditionVersion": "2.0",
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    },
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/delete"
+      ],
+      "condition": "@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{2a2b9908-6ea1-4ae2-8e65-a410df84e7d1, b8eda974-7b85-4f76-af95-65846b26df6d}",
+      "conditionVersion": "2.0",
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Defender CSPM Storage Scanner Operator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-04-17T21:57:48.225751+00:00"
+}
