@@ -3905,7 +3905,7 @@
                   "displayName": "Ingestion Volume",
                   "enableRegionalMdmAccount": true,
                   "fillGapWithZero": true,
-                  "name": "IngestionVolumeInMB",
+                  "name": "IngestionVolumeInBytes",
                   "sourceMdmAccount": "Kusto",
                   "sourceMdmNamespace": "CustomerMetrics",
                   "supportedAggregationTypes": [
@@ -3930,30 +3930,6 @@
                     "Minimum"
                   ],
                   "unit": "Seconds"
-                },
-                {
-                  "aggregationType": "Total",
-                  "category": "Ingestion health and performance",
-                  "dimensions": [
-                    {
-                      "displayName": "Status",
-                      "name": "EventStatus",
-                      "toBeExportedForShoebox": false
-                    }
-                  ],
-                  "displayDescription": "Number of events processed by the cluster when ingesting from Event/IoT Hub",
-                  "displayName": "Events Processed (for Event/IoT Hubs) (deprecated)",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": true,
-                  "name": "EventsProcessedForEventHubs",
-                  "sourceMdmAccount": "Kusto",
-                  "sourceMdmNamespace": "CustomerMetrics",
-                  "supportedAggregationTypes": [
-                    "Maximum",
-                    "Minimum",
-                    "Total"
-                  ],
-                  "unit": "Count"
                 },
                 {
                   "aggregationType": "Total",
