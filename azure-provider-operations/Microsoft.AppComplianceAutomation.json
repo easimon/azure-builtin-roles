@@ -5,15 +5,15 @@
   "operations": [
     {
       "description": "Onboard given subscriptions to Microsoft.AppComplianceAutomation provider.",
-      "displayName": "Onboard",
+      "displayName": "ProviderActions_Onboard",
       "isDataAction": false,
       "name": "Microsoft.AppComplianceAutomation/onboard/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Trigger evaluation for given resourceIds to get quick compliance result.",
-      "displayName": "TriggerEvaluation",
+      "description": "Trigger quick evaluation for the given subscriptions.",
+      "displayName": "ProviderActions_TriggerEvaluation",
       "isDataAction": false,
       "name": "Microsoft.AppComplianceAutomation/triggerEvaluation/action",
       "origin": null,
@@ -21,7 +21,7 @@
     },
     {
       "description": "List the storage accounts which are in use by related reports",
-      "displayName": "Reports_ListInUseStorageAccount",
+      "displayName": "ProviderActions_ListInUseStorageAccounts",
       "isDataAction": false,
       "name": "Microsoft.AppComplianceAutomation/listInUseStorageAccounts/action",
       "origin": null,
@@ -36,8 +36,8 @@
       "properties": null
     },
     {
-      "description": "Get the resource count.",
-      "displayName": "Reports_GetCollectionCount",
+      "description": "Get the count of reports.",
+      "displayName": "ProviderActions_GetCollectionCount",
       "isDataAction": false,
       "name": "Microsoft.AppComplianceAutomation/getCollectionCount/action",
       "origin": null,
@@ -45,7 +45,7 @@
     },
     {
       "description": "Get the resource overview status.",
-      "displayName": "Reports_GetOverviewStatus",
+      "displayName": "ProviderActions_GetOverviewStatus",
       "isDataAction": false,
       "name": "Microsoft.AppComplianceAutomation/getOverviewStatus/action",
       "origin": null,
@@ -150,14 +150,6 @@
           "properties": null
         },
         {
-          "description": "Synchronize attestation record from app compliance.",
-          "displayName": "Reports_SyncCertRecord",
-          "isDataAction": false,
-          "name": "Microsoft.AppComplianceAutomation/reports/syncCertRecord/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Checks the report's nested resource name availability, e.g: Webhooks, Evidences, Snapshots.",
           "displayName": "Reports_NestedResourceCheckNameAvailability",
           "isDataAction": false,
@@ -170,6 +162,22 @@
           "displayName": "Reports_Fix",
           "isDataAction": false,
           "name": "Microsoft.AppComplianceAutomation/reports/fix/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Fix the AppComplianceAutomation report error. e.g: App Compliance Automation Tool service unregistered, automation removed.",
+          "displayName": "GetScopingQuestions",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/getScopingQuestions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Synchronize attestation record from app compliance.",
+          "displayName": "Reports_SyncCertRecord",
+          "isDataAction": false,
+          "name": "Microsoft.AppComplianceAutomation/reports/syncCertRecord/action",
           "origin": null,
           "properties": null
         },
@@ -319,7 +327,7 @@
         },
         {
           "description": "Get the AppComplianceAutomation scoping configuration of the specific report.",
-          "displayName": "ScopingConfigurations_Get",
+          "displayName": "ScopingConfiguration_Get",
           "isDataAction": false,
           "name": "Microsoft.AppComplianceAutomation/reports/scopingConfigurations/read",
           "origin": null,
@@ -327,7 +335,7 @@
         },
         {
           "description": "Get the AppComplianceAutomation scoping configuration of the specific report.",
-          "displayName": "ScopingConfigurations_CreateOrUpdate",
+          "displayName": "ScopingConfiguration_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AppComplianceAutomation/reports/scopingConfigurations/write",
           "origin": null,
@@ -335,7 +343,7 @@
         },
         {
           "description": "Clean the AppComplianceAutomation scoping configuration of the specific report.",
-          "displayName": "ScopingConfigurations_Delete",
+          "displayName": "ScopingConfiguration_Delete",
           "isDataAction": false,
           "name": "Microsoft.AppComplianceAutomation/reports/scopingConfigurations/delete",
           "origin": null,
