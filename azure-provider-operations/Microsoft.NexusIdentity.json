@@ -2,7 +2,24 @@
   "displayName": "Microsoft.NexusIdentity",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.NexusIdentity",
   "name": "Microsoft.NexusIdentity",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.NexusIdentity",
+      "displayName": "Register the Microsoft.NexusIdentity",
+      "isDataAction": false,
+      "name": "Microsoft.NexusIdentity/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.NexusIdentity",
+      "displayName": "Unregister the Microsoft.NexusIdentity",
+      "isDataAction": false,
+      "name": "Microsoft.NexusIdentity/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "Operations",
@@ -13,37 +30,183 @@
           "displayName": "read_Operations",
           "isDataAction": false,
           "name": "Microsoft.NexusIdentity/Operations/read",
-          "origin": "System",
+          "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "IdentitySets",
-      "name": "IdentitySets",
+      "displayName": "identitySets",
+      "name": "identitySets",
       "operations": [
         {
-          "description": "Shows the provisiong status of IdentitySets resource.",
-          "displayName": "read_IdentitySets",
+          "description": "List IdentitySetResource resources by subscription ID",
+          "displayName": "IdentitySet_ListBySubscription",
           "isDataAction": false,
-          "name": "Microsoft.NexusIdentity/IdentitySets/read",
-          "origin": "System",
+          "name": "Microsoft.NexusIdentity/identitySets/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Creates an instance of IdentitySets resource.",
-          "displayName": "create_IdentitySets",
+          "description": "List IdentitySetResource resources by resource group",
+          "displayName": "IdentitySet_ListByResourceGroup",
           "isDataAction": false,
-          "name": "Microsoft.NexusIdentity/IdentitySets/write",
-          "origin": "System",
+          "name": "Microsoft.NexusIdentity/identitySets/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes an instance of IdentitySets resource.",
-          "displayName": "delete_IdentitySets",
+          "description": "Get a IdentitySetResource",
+          "displayName": "IdentitySet_Get",
           "isDataAction": false,
-          "name": "Microsoft.NexusIdentity/IdentitySets/delete",
-          "origin": "System",
+          "name": "Microsoft.NexusIdentity/identitySets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IdentitySetResource",
+          "displayName": "IdentitySet_Create",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IdentitySetResource",
+          "displayName": "IdentitySet_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IdentitySetResource",
+          "displayName": "IdentitySet_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Locations/OperationStatuses",
+      "name": "Locations/OperationStatuses",
+      "operations": [
+        {
+          "description": "read OperationStatuses",
+          "displayName": "read_OperationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/Locations/OperationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write OperationStatuses",
+          "displayName": "write_OperationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/Locations/OperationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "identityControllers",
+      "name": "identityControllers",
+      "operations": [
+        {
+          "description": "List IdentityController resources by subscription ID",
+          "displayName": "IdentityControllers_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identityControllers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IdentityController resources by resource group",
+          "displayName": "IdentityControllers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identityControllers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IdentityController",
+          "displayName": "IdentityControllers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identityControllers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IdentityController",
+          "displayName": "IdentityControllers_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identityControllers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IdentityController",
+          "displayName": "IdentityControllers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identityControllers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IdentityController",
+          "displayName": "IdentityControllers_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identityControllers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "identitySets/identitySetInfos",
+      "name": "identitySets/identitySetInfos",
+      "operations": [
+        {
+          "description": "Get a IdentitySetInfoResource",
+          "displayName": "IdentitySetInfos_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/identitySetInfos/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IdentitySetInfoResource",
+          "displayName": "IdentitySetInfos_Create",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/identitySetInfos/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IdentitySetInfoResource",
+          "displayName": "IdentitySetInfos_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/identitySetInfos/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IdentitySetInfoResource",
+          "displayName": "IdentitySetInfos_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/identitySetInfos/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets list of users for a IdentitySetInfoResource",
+          "displayName": "IdentitySetInfos_getUsers",
+          "isDataAction": false,
+          "name": "Microsoft.NexusIdentity/identitySets/identitySetInfos/getUsers/action",
+          "origin": null,
           "properties": null
         }
       ]
