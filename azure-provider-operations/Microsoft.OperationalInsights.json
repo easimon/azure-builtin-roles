@@ -2327,20 +2327,6 @@
       ]
     },
     {
-      "displayName": "Saved Search",
-      "name": "workspaces/savedSearches/results",
-      "operations": [
-        {
-          "description": "Get saved searches results. Deprecated.",
-          "displayName": "Get Saved Searches Results",
-          "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/results/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Operations",
       "name": "operations",
       "operations": [
@@ -2639,6 +2625,14 @@
           "displayName": "Delete Query Pack",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/querypacks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Perform Action on Queries in Query Pack.",
+          "displayName": "Perform Action on Queries in Query Pack",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/queries/action",
           "origin": null,
           "properties": null
         }
@@ -10841,50 +10835,6 @@
       ]
     },
     {
-      "displayName": "Schedule",
-      "name": "workspaces/schedules",
-      "operations": [
-        {
-          "description": "Get scheduled saved search.",
-          "displayName": "Get Management Configuration",
-          "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/schedules/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete scheduled saved search.",
-          "displayName": "Delete Management Configuration",
-          "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/schedules/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update scheduled saved search.",
-          "displayName": "Upsert Management Configuration",
-          "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/schedules/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Action",
-      "name": "workspaces/schedules/actions",
-      "operations": [
-        {
-          "description": "Get Management Configuration action.",
-          "displayName": "Get Management Configuration Action",
-          "isDataAction": false,
-          "name": "Microsoft.OperationalInsights/workspaces/schedules/actions/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "ClientGroupsMembers",
       "name": "workspaces/features/clientGroups/members",
       "operations": [
@@ -12565,6 +12515,96 @@
           "displayName": "Read AZMSDiagnosticErrorLogs data",
           "isDataAction": false,
           "name": "Microsoft.OperationalInsights/workspaces/query/AZMSDiagnosticErrorLogs/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Schedule",
+      "name": "workspaces/savedSearches/schedules",
+      "operations": [
+        {
+          "description": "Get scheduled saved search.",
+          "displayName": "Get Management Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete scheduled saved search.",
+          "displayName": "Delete Management Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update scheduled saved search.",
+          "displayName": "Upsert Management Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Action",
+      "name": "workspaces/savedSearches/schedules/actions",
+      "operations": [
+        {
+          "description": "Get Management Configuration action.",
+          "displayName": "Get Management Configuration Action",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Management Configuration action.",
+          "displayName": "Delete Management Configuration Action",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update scheduled  search action.",
+          "displayName": "Upsert Management Configuration Action",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/workspaces/savedSearches/schedules/actions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Query Pack Queries",
+      "name": "querypacks/queries",
+      "operations": [
+        {
+          "description": "Get Query Pack Queries.",
+          "displayName": "Get Query Pack Queries",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/queries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Query Pack Queries.",
+          "displayName": "Create or update Query Pack Queries",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/queries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Query Pack Queries.",
+          "displayName": "Delete Query Pack Queries",
+          "isDataAction": false,
+          "name": "Microsoft.OperationalInsights/querypacks/queries/delete",
           "origin": null,
           "properties": null
         }
