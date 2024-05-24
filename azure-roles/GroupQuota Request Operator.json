@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-02-08T21:17:27.190921+00:00",
+  "createdOn": "2024-02-13T16:21:45.484237+00:00",
   "description": "Read and create GroupQuota requests, get GroupQuota request status, and get groupQuotaLimits.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/e2217c0e-04bb-4724-9580-91cf9871bc01",
   "name": "e2217c0e-04bb-4724-9580-91cf9871bc01",
@@ -17,8 +17,14 @@
         "MICROSOFT.QUOTA/USAGES/READ",
         "MICROSOFT.QUOTA/QUOTAREQUESTS/READ",
         "MICROSOFT.QUOTA/REGISTER/ACTION",
-        "Microsoft.Quota/GROUPQUOTAS/*/READ",
-        "Microsoft.Quota/GROUPQUOTAS/*/WRITE"
+        "Microsoft.Quota/GROUPQUOTAS/READ",
+        "Microsoft.Quota/GROUPQUOTAS/subscriptions/READ",
+        "Microsoft.Quota/GROUPQUOTAS/groupQuotaLimits/READ",
+        "Microsoft.Quota/GROUPQUOTAS/quotaAllocations/READ",
+        "Microsoft.Quota/GROUPQUOTAS/WRITE",
+        "Microsoft.Quota/GROUPQUOTAS/subscriptions/WRITE",
+        "Microsoft.Quota/GROUPQUOTAS/groupQuotaLimits/WRITE",
+        "Microsoft.Quota/GROUPQUOTAS/quotaAllocations/WRITE"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -31,5 +37,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-05-21T17:02:27.005584+00:00"
+  "updatedOn": "2024-02-13T16:21:45.484237+00:00"
 }
