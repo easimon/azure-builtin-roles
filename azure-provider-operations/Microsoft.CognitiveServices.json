@@ -11225,6 +11225,14 @@
           "properties": null
         },
         {
+          "description": "Submit a collection of documents for analysis.",
+          "displayName": "Submit documents analysis job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-documents/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Triggers a job to migrate one or more LUIS apps.",
           "displayName": "Migrate Luis app",
           "isDataAction": true,
@@ -16021,6 +16029,42 @@
           "displayName": "Trial Matcher CosmosDB Proxy GET",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/HealthInsights/trial-matcher/cosmosdb/*/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "analyze-documents*",
+      "name": "accounts/Language/analyze-documents",
+      "operations": [
+        {
+          "description": "Submit documents analysis job.",
+          "displayName": "Submit documents analysis job.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-documents/jobs/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Cancel a long-running Documents Analysis job.",
+          "displayName": "Cancel a long-running Documents Analysis job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-documents/jobscancel/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs*",
+      "name": "accounts/Language/analyze-documents/jobs",
+      "operations": [
+        {
+          "description": "Get the status of an analysis job.  A job may consist of one or more tasks.  Once all tasks are completed, the job will transition to the completed state and results will be available for each task.",
+          "displayName": "Get analysis status and results",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/Language/analyze-documents/jobs/read",
           "origin": "user",
           "properties": null
         }
