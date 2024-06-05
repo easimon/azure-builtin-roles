@@ -10,24 +10,26 @@
   "permissions": [
     {
       "actions": [
-        "Microsoft.HybridConnectivity/endpoints/read",
-        "Microsoft.HybridConnectivity/endpoints/write",
-        "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
-        "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/read",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/write",
         "Microsoft.HybridCompute/machines/read",
-        "Microsoft.HybridCompute/machines/write",
-        "Microsoft.HybridCompute/machines/delete",
         "Microsoft.HybridCompute/machines/extensions/read",
-        "Microsoft.HybridCompute/machines/extensions/write",
-        "Microsoft.HybridCompute/machines/extensions/delete",
         "Microsoft.HybridCompute/*/read",
-        "Microsoft.HybridCompute/machines/UpgradeExtensions/action",
+        "Microsoft.HybridCompute/machines/delete",
+        "Microsoft.HybridCompute/machines/extensions/delete",
+        "Microsoft.HybridCompute/machines/extensions/write",
+        "Microsoft.HybridCompute/machines/licenseProfiles/delete",
         "Microsoft.HybridCompute/machines/licenseProfiles/read",
         "Microsoft.HybridCompute/machines/licenseProfiles/write",
-        "Microsoft.HybridCompute/machines/licenseProfiles/delete",
-        "Microsoft.GuestConfiguration/guestConfigurationAssignments/read",
-        "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read",
-        "Microsoft.GuestConfiguration/guestConfigurationAssignments/write"
+        "Microsoft.HybridCompute/machines/UpgradeExtensions/action",
+        "Microsoft.HybridCompute/machines/write",
+        "Microsoft.HybridConnectivity/endpoints/read",
+        "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
+        "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
+        "Microsoft.HybridConnectivity/endpoints/write",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -40,5 +42,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2023-12-20T16:26:42.605081+00:00"
+  "updatedOn": "2024-06-04T15:21:47.950384+00:00"
 }
