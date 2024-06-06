@@ -3,33 +3,31 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2022-11-15T16:12:10.439810+00:00",
+  "createdOn": "2022-11-15T20:16:41.236001+00:00",
   "description": "Custom Role for AzureStackHCI RP to manage hybrid compute machines and hybrid connectivity endpoints in a resource group",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/f5819b54-e033-4d82-ac66-4fec3cbf3f4c",
   "name": "f5819b54-e033-4d82-ac66-4fec3cbf3f4c",
   "permissions": [
     {
       "actions": [
-        "Microsoft.Authorization/*/read",
-        "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read",
-        "Microsoft.GuestConfiguration/guestConfigurationAssignments/read",
-        "Microsoft.GuestConfiguration/guestConfigurationAssignments/write",
-        "Microsoft.HybridCompute/machines/read",
-        "Microsoft.HybridCompute/machines/extensions/read",
-        "Microsoft.HybridCompute/*/read",
-        "Microsoft.HybridCompute/machines/delete",
-        "Microsoft.HybridCompute/machines/extensions/delete",
-        "Microsoft.HybridCompute/machines/extensions/write",
-        "Microsoft.HybridCompute/machines/licenseProfiles/delete",
-        "Microsoft.HybridCompute/machines/licenseProfiles/read",
-        "Microsoft.HybridCompute/machines/licenseProfiles/write",
-        "Microsoft.HybridCompute/machines/UpgradeExtensions/action",
-        "Microsoft.HybridCompute/machines/write",
         "Microsoft.HybridConnectivity/endpoints/read",
+        "Microsoft.HybridConnectivity/endpoints/write",
         "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
         "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
-        "Microsoft.HybridConnectivity/endpoints/write",
-        "Microsoft.Resources/subscriptions/resourceGroups/read"
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/machines/write",
+        "Microsoft.HybridCompute/machines/delete",
+        "Microsoft.HybridCompute/machines/extensions/read",
+        "Microsoft.HybridCompute/machines/extensions/write",
+        "Microsoft.HybridCompute/machines/extensions/delete",
+        "Microsoft.HybridCompute/*/read",
+        "Microsoft.HybridCompute/machines/UpgradeExtensions/action",
+        "Microsoft.HybridCompute/machines/licenseProfiles/read",
+        "Microsoft.HybridCompute/machines/licenseProfiles/write",
+        "Microsoft.HybridCompute/machines/licenseProfiles/delete",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/read",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/write"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -42,5 +40,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-06-04T15:21:47.950384+00:00"
+  "updatedOn": "2024-01-09T16:13:52.648595+00:00"
 }
