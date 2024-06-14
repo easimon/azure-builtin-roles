@@ -4,35 +4,27 @@
   "name": "Microsoft.Confluent",
   "operations": [
     {
-      "description": "Validate the arguments",
-      "displayName": "Validations",
-      "isDataAction": false,
-      "name": "Microsoft.Confluent/validations/action",
-      "origin": "System",
-      "properties": null
-    },
-    {
-      "description": "Registers the subscription for the Microsoft.Confluent resource provider",
-      "displayName": "Registers the Microsoft.Confluent Resource Provider",
-      "isDataAction": false,
-      "name": "Microsoft.Confluent/register/action",
-      "origin": "System",
-      "properties": null
-    },
-    {
-      "description": "Unregisters the subscription for the Microsoft.Confluent resource provider",
-      "displayName": "Unregisters the Microsoft.Confluent Resource Provider",
-      "isDataAction": false,
-      "name": "Microsoft.Confluent/unregister/action",
-      "origin": "System",
-      "properties": null
-    },
-    {
-      "description": "Checks if a Confluent resource name is available",
-      "displayName": "Check Name Availability",
+      "description": "action checkNameAvailability",
+      "displayName": "action_checkNameAvailability",
       "isDataAction": false,
       "name": "Microsoft.Confluent/checkNameAvailability/action",
-      "origin": "System",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Register the subscription for Microsoft.Confluent",
+      "displayName": "Register the Microsoft.Confluent",
+      "isDataAction": false,
+      "name": "Microsoft.Confluent/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.Confluent",
+      "displayName": "Unregister the Microsoft.Confluent",
+      "isDataAction": false,
+      "name": "Microsoft.Confluent/unregister/action",
+      "origin": null,
       "properties": null
     }
   ],
@@ -42,19 +34,19 @@
       "name": "agreements",
       "operations": [
         {
-          "description": "List all the marketplace agreements",
-          "displayName": "Gets/List agreement resources",
+          "description": "read agreements",
+          "displayName": "MarketplaceAgreements_List",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/agreements/Read",
-          "origin": "System",
+          "name": "Microsoft.Confluent/agreements/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Accept the marketplace agreements",
-          "displayName": "Accept terms",
+          "description": "write agreements",
+          "displayName": "MarketplaceAgreements_Create",
           "isDataAction": false,
           "name": "Microsoft.Confluent/agreements/write",
-          "origin": "System",
+          "origin": null,
           "properties": null
         }
       ]
@@ -64,85 +56,81 @@
       "name": "organizations",
       "operations": [
         {
-          "description": "Read organization",
-          "displayName": "Get/List organization resources",
+          "description": "read organizations",
+          "displayName": "Organization_ListBySubscription",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/organizations/Read",
-          "origin": "System",
+          "name": "Microsoft.Confluent/organizations/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Write organization",
-          "displayName": "Create/Update organization resources",
+          "description": "read organizations",
+          "displayName": "Organization_ListByResourceGroup",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/organizations/Write",
-          "origin": "System",
+          "name": "Microsoft.Confluent/organizations/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Delete organization",
-          "displayName": "Delete organization resources",
+          "description": "read organizations",
+          "displayName": "Organization_Get",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/organizations/Delete",
-          "origin": "System",
+          "name": "Microsoft.Confluent/organizations/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Various operations related to access and accounts of confluent organizations",
-          "displayName": "Access and accounts scenarios of Microsoft.Confluent",
+          "description": "write organizations",
+          "displayName": "Organization_Create",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/organizations/access/action",
-          "origin": "System",
+          "name": "Microsoft.Confluent/organizations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "delete organizations",
+          "displayName": "Organization_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write organizations",
+          "displayName": "Organization_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action listRegions",
+          "displayName": "Organization_ListRegions",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/listRegions/action",
+          "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "RegisteredSubscriptions",
-      "name": "RegisteredSubscriptions",
+      "displayName": "locations/OperationStatuses",
+      "name": "locations/OperationStatuses",
       "operations": [
         {
-          "description": "Reads registered subscriptions",
-          "displayName": "Gets/Lists registered subscriptions",
+          "description": "read OperationStatuses",
+          "displayName": "read_OperationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/RegisteredSubscriptions/read",
-          "origin": "System",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Locations",
-      "name": "locations",
-      "operations": [
-        {
-          "description": "Get locations",
-          "displayName": "Get locations",
-          "isDataAction": false,
-          "name": "Microsoft.Confluent/locations/read",
-          "origin": "System",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "OperationStatuses",
-      "name": "locations/operationStatuses",
-      "operations": [
-        {
-          "description": "Get operation statuses",
-          "displayName": "Get operation statuses",
-          "isDataAction": false,
-          "name": "Microsoft.Confluent/locations/operationStatuses/read",
-          "origin": "System",
+          "name": "Microsoft.Confluent/locations/OperationStatuses/read",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Write operation statuses",
-          "displayName": "Write operation statuses",
+          "description": "write OperationStatuses",
+          "displayName": "write_OperationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/locations/operationStatuses/write",
-          "origin": "System",
+          "name": "Microsoft.Confluent/locations/OperationStatuses/write",
+          "origin": null,
           "properties": null
         }
       ]
@@ -152,89 +140,257 @@
       "name": "operations",
       "operations": [
         {
-          "description": "List operations available on Microsoft.Confluent resource provider",
-          "displayName": "List available Microsoft.Confluent operations",
+          "description": "read operations",
+          "displayName": "read_operations",
           "isDataAction": false,
           "name": "Microsoft.Confluent/operations/read",
-          "origin": "System",
+          "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "access",
+      "displayName": "organizations/access/deleteRoleBinding",
       "name": "organizations/access/deleteRoleBinding",
       "operations": [
         {
-          "description": "Delete confluent roles of user in confluent organization",
-          "displayName": "Delete confluent roles of user in confluent organization",
+          "description": "delete deleteRoleBinding",
+          "displayName": "Access_DeleteRoleBinding",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/access/deleteRoleBinding/delete",
-          "origin": "System",
+          "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "organizations",
+      "displayName": "organizations/environments",
       "name": "organizations/environments",
       "operations": [
         {
-          "description": "Gets the list of environments for the organization",
-          "displayName": "Gets the list of environments for the organization",
+          "description": "read environments",
+          "displayName": "Organization_ListEnvironments",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/environments/read",
-          "origin": "System",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "organizations",
-      "name": "organizations/environments/clusters",
-      "operations": [
-        {
-          "description": "Gets cluster details in an environment for the organization",
-          "displayName": "Gets cluster details in an environment for the organization",
-          "isDataAction": false,
-          "name": "Microsoft.Confluent/organizations/environments/clusters/read",
-          "origin": "System",
+          "origin": null,
           "properties": null
         },
         {
-          "description": "Creates API key for a confluent cluster",
-          "displayName": "Creates API key for a confluent cluster",
+          "description": "read environments",
+          "displayName": "Organization_GetEnvironmentById",
           "isDataAction": false,
-          "name": "Microsoft.Confluent/organizations/environments/clusters/createAPIKey/action",
-          "origin": "System",
+          "name": "Microsoft.Confluent/organizations/environments/read",
+          "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "organizations",
+      "displayName": "organizations/environments/clusters",
+      "name": "organizations/environments/clusters",
+      "operations": [
+        {
+          "description": "read clusters",
+          "displayName": "Organization_ListClusters",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action createAPIKey",
+          "displayName": "Organization_CreateAPIKey",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/createAPIKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read clusters",
+          "displayName": "Organization_GetClusterById",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "organizations/environments/schemaRegistryClusters",
       "name": "organizations/environments/schemaRegistryClusters",
       "operations": [
         {
-          "description": "Gets schema registry cluster details in an environment for the organization",
-          "displayName": "Gets schema registry cluster details in an environment for the organization",
+          "description": "read schemaRegistryClusters",
+          "displayName": "Organization_ListSchemaRegistryClusters",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/environments/schemaRegistryClusters/read",
-          "origin": "System",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read schemaRegistryClusters",
+          "displayName": "Organization_GetSchemaRegistryClusterById",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/schemaRegistryClusters/read",
+          "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "organizations",
+      "displayName": "organizations/apiKeys",
       "name": "organizations/apiKeys",
       "operations": [
         {
-          "description": "Gets or deletes an API key in a  confluent cluster",
-          "displayName": "Gets or deletes an API key in a confluent cluster",
+          "description": "read apiKeys",
+          "displayName": "Organization_GetClusterAPIKey",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/apiKeys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "delete apiKeys",
+          "displayName": "Organization_DeleteClusterAPIKey",
           "isDataAction": false,
           "name": "Microsoft.Confluent/organizations/apiKeys/delete",
-          "origin": "System",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "validations/orgvalidate",
+      "name": "validations",
+      "operations": [
+        {
+          "description": "action orgvalidate",
+          "displayName": "Validations_ValidateOrganization",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/validations/orgvalidate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action orgvalidateV2",
+          "displayName": "Validations_ValidateOrganizationV2",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/validations/orgvalidateV2/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "organizations/access/listUsers",
+      "name": "organizations/access",
+      "operations": [
+        {
+          "description": "action listUsers",
+          "displayName": "Access_ListUsers",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/listUsers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action listServiceAccounts",
+          "displayName": "Access_ListServiceAccounts",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/listServiceAccounts/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action listInvitations",
+          "displayName": "Access_ListInvitations",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/listInvitations/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action createInvitation",
+          "displayName": "Access_InviteUser",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/createInvitation/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action listEnvironments",
+          "displayName": "Access_ListEnvironments",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/listEnvironments/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action listClusters",
+          "displayName": "Access_ListClusters",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/listClusters/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "action listRoleBindings",
+          "displayName": "Access_ListRoleBindings",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/access/listRoleBindings/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "organizations/environments/clusters/topics",
+      "name": "organizations/environments/clusters/topics",
+      "operations": [
+        {
+          "description": "read topics",
+          "displayName": "Topics_List",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/topics/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "organizations/environments/clusters/connectors",
+      "name": "organizations/environments/clusters/connectors",
+      "operations": [
+        {
+          "description": "read connectors",
+          "displayName": "Connector_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/connectors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write connectors",
+          "displayName": "Connector_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/connectors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "delete connectors",
+          "displayName": "Connector_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/connectors/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read connectors",
+          "displayName": "Connector_List",
+          "isDataAction": false,
+          "name": "Microsoft.Confluent/organizations/environments/clusters/connectors/read",
+          "origin": null,
           "properties": null
         }
       ]
