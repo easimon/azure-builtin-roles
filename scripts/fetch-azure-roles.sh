@@ -13,7 +13,7 @@ find "${ROLES_DIR}" -type f -name '*.json' -delete
 
 echo "Updating ${ROLES_DIR}."
 az role definition list -ojson \
-  | jq -cr 'map(select(.roleType == "BuiltInRole")) | keys[] as $k | "\(.[$k].roleName | split("/")|join("_"))\t\(.[$k])"' \
+  | jq -cr 'map(select(.roleType == "BuiltInRole")) | keys[] as $k | "\(.[$k].roleName | gsub("[^\\w()-]"; " ") | split("/") | join("_"))\t\(.[$k])"' \
   | sed "s|/subscriptions/${SUBSCRIPTION_ID}||g" \
   | awk -F\\t "{ file=\"${ROLES_DIR}/\"\$1\".json\"; print \$2 > file; close(file); }"
 
