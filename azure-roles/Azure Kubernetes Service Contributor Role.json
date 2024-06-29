@@ -10,9 +10,14 @@
   "permissions": [
     {
       "actions": [
-        "Microsoft.ContainerService/managedClusters/read",
-        "Microsoft.ContainerService/managedClusters/write",
-        "Microsoft.Resources/deployments/*"
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ContainerService/locations/*",
+        "Microsoft.ContainerService/managedClusters/*",
+        "Microsoft.ContainerService/managedclustersnapshots/*",
+        "Microsoft.ContainerService/snapshots/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -25,5 +30,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2021-11-11T20:14:21.262172+00:00"
+  "updatedOn": "2024-06-25T15:20:19.290083+00:00"
 }
