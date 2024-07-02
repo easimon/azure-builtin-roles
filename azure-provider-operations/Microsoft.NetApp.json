@@ -202,10 +202,26 @@
           "properties": null
         },
         {
+          "description": "Peers ANF cluster to OnPrem cluster for migration",
+          "displayName": "Peer migration clusters",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/peerExternalCluster/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
           "description": "Starts a SVM peering and returns a command to be run on the external ontap to accept it. Once the SVMs have been peered a SnapMirror will be created.",
           "displayName": "Start a SVM peering for OnPrem migration snapmirror relationship.",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/createOnPremMigrationReplication/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a SVM peering and returns a command to be run on the external ontap to accept it. Once the SVMs have been peered a SnapMirror will be created.",
+          "displayName": "Start a SVM peering for OnPrem migration snapmirror relationship.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/authorizeExternalReplication/action",
           "origin": "user,system",
           "properties": null
         },
@@ -222,6 +238,22 @@
           "displayName": "Finalize OnPrem migration",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeOnPremMigration/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Finalize OnPrem migration by doing a final sync on the replication, break and release the replication and break cluster peering if no other migration is active.",
+          "displayName": "Finalize OnPrem migration",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeExternalReplication/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List user/group quota report for the volume.",
+          "displayName": "List user and group quota report",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listQuotaReport/action",
           "origin": "user,system",
           "properties": null
         }
