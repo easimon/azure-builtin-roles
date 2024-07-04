@@ -1,0 +1,54 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2022-04-26T18:18:23.279685+00:00",
+  "description": "Grants a user/group the ability to read cluster configurations, resize clusters and run jobs",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/bcf28286-af25-4c81-bb6f-351fcab5dbe9",
+  "name": "bcf28286-af25-4c81-bb6f-351fcab5dbe9",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HDInsight/clusterPools/read",
+        "Microsoft.Hdinsight/clusterpools/clusters/read",
+        "Microsoft.HDInsight/clusterPools/clusters/resize/action",
+        "Microsoft.HDInsight/clusterpools/clusters/instanceviews/read",
+        "Microsoft.HDInsight/clusterPools/clusters/jobs/read",
+        "Microsoft.HDInsight/clusterPools/clusters/runjob/action",
+        "Microsoft.HDInsight/clusterpools/clusters/serviceconfigs/read",
+        "Microsoft.HDInsight/clusterPools/clusters/availableupgrades/read",
+        "Microsoft.HDInsight/clusterPools/clusters/upgradehistories/read",
+        "Microsoft.HDInsight/clusterPools/clusters/libraries/read",
+        "Microsoft.HDInsight/clusterPools/clusters/managelibraries/action",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/AlertRules/Write",
+        "Microsoft.Insights/AlertRules/Delete",
+        "Microsoft.Insights/AlertRules/Read",
+        "Microsoft.Insights/AlertRules/Activated/Action",
+        "Microsoft.Insights/AlertRules/Resolved/Action",
+        "Microsoft.Insights/AlertRules/Throttled/Action",
+        "Microsoft.Insights/AlertRules/Incidents/Read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.Insights/logs/read",
+        "Microsoft.Insights/diagnosticSettings/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "HDInsight on AKS Cluster Operator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-07-03T15:20:28.742592+00:00"
+}
