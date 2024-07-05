@@ -1,8 +1,92 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft Gallery",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Gallery",
   "name": "Microsoft.Gallery",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Enrolls RBAC for specific user",
+      "displayName": "Update RBAC",
+      "isDataAction": false,
+      "name": "Microsoft.Gallery/enroll/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Generates artifact accessuri",
+      "displayName": "Generates artifact accessuri",
+      "isDataAction": false,
+      "name": "Microsoft.Gallery/generateartifactaccessuri/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Retrieves resources by id",
+      "displayName": "Retrieves resources",
+      "isDataAction": false,
+      "name": "Microsoft.Gallery/retrieveresourcesbyid/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "",
+      "name": "galleryItems",
+      "operations": [
+        {
+          "description": "Returns a list of galleryItems for specific user",
+          "displayName": "List galleryItems",
+          "isDataAction": false,
+          "name": "Microsoft.Gallery/galleryItems/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "myareas",
+      "operations": [
+        {
+          "description": "Returns a list of myareas for specific user",
+          "displayName": "List myareas",
+          "isDataAction": false,
+          "name": "Microsoft.Gallery/myareas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Puts specific gallery item of myareaa",
+          "displayName": "Put Myareas GalleryItems",
+          "isDataAction": false,
+          "name": "Microsoft.Gallery/myareas/galleryItems/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "myareas/galleryItems",
+      "operations": [
+        {
+          "description": "Gets specific gallery item of myareaa",
+          "displayName": "Get Myareas GalleryItems",
+          "isDataAction": false,
+          "name": "Microsoft.Gallery/myareas/galleryItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete specific gallery item of myareaa",
+          "displayName": "Delete Myareas GalleryItems",
+          "isDataAction": false,
+          "name": "Microsoft.Gallery/myareas/galleryItems/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
