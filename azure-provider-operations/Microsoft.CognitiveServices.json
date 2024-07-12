@@ -16223,6 +16223,72 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "OpenAI",
+      "name": "accounts/OpenAI",
+      "operations": [
+        {
+          "description": "Creates a batch job",
+          "displayName": "BatchJob_Create",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/batches/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "First party Fine-tune jobs",
+      "name": "accounts/OpenAI/1p-jobs",
+      "operations": [
+        {
+          "description": "Creates or cancels First party Fine-tune jobs like RLHF jobs (SupervisedFineTuning, RewardModel, ProximalPolicyOptimisation).",
+          "displayName": "Create or cancel First party Fine-tune jobs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/1p-jobs/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets information about First party Fine-tune jobs.",
+          "displayName": "Read First party Fine-tune jobs metadata",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/1p-jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Batches",
+      "name": "accounts/OpenAI/batches",
+      "operations": [
+        {
+          "description": "List or get batch jobs.",
+          "displayName": "BatchJob_List|BatchJob_Get*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/batches/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a batch job.",
+          "displayName": "BatchJob_Delete",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/batches/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Cancel a batch job.",
+          "displayName": "BatchJob_Cancel",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/batches/cancel/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
