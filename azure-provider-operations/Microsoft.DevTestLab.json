@@ -4,8 +4,8 @@
   "name": "Microsoft.DevTestLab",
   "operations": [
     {
-      "description": "註冊訂用帳戶",
-      "displayName": "註冊訂用帳戶",
+      "description": "Registers the subscription",
+      "displayName": "Register Subscription",
       "isDataAction": false,
       "name": "Microsoft.DevTestLab/register/action",
       "origin": null,
@@ -14,7 +14,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "原則集合",
+      "displayName": "policy sets",
       "name": "labs/policySets",
       "operations": [
         {
@@ -26,8 +26,8 @@
           "properties": null
         },
         {
-          "description": "評估實驗室原則。",
-          "displayName": "評估原則",
+          "description": "Evaluates lab policy.",
+          "displayName": "Evaluate policy",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/policySets/EvaluatePolicies/action",
           "origin": null,
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "displayName": "實驗室",
+      "displayName": "Labs",
       "name": "labs",
       "operations": [
         {
@@ -64,56 +64,56 @@
           "properties": null
         },
         {
-          "description": "列出可用於建立自訂映像的磁碟映像。",
-          "displayName": "列出 VHD",
+          "description": "List disk images available for custom image creation.",
+          "displayName": "List VHDs",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ListVhds/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "產生 URI，以便於將自訂的磁碟映像上傳至實驗室。",
-          "displayName": "產生映像上傳 URI",
+          "description": "Generate a URI for uploading custom disk images to a Lab.",
+          "displayName": "Generate image upload URI",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/GenerateUploadUri/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "在實驗室中建立虛擬機器。",
-          "displayName": "建立虛擬機器",
+          "description": "Create virtual machines in a lab.",
+          "displayName": "Create a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/CreateEnvironment/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "宣告實驗室中可宣告的隨機虛擬機器。",
-          "displayName": "認領任何虛擬機器",
+          "description": "Claim a random claimable virtual machine in the lab.",
+          "displayName": "Claim Any Virtual Machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ClaimAnyVm/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "將實驗室資源使用量匯出到儲存體帳戶",
-          "displayName": "將實驗室資源使用量匯出到儲存體帳戶",
+          "description": "Exports the lab resource usage into a storage account",
+          "displayName": "Exports the lab resource usage into a storage account",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ExportResourceUsage/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "將虛擬機器匯入其他實驗室中。",
-          "displayName": "匯入虛擬機器",
+          "description": "Import a virtual machine into a different lab.",
+          "displayName": "Import a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ImportVirtualMachine/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "請確認目前的使用者在實驗室具有有效的設定檔。",
-          "displayName": "請確認目前的使用者設定檔",
+          "description": "Ensure the current user has a valid profile in the lab.",
+          "displayName": "Ensure Current User Profile",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/EnsureCurrentUserProfile/action",
           "origin": null,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "displayName": "原則",
+      "displayName": "policies",
       "name": "labs/policySets/policies",
       "operations": [
         {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "displayName": "排程",
+      "displayName": "schedules",
       "name": "labs/schedules",
       "operations": [
         {
@@ -180,16 +180,16 @@
           "properties": null
         },
         {
-          "description": "執行排程。",
-          "displayName": "執行排程",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "列出所有適用的排程",
-          "displayName": "列出所有適用的排程",
+          "description": "Lists all applicable schedules",
+          "displayName": "List all applicable schedules",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/ListApplicable/action",
           "origin": null,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "displayName": "排程",
+      "displayName": "schedules",
       "name": "schedules",
       "operations": [
         {
@@ -226,16 +226,16 @@
           "properties": null
         },
         {
-          "description": "執行排程。",
-          "displayName": "執行排程",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "更新排程的目標資源識別碼。",
-          "displayName": "重定排程。",
+          "description": "Updates a schedule's target resource Id.",
+          "displayName": "Retarget schedule.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Retarget/action",
           "origin": null,
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayName": "排程",
+      "displayName": "schedules",
       "name": "labs/virtualMachines/schedules",
       "operations": [
         {
@@ -272,8 +272,8 @@
           "properties": null
         },
         {
-          "description": "執行排程。",
-          "displayName": "執行排程",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/schedules/Execute/action",
           "origin": null,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "displayName": "排程",
+      "displayName": "schedules",
       "name": "labs/users/serviceFabrics/schedules",
       "operations": [
         {
@@ -310,8 +310,8 @@
           "properties": null
         },
         {
-          "description": "執行排程。",
-          "displayName": "執行排程",
+          "description": "Execute a schedule.",
+          "displayName": "Execute schedule",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/schedules/Execute/action",
           "origin": null,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "displayName": "成品來源",
+      "displayName": "Artifact sources",
       "name": "labs/artifactSources",
       "operations": [
         {
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "displayName": "成品",
+      "displayName": "Artifacts",
       "name": "labs/artifactSources/artifacts",
       "operations": [
         {
@@ -362,8 +362,8 @@
           "properties": null
         },
         {
-          "description": "為指定的成品產生 ARM 範本，將必要的檔案上傳至儲存體帳戶，以及驗證所產生的成品。",
-          "displayName": "為指定的成品產生 ARM 範本",
+          "description": "Generates an ARM template for the given artifact, uploads the required files to a storage account, and validates the generated artifact.",
+          "displayName": "Generates an ARM template for the given artifact",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/artifactSources/artifacts/GenerateArmTemplate/action",
           "origin": null,
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "displayName": "組件庫映像",
+      "displayName": "gallery images",
       "name": "labs/galleryImages",
       "operations": [
         {
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "displayName": "自訂映像",
+      "displayName": "custom images",
       "name": "labs/customImages",
       "operations": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "displayName": "虛擬網路",
+      "displayName": "virtual networks",
       "name": "labs/virtualNetworks",
       "operations": [
         {
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "displayName": "虛擬機器",
+      "displayName": "Virtual machines",
       "name": "labs/virtualMachines",
       "operations": [
         {
@@ -474,112 +474,112 @@
           "properties": null
         },
         {
-          "description": "將現有新的資料磁碟連結至虛擬機器。",
-          "displayName": "新增或連結資料磁碟",
+          "description": "Attach a new or existing data disk to virtual machine.",
+          "displayName": "Add or attach a data disk",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/AddDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "將成品套用至虛擬機器。",
-          "displayName": "將成品套用至虛擬機器",
+          "description": "Apply artifacts to virtual machine.",
+          "displayName": "Apply artifacts to virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ApplyArtifacts/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "取得現有虛擬機器的擁有權",
-          "displayName": "宣告虛擬機器",
+          "description": "Take ownership of an existing virtual machine",
+          "displayName": "Claim a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Claim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "清除虛擬機器的成品結果。",
-          "displayName": "清除成品結果",
+          "description": "Clears the artifact results of the virtual machine.",
+          "displayName": "Clear artifact results",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ClearArtifactResults/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "中斷指定磁碟與虛擬機器的連結。",
-          "displayName": "中斷指定磁碟與虛擬機器的連結",
+          "description": "Detach the specified disk from the virtual machine.",
+          "displayName": "Detach the specified disk from the virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/DetachDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "取得代表虛擬機器 RDP 檔案內容的字串",
-          "displayName": "取得 RDP 檔案內容",
+          "description": "Gets a string that represents the contents of the RDP file for the virtual machine",
+          "displayName": "Get RDP file contents",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/GetRdpFileContents/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "列出適用的啟動/停止排程 (若有的話)。",
-          "displayName": "列出所有適用的排程",
+          "description": "Lists the applicable start/stop schedules, if any.",
+          "displayName": "List all applicable schedules",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ListApplicableSchedules/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "重新部署虛擬機器",
-          "displayName": "重新部署虛擬機器",
+          "description": "Redeploy a virtual machine",
+          "displayName": "Redeploy a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Redeploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "調整虛擬機器大小。",
-          "displayName": "調整虛擬機器大小。",
+          "description": "Resize Virtual Machine.",
+          "displayName": "Resize Virtual Machine.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Resize/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "重新啟動虛擬機器。",
-          "displayName": "重新啟動虛擬機器",
+          "description": "Restart a virtual machine.",
+          "displayName": "Restart virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Restart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "啟動虛擬機器。",
-          "displayName": "啟動虛擬機器",
+          "description": "Start a virtual machine.",
+          "displayName": "Start virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "停止虛擬機器",
-          "displayName": "停止虛擬機器",
+          "description": "Stop a virtual machine",
+          "displayName": "Stop virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "傳送所有連結至虛擬機器的資料磁碟，由目前的使用者擁有。",
-          "displayName": "將資料磁碟傳送給目前的使用者。",
+          "description": "Transfers all data disks attached to the virtual machine to be owned by the current user.",
+          "displayName": "Transfer data disks to the current user.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/TransferDisks/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "釋放現有虛擬機器的擁有權",
-          "displayName": "取消擁有虛擬機器",
+          "description": "Release ownership of an existing virtual machine",
+          "displayName": "Unclaim a virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/UnClaim/action",
           "origin": null,
@@ -588,7 +588,7 @@
       ]
     },
     {
-      "displayName": "公式",
+      "displayName": "Formulas",
       "name": "labs/formulas",
       "operations": [
         {
@@ -618,7 +618,7 @@
       ]
     },
     {
-      "displayName": "費用",
+      "displayName": "costs",
       "name": "labs/costs",
       "operations": [
         {
@@ -668,16 +668,16 @@
           "properties": null
         },
         {
-          "description": "建立磁碟租用，並將其連結至虛擬機器。",
-          "displayName": "連結磁碟",
+          "description": "Attach and create the lease of the disk to the virtual machine.",
+          "displayName": "Attach disk",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Attach/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "中斷磁碟與虛擬機器的連結，並中止租用。",
-          "displayName": "中斷磁碟與虛擬機器的連結，並中止租用",
+          "description": "Detach and break the lease of the disk attached to the virtual machine.",
+          "displayName": "Detach and break the lease of the disk attached to the virtual machine",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Detach/action",
           "origin": null,
@@ -686,7 +686,7 @@
       ]
     },
     {
-      "displayName": "使用者設定檔",
+      "displayName": "user profiles",
       "name": "labs/users",
       "operations": [
         {
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "displayName": "通知通道",
+      "displayName": "Notification Channels",
       "name": "labs/notificationChannels",
       "operations": [
         {
@@ -744,8 +744,8 @@
           "properties": null
         },
         {
-          "description": "將通知傳送到提供的管道。",
-          "displayName": "通知",
+          "description": "Send notification to provided channel.",
+          "displayName": "Notify",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/notificationChannels/Notify/action",
           "origin": null,
@@ -754,7 +754,7 @@
       ]
     },
     {
-      "displayName": "祕密",
+      "displayName": "secrets",
       "name": "labs/users/secrets",
       "operations": [
         {
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "displayName": "作業",
+      "displayName": "operations",
       "name": "locations/operations",
       "operations": [
         {
@@ -798,7 +798,7 @@
       ]
     },
     {
-      "displayName": "Azure Resource Manager 範本",
+      "displayName": "Azure Resource Manager templates",
       "name": "labs/artifactSources/armTemplates",
       "operations": [
         {
@@ -812,7 +812,7 @@
       ]
     },
     {
-      "displayName": "環境",
+      "displayName": "environments",
       "name": "labs/users/environments",
       "operations": [
         {
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "displayName": "服務執行器",
+      "displayName": "Service runners",
       "name": "labs/serviceRunners",
       "operations": [
         {
@@ -872,7 +872,7 @@
       ]
     },
     {
-      "displayName": "Service Fabric",
+      "displayName": "Service Fabrics",
       "name": "labs/users/serviceFabrics",
       "operations": [
         {
@@ -900,24 +900,24 @@
           "properties": null
         },
         {
-          "description": "啟動 Service Fabric。",
-          "displayName": "啟動 Service Fabric",
+          "description": "Start a service fabric.",
+          "displayName": "Start service fabric",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "停止 Service Fabric",
-          "displayName": "停止 Service Fabric",
+          "description": "Stop a service fabric",
+          "displayName": "Stop service fabric",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "列出適用的啟動/停止排程 (若有的話)。",
-          "displayName": "列出所有適用的排程",
+          "description": "Lists the applicable start/stop schedules, if any.",
+          "displayName": "List all applicable schedules",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/ListApplicableSchedules/action",
           "origin": null,
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "displayName": "實驗室中心",
+      "displayName": "Lab centers",
       "name": "labCenters",
       "operations": [
         {
@@ -956,7 +956,7 @@
       ]
     },
     {
-      "displayName": "虛擬機器集區",
+      "displayName": "Virtual Machine Pools",
       "name": "labs/vmPools",
       "operations": [
         {
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "displayName": "共用的程式庫",
+      "displayName": "Shared Galleries",
       "name": "labs/sharedGalleries",
       "operations": [
         {
@@ -1016,7 +1016,7 @@
       ]
     },
     {
-      "displayName": "共用的影像",
+      "displayName": "Shared Images",
       "name": "labs/sharedGalleries/sharedImages",
       "operations": [
         {
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "displayName": "實驗室密碼",
+      "displayName": "Lab Secrets",
       "name": "labs/secrets",
       "operations": [
         {
