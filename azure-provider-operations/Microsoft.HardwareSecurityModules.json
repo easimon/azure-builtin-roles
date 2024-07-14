@@ -114,6 +114,38 @@
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/PrivateEndpointConnectionsApproval/action",
           "origin": "system",
           "properties": null
+        },
+        {
+          "description": "Validate backup properties of an existing Cloud HSM",
+          "displayName": "Validate backup properties",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/validateBackupProperties/action",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Backup an existing Cloud HSM with the help of provided backup properties",
+          "displayName": "Backup Cloud HSM",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/backup/action",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Validate restore properties of Cloud HSM",
+          "displayName": "Validate restore properties",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/validateRestoreProperties/action",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Restore a newly initialized Cloud HSM with the help of provided restore properties",
+          "displayName": "Restore Cloud HSM",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/restore/action",
+          "origin": "system",
+          "properties": null
         }
       ]
     },
@@ -208,6 +240,34 @@
           "displayName": "Validate a Private Endpoint Connection Proxy",
           "isDataAction": false,
           "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/privateEndpointConnectionProxies/validate/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "CloudHsm",
+      "name": "cloudHsmClusters/backupOperationStatus",
+      "operations": [
+        {
+          "description": "Check the status of an ongoing Cloud HSM Backup operation",
+          "displayName": "Status of backup operation",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/backupOperationStatus/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "CloudHsm",
+      "name": "cloudHsmClusters/restoreOperationStatus",
+      "operations": [
+        {
+          "description": "Check the status of an ongoing Cloud HSM Restore operation",
+          "displayName": "Status of restore operation",
+          "isDataAction": false,
+          "name": "Microsoft.HardwareSecurityModules/cloudHsmClusters/restoreOperationStatus/read",
           "origin": "system",
           "properties": null
         }
