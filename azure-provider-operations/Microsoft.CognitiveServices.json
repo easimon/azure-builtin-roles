@@ -10125,6 +10125,62 @@
           "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:authorizecopy/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Generates authorization to copy a document classifier to this location with",
+          "displayName": "Manage - Authorize Copy",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers:authorizecopy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Classifies document with document classifier.",
+          "displayName": "Analyze - Classify document",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Copies document classifier to the target resource, region, and classifierId.",
+          "displayName": "Manage - Copy Classifier",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers:copyto/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Analyzes batch documents with document model.",
+          "displayName": "Analyze - Analyze Batch Documents",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:analyzebatch/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Analyzes document with document model.",
+          "displayName": "Analyze - Analyze document",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Generates authorization to copy a document model to this location with",
+          "displayName": "Manage - Generate copy authorization",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:authorizecopy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Copies document model to the target resource, region, and modelId.",
+          "displayName": "Manage - Copy model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:copyto/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -10147,6 +10203,30 @@
           "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/read",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Deletes document model.",
+          "displayName": "Manage - Delete model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets detailed document model information.\r\nList all document models*",
+          "displayName": "Manage - Get model|Manage - List models*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Updates document model information.",
+          "displayName": "Manage - Patch model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/write",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -10157,6 +10237,14 @@
         {
           "description": "Get document analyze result from specified {modelId} and {resultId}",
           "displayName": "Analysis - Get Analyze Results",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/analyzeresults/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets the result of document analysis.",
+          "displayName": "Analyze - Get analyze result",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/analyzeresults/read",
           "origin": "user",
@@ -10175,6 +10263,14 @@
           "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/info/read",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Return information about the current resource.",
+          "displayName": "Manage - Get info",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/info/read",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -10185,6 +10281,14 @@
         {
           "description": "Gets operation info.\r\nLists all operations.*",
           "displayName": "Operation - Get operation|Operation - List operations*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/operations/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets operation info.\r\nLists all operations.*",
+          "displayName": "Operations - Get operation|Operations - List operations*",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/operations/read",
           "origin": "user",
@@ -16285,6 +16389,302 @@
           "displayName": "BatchJob_Cancel",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/batches/cancel/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "documentclassifiers:build*",
+      "name": "accounts/FormRecognizer/documentclassifiers:build",
+      "operations": [
+        {
+          "description": "Builds a custom document classifier.",
+          "displayName": "Create - Build classifier",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers:build/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "documentclassifiers*",
+      "name": "accounts/FormRecognizer/documentclassifiers",
+      "operations": [
+        {
+          "description": "Deletes document classifier.",
+          "displayName": "Manage - Delete Classifier",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets detailed document classifier information.\r\nList all document classifiers.*",
+          "displayName": "Manage - Get document classfier|Manage - List classifiers*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "analyzeresults*",
+      "name": "accounts/FormRecognizer/documentclassifiers/analyzeresults",
+      "operations": [
+        {
+          "description": "Gets the result of document classifier.",
+          "displayName": "Analyze - Get classifier analyze result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentclassifiers/analyzeresults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "documentmodels:build*",
+      "name": "accounts/FormRecognizer/documentmodels:build",
+      "operations": [
+        {
+          "description": "Builds a custom document analysis model.",
+          "displayName": "Create - Build model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:build/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "documentmodels:compose*",
+      "name": "accounts/FormRecognizer/documentmodels:compose",
+      "operations": [
+        {
+          "description": "Creates a new document model from document types of existing document models.",
+          "displayName": "Create - Compose model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels:compose/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "analyzebatchresults*",
+      "name": "accounts/FormRecognizer/documentmodels/analyzebatchresults",
+      "operations": [
+        {
+          "description": "Gets the result of batch document analysis.",
+          "displayName": "Analyze - Get batch analyze results",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/analyzebatchresults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "figures*",
+      "name": "accounts/FormRecognizer/documentmodels/analyzeresults/figures",
+      "operations": [
+        {
+          "description": "Gets the generated cropped image of specified figure from document analysis.",
+          "displayName": "Analyze - Get figure analyze result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/analyzeresults/figures/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "pdf*",
+      "name": "accounts/FormRecognizer/documentmodels/analyzeresults/pdf",
+      "operations": [
+        {
+          "description": "Gets the generated searchable PDF output from document analysis.",
+          "displayName": "Analyze - Get pdf analyze result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/documentmodels/analyzeresults/pdf/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "labelingprojects*",
+      "name": "accounts/FormRecognizer/labelingprojects",
+      "operations": [
+        {
+          "description": "Create labeling project. Fail if projectId already exists.\r\nUpdate lableing project.",
+          "displayName": "Labeling - Create project|Labeling - Update project*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get lableing project.\r\nList lableing projects.",
+          "displayName": "Labeling - Get project|Labeling - List projects*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete lableing project. The project and metadata will be deleted. Documents/labels in user provided storage account will NOT be deleted.",
+          "displayName": "Labeling - Delete project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Suggest schema based on existing documents associated with labeling project. Returns suggested schema without updating actual project schema.",
+          "displayName": "Labeling - Suggest field schema",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/schema:suggest/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Set/edit field schema. Update all existing labels in the project to reflect edits. Field schema is initially empty.",
+          "displayName": "Labeling - Edit field schema",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/schema:edit/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Analyze labeling project document.",
+          "displayName": "Labeling - Analyze document",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels:analyze/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "labels*",
+      "name": "accounts/FormRecognizer/labelingprojects/labels",
+      "operations": [
+        {
+          "description": "Create label of a labeling project.",
+          "displayName": "Labeling - Create label",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get label of a labeling project.\r\nList labels of a labeling project.",
+          "displayName": "Labeling - Get label|Labeling - List labels*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a label of a labeling project.",
+          "displayName": "Labeling - Delete label",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ocr*",
+      "name": "accounts/FormRecognizer/labelingprojects/labels/ocr",
+      "operations": [
+        {
+          "description": "Get OCR result. OCR result does not contain predicted document fields.",
+          "displayName": "Labeling - Get OCR result",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/ocr/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "document*",
+      "name": "accounts/FormRecognizer/labelingprojects/labels/document",
+      "operations": [
+        {
+          "description": "Set input document. Cannot be updated.",
+          "displayName": "Labeling - Set document",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/document/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get input document.",
+          "displayName": "Labeling - Get document",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/document/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations*",
+      "name": "accounts/FormRecognizer/labelingprojects/labels/operations",
+      "operations": [
+        {
+          "description": "List analyze document results.\r\nGet analyze document result.",
+          "displayName": "Labeling - List analyze document results|Labeling - Get analyze document result*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/labels/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "schema*",
+      "name": "accounts/FormRecognizer/labelingprojects/schema",
+      "operations": [
+        {
+          "description": "Get current schema.",
+          "displayName": "Labeling - Get current schema",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/schema/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations*",
+      "name": "accounts/FormRecognizer/labelingprojects/schema/operations",
+      "operations": [
+        {
+          "description": "Get suggested schema.\r\nList suggested schemas.",
+          "displayName": "Labeling - Get suggested schema|Labeling - List suggested schemas*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/schema/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "stats*",
+      "name": "accounts/FormRecognizer/labelingprojects/stats",
+      "operations": [
+        {
+          "description": "Get project level labeling statistics.",
+          "displayName": "Labeling - Get project stats",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/FormRecognizer/labelingprojects/stats/read",
           "origin": "user",
           "properties": null
         }
