@@ -1,27 +1,27 @@
 {
-  "displayName": "Zasoby firmy Microsoft",
+  "displayName": "Microsoft Resources",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Resources",
   "name": "Microsoft.Resources",
   "operations": [
     {
-      "description": "Sprawdź poprawność nazwy zasobu.",
-      "displayName": "Sprawdź nazwę zasobu",
+      "description": "Check the resource name for validity.",
+      "displayName": "Check Resource Name",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkResourceName/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Oblicz skrót podanego szablonu.",
-      "displayName": "Oblicz skrót szablonu",
+      "description": "Calculate the hash of provided template.",
+      "displayName": "Calculate Template Hash",
       "isDataAction": false,
       "name": "Microsoft.Resources/calculateTemplateHash/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Sprawdź elementy równorzędne strefy",
-      "displayName": "Sprawdź elementy równorzędne strefy",
+      "description": "Check Zone Peers",
+      "displayName": "Check Zone Peers",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkZonePeers/action",
       "origin": null,
@@ -30,12 +30,12 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Dzierżawca",
+      "displayName": "Tenant",
       "name": "tenants",
       "operations": [
         {
-          "description": "Pobiera listę dzierżawców.",
-          "displayName": "Pobierz dzierżawców",
+          "description": "Gets the list of tenants.",
+          "displayName": "Get Tenants",
           "isDataAction": false,
           "name": "Microsoft.Resources/tenants/read",
           "origin": null,
@@ -44,12 +44,12 @@
       ]
     },
     {
-      "displayName": "Dostawcy",
+      "displayName": "Providers",
       "name": "providers",
       "operations": [
         {
-          "description": "Pobiera listę dostawców.",
-          "displayName": "Pobierz dostawców",
+          "description": "Get the list of providers.",
+          "displayName": "Get Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/providers/read",
           "origin": null,
@@ -58,12 +58,12 @@
       ]
     },
     {
-      "displayName": "Zasoby",
+      "displayName": "Resources",
       "name": "resources",
       "operations": [
         {
-          "description": "Pobiera listę zasobów zgodnie z filtrami.",
-          "displayName": "Pobierz zasoby",
+          "description": "Get the list of resources based upon filters.",
+          "displayName": "Get Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/resources/read",
           "origin": null,
@@ -72,12 +72,12 @@
       ]
     },
     {
-      "displayName": "Subskrypcja",
+      "displayName": "Subscription",
       "name": "subscriptions",
       "operations": [
         {
-          "description": "Pobiera listę subskrypcji.",
-          "displayName": "Pobiera subskrypcje",
+          "description": "Gets the list of subscriptions.",
+          "displayName": "Get Subscriptions",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/read",
           "origin": null,
@@ -86,12 +86,12 @@
       ]
     },
     {
-      "displayName": "Zasób subskrypcji",
+      "displayName": "Subscription Resource",
       "name": "subscriptions/resources",
       "operations": [
         {
-          "description": "Pobiera zasoby subskrypcji.",
-          "displayName": "Pobierz zasoby subskrypcji",
+          "description": "Gets resources of a subscription.",
+          "displayName": "Get Subscription Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resources/read",
           "origin": null,
@@ -100,12 +100,12 @@
       ]
     },
     {
-      "displayName": "Lokalizacja",
+      "displayName": "Location",
       "name": "subscriptions/locations",
       "operations": [
         {
-          "description": "Pobiera listę obsługiwanych lokalizacji.",
-          "displayName": "Pobierz lokalizacje",
+          "description": "Gets the list of locations supported.",
+          "displayName": "Get Locations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/locations/read",
           "origin": null,
@@ -114,12 +114,12 @@
       ]
     },
     {
-      "displayName": "Dostawcy zasobów",
+      "displayName": "Resource Providers",
       "name": "subscriptions/providers",
       "operations": [
         {
-          "description": "Pobiera dostawców zasobów lub wyświetla ich listę.",
-          "displayName": "Pobierz dostawców zasobów",
+          "description": "Gets or lists resource providers.",
+          "displayName": "Get Resource Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/providers/read",
           "origin": null,
@@ -128,12 +128,12 @@
       ]
     },
     {
-      "displayName": "Wyniki operacji subskrypcji",
+      "displayName": "Subscription Operation Results",
       "name": "subscriptions/operationresults",
       "operations": [
         {
-          "description": "Pobiera wyniki operacji subskrypcji.",
-          "displayName": "Pobierz wyniki operacji subskrypcji",
+          "description": "Get the subscription operation results.",
+          "displayName": "Get Subscription Operation Results",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/operationresults/read",
           "origin": null,
@@ -142,44 +142,44 @@
       ]
     },
     {
-      "displayName": "Grupa zasobów",
+      "displayName": "Resource Group",
       "name": "subscriptions/resourceGroups",
       "operations": [
         {
-          "description": "Pobiera grupy zasobów lub wyświetla ich listę.",
-          "displayName": "Pobierz grupę zasobów",
+          "description": "Gets or lists resource groups.",
+          "displayName": "Get Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje grupę zasobów.",
-          "displayName": "Utwórz grupę zasobów",
+          "description": "Creates or updates a resource group.",
+          "displayName": "Create Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa grupę zasobów i wszystkie zasoby w tej grupie.",
-          "displayName": "Usuń grupę zasobów",
+          "description": "Deletes a resource group and all its resources.",
+          "displayName": "Delete Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Przenosi zasoby z jednej grupy zasobów do innej.",
-          "displayName": "Przenieś zasoby z grupy zasobów",
+          "description": "Moves resources from one resource group to another.",
+          "displayName": "Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/moveResources/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Waliduj przeniesienie zasobów między grupami zasobów.",
-          "displayName": "Waliduj przeniesienie zasobów grupy zasobów",
+          "description": "Validate move of resources from one resource group to another.",
+          "displayName": "Validate Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/validateMoveResources/action",
           "origin": null,
@@ -188,12 +188,12 @@
       ]
     },
     {
-      "displayName": "Zasoby grupy zasobów",
+      "displayName": "Resource Group Resources",
       "name": "subscriptions/resourcegroups/resources",
       "operations": [
         {
-          "description": "Pobiera zasoby grupy zasobów.",
-          "displayName": "Pobierz zasoby grupy zasobów",
+          "description": "Gets the resources for the resource group.",
+          "displayName": "Get Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
           "origin": null,
@@ -202,28 +202,28 @@
       ]
     },
     {
-      "displayName": "Tag subskrypcji",
+      "displayName": "Subscription Tag",
       "name": "subscriptions/tagNames",
       "operations": [
         {
-          "description": "Pobiera tagi subskrypcji lub wyświetla ich listę.",
-          "displayName": "Pobierz tag subskrypcji",
+          "description": "Gets or lists subscription tags.",
+          "displayName": "Get Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Dodaje tag subskrypcji.",
-          "displayName": "Dodaj tag subskrypcji",
+          "description": "Adds a subscription tag.",
+          "displayName": "Add Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa tag subskrypcji.",
-          "displayName": "Usuń tag subskrypcji",
+          "description": "Deletes a subscription tag.",
+          "displayName": "Delete Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/delete",
           "origin": null,
@@ -232,28 +232,28 @@
       ]
     },
     {
-      "displayName": "Wartość tagu subskrypcji",
+      "displayName": "Subscription Tag Value",
       "name": "subscriptions/tagNames/tagValues",
       "operations": [
         {
-          "description": "Pobiera wartości tagów lub wyświetla ich listę.",
-          "displayName": "Pobierz wartość tagu subskrypcji",
+          "description": "Gets or lists subscription tag values.",
+          "displayName": "Get Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Dodaje wartość tagu subskrypcji.",
-          "displayName": "Dodaj wartość tagu subskrypcji",
+          "description": "Adds a subscription tag value.",
+          "displayName": "Add Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa wartość tagu subskrypcji.",
-          "displayName": "Usuń wartość tagu subskrypcji",
+          "description": "Deletes a subscription tag value.",
+          "displayName": "Delete Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/delete",
           "origin": null,
@@ -262,60 +262,60 @@
       ]
     },
     {
-      "displayName": "Wdrażanie",
+      "displayName": "Deployment",
       "name": "deployments",
       "operations": [
         {
-          "description": "Pobiera wdrożenia lub wyświetla ich listę.",
-          "displayName": "Pobierz wdrożenie",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje wdrożenie.",
-          "displayName": "Utwórz wdrożenie",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa wdrożenie.",
-          "displayName": "Usuń wdrożenie",
+          "description": "Deletes a deployment.",
+          "displayName": "Delete Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Anuluje wdrożenie.",
-          "displayName": "Anuluj wdrożenie",
+          "description": "Cancels a deployment.",
+          "displayName": "Cancel Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/cancel/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Weryfikuje wdrożenie.",
-          "displayName": "Weryfikuj wdrożenie",
+          "description": "Validates an deployment.",
+          "displayName": "Validate Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/validate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Przewiduje zmiany dotyczące wdrożenia szablonu.",
-          "displayName": "Operacja warunkowa wdrożenia",
+          "description": "Predicts template deployment changes.",
+          "displayName": "Deployment What-If",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/whatIf/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Eksportuj szablon dla wdrożenia",
-          "displayName": "Eksportuj szablon dla wdrożenia",
+          "description": "Export template for a deployment",
+          "displayName": "Export template for deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/exportTemplate/action",
           "origin": null,
@@ -324,20 +324,20 @@
       ]
     },
     {
-      "displayName": "Wdrażanie",
+      "displayName": "Deployment",
       "name": "subscriptions/resourcegroups/deployments",
       "operations": [
         {
-          "description": "Pobiera wdrożenia lub wyświetla ich listę.",
-          "displayName": "Pobierz wdrożenie",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje wdrożenie.",
-          "displayName": "Utwórz wdrożenie",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
           "origin": null,
@@ -346,12 +346,12 @@
       ]
     },
     {
-      "displayName": "Operacja wdrażania",
+      "displayName": "Deployment Operation",
       "name": "subscriptions/resourcegroups/deployments/operations",
       "operations": [
         {
-          "description": "Pobiera operacje wdrażania lub wyświetla ich listę.",
-          "displayName": "Pobierz operacje wdrażania",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
           "origin": null,
@@ -360,12 +360,12 @@
       ]
     },
     {
-      "displayName": "Stan operacji wdrażania",
+      "displayName": "Deployment operation status",
       "name": "subscriptions/resourcegroups/deployments/operationstatuses",
       "operations": [
         {
-          "description": "Pobiera stany operacji wdrażania lub wyświetla ich listę.",
-          "displayName": "Pobierz stan operacji wdrażania",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read",
           "origin": null,
@@ -374,12 +374,12 @@
       ]
     },
     {
-      "displayName": "Operacja wdrażania",
+      "displayName": "Deployment Operation",
       "name": "deployments/operations",
       "operations": [
         {
-          "description": "Pobiera operacje wdrażania lub wyświetla ich listę.",
-          "displayName": "Pobierz operacje wdrażania",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operations/read",
           "origin": null,
@@ -388,28 +388,28 @@
       ]
     },
     {
-      "displayName": "Link do zasobu",
+      "displayName": "Resource Link",
       "name": "links",
       "operations": [
         {
-          "description": "Pobiera linki do zasobów lub wyświetla ich listę.",
-          "displayName": "Pobierz link do zasobu",
+          "description": "Gets or lists resource links.",
+          "displayName": "Get Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje link do zasobu.",
-          "displayName": "Utwórz link do zasobu",
+          "description": "Creates or updates a resource link.",
+          "displayName": "Create Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa link do zasobu.",
-          "displayName": "Usuń link do zasobu",
+          "description": "Deletes a resource link.",
+          "displayName": "Delete Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/delete",
           "origin": null,
@@ -422,8 +422,8 @@
       "name": "marketplace",
       "operations": [
         {
-          "description": "Pozwala kupić zasób w portalu Marketplace.",
-          "displayName": "Kup zasób",
+          "description": "Purchases a resource from the marketplace.",
+          "displayName": "Purchase Resource",
           "isDataAction": false,
           "name": "Microsoft.Resources/marketplace/purchase/action",
           "origin": "System",
@@ -432,28 +432,28 @@
       ]
     },
     {
-      "displayName": "Tagi",
+      "displayName": "Tags",
       "name": "tags",
       "operations": [
         {
-          "description": "Pobiera wszystkie tagi zasobu.",
-          "displayName": "Odczytaj tagi",
+          "description": "Gets all the tags on a resource.",
+          "displayName": "Read tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Aktualizuje tagi zasobu, zastępując istniejące tagi nowym zestawem tagów lub scalając je z nim albo usuwając istniejące tagi.",
-          "displayName": "Zapisz tagi",
+          "description": "Updates the tags on a resource by replacing or merging existing tags with a new set of tags, or removing existing tags.",
+          "displayName": "Write tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa wszystkie tagi zasobu.",
-          "displayName": "Usuń tagi",
+          "description": "Removes all the tags on a resource.",
+          "displayName": "Delete tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/delete",
           "origin": null,
@@ -462,12 +462,12 @@
       ]
     },
     {
-      "displayName": "Stan operacji wdrażania",
+      "displayName": "Deployment operation status",
       "name": "deployments/operationstatuses",
       "operations": [
         {
-          "description": "Pobiera stany operacji wdrażania lub wyświetla ich listę.",
-          "displayName": "Pobierz stan operacji wdrażania",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operationstatuses/read",
           "origin": null,
@@ -476,28 +476,28 @@
       ]
     },
     {
-      "displayName": "Skrypty wdrożenia",
+      "displayName": "Deployment Scripts",
       "name": "deploymentScripts",
       "operations": [
         {
-          "description": "Pobiera skrypty wdrożenia lub zwraca ich listę",
-          "displayName": "Odczytaj skrypty wdrożenia",
+          "description": "Gets or lists deployment scripts",
+          "displayName": "Read deployment scripts",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje skrypt wdrożenia",
-          "displayName": "Zapisz skrypt wdrożenia",
+          "description": "Creates or updates a deployment script",
+          "displayName": "Write deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa skrypt wdrożenia",
-          "displayName": "Usuń skrypt wdrożenia",
+          "description": "Deletes a deployment script",
+          "displayName": "Delete deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/delete",
           "origin": null,
@@ -506,12 +506,12 @@
       ]
     },
     {
-      "displayName": "Dzienniki skryptów wdrożenia",
+      "displayName": "Deployment Script Logs",
       "name": "deploymentScripts/logs",
       "operations": [
         {
-          "description": "Pobiera dzienniki skryptów wdrożenia lub zwraca ich listę",
-          "displayName": "Odczytaj dzienniki skryptów wdrożenia",
+          "description": "Gets or lists deployment script logs",
+          "displayName": "Read deployment script logs",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/logs/read",
           "origin": null,
@@ -520,12 +520,12 @@
       ]
     },
     {
-      "displayName": "Sprawdź zgodność z zasadami",
+      "displayName": "Check Policy Compliance",
       "name": "checkPolicyCompliance",
       "operations": [
         {
-          "description": "Sprawdź stan zgodności danego zasobu wobec zasad zasobów.",
-          "displayName": "Sprawdź zgodność z zasadami",
+          "description": "Check the compliance status of a given resource against resource policies.",
+          "displayName": "Check Policy Compliance",
           "isDataAction": false,
           "name": "Microsoft.Resources/checkPolicyCompliance/read",
           "origin": null,
@@ -534,28 +534,28 @@
       ]
     },
     {
-      "displayName": "Specyfikacje szablonu",
+      "displayName": "Template Specs",
       "name": "templateSpecs",
       "operations": [
         {
-          "description": "Pobiera specyfikacje szablonu lub wyświetla ich listę",
-          "displayName": "Odczytaj specyfikację szablonu",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje specyfikację szablonu",
-          "displayName": "Zapisz specyfikację szablonu",
+          "description": "Creates or updates a template spec",
+          "displayName": "Write template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa specyfikację szablonu",
-          "displayName": "Usuń specyfikację szablonu",
+          "description": "Deletes a template spec",
+          "displayName": "Delete a template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/delete",
           "origin": null,
@@ -564,28 +564,28 @@
       ]
     },
     {
-      "displayName": "Wersje specyfikacji szablonu",
+      "displayName": "Template Spec Versions",
       "name": "templateSpecs/versions",
       "operations": [
         {
-          "description": "Pobiera specyfikacje szablonu lub wyświetla ich listę",
-          "displayName": "Odczytaj wersję specyfikacji szablonu",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje wersję specyfikacji szablonu",
-          "displayName": "Zapisz wersję specyfikacji szablonu",
+          "description": "Creates or updates a template spec version",
+          "displayName": "Write a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa wersję specyfikacji szablonu",
-          "displayName": "Usuń wersję specyfikacji szablonu",
+          "description": "Deletes a template spec version",
+          "displayName": "Delete a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/delete",
           "origin": null,
@@ -594,12 +594,12 @@
       ]
     },
     {
-      "displayName": "Zmiany",
+      "displayName": "Changes",
       "name": "changes",
       "operations": [
         {
-          "description": "Pobiera zmiany lub wyświetla ich listę",
-          "displayName": "Odczytaj zmiany",
+          "description": "Gets or lists changes",
+          "displayName": "Read Changes",
           "isDataAction": false,
           "name": "Microsoft.Resources/changes/read",
           "origin": null,
@@ -608,12 +608,12 @@
       ]
     },
     {
-      "displayName": "Rejestracje subskrypcji",
+      "displayName": "Subscription Registrations",
       "name": "subscriptionRegistrations",
       "operations": [
         {
-          "description": "Pobierz rejestrację subskrypcji dla przestrzeni nazw dostawcy zasobów.",
-          "displayName": "Pobierz rejestracje subskrypcji",
+          "description": "Get Subscription Registration for a resource provider namespace.",
+          "displayName": "Get Subscription Registrations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptionRegistrations/read",
           "origin": null,
@@ -622,28 +622,28 @@
       ]
     },
     {
-      "displayName": "Stosy wdrożenia",
+      "displayName": "Deployment Stacks",
       "name": "deploymentStacks",
       "operations": [
         {
-          "description": "Pobiera stosy wdrożenia lub pokazuje je na liście",
-          "displayName": "Odczyt stosu wdrożenia",
+          "description": "Gets or lists deployment stacks",
+          "displayName": "Read deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje stos wdrożenia",
-          "displayName": "Zapisz stos wdrożenia",
+          "description": "Creates or updates a deployment stack",
+          "displayName": "Write deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa skrypt wdrożenia",
-          "displayName": "Usuń stos wdrożenia",
+          "description": "Deletes a deployment stack",
+          "displayName": "Delete a deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/delete",
           "origin": null,
@@ -660,12 +660,12 @@
       ]
     },
     {
-      "displayName": "Granica danych",
+      "displayName": "Data Boundary",
       "name": "dataBoundaries",
       "operations": [
         {
-          "description": "Zgoda na uczestnictwo w granicach danych na poziomie dzierżawy",
-          "displayName": "Zgoda na uczestnictwo w granicach danych",
+          "description": "Tenant level opt-in to data boundary",
+          "displayName": "Opt-in to Data Boundary",
           "isDataAction": false,
           "name": "Microsoft.Resources/dataBoundaries/write",
           "origin": null,
@@ -674,28 +674,28 @@
       ]
     },
     {
-      "displayName": "Broker Mobo",
+      "displayName": "Mobo Broker",
       "name": "moboBrokers",
       "operations": [
         {
-          "description": "Pobiera lub wyświetla listę brokerów mobo",
-          "displayName": "Pobierz brokera Mobo",
+          "description": "Gets or lists mobo brokers",
+          "displayName": "Get Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Tworzy lub aktualizuje brokera mobo",
-          "displayName": "Tworzenie brokera Mobo",
+          "description": "Creates or updates a mobo broker",
+          "displayName": "Create Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Usuwa brokera mobo",
-          "displayName": "Usuń brokera mobo",
+          "description": "Deletes a mobo broker",
+          "displayName": "Delete mobo broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/delete",
           "origin": null,
@@ -704,12 +704,12 @@
       ]
     },
     {
-      "displayName": "Stan operacji usługi Mobo",
+      "displayName": "Mobo Service Operation Status",
       "name": "locations/moboOperationStatuses",
       "operations": [
         {
-          "description": "Odczytuje stan operacji usługi Mobo dla zasobu.",
-          "displayName": "Pobierz stan operacji usługi Mobo",
+          "description": "Reads the Mobo Service Operation Status for the resource.",
+          "displayName": "Get the Mobo Service Operation Status",
           "isDataAction": false,
           "name": "Microsoft.Resources/locations/moboOperationStatuses/read",
           "origin": null,
