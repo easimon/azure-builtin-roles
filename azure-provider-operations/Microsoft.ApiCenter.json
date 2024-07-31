@@ -77,6 +77,14 @@
           "description": "Imports resources from one or more API Management instances.",
           "displayName": "Import from APIM",
           "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/apim-notification/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Imports resources from one or more API Management instances.",
+          "displayName": "Import from APIM",
+          "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/importFromApim/action",
           "origin": "user, system",
           "properties": null
@@ -311,6 +319,14 @@
       "displayName": "Workspace",
       "name": "services/workspaces",
       "operations": [
+        {
+          "description": "Triggers synchronization with the API source.",
+          "displayName": "Sync with API source",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apiSources/action",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Creates or updates specified workspace.",
           "displayName": "Create or update workspace",
@@ -640,6 +656,20 @@
           "displayName": "Purge soft deleted service",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/deletedServices/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ApiSource",
+      "name": "services/workspaces/apiSources",
+      "operations": [
+        {
+          "description": "Deletes specified API Source.",
+          "displayName": "Delete API source",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apiSources/delete",
           "origin": "user, system",
           "properties": null
         }
