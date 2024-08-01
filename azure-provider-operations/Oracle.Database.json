@@ -108,6 +108,14 @@
           "name": "Oracle.Database/cloudExadataInfrastructures/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Perform add storage capacity on exadata infra",
+          "displayName": "CloudExadataInfrastructures_AddStorageCapacity",
+          "isDataAction": false,
+          "name": "Oracle.Database/cloudExadataInfrastructures/addStorageCapacity/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -302,6 +310,22 @@
           "properties": null
         },
         {
+          "description": "Add Azure Subscriptions",
+          "displayName": "OracleSubscriptions_AddAzureSubscriptions",
+          "isDataAction": false,
+          "name": "Oracle.Database/oracleSubscriptions/addAzureSubscriptions/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Activation Links",
+          "displayName": "OracleSubscriptions_ListActivationLinks",
+          "isDataAction": false,
+          "name": "Oracle.Database/oracleSubscriptions/listActivationLinks/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "List Cloud Account Details",
           "displayName": "OracleSubscriptions_ListCloudAccountDetails",
           "isDataAction": false,
@@ -480,6 +504,46 @@
           "name": "Oracle.Database/autonomousDatabases/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Perform failover action on Autonomous Database",
+          "displayName": "AutonomousDatabases_Failover",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/failover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate wallet action on Autonomous Database",
+          "displayName": "AutonomousDatabases_GenerateWallet",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/generateWallet/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores an Autonomous Database based on the provided request parameters.",
+          "displayName": "AutonomousDatabases_Restore",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/restore/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This operation shrinks the current allocated storage down to the current actual used data storage.",
+          "displayName": "AutonomousDatabases_Shrink",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/shrink/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Perform switchover action on Autonomous Database",
+          "displayName": "AutonomousDatabases_Switchover",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/switchover/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -544,6 +608,74 @@
           "displayName": "AutonomousDatabaseVersions_Get",
           "isDataAction": false,
           "name": "Oracle.Database/locations/autonomousDbVersions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/systemVersions",
+      "name": "locations/systemVersions",
+      "operations": [
+        {
+          "description": "List SystemVersion resources by Location",
+          "displayName": "SystemVersions_ListByLocation",
+          "isDataAction": false,
+          "name": "Oracle.Database/locations/systemVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SystemVersion",
+          "displayName": "SystemVersions_Get",
+          "isDataAction": false,
+          "name": "Oracle.Database/locations/systemVersions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "autonomousDatabases/autonomousDatabaseBackups",
+      "name": "autonomousDatabases/autonomousDatabaseBackups",
+      "operations": [
+        {
+          "description": "List AutonomousDatabaseBackup resources by AutonomousDatabase",
+          "displayName": "AutonomousDatabaseBackups_ListByAutonomousDatabase",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/autonomousDatabaseBackups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AutonomousDatabaseBackup",
+          "displayName": "AutonomousDatabaseBackups_Get",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/autonomousDatabaseBackups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AutonomousDatabaseBackup",
+          "displayName": "AutonomousDatabaseBackups_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/autonomousDatabaseBackups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a AutonomousDatabaseBackup",
+          "displayName": "AutonomousDatabaseBackups_Delete",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/autonomousDatabaseBackups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AutonomousDatabaseBackup",
+          "displayName": "AutonomousDatabaseBackups_Update",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/autonomousDatabaseBackups/write",
           "origin": null,
           "properties": null
         }
