@@ -666,10 +666,78 @@
       "name": "services/workspaces/apiSources",
       "operations": [
         {
+          "description": "List API Sources inside a catalog.",
+          "displayName": "List API sources",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apiSources/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified API source.",
+          "displayName": "Get API source",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/apiSources/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
           "description": "Deletes specified API Source.",
           "displayName": "Delete API source",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/workspaces/apiSources/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Analyzer configuration",
+      "name": "services/workspaces/analyzerConfigs",
+      "operations": [
+        {
+          "description": "Creates or updates specified analyzer configuration.",
+          "displayName": "Create or update analyzer configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/analyzerConfigs/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified analyzer configuration.",
+          "displayName": "Get analyzer configuration",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/analyzerConfigs/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Imports ruleset file.",
+          "displayName": "Import ruleset",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/analyzerConfigs/importRuleset/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Exports ruleset file.",
+          "displayName": "Export ruleset",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/analyzerConfigs/exportRuleset/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Analyzer configuration",
+      "name": "services/workspaces/analyzerConfigs/operationResults",
+      "operations": [
+        {
+          "description": "Checks status of individual import ruleset operation",
+          "displayName": "Import ruleset status check",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/analyzerConfigs/operationResults/read",
           "origin": "user, system",
           "properties": null
         }
