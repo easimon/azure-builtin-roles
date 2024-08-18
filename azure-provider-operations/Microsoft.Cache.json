@@ -4497,7 +4497,13 @@
                     }
                   ],
                   "description": "The number of failed key lookups. For more details, see https://aka.ms/redis/enterprise/metrics.",
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "DisplayName": "InstanceId",
+                      "Name": "InstanceId",
+                      "ToBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": null,
                   "displayName": "Cache Misses",
                   "name": "cachemisses",
@@ -4693,7 +4699,13 @@
                     }
                   ],
                   "description": "The percentage of cache memory used for key/value pairs. For more details, see https://aka.ms/redis/enterprise/metrics.",
-                  "dimensions": null,
+                  "dimensions": [
+                    {
+                      "DisplayName": "InstanceId",
+                      "Name": "InstanceId",
+                      "ToBeExportedForShoebox": true
+                    }
+                  ],
                   "displayDescription": null,
                   "displayName": "Used Memory Percentage",
                   "name": "usedmemorypercentage",
@@ -4773,6 +4785,36 @@
                   "displayName": "Cache Read",
                   "name": "cacheRead",
                   "unit": "BytesPerSecond"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "Retention": "P90D",
+                      "TimeGrain": "PT5M"
+                    },
+                    {
+                      "Retention": "P90D",
+                      "TimeGrain": "PT1H"
+                    }
+                  ],
+                  "description": "The number errors that occured on the cache. For more details, see https://aka.ms/redis/enterprise/metrics.",
+                  "dimensions": [
+                    {
+                      "DisplayName": "InstanceId",
+                      "Name": "InstanceId",
+                      "ToBeExportedForShoebox": true
+                    },
+                    {
+                      "DisplayName": "ErrorType",
+                      "Name": "ErrorType",
+                      "ToBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": null,
+                  "displayName": "Errors",
+                  "name": "errors",
+                  "unit": "Count"
                 },
                 {
                   "aggregationType": "Maximum",
