@@ -31,8 +31,24 @@
   "resourceTypes": [
     {
       "displayName": "Container App",
-      "name": "containerapps",
+      "name": "containerApps",
       "operations": [
+        {
+          "description": "Allow access to logstream of container app for the subscription",
+          "displayName": "Allow access to logstream of container app",
+          "isDataAction": true,
+          "name": "microsoft.app/containerApps/logstream/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Allow access to exec into container app for the subscription",
+          "displayName": "Allow access to exec into container app",
+          "isDataAction": true,
+          "name": "microsoft.app/containerApps/exec/action",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Create or update a Container App",
           "displayName": "Create or Update Container App",
@@ -562,6 +578,22 @@
       "name": "jobs",
       "operations": [
         {
+          "description": "Allow access to logstream of container app job for the subscription",
+          "displayName": "Allow access to logstream of container app job",
+          "isDataAction": true,
+          "name": "microsoft.app/jobs/logstream/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Allow access to exec into container app job for the subscription",
+          "displayName": "Allow access to exec into container app job",
+          "isDataAction": true,
+          "name": "microsoft.app/jobs/exec/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
           "description": "Create or update a Container Apps Job",
           "displayName": "Create or Update Container Apps Job",
           "isDataAction": false,
@@ -606,6 +638,22 @@
           "displayName": "List Container Apps Job Secrets",
           "isDataAction": false,
           "name": "microsoft.app/jobs/listsecrets/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Auth Token for Container App Dev APIs to get log stream, exec or port forward from a container. This operation will be deprecated soon.",
+          "displayName": "Auth Token for Container App Dev APIs",
+          "isDataAction": false,
+          "name": "microsoft.app/jobs/authtoken/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Auth Token for Container App Dev APIs to get log stream, exec or port forward from a container.",
+          "displayName": "Auth Token for Container App Dev APIs",
+          "isDataAction": false,
+          "name": "microsoft.app/jobs/getauthtoken/action",
           "origin": "user, system",
           "properties": null
         }
@@ -924,6 +972,600 @@
           "displayName": "Delete Connected Environment's Certificate",
           "isDataAction": false,
           "name": "microsoft.app/connectedenvironments/certificates/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session",
+      "name": "sessionPools/sessions",
+      "operations": [
+        {
+          "description": "Allow access to operate on session for the subscription",
+          "displayName": "Allow access to operate on session",
+          "isDataAction": true,
+          "name": "microsoft.app/sessionPools/sessions/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Generate sessions",
+          "displayName": "Generate Sessions",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/sessions/generatesessions/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get a Session",
+          "displayName": "Read Session",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/sessions/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations/operationstatuses",
+      "operations": [
+        {
+          "description": "Get a Long Running Operation Status",
+          "displayName": "Read Operation Status",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/operationstatuses/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "locations/operationresults",
+      "operations": [
+        {
+          "description": "Get a Long Running Operation Result",
+          "displayName": "Read Operation Result",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/operationresults/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Builder",
+      "name": "builders",
+      "operations": [
+        {
+          "description": "Create or update a Builder",
+          "displayName": "Create or Update a Builder",
+          "isDataAction": false,
+          "name": "microsoft.app/builders/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get a Builder",
+          "displayName": "Read Builder",
+          "isDataAction": false,
+          "name": "microsoft.app/builders/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Builder",
+          "displayName": "Delete a Builder",
+          "isDataAction": false,
+          "name": "microsoft.app/builders/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Build",
+      "name": "builds",
+      "operations": [
+        {
+          "description": "Create or update a Build's build",
+          "displayName": "Create or Update a Builder's build",
+          "isDataAction": false,
+          "name": "microsoft.app/builds/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get a Builder's Build",
+          "displayName": "Read Build",
+          "isDataAction": false,
+          "name": "microsoft.app/builds/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Managed Environment's Build",
+          "displayName": "Delete Managed Environment's Build",
+          "isDataAction": false,
+          "name": "microsoft.app/builds/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Gets the token used to connect to the build endpoints, such as source code upload or build log streaming.",
+          "displayName": "Auth Token for Build Dev APIs",
+          "isDataAction": false,
+          "name": "microsoft.app/builds/listauthtoken/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "App Resiliency",
+      "name": "containerapps/resiliencypolicies",
+      "operations": [
+        {
+          "description": "Create or Update App Resiliency Policy",
+          "displayName": "Create or Update App Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/resiliencypolicies/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete App Resiliency Policy",
+          "displayName": "Delete App Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/resiliencypolicies/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "App Resiliency",
+      "name": "containerapp/resiliencypolicies",
+      "operations": [
+        {
+          "description": "Get App Resiliency Policy",
+          "displayName": "Get App Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapp/resiliencypolicies/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Container App Build",
+      "name": "microsoft.app/containerapps/builds",
+      "operations": [
+        {
+          "description": "Get a ContainerApp's Build by Build name",
+          "displayName": "Read Container App Build",
+          "isDataAction": false,
+          "name": "microsoft.app/microsoft.app/containerapps/builds/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Container App's Build",
+          "displayName": "Delete Container App Build",
+          "isDataAction": false,
+          "name": "microsoft.app/microsoft.app/containerapps/builds/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Container Apps Job Detector",
+      "name": "jobs/detectors",
+      "operations": [
+        {
+          "description": "Get detector of a container apps job",
+          "displayName": "Read Container Apps Job Detector",
+          "isDataAction": false,
+          "name": "microsoft.app/jobs/detectors/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Patch",
+      "name": "microsoft.app/containerapps/patches",
+      "operations": [
+        {
+          "description": "Get a ContainerApp's Patch",
+          "displayName": "Read Patch",
+          "isDataAction": false,
+          "name": "microsoft.app/microsoft.app/containerapps/patches/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a ContainerApp's Patch",
+          "displayName": "Delete ContainerApp's Patch",
+          "isDataAction": false,
+          "name": "microsoft.app/microsoft.app/containerapps/patches/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Skip a ContainerApp's Patch",
+          "displayName": "Skip ContainerApp's Patch",
+          "isDataAction": false,
+          "name": "microsoft.app/microsoft.app/containerapps/patches/skip/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Apply a ContainerApp's Patch",
+          "displayName": "Apply ContainerApp's Patch",
+          "isDataAction": false,
+          "name": "microsoft.app/microsoft.app/containerapps/patches/apply/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Dapr Component Resiliency Policy",
+      "name": "managedenvironments/daprcomponents/resiliencypolicies",
+      "operations": [
+        {
+          "description": "Create or Update Managed Environment Dapr Component Resiliency Policy",
+          "displayName": "Create or Update Managed Environment Dapr Component Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/resiliencypolicies/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Read Managed Environment Dapr Component Resiliency Policy",
+          "displayName": "Read Managed Environment Dapr Component Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/resiliencypolicies/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Environment Dapr Component Resiliency Policy",
+          "displayName": "Delete Managed Environment Dapr Component Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/resiliencypolicies/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Dapr PubSub Subscription",
+      "name": "managedenvironments/daprcomponents/daprsubscriptions",
+      "operations": [
+        {
+          "description": "Create or Update Managed Environment Dapr PubSub Subscription",
+          "displayName": "Create or Update Managed Environment Dapr PubSub Subscription",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/daprsubscriptions/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Read Managed Environment Dapr PubSub Subscription",
+          "displayName": "Read Managed Environment Dapr PubSub Subscription",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/daprsubscriptions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Environment Dapr PubSub Subscription",
+          "displayName": "Delete Managed Environment Dapr PubSub Subscription",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/daprcomponents/daprsubscriptions/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment .NET Component",
+      "name": "managedenvironments/dotnetcomponents",
+      "operations": [
+        {
+          "description": "Read Managed Environment .NET Component",
+          "displayName": "Read Managed Environment .NET Component",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/dotnetcomponents/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update Managed Environment .NET Component",
+          "displayName": "Create or Update Managed Environment .NET Component",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/dotnetcomponents/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Environment .NET Component",
+          "displayName": "Delete Managed Environment .NET Component",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/dotnetcomponents/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Java Component",
+      "name": "managedenvironments/javacomponents",
+      "operations": [
+        {
+          "description": "Read Managed Environment Java Component",
+          "displayName": "Read Managed Environment Java Component",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/javacomponents/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update Managed Environment Java Component",
+          "displayName": "Create or Update Managed Environment Java Component",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/javacomponents/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Environment Java Component",
+          "displayName": "Delete Managed Environment Java Component",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/javacomponents/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Container App Private Endpoint Connection Proxy",
+      "name": "containerapps/privateendpointconnectionproxies",
+      "operations": [
+        {
+          "description": "Validate Container App Private Endpoint Connection Proxy",
+          "displayName": "Validate Container App Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnectionproxies/validate/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update Container App Private Endpoint Connection Proxy",
+          "displayName": "Create or Update Container App Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnectionproxies/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Container App Private Endpoint Connection Proxy",
+          "displayName": "Get Container App Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnectionproxies/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Container App Private Endpoint Connection Proxy",
+          "displayName": "Delete Container App Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnectionproxies/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Private Endpoint Connection Proxy",
+      "name": "managedenvironments/privateendpointconnectionproxies",
+      "operations": [
+        {
+          "description": "Validate Managed Environment Private Endpoint Connection Proxy",
+          "displayName": "Validate Managed Environment Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnectionproxies/validate/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update Managed Environment Private Endpoint Connection Proxy",
+          "displayName": "Create or Update Managed Environment Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnectionproxies/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Managed Environment Private Endpoint Connection Proxy",
+          "displayName": "Get Managed Environment Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnectionproxies/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Environment Private Endpoint Connection Proxy",
+          "displayName": "Delete Managed Environment Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnectionproxies/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Container App Private Endpoint Connection",
+      "name": "containerapps/privateendpointconnections",
+      "operations": [
+        {
+          "description": "Create or Update Container App Private Endpoint Connection",
+          "displayName": "Create or Update Container App Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnections/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Container App Private Endpoint Connection",
+          "displayName": "Delete Container App Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnections/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Container App Private Endpoint Connection",
+          "displayName": "Get Container App Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privateendpointconnections/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Private Endpoint Connection",
+      "name": "managedenvironments/privateendpointconnections",
+      "operations": [
+        {
+          "description": "Create or Update Managed Environment Private Endpoint Connection",
+          "displayName": "Create or Update Managed Environment Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnections/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Managed Environment Private Endpoint Connection",
+          "displayName": "Delete Managed Environment Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnections/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Managed Environment Private Endpoint Connection",
+          "displayName": "Get Managed Environment Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privateendpointconnections/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Container App Private Link Resource",
+      "name": "containerapps/privatelinkresources",
+      "operations": [
+        {
+          "description": "Get Container App Private Link Resource",
+          "displayName": "Get Container App Private Link Resource",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapps/privatelinkresources/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Environment Private Link Resource",
+      "name": "managedenvironments/privatelinkresources",
+      "operations": [
+        {
+          "description": "Get Managed Environment Private Link Resource",
+          "displayName": "Get Managed Environment Private Link Resource",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/privatelinkresources/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session Pool",
+      "name": "sessionpools",
+      "operations": [
+        {
+          "description": "Create or Update a Session Pool",
+          "displayName": "Create or Update Session Pool",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get a Session Pool",
+          "displayName": "Read Session Pool",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a Session Pool",
+          "displayName": "Delete Session Pool",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Interpreters",
+      "name": "sessionpools/interpreters",
+      "operations": [
+        {
+          "description": "Execute Code",
+          "displayName": "Execute Code",
+          "isDataAction": true,
+          "name": "microsoft.app/sessionpools/interpreters/execute/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "App Resiliency",
+      "name": "containerapp/appresiliency",
+      "operations": [
+        {
+          "description": "Create or Update App Resiliency Policy",
+          "displayName": "Create or Update App Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapp/appresiliency/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete App Resiliency Policy",
+          "displayName": "Delete App Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapp/appresiliency/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get App Resiliency Policy",
+          "displayName": "Get App Resiliency Policy",
+          "isDataAction": false,
+          "name": "microsoft.app/containerapp/appresiliency/read",
           "origin": "user, system",
           "properties": null
         }
