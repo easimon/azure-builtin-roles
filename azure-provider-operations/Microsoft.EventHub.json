@@ -43,7 +43,7 @@
       "operations": [
         {
           "description": "Create a Namespace Resource and Update its properties. Tags and Capacity of the Namespace are the properties which can be updated.",
-          "displayName": "Create Or Update Namespace ",
+          "displayName": "Create Or Update Namespace",
           "isDataAction": false,
           "name": "Microsoft.EventHub/namespaces/write",
           "origin": null,
@@ -96,14 +96,6 @@
           "name": "Microsoft.EventHub/namespaces/privateEndpointConnectionsApproval/action",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Action to Join the Network Security Perimeter. This action is used to perform linked access by NSP RP.",
-          "displayName": "Action to Join the Network Security Perimeter",
-          "isDataAction": false,
-          "name": "Microsoft.EventHub/namespaces/joinPerimeter/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -142,7 +134,7 @@
           "properties": null
         },
         {
-          "description": "Delete Namespace Authorization Rule. The Default Namespace Authorization Rule cannot be deleted. ",
+          "description": "Delete Namespace Authorization Rule. The Default Namespace Authorization Rule cannot be deleted.",
           "displayName": "Delete Namespace Authorization Rule",
           "isDataAction": false,
           "name": "Microsoft.EventHub/namespaces/authorizationRules/delete",
@@ -232,15 +224,15 @@
       "name": "namespaces/eventhubs/authorizationRules",
       "operations": [
         {
-          "description": " Get the list of EventHub Authorization Rules",
-          "displayName": " Get EventHub Authorization Rules",
+          "description": "Get the list of EventHub Authorization Rules",
+          "displayName": "Get EventHub Authorization Rules",
           "isDataAction": false,
           "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create EventHub Authorization Rules and Update its properties. The Authorization Rules Access Rights can be updated.",
+          "description": "Create EventHub Authorization Rules and Update its properties. The Authorization Rules Access. Rights can be updated.",
           "displayName": "Create or Update EventHub Authorization Rule",
           "isDataAction": false,
           "name": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules/write",
@@ -412,6 +404,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     },
@@ -425,13 +418,13 @@
                       "name": "OperationResult"
                     }
                   ],
-                  "displayDescription": "Successful Requests for Microsoft.EventHub.",
+                  "displayDescription": "Total successful requests for a namespace",
                   "displayName": "Successful Requests",
                   "fillGapWithZero": true,
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "SuccessfulRequests",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -445,6 +438,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     },
@@ -464,7 +458,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "ServerErrors",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -478,6 +472,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     },
@@ -497,7 +492,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "UserErrors",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -511,6 +506,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     },
@@ -530,7 +526,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "QuotaExceededErrors",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -544,6 +540,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     },
@@ -563,7 +560,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "ThrottledRequests",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -577,6 +574,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -587,7 +585,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "IncomingRequests",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -601,6 +599,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -611,7 +610,7 @@
                   "internalMetricName": "IncomingMessages",
                   "isDimensionRequired": false,
                   "name": "IncomingMessages",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -625,6 +624,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -635,7 +635,7 @@
                   "internalMetricName": "OutgoingMessages",
                   "isDimensionRequired": false,
                   "name": "OutgoingMessages",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -649,6 +649,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -659,7 +660,7 @@
                   "internalMetricName": "IncomingBytes",
                   "isDimensionRequired": false,
                   "name": "IncomingBytes",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -673,6 +674,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -683,7 +685,7 @@
                   "internalMetricName": "OutgoingBytes",
                   "isDimensionRequired": false,
                   "name": "OutgoingBytes",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -702,7 +704,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "ActiveConnections",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Maximum",
@@ -721,6 +723,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -732,7 +735,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "ConnectionsOpened",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -746,6 +749,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -757,7 +761,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "ConnectionsClosed",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -771,6 +775,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -782,7 +787,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "CaptureBacklog",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -796,6 +801,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -806,7 +812,7 @@
                   "internalMetricName": "ArchivedMessages",
                   "isDimensionRequired": false,
                   "name": "CapturedMessages",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -820,6 +826,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -830,7 +837,7 @@
                   "internalMetricName": "ArchivedBytes",
                   "isDimensionRequired": false,
                   "name": "CapturedBytes",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -844,6 +851,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "EntityName",
                       "toBeExportedForShoebox": true
                     }
@@ -855,7 +863,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "Size",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -872,8 +880,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total incoming send requests for a namespace (Deprecated)",
-                  "displayName": "Incoming Requests (Deprecated)",
+                  "displayDescription": "Total incoming send requests for a namespace(Deprecated)",
+                  "displayName": "Incoming Requests(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "INREQS",
                   "unit": "Count"
@@ -886,8 +894,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total successful requests for a namespace (Deprecated)",
-                  "displayName": "Successful Requests (Deprecated)",
+                  "displayDescription": "Total successful requests for a namespace(Deprecated)",
+                  "displayName": "Successful Requests(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "SUCCREQ",
                   "unit": "Count"
@@ -900,8 +908,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total failed requests for a namespace (Deprecated)",
-                  "displayName": "Failed Requests (Deprecated)",
+                  "displayDescription": "Total failed requests for a namespace(Deprecated)",
+                  "displayName": "Failed Requests(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "FAILREQ",
                   "unit": "Count"
@@ -914,8 +922,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total server busy errors for a namespace (Deprecated)",
-                  "displayName": "Server Busy Errors (Deprecated)",
+                  "displayDescription": "Total server busy errors for a namespace(Deprecated)",
+                  "displayName": "Server Busy Errors(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "SVRBSY",
                   "unit": "Count"
@@ -928,8 +936,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total internal server errors for a namespace (Deprecated)",
-                  "displayName": "Internal Server Errors (Deprecated)",
+                  "displayDescription": "Total internal server errors for a namespace(Deprecated)",
+                  "displayName": "Internal Server Errors(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "INTERR",
                   "unit": "Count"
@@ -942,8 +950,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total failed requests for a namespace (Deprecated)",
-                  "displayName": "Other Errors (Deprecated)",
+                  "displayDescription": "Total failed requests for a namespace(Deprecated)",
+                  "displayName": "Other Errors(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "MISCERR",
                   "unit": "Count"
@@ -956,8 +964,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total incoming messages for a namespace. This metric is deprecated. Please use Incoming Messages metric instead (Deprecated)",
-                  "displayName": "Incoming Messages (obsolete) (Deprecated)",
+                  "displayDescription": "Total incoming messages for a namespace. This metric is deprecated. Please use Incoming Messages metric instead(Deprecated)",
+                  "displayName": "Incoming Messages (obsolete)(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "INMSGS",
                   "unit": "Count"
@@ -970,8 +978,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total incoming messages for a namespace (Deprecated)",
-                  "displayName": "Incoming Messages (Deprecated)",
+                  "displayDescription": "Total incoming messages for a namespace(Deprecated)",
+                  "displayName": "Incoming Messages(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHINMSGS",
                   "unit": "Count"
@@ -984,8 +992,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total outgoing messages for a namespace. This metric is deprecated. Please use Outgoing Messages metric instead (Deprecated)",
-                  "displayName": "Outgoing Messages (obsolete) (Deprecated)",
+                  "displayDescription": "Total outgoing messages for a namespace. This metric is deprecated. Please use Outgoing Messages metric instead(Deprecated)",
+                  "displayName": "Outgoing Messages (obsolete)(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "OUTMSGS",
                   "unit": "Count"
@@ -998,8 +1006,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Total outgoing messages for a namespace (Deprecated)",
-                  "displayName": "Outgoing Messages (Deprecated)",
+                  "displayDescription": "Total outgoing messages for a namespace(Deprecated)",
+                  "displayName": "Outgoing Messages(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHOUTMSGS",
                   "unit": "Count"
@@ -1012,8 +1020,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub incoming message throughput for a namespace. This metric is deprecated. Please use Incoming bytes metric instead (Deprecated)",
-                  "displayName": "Incoming bytes (obsolete) (Deprecated)",
+                  "displayDescription": "Event Hub incoming message throughput for a namespace. This metric is deprecated. Please use Incoming bytes metric instead(Deprecated)",
+                  "displayName": "Incoming bytes (obsolete)(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHINMBS",
                   "unit": "Bytes"
@@ -1026,8 +1034,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub incoming message throughput for a namespace (Deprecated)",
-                  "displayName": "Incoming bytes (Deprecated)",
+                  "displayDescription": "Event Hub incoming message throughput for a namespace(Deprecated)",
+                  "displayName": "Incoming bytes(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHINBYTES",
                   "unit": "Bytes"
@@ -1040,8 +1048,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub outgoing message throughput for a namespace. This metric is deprecated. Please use Outgoing bytes metric instead (Deprecated)",
-                  "displayName": "Outgoing bytes (obsolete) (Deprecated)",
+                  "displayDescription": "Event Hub outgoing message throughput for a namespace. This metric is deprecated. Please use Outgoing bytes metric instead(Deprecated)",
+                  "displayName": "Outgoing bytes (obsolete)(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHOUTMBS",
                   "unit": "Bytes"
@@ -1054,8 +1062,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub outgoing message throughput for a namespace (Deprecated)",
-                  "displayName": "Outgoing bytes (Deprecated)",
+                  "displayDescription": "Event Hub outgoing message throughput for a namespace(Deprecated)",
+                  "displayName": "Outgoing bytes(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHOUTBYTES",
                   "unit": "Bytes"
@@ -1068,8 +1076,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub archive messages in backlog for a namespace (Deprecated)",
-                  "displayName": "Archive backlog messages (Deprecated)",
+                  "displayDescription": "Event Hub archive messages in backlog for a namespace(Deprecated)",
+                  "displayName": "Archive backlog messages(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHABL",
                   "unit": "Count"
@@ -1082,8 +1090,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub archived messages in a namespace (Deprecated)",
-                  "displayName": "Archive messages (Deprecated)",
+                  "displayDescription": "Event Hub archived messages in a namespace(Deprecated)",
+                  "displayName": "Archive messages(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHAMSGS",
                   "unit": "Count"
@@ -1096,8 +1104,8 @@
                       "timeGrain": "PT1M"
                     }
                   ],
-                  "displayDescription": "Event Hub archived message throughput in a namespace (Deprecated)",
-                  "displayName": "Archive message throughput (Deprecated)",
+                  "displayDescription": "Event Hub archived message throughput in a namespace(Deprecated)",
+                  "displayName": "Archive message throughput(Deprecated)",
                   "fillGapWithZero": true,
                   "name": "EHAMBS",
                   "unit": "Bytes"
@@ -1129,12 +1137,12 @@
                   "lockAggregationType": "Total",
                   "metricFilterPattern": "(?i)^premium$",
                   "name": "NamespaceCpuUsage",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
-                    "Maximum",
+                    "Average",
                     "Minimum",
-                    "Average"
+                    "Maximum"
                   ],
                   "unit": "Percent"
                 },
@@ -1165,14 +1173,75 @@
                   "lockAggregationType": "Total",
                   "metricFilterPattern": "(?i)^premium$",
                   "name": "NamespaceMemoryUsage",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "isHidden": false,
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Replication lag by time duration",
+                  "displayName": "ReplicationLagDuration",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "ReplicationLagDuration",
+                  "isDimensionRequired": false,
+                  "name": "ReplicationLagDuration",
+                  "sourceMdmAccount": "ServiceBus",
+                  "sourceMdmNamespace": "GeoReplicationMetrics",
                   "supportedAggregationTypes": [
                     "Maximum",
                     "Minimum",
                     "Average"
                   ],
-                  "unit": "Percent"
+                  "unit": "Seconds"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "isHidden": false,
+                      "name": "EntityName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Replication lag by message count",
+                  "displayName": "ReplicationLagCount",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "ReplicationLagCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ReplicationLagCount",
+                  "sourceMdmAccount": "ServiceBus",
+                  "sourceMdmNamespace": "GeoReplicationMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Count"
                 }
               ]
             }
@@ -1212,14 +1281,14 @@
                       "name": "OperationResult"
                     }
                   ],
-                  "displayDescription": "Successful Requests for Microsoft.EventHub.",
+                  "displayDescription": "Total successful requests for a namespace",
                   "displayName": "Successful Requests",
                   "fillGapWithZero": true,
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "SuccessfulRequests",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1249,7 +1318,7 @@
                   "isDimensionRequired": false,
                   "name": "ServerErrors",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1279,7 +1348,7 @@
                   "isDimensionRequired": false,
                   "name": "UserErrors",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1309,7 +1378,7 @@
                   "isDimensionRequired": false,
                   "name": "QuotaExceededErrors",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1339,7 +1408,7 @@
                   "isDimensionRequired": false,
                   "name": "ThrottledRequests",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1358,7 +1427,7 @@
                   "isDimensionRequired": false,
                   "name": "IncomingRequests",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1377,7 +1446,7 @@
                   "isDimensionRequired": false,
                   "name": "IncomingMessages",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1395,7 +1464,7 @@
                   "internalMetricName": "OutgoingMessages",
                   "isDimensionRequired": false,
                   "name": "OutgoingMessages",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1414,7 +1483,7 @@
                   "isDimensionRequired": false,
                   "name": "IncomingBytes",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -1433,7 +1502,7 @@
                   "isDimensionRequired": false,
                   "name": "OutgoingBytes",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -1453,7 +1522,7 @@
                   "lockAggregationType": "Total",
                   "name": "ActiveConnections",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Maximum",
@@ -1478,7 +1547,7 @@
                   "lockAggregationType": "Total",
                   "name": "ConnectionsOpened",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1498,7 +1567,7 @@
                   "lockAggregationType": "Total",
                   "name": "ConnectionsClosed",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1518,7 +1587,7 @@
                   "lockAggregationType": "Total",
                   "name": "CaptureBacklog",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1537,7 +1606,7 @@
                   "isDimensionRequired": false,
                   "name": "CapturedMessages",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1556,7 +1625,7 @@
                   "isDimensionRequired": false,
                   "name": "CapturedBytes",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -1570,8 +1639,18 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "Role",
                       "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "_Total"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Instance"
                     }
                   ],
                   "displayDescription": "CPU utilization for the Event Hub Cluster as a percentage",
@@ -1580,7 +1659,7 @@
                   "internalMetricName": "Processor\\% Processor Time",
                   "name": "CPU",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "PerformanceCountersV2",
                   "unit": "Percent"
                 },
@@ -1594,6 +1673,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "Role",
                       "toBeExportedForShoebox": true
                     }
@@ -1604,7 +1684,7 @@
                   "internalMetricName": "NodeMemoryUtilization",
                   "name": "AvailableMemory",
                   "resourceIdDimensionNameOverride": "ScaleUnit",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Percent"
                 },
@@ -1618,6 +1698,7 @@
                   ],
                   "dimensions": [
                     {
+                      "isHidden": false,
                       "name": "Role",
                       "toBeExportedForShoebox": true
                     }
@@ -1629,7 +1710,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "Size",
-                  "sourceMdmAccount": "servicebus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -1979,28 +2060,28 @@
       ]
     },
     {
-      "displayName": "Cluster",
+      "displayName": "EventHub Cluster",
       "name": "clusters",
       "operations": [
         {
-          "description": "Gets the Cluster Resource Description",
-          "displayName": "Get Cluster Resource",
+          "description": "Gets EventHub Cluster Resource",
+          "displayName": "Gets EventHub Cluster Resource",
           "isDataAction": false,
           "name": "Microsoft.EventHub/clusters/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or modifies an existing Cluster resource.",
-          "displayName": "Write on Cluster Resource",
+          "description": "Create or Update EventHub Cluster Resource",
+          "displayName": "Create or Update EventHub Cluster Resource",
           "isDataAction": false,
           "name": "Microsoft.EventHub/clusters/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes an existing Cluster resource.",
-          "displayName": "Delete Cluster Resource",
+          "description": "Delete EventHub Cluster Resource",
+          "displayName": "Delete EventHub Cluster Resource",
           "isDataAction": false,
           "name": "Microsoft.EventHub/clusters/delete",
           "origin": null,
@@ -2009,7 +2090,7 @@
       ]
     },
     {
-      "displayName": "Non Resource Operation",
+      "displayName": "EventHub Cluster",
       "name": "availableClusterRegions",
       "operations": [
         {
@@ -2023,7 +2104,7 @@
       ]
     },
     {
-      "displayName": "Non Resource Operation",
+      "displayName": "EventHub Cluster",
       "name": "clusters/namespaces",
       "operations": [
         {
@@ -2037,7 +2118,7 @@
       ]
     },
     {
-      "displayName": "Non Resource Operation",
+      "displayName": "EventHub Cluster",
       "name": "clusters/operationresults",
       "operations": [
         {
@@ -2161,36 +2242,12 @@
       ]
     },
     {
-      "displayName": "Network Security Perimeter Association Proxies",
+      "displayName": "Network Security Perimeter Association Proxy",
       "name": "namespaces/networkSecurityPerimeterAssociationProxies",
       "operations": [
         {
-          "description": "Create NetworkSecurityPerimeterAssociationProxies",
-          "displayName": "Create NetworkSecurityPerimeterAssociationProxies",
-          "isDataAction": false,
-          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get NetworkSecurityPerimeterAssociationProxies",
-          "displayName": "Get NetworkSecurityPerimeterAssociationProxies",
-          "isDataAction": false,
-          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete NetworkSecurityPerimeterAssociationProxies",
-          "displayName": "Delete NetworkSecurityPerimeterAssociationProxies",
-          "isDataAction": false,
-          "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Reconcile NetworkSecurityPerimeterAssociationProxies",
-          "displayName": "Reconcile NetworkSecurityPerimeterAssociationProxies",
+          "description": "Reconcile Network Security Perimeter Association Proxy",
+          "displayName": "Reconcile Network Security Perimeter Association Proxy",
           "isDataAction": false,
           "name": "Microsoft.EventHub/namespaces/networkSecurityPerimeterAssociationProxies/reconcile/action",
           "origin": null,
