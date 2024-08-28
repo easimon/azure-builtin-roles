@@ -296,6 +296,22 @@
           "name": "microsoft.web/sites/slotcopy/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Reconcile Web App Network Security Perimeter Configurations.",
+          "displayName": "Reconcile Web App Network Security Perimeter Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.Web/Sites/networkSecurityPerimeterConfigurations/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Determines if a user is allowed to associate an Azure Web App with a Network Security Perimeter.",
+          "displayName": "Join Network Security Perimeter",
+          "isDataAction": false,
+          "name": "Microsoft.Web/Sites/joinPerimeter/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -2366,6 +2382,14 @@
           "name": "microsoft.web/sites/instances/processes/read",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Stop Web Apps Instances Processes.",
+          "displayName": "Stop Web Apps Instances Processes",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/instances/processes/stop/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -2720,6 +2744,14 @@
           "displayName": "Get Web Apps Slots Instances Processes",
           "isDataAction": false,
           "name": "microsoft.web/sites/slots/instances/processes/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Stop Web Apps Slots Instances Processes.",
+          "displayName": "Stop Web Apps Slots Instances Processes",
+          "isDataAction": false,
+          "name": "microsoft.web/sites/slots/instances/processes/stop/action",
           "origin": "user,system",
           "properties": null
         },
@@ -4384,6 +4416,14 @@
           "displayName": "Preview Static Site Workflow File",
           "isDataAction": false,
           "name": "Microsoft.Web/locations/previewstaticsiteworkflowfile/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Notify Network Security Perimeter Updates.",
+          "displayName": "Notify Network Security Perimeter Updates",
+          "isDataAction": false,
+          "name": "Microsoft.Web/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
           "origin": "user,system",
           "properties": null
         }
@@ -13180,6 +13220,50 @@
           "displayName": "Delete free trial static web app",
           "isDataAction": false,
           "name": "Microsoft.Web/freeTrialStaticWebApps/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web App Network Security Perimeter Association Proxies",
+      "name": "Sites/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "Create or Update Web App Network Security Perimeter Association Proxies.",
+          "displayName": "Create or Update Web App Network Security Perimeter Association Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Web/Sites/networkSecurityPerimeterAssociationProxies/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Get Web App Network Security Perimeter Association Proxies.",
+          "displayName": "Get Web App Network Security Perimeter Association Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Web/Sites/networkSecurityPerimeterAssociationProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Delete Web App Network Security Perimeter Association Proxies.",
+          "displayName": "Delete Web App Network Security Perimeter Association Proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Web/Sites/networkSecurityPerimeterAssociationProxies/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Web App Network Security Perimeter Configurations",
+      "name": "Sites/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "Get Web App Network Security Perimeter Configurations.",
+          "displayName": "Get Web App Network Security Perimeter Configurations",
+          "isDataAction": false,
+          "name": "Microsoft.Web/Sites/networkSecurityPerimeterConfigurations/read",
           "origin": "user,system",
           "properties": null
         }
