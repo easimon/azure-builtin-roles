@@ -34,18 +34,26 @@
       "name": "containerApps",
       "operations": [
         {
-          "description": "Allow access to logstream of container app for the subscription",
-          "displayName": "Allow access to logstream of container app",
+          "description": "View log stream of a container app",
+          "displayName": "View Container App Log Stream",
           "isDataAction": true,
           "name": "microsoft.app/containerApps/logstream/action",
           "origin": "user, system",
           "properties": null
         },
         {
-          "description": "Allow access to exec into container app for the subscription",
-          "displayName": "Allow access to exec into container app",
+          "description": "Connect to console of a container app",
+          "displayName": "Connect Container App Console",
           "isDataAction": true,
           "name": "microsoft.app/containerApps/exec/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Connect to debug console of a container app",
+          "displayName": "Connect Container App Debug Console",
+          "isDataAction": true,
+          "name": "microsoft.app/containerApps/debug/action",
           "origin": "user, system",
           "properties": null
         },
@@ -578,16 +586,16 @@
       "name": "jobs",
       "operations": [
         {
-          "description": "Allow access to logstream of container app job for the subscription",
-          "displayName": "Allow access to logstream of container app job",
+          "description": "View log stream of a container app job",
+          "displayName": "View Container App Job Log Stream",
           "isDataAction": true,
           "name": "microsoft.app/jobs/logstream/action",
           "origin": "user, system",
           "properties": null
         },
         {
-          "description": "Allow access to exec into container app job for the subscription",
-          "displayName": "Allow access to exec into container app job",
+          "description": "Connect to console of a container app job",
+          "displayName": "Connect Container App Job Console",
           "isDataAction": true,
           "name": "microsoft.app/jobs/exec/action",
           "origin": "user, system",
@@ -982,8 +990,8 @@
       "name": "sessionPools/sessions",
       "operations": [
         {
-          "description": "Allow access to operate on session for the subscription",
-          "displayName": "Allow access to operate on session",
+          "description": "Operate a session",
+          "displayName": "Operate Session",
           "isDataAction": true,
           "name": "microsoft.app/sessionPools/sessions/write",
           "origin": "user, system",
