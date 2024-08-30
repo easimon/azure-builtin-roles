@@ -1,8 +1,382 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft.IoTOperations",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.IoTOperations",
   "name": "Microsoft.IoTOperations",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.IoTOperations",
+      "displayName": "Register the Microsoft.IoTOperations",
+      "isDataAction": false,
+      "name": "Microsoft.IoTOperations/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.IoTOperations",
+      "displayName": "Unregister the Microsoft.IoTOperations",
+      "isDataAction": false,
+      "name": "Microsoft.IoTOperations/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances",
+      "name": "instances",
+      "operations": [
+        {
+          "description": "List InstanceResource resources by subscription ID",
+          "displayName": "Instance_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List InstanceResource resources by resource group",
+          "displayName": "Instance_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a InstanceResource",
+          "displayName": "Instance_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a InstanceResource",
+          "displayName": "Instance_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a InstanceResource",
+          "displayName": "Instance_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a InstanceResource",
+          "displayName": "Instance_Update",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/brokers",
+      "name": "instances/brokers",
+      "operations": [
+        {
+          "description": "List BrokerResource resources by InstanceResource",
+          "displayName": "Broker_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a BrokerResource",
+          "displayName": "Broker_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a BrokerResource",
+          "displayName": "Broker_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a BrokerResource",
+          "displayName": "Broker_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/brokers/authentications",
+      "name": "instances/brokers/authentications",
+      "operations": [
+        {
+          "description": "List BrokerAuthenticationResource resources by BrokerResource",
+          "displayName": "BrokerAuthentication_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authentications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a BrokerAuthenticationResource",
+          "displayName": "BrokerAuthentication_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authentications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a BrokerAuthenticationResource",
+          "displayName": "BrokerAuthentication_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authentications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a BrokerAuthenticationResource",
+          "displayName": "BrokerAuthentication_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authentications/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/brokers/listeners",
+      "name": "instances/brokers/listeners",
+      "operations": [
+        {
+          "description": "List BrokerListenerResource resources by BrokerResource",
+          "displayName": "BrokerListener_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/listeners/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a BrokerListenerResource",
+          "displayName": "BrokerListener_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/listeners/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a BrokerListenerResource",
+          "displayName": "BrokerListener_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/listeners/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a BrokerListenerResource",
+          "displayName": "BrokerListener_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/listeners/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/brokers/authorizations",
+      "name": "instances/brokers/authorizations",
+      "operations": [
+        {
+          "description": "List BrokerAuthorizationResource resources by BrokerResource",
+          "displayName": "BrokerAuthorization_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authorizations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a BrokerAuthorizationResource",
+          "displayName": "BrokerAuthorization_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authorizations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a BrokerAuthorizationResource",
+          "displayName": "BrokerAuthorization_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authorizations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a BrokerAuthorizationResource",
+          "displayName": "BrokerAuthorization_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/brokers/authorizations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/dataflowProfiles",
+      "name": "instances/dataflowProfiles",
+      "operations": [
+        {
+          "description": "List DataflowProfileResource resources by InstanceResource",
+          "displayName": "DataflowProfile_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DataflowProfileResource",
+          "displayName": "DataflowProfile_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a DataflowProfileResource",
+          "displayName": "DataflowProfile_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DataflowProfileResource",
+          "displayName": "DataflowProfile_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/dataflowProfiles/dataflows",
+      "name": "instances/dataflowProfiles/dataflows",
+      "operations": [
+        {
+          "description": "List DataflowResource resources by DataflowProfileResource",
+          "displayName": "Dataflow_ListByProfileResource",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/dataflows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DataflowResource",
+          "displayName": "Dataflow_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/dataflows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a DataflowResource",
+          "displayName": "Dataflow_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/dataflows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DataflowResource",
+          "displayName": "Dataflow_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowProfiles/dataflows/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instances/dataflowEndpoints",
+      "name": "instances/dataflowEndpoints",
+      "operations": [
+        {
+          "description": "List DataflowEndpointResource resources by InstanceResource",
+          "displayName": "DataflowEndpoint_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowEndpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DataflowEndpointResource",
+          "displayName": "DataflowEndpoint_Get",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowEndpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a DataflowEndpointResource",
+          "displayName": "DataflowEndpoint_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowEndpoints/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DataflowEndpointResource",
+          "displayName": "DataflowEndpoint_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.IoTOperations/instances/dataflowEndpoints/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
