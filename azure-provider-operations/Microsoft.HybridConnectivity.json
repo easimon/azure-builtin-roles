@@ -40,26 +40,18 @@
           "name": "Microsoft.HybridConnectivity/Locations/OperationStatuses/read",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "write OperationStatuses",
-          "displayName": "write_OperationStatuses",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/Locations/OperationStatuses/write",
-          "origin": null,
-          "properties": null
         }
       ]
     },
     {
       "displayName": "Operations",
-      "name": "Operations",
+      "name": "operations",
       "operations": [
         {
-          "description": "read Operations",
-          "displayName": "read_Operations",
+          "description": "Get the list of Operations",
+          "displayName": "Get operations",
           "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/Operations/read",
+          "name": "Microsoft.HybridConnectivity/operations/read",
           "origin": null,
           "properties": null
         }
@@ -70,16 +62,8 @@
       "name": "endpoints",
       "operations": [
         {
-          "description": "List of endpoints to the target resource.",
-          "displayName": "Endpoints_List",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets the endpoint to the resource.",
-          "displayName": "Endpoints_Get",
+          "description": "Get or list of endpoints to the target resource.",
+          "displayName": "Get/List endpoints",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/read",
           "origin": null,
@@ -87,7 +71,7 @@
         },
         {
           "description": "Create or update the endpoint to the target resource.",
-          "displayName": "Endpoints_CreateOrUpdate",
+          "displayName": "Create/Update endpoint",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/write",
           "origin": null,
@@ -95,39 +79,31 @@
         },
         {
           "description": "Deletes the endpoint access to the target resource.",
-          "displayName": "Endpoints_Delete",
+          "displayName": "Delete endpoint",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update the endpoint to the target resource.",
-          "displayName": "Endpoints_Update",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets the endpoint access credentials to the resource.",
-          "displayName": "Endpoints_ListCredentials",
+          "description": "List the endpoint access credentials to the resource.",
+          "displayName": "List credentials for endpoint access",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/listCredentials/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets the ingress gateway endpoint credentials ",
-          "displayName": "Endpoints_ListIngressGatewayCredentials",
+          "description": "List the ingress gateway access credentials to the resource.",
+          "displayName": "List ingress gateway credentials for endpoint access",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/listIngressGatewayCredentials/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Fetches the managed proxy details ",
-          "displayName": "Endpoints_ListManagedProxyDetails",
+          "description": "List the managed proxy details to the resource.",
+          "displayName": "List managed proxy details for endpoint access",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/listManagedProxyDetails/action",
           "origin": null,
@@ -136,46 +112,30 @@
       ]
     },
     {
-      "displayName": "endpoints/serviceConfigurations",
+      "displayName": "serviceconfigurations",
       "name": "endpoints/serviceConfigurations",
       "operations": [
         {
-          "description": "API to enumerate registered services in service configurations under a Endpoint Resource",
-          "displayName": "ServiceConfigurations_ListByEndpointResource",
+          "description": "Get or list of serviceConfigurations to the endpoints resource.",
+          "displayName": "Get/List serviceConfigurations",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets the details about the service to the resource.",
-          "displayName": "ServiceConfigurations_Get",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update a service in serviceConfiguration for the endpoint resource.",
-          "displayName": "ServiceConfigurations_CreateOrupdate",
+          "description": "Create or update the serviceConfigurations to the endpoints resource.",
+          "displayName": "Create/Update serviceConfiguration",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes the service details to the target resource.",
-          "displayName": "ServiceConfigurations_Delete",
+          "description": "Deletes the serviceConfigurations access to the endpoints resource.",
+          "displayName": "Delete serviceConfigurations",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update the service details in the service configurations of the target resource.",
-          "displayName": "ServiceConfigurations_Update",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
           "origin": null,
           "properties": null
         }
