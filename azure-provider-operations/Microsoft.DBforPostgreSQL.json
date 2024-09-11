@@ -2342,6 +2342,14 @@
       "name": "flexibleServers/tuningOptions",
       "operations": [
         {
+          "description": "Returns the list of Tuning Options available for the Azure Database for PostgreSQL Flexible Server",
+          "displayName": "List Azure Database for PostgreSQL Flexible Server Tuning Options.",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": null,
           "displayName": null,
           "isDataAction": false,
@@ -2356,10 +2364,40 @@
       "name": "flexibleServers/tuningOptions/recommendations",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "Returns the list of recommended indexes for the Azure Database for PostgreSQL Flexible Server",
+          "displayName": "List Azure Database for PostgreSQL Flexible Server recommended indexes for tuning.",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/recommendations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Auto migration workflow to get free / available slots for auto migration",
+      "name": "locations",
+      "operations": [
+        {
+          "description": "Returns the list of free / available slots for auto migration of PostgreSQL server",
+          "displayName": "Get auto migration free / available slots for PostgreSQL",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/locations/getAutoMigrationFreeSlots/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the instance of the latest auto migration schedule for PostgreSQL server",
+          "displayName": "Get latest auto migration schedule for PostgreSQL server",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/locations/getLatestAutoMigrationSchedule/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update auto migration schedule for the PostgreSQL server",
+          "displayName": "Update auto migration schedule for the PostgreSQL server",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/locations/updateAutoMigrationSchedule/action",
           "origin": null,
           "properties": null
         }
