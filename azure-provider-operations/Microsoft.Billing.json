@@ -1662,7 +1662,7 @@
       "name": "billingAccounts/billingProfiles/departments/enrollmentAccounts",
       "operations": [
         {
-          "description": "Get list of enrollment accounts using billing profile ID and department ID",
+          "description": "Get list of enrollment accounts using billing",
           "displayName": "BillingProfileEnrollmentAccounts_ListByDepartmentName",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/enrollmentAccounts/read",
@@ -2506,6 +2506,118 @@
           "displayName": "PaymentMethods_DeleteByUser",
           "isDataAction": false,
           "name": "Microsoft.Billing/paymentMethods/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for a Billing Account. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByBillingAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/departments/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for a Department. The operation is supported only for Departments under billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByDepartment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/enrollmentAccounts/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for an Enrollment Account. The operation is supported only for enrollment accounts under billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByEnrollmentAccount",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enrollmentAccounts/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/departments/enrollmentAccounts/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for an Enrollment Account under Department. The operation is supported only for enrollment accounts under billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByEnrollmentAccountByDepartment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/departments/enrollmentAccounts/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/billingProfiles/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for a Billing Profile. The operation is supported only for billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/billingProfiles/departments/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods  by billing profile ID and department name. The operation is supported only for Departments under billing profiles with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByBillingProfileByDepartment",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/billingProfiles/enrollmentAccounts/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for an Enrollment Account under Billing Profile. The operation is supported only for billing profiles under billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByEnrollmentAccountByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/enrollmentAccounts/billingPeriods/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Billing Periods",
+      "name": "billingAccounts/billingProfiles/departments/enrollmentAccounts/billingPeriods",
+      "operations": [
+        {
+          "description": "Lists the valid Billing Periods for an Enrollment Account under Department under Billing Profile. The operation is supported only for enrollment profiles under billing accounts with agreement type Enterprise Agreement.",
+          "displayName": "BillingPeriods_ListByEnrollmentAccountByDepartmentBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/departments/enrollmentAccounts/billingPeriods/read",
           "origin": null,
           "properties": null
         }
