@@ -1,0 +1,33 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-09-13T00:23:03.604903+00:00",
+  "description": "Grants permission for all management operations, except purge, for App Configuration resources.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/fe86443c-f201-4fc4-9d2a-ac61149fbda0",
+  "name": "fe86443c-f201-4fc4-9d2a-ac61149fbda0",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppConfiguration/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [
+        "Microsoft.AppConfiguration/locations/deletedConfigurationStores/purge/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "App Configuration Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-09-13T00:23:03.604903+00:00"
+}
