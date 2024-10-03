@@ -3736,6 +3736,30 @@
                   "sourceMdmAccount": "AzureEventGrid",
                   "sourceMdmNamespace": "ResourceMetricsV2",
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "name": "ThrottleType"
+                    }
+                  ],
+                  "displayDescription": "The number of times Event Grid throttled a request because it exceeded the limit.",
+                  "displayName": "MQTT: Throttling Enforcements",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "Mqtt.ThrottlingEnforcements",
+                  "isDimensionRequired": false,
+                  "name": "Mqtt.ThrottlingEnforcements",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetricsV2",
+                  "unit": "Count"
                 }
               ]
             }
