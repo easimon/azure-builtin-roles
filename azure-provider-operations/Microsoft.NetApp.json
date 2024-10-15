@@ -977,6 +977,32 @@
                 {
                   "aggregationType": "Average",
                   "dimensions": [],
+                  "displayDescription": "The percentage of inodes used.",
+                  "displayName": "Volume Inodes Percentage",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "VolumeInodesPercentage",
+                  "isInternal": false,
+                  "name": "VolumeInodesPercentage",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
                   "displayDescription": "Other throughput (that is not read or write) in bytes per second",
                   "displayName": "Other throughput",
                   "enableRegionalMdmAccount": true,
@@ -1197,6 +1223,14 @@
           "displayName": "Migrate encryption for account",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/migrateEncryption/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Transitions all volumes under an encryption sibling set from Microsoft-managed key to Customer-managed key or vice versa.",
+          "displayName": "Transition to Customer-Managed Keys.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/transitionToCmk/action",
           "origin": "user,system",
           "properties": null
         }
