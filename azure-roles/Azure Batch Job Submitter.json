@@ -1,0 +1,34 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-10-16T15:31:49.738650+00:00",
+  "description": "Lets you submit and manage jobs in the Batch account.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/48e5e92e-a480-4e71-aa9c-2778f4c13781",
+  "name": "48e5e92e-a480-4e71-aa9c-2778f4c13781",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Batch/batchAccounts/applications/read",
+        "Microsoft.Batch/batchAccounts/applications/versions/read",
+        "Microsoft.Batch/batchAccounts/pools/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.Batch/batchAccounts/jobSchedules/*",
+        "Microsoft.Batch/batchAccounts/jobs/*"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Batch Job Submitter",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-10-16T15:31:49.738650+00:00"
+}
