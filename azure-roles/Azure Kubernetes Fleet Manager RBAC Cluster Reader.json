@@ -1,0 +1,64 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-10-18T21:16:45.738706+00:00",
+  "description": "Grants read-only access to most Kubernetes cluster-scoped resources in the fleet-managed hub cluster.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/bd80684d-2f5f-4130-892a-0955546282de",
+  "name": "bd80684d-2f5f-4130-892a-0955546282de",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerService/fleets/read",
+        "Microsoft.ContainerService/fleets/listCredentials/action"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.ContainerService/fleets/apiextensions.k8s.io/customresourcedefinitions/read",
+        "Microsoft.ContainerService/fleets/apps/controllerrevisions/read",
+        "Microsoft.ContainerService/fleets/apps/daemonsets/read",
+        "Microsoft.ContainerService/fleets/apps/deployments/read",
+        "Microsoft.ContainerService/fleets/apps/statefulsets/read",
+        "Microsoft.ContainerService/fleets/autoscaling/horizontalpodautoscalers/read",
+        "Microsoft.ContainerService/fleets/batch/cronjobs/read",
+        "Microsoft.ContainerService/fleets/batch/jobs/read",
+        "Microsoft.ContainerService/fleets/configmaps/read",
+        "Microsoft.ContainerService/fleets/endpoints/read",
+        "Microsoft.ContainerService/fleets/events.k8s.io/events/read",
+        "Microsoft.ContainerService/fleets/events/read",
+        "Microsoft.ContainerService/fleets/extensions/daemonsets/read",
+        "Microsoft.ContainerService/fleets/extensions/deployments/read",
+        "Microsoft.ContainerService/fleets/extensions/ingresses/read",
+        "Microsoft.ContainerService/fleets/extensions/networkpolicies/read",
+        "Microsoft.ContainerService/fleets/limitranges/read",
+        "Microsoft.ContainerService/fleets/namespaces/read",
+        "Microsoft.ContainerService/fleets/networking.k8s.io/ingresses/read",
+        "Microsoft.ContainerService/fleets/networking.k8s.io/networkpolicies/read",
+        "Microsoft.ContainerService/fleets/nodes/read",
+        "Microsoft.ContainerService/fleets/persistentvolumes/read",
+        "Microsoft.ContainerService/fleets/persistentvolumeclaims/read",
+        "Microsoft.ContainerService/fleets/policy/poddisruptionbudgets/read",
+        "Microsoft.ContainerService/fleets/replicationcontrollers/read",
+        "Microsoft.ContainerService/fleets/resourcequotas/read",
+        "Microsoft.ContainerService/fleets/serviceaccounts/read",
+        "Microsoft.ContainerService/fleets/services/read",
+        "Microsoft.ContainerService/fleets/cluster.kubernetes-fleet.io/memberclusters/read",
+        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourceplacements/read",
+        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourcebindings/read",
+        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourcesnapshots/read",
+        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterschedulingpolicysnapshots/read",
+        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourceoverrides/read",
+        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourceoverridesnapshots/read"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Kubernetes Fleet Manager RBAC Cluster Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-10-18T21:16:45.738706+00:00"
+}
