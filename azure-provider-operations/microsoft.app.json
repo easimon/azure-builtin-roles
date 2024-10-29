@@ -634,6 +634,22 @@
           "properties": null
         },
         {
+          "description": "Suspend Container Apps Job",
+          "displayName": "Suspend Container Apps Job",
+          "isDataAction": false,
+          "name": "microsoft.app/jobs/suspend/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Resume Container Apps Job",
+          "displayName": "Resume Container Apps Job",
+          "isDataAction": false,
+          "name": "microsoft.app/jobs/resume/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
           "description": "Get a Container Apps Job",
           "displayName": "Read Container Apps Job",
           "isDataAction": false,
@@ -1447,8 +1463,24 @@
     },
     {
       "displayName": "Session Pool",
-      "name": "sessionpools",
+      "name": "sessionPools",
       "operations": [
+        {
+          "description": "Execute code in a session pool code interpreter session",
+          "displayName": "Execute Code",
+          "isDataAction": true,
+          "name": "Microsoft.App/sessionPools/executions/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Upload file to a session pool code interpreter session",
+          "displayName": "Upload File",
+          "isDataAction": true,
+          "name": "Microsoft.App/sessionPools/files/action",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Create or Update a Session Pool",
           "displayName": "Create or Update Session Pool",
@@ -1563,13 +1595,13 @@
     },
     {
       "displayName": "Container App Build",
-      "name": "microsoft.app/containerapps/builds",
+      "name": "containerapps/builds",
       "operations": [
         {
           "description": "Get a ContainerApp's Build by Build name",
           "displayName": "Read Container App Build",
           "isDataAction": false,
-          "name": "microsoft.app/microsoft.app/containerapps/builds/read",
+          "name": "microsoft.app/containerapps/builds/read",
           "origin": "user, system",
           "properties": null
         },
@@ -1577,7 +1609,7 @@
           "description": "Delete a Container App's Build",
           "displayName": "Delete Container App Build",
           "isDataAction": false,
-          "name": "microsoft.app/microsoft.app/containerapps/builds/delete",
+          "name": "microsoft.app/containerapps/builds/delete",
           "origin": "user, system",
           "properties": null
         }
@@ -1585,13 +1617,13 @@
     },
     {
       "displayName": "Patch",
-      "name": "microsoft.app/containerapps/patches",
+      "name": "containerapps/patches",
       "operations": [
         {
           "description": "Get a ContainerApp's Patch",
           "displayName": "Read Patch",
           "isDataAction": false,
-          "name": "microsoft.app/microsoft.app/containerapps/patches/read",
+          "name": "microsoft.app/containerapps/patches/read",
           "origin": "user, system",
           "properties": null
         },
@@ -1599,7 +1631,7 @@
           "description": "Delete a ContainerApp's Patch",
           "displayName": "Delete ContainerApp's Patch",
           "isDataAction": false,
-          "name": "microsoft.app/microsoft.app/containerapps/patches/delete",
+          "name": "microsoft.app/containerapps/patches/delete",
           "origin": "user, system",
           "properties": null
         },
@@ -1607,7 +1639,7 @@
           "description": "Skip a ContainerApp's Patch",
           "displayName": "Skip ContainerApp's Patch",
           "isDataAction": false,
-          "name": "microsoft.app/microsoft.app/containerapps/patches/skip/action",
+          "name": "microsoft.app/containerapps/patches/skip/action",
           "origin": "user, system",
           "properties": null
         },
@@ -1615,7 +1647,117 @@
           "description": "Apply a ContainerApp's Patch",
           "displayName": "Apply ContainerApp's Patch",
           "isDataAction": false,
-          "name": "microsoft.app/microsoft.app/containerapps/patches/apply/action",
+          "name": "microsoft.app/containerapps/patches/apply/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ManagedHttpRoute",
+      "name": "managedenvironments/httprouteconfigs",
+      "operations": [
+        {
+          "description": "Get All HTTP Route Configuraions for a Managed Environment.",
+          "displayName": "Retrieve All Managed Environment HTTP Route Configurations.",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/httprouteconfigs/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update HTTP Route Configuration for a Managed Environment.",
+          "displayName": "Create or Update Managed Environment HTTP Route Configuration.",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/httprouteconfigs/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete an HTTP Route Configuration for a Managed Environment.",
+          "displayName": "Delete a Managed Environment HTTP Route Configuration.",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/httprouteconfigs/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Maintenance Configuration for managed environment",
+      "name": "managedenvironments/maintenanceconfigurations",
+      "operations": [
+        {
+          "description": "Get maintenance configuration for a Managed Environment.",
+          "displayName": "Read Maintenance Configuration for managed environment.",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/maintenanceconfigurations/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a maintenance configuration of Managed Environment.",
+          "displayName": "Create or Update a Maintenance Configuration for managed environment.",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/maintenanceconfigurations/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a maintenance configuration of Managed Environment.",
+          "displayName": "Delete a Maintenance Configuration for managed environment",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/maintenanceconfigurations/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session Pool Code Interpreter Session",
+      "name": "sessionPools/executions",
+      "operations": [
+        {
+          "description": "Get the execution result of a previous asynchronous code execution",
+          "displayName": "Get Code Execution Result",
+          "isDataAction": true,
+          "name": "Microsoft.App/sessionPools/executions/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session Pool Code Interpreter Session File",
+      "name": "sessionPools/files/content",
+      "operations": [
+        {
+          "description": "Get the content of a file in a session pool code interpreter session",
+          "displayName": "Get File Content",
+          "isDataAction": true,
+          "name": "Microsoft.App/sessionPools/files/content/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Session Pool Code Interpreter Session File",
+      "name": "sessionPools/files",
+      "operations": [
+        {
+          "description": "Get the metadata of a file in a session pool code interpreter session",
+          "displayName": "Get File",
+          "isDataAction": true,
+          "name": "Microsoft.App/sessionPools/files/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete the file",
+          "displayName": "Delete File",
+          "isDataAction": true,
+          "name": "Microsoft.App/sessionPools/files/delete",
           "origin": "user, system",
           "properties": null
         }
