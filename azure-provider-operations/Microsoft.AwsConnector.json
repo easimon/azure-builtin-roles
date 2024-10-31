@@ -87,7 +87,7 @@
         },
         {
           "description": "Create a S3Bucket. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "S3Buckets_CreateOrUpdate",
+          "displayName": "S3Buckets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/s3Buckets/write",
           "origin": null,
@@ -133,7 +133,7 @@
         },
         {
           "description": "Create a Ec2Instance. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2Instances_CreateOrUpdate",
+          "displayName": "Ec2Instances_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2Instances/write",
           "origin": null,
@@ -144,6 +144,22 @@
           "displayName": "Ec2Instances_Delete",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2Instances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A long-running resource action.",
+          "displayName": "Ec2Instances_Start",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Instances/start/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A long-running resource action.",
+          "displayName": "Ec2Instances_Stop",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Instances/stop/action",
           "origin": null,
           "properties": null
         }
@@ -233,7 +249,7 @@
         },
         {
           "description": "Create a LambdaFunction. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LambdaFunctions_CreateOrUpdate",
+          "displayName": "LambdaFunctions_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/lambdaFunctions/write",
           "origin": null,
@@ -287,7 +303,7 @@
         },
         {
           "description": "Create a S3AccessPoint. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "S3AccessPoints_CreateOrUpdate",
+          "displayName": "S3AccessPoints_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/s3AccessPoints/write",
           "origin": null,
@@ -341,7 +357,7 @@
         },
         {
           "description": "Create a Ec2KeyPair. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2KeyPairs_CreateOrUpdate",
+          "displayName": "Ec2KeyPairs_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2KeyPairs/write",
           "origin": null,
@@ -395,7 +411,7 @@
         },
         {
           "description": "Create a Ec2Subnet. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2Subnets_CreateOrUpdate",
+          "displayName": "Ec2Subnets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2Subnets/write",
           "origin": null,
@@ -449,7 +465,7 @@
         },
         {
           "description": "Create a Ec2Volume. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2Volumes_CreateOrUpdate",
+          "displayName": "Ec2Volumes_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2Volumes/write",
           "origin": null,
@@ -503,7 +519,7 @@
         },
         {
           "description": "Create a Ec2Vpc. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2Vpcs_CreateOrUpdate",
+          "displayName": "Ec2Vpcs_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2Vpcs/write",
           "origin": null,
@@ -557,7 +573,7 @@
         },
         {
           "description": "Create a LogsLogGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LogsLogGroups_CreateOrUpdate",
+          "displayName": "LogsLogGroups_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/logsLogGroups/write",
           "origin": null,
@@ -611,7 +627,7 @@
         },
         {
           "description": "Create a LogsLogStream. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LogsLogStreams_CreateOrUpdate",
+          "displayName": "LogsLogStreams_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/logsLogStreams/write",
           "origin": null,
@@ -665,7 +681,7 @@
         },
         {
           "description": "Create a RdsDBInstance. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "RdsDbInstances_CreateOrUpdate",
+          "displayName": "RdsDbInstances_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/rdsDBInstances/write",
           "origin": null,
@@ -719,7 +735,7 @@
         },
         {
           "description": "Create a DynamoDBTable. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "DynamoDbTables_CreateOrUpdate",
+          "displayName": "DynamoDbTables_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/dynamoDBTables/write",
           "origin": null,
@@ -773,7 +789,7 @@
         },
         {
           "description": "Create a ElasticLoadBalancingV2LoadBalancer. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "ElasticLoadBalancingV2LoadBalancers_CreateOrUpdate",
+          "displayName": "ElasticLoadBalancingV2LoadBalancers_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/elasticLoadBalancingV2LoadBalancers/write",
           "origin": null,
@@ -827,7 +843,7 @@
         },
         {
           "description": "Create a NetworkFirewallFirewall. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "NetworkFirewallFirewalls_CreateOrUpdate",
+          "displayName": "NetworkFirewallFirewalls_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/networkFirewallFirewalls/write",
           "origin": null,
@@ -881,7 +897,7 @@
         },
         {
           "description": "Create a SageMakerApp. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "SageMakerApps_CreateOrUpdate",
+          "displayName": "SageMakerApps_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/sageMakerApps/write",
           "origin": null,
@@ -935,7 +951,7 @@
         },
         {
           "description": "Create a LightsailInstance. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LightsailInstances_CreateOrUpdate",
+          "displayName": "LightsailInstances_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/lightsailInstances/write",
           "origin": null,
@@ -989,7 +1005,7 @@
         },
         {
           "description": "Create a Ec2NetworkAcl. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2NetworkAcls_CreateOrUpdate",
+          "displayName": "Ec2NetworkAcls_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2NetworkAcls/write",
           "origin": null,
@@ -1043,7 +1059,7 @@
         },
         {
           "description": "Create a Ec2NetworkInterface. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2NetworkInterfaces_CreateOrUpdate",
+          "displayName": "Ec2NetworkInterfaces_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2NetworkInterfaces/write",
           "origin": null,
@@ -1097,7 +1113,7 @@
         },
         {
           "description": "Create a Ec2RouteTable. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2RouteTables_CreateOrUpdate",
+          "displayName": "Ec2RouteTables_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2RouteTables/write",
           "origin": null,
@@ -1151,7 +1167,7 @@
         },
         {
           "description": "Create a Ec2VPCEndpoint. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2VpcEndpoints_CreateOrUpdate",
+          "displayName": "Ec2VpcEndpoints_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2VPCEndpoints/write",
           "origin": null,
@@ -1205,7 +1221,7 @@
         },
         {
           "description": "Create a Ec2VPCPeeringConnection. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2VpcPeeringConnections_CreateOrUpdate",
+          "displayName": "Ec2VpcPeeringConnections_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2VPCPeeringConnections/write",
           "origin": null,
@@ -1259,7 +1275,7 @@
         },
         {
           "description": "Create a Ec2InstanceStatus. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2InstanceStatuses_CreateOrUpdate",
+          "displayName": "Ec2InstanceStatuses_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2InstanceStatuses/write",
           "origin": null,
@@ -1313,7 +1329,7 @@
         },
         {
           "description": "Create a Ec2SecurityGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Ec2SecurityGroups_CreateOrUpdate",
+          "displayName": "Ec2SecurityGroups_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ec2SecurityGroups/write",
           "origin": null,
@@ -1421,7 +1437,7 @@
         },
         {
           "description": "Create a LightsailBucket. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LightsailBuckets_CreateOrUpdate",
+          "displayName": "LightsailBuckets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/lightsailBuckets/write",
           "origin": null,
@@ -1475,7 +1491,7 @@
         },
         {
           "description": "Create a LogsSubscriptionFilter. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LogsSubscriptionFilters_CreateOrUpdate",
+          "displayName": "LogsSubscriptionFilters_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/logsSubscriptionFilters/write",
           "origin": null,
@@ -1529,7 +1545,7 @@
         },
         {
           "description": "Create a NetworkFirewallFirewallPolicy. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "NetworkFirewallFirewallPolicies_CreateOrUpdate",
+          "displayName": "NetworkFirewallFirewallPolicies_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/networkFirewallFirewallPolicies/write",
           "origin": null,
@@ -1583,7 +1599,7 @@
         },
         {
           "description": "Create a NetworkFirewallRuleGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "NetworkFirewallRuleGroups_CreateOrUpdate",
+          "displayName": "NetworkFirewallRuleGroups_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/networkFirewallRuleGroups/write",
           "origin": null,
@@ -1637,7 +1653,7 @@
         },
         {
           "description": "Create a OrganizationsAccount. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "OrganizationsAccounts_CreateOrUpdate",
+          "displayName": "OrganizationsAccounts_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/organizationsAccounts/write",
           "origin": null,
@@ -1691,7 +1707,7 @@
         },
         {
           "description": "Create a OrganizationsOrganization. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "OrganizationsOrganizations_CreateOrUpdate",
+          "displayName": "OrganizationsOrganizations_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/organizationsOrganizations/write",
           "origin": null,
@@ -1745,7 +1761,7 @@
         },
         {
           "description": "Create a RdsDBCluster. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "RdsDbClusters_CreateOrUpdate",
+          "displayName": "RdsDbClusters_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/rdsDBClusters/write",
           "origin": null,
@@ -2015,7 +2031,7 @@
         },
         {
           "description": "Create a ApiGatewayRestApi. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "ApiGatewayRestApis_CreateOrUpdate",
+          "displayName": "ApiGatewayRestApis_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/apiGatewayRestApis/write",
           "origin": null,
@@ -2069,7 +2085,7 @@
         },
         {
           "description": "Create a ApiGatewayStage. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "ApiGatewayStages_CreateOrUpdate",
+          "displayName": "ApiGatewayStages_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/apiGatewayStages/write",
           "origin": null,
@@ -2177,7 +2193,7 @@
         },
         {
           "description": "Create a CloudFormationStack. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "CloudFormationStacks_CreateOrUpdate",
+          "displayName": "CloudFormationStacks_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/cloudFormationStacks/write",
           "origin": null,
@@ -2231,7 +2247,7 @@
         },
         {
           "description": "Create a CloudFormationStackSet. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "CloudFormationStackSets_CreateOrUpdate",
+          "displayName": "CloudFormationStackSets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/cloudFormationStackSets/write",
           "origin": null,
@@ -2285,7 +2301,7 @@
         },
         {
           "description": "Create a CloudTrailTrail. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "CloudTrailTrails_CreateOrUpdate",
+          "displayName": "CloudTrailTrails_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/cloudTrailTrails/write",
           "origin": null,
@@ -2339,7 +2355,7 @@
         },
         {
           "description": "Create a CloudWatchAlarm. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "CloudWatchAlarms_CreateOrUpdate",
+          "displayName": "CloudWatchAlarms_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/cloudWatchAlarms/write",
           "origin": null,
@@ -2393,7 +2409,7 @@
         },
         {
           "description": "Create a EcrRepository. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "EcrRepositories_CreateOrUpdate",
+          "displayName": "EcrRepositories_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ecrRepositories/write",
           "origin": null,
@@ -2447,7 +2463,7 @@
         },
         {
           "description": "Create a EcsCluster. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "EcsClusters_CreateOrUpdate",
+          "displayName": "EcsClusters_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ecsClusters/write",
           "origin": null,
@@ -2501,7 +2517,7 @@
         },
         {
           "description": "Create a EcsService. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "EcsServices_CreateOrUpdate",
+          "displayName": "EcsServices_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ecsServices/write",
           "origin": null,
@@ -2555,7 +2571,7 @@
         },
         {
           "description": "Create a EcsTaskDefinition. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "EcsTaskDefinitions_CreateOrUpdate",
+          "displayName": "EcsTaskDefinitions_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/ecsTaskDefinitions/write",
           "origin": null,
@@ -2609,7 +2625,7 @@
         },
         {
           "description": "Create a EfsFileSystem. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "EfsFileSystems_CreateOrUpdate",
+          "displayName": "EfsFileSystems_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/efsFileSystems/write",
           "origin": null,
@@ -2663,7 +2679,7 @@
         },
         {
           "description": "Create a EfsMountTarget. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "EfsMountTargets_CreateOrUpdate",
+          "displayName": "EfsMountTargets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/efsMountTargets/write",
           "origin": null,
@@ -2717,7 +2733,7 @@
         },
         {
           "description": "Create a ElasticBeanstalkEnvironment. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "ElasticBeanstalkEnvironments_CreateOrUpdate",
+          "displayName": "ElasticBeanstalkEnvironments_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/elasticBeanstalkEnvironments/write",
           "origin": null,
@@ -2771,7 +2787,7 @@
         },
         {
           "description": "Create a ElasticLoadBalancingV2Listener. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "ElasticLoadBalancingV2Listeners_CreateOrUpdate",
+          "displayName": "ElasticLoadBalancingV2Listeners_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/elasticLoadBalancingV2Listeners/write",
           "origin": null,
@@ -2825,7 +2841,7 @@
         },
         {
           "description": "Create a ElasticLoadBalancingV2TargetGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "ElasticLoadBalancingV2TargetGroups_CreateOrUpdate",
+          "displayName": "ElasticLoadBalancingV2TargetGroups_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetGroups/write",
           "origin": null,
@@ -2933,7 +2949,7 @@
         },
         {
           "description": "Create a GuardDutyDetector. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "GuardDutyDetectors_CreateOrUpdate",
+          "displayName": "GuardDutyDetectors_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/guardDutyDetectors/write",
           "origin": null,
@@ -2987,7 +3003,7 @@
         },
         {
           "description": "Create a IamGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "IamGroups_CreateOrUpdate",
+          "displayName": "IamGroups_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/iamGroups/write",
           "origin": null,
@@ -3149,7 +3165,7 @@
         },
         {
           "description": "Create a IamServerCertificate. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "IamServerCertificates_CreateOrUpdate",
+          "displayName": "IamServerCertificates_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/iamServerCertificates/write",
           "origin": null,
@@ -3257,7 +3273,7 @@
         },
         {
           "description": "Create a IamVirtualMFADevice. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "IamVirtualMfaDevices_CreateOrUpdate",
+          "displayName": "IamVirtualMfaDevices_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/iamVirtualMFADevices/write",
           "origin": null,
@@ -3311,7 +3327,7 @@
         },
         {
           "description": "Create a KmsKey. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "KmsKeys_CreateOrUpdate",
+          "displayName": "KmsKeys_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/kmsKeys/write",
           "origin": null,
@@ -3365,7 +3381,7 @@
         },
         {
           "description": "Create a LogsMetricFilter. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "LogsMetricFilters_CreateOrUpdate",
+          "displayName": "LogsMetricFilters_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/logsMetricFilters/write",
           "origin": null,
@@ -3419,7 +3435,7 @@
         },
         {
           "description": "Create a MacieAllowList. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "MacieAllowLists_CreateOrUpdate",
+          "displayName": "MacieAllowLists_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/macieAllowLists/write",
           "origin": null,
@@ -3527,7 +3543,7 @@
         },
         {
           "description": "Create a RdsEventSubscription. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "RdsEventSubscriptions_CreateOrUpdate",
+          "displayName": "RdsEventSubscriptions_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/rdsEventSubscriptions/write",
           "origin": null,
@@ -3581,7 +3597,7 @@
         },
         {
           "description": "Create a RedshiftCluster. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "RedshiftClusters_CreateOrUpdate",
+          "displayName": "RedshiftClusters_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/redshiftClusters/write",
           "origin": null,
@@ -3635,7 +3651,7 @@
         },
         {
           "description": "Create a RedshiftClusterParameterGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "RedshiftClusterParameterGroups_CreateOrUpdate",
+          "displayName": "RedshiftClusterParameterGroups_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/redshiftClusterParameterGroups/write",
           "origin": null,
@@ -3689,7 +3705,7 @@
         },
         {
           "description": "Create a Route53HostedZone. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "Route53HostedZones_CreateOrUpdate",
+          "displayName": "Route53HostedZones_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/route53HostedZones/write",
           "origin": null,
@@ -3743,7 +3759,7 @@
         },
         {
           "description": "Create a S3BucketPolicy. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "S3BucketPolicies_CreateOrUpdate",
+          "displayName": "S3BucketPolicies_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/s3BucketPolicies/write",
           "origin": null,
@@ -3797,7 +3813,7 @@
         },
         {
           "description": "Create a SnsTopic. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "SnsTopics_CreateOrUpdate",
+          "displayName": "SnsTopics_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/snsTopics/write",
           "origin": null,
@@ -3851,7 +3867,7 @@
         },
         {
           "description": "Create a SqsQueue. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
-          "displayName": "SqsQueues_CreateOrUpdate",
+          "displayName": "SqsQueues_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/sqsQueues/write",
           "origin": null,
@@ -3870,6 +3886,2798 @@
           "displayName": "SqsQueues_Update",
           "isDataAction": false,
           "name": "Microsoft.AwsConnector/sqsQueues/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accessAnalyzerAnalyzers",
+      "name": "accessAnalyzerAnalyzers",
+      "operations": [
+        {
+          "description": "List AccessAnalyzerAnalyzer resources by subscription ID",
+          "displayName": "AccessAnalyzerAnalyzers_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/accessAnalyzerAnalyzers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AccessAnalyzerAnalyzer resources by resource group",
+          "displayName": "AccessAnalyzerAnalyzers_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/accessAnalyzerAnalyzers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AccessAnalyzerAnalyzer",
+          "displayName": "AccessAnalyzerAnalyzers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/accessAnalyzerAnalyzers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AccessAnalyzerAnalyzer. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "AccessAnalyzerAnalyzers_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/accessAnalyzerAnalyzers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a AccessAnalyzerAnalyzer",
+          "displayName": "AccessAnalyzerAnalyzers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/accessAnalyzerAnalyzers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AccessAnalyzerAnalyzer",
+          "displayName": "AccessAnalyzerAnalyzers_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/accessAnalyzerAnalyzers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "acmCertificateSummaries",
+      "name": "acmCertificateSummaries",
+      "operations": [
+        {
+          "description": "List AcmCertificateSummary resources by subscription ID",
+          "displayName": "AcmCertificateSummaries_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/acmCertificateSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AcmCertificateSummary resources by resource group",
+          "displayName": "AcmCertificateSummaries_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/acmCertificateSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AcmCertificateSummary",
+          "displayName": "AcmCertificateSummaries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/acmCertificateSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AcmCertificateSummary. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "AcmCertificateSummaries_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/acmCertificateSummaries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a AcmCertificateSummary",
+          "displayName": "AcmCertificateSummaries_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/acmCertificateSummaries/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AcmCertificateSummary",
+          "displayName": "AcmCertificateSummaries_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/acmCertificateSummaries/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "appSyncGraphqlApis",
+      "name": "appSyncGraphqlApis",
+      "operations": [
+        {
+          "description": "List AppSyncGraphqlApi resources by subscription ID",
+          "displayName": "AppSyncGraphqlApis_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/appSyncGraphqlApis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AppSyncGraphqlApi resources by resource group",
+          "displayName": "AppSyncGraphqlApis_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/appSyncGraphqlApis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AppSyncGraphqlApi",
+          "displayName": "AppSyncGraphqlApis_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/appSyncGraphqlApis/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AppSyncGraphqlApi. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "AppSyncGraphqlApis_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/appSyncGraphqlApis/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a AppSyncGraphqlApi",
+          "displayName": "AppSyncGraphqlApis_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/appSyncGraphqlApis/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AppSyncGraphqlApi",
+          "displayName": "AppSyncGraphqlApis_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/appSyncGraphqlApis/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "autoScalingAutoScalingGroups",
+      "name": "autoScalingAutoScalingGroups",
+      "operations": [
+        {
+          "description": "List AutoScalingAutoScalingGroup resources by subscription ID",
+          "displayName": "AutoScalingAutoScalingGroups_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/autoScalingAutoScalingGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AutoScalingAutoScalingGroup resources by resource group",
+          "displayName": "AutoScalingAutoScalingGroups_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/autoScalingAutoScalingGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AutoScalingAutoScalingGroup",
+          "displayName": "AutoScalingAutoScalingGroups_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/autoScalingAutoScalingGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AutoScalingAutoScalingGroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "AutoScalingAutoScalingGroups_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/autoScalingAutoScalingGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a AutoScalingAutoScalingGroup",
+          "displayName": "AutoScalingAutoScalingGroups_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/autoScalingAutoScalingGroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AutoScalingAutoScalingGroup",
+          "displayName": "AutoScalingAutoScalingGroups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/autoScalingAutoScalingGroups/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "cloudFrontDistributions",
+      "name": "cloudFrontDistributions",
+      "operations": [
+        {
+          "description": "List CloudFrontDistribution resources by subscription ID",
+          "displayName": "CloudFrontDistributions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/cloudFrontDistributions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List CloudFrontDistribution resources by resource group",
+          "displayName": "CloudFrontDistributions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/cloudFrontDistributions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CloudFrontDistribution",
+          "displayName": "CloudFrontDistributions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/cloudFrontDistributions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CloudFrontDistribution. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "CloudFrontDistributions_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/cloudFrontDistributions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CloudFrontDistribution",
+          "displayName": "CloudFrontDistributions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/cloudFrontDistributions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a CloudFrontDistribution",
+          "displayName": "CloudFrontDistributions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/cloudFrontDistributions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "codeBuildProjects",
+      "name": "codeBuildProjects",
+      "operations": [
+        {
+          "description": "List CodeBuildProject resources by subscription ID",
+          "displayName": "CodeBuildProjects_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildProjects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List CodeBuildProject resources by resource group",
+          "displayName": "CodeBuildProjects_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildProjects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CodeBuildProject",
+          "displayName": "CodeBuildProjects_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildProjects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CodeBuildProject. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "CodeBuildProjects_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildProjects/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CodeBuildProject",
+          "displayName": "CodeBuildProjects_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildProjects/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a CodeBuildProject",
+          "displayName": "CodeBuildProjects_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildProjects/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "codeBuildSourceCredentialsInfos",
+      "name": "codeBuildSourceCredentialsInfos",
+      "operations": [
+        {
+          "description": "List CodeBuildSourceCredentialsInfo resources by subscription ID",
+          "displayName": "CodeBuildSourceCredentialsInfos_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildSourceCredentialsInfos/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List CodeBuildSourceCredentialsInfo resources by resource group",
+          "displayName": "CodeBuildSourceCredentialsInfos_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildSourceCredentialsInfos/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CodeBuildSourceCredentialsInfo",
+          "displayName": "CodeBuildSourceCredentialsInfos_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildSourceCredentialsInfos/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CodeBuildSourceCredentialsInfo. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "CodeBuildSourceCredentialsInfos_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildSourceCredentialsInfos/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CodeBuildSourceCredentialsInfo",
+          "displayName": "CodeBuildSourceCredentialsInfos_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildSourceCredentialsInfos/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a CodeBuildSourceCredentialsInfo",
+          "displayName": "CodeBuildSourceCredentialsInfos_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/codeBuildSourceCredentialsInfos/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configServiceConfigurationRecorders",
+      "name": "configServiceConfigurationRecorders",
+      "operations": [
+        {
+          "description": "List ConfigServiceConfigurationRecorder resources by subscription ID",
+          "displayName": "ConfigServiceConfigurationRecorders_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ConfigServiceConfigurationRecorder resources by resource group",
+          "displayName": "ConfigServiceConfigurationRecorders_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConfigServiceConfigurationRecorder",
+          "displayName": "ConfigServiceConfigurationRecorders_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConfigServiceConfigurationRecorder. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "ConfigServiceConfigurationRecorders_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorders/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConfigServiceConfigurationRecorder",
+          "displayName": "ConfigServiceConfigurationRecorders_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorders/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConfigServiceConfigurationRecorder",
+          "displayName": "ConfigServiceConfigurationRecorders_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorders/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configServiceConfigurationRecorderStatuses",
+      "name": "configServiceConfigurationRecorderStatuses",
+      "operations": [
+        {
+          "description": "List ConfigServiceConfigurationRecorderStatus resources by subscription ID",
+          "displayName": "ConfigServiceConfigurationRecorderStatuses_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorderStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ConfigServiceConfigurationRecorderStatus resources by resource group",
+          "displayName": "ConfigServiceConfigurationRecorderStatuses_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorderStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConfigServiceConfigurationRecorderStatus",
+          "displayName": "ConfigServiceConfigurationRecorderStatuses_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorderStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConfigServiceConfigurationRecorderStatus. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "ConfigServiceConfigurationRecorderStatuses_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorderStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConfigServiceConfigurationRecorderStatus",
+          "displayName": "ConfigServiceConfigurationRecorderStatuses_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorderStatuses/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConfigServiceConfigurationRecorderStatus",
+          "displayName": "ConfigServiceConfigurationRecorderStatuses_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceConfigurationRecorderStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configServiceDeliveryChannels",
+      "name": "configServiceDeliveryChannels",
+      "operations": [
+        {
+          "description": "List ConfigServiceDeliveryChannel resources by subscription ID",
+          "displayName": "ConfigServiceDeliveryChannels_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceDeliveryChannels/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ConfigServiceDeliveryChannel resources by resource group",
+          "displayName": "ConfigServiceDeliveryChannels_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceDeliveryChannels/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConfigServiceDeliveryChannel",
+          "displayName": "ConfigServiceDeliveryChannels_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceDeliveryChannels/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConfigServiceDeliveryChannel. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "ConfigServiceDeliveryChannels_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceDeliveryChannels/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConfigServiceDeliveryChannel",
+          "displayName": "ConfigServiceDeliveryChannels_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceDeliveryChannels/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConfigServiceDeliveryChannel",
+          "displayName": "ConfigServiceDeliveryChannels_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/configServiceDeliveryChannels/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "databaseMigrationServiceReplicationInstances",
+      "name": "databaseMigrationServiceReplicationInstances",
+      "operations": [
+        {
+          "description": "List DatabaseMigrationServiceReplicationInstance resources by subscription ID",
+          "displayName": "DatabaseMigrationServiceReplicationInstances_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/databaseMigrationServiceReplicationInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List DatabaseMigrationServiceReplicationInstance resources by resource group",
+          "displayName": "DatabaseMigrationServiceReplicationInstances_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/databaseMigrationServiceReplicationInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DatabaseMigrationServiceReplicationInstance",
+          "displayName": "DatabaseMigrationServiceReplicationInstances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/databaseMigrationServiceReplicationInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a DatabaseMigrationServiceReplicationInstance. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "DatabaseMigrationServiceReplicationInstances_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/databaseMigrationServiceReplicationInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DatabaseMigrationServiceReplicationInstance",
+          "displayName": "DatabaseMigrationServiceReplicationInstances_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/databaseMigrationServiceReplicationInstances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a DatabaseMigrationServiceReplicationInstance",
+          "displayName": "DatabaseMigrationServiceReplicationInstances_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/databaseMigrationServiceReplicationInstances/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "daxClusters",
+      "name": "daxClusters",
+      "operations": [
+        {
+          "description": "List DaxCluster resources by subscription ID",
+          "displayName": "DaxClusters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/daxClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List DaxCluster resources by resource group",
+          "displayName": "DaxClusters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/daxClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DaxCluster",
+          "displayName": "DaxClusters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/daxClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a DaxCluster. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "DaxClusters_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/daxClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DaxCluster",
+          "displayName": "DaxClusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/daxClusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a DaxCluster",
+          "displayName": "DaxClusters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/daxClusters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "dynamoDBContinuousBackupsDescriptions",
+      "name": "dynamoDBContinuousBackupsDescriptions",
+      "operations": [
+        {
+          "description": "List DynamoDBContinuousBackupsDescription resources by subscription ID",
+          "displayName": "DynamoDbContinuousBackupsDescriptions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/dynamoDBContinuousBackupsDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List DynamoDBContinuousBackupsDescription resources by resource group",
+          "displayName": "DynamoDbContinuousBackupsDescriptions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/dynamoDBContinuousBackupsDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DynamoDBContinuousBackupsDescription",
+          "displayName": "DynamoDbContinuousBackupsDescriptions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/dynamoDBContinuousBackupsDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a DynamoDBContinuousBackupsDescription. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "DynamoDbContinuousBackupsDescriptions_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/dynamoDBContinuousBackupsDescriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DynamoDBContinuousBackupsDescription",
+          "displayName": "DynamoDbContinuousBackupsDescriptions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/dynamoDBContinuousBackupsDescriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a DynamoDBContinuousBackupsDescription",
+          "displayName": "DynamoDbContinuousBackupsDescriptions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/dynamoDBContinuousBackupsDescriptions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ec2AccountAttributes",
+      "name": "ec2AccountAttributes",
+      "operations": [
+        {
+          "description": "List Ec2AccountAttribute resources by subscription ID",
+          "displayName": "Ec2AccountAttributes_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2AccountAttributes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Ec2AccountAttribute resources by resource group",
+          "displayName": "Ec2AccountAttributes_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2AccountAttributes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Ec2AccountAttribute",
+          "displayName": "Ec2AccountAttributes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2AccountAttributes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Ec2AccountAttribute. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Ec2AccountAttributes_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2AccountAttributes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Ec2AccountAttribute",
+          "displayName": "Ec2AccountAttributes_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2AccountAttributes/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Ec2AccountAttribute",
+          "displayName": "Ec2AccountAttributes_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2AccountAttributes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ec2Addresses",
+      "name": "ec2Addresses",
+      "operations": [
+        {
+          "description": "List Ec2Address resources by subscription ID",
+          "displayName": "Ec2Addresses_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Addresses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Ec2Address resources by resource group",
+          "displayName": "Ec2Addresses_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Addresses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Ec2Address",
+          "displayName": "Ec2Addresses_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Addresses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Ec2Address. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Ec2Addresses_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Addresses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Ec2Address",
+          "displayName": "Ec2Addresses_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Addresses/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Ec2Address",
+          "displayName": "Ec2Addresses_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Addresses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ec2FlowLogs",
+      "name": "ec2FlowLogs",
+      "operations": [
+        {
+          "description": "List Ec2FlowLog resources by subscription ID",
+          "displayName": "Ec2FlowLogs_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2FlowLogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Ec2FlowLog resources by resource group",
+          "displayName": "Ec2FlowLogs_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2FlowLogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Ec2FlowLog",
+          "displayName": "Ec2FlowLogs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2FlowLogs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Ec2FlowLog. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Ec2FlowLogs_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2FlowLogs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Ec2FlowLog",
+          "displayName": "Ec2FlowLogs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2FlowLogs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Ec2FlowLog",
+          "displayName": "Ec2FlowLogs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2FlowLogs/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ec2Images",
+      "name": "ec2Images",
+      "operations": [
+        {
+          "description": "List Ec2Image resources by subscription ID",
+          "displayName": "Ec2Images_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Ec2Image resources by resource group",
+          "displayName": "Ec2Images_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Ec2Image",
+          "displayName": "Ec2Images_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Ec2Image. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Ec2Images_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Images/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Ec2Image",
+          "displayName": "Ec2Images_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Images/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Ec2Image",
+          "displayName": "Ec2Images_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Images/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ec2Ipams",
+      "name": "ec2Ipams",
+      "operations": [
+        {
+          "description": "List Ec2Ipam resources by subscription ID",
+          "displayName": "Ec2Ipams_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Ipams/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Ec2Ipam resources by resource group",
+          "displayName": "Ec2Ipams_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Ipams/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Ec2Ipam",
+          "displayName": "Ec2Ipams_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Ipams/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Ec2Ipam. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Ec2Ipams_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Ipams/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Ec2Ipam",
+          "displayName": "Ec2Ipams_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Ipams/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Ec2Ipam",
+          "displayName": "Ec2Ipams_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Ipams/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ec2Snapshots",
+      "name": "ec2Snapshots",
+      "operations": [
+        {
+          "description": "List Ec2Snapshot resources by subscription ID",
+          "displayName": "Ec2Snapshots_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Snapshots/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Ec2Snapshot resources by resource group",
+          "displayName": "Ec2Snapshots_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Snapshots/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Ec2Snapshot",
+          "displayName": "Ec2Snapshots_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Snapshots/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Ec2Snapshot. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Ec2Snapshots_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Snapshots/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Ec2Snapshot",
+          "displayName": "Ec2Snapshots_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Snapshots/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Ec2Snapshot",
+          "displayName": "Ec2Snapshots_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ec2Snapshots/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ecrImageDetails",
+      "name": "ecrImageDetails",
+      "operations": [
+        {
+          "description": "List EcrImageDetail resources by subscription ID",
+          "displayName": "EcrImageDetails_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ecrImageDetails/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List EcrImageDetail resources by resource group",
+          "displayName": "EcrImageDetails_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ecrImageDetails/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a EcrImageDetail",
+          "displayName": "EcrImageDetails_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ecrImageDetails/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a EcrImageDetail. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "EcrImageDetails_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ecrImageDetails/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a EcrImageDetail",
+          "displayName": "EcrImageDetails_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ecrImageDetails/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a EcrImageDetail",
+          "displayName": "EcrImageDetails_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ecrImageDetails/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eksClusters",
+      "name": "eksClusters",
+      "operations": [
+        {
+          "description": "List EksCluster resources by parent",
+          "displayName": "EksClusters_List",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a EksCluster",
+          "displayName": "EksClusters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a EksCluster. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "EksClusters_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a EksCluster",
+          "displayName": "EksClusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksClusters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "eksNodegroups",
+      "name": "eksNodegroups",
+      "operations": [
+        {
+          "description": "List EksNodegroup resources by subscription ID",
+          "displayName": "EksNodegroups_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksNodegroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List EksNodegroup resources by resource group",
+          "displayName": "EksNodegroups_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksNodegroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a EksNodegroup",
+          "displayName": "EksNodegroups_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksNodegroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a EksNodegroup. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "EksNodegroups_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksNodegroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a EksNodegroup",
+          "displayName": "EksNodegroups_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksNodegroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a EksNodegroup",
+          "displayName": "EksNodegroups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/eksNodegroups/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "elasticBeanstalkApplications",
+      "name": "elasticBeanstalkApplications",
+      "operations": [
+        {
+          "description": "List ElasticBeanstalkApplication resources by subscription ID",
+          "displayName": "ElasticBeanstalkApplications_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkApplications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ElasticBeanstalkApplication resources by resource group",
+          "displayName": "ElasticBeanstalkApplications_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkApplications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ElasticBeanstalkApplication",
+          "displayName": "ElasticBeanstalkApplications_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkApplications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ElasticBeanstalkApplication. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "ElasticBeanstalkApplications_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkApplications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ElasticBeanstalkApplication",
+          "displayName": "ElasticBeanstalkApplications_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkApplications/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ElasticBeanstalkApplication",
+          "displayName": "ElasticBeanstalkApplications_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkApplications/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "elasticBeanstalkConfigurationTemplates",
+      "name": "elasticBeanstalkConfigurationTemplates",
+      "operations": [
+        {
+          "description": "List ElasticBeanstalkConfigurationTemplate resources by subscription ID",
+          "displayName": "ElasticBeanstalkConfigurationTemplates_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkConfigurationTemplates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ElasticBeanstalkConfigurationTemplate resources by resource group",
+          "displayName": "ElasticBeanstalkConfigurationTemplates_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkConfigurationTemplates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ElasticBeanstalkConfigurationTemplate",
+          "displayName": "ElasticBeanstalkConfigurationTemplates_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkConfigurationTemplates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ElasticBeanstalkConfigurationTemplate. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "ElasticBeanstalkConfigurationTemplates_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkConfigurationTemplates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ElasticBeanstalkConfigurationTemplate",
+          "displayName": "ElasticBeanstalkConfigurationTemplates_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkConfigurationTemplates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ElasticBeanstalkConfigurationTemplate",
+          "displayName": "ElasticBeanstalkConfigurationTemplates_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticBeanstalkConfigurationTemplates/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "elasticLoadBalancingV2TargetHealthDescriptions",
+      "name": "elasticLoadBalancingV2TargetHealthDescriptions",
+      "operations": [
+        {
+          "description": "List ElasticLoadBalancingv2TargetHealthDescription resources by subscription ID",
+          "displayName": "ElasticLoadBalancingv2TargetHealthDescriptions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetHealthDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ElasticLoadBalancingv2TargetHealthDescription resources by resource group",
+          "displayName": "ElasticLoadBalancingv2TargetHealthDescriptions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetHealthDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ElasticLoadBalancingv2TargetHealthDescription",
+          "displayName": "ElasticLoadBalancingv2TargetHealthDescriptions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetHealthDescriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ElasticLoadBalancingv2TargetHealthDescription. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "ElasticLoadBalancingv2TargetHealthDescriptions_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetHealthDescriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ElasticLoadBalancingv2TargetHealthDescription",
+          "displayName": "ElasticLoadBalancingv2TargetHealthDescriptions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetHealthDescriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ElasticLoadBalancingv2TargetHealthDescription",
+          "displayName": "ElasticLoadBalancingv2TargetHealthDescriptions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/elasticLoadBalancingV2TargetHealthDescriptions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "emrClusters",
+      "name": "emrClusters",
+      "operations": [
+        {
+          "description": "List EmrCluster resources by subscription ID",
+          "displayName": "EmrClusters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/emrClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List EmrCluster resources by resource group",
+          "displayName": "EmrClusters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/emrClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a EmrCluster",
+          "displayName": "EmrClusters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/emrClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a EmrCluster. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "EmrClusters_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/emrClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a EmrCluster",
+          "displayName": "EmrClusters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/emrClusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a EmrCluster",
+          "displayName": "EmrClusters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/emrClusters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "iamAccessKeyLastUseds",
+      "name": "iamAccessKeyLastUseds",
+      "operations": [
+        {
+          "description": "List IamAccessKeyLastUsed resources by subscription ID",
+          "displayName": "IamAccessKeyLastUseds_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyLastUseds/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IamAccessKeyLastUsed resources by resource group",
+          "displayName": "IamAccessKeyLastUseds_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyLastUseds/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IamAccessKeyLastUsed",
+          "displayName": "IamAccessKeyLastUseds_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyLastUseds/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IamAccessKeyLastUsed. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "IamAccessKeyLastUseds_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyLastUseds/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IamAccessKeyLastUsed",
+          "displayName": "IamAccessKeyLastUseds_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyLastUseds/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IamAccessKeyLastUsed",
+          "displayName": "IamAccessKeyLastUseds_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyLastUseds/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "iamAccessKeyMetadata",
+      "name": "iamAccessKeyMetadata",
+      "operations": [
+        {
+          "description": "List IamAccessKeyMetadata resources by subscription ID",
+          "displayName": "IamAccessKeyMetadataInfo_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyMetadata/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IamAccessKeyMetadata resources by resource group",
+          "displayName": "IamAccessKeyMetadataInfo_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyMetadata/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IamAccessKeyMetadata",
+          "displayName": "IamAccessKeyMetadataInfo_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyMetadata/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IamAccessKeyMetadata. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "IamAccessKeyMetadataInfo_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyMetadata/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IamAccessKeyMetadata",
+          "displayName": "IamAccessKeyMetadataInfo_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyMetadata/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IamAccessKeyMetadata",
+          "displayName": "IamAccessKeyMetadataInfo_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamAccessKeyMetadata/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "iamMFADevices",
+      "name": "iamMFADevices",
+      "operations": [
+        {
+          "description": "List IamMFADevice resources by subscription ID",
+          "displayName": "IamMfaDevices_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamMFADevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IamMFADevice resources by resource group",
+          "displayName": "IamMfaDevices_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamMFADevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IamMFADevice",
+          "displayName": "IamMfaDevices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamMFADevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IamMFADevice. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "IamMfaDevices_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamMFADevices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IamMFADevice",
+          "displayName": "IamMfaDevices_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamMFADevices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IamMFADevice",
+          "displayName": "IamMfaDevices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamMFADevices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "iamPasswordPolicies",
+      "name": "iamPasswordPolicies",
+      "operations": [
+        {
+          "description": "List IamPasswordPolicy resources by subscription ID",
+          "displayName": "IamPasswordPolicies_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPasswordPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IamPasswordPolicy resources by resource group",
+          "displayName": "IamPasswordPolicies_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPasswordPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IamPasswordPolicy",
+          "displayName": "IamPasswordPolicies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPasswordPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IamPasswordPolicy. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "IamPasswordPolicies_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPasswordPolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IamPasswordPolicy",
+          "displayName": "IamPasswordPolicies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPasswordPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IamPasswordPolicy",
+          "displayName": "IamPasswordPolicies_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPasswordPolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "iamPolicyVersions",
+      "name": "iamPolicyVersions",
+      "operations": [
+        {
+          "description": "List IamPolicyVersion resources by subscription ID",
+          "displayName": "IamPolicyVersions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPolicyVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IamPolicyVersion resources by resource group",
+          "displayName": "IamPolicyVersions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPolicyVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IamPolicyVersion",
+          "displayName": "IamPolicyVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPolicyVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IamPolicyVersion. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "IamPolicyVersions_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPolicyVersions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IamPolicyVersion",
+          "displayName": "IamPolicyVersions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPolicyVersions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IamPolicyVersion",
+          "displayName": "IamPolicyVersions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamPolicyVersions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "iamRoles",
+      "name": "iamRoles",
+      "operations": [
+        {
+          "description": "List IamRole resources by subscription ID",
+          "displayName": "IamRoles_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamRoles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List IamRole resources by resource group",
+          "displayName": "IamRoles_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamRoles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a IamRole",
+          "displayName": "IamRoles_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamRoles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a IamRole. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "IamRoles_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamRoles/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a IamRole",
+          "displayName": "IamRoles_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamRoles/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a IamRole",
+          "displayName": "IamRoles_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/iamRoles/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "kmsAliases",
+      "name": "kmsAliases",
+      "operations": [
+        {
+          "description": "List KmsAlias resources by subscription ID",
+          "displayName": "KmsAliases_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/kmsAliases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List KmsAlias resources by resource group",
+          "displayName": "KmsAliases_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/kmsAliases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a KmsAlias",
+          "displayName": "KmsAliases_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/kmsAliases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a KmsAlias. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "KmsAliases_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/kmsAliases/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a KmsAlias",
+          "displayName": "KmsAliases_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/kmsAliases/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a KmsAlias",
+          "displayName": "KmsAliases_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/kmsAliases/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "lambdaFunctionCodeLocations",
+      "name": "lambdaFunctionCodeLocations",
+      "operations": [
+        {
+          "description": "List LambdaFunctionCodeLocation resources by subscription ID",
+          "displayName": "LambdaFunctionCodeLocations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/lambdaFunctionCodeLocations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List LambdaFunctionCodeLocation resources by resource group",
+          "displayName": "LambdaFunctionCodeLocations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/lambdaFunctionCodeLocations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a LambdaFunctionCodeLocation",
+          "displayName": "LambdaFunctionCodeLocations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/lambdaFunctionCodeLocations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a LambdaFunctionCodeLocation. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "LambdaFunctionCodeLocations_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/lambdaFunctionCodeLocations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a LambdaFunctionCodeLocation",
+          "displayName": "LambdaFunctionCodeLocations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/lambdaFunctionCodeLocations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a LambdaFunctionCodeLocation",
+          "displayName": "LambdaFunctionCodeLocations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/lambdaFunctionCodeLocations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "macie2JobSummaries",
+      "name": "macie2JobSummaries",
+      "operations": [
+        {
+          "description": "List Macie2JobSummary resources by subscription ID",
+          "displayName": "Macie2JobSummaries_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/macie2JobSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Macie2JobSummary resources by resource group",
+          "displayName": "Macie2JobSummaries_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/macie2JobSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Macie2JobSummary",
+          "displayName": "Macie2JobSummaries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/macie2JobSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Macie2JobSummary. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Macie2JobSummaries_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/macie2JobSummaries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Macie2JobSummary",
+          "displayName": "Macie2JobSummaries_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/macie2JobSummaries/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Macie2JobSummary",
+          "displayName": "Macie2JobSummaries_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/macie2JobSummaries/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "openSearchDomainStatuses",
+      "name": "openSearchDomainStatuses",
+      "operations": [
+        {
+          "description": "List OpenSearchDomainStatus resources by subscription ID",
+          "displayName": "OpenSearchDomainStatuses_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/openSearchDomainStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List OpenSearchDomainStatus resources by resource group",
+          "displayName": "OpenSearchDomainStatuses_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/openSearchDomainStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a OpenSearchDomainStatus",
+          "displayName": "OpenSearchDomainStatuses_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/openSearchDomainStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a OpenSearchDomainStatus. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "OpenSearchDomainStatuses_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/openSearchDomainStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a OpenSearchDomainStatus",
+          "displayName": "OpenSearchDomainStatuses_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/openSearchDomainStatuses/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a OpenSearchDomainStatus",
+          "displayName": "OpenSearchDomainStatuses_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/openSearchDomainStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "rdsDBSnapshots",
+      "name": "rdsDBSnapshots",
+      "operations": [
+        {
+          "description": "List RdsDBSnapshot resources by subscription ID",
+          "displayName": "RdsDbSnapshots_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshots/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RdsDBSnapshot resources by resource group",
+          "displayName": "RdsDbSnapshots_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshots/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RdsDBSnapshot",
+          "displayName": "RdsDbSnapshots_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshots/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RdsDBSnapshot. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "RdsDbSnapshots_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshots/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a RdsDBSnapshot",
+          "displayName": "RdsDbSnapshots_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshots/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a RdsDBSnapshot",
+          "displayName": "RdsDbSnapshots_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshots/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "rdsDBSnapshotAttributesResults",
+      "name": "rdsDBSnapshotAttributesResults",
+      "operations": [
+        {
+          "description": "List RdsDBSnapshotAttributesResult resources by subscription ID",
+          "displayName": "RdsDbSnapshotAttributesResults_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshotAttributesResults/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RdsDBSnapshotAttributesResult resources by resource group",
+          "displayName": "RdsDbSnapshotAttributesResults_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshotAttributesResults/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RdsDBSnapshotAttributesResult",
+          "displayName": "RdsDbSnapshotAttributesResults_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshotAttributesResults/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RdsDBSnapshotAttributesResult. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "RdsDbSnapshotAttributesResults_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshotAttributesResults/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a RdsDBSnapshotAttributesResult",
+          "displayName": "RdsDbSnapshotAttributesResults_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshotAttributesResults/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a RdsDBSnapshotAttributesResult",
+          "displayName": "RdsDbSnapshotAttributesResults_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsDBSnapshotAttributesResults/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "rdsExportTasks",
+      "name": "rdsExportTasks",
+      "operations": [
+        {
+          "description": "List RdsExportTask resources by subscription ID",
+          "displayName": "RdsExportTasks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsExportTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RdsExportTask resources by resource group",
+          "displayName": "RdsExportTasks_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsExportTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RdsExportTask",
+          "displayName": "RdsExportTasks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsExportTasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RdsExportTask. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "RdsExportTasks_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsExportTasks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a RdsExportTask",
+          "displayName": "RdsExportTasks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsExportTasks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a RdsExportTask",
+          "displayName": "RdsExportTasks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/rdsExportTasks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "route53DomainsDomainSummaries",
+      "name": "route53DomainsDomainSummaries",
+      "operations": [
+        {
+          "description": "List Route53DomainsDomainSummary resources by subscription ID",
+          "displayName": "Route53DomainsDomainSummaries_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53DomainsDomainSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Route53DomainsDomainSummary resources by resource group",
+          "displayName": "Route53DomainsDomainSummaries_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53DomainsDomainSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Route53DomainsDomainSummary",
+          "displayName": "Route53DomainsDomainSummaries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53DomainsDomainSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Route53DomainsDomainSummary. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Route53DomainsDomainSummaries_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53DomainsDomainSummaries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Route53DomainsDomainSummary",
+          "displayName": "Route53DomainsDomainSummaries_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53DomainsDomainSummaries/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Route53DomainsDomainSummary",
+          "displayName": "Route53DomainsDomainSummaries_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53DomainsDomainSummaries/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "route53ResourceRecordSets",
+      "name": "route53ResourceRecordSets",
+      "operations": [
+        {
+          "description": "List Route53ResourceRecordSet resources by subscription ID",
+          "displayName": "Route53ResourceRecordSets_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53ResourceRecordSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Route53ResourceRecordSet resources by resource group",
+          "displayName": "Route53ResourceRecordSets_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53ResourceRecordSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Route53ResourceRecordSet",
+          "displayName": "Route53ResourceRecordSets_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53ResourceRecordSets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Route53ResourceRecordSet. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Route53ResourceRecordSets_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53ResourceRecordSets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Route53ResourceRecordSet",
+          "displayName": "Route53ResourceRecordSets_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53ResourceRecordSets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Route53ResourceRecordSet",
+          "displayName": "Route53ResourceRecordSets_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/route53ResourceRecordSets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "s3ControlMultiRegionAccessPointPolicyDocuments",
+      "name": "s3ControlMultiRegionAccessPointPolicyDocuments",
+      "operations": [
+        {
+          "description": "List S3ControlMultiRegionAccessPointPolicyDocument resources by subscription ID",
+          "displayName": "S3ControlMultiRegionAccessPointPolicyDocuments_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3ControlMultiRegionAccessPointPolicyDocuments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List S3ControlMultiRegionAccessPointPolicyDocument resources by resource group",
+          "displayName": "S3ControlMultiRegionAccessPointPolicyDocuments_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3ControlMultiRegionAccessPointPolicyDocuments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a S3ControlMultiRegionAccessPointPolicyDocument",
+          "displayName": "S3ControlMultiRegionAccessPointPolicyDocuments_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3ControlMultiRegionAccessPointPolicyDocuments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a S3ControlMultiRegionAccessPointPolicyDocument. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "S3ControlMultiRegionAccessPointPolicyDocuments_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3ControlMultiRegionAccessPointPolicyDocuments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a S3ControlMultiRegionAccessPointPolicyDocument",
+          "displayName": "S3ControlMultiRegionAccessPointPolicyDocuments_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3ControlMultiRegionAccessPointPolicyDocuments/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a S3ControlMultiRegionAccessPointPolicyDocument",
+          "displayName": "S3ControlMultiRegionAccessPointPolicyDocuments_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3ControlMultiRegionAccessPointPolicyDocuments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sageMakerNotebookInstanceSummaries",
+      "name": "sageMakerNotebookInstanceSummaries",
+      "operations": [
+        {
+          "description": "List SageMakerNotebookInstanceSummary resources by subscription ID",
+          "displayName": "SageMakerNotebookInstanceSummaries_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/sageMakerNotebookInstanceSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SageMakerNotebookInstanceSummary resources by resource group",
+          "displayName": "SageMakerNotebookInstanceSummaries_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/sageMakerNotebookInstanceSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SageMakerNotebookInstanceSummary",
+          "displayName": "SageMakerNotebookInstanceSummaries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/sageMakerNotebookInstanceSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SageMakerNotebookInstanceSummary. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SageMakerNotebookInstanceSummaries_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/sageMakerNotebookInstanceSummaries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SageMakerNotebookInstanceSummary",
+          "displayName": "SageMakerNotebookInstanceSummaries_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/sageMakerNotebookInstanceSummaries/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SageMakerNotebookInstanceSummary",
+          "displayName": "SageMakerNotebookInstanceSummaries_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/sageMakerNotebookInstanceSummaries/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "secretsManagerResourcePolicies",
+      "name": "secretsManagerResourcePolicies",
+      "operations": [
+        {
+          "description": "List SecretsManagerResourcePolicy resources by subscription ID",
+          "displayName": "SecretsManagerResourcePolicies_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerResourcePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SecretsManagerResourcePolicy resources by resource group",
+          "displayName": "SecretsManagerResourcePolicies_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerResourcePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SecretsManagerResourcePolicy",
+          "displayName": "SecretsManagerResourcePolicies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerResourcePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SecretsManagerResourcePolicy. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SecretsManagerResourcePolicies_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerResourcePolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SecretsManagerResourcePolicy",
+          "displayName": "SecretsManagerResourcePolicies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerResourcePolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SecretsManagerResourcePolicy",
+          "displayName": "SecretsManagerResourcePolicies_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerResourcePolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "secretsManagerSecrets",
+      "name": "secretsManagerSecrets",
+      "operations": [
+        {
+          "description": "List SecretsManagerSecret resources by subscription ID",
+          "displayName": "SecretsManagerSecrets_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerSecrets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SecretsManagerSecret resources by resource group",
+          "displayName": "SecretsManagerSecrets_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerSecrets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SecretsManagerSecret",
+          "displayName": "SecretsManagerSecrets_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerSecrets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SecretsManagerSecret. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SecretsManagerSecrets_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerSecrets/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SecretsManagerSecret",
+          "displayName": "SecretsManagerSecrets_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerSecrets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SecretsManagerSecret",
+          "displayName": "SecretsManagerSecrets_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/secretsManagerSecrets/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "snsSubscriptions",
+      "name": "snsSubscriptions",
+      "operations": [
+        {
+          "description": "List SnsSubscription resources by subscription ID",
+          "displayName": "SnsSubscriptions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/snsSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SnsSubscription resources by resource group",
+          "displayName": "SnsSubscriptions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/snsSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SnsSubscription",
+          "displayName": "SnsSubscriptions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/snsSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SnsSubscription. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SnsSubscriptions_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/snsSubscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SnsSubscription",
+          "displayName": "SnsSubscriptions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/snsSubscriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SnsSubscription",
+          "displayName": "SnsSubscriptions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/snsSubscriptions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ssmInstanceInformations",
+      "name": "ssmInstanceInformations",
+      "operations": [
+        {
+          "description": "List SsmInstanceInformation resources by subscription ID",
+          "displayName": "SsmInstanceInformations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmInstanceInformations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SsmInstanceInformation resources by resource group",
+          "displayName": "SsmInstanceInformations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmInstanceInformations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SsmInstanceInformation",
+          "displayName": "SsmInstanceInformations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmInstanceInformations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SsmInstanceInformation. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SsmInstanceInformations_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmInstanceInformations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SsmInstanceInformation",
+          "displayName": "SsmInstanceInformations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmInstanceInformations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SsmInstanceInformation",
+          "displayName": "SsmInstanceInformations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmInstanceInformations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ssmParameters",
+      "name": "ssmParameters",
+      "operations": [
+        {
+          "description": "List SsmParameter resources by subscription ID",
+          "displayName": "SsmParameters_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmParameters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SsmParameter resources by resource group",
+          "displayName": "SsmParameters_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmParameters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SsmParameter",
+          "displayName": "SsmParameters_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmParameters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SsmParameter. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SsmParameters_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmParameters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SsmParameter",
+          "displayName": "SsmParameters_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmParameters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SsmParameter",
+          "displayName": "SsmParameters_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmParameters/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ssmResourceComplianceSummaryItems",
+      "name": "ssmResourceComplianceSummaryItems",
+      "operations": [
+        {
+          "description": "List SsmResourceComplianceSummaryItem resources by subscription ID",
+          "displayName": "SsmResourceComplianceSummaryItems_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmResourceComplianceSummaryItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SsmResourceComplianceSummaryItem resources by resource group",
+          "displayName": "SsmResourceComplianceSummaryItems_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmResourceComplianceSummaryItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SsmResourceComplianceSummaryItem",
+          "displayName": "SsmResourceComplianceSummaryItems_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmResourceComplianceSummaryItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SsmResourceComplianceSummaryItem. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "SsmResourceComplianceSummaryItems_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmResourceComplianceSummaryItems/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SsmResourceComplianceSummaryItem",
+          "displayName": "SsmResourceComplianceSummaryItems_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmResourceComplianceSummaryItems/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SsmResourceComplianceSummaryItem",
+          "displayName": "SsmResourceComplianceSummaryItems_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/ssmResourceComplianceSummaryItems/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "wafWebACLSummaries",
+      "name": "wafWebACLSummaries",
+      "operations": [
+        {
+          "description": "List WafWebACLSummary resources by subscription ID",
+          "displayName": "WafWebAclSummaries_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafWebACLSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List WafWebACLSummary resources by resource group",
+          "displayName": "WafWebAclSummaries_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafWebACLSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a WafWebACLSummary",
+          "displayName": "WafWebAclSummaries_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafWebACLSummaries/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a WafWebACLSummary. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "WafWebAclSummaries_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafWebACLSummaries/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a WafWebACLSummary",
+          "displayName": "WafWebAclSummaries_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafWebACLSummaries/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a WafWebACLSummary",
+          "displayName": "WafWebAclSummaries_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafWebACLSummaries/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "wafv2LoggingConfigurations",
+      "name": "wafv2LoggingConfigurations",
+      "operations": [
+        {
+          "description": "List Wafv2LoggingConfiguration resources by subscription ID",
+          "displayName": "Wafv2LoggingConfigurations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafv2LoggingConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Wafv2LoggingConfiguration resources by resource group",
+          "displayName": "Wafv2LoggingConfigurations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafv2LoggingConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Wafv2LoggingConfiguration",
+          "displayName": "Wafv2LoggingConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafv2LoggingConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Wafv2LoggingConfiguration. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "Wafv2LoggingConfigurations_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafv2LoggingConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Wafv2LoggingConfiguration",
+          "displayName": "Wafv2LoggingConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafv2LoggingConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Wafv2LoggingConfiguration",
+          "displayName": "Wafv2LoggingConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/wafv2LoggingConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "s3AccessControlPolicies",
+      "name": "s3AccessControlPolicies",
+      "operations": [
+        {
+          "description": "List S3AccessControlPolicy resources by subscription ID",
+          "displayName": "S3AccessControlPolicies_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3AccessControlPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List S3AccessControlPolicy resources by resource group",
+          "displayName": "S3AccessControlPolicies_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3AccessControlPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a S3AccessControlPolicy",
+          "displayName": "S3AccessControlPolicies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3AccessControlPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a S3AccessControlPolicy. Please note that end user resource creation is currently restricted, but it will be enabled in the future.",
+          "displayName": "S3AccessControlPolicies_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3AccessControlPolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a S3AccessControlPolicy",
+          "displayName": "S3AccessControlPolicies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3AccessControlPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a S3AccessControlPolicy",
+          "displayName": "S3AccessControlPolicies_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AwsConnector/s3AccessControlPolicies/write",
           "origin": null,
           "properties": null
         }
