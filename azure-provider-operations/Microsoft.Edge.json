@@ -2,17 +2,34 @@
   "displayName": "Microsoft.Edge",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Edge",
   "name": "Microsoft.Edge",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.Edge",
+      "displayName": "Register the Microsoft.Edge",
+      "isDataAction": false,
+      "name": "Microsoft.Edge/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.Edge",
+      "displayName": "Unregister the Microsoft.Edge",
+      "isDataAction": false,
+      "name": "Microsoft.Edge/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
-      "displayName": "RegisteredSubscriptions",
-      "name": "RegisteredSubscriptions",
+      "displayName": "registeredSubscriptions",
+      "name": "registeredSubscriptions",
       "operations": [
         {
-          "description": "Reads registered subscriptions",
-          "displayName": "Gets / Lists registered subscriptions",
+          "description": "read registeredSubscriptions",
+          "displayName": "read_registeredSubscriptions",
           "isDataAction": false,
-          "name": "Microsoft.Edge/RegisteredSubscriptions/read",
+          "name": "Microsoft.Edge/registeredSubscriptions/read",
           "origin": null,
           "properties": null
         }
@@ -23,26 +40,50 @@
       "name": "hierarchyLists",
       "operations": [
         {
-          "description": "Read Hierarchy Lists",
-          "displayName": "Gets / Lists Hierarchy Lists",
+          "description": "List by subscription",
+          "displayName": "HierarchyLists_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Edge/hierarchyLists/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Hierarchy Lists",
-          "displayName": "Create / Update Hierarchy Lists",
+          "description": "List by specified resource group",
+          "displayName": "HierarchyLists_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/hierarchyLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Hierarchy List Resource",
+          "displayName": "HierarchyLists_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/hierarchyLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Hierarchy List Resource",
+          "displayName": "HierarchyLists_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/hierarchyLists/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Hierarchy Lists",
-          "displayName": "Delete Hierarchy Lists",
+          "description": "Delete a Hierarchy List Resource",
+          "displayName": "HierarchyLists_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/hierarchyLists/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Hierarchy List Resource",
+          "displayName": "HierarchyLists_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/hierarchyLists/write",
           "origin": null,
           "properties": null
         }
@@ -53,26 +94,50 @@
       "name": "capabilityLists",
       "operations": [
         {
-          "description": "Read Capability Lists",
-          "displayName": "Gets / Lists Capability Lists",
+          "description": "List by subscription",
+          "displayName": "CapabilityLists_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Edge/capabilityLists/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Capability Lists",
-          "displayName": "Create / Update Capability Lists",
+          "description": "List by specified resource group",
+          "displayName": "CapabilityLists_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/capabilityLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Capability List Resource",
+          "displayName": "CapabilityLists_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/capabilityLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Capability List Resource",
+          "displayName": "CapabilityLists_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/capabilityLists/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Capability Lists",
-          "displayName": "Delete Capability Lists",
+          "description": "Delete a Capability List Resource",
+          "displayName": "CapabilityLists_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/capabilityLists/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Capability List Resource",
+          "displayName": "CapabilityLists_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/capabilityLists/write",
           "origin": null,
           "properties": null
         }
@@ -83,26 +148,50 @@
       "name": "solutions",
       "operations": [
         {
-          "description": "Read Solutions",
-          "displayName": "Gets / Lists Solutions",
+          "description": "List by subscription",
+          "displayName": "Solutions_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Solutions",
-          "displayName": "Create / Update Solutions",
+          "description": "List by specified resource group",
+          "displayName": "Solutions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Solution resource",
+          "displayName": "Solutions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Solution resource",
+          "displayName": "Solutions_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Solutions",
-          "displayName": "Delete Solutions",
+          "description": "Delete a Solution resource",
+          "displayName": "Solutions_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Solution resource",
+          "displayName": "Solutions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutions/write",
           "origin": null,
           "properties": null
         }
@@ -113,24 +202,32 @@
       "name": "solutions/versions",
       "operations": [
         {
-          "description": "Read Solution Versions",
-          "displayName": "Gets / Lists Solution Versions",
+          "description": "List Solution Version Resources",
+          "displayName": "SolutionVersions_ListBySolution",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutions/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Solution Versions",
-          "displayName": "Create / Update Solution Versions",
+          "description": "Get a Solution Version Resource",
+          "displayName": "SolutionVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutions/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Solution Version Resource",
+          "displayName": "SolutionVersions_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutions/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Solution Versions",
-          "displayName": "Delete Solution Versions",
+          "description": "Delete a Solution Version Resource",
+          "displayName": "SolutionVersions_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutions/versions/delete",
           "origin": null,
@@ -143,26 +240,50 @@
       "name": "deploymentTargets",
       "operations": [
         {
-          "description": "Read Deployment Targets",
-          "displayName": "Gets / Lists Deployment Targets",
+          "description": "List by subscription",
+          "displayName": "DeploymentTargets_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Edge/deploymentTargets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Deployment Targets",
-          "displayName": "Create / Update Deployment Targets",
+          "description": "List by specified resource group",
+          "displayName": "DeploymentTargets_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/deploymentTargets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Deployment Target Resource",
+          "displayName": "DeploymentTargets_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/deploymentTargets/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Deployment Target Resource",
+          "displayName": "DeploymentTargets_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/deploymentTargets/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Deployment Targets",
-          "displayName": "Delete Deployment Targets",
+          "description": "Delete a Deployment Target Resource",
+          "displayName": "DeploymentTargets_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/deploymentTargets/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Deployment Target Resource",
+          "displayName": "DeploymentTargets_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/deploymentTargets/write",
           "origin": null,
           "properties": null
         }
@@ -173,50 +294,74 @@
       "name": "solutionBindings",
       "operations": [
         {
-          "description": "Read Solution Bindings for Solutions on Deployment Targets",
-          "displayName": "Gets / Lists Solution Bindings",
+          "description": "Post request to deploy",
+          "displayName": "SolutionBindings_Deploy",
           "isDataAction": false,
-          "name": "Microsoft.Edge/solutionBindings/read",
+          "name": "Microsoft.Edge/solutionBindings/deploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Solution Bindings for Solutions on Deployment Targets",
-          "displayName": "Create / Update Solution Bindings",
-          "isDataAction": false,
-          "name": "Microsoft.Edge/solutionBindings/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete Solution Bindings for Solutions on Deployment Targets",
-          "displayName": "Delete Solution Bindings",
-          "isDataAction": false,
-          "name": "Microsoft.Edge/solutionBindings/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Resolve Configuration for a Solution on Deployment Target",
-          "displayName": "Resolve Configuration",
-          "isDataAction": false,
-          "name": "Microsoft.Edge/solutionBindings/resolveConfiguration/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Publish Configuration for a Solution on Deployment Target",
-          "displayName": "Publish Configuration",
+          "description": "Post request to publish",
+          "displayName": "SolutionBindings_Publish",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutionBindings/publish/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deploy Published Configuration for a Solution on Deployment Target",
-          "displayName": "Deploy Published Configuration",
+          "description": "Post request to resolve configuration",
+          "displayName": "SolutionBindings_ResolveConfiguration",
           "isDataAction": false,
-          "name": "Microsoft.Edge/solutionBindings/deploy/action",
+          "name": "Microsoft.Edge/solutionBindings/resolveConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List by subscription",
+          "displayName": "SolutionBindings_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List by specified resource group",
+          "displayName": "SolutionBindings_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Solution Binding Resource",
+          "displayName": "SolutionBindings_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Solution Binding Resource",
+          "displayName": "SolutionBindings_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Solution Binding Resource",
+          "displayName": "SolutionBindings_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Solution Binding Resource",
+          "displayName": "SolutionBindings_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/write",
           "origin": null,
           "properties": null
         }
@@ -227,10 +372,42 @@
       "name": "solutionBindings/solutionBindingConfigurations",
       "operations": [
         {
-          "description": "Read Published Configuration for a Solution on Deployment Target",
-          "displayName": "Gets / Lists Solution Binding Configurations",
+          "description": "List Solution Binding Configuration resource",
+          "displayName": "SolutionBindingConfigurations_ListBySolutionBinding",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutionBindings/solutionBindingConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Solution Binding Configuration Resource",
+          "displayName": "SolutionBindingConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionBindingConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Solution Binding Configuration Resource",
+          "displayName": "SolutionBindingConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionBindingConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Solution Binding Configuration Resource",
+          "displayName": "SolutionBindingConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionBindingConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Solution Binding Configuration Resource",
+          "displayName": "SolutionBindingConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionBindingConfigurations/write",
           "origin": null,
           "properties": null
         }
@@ -241,10 +418,42 @@
       "name": "solutionBindings/solutionInstances",
       "operations": [
         {
-          "description": "Read Published Configuration Instance for a Solution on Deployment Target",
-          "displayName": "Gets / Lists Solution Instances",
+          "description": "List Solution Instance Resources",
+          "displayName": "SolutionInstances_ListBySolutionBinding",
           "isDataAction": false,
           "name": "Microsoft.Edge/solutionBindings/solutionInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Solution Instance Resource",
+          "displayName": "SolutionInstances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Solution Instance Resource",
+          "displayName": "SolutionInstances_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Solution Instance Resource",
+          "displayName": "SolutionInstances_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionInstances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Solution Instance Resource",
+          "displayName": "SolutionInstances_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/solutionBindings/solutionInstances/write",
           "origin": null,
           "properties": null
         }
@@ -255,26 +464,50 @@
       "name": "schemas",
       "operations": [
         {
-          "description": "Read Schemas",
-          "displayName": "Gets / Lists Schemas",
+          "description": "List by subscription",
+          "displayName": "Schemas_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Schemas",
-          "displayName": "Create / Update Schemas",
+          "description": "List by specified resource group",
+          "displayName": "Schemas_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Schema Resource",
+          "displayName": "Schemas_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Schema Resource",
+          "displayName": "Schemas_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Schemas",
-          "displayName": "Delete Schemas",
+          "description": "Delete a Schema Resource",
+          "displayName": "Schemas_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Schema Resource",
+          "displayName": "Schemas_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/write",
           "origin": null,
           "properties": null
         }
@@ -285,26 +518,42 @@
       "name": "schemas/versions",
       "operations": [
         {
-          "description": "Read Schema Versions",
-          "displayName": "Gets / Lists Schema Versions",
+          "description": "List by specified resource group",
+          "displayName": "SchemaVersions_ListBySchema",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Schema Versions",
-          "displayName": "Create / Update Schema Versions",
+          "description": "Get a Schema Version Resource",
+          "displayName": "SchemaVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Schema Version Resource",
+          "displayName": "SchemaVersions_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Schema Versions",
-          "displayName": "Delete Schema Versions",
+          "description": "Delete a Schema Version Resource",
+          "displayName": "SchemaVersions_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/versions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Schema Version Resource",
+          "displayName": "SchemaVersions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/versions/write",
           "origin": null,
           "properties": null
         }
@@ -315,10 +564,42 @@
       "name": "schemas/dynamicSchemas",
       "operations": [
         {
-          "description": "Read Dynamic Schemas",
-          "displayName": "Gets / Lists Dynamic Schemas",
+          "description": "List by Schema",
+          "displayName": "DynamicSchemas_ListBySchema",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/dynamicSchemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DynamicSchema Resource",
+          "displayName": "DynamicSchemas_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a DynamicSchema Resource",
+          "displayName": "DynamicSchemas_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a DynamicSchema Resource",
+          "displayName": "DynamicSchemas_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a DynamicSchema Resource",
+          "displayName": "DynamicSchemas_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/write",
           "origin": null,
           "properties": null
         }
@@ -329,10 +610,42 @@
       "name": "schemas/dynamicSchemas/versions",
       "operations": [
         {
-          "description": "Read Dynamic Schema Versions",
-          "displayName": "Gets / Lists Dynamic Schema Versions",
+          "description": "List by Dynamic Schema",
+          "displayName": "DynamicSchemaVersions_ListByDynamicSchema",
           "isDataAction": false,
           "name": "Microsoft.Edge/schemas/dynamicSchemas/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Dynamic Schema Version Resource",
+          "displayName": "DynamicSchemaVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Dynamic Schema Version Resource",
+          "displayName": "DynamicSchemaVersions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/versions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Dynamic Schema Version Resource",
+          "displayName": "DynamicSchemaVersions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/versions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Dynamic Schema Version Resource",
+          "displayName": "DynamicSchemaVersions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemas/dynamicSchemas/versions/write",
           "origin": null,
           "properties": null
         }
@@ -343,26 +656,50 @@
       "name": "configurations",
       "operations": [
         {
-          "description": "Read Configurations",
-          "displayName": "Gets / Lists Configurations",
+          "description": "List by subscription",
+          "displayName": "Configurations_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Configurations",
-          "displayName": "Create / Update Configurations",
+          "description": "List by specified resource group",
+          "displayName": "Configurations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Configuration Resource",
+          "displayName": "Configurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Configuration Resource",
+          "displayName": "Configurations_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Configurations",
-          "displayName": "Delete Configurations",
+          "description": "Delete a Configuration Resource",
+          "displayName": "Configurations_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Configuration Resource",
+          "displayName": "Configurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/write",
           "origin": null,
           "properties": null
         }
@@ -373,26 +710,42 @@
       "name": "configurations/dynamicConfigurations",
       "operations": [
         {
-          "description": "Read Dynamic Configurations",
-          "displayName": "Gets / Lists Dynamic Configurations",
+          "description": "List Dynamic Configuration Resources",
+          "displayName": "DynamicConfigurations_ListByConfiguration",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/dynamicConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Dynamic Configurations",
-          "displayName": "Create / Update Dynamic Configurations",
+          "description": "Get a Dynamic Configuration Resource",
+          "displayName": "DynamicConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/dynamicConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Dynamic Configuration Resource",
+          "displayName": "DynamicConfigurations_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/dynamicConfigurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Dynamic Configurations",
-          "displayName": "Delete Dynamic Configurations",
+          "description": "Delete a Dynamic Configuration Resource",
+          "displayName": "DynamicConfigurations_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/dynamicConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Dynamic Configuration Resource",
+          "displayName": "DynamicConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/dynamicConfigurations/write",
           "origin": null,
           "properties": null
         }
@@ -403,26 +756,662 @@
       "name": "configurations/dynamicConfigurations/versions",
       "operations": [
         {
-          "description": "Read Dynamic Configuration Versions",
-          "displayName": "Gets / Lists Dynamic Configuration Versions",
+          "description": "List Dynamic Configuration Version Resource",
+          "displayName": "DynamicConfigurationVersions_ListByDynamicConfiguration",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/dynamicConfigurations/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create / Update Dynamic Configuration Versions",
-          "displayName": "Create / Update Dynamic Configuration Versions",
+          "description": "Get a Dynamic Configuration Version Resource",
+          "displayName": "DynamicConfigurationVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/dynamicConfigurations/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Dynamic Configuration Version Resource",
+          "displayName": "DynamicConfigurationVersions_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/dynamicConfigurations/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete Dynamic Configuration Versions",
-          "displayName": "Delete Dynamic Configuration Versions",
+          "description": "Delete a Dynamic Configuration Version Resource",
+          "displayName": "DynamicConfigurationVersions_Delete",
           "isDataAction": false,
           "name": "Microsoft.Edge/configurations/dynamicConfigurations/versions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Dynamic Configuration Version Resource",
+          "displayName": "DynamicConfigurationVersions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/dynamicConfigurations/versions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "winfields",
+      "name": "winfields",
+      "operations": [
+        {
+          "description": "get deployment manifest.",
+          "displayName": "Winfields_ListDeploymentManifest",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/listDeploymentManifest/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Winfield resources by subscription ID",
+          "displayName": "Winfields_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Winfield resources by resource group",
+          "displayName": "Winfields_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Winfield",
+          "displayName": "Winfields_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Winfield",
+          "displayName": "Winfields_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Winfield",
+          "displayName": "Winfields_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Winfield",
+          "displayName": "Winfields_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/winfields/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "updates",
+      "name": "updates",
+      "operations": [
+        {
+          "description": "List Update resources by parent",
+          "displayName": "Updates_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Update",
+          "displayName": "Updates_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create an Update",
+          "displayName": "Updates_CreateOrModify",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an Update",
+          "displayName": "Updates_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Update",
+          "displayName": "Updates_Modify",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/updates/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "connectivityStatuses",
+      "name": "connectivityStatuses",
+      "operations": [
+        {
+          "description": "List ConnectivityStatus resources by parent",
+          "displayName": "ConnectivityStatuses_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConnectivityStatus",
+          "displayName": "ConnectivityStatuses_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/connectivityStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sites",
+      "name": "sites",
+      "operations": [
+        {
+          "description": "List Site resources by subscription ID",
+          "displayName": "SitesBySubscription_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Site",
+          "displayName": "SitesBySubscription_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Site",
+          "displayName": "SitesBySubscription_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Site",
+          "displayName": "SitesBySubscription_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Site",
+          "displayName": "SitesBySubscription_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Site resources by resource group",
+          "displayName": "Sites_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Site",
+          "displayName": "Sites_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Site",
+          "displayName": "Sites_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Site",
+          "displayName": "Sites_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Site",
+          "displayName": "Sites_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/sites/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "siteAwareResourceTypes",
+      "name": "siteAwareResourceTypes",
+      "operations": [
+        {
+          "description": "List Singleton SiteAwareResourceTypes Object.",
+          "displayName": "SiteAwareResourceTypes_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/siteAwareResourceTypes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Site Aware Resource Types",
+          "displayName": "SiteAwareResourceTypes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/siteAwareResourceTypes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "schemaReferences",
+      "name": "schemaReferences",
+      "operations": [
+        {
+          "description": "List by specified resource group",
+          "displayName": "SchemaReferences_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemaReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Schema Reference Resource",
+          "displayName": "SchemaReferences_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemaReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Schema Reference Resource",
+          "displayName": "SchemaReferences_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemaReferences/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Schema Reference Resource",
+          "displayName": "SchemaReferences_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemaReferences/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "update a Schema Reference Resource",
+          "displayName": "SchemaReferences_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/schemaReferences/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configurations/networkConfigurations",
+      "name": "configurations/networkConfigurations",
+      "operations": [
+        {
+          "description": "List NetworkConfiguration resources by Configuration",
+          "displayName": "NetworkConfigurations_ListByConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/networkConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a NetworkConfiguration",
+          "displayName": "NetworkConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/networkConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a NetworkConfiguration",
+          "displayName": "NetworkConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/networkConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a NetworkConfiguration",
+          "displayName": "NetworkConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/networkConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a NetworkConfiguration",
+          "displayName": "NetworkConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/networkConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configurations/securityConfigurations",
+      "name": "configurations/securityConfigurations",
+      "operations": [
+        {
+          "description": "List SecurityConfiguration resources by Configuration",
+          "displayName": "SecurityConfigurations_ListByConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/securityConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SecurityConfiguration",
+          "displayName": "SecurityConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/securityConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SecurityConfiguration",
+          "displayName": "SecurityConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/securityConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SecurityConfiguration",
+          "displayName": "SecurityConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/securityConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SecurityConfiguration",
+          "displayName": "SecurityConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/securityConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configurations/timeServerConfigurations",
+      "name": "configurations/timeServerConfigurations",
+      "operations": [
+        {
+          "description": "List TimeServerConfiguration resources by Configuration",
+          "displayName": "TimeServerConfigurations_ListByConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/timeServerConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a TimeServerConfiguration",
+          "displayName": "TimeServerConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/timeServerConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a TimeServerConfiguration",
+          "displayName": "TimeServerConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/timeServerConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a TimeServerConfiguration",
+          "displayName": "TimeServerConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/timeServerConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a TimeServerConfiguration",
+          "displayName": "TimeServerConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/timeServerConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configurations/connectivityConfigurations",
+      "name": "configurations/connectivityConfigurations",
+      "operations": [
+        {
+          "description": "List ConnectivityConfiguration resources by Configuration",
+          "displayName": "ConnectivityConfigurations_ListByConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/connectivityConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConnectivityConfiguration",
+          "displayName": "ConnectivityConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/connectivityConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConnectivityConfiguration",
+          "displayName": "ConnectivityConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/connectivityConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConnectivityConfiguration",
+          "displayName": "ConnectivityConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/connectivityConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConnectivityConfiguration",
+          "displayName": "ConnectivityConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/connectivityConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configurations/arcGatewayConfigurations",
+      "name": "configurations/arcGatewayConfigurations",
+      "operations": [
+        {
+          "description": "List ArcGatewayConfiguration resources by Configuration",
+          "displayName": "ArcGatewayConfigurations_ListByConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/arcGatewayConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ArcGatewayConfiguration",
+          "displayName": "ArcGatewayConfigurations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/arcGatewayConfigurations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ArcGatewayConfiguration",
+          "displayName": "ArcGatewayConfigurations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/arcGatewayConfigurations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ArcGatewayConfiguration",
+          "displayName": "ArcGatewayConfigurations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/arcGatewayConfigurations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ArcGatewayConfiguration",
+          "displayName": "ArcGatewayConfigurations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurations/arcGatewayConfigurations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "configurationReferences",
+      "name": "configurationReferences",
+      "operations": [
+        {
+          "description": "List ConfigurationReference resources by parent",
+          "displayName": "ConfigurationReferences_List",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurationReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ConfigurationReference",
+          "displayName": "ConfigurationReferences_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurationReferences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ConfigurationReference",
+          "displayName": "ConfigurationReferences_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurationReferences/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ConfigurationReference",
+          "displayName": "ConfigurationReferences_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurationReferences/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ConfigurationReference",
+          "displayName": "ConfigurationReferences_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Edge/configurationReferences/write",
           "origin": null,
           "properties": null
         }
