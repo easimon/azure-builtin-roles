@@ -2338,7 +2338,7 @@
       ]
     },
     {
-      "displayName": "Server Tuning Option",
+      "displayName": "Server Configuration Tuning",
       "name": "flexibleServers/tuningOptions",
       "operations": [
         {
@@ -2350,26 +2350,42 @@
           "properties": null
         },
         {
-          "description": null,
-          "displayName": null,
+          "description": "Returns a tuning option",
+          "displayName": "Get a single tuning option",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": null,
-          "displayName": null,
+          "description": "Starts a server configuration tuning session on a server",
+          "displayName": "Start tuning configuration session",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/startSession/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": null,
-          "displayName": null,
+          "description": "Stops the server configuration tuning session on a server",
+          "displayName": "Stop tuning configuration session",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/stopSession/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables server configuration tuning feature on the server",
+          "displayName": "Enable server configuration tuning feature",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/enable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disables server configuration tuning feature on the server",
+          "displayName": "Disable server configuration tuning feature",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/disable/action",
           "origin": null,
           "properties": null
         }
@@ -2420,14 +2436,28 @@
       ]
     },
     {
-      "displayName": "Server Parameter Tuning",
+      "displayName": "Server Configuration Tuning",
       "name": "flexibleServers/tuningOptions/sessions",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "Gets the list of server configuration tuning sessions on a server",
+          "displayName": "Server configuration tuning sessions",
           "isDataAction": false,
           "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/sessions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Server Configuration Tuning",
+      "name": "flexibleServers/tuningOptions/sessionDetails",
+      "operations": [
+        {
+          "description": "Gets the list of iterations for a specified server configuration tuning session on a server",
+          "displayName": "Server configuration session details",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/tuningOptions/sessionDetails/read",
           "origin": null,
           "properties": null
         }
