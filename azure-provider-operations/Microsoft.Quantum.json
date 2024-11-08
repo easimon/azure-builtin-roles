@@ -2,7 +2,16 @@
   "displayName": "Microsoft.Quantum",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Quantum",
   "name": "Microsoft.Quantum",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Registers the subscription for the quantum resource provider and enables the creation of quantum workspaces.",
+      "displayName": "Registers the Quantum Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.Quantum/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "Workspaces",
@@ -12,7 +21,7 @@
           "description": "Read Workspace",
           "displayName": "Gets/List workspace resources",
           "isDataAction": false,
-          "name": "Microsoft.Quantum/Workspaces/Read",
+          "name": "Microsoft.Quantum/Workspaces/read",
           "origin": null,
           "properties": null
         },
@@ -20,7 +29,7 @@
           "description": "Writes Workspace",
           "displayName": "Create/update workspace resources",
           "isDataAction": false,
-          "name": "Microsoft.Quantum/Workspaces/Write",
+          "name": "Microsoft.Quantum/Workspaces/write",
           "origin": null,
           "properties": null
         },
@@ -28,7 +37,23 @@
           "description": "Deletes Workspace",
           "displayName": "Deletes workspace resource",
           "isDataAction": false,
-          "name": "Microsoft.Quantum/Workspaces/Delete",
+          "name": "Microsoft.Quantum/Workspaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Regenerate workspace api key",
+          "displayName": "Regenerate workspace api key",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/Workspaces/regenerateKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List workspace api keys",
+          "displayName": "List workspace api keys",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/Workspaces/listKeys/action",
           "origin": null,
           "properties": null
         }
@@ -36,13 +61,35 @@
     },
     {
       "displayName": "Workspaces",
-      "name": "Locations/Offerings",
+      "name": "locations/offerings",
       "operations": [
         {
           "description": "Read providers supported",
           "displayName": "Read quantum workspace's available providers",
           "isDataAction": false,
-          "name": "Microsoft.Quantum/Locations/Offerings/Read",
+          "name": "Microsoft.Quantum/locations/offerings/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspaces",
+      "name": "Workspaces/jobs",
+      "operations": [
+        {
+          "description": "Read jobs and other data",
+          "displayName": "Read quantum workspace's jobs and other data",
+          "isDataAction": true,
+          "name": "Microsoft.Quantum/Workspaces/jobs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write jobs and other data",
+          "displayName": "Create/update quantum workspace jobs and other data",
+          "isDataAction": true,
+          "name": "Microsoft.Quantum/Workspaces/jobs/write",
           "origin": null,
           "properties": null
         }
