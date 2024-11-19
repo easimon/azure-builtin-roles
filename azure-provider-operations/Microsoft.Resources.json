@@ -1,27 +1,27 @@
 {
-  "displayName": "Microsoft-erőforrások",
+  "displayName": "Microsoft Resources",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Resources",
   "name": "Microsoft.Resources",
   "operations": [
     {
-      "description": "Erőforrásnév érvényességének ellenőrzése.",
-      "displayName": "Erőforrásnév ellenőrzése",
+      "description": "Check the resource name for validity.",
+      "displayName": "Check Resource Name",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkResourceName/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "A megadott sablon kivonatának kiszámítása.",
-      "displayName": "Sablon kivonatának kiszámítása",
+      "description": "Calculate the hash of provided template.",
+      "displayName": "Calculate Template Hash",
       "isDataAction": false,
       "name": "Microsoft.Resources/calculateTemplateHash/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Zónabeli társak ellenőrzése",
-      "displayName": "Zónabeli társak ellenőrzése",
+      "description": "Check Zone Peers",
+      "displayName": "Check Zone Peers",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkZonePeers/action",
       "origin": null,
@@ -30,12 +30,12 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Bérlő",
+      "displayName": "Tenant",
       "name": "tenants",
       "operations": [
         {
-          "description": "Beolvassa a bérlők listáját.",
-          "displayName": "Bérlők beolvasása",
+          "description": "Gets the list of tenants.",
+          "displayName": "Get Tenants",
           "isDataAction": false,
           "name": "Microsoft.Resources/tenants/read",
           "origin": null,
@@ -44,12 +44,12 @@
       ]
     },
     {
-      "displayName": "Szolgáltatók",
+      "displayName": "Providers",
       "name": "providers",
       "operations": [
         {
-          "description": "A szolgáltatók listájának lekérése.",
-          "displayName": "Szolgáltatók lekérése",
+          "description": "Get the list of providers.",
+          "displayName": "Get Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/providers/read",
           "origin": null,
@@ -58,12 +58,12 @@
       ]
     },
     {
-      "displayName": "Erőforrások",
+      "displayName": "Resources",
       "name": "resources",
       "operations": [
         {
-          "description": "Az erőforrások listájának beolvasása szűrők alapján.",
-          "displayName": "Erőforrások beolvasása",
+          "description": "Get the list of resources based upon filters.",
+          "displayName": "Get Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/resources/read",
           "origin": null,
@@ -72,12 +72,12 @@
       ]
     },
     {
-      "displayName": "Előfizetés",
+      "displayName": "Subscription",
       "name": "subscriptions",
       "operations": [
         {
-          "description": "Beolvassa az előfizetések listáját.",
-          "displayName": "Előfizetések beolvasása",
+          "description": "Gets the list of subscriptions.",
+          "displayName": "Get Subscriptions",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/read",
           "origin": null,
@@ -86,12 +86,12 @@
       ]
     },
     {
-      "displayName": "Előfizetés erőforrásai",
+      "displayName": "Subscription Resource",
       "name": "subscriptions/resources",
       "operations": [
         {
-          "description": "Beolvassa az előfizetéshez tartozó erőforrásokat.",
-          "displayName": "Előfizetés erőforrásainak beolvasása",
+          "description": "Gets resources of a subscription.",
+          "displayName": "Get Subscription Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resources/read",
           "origin": null,
@@ -100,12 +100,12 @@
       ]
     },
     {
-      "displayName": "Hely",
+      "displayName": "Location",
       "name": "subscriptions/locations",
       "operations": [
         {
-          "description": "Beolvassa a támogatott helyek listáját.",
-          "displayName": "Helyek beolvasása",
+          "description": "Gets the list of locations supported.",
+          "displayName": "Get Locations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/locations/read",
           "origin": null,
@@ -114,12 +114,12 @@
       ]
     },
     {
-      "displayName": "Erőforrás-szolgáltatók",
+      "displayName": "Resource Providers",
       "name": "subscriptions/providers",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az erőforrás-szolgáltatókat.",
-          "displayName": "Erőforrás-szolgáltatók beolvasása",
+          "description": "Gets or lists resource providers.",
+          "displayName": "Get Resource Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/providers/read",
           "origin": null,
@@ -128,12 +128,12 @@
       ]
     },
     {
-      "displayName": "Előfizetési művelet eredménye",
+      "displayName": "Subscription Operation Results",
       "name": "subscriptions/operationresults",
       "operations": [
         {
-          "description": "Az előfizetési művelet eredményeinek lekérése.",
-          "displayName": "Előfizetési művelet eredményeinek lekérése",
+          "description": "Get the subscription operation results.",
+          "displayName": "Get Subscription Operation Results",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/operationresults/read",
           "origin": null,
@@ -142,44 +142,44 @@
       ]
     },
     {
-      "displayName": "Erőforráscsoport",
+      "displayName": "Resource Group",
       "name": "subscriptions/resourceGroups",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az erőforráscsoportokat.",
-          "displayName": "Erőforráscsoport beolvasása",
+          "description": "Gets or lists resource groups.",
+          "displayName": "Get Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehozza vagy frissíti az erőforráscsoportot.",
-          "displayName": "Erőforráscsoport létrehozása",
+          "description": "Creates or updates a resource group.",
+          "displayName": "Create Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Törli az erőforráscsoportot és az ahhoz tartozó összes erőforrást.",
-          "displayName": "Erőforráscsoport törlése",
+          "description": "Deletes a resource group and all its resources.",
+          "displayName": "Delete Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Erőforrásokat helyez át az egyik erőforráscsoportból egy másikba.",
-          "displayName": "Erőforráscsoport erőforrásainak áthelyezése",
+          "description": "Moves resources from one resource group to another.",
+          "displayName": "Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/moveResources/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Erőforrások erőforráscsoportok közötti áthelyezésének ellenőrzése.",
-          "displayName": "Erőforráscsoport-erőforrások áthelyezésének ellenőrzése",
+          "description": "Validate move of resources from one resource group to another.",
+          "displayName": "Validate Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/validateMoveResources/action",
           "origin": null,
@@ -188,12 +188,12 @@
       ]
     },
     {
-      "displayName": "Erőforráscsoport erőforrásai",
+      "displayName": "Resource Group Resources",
       "name": "subscriptions/resourcegroups/resources",
       "operations": [
         {
-          "description": "Az erőforráscsoporthoz tartozó erőforrások lekérése.",
-          "displayName": "Erőforráscsoport erőforrásainak lekérése",
+          "description": "Gets the resources for the resource group.",
+          "displayName": "Get Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
           "origin": null,
@@ -202,28 +202,28 @@
       ]
     },
     {
-      "displayName": "Előfizetéscímke",
+      "displayName": "Subscription Tag",
       "name": "subscriptions/tagNames",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az előfizetéscímkéket.",
-          "displayName": "Előfizetéscímke beolvasása",
+          "description": "Gets or lists subscription tags.",
+          "displayName": "Get Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Előfizetéscímke hozzáadása.",
-          "displayName": "Előfizetéscímke hozzáadása",
+          "description": "Adds a subscription tag.",
+          "displayName": "Add Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Törli az előfizetéscímkét.",
-          "displayName": "Előfizetéscímke törlése",
+          "description": "Deletes a subscription tag.",
+          "displayName": "Delete Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/delete",
           "origin": null,
@@ -232,28 +232,28 @@
       ]
     },
     {
-      "displayName": "Előfizetéscímke értéke",
+      "displayName": "Subscription Tag Value",
       "name": "subscriptions/tagNames/tagValues",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az előfizetéscímkék értékeit.",
-          "displayName": "Előfizetéscímke értékének beolvasása",
+          "description": "Gets or lists subscription tag values.",
+          "displayName": "Get Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hozzáadja az előfizetéscímke értékét.",
-          "displayName": "Előfizetéscímke értékének hozzáadása",
+          "description": "Adds a subscription tag value.",
+          "displayName": "Add Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Törli az előfizetéscímke értékét.",
-          "displayName": "Előfizetéscímke értékének törlése",
+          "description": "Deletes a subscription tag value.",
+          "displayName": "Delete Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/delete",
           "origin": null,
@@ -262,60 +262,60 @@
       ]
     },
     {
-      "displayName": "Központi telepítés",
+      "displayName": "Deployment",
       "name": "deployments",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzemelő példányokat.",
-          "displayName": "Üzemelő példányok beolvasása",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehozza vagy frissíti az üzemelő példányt.",
-          "displayName": "Üzemelő példány létrehozása",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Törli az üzemelő példányt.",
-          "displayName": "Üzemelő példány törlése",
+          "description": "Deletes a deployment.",
+          "displayName": "Delete Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Megszakítja az üzembe helyezést.",
-          "displayName": "Üzembe helyezés megszakítása",
+          "description": "Cancels a deployment.",
+          "displayName": "Cancel Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/cancel/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Érvényesíti az üzemelő példányt.",
-          "displayName": "Üzemelő példány érvényesítése",
+          "description": "Validates an deployment.",
+          "displayName": "Validate Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/validate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "A sablontelepítéssel járó módosítások előrejelzése.",
-          "displayName": "Telepítési lehetőségelemzés",
+          "description": "Predicts template deployment changes.",
+          "displayName": "Deployment What-If",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/whatIf/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Üzemelő példány sablonjának exportálása",
-          "displayName": "Üzemelő példány sablonjának exportálása",
+          "description": "Export template for a deployment",
+          "displayName": "Export template for deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/exportTemplate/action",
           "origin": null,
@@ -324,20 +324,20 @@
       ]
     },
     {
-      "displayName": "Központi telepítés",
+      "displayName": "Deployment",
       "name": "subscriptions/resourcegroups/deployments",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzemelő példányokat.",
-          "displayName": "Üzemelő példányok beolvasása",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehozza vagy frissíti az üzemelő példányt.",
-          "displayName": "Üzemelő példány létrehozása",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
           "origin": null,
@@ -346,12 +346,12 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési művelet",
+      "displayName": "Deployment Operation",
       "name": "subscriptions/resourcegroups/deployments/operations",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzembe helyezési műveleteket.",
-          "displayName": "Üzembe helyezési műveletek beolvasása",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
           "origin": null,
@@ -360,12 +360,12 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési művelet állapota",
+      "displayName": "Deployment operation status",
       "name": "subscriptions/resourcegroups/deployments/operationstatuses",
       "operations": [
         {
-          "description": "Az üzembe helyezési műveletek állapotának beolvasása vagy listázása.",
-          "displayName": "Üzembe helyezési művelet állapotának beolvasása",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read",
           "origin": null,
@@ -374,12 +374,12 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési művelet",
+      "displayName": "Deployment Operation",
       "name": "deployments/operations",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzembe helyezési műveleteket.",
-          "displayName": "Üzembe helyezési műveletek beolvasása",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operations/read",
           "origin": null,
@@ -388,28 +388,28 @@
       ]
     },
     {
-      "displayName": "Erőforrás-hivatkozás",
+      "displayName": "Resource Link",
       "name": "links",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az erőforrás-hivatkozásokat.",
-          "displayName": "Erőforrás-hivatkozás beolvasása",
+          "description": "Gets or lists resource links.",
+          "displayName": "Get Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehozza vagy frissíti az erőforrás-hivatkozást.",
-          "displayName": "Erőforrás-hivatkozás létrehozása",
+          "description": "Creates or updates a resource link.",
+          "displayName": "Create Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Törli az erőforrás-hivatkozást.",
-          "displayName": "Erőforrás-hivatkozás törlése",
+          "description": "Deletes a resource link.",
+          "displayName": "Delete Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/delete",
           "origin": null,
@@ -418,12 +418,12 @@
       ]
     },
     {
-      "displayName": "Piactér",
+      "displayName": "Marketplace",
       "name": "marketplace",
       "operations": [
         {
-          "description": "Erőforrás vásárlása a Piactéren.",
-          "displayName": "Erőforrás vásárlása",
+          "description": "Purchases a resource from the marketplace.",
+          "displayName": "Purchase Resource",
           "isDataAction": false,
           "name": "Microsoft.Resources/marketplace/purchase/action",
           "origin": "System",
@@ -432,28 +432,28 @@
       ]
     },
     {
-      "displayName": "Címkék",
+      "displayName": "Tags",
       "name": "tags",
       "operations": [
         {
-          "description": "Egy adott erőforrás összes címkéjének beolvasása.",
-          "displayName": "Címkék olvasása",
+          "description": "Gets all the tags on a resource.",
+          "displayName": "Read tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Egy adott erőforrás címkéinek frissítése a meglévő címkék új címkékkel való lecserélésével vagy egyesítésével, illetve a meglévő címkék eltávolításával.",
-          "displayName": "Címkék írása",
+          "description": "Updates the tags on a resource by replacing or merging existing tags with a new set of tags, or removing existing tags.",
+          "displayName": "Write tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Egy adott erőforrás összes címkéjének eltávolítása.",
-          "displayName": "Címkék törlése",
+          "description": "Removes all the tags on a resource.",
+          "displayName": "Delete tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/delete",
           "origin": null,
@@ -462,12 +462,12 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési művelet állapota",
+      "displayName": "Deployment operation status",
       "name": "deployments/operationstatuses",
       "operations": [
         {
-          "description": "Az üzembe helyezési műveletek állapotának beolvasása vagy listázása.",
-          "displayName": "Üzembe helyezési művelet állapotának beolvasása",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operationstatuses/read",
           "origin": null,
@@ -476,28 +476,28 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési szkriptek",
+      "displayName": "Deployment Scripts",
       "name": "deploymentScripts",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzembe helyezési szkripteket",
-          "displayName": "Üzembe helyezési szkriptek olvasása",
+          "description": "Gets or lists deployment scripts",
+          "displayName": "Read deployment scripts",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Üzembe helyezési szkript létrehozása vagy frissítése",
-          "displayName": "Üzembe helyezési szkript írása",
+          "description": "Creates or updates a deployment script",
+          "displayName": "Write deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Egy üzembe helyezési szkript törlése",
-          "displayName": "Üzembe helyezési szkript törlése",
+          "description": "Deletes a deployment script",
+          "displayName": "Delete deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/delete",
           "origin": null,
@@ -506,12 +506,12 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési szkriptek naplói",
+      "displayName": "Deployment Script Logs",
       "name": "deploymentScripts/logs",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzembe helyezési szkriptek naplóit",
-          "displayName": "Üzembe helyezési szkriptek naplóinak olvasása",
+          "description": "Gets or lists deployment script logs",
+          "displayName": "Read deployment script logs",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/logs/read",
           "origin": null,
@@ -520,12 +520,12 @@
       ]
     },
     {
-      "displayName": "Szabályzatoknak való megfelelőség ellenőrzése",
+      "displayName": "Check Policy Compliance",
       "name": "checkPolicyCompliance",
       "operations": [
         {
-          "description": "Annak ellenőrzése, hogy egy adott erőforrás megfelelőségi állapota megfelel-e az erőforrás-szabályzatoknak.",
-          "displayName": "Szabályzatoknak való megfelelőség ellenőrzése",
+          "description": "Check the compliance status of a given resource against resource policies.",
+          "displayName": "Check Policy Compliance",
           "isDataAction": false,
           "name": "Microsoft.Resources/checkPolicyCompliance/read",
           "origin": null,
@@ -534,28 +534,28 @@
       ]
     },
     {
-      "displayName": "Sablonspecifikációk",
+      "displayName": "Template Specs",
       "name": "templateSpecs",
       "operations": [
         {
-          "description": "Lekérdezi vagy felsorolja a sablonspecifikációkat",
-          "displayName": "Sablonspecifikáció olvasása",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehoz vagy frissít egy sablonspecifikációt",
-          "displayName": "Sablonspecifikáció írása",
+          "description": "Creates or updates a template spec",
+          "displayName": "Write template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Töröl egy sablonspecifikációt",
-          "displayName": "Sablonspecifikáció törlése",
+          "description": "Deletes a template spec",
+          "displayName": "Delete a template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/delete",
           "origin": null,
@@ -564,28 +564,28 @@
       ]
     },
     {
-      "displayName": "Sablonspecifikáció-verziók",
+      "displayName": "Template Spec Versions",
       "name": "templateSpecs/versions",
       "operations": [
         {
-          "description": "Lekérdezi vagy felsorolja a sablonspecifikációkat",
-          "displayName": "Sablonspecifikáció-verzió olvasása",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehoz vagy frissít egy sablonspecifikáció-verziót",
-          "displayName": "Sablonspecifikáció-verzió írása",
+          "description": "Creates or updates a template spec version",
+          "displayName": "Write a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Töröl egy sablonspecifikáció-verziót",
-          "displayName": "Sablonspecifikáció-verzió törlése",
+          "description": "Deletes a template spec version",
+          "displayName": "Delete a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/delete",
           "origin": null,
@@ -594,12 +594,12 @@
       ]
     },
     {
-      "displayName": "Módosítások",
+      "displayName": "Changes",
       "name": "changes",
       "operations": [
         {
-          "description": "Módosítások beolvasása vagy listázása",
-          "displayName": "Módosítások olvasása",
+          "description": "Gets or lists changes",
+          "displayName": "Read Changes",
           "isDataAction": false,
           "name": "Microsoft.Resources/changes/read",
           "origin": null,
@@ -608,12 +608,12 @@
       ]
     },
     {
-      "displayName": "Előfizetés-regisztrációk",
+      "displayName": "Subscription Registrations",
       "name": "subscriptionRegistrations",
       "operations": [
         {
-          "description": "Lekérheti egy erőforrás-szolgáltatói névtér előfizetés-regisztrációját.",
-          "displayName": "Előfizetés-regisztrációk lekérése",
+          "description": "Get Subscription Registration for a resource provider namespace.",
+          "displayName": "Get Subscription Registrations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptionRegistrations/read",
           "origin": null,
@@ -622,28 +622,28 @@
       ]
     },
     {
-      "displayName": "Üzembe helyezési vermek",
+      "displayName": "Deployment Stacks",
       "name": "deploymentStacks",
       "operations": [
         {
-          "description": "Beolvassa vagy listázza az üzembe helyezési vermeket",
-          "displayName": "Üzembe helyezési verem olvasása",
+          "description": "Gets or lists deployment stacks",
+          "displayName": "Read deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Létrehoz vagy frissít egy üzembe helyezési vermet",
-          "displayName": "Üzembe helyezési verem írása",
+          "description": "Creates or updates a deployment stack",
+          "displayName": "Write deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Töröl egy üzembe helyezési vermet",
-          "displayName": "Üzembe helyezési verem törlése",
+          "description": "Deletes a deployment stack",
+          "displayName": "Delete a deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/delete",
           "origin": null,
@@ -660,12 +660,12 @@
       ]
     },
     {
-      "displayName": "Adathatár",
+      "displayName": "Data Boundary",
       "name": "dataBoundaries",
       "operations": [
         {
-          "description": "Bérlői szintű jóváhagyás az adathatárhoz",
-          "displayName": "Részvétel az adathatárban",
+          "description": "Tenant level opt-in to data boundary",
+          "displayName": "Opt-in to Data Boundary",
           "isDataAction": false,
           "name": "Microsoft.Resources/dataBoundaries/write",
           "origin": null,
@@ -674,28 +674,28 @@
       ]
     },
     {
-      "displayName": "Mobo-közvetítő",
+      "displayName": "Mobo Broker",
       "name": "moboBrokers",
       "operations": [
         {
-          "description": "Mobo-közvetítőket kér le vagy listázza azokat",
-          "displayName": "Mobo-közvetítő lekérése",
+          "description": "Gets or lists mobo brokers",
+          "displayName": "Get Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Mobo-közvetítőt hoz létre vagy frissíti azt",
-          "displayName": "Mobo-közvetítő létrehozása",
+          "description": "Creates or updates a mobo broker",
+          "displayName": "Create Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Mobo-közvetítőt töröl",
-          "displayName": "Mobo-közvetítő törlése",
+          "description": "Deletes a mobo broker",
+          "displayName": "Delete mobo broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/delete",
           "origin": null,
@@ -704,12 +704,12 @@
       ]
     },
     {
-      "displayName": "Mobo szolgáltatásműveleti állapot",
+      "displayName": "Mobo Service Operation Status",
       "name": "locations/moboOperationStatuses",
       "operations": [
         {
-          "description": "Az erőforrás Mobo szolgáltatásműveleti állapotának beolvasása.",
-          "displayName": "A Mobo szolgáltatásműveleti állapot beolvasása",
+          "description": "Reads the Mobo Service Operation Status for the resource.",
+          "displayName": "Get the Mobo Service Operation Status",
           "isDataAction": false,
           "name": "Microsoft.Resources/locations/moboOperationStatuses/read",
           "origin": null,
