@@ -1034,7 +1034,7 @@
       "name": "ContentPackages",
       "operations": [
         {
-          "description": "Read available Content Packages.",
+          "description": "Read Installed Content Packages.",
           "displayName": "Read Content Packages",
           "isDataAction": false,
           "name": "Microsoft.SecurityInsights/ContentPackages/read",
@@ -1042,10 +1042,18 @@
           "properties": null
         },
         {
-          "description": "Install or uninstall Content Packages.",
+          "description": "Install Content Packages.",
           "displayName": "Write Content Packages",
           "isDataAction": false,
           "name": "Microsoft.SecurityInsights/ContentPackages/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete Installed Content Packages.",
+          "displayName": "Delete Content Packages",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityInsights/ContentPackages/delete",
           "origin": "user",
           "properties": null
         }
@@ -1056,6 +1064,14 @@
       "name": "ContentTemplates",
       "operations": [
         {
+          "description": "Install Content Templates.",
+          "displayName": "Write Content Templates",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityInsights/ContentTemplates/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Read installed Content Templates.",
           "displayName": "Read Content Templates",
           "isDataAction": false,
@@ -1064,8 +1080,8 @@
           "properties": null
         },
         {
-          "description": "Delete installed Content Templates.",
-          "displayName": "Delete installed Content Templates",
+          "description": "Delete Installed Content Templates.",
+          "displayName": "Delete Content Templates",
           "isDataAction": false,
           "name": "Microsoft.SecurityInsights/ContentTemplates/delete",
           "origin": "user",
@@ -1562,6 +1578,34 @@
           "displayName": "Undo an Action",
           "isDataAction": false,
           "name": "Microsoft.SecurityInsights/businessApplicationAgents/systems/undoAction/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ContentProductPackages",
+      "name": "ContentProductPackages",
+      "operations": [
+        {
+          "description": "Read Available Product Packages",
+          "displayName": "Read Content Product Packages",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityInsights/ContentProductPackages/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ContentProductTemplates",
+      "name": "ContentProductTemplates",
+      "operations": [
+        {
+          "description": "Read Available Product Templates",
+          "displayName": "Read Content Product Templates",
+          "isDataAction": false,
+          "name": "Microsoft.SecurityInsights/ContentProductTemplates/read",
           "origin": "user",
           "properties": null
         }
