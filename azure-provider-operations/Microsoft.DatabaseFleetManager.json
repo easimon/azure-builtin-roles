@@ -2,7 +2,24 @@
   "displayName": "Database fleet",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DatabaseFleetManager",
   "name": "Microsoft.DatabaseFleetManager",
-  "operations": [],
+  "operations": [
+    {
+      "description": null,
+      "displayName": null,
+      "isDataAction": false,
+      "name": "Microsoft.DatabaseFleetManager/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": null,
+      "displayName": null,
+      "isDataAction": false,
+      "name": "Microsoft.DatabaseFleetManager/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "",
@@ -134,6 +151,14 @@
           "description": null,
           "displayName": null,
           "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/databases/rename/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
           "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/databases/actions/action",
           "origin": null,
           "properties": null
@@ -167,6 +192,14 @@
           "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/migrateServer/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -195,6 +228,64 @@
           "displayName": null,
           "isDataAction": false,
           "name": "Microsoft.DatabaseFleetManager/fleets/tiers/disable/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Firewall rule",
+      "name": "fleets/fleetspaces/firewallRules",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/firewallRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/firewallRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/firewallRules/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation results resource",
+      "name": "locations/operationTypes/operationResults",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/locations/operationTypes/operationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Operation results resource",
+      "name": "locations/routedOperationResults",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.DatabaseFleetManager/locations/routedOperationResults/read",
           "origin": null,
           "properties": null
         }
