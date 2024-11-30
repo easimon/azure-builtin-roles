@@ -332,6 +332,46 @@
           "properties": null
         },
         {
+          "description": "Gets commit operation batch status information.",
+          "displayName": "NetworkFabrics_CommitBatchStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitBatchStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Discards a conmmit batch operation for agiven Batch ID.",
+          "displayName": "NetworkFabrics_DiscardCommitBatch",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/discardCommitBatch/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lock or unlock a network fabric.",
+          "displayName": "NetworkFabrics_LockFabric",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/lockFabric/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Triggers view of network fabric configuration.",
+          "displayName": "NetworkFabrics_ViewDeviceConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/viewDeviceConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Triggers view of ARM configuration diff",
+          "displayName": "NetworkFabrics_ArmConfigurationDiff",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/armConfigurationDiff/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Join action for Network Fabric resource.",
           "displayName": "NetworkFabrics_Join",
           "isDataAction": false,
@@ -1162,6 +1202,14 @@
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/externalNetworks/clearArpEntries/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Updates BFD Administrative state for externalNetworks.",
+          "displayName": "ExternalNetworks_UpdateBfdAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/externalNetworks/updateBfdAdministrativeState/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -1306,6 +1354,14 @@
           "properties": null
         },
         {
+          "description": "Updates BFD Administrative state for internalNetworks.",
+          "displayName": "InternalNetworks_UpdateBfdAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBfdAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Join action for InternalNetworks resource.",
           "displayName": "InternalNetworks_Join",
           "isDataAction": false,
@@ -1356,6 +1412,14 @@
           "displayName": "NetworkToNetworkInterconnects_updateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates BFD administrative state for NNI.",
+          "displayName": "NetworkToNetworkInterconnects_UpdateBfdAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateBfdAdministrativeState/action",
           "origin": null,
           "properties": null
         },
@@ -2472,30 +2536,6 @@
           "properties": null
         },
         {
-          "description": "Create a private endpoint for the specified resource in the Network Fabric Controller-managed resource group.",
-          "displayName": "NetworkCloudControllers_createPrivateEndpoint",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/createPrivateEndpoint/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete the private endpoint for the specified resource in the Network Fabric Controller-managed resource group.",
-          "displayName": "NetworkCloudControllers_deletePrivateEndpoint",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/deletePrivateEndpoint/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create private DNS records for the specified resource in the Network Fabric Controller-managed resource group.",
-          "displayName": "NetworkCloudControllers_createPrivateDNSRecords",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/createPrivateDNSRecords/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Assigns role to the network fabric controller managed resource group resources.",
           "displayName": "NetworkCloudControllers_assignRole",
           "isDataAction": false,
@@ -2866,6 +2906,76 @@
           "displayName": "NfaExtensionDebug_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/nfaextensiondebug/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkMonitors",
+      "name": "networkMonitors",
+      "operations": [
+        {
+          "description": "Displays NetworkMonitors list by subscription GET method.",
+          "displayName": "NetworkMonitors_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays NetworkMonitors list by resource group GET method.",
+          "displayName": "NetworkMonitors_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements NetworkMonitor GET method.",
+          "displayName": "NetworkMonitors_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates NetworkMonitor resource.",
+          "displayName": "NetworkMonitors_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes layer 2 connectivity between compute nodes by managed by named NetworkMonitor name.",
+          "displayName": "NetworkMonitors_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "API to update certain properties of the NetworkMonitor resource.",
+          "displayName": "NetworkMonitors_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables isolation domain across the fabric or on specified racks.",
+          "displayName": "NetworkMonitors_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Join action for networkMonitors resource.",
+          "displayName": "NetworkMonitors_Join",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkMonitors/join/action",
           "origin": null,
           "properties": null
         }
