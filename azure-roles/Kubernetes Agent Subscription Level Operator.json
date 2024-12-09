@@ -3,13 +3,19 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-11-18T16:11:51.509016+00:00",
+  "createdOn": "2024-11-14T10:01:45.877748+00:00",
   "description": "Grants Microsoft Defender for Cloud subscription level permissions needed to activate Containers plan",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/ada52afe-776a-4b4d-a8f2-55670d3d8178",
   "name": "ada52afe-776a-4b4d-a8f2-55670d3d8178",
   "permissions": [
     {
       "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
         "Microsoft.OperationalInsights/workspaces/write",
         "Microsoft.OperationalInsights/workspaces/read",
         "Microsoft.OperationalInsights/workspaces/listKeys/action",
@@ -27,5 +33,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-11-18T16:11:51.509016+00:00"
+  "updatedOn": "2024-12-05T16:14:33.096937+00:00"
 }
