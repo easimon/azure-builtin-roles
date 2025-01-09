@@ -14117,6 +14117,14 @@
           "properties": null
         },
         {
+          "description": "A synchronous API for the rai policy analysis of input content",
+          "displayName": "Rai Policy Analysis",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/analyzeWithRaiPolicy/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Detect protected material for code",
           "displayName": "Detect Protected Material for Code",
           "isDataAction": true,
@@ -14251,76 +14259,6 @@
           "displayName": "Latest Model",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/ModelDistribution/models/latest/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Request Count at timestamps for the API",
-      "name": "accounts/ContentSafety/requestcounts",
-      "operations": [
-        {
-          "description": "List API request counts at different timestamps given a time range. Default maxpagesize is 1000.",
-          "displayName": "List API request counts at different timestamps given a time range.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/requestcounts/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Request Latency at timestamps for the API",
-      "name": "accounts/ContentSafety/requestlatencies",
-      "operations": [
-        {
-          "description": "List API request latencies at different timestamps given a time range. Default maxpagesize is 1000.",
-          "displayName": "List API request latencies at different timestamps given a time range.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/requestlatencies/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Top terms hit by blocklist",
-      "name": "accounts/ContentSafety/blocklisttopterms",
-      "operations": [
-        {
-          "description": "List top terms hit in blocklist at different timestamps.",
-          "displayName": "List top terms hit in blocklist at different timestamps.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/blocklisttopterms/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Request count for the specified category and severity",
-      "name": "accounts/ContentSafety/categories/severities/requestcounts",
-      "operations": [
-        {
-          "description": "List API request count number of a specific category and a specific severity given a time range. Default maxpagesize is 1000.",
-          "displayName": "ListAPI request count number of a specific category and a specific severity given a time range.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/categories/severities/requestcounts/read",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Hit request counts by the blocklist",
-      "name": "accounts/ContentSafety/blocklisthitcalls",
-      "operations": [
-        {
-          "description": "Show blocklist hit request count at different timestamps.",
-          "displayName": "Show blocklist hit request count at different timestamps.",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/blocklisthitcalls/read",
           "origin": "user",
           "properties": null
         }
@@ -18341,6 +18279,36 @@
           "displayName": "Chat Completion",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/MaaS/v1/chat/completions/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "raipolicies",
+      "name": "accounts/ContentSafety/raipolicies",
+      "operations": [
+        {
+          "description": "Create or update Rai policy",
+          "displayName": "Create Or Update Rai Policy",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/raipolicies/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a rai policy by raiPolicyName",
+          "displayName": "Delete A Rai Policy By raiPolicyName",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/raipolicies/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get or List Rai Policy",
+          "displayName": "Get or List Rai Policy",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/raipolicies/read",
           "origin": "user",
           "properties": null
         }
