@@ -1,5 +1,5 @@
 {
-  "displayName": "Microsoft Durable Task Scheduler",
+  "displayName": "Durable Task Scheduler",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DurableTask",
   "name": "Microsoft.DurableTask",
   "operations": [
@@ -22,66 +22,6 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Durable Task Scheduler Namespace",
-      "name": "namespaces",
-      "operations": [
-        {
-          "description": "Create or Update Durable Task Scheduler Namespace",
-          "displayName": "Create or Update Durable Task Scheduler Namespace",
-          "isDataAction": false,
-          "name": "Microsoft.DurableTask/namespaces/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete Durable Task Scheduler Namespace",
-          "displayName": "Delete Durable Task Scheduler Namespace",
-          "isDataAction": false,
-          "name": "Microsoft.DurableTask/namespaces/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Read Durable Task Scheduler Namespace",
-          "displayName": "Read Durable Task Scheduler Namespace",
-          "isDataAction": false,
-          "name": "Microsoft.DurableTask/namespaces/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Durable Task Scheduler Task Hub",
-      "name": "namespaces/taskhubs",
-      "operations": [
-        {
-          "description": "Create or Update Durable Task Scheduler Task Hub",
-          "displayName": "Create or Update Durable Task Scheduler Task Hub",
-          "isDataAction": false,
-          "name": "Microsoft.DurableTask/namespaces/taskhubs/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete Durable Task Scheduler Task Hub",
-          "displayName": "Delete Durable Task Scheduler Task Hub",
-          "isDataAction": false,
-          "name": "Microsoft.DurableTask/namespaces/taskhubs/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Read Durable Task Scheduler Task Hub",
-          "displayName": "Read Durable Task Scheduler Task Hub",
-          "isDataAction": false,
-          "name": "Microsoft.DurableTask/namespaces/taskhubs/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "OperationStatuses",
       "name": "locations/operationStatuses",
       "operations": [
@@ -99,6 +39,118 @@
           "isDataAction": false,
           "name": "Microsoft.DurableTask/locations/operationStatuses/write",
           "origin": "User, System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Durable Task Scheduler",
+      "name": "schedulers",
+      "operations": [
+        {
+          "description": "Create or Update Durable Task Scheduler",
+          "displayName": "Create or Update Durable Task Scheduler",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Durable Task Scheduler",
+          "displayName": "Delete Durable Task Scheduler",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read Durable Task Scheduler Namespace",
+          "displayName": "Read Durable Task Scheduler Namespace",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Durable Task Scheduler Task Hub",
+      "name": "schedulers/taskhubs",
+      "operations": [
+        {
+          "description": "Create or Update Durable Task Scheduler Task Hub",
+          "displayName": "Create or Update Durable Task Scheduler Task Hub",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/taskhubs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Durable Task Scheduler Task Hub",
+          "displayName": "Delete Durable Task Scheduler Task Hub",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/taskhubs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read Durable Task Scheduler Task Hub",
+          "displayName": "Read Durable Task Scheduler Task Hub",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/taskhubs/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Orchestrations",
+      "name": "orchestrations/metadata",
+      "operations": [
+        {
+          "description": "Gets or lists orchestration metadata, but not payloads",
+          "displayName": "Gets or lists orchestration metadata, but not payloads",
+          "isDataAction": true,
+          "name": "Microsoft.DurableTask/orchestrations/metadata/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Orchestrations",
+      "name": "orchestrations",
+      "operations": [
+        {
+          "description": "Gets or list orchestrations metadata, including payloads",
+          "displayName": "Gets or list orchestrations metadata, including payloads",
+          "isDataAction": true,
+          "name": "Microsoft.DurableTask/orchestrations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Manages orchestrations",
+          "displayName": "Manages orchestrations",
+          "isDataAction": true,
+          "name": "Microsoft.DurableTask/orchestrations/manage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get orchestration and activity work-items and post results",
+          "displayName": "Get orchestration and activity work-items and post results",
+          "isDataAction": true,
+          "name": "Microsoft.DurableTask/orchestrations/execute/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Can invoke RaiseEvent",
+          "displayName": "Can invoke RaiseEvent",
+          "isDataAction": true,
+          "name": "Microsoft.DurableTask/orchestrations/raiseevents/action",
+          "origin": null,
           "properties": null
         }
       ]
