@@ -3,8 +3,8 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-08-26T15:01:39.725768+00:00",
-  "description": "Do not remove this role from your resource group because it is critical to enable your AVS private cloud to operate. If the role is removed, it will cause your AVS private cloud control plane to no longer operate correctly. The role is used to enable the AVS private cloud control plane to create the supporting resources in the resource group of the private clouds attached virtual network and bind them to the attached virtual network. This role is not intended for use cases outside of assignment to the associated AVS identity in your entra-id tenant.",
+  "createdOn": "2024-08-29T15:27:15.806783+00:00",
+  "description": "Custom role for AVS to manage customer resources used for AVS scenarios.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/d715fb95-a0f0-4f1c-8be6-5ad2d2767f67",
   "name": "d715fb95-a0f0-4f1c-8be6-5ad2d2767f67",
   "permissions": [
@@ -65,8 +65,7 @@
         "Microsoft.Network/routeTables/join/action",
         "Microsoft.Network/routeTables/routes/read",
         "Microsoft.Network/routeTables/routes/write",
-        "Microsoft.Network/routeTables/routes/delete",
-        "Microsoft.Network/virtualNetworks/join/action"
+        "Microsoft.Network/routeTables/routes/delete"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -78,7 +77,7 @@
       "actions": [
         "Microsoft.Authorization/roleAssignments/delete"
       ],
-      "condition": "(!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR @Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{d715fb95a0f04f1c8be65ad2d2767f67, 4d97b98b1d4f4787a291c67834d212e7, 49fc33c1886f4b21a00e1d9993234734}",
+      "condition": "(!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR @Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{d715fb95a0f04f1c8be65ad2d2767f67, 4d97b98b1d4f4787a291c67834d212e7}",
       "conditionVersion": "2.0",
       "dataActions": [],
       "notActions": [],
@@ -89,5 +88,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-01-17T17:53:57.901476+00:00"
+  "updatedOn": "2024-08-29T15:27:15.806783+00:00"
 }
