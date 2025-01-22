@@ -8,7 +8,7 @@
       "displayName": "CarbonService_ListCarbonEmissionReports",
       "isDataAction": false,
       "name": "Microsoft.Carbon/carbonEmissionReports/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -16,7 +16,7 @@
       "displayName": "CarbonService_QueryCarbonEmissionDataAvailableDateRange",
       "isDataAction": false,
       "name": "Microsoft.Carbon/queryCarbonEmissionDataAvailableDateRange/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -24,7 +24,7 @@
       "displayName": "Register the Microsoft.Carbon",
       "isDataAction": false,
       "name": "Microsoft.Carbon/register/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -32,21 +32,35 @@
       "displayName": "Unregister the Microsoft.Carbon",
       "isDataAction": false,
       "name": "Microsoft.Carbon/unregister/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     }
   ],
   "resourceTypes": [
     {
-      "displayName": "operations",
-      "name": "operations",
+      "displayName": "Operations",
+      "name": "Operations",
       "operations": [
         {
-          "description": "read operations",
-          "displayName": "read_operations",
+          "description": "read Operations",
+          "displayName": "read_Operations",
           "isDataAction": false,
-          "name": "Microsoft.Carbon/operations/read",
-          "origin": null,
+          "name": "Microsoft.Carbon/Operations/read",
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "carbonEmissionReports",
+      "name": "carbonEmissionReports",
+      "operations": [
+        {
+          "description": "API for Carbon Emissions Reports",
+          "displayName": "CarbonService_ListCarbonEmissionReports",
+          "isDataAction": false,
+          "name": "Microsoft.Carbon/carbonEmissionReports/read",
+          "origin": "System",
           "properties": null
         }
       ]
