@@ -8869,6 +8869,22 @@
           "name": "Microsoft.CognitiveServices/accounts/CustomVoice/evaluations/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Trial project actions",
+          "displayName": "Trial project actions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/projects/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Synthesis actions",
+          "displayName": "Synthesis actions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/synthesis/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -9065,6 +9081,14 @@
         {
           "description": "Gets one or more projects.",
           "displayName": "Gets one or more projects.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/projects/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets one or more trial projects.",
+          "displayName": "Gets one or more trial projects.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/CustomVoice/projects/read",
           "origin": "user",
@@ -18287,6 +18311,178 @@
           "displayName": "Delete responses.",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/responses/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "voiceagent",
+      "name": "accounts/SpeechServices/voiceagent",
+      "operations": [
+        {
+          "description": "Create a realtime connection to the voice agent api",
+          "displayName": "Create a realtime connection to the voice agent api",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/SpeechServices/voiceagent/realtime/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "zeroshots",
+      "name": "accounts/CustomVoice/projects/zeroshots",
+      "operations": [
+        {
+          "description": "Get personal voice prompts for project",
+          "displayName": "Get personal voice prompts for project",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/projects/zeroshots/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "consents",
+      "name": "accounts/CustomVoice/consents",
+      "operations": [
+        {
+          "description": "Create Consent",
+          "displayName": "Create Consent",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/consents/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete Consent",
+          "displayName": "Delete Consent",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/consents/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get consents",
+          "displayName": "Get consents",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/consents/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "templates",
+      "name": "accounts/CustomVoice/consents/templates",
+      "operations": [
+        {
+          "description": "Get Consent Templates",
+          "displayName": "Get Consent Templates",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/consents/templates/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "zeroshots",
+      "name": "accounts/CustomVoice/zeroshots",
+      "operations": [
+        {
+          "description": "Create personal voice prompt",
+          "displayName": "Create personal voice prompt",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/zeroshots/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete personal voice prompt",
+          "displayName": "Delete personal voice prompt",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/zeroshots/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get personal voice prompt",
+          "displayName": "Get personal voice prompt",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/zeroshots/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "audioprompts",
+      "name": "accounts/CustomVoice/zeroshots/audioprompts",
+      "operations": [
+        {
+          "description": "Get recording audios for personal voice prompt",
+          "displayName": "Get recording audios",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/zeroshots/audioprompts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "recordingscripts",
+      "name": "accounts/CustomVoice/zeroshots/recordingscripts",
+      "operations": [
+        {
+          "description": "Get recording scripts",
+          "displayName": "Get recording scripts",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/zeroshots/recordingscripts/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "basemodels",
+      "name": "accounts/CustomVoice/zeroshots/basemodels",
+      "operations": [
+        {
+          "description": "Get personal voice base models",
+          "displayName": "Get personal voice base models",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/zeroshots/basemodels/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "instantvoice",
+      "name": "accounts/CustomVoice/quotas/instantvoice",
+      "operations": [
+        {
+          "description": "Get personal voice trial quota",
+          "displayName": "Get personal voice trial quota",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/quotas/instantvoice/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "scripts",
+      "name": "accounts/CustomVoice/synthesis/scripts",
+      "operations": [
+        {
+          "description": "Get Synthesis Scripts",
+          "displayName": "Get Synthesis Scripts",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomVoice/synthesis/scripts/read",
           "origin": "user",
           "properties": null
         }
