@@ -26,7 +26,7 @@
       "name": "locations",
       "operations": [
         {
-          "description": "virtualMachinesCancelOperations: cancelOperations for a virtual machine",
+          "description": "VirtualMachinesCancelOperations: Cancel a previously submitted (start/deallocate/hibernate) request",
           "displayName": "ScheduledActions_VirtualMachinesCancelOperations",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesCancelOperations/action",
@@ -34,7 +34,7 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesExecuteDeallocate: executeDeallocate for a virtual machine",
+          "description": "VirtualMachinesExecuteDeallocate: Execute deallocate operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
           "displayName": "ScheduledActions_VirtualMachinesExecuteDeallocate",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteDeallocate/action",
@@ -42,7 +42,7 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesExecuteHibernate: executeHibernate for a virtual machine",
+          "description": "VirtualMachinesExecuteHibernate: Execute hibernate operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
           "displayName": "ScheduledActions_VirtualMachinesExecuteHibernate",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteHibernate/action",
@@ -50,7 +50,7 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesExecuteStart: executeStart for a virtual machine",
+          "description": "VirtualMachinesExecuteStart: Execute start operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
           "displayName": "ScheduledActions_VirtualMachinesExecuteStart",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteStart/action",
@@ -58,7 +58,7 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesGetOperationStatus: getOperationStatus for a virtual machine",
+          "description": "VirtualMachinesGetOperationStatus: Polling endpoint to read status of operations performed on virtual machines",
           "displayName": "ScheduledActions_VirtualMachinesGetOperationStatus",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationStatus/action",
@@ -66,7 +66,7 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesSubmitDeallocate: submitDeallocate for a virtual machine",
+          "description": "VirtualMachinesSubmitDeallocate: Schedule deallocate operation for a batch of virtual machines at datetime in future.",
           "displayName": "ScheduledActions_VirtualMachinesSubmitDeallocate",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitDeallocate/action",
@@ -74,7 +74,7 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesSubmitHibernate: submitHibernate for a virtual machine",
+          "description": "VirtualMachinesSubmitHibernate: Schedule hibernate operation for a batch of virtual machines at datetime in future.",
           "displayName": "ScheduledActions_VirtualMachinesSubmitHibernate",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitHibernate/action",
@@ -82,10 +82,18 @@
           "properties": null
         },
         {
-          "description": "virtualMachinesSubmitStart: submitStart for a virtual machine",
+          "description": "VirtualMachinesSubmitStart: Schedule start operation for a batch of virtual machines at datetime in future.",
           "displayName": "ScheduledActions_VirtualMachinesSubmitStart",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitStart/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "VirtualMachinesGetOperationErrors: Get error details on operation errors (like transient errors encountered, additional logs) if they exist.",
+          "displayName": "ScheduledActions_VirtualMachinesGetOperationErrors",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationErrors/action",
           "origin": null,
           "properties": null
         }
@@ -100,6 +108,206 @@
           "displayName": "read_Operations",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/Operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/OperationStatuses",
+      "name": "locations/OperationStatuses",
+      "operations": [
+        {
+          "description": "read OperationStatuses",
+          "displayName": "read_OperationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/OperationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write OperationStatuses",
+          "displayName": "write_OperationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/OperationStatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "autoActions",
+      "name": "autoActions",
+      "operations": [
+        {
+          "description": "List AutoAction resources by subscription ID",
+          "displayName": "AutoActions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AutoAction resources by resource group",
+          "displayName": "AutoActions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AutoAction",
+          "displayName": "AutoActions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AutoAction",
+          "displayName": "AutoActions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a AutoAction",
+          "displayName": "AutoActions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AutoAction",
+          "displayName": "AutoActions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_AttachResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/attachResources/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_CancelNextOccurrence",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/cancelNextOccurrence/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_DetachResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/detachResources/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_Disable",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/disable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_Enable",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/enable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_ListResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/listResources/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_PatchResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/patchResources/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "AutoActions_TriggerManualOccurrence",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/triggerManualOccurrence/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "autoActions/occurrences",
+      "name": "autoActions/occurrences",
+      "operations": [
+        {
+          "description": "List Occurrence resources by AutoAction",
+          "displayName": "Occurrences_ListByAutoAction",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/occurrences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Occurrence",
+          "displayName": "Occurrences_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/occurrences/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "Occurrences_Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/occurrences/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "Occurrences_Delay",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/occurrences/delay/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "A synchronous resource action.",
+          "displayName": "Occurrences_ListResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActions/occurrences/listResources/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "autoActionResources",
+      "name": "autoActionResources",
+      "operations": [
+        {
+          "description": "List AutoActionResources resources by parent",
+          "displayName": "AutoActionsExtension_ListByVms",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/autoActionResources/read",
           "origin": null,
           "properties": null
         }
