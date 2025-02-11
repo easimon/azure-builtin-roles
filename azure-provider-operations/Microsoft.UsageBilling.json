@@ -2,18 +2,259 @@
   "displayName": "Microsoft.UsageBilling",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.UsageBilling",
   "name": "Microsoft.UsageBilling",
-  "operations": [],
+  "operations": [
+    {
+      "description": "ResourceProvider registration action for Microsoft.UsageBilling",
+      "displayName": "Register Action",
+      "isDataAction": false,
+      "name": "Microsoft.UsageBilling/register/action",
+      "origin": "user, system",
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
-      "displayName": "inputs",
+      "displayName": "accounts/inputs",
       "name": "accounts/inputs",
       "operations": [
+        {
+          "description": "Get input",
+          "displayName": "accounts/inputs_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/inputs/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update input",
+          "displayName": "accounts/inputs_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/inputs/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete input",
+          "displayName": "accounts/inputs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/inputs/Delete",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Send events to input resource.",
           "displayName": "Provides permission to send usage events to input resource.",
           "isDataAction": true,
           "name": "Microsoft.UsageBilling/accounts/inputs/send/action",
           "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts/pipelines",
+      "name": "accounts/pipelines",
+      "operations": [
+        {
+          "description": "Get pipeline",
+          "displayName": "accounts/pipelines_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pipelines/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update pipeline",
+          "displayName": "accounts/pipelines_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pipelines/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete pipeline",
+          "displayName": "accounts/pipelines_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pipelines/Delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts",
+      "name": "accounts",
+      "operations": [
+        {
+          "description": "Get usage account",
+          "displayName": "accounts_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update usage account",
+          "displayName": "accounts_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete usage account",
+          "displayName": "accounts_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/Delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Read operations",
+          "displayName": "operations_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/operations/Read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts/pipelines/outputSelectors",
+      "name": "accounts/pipelines/outputSelectors",
+      "operations": [
+        {
+          "description": "Create or update Output Selector",
+          "displayName": "accounts/pipelines/outputSelectors_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pipelines/outputSelectors/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Output Selector",
+          "displayName": "accounts/pipelines/outputSelectors_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pipelines/outputSelectors/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Output Selector",
+          "displayName": "accounts/pipelines/outputSelectors_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pipelines/outputSelectors/Delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts/pav2outputs",
+      "name": "accounts/pav2outputs",
+      "operations": [
+        {
+          "description": "Create or update PAv2 output",
+          "displayName": "accounts/pav2outputs_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pav2outputs/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get PAv2 output",
+          "displayName": "accounts/pav2outputs_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pav2outputs/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete PAv2 output",
+          "displayName": "accounts/pav2outputs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/pav2outputs/Delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts/dataExports",
+      "name": "accounts/dataExports",
+      "operations": [
+        {
+          "description": "Get data export",
+          "displayName": "accounts/dataExports_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/dataExports/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update data export",
+          "displayName": "accounts/dataExports_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/dataExports/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete data export",
+          "displayName": "accounts/dataExports_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/dataExports/Delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accounts/metricExports",
+      "name": "accounts/metricExports",
+      "operations": [
+        {
+          "description": "Create or update Metric Export",
+          "displayName": "accounts/metricExports_Write",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/metricExports/Write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get Metric Export",
+          "displayName": "accounts/metricExports_Read",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/metricExports/Read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Metric Export",
+          "displayName": "accounts/metricExports_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/accounts/metricExports/Delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "providerpermissions",
+      "name": "providerpermissions",
+      "operations": [
+        {
+          "description": "Read permissions for provider",
+          "displayName": "Read Provider Permissions",
+          "isDataAction": false,
+          "name": "Microsoft.UsageBilling/providerpermissions/read",
+          "origin": "user, system",
           "properties": null
         }
       ]
