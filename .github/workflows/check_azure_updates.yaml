@@ -82,7 +82,7 @@ jobs:
       matrix:
         tweet: ${{ fromJson(needs.create-tweet-matrix.outputs.tweets) }}
     steps:
-      - uses: Eomm/why-don-t-you-tweet@v1
+      - uses: Eomm/why-don-t-you-tweet@v2
         env:
           TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
