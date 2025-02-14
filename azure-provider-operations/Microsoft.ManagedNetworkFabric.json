@@ -22,14 +22,22 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Operations",
-      "name": "Operations",
+      "displayName": "operations",
+      "name": "operations",
       "operations": [
         {
-          "description": "read Operations",
-          "displayName": "read_Operations",
+          "description": "read operations",
+          "displayName": "read_operations",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/Operations/read",
+          "name": "Microsoft.ManagedNetworkFabric/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the operations for the provider",
+          "displayName": "Operations_List",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/operations/read",
           "origin": null,
           "properties": null
         }
@@ -120,7 +128,7 @@
           "properties": null
         },
         {
-          "description": "UnLink external artifcats with network fabric controller resource.",
+          "description": "UnLink external artifacts with network fabric controller resource.",
           "displayName": "NetworkFabricControllers_DisJoinArtifacts",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/disjoinartifactstore/action",
@@ -130,22 +138,22 @@
       ]
     },
     {
-      "displayName": "Locations/OperationStatuses",
-      "name": "Locations/OperationStatuses",
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "read OperationStatuses",
-          "displayName": "read_OperationStatuses",
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/Locations/OperationStatuses/read",
+          "name": "Microsoft.ManagedNetworkFabric/locations/operationStatuses/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write OperationStatuses",
-          "displayName": "write_OperationStatuses",
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/Locations/OperationStatuses/write",
+          "name": "Microsoft.ManagedNetworkFabric/locations/operationStatuses/write",
           "origin": null,
           "properties": null
         }
@@ -205,7 +213,7 @@
         },
         {
           "description": "Provisions the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_provision",
+          "displayName": "NetworkFabrics_Provision",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/provision/action",
           "origin": null,
@@ -213,7 +221,7 @@
         },
         {
           "description": "Deprovisions the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_deprovision",
+          "displayName": "NetworkFabrics_Deprovision",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/deprovision/action",
           "origin": null,
@@ -277,7 +285,7 @@
         },
         {
           "description": "Upgrades the version of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_upgrade",
+          "displayName": "NetworkFabrics_Upgrade",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/upgrade/action",
           "origin": null,
@@ -285,7 +293,7 @@
         },
         {
           "description": "Refreshes the configuration of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_refreshConfiguration",
+          "displayName": "NetworkFabrics_RefreshConfiguration",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/refreshConfiguration/action",
           "origin": null,
@@ -332,7 +340,7 @@
           "properties": null
         },
         {
-          "description": "Gets commit operation batch status information.",
+          "description": "Post action: Returns a status of commit batch operation.",
           "displayName": "NetworkFabrics_CommitBatchStatus",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitBatchStatus/action",
@@ -340,7 +348,7 @@
           "properties": null
         },
         {
-          "description": "Discards a conmmit batch operation for agiven Batch ID.",
+          "description": "Post action: Discards a Batch operation in progress.",
           "displayName": "NetworkFabrics_DiscardCommitBatch",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/discardCommitBatch/action",
@@ -348,7 +356,7 @@
           "properties": null
         },
         {
-          "description": "Lock or unlock a network fabric.",
+          "description": "Post action: Triggers network fabric lock operation.",
           "displayName": "NetworkFabrics_LockFabric",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/lockFabric/action",
@@ -356,7 +364,7 @@
           "properties": null
         },
         {
-          "description": "Triggers view of network fabric configuration.",
+          "description": "Post action: Triggers view of network fabric configuration.",
           "displayName": "NetworkFabrics_ViewDeviceConfiguration",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/viewDeviceConfiguration/action",
@@ -364,7 +372,7 @@
           "properties": null
         },
         {
-          "description": "Triggers view of ARM configuration diff",
+          "description": "Post action: Triggers diff of NetworkFabric ARM Configuration.",
           "displayName": "NetworkFabrics_ArmConfigurationDiff",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/armConfigurationDiff/action",
@@ -448,7 +456,7 @@
       "name": "networkDevices",
       "operations": [
         {
-          "description": "Get the Network Device resource details.",
+          "description": "Gets the Network Device resource details.",
           "displayName": "NetworkDevices_Get",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/read",
@@ -497,7 +505,7 @@
         },
         {
           "description": "Reboot the Network Device.",
-          "displayName": "NetworkDevices_reboot",
+          "displayName": "NetworkDevices_Reboot",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/reboot/action",
           "origin": null,
@@ -663,7 +671,7 @@
         },
         {
           "description": "Update the admin state of the Network Interface.",
-          "displayName": "NetworkInterfaces_updateAdministrativeState",
+          "displayName": "NetworkInterfaces_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/networkInterfaces/updateAdministrativeState/action",
           "origin": null,
@@ -717,7 +725,7 @@
         },
         {
           "description": "Enables isolation domain across the fabric or on specified racks.",
-          "displayName": "L2IsolationDomains_updateAdministrativeState",
+          "displayName": "L2IsolationDomains_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/updateAdministrativeState/action",
           "origin": null,
@@ -802,7 +810,7 @@
           "properties": null
         },
         {
-          "description": "Create isolation domain resources for layer 3 connectivity between compute nodes and for communication with external services .This configuration is applied on the devices only after the creation of networks is completed and isolation domain is enabled. ",
+          "description": "Create isolation domain resources for layer 3 connectivity between compute nodes and for communication with external services .This configuration is applied on the devices only after the creation of networks is completed and isolation domain is enabled.",
           "displayName": "L3IsolationDomains_Create",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/write",
@@ -851,7 +859,7 @@
         },
         {
           "description": "Enables racks for this Isolation Domain.",
-          "displayName": "L3IsolationDomains_updateAdministrativeState",
+          "displayName": "L3IsolationDomains_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/updateAdministrativeState/action",
           "origin": null,
@@ -1204,7 +1212,7 @@
           "properties": null
         },
         {
-          "description": "Updates BFD Administrative state for externalNetworks.",
+          "description": "BFD administrative state for either static or bgp for internalNetwork.",
           "displayName": "ExternalNetworks_UpdateBfdAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/externalNetworks/updateBfdAdministrativeState/action",
@@ -1298,14 +1306,6 @@
           "properties": null
         },
         {
-          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
-          "displayName": "InternalNetworks_updateBgpAdministrativeState",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBgpAdministrativeState/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Update BfdForBgp for internalNetwork.",
           "displayName": "InternalNetworks_updateBfdForBgpAdministrativeState",
           "isDataAction": false,
@@ -1354,7 +1354,7 @@
           "properties": null
         },
         {
-          "description": "Updates BFD Administrative state for internalNetworks.",
+          "description": "BFD administrative state for either static or bgp for internalNetwork.",
           "displayName": "InternalNetworks_UpdateBfdAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBfdAdministrativeState/action",
@@ -1409,14 +1409,14 @@
         },
         {
           "description": "Updates the Admin State.",
-          "displayName": "NetworkToNetworkInterconnects_updateAdministrativeState",
+          "displayName": "NetworkToNetworkInterconnects_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateAdministrativeState/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates BFD administrative state for NNI.",
+          "description": "Updates the Admin State.",
           "displayName": "NetworkToNetworkInterconnects_UpdateBfdAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateBfdAdministrativeState/action",
@@ -1470,7 +1470,7 @@
           "properties": null
         },
         {
-          "description": "Implements IpCommunities list by resource group GET method.",
+          "description": "Implements IP Communities list by resource group GET method.",
           "displayName": "IpCommunities_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/ipCommunities/read",
@@ -1478,7 +1478,7 @@
           "properties": null
         },
         {
-          "description": "Implements IpCommunities list by subscription GET method.",
+          "description": "Implements IP Communities list by subscription GET method.",
           "displayName": "IpCommunities_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/ipCommunities/read",
@@ -2146,14 +2146,14 @@
       ]
     },
     {
-      "displayName": "networkfabrics/nfadevices",
-      "name": "networkfabrics/nfadevices",
+      "displayName": "networkFabrics/nfadevices",
+      "name": "networkFabrics/nfadevices",
       "operations": [
         {
           "description": "Get the NfaDevices resource details.",
           "displayName": "NfaDevices_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/nfadevices/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/nfadevices/read",
           "origin": null,
           "properties": null
         },
@@ -2161,7 +2161,7 @@
           "description": "Create a NfaDevice resource.",
           "displayName": "NfaDevices_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/nfadevices/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/nfadevices/write",
           "origin": null,
           "properties": null
         },
@@ -2169,21 +2169,21 @@
           "description": "Delete the NfaDevice resource.",
           "displayName": "NfaDevices_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/nfadevices/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/nfadevices/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/fileinjects",
-      "name": "networkfabrics/fileinjects",
+      "displayName": "networkFabrics/fileinjects",
+      "name": "networkFabrics/fileinjects",
       "operations": [
         {
           "description": "Get the FileInject resource details.",
           "displayName": "FileInjects_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/fileinjects/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/fileinjects/read",
           "origin": null,
           "properties": null
         },
@@ -2191,7 +2191,7 @@
           "description": "Create a FileInject resource.",
           "displayName": "FileInjects_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/fileinjects/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/fileinjects/write",
           "origin": null,
           "properties": null
         },
@@ -2199,21 +2199,21 @@
           "description": "Delete the FileInject resource.",
           "displayName": "FileInjects_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/fileinjects/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/fileinjects/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/ocrawconfigs",
-      "name": "networkfabrics/ocrawconfigs",
+      "displayName": "networkFabrics/ocrawconfigs",
+      "name": "networkFabrics/ocrawconfigs",
       "operations": [
         {
           "description": "Get the OcRawConfig resource details.",
           "displayName": "OcRawConfigs_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/ocrawconfigs/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/ocrawconfigs/read",
           "origin": null,
           "properties": null
         },
@@ -2221,7 +2221,7 @@
           "description": "Create a OcRawConfig resource.",
           "displayName": "OcRawConfigs_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/ocrawconfigs/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/ocrawconfigs/write",
           "origin": null,
           "properties": null
         },
@@ -2229,21 +2229,21 @@
           "description": "Delete the OcRawConfig resource.",
           "displayName": "OcRawConfigs_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/ocrawconfigs/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/ocrawconfigs/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/sshcommands",
-      "name": "networkfabrics/sshcommands",
+      "displayName": "networkFabrics/sshcommands",
+      "name": "networkFabrics/sshcommands",
       "operations": [
         {
           "description": "Get the SSHCommand resource details.",
           "displayName": "SSHCommands_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/sshcommands/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/sshcommands/read",
           "origin": null,
           "properties": null
         },
@@ -2251,7 +2251,7 @@
           "description": "Create a SSHCommand resource.",
           "displayName": "SSHCommands_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/sshcommands/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/sshcommands/write",
           "origin": null,
           "properties": null
         },
@@ -2259,21 +2259,21 @@
           "description": "Delete the SSHCommand resource.",
           "displayName": "SSHCommands_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/sshcommands/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/sshcommands/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/gnoioperations",
-      "name": "networkfabrics/gnoioperations",
+      "displayName": "networkFabrics/gnoioperations",
+      "name": "networkFabrics/gnoioperations",
       "operations": [
         {
           "description": "Get the GNOIOperation resource details.",
           "displayName": "GNOIOperations_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoioperations/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/gnoioperations/read",
           "origin": null,
           "properties": null
         },
@@ -2281,7 +2281,7 @@
           "description": "Create a GNOIOperation resource.",
           "displayName": "GNOIOperations_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoioperations/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/gnoioperations/write",
           "origin": null,
           "properties": null
         },
@@ -2289,21 +2289,21 @@
           "description": "Delete the GNOIOperation resource.",
           "displayName": "GNOIOperations_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoioperations/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/gnoioperations/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/networkfabricinfos",
-      "name": "networkfabrics/networkfabricinfos",
+      "displayName": "networkFabrics/networkfabricinfos",
+      "name": "networkFabrics/networkfabricinfos",
       "operations": [
         {
           "description": "Get the NetworkFabricInfo resource details.",
           "displayName": "NetworkFabricInfos_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkfabricinfos/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkfabricinfos/read",
           "origin": null,
           "properties": null
         },
@@ -2311,7 +2311,7 @@
           "description": "Create a NetworkFabricInfo resource.",
           "displayName": "NetworkFabricInfos_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkfabricinfos/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkfabricinfos/write",
           "origin": null,
           "properties": null
         },
@@ -2319,21 +2319,21 @@
           "description": "Delete the NetworkFabricInfo resource.",
           "displayName": "NetworkFabricInfos_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkfabricinfos/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkfabricinfos/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/networkfabricconfigurationinfos",
-      "name": "networkfabrics/networkfabricconfigurationinfos",
+      "displayName": "networkFabrics/networkfabricconfigurationinfos",
+      "name": "networkFabrics/networkfabricconfigurationinfos",
       "operations": [
         {
           "description": "Get the NetworkFabricConfigurationInfo resource details.",
           "displayName": "NetworkFabricConfigurationInfo_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkfabricconfigurationinfos/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkfabricconfigurationinfos/read",
           "origin": null,
           "properties": null
         },
@@ -2341,7 +2341,7 @@
           "description": "Create a NetworkFabricConfigurationInfo resource.",
           "displayName": "NetworkFabricConfigurationInfo_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkfabricconfigurationinfos/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkfabricconfigurationinfos/write",
           "origin": null,
           "properties": null
         },
@@ -2349,21 +2349,21 @@
           "description": "Delete the NetworkFabricConfigurationInfo resource.",
           "displayName": "NetworkFabricConfigurationInfo_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkfabricconfigurationinfos/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkfabricconfigurationinfos/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/identitywebhooks",
-      "name": "networkfabrics/identitywebhooks",
+      "displayName": "networkFabrics/identitywebhooks",
+      "name": "networkFabrics/identitywebhooks",
       "operations": [
         {
           "description": "Get the IdentityWebhooks resource details.",
           "displayName": "IdentityWebhooks_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/identitywebhooks/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/identitywebhooks/read",
           "origin": null,
           "properties": null
         },
@@ -2371,7 +2371,7 @@
           "description": "Create a IdentityWebhooks resource.",
           "displayName": "IdentityWebhooks_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/identitywebhooks/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/identitywebhooks/write",
           "origin": null,
           "properties": null
         },
@@ -2379,7 +2379,7 @@
           "description": "Delete the IdentityWebhooks resource.",
           "displayName": "IdentityWebhooks_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/identitywebhooks/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/identitywebhooks/delete",
           "origin": null,
           "properties": null
         },
@@ -2387,111 +2387,111 @@
           "description": "Notify the IdentityWebhooks user info set.",
           "displayName": "IdentityWebhooks_Notify",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/identitywebhooks/notify/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/identitywebhooks/notify/action",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabrics/networkclouds2s",
-      "name": "networkfabrics/networkclouds2s",
+      "displayName": "networkFabrics/networkclouds2s",
+      "name": "networkFabrics/networkclouds2s",
       "operations": [
         {
           "description": "Get the NetworkCloudS2S resource details.",
-          "displayName": "NetworkCloudS2S_Get",
+          "displayName": "NetworkCloudS2S_NetworkFabrics_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkclouds2s/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkclouds2s/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Create a NetworkCloudS2S resource.",
-          "displayName": "NetworkCloudS2S_Create",
+          "displayName": "NetworkCloudS2S_NetworkFabrics_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkclouds2s/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkclouds2s/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Delete the NetworkCloudS2S resource.",
-          "displayName": "NetworkCloudS2S_Delete",
+          "displayName": "NetworkCloudS2S_NetworkFabrics_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/networkclouds2s/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkclouds2s/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "l2isolationdomains/networkclouds2s",
-      "name": "l2isolationdomains/networkclouds2s",
+      "displayName": "l2IsolationDomains/networkclouds2s",
+      "name": "l2IsolationDomains/networkclouds2s",
       "operations": [
         {
           "description": "Get the NetworkCloudS2S resource details.",
-          "displayName": "NetworkCloudS2S_Get",
+          "displayName": "NetworkCloudS2S_l2IsolationDomains_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l2isolationdomains/networkclouds2s/read",
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/networkclouds2s/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Create a NetworkCloudS2S resource.",
-          "displayName": "NetworkCloudS2S_Create",
+          "displayName": "NetworkCloudS2S_l2IsolationDomains_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l2isolationdomains/networkclouds2s/write",
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/networkclouds2s/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Delete the NetworkCloudS2S resource.",
-          "displayName": "NetworkCloudS2S_Delete",
+          "displayName": "NetworkCloudS2S_l2IsolationDomains_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l2isolationdomains/networkclouds2s/delete",
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/networkclouds2s/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "l3isolationdomains/networkclouds2s",
-      "name": "l3isolationdomains/networkclouds2s",
+      "displayName": "l3IsolationDomains/networkclouds2s",
+      "name": "l3IsolationDomains/networkclouds2s",
       "operations": [
         {
           "description": "Get the NetworkCloudS2S resource details.",
-          "displayName": "NetworkCloudS2S_Get",
+          "displayName": "NetworkCloudS2S_l3IsolationDomains_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3isolationdomains/networkclouds2s/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/networkclouds2s/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Create a NetworkCloudS2S resource.",
-          "displayName": "NetworkCloudS2S_Create",
+          "displayName": "NetworkCloudS2S_l3IsolationDomains_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3isolationdomains/networkclouds2s/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/networkclouds2s/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Delete the NetworkCloudS2S resource.",
-          "displayName": "NetworkCloudS2S_Delete",
+          "displayName": "NetworkCloudS2S_l3IsolationDomains_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3isolationdomains/networkclouds2s/delete",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/networkclouds2s/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabriccontrollers/networkcloudcontrollers",
-      "name": "networkfabriccontrollers/networkcloudcontrollers",
+      "displayName": "networkFabricControllers/networkcloudcontrollers",
+      "name": "networkFabricControllers/networkcloudcontrollers",
       "operations": [
         {
           "description": "Get the NetworkCloudController resource details.",
           "displayName": "NetworkCloudControllers_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/read",
           "origin": null,
           "properties": null
         },
@@ -2499,7 +2499,7 @@
           "description": "Create a NetworkCloudController resource.",
           "displayName": "NetworkCloudControllers_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/write",
           "origin": null,
           "properties": null
         },
@@ -2507,7 +2507,7 @@
           "description": "Delete the NetworkCloudController resource.",
           "displayName": "NetworkCloudControllers_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/delete",
           "origin": null,
           "properties": null
         },
@@ -2515,7 +2515,7 @@
           "description": "Create private endpoint on acr in network fabric controller managed resource group.",
           "displayName": "NetworkCloudControllers_createPrivateEndpointOnAcr",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/createPrivateEndpointOnAcr/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/createPrivateEndpointOnAcr/action",
           "origin": null,
           "properties": null
         },
@@ -2523,7 +2523,7 @@
           "description": "Delete private endpoint on acr in network fabric controller managed resource group.",
           "displayName": "NetworkCloudControllers_deletePrivateEndpointOnAcr",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/deletePrivateEndpointOnAcr/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/deletePrivateEndpointOnAcr/action",
           "origin": null,
           "properties": null
         },
@@ -2531,7 +2531,7 @@
           "description": "Create private dns records on acr in network fabric controller managed resource group.",
           "displayName": "NetworkCloudControllers_createAcrPrivateDnsRecords",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/createAcrPrivateDnsRecords/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/createAcrPrivateDnsRecords/action",
           "origin": null,
           "properties": null
         },
@@ -2539,7 +2539,7 @@
           "description": "Assigns role to the network fabric controller managed resource group resources.",
           "displayName": "NetworkCloudControllers_assignRole",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/assignRole/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/assignRole/action",
           "origin": null,
           "properties": null
         },
@@ -2547,7 +2547,7 @@
           "description": "Create a new firewall rule within the firewall resource in the Network Fabric Controller-managed resource group.",
           "displayName": "NetworkCloudControllers_addFirewallRule",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/addfirewallrule/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/addfirewallrule/action",
           "origin": null,
           "properties": null
         },
@@ -2555,7 +2555,7 @@
           "description": "Remove an existing firewall rule from the firewall resource in the Network Fabric Controller-managed resource group.",
           "displayName": "NetworkCloudControllers_removeFirewallRule",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/removefirewallrule/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/removefirewallrule/action",
           "origin": null,
           "properties": null
         },
@@ -2563,21 +2563,21 @@
           "description": "Retrieve the list of firewall rules configured within the firewall resource in the Network Fabric Controller-managed resource group.",
           "displayName": "NetworkCloudControllers_getFirewallRules",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/networkcloudcontrollers/getFirewallRules/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/networkcloudcontrollers/getFirewallRules/action",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabriccontrollers/gateway",
-      "name": "networkfabriccontrollers/gateway",
+      "displayName": "networkFabricControllers/gateway",
+      "name": "networkFabricControllers/gateway",
       "operations": [
         {
           "description": "Get the Gateway resource details.",
           "displayName": "Gateway_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/gateway/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/gateway/read",
           "origin": null,
           "properties": null
         },
@@ -2585,15 +2585,15 @@
           "description": "Create a Gateway resource.",
           "displayName": "Gateway_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/gateway/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/gateway/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "POST Action on Gateway resource to update the Internet Gateway Rule Resource.",
+          "description": "POST Action on Gateway resource to update the Internet Gateway Rule Resource",
           "displayName": "Gateway_UpdateInternetGatewayRules",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/gateway/updateInternetGatewayRules/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/gateway/updateInternetGatewayRules/action",
           "origin": null,
           "properties": null
         },
@@ -2601,21 +2601,21 @@
           "description": "Delete the Gateway resource.",
           "displayName": "Gateway_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/gateway/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/gateway/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "l2isolationdomains/l2isolationdomaininfos",
-      "name": "l2isolationdomains/l2isolationdomaininfos",
+      "displayName": "l2IsolationDomains/l2isolationdomaininfos",
+      "name": "l2IsolationDomains/l2isolationdomaininfos",
       "operations": [
         {
           "description": "Get the l2isolationdomaininfos resource details.",
           "displayName": "L2isolationDomainInfos_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l2isolationdomains/l2isolationdomaininfos/read",
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/l2isolationdomaininfos/read",
           "origin": null,
           "properties": null
         },
@@ -2623,7 +2623,7 @@
           "description": "Create a L2isolationDomainInfos resource.",
           "displayName": "L2isolationDomainInfos_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l2isolationdomains/l2isolationdomaininfos/write",
+          "name": "Microsoft.ManagedNetworkFabric/l2IsolationDomains/l2isolationdomaininfos/write",
           "origin": null,
           "properties": null
         },
@@ -2631,21 +2631,21 @@
           "description": "Delete the L2isolationDomainInfos resource.",
           "displayName": "L2isolationDomainInfos_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l2isolationdomains/l2isolationdomaininfos/delete",
+          "name": "Microsoft.ManagedNetworkFabric/l2Isolationdomains/l2Isolationdomaininfos/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "l3isolationdomains/l3isolationdomaininfos",
-      "name": "l3isolationdomains/l3isolationdomaininfos",
+      "displayName": "l3IsolationDomains/l3isolationdomaininfos",
+      "name": "l3IsolationDomains/l3isolationdomaininfos",
       "operations": [
         {
           "description": "Get the L3isolationDomainInfos resource details.",
           "displayName": "L3isolationDomainInfos_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3isolationdomains/l3isolationdomaininfos/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/l3isolationdomaininfos/read",
           "origin": null,
           "properties": null
         },
@@ -2653,7 +2653,7 @@
           "description": "Create a L3isolationDomainInfos resource.",
           "displayName": "L3isolationDomainInfos_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3isolationdomains/l3isolationdomaininfos/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/l3isolationdomaininfos/write",
           "origin": null,
           "properties": null
         },
@@ -2661,7 +2661,7 @@
           "description": "Delete the L3isolationDomainInfos resource.",
           "displayName": "L3isolationDomainInfos_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3isolationdomains/l3isolationdomaininfos/delete",
+          "name": "Microsoft.ManagedNetworkFabric/l3Isolationdomains/l3Isolationdomaininfos/delete",
           "origin": null,
           "properties": null
         }
@@ -2720,7 +2720,7 @@
           "properties": null
         },
         {
-          "description": "Post action on internetGateways internal resource internetgatewayactions for migrate.",
+          "description": "Post action on internetGateways internal resource internetgatewayaction for migrate.",
           "displayName": "internetgatewayactions_migrate",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/internetGateways/internetgatewayactions/migrate/action",
@@ -2766,7 +2766,7 @@
           "properties": null
         },
         {
-          "description": "Implements internal internet gateway rule actions resource list by resource group GET method.",
+          "description": "Implements internal internet gateway rule actions resource list by resource group GET method",
           "displayName": "internetgatewayruleactions_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/internetgatewayruleactions/read",
@@ -2792,14 +2792,14 @@
       ]
     },
     {
-      "displayName": "networkfabrics/gnoimaintenances",
-      "name": "networkfabrics/gnoimaintenances",
+      "displayName": "networkFabrics/gnoimaintenances",
+      "name": "networkFabrics/gnoimaintenances",
       "operations": [
         {
           "description": "Get the GNOIMaintenance resource details.",
           "displayName": "GNOIMaintenances_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoimaintenances/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/gnoimaintenances/read",
           "origin": null,
           "properties": null
         },
@@ -2807,7 +2807,7 @@
           "description": "Create a GNOIMaintenance resource.",
           "displayName": "GNOIMaintenances_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoimaintenances/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/gnoimaintenances/write",
           "origin": null,
           "properties": null
         },
@@ -2815,7 +2815,7 @@
           "description": "Delete the GNOIMaintenance resource.",
           "displayName": "GNOIMaintenances_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/gnoimaintenances/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/gnoimaintenances/delete",
           "origin": null,
           "properties": null
         }
@@ -2852,60 +2852,60 @@
       ]
     },
     {
-      "displayName": "networkfabrics/nfaextensiondebug",
-      "name": "networkfabrics/nfaextensiondebug",
+      "displayName": "networkFabrics/nfaextensiondebug",
+      "name": "networkFabrics/nfaextensiondebug",
       "operations": [
         {
           "description": "Get the NfaExtensionDebug resource details.",
-          "displayName": "NfaExtensionDebug_Get",
+          "displayName": "NfaExtensionDebug_NetworkFabrics_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/nfaextensiondebug/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/nfaextensiondebug/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Create a NfaExtensionDebug resource.",
-          "displayName": "NfaExtensionDebug_Create",
+          "displayName": "NfaExtensionDebug_NetworkFabrics_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/nfaextensiondebug/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/nfaextensiondebug/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Delete the NfaExtensionDebug resource.",
-          "displayName": "NfaExtensionDebug_Delete",
+          "displayName": "NfaExtensionDebug_NetworkFabrics_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabrics/nfaextensiondebug/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/nfaextensiondebug/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "networkfabriccontrollers/nfaextensiondebug",
-      "name": "networkfabriccontrollers/nfaextensiondebug",
+      "displayName": "networkFabricControllers/nfaextensiondebug",
+      "name": "networkFabricControllers/nfaextensiondebug",
       "operations": [
         {
           "description": "Get the NfaExtensionDebug resource details.",
-          "displayName": "NfaExtensionDebug_Get",
+          "displayName": "NfaExtensionDebug_NetworkFabricControllers_Get",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/nfaextensiondebug/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/nfaextensiondebug/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Create a NfaExtensionDebug resource.",
-          "displayName": "NfaExtensionDebug_Create",
+          "displayName": "NfaExtensionDebug_NetworkFabricControllers_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/nfaextensiondebug/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/nfaextensiondebug/write",
           "origin": null,
           "properties": null
         },
         {
           "description": "Delete the NfaExtensionDebug resource.",
-          "displayName": "NfaExtensionDebug_Delete",
+          "displayName": "NfaExtensionDebug_NetworkFabricControllers_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkfabriccontrollers/nfaextensiondebug/delete",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricControllers/nfaextensiondebug/delete",
           "origin": null,
           "properties": null
         }
@@ -2976,6 +2976,72 @@
           "displayName": "NetworkMonitors_Join",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkMonitors/join/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkDeviceSkus",
+      "name": "networkDeviceSkus",
+      "operations": [
+        {
+          "description": "Get a Network Device SKU details.",
+          "displayName": "NetworkDeviceSkus_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDeviceSkus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Network Device SKUs for the given subscription.",
+          "displayName": "NetworkDeviceSkus_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDeviceSkus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkFabricSkus",
+      "name": "networkFabricSkus",
+      "operations": [
+        {
+          "description": "Implements Network Fabric SKU GET method.",
+          "displayName": "NetworkFabricSkus_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricSkus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements Network Fabric SKUs list by subscription GET method.",
+          "displayName": "NetworkFabricSkus_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabricSkus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkRackSkus",
+      "name": "networkRackSkus",
+      "operations": [
+        {
+          "description": "Get Network Rack SKU resource.",
+          "displayName": "NetworkRackSkus_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkRackSkus/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all Network Rack SKUs in the given subscription.",
+          "displayName": "NetworkRackSkus_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkRackSkus/read",
           "origin": null,
           "properties": null
         }
