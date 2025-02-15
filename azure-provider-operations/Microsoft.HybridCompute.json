@@ -120,6 +120,14 @@
           "name": "Microsoft.HybridCompute/machines/WACloginAsAdmin/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Setup Extensions on Azure Arc machines",
+          "displayName": "Setup Extensions on Azure Arc machines",
+          "isDataAction": false,
+          "name": "Microsoft.HybridCompute/machines/addExtensions/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -682,6 +690,34 @@
           "displayName": "Writes an Azure Arc settings",
           "isDataAction": false,
           "name": "Microsoft.HybridCompute/settings/write",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "machines",
+      "name": "locations/publishers/extensionTypes",
+      "operations": [
+        {
+          "description": "Returns a list of extension types based on query parameters.",
+          "displayName": "Returns a list of extension types based on query parameters.",
+          "isDataAction": true,
+          "name": "Microsoft.HybridCompute/locations/publishers/extensionTypes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "machines",
+      "name": "locations/publishers",
+      "operations": [
+        {
+          "description": "Returns a list of extension publishers based on query parameters.",
+          "displayName": "Returns a list of extension publishers based on query parameters.",
+          "isDataAction": true,
+          "name": "Microsoft.HybridCompute/locations/publishers/read",
           "origin": "user,system",
           "properties": null
         }
