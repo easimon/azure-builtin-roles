@@ -16139,8 +16139,8 @@
       "name": "accounts/OpenAI/evals",
       "operations": [
         {
-          "description": "Creates or cancels evaluation of a model.",
-          "displayName": "Create or cancel Evaluation",
+          "description": "Creates, cancels or deletes an evaluation of a model.",
+          "displayName": "Create, Cancel or Delete Evaluation or Evaluation Run",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/evals/write",
           "origin": "user",
@@ -17553,10 +17553,26 @@
       "name": "accounts/OpenAI/stored-completions",
       "operations": [
         {
-          "description": "Query completions data using filters or Get single completion data using completion Id or Get traffic metadata for the given account",
-          "displayName": "Query Completions Data or Get Completion Data or Get traffic metadata",
+          "description": "Query completions data using filters or Get single completion data using completion Id or Get metadata for the given account",
+          "displayName": "Query Completions Data or Get Completion Data or Get metadata",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/OpenAI/stored-completions/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Update stored completion data",
+          "displayName": "Update Stored Completion Data",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/stored-completions/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete stored completion data",
+          "displayName": "Delete Stored Completion Data",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/stored-completions/delete",
           "origin": "user",
           "properties": null
         }
