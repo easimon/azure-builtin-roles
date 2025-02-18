@@ -977,13 +977,65 @@
                 {
                   "aggregationType": "Average",
                   "dimensions": [],
-                  "displayDescription": "File Access Log Generation Rate",
-                  "displayName": "File Access Log Generation Rate",
+                  "displayDescription": "Number of inodes used.",
+                  "displayName": "Volume Inodes Used",
                   "enableRegionalMdmAccount": true,
                   "fillGapWithZero": false,
-                  "internalMetricName": "FileAccessLogGenerationRate",
+                  "internalMetricName": "VolumeInodesUsed",
                   "isInternal": false,
-                  "name": "FileAccessLogGenerationRate",
+                  "name": "VolumeInodesUsed",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
+                  "displayDescription": "Maximum number of inodes that the volume can support. Can be overwritten by Volumes Inodes Quota.",
+                  "displayName": "Volume Inodes Total",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "VolumeInodesTotal",
+                  "isInternal": false,
+                  "name": "VolumeInodesTotal",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
+                  "displayDescription": "An optional override that increases the maximum number of inodes for the volume.",
+                  "displayName": "Volume Inodes Quota",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "VolumeInodesQuota",
+                  "isInternal": false,
+                  "name": "VolumeInodesQuota",
                   "sourceMdmAccount": "MicrosoftNetAppShoebox2",
                   "sourceMdmNamespace": "NetAppUsageAndMetrics",
                   "supportedAggregationTypes": [
@@ -2066,6 +2118,73 @@
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/accountBackups/delete",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Accounts resource type",
+      "name": "netAppAccounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for Volume resource.",
+          "displayName": "Read volume metric definitions.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": "system",
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
+                  "displayDescription": "File access log generation Rate for subscription",
+                  "displayName": "File Access Log Generation Rate",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "FileAccessLogGenerationRate",
+                  "isInternal": false,
+                  "name": "FileAccessLogGenerationRate",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Accounts resource type",
+      "name": "netAppAccounts/providers/Microsoft.Insights/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource.",
+          "displayName": "Read diagnostic setting.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource.",
+          "displayName": "Write diagnostic setting.",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/write",
+          "origin": "system",
           "properties": null
         }
       ]
