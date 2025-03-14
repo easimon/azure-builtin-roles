@@ -1,0 +1,30 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-02-28T16:09:25.669144+00:00",
+  "description": "Users with editor access can sign in, view and edit all the bot resources, scenarios and configuration setting except for the bot instance keys & secrets and the end-user inputs (including Feedback, Unrecognized utterances and Conversation logs). A read-only access to the bot skills and channels.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/af854a69-80ce-4ff7-8447-f1118a2e0ca8",
+  "name": "af854a69-80ce-4ff7-8447-f1118a2e0ca8",
+  "permissions": [
+    {
+      "actions": [],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.HealthBot/healthBots/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.HealthBot/healthBots/Admin/*",
+        "Microsoft.HealthBot/healthBots/HealthSafeguards/*"
+      ]
+    }
+  ],
+  "roleName": "Healthcare Agent Editor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-03-13T15:29:22.910445+00:00"
+}
