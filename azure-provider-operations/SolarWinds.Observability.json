@@ -4,24 +4,16 @@
   "name": "SolarWinds.Observability",
   "operations": [
     {
-      "description": "action checkNameAvailability",
-      "displayName": "action_checkNameAvailability",
-      "isDataAction": false,
-      "name": "SolarWinds.Observability/checkNameAvailability/action",
-      "origin": null,
-      "properties": null
-    },
-    {
-      "description": "Register the subscription for SolarWinds.Observability",
-      "displayName": "Registerthe SolarWinds.Observability",
+      "description": "Registers SolarWinds.Observability Resource provider",
+      "displayName": "Registers SolarWinds.Observability Resource provider",
       "isDataAction": false,
       "name": "SolarWinds.Observability/register/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Unregister the subscription for SolarWinds.Observability",
-      "displayName": "Unregister the SolarWinds.Observability",
+      "description": "Unregisters SolarWinds.Observability Resource provider",
+      "displayName": "Unregisters SolarWinds.Observability Resource provider",
       "isDataAction": false,
       "name": "SolarWinds.Observability/unregister/action",
       "origin": null,
@@ -34,8 +26,8 @@
       "name": "operations",
       "operations": [
         {
-          "description": "read operations",
-          "displayName": "read_operations",
+          "description": "List available Operations in SolarWinds.Observability",
+          "displayName": "List available Operations in SolarWinds.Observability",
           "isDataAction": false,
           "name": "SolarWinds.Observability/operations/read",
           "origin": null,
@@ -44,12 +36,12 @@
       ]
     },
     {
-      "displayName": "registeredSubscriptions",
+      "displayName": "RegisteredSubscriptions",
       "name": "registeredSubscriptions",
       "operations": [
         {
-          "description": "read registeredSubscriptions",
-          "displayName": "read_registeredSubscriptions",
+          "description": "Get registered subscription details",
+          "displayName": "Get registered subscriptions",
           "isDataAction": false,
           "name": "SolarWinds.Observability/registeredSubscriptions/read",
           "origin": null,
@@ -58,20 +50,20 @@
       ]
     },
     {
-      "displayName": "locations/operationStatuses",
+      "displayName": "OperationStatuses",
       "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "read operationStatuses",
-          "displayName": "read_operationStatuses",
+          "description": "Get operation statuses",
+          "displayName": "Get operation statuses",
           "isDataAction": false,
           "name": "SolarWinds.Observability/locations/operationStatuses/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "write operationStatuses",
-          "displayName": "write_operationStatuses",
+          "description": "Write operation statuses",
+          "displayName": "Write operation statuses",
           "isDataAction": false,
           "name": "SolarWinds.Observability/locations/operationStatuses/write",
           "origin": null,
@@ -80,60 +72,36 @@
       ]
     },
     {
-      "displayName": "organizations",
+      "displayName": "Organizations",
       "name": "organizations",
       "operations": [
         {
-          "description": "List SolarWindsOrganizationResource resources by subscription ID",
-          "displayName": "Organizations_ListBySubscription",
+          "description": "Read organizations",
+          "displayName": "Get/List organization resources",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List SolarWindsOrganizationResource resources by resource group",
-          "displayName": "Organizations_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a SolarWindsOrganizationResource",
-          "displayName": "Organizations_Get",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a SolarWindsOrganizationResource",
-          "displayName": "Organizations_CreateOrUpdate",
+          "description": "Write organizations",
+          "displayName": "Create/Update organization resources",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a SolarWindsOrganizationResource",
-          "displayName": "Organizations_Delete",
+          "description": "Delete organizations",
+          "displayName": "Delete organization resources",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update a SolarWindsOrganizationResource",
-          "displayName": "Organizations_Update",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List the resources currently being monitored by the SolarWinds organization resource.",
-          "displayName": "Organizations_ListMonitoredResources",
+          "description": "List all resources that are being monitored by the monitor resource",
+          "displayName": "List monitored resources",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/listMonitoredResources/action",
           "origin": null,
@@ -142,44 +110,20 @@
       ]
     },
     {
-      "displayName": "organizations/tagRules",
+      "displayName": "TagRules",
       "name": "organizations/tagRules",
       "operations": [
         {
-          "description": "List TagRule resources by SolarWindsOrganizationResource",
-          "displayName": "TagRules_ListBySolarWindsOrganizationResource",
+          "description": "Read tag rules",
+          "displayName": "Get tag rules resource",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/tagRules/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a TagRule",
-          "displayName": "TagRules_Get",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/tagRules/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a TagRule",
-          "displayName": "TagRules_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/tagRules/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a TagRule",
-          "displayName": "TagRules_Delete",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/tagRules/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a TagRule",
-          "displayName": "TagRules_Update",
+          "description": "Write tag rules",
+          "displayName": "Create/Update tag rules resource",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/tagRules/write",
           "origin": null,
@@ -188,38 +132,36 @@
       ]
     },
     {
-      "displayName": "organizations/singleSignOnConfigurations",
+      "displayName": "SingleSignOn",
       "name": "organizations/singleSignOnConfigurations",
       "operations": [
         {
-          "description": "List SingleSignOn resources by SolarWindsOrganizationResource",
-          "displayName": "SingleSignOnOperations_ListBySolarWindsOrganizationResource",
+          "description": "Read single sign on",
+          "displayName": "Get single sign on resource",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/singleSignOnConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a SingleSignOn",
-          "displayName": "SingleSignOnOperations_Get",
-          "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/singleSignOnConfigurations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a SingleSignOn",
-          "displayName": "SingleSignOnOperations_CreateOrUpdate",
+          "description": "Write single sign on",
+          "displayName": "Create single sign on resource",
           "isDataAction": false,
           "name": "SolarWinds.Observability/organizations/singleSignOnConfigurations/write",
           "origin": null,
           "properties": null
-        },
+        }
+      ]
+    },
+    {
+      "displayName": "Locations",
+      "name": "locations",
+      "operations": [
         {
-          "description": "Delete aSingleSignOn",
-          "displayName": "SingleSignOnOperations_Delete",
+          "description": "Get locations",
+          "displayName": "Get locations",
           "isDataAction": false,
-          "name": "SolarWinds.Observability/organizations/singleSignOnConfigurations/delete",
+          "name": "SolarWinds.Observability/locations/read",
           "origin": null,
           "properties": null
         }
