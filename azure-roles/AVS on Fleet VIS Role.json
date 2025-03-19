@@ -1,0 +1,54 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-01-10T21:52:00.770193+00:00",
+  "description": "Do not remove this role from your resource because it is critical to enable your AVS private cloud to operate. If the role is removed, it will cause your AVS private cloud control plane to no longer operate correctly. The role is used to enable the AVS private cloud control plane to inject address prefix changes of the private clouds attached virtual network to SDN and support peering sync feature. This role is not intended for use cases outside of assignment to the associated AVS identity in your entra-id tenant.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/49fc33c1-886f-4b21-a00e-1d9993234734",
+  "name": "49fc33c1-886f-4b21-a00e-1d9993234734",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkInterfaces/write",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/write",
+        "Microsoft.Network/virtualNetworks/peer/action",
+        "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/read",
+        "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/write",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/routeTables/join/action",
+        "Microsoft.Network/serviceEndpointPolicies/join/action",
+        "Microsoft.Network/natGateways/join/action",
+        "Microsoft.Network/networkIntentPolicies/join/action",
+        "Microsoft.Network/ddosProtectionPlans/join/action",
+        "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action",
+        "Microsoft.BareMetal/peeringSettings/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    },
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/delete"
+      ],
+      "condition": "(!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR @Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{49fc33c1886f4b21a00e1d9993234734}",
+      "conditionVersion": "2.0",
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "AVS on Fleet VIS Role",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-03-07T19:12:07.243379+00:00"
+}
