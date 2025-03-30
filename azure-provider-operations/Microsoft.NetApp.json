@@ -977,65 +977,13 @@
                 {
                   "aggregationType": "Average",
                   "dimensions": [],
-                  "displayDescription": "Number of inodes used.",
-                  "displayName": "Volume Inodes Used",
+                  "displayDescription": "File Access Log Generation Rate",
+                  "displayName": "File Access Log Generation Rate",
                   "enableRegionalMdmAccount": true,
                   "fillGapWithZero": false,
-                  "internalMetricName": "VolumeInodesUsed",
+                  "internalMetricName": "FileAccessLogGenerationRate",
                   "isInternal": false,
-                  "name": "VolumeInodesUsed",
-                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
-                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
-                  "supportedAggregationTypes": [
-                    "Average"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "PT5M",
-                    "PT15M",
-                    "PT30M",
-                    "PT1H",
-                    "PT6H",
-                    "PT12H",
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Average",
-                  "dimensions": [],
-                  "displayDescription": "Maximum number of inodes that the volume can support. Can be overwritten by Volumes Inodes Quota.",
-                  "displayName": "Volume Inodes Total",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": false,
-                  "internalMetricName": "VolumeInodesTotal",
-                  "isInternal": false,
-                  "name": "VolumeInodesTotal",
-                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
-                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
-                  "supportedAggregationTypes": [
-                    "Average"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "PT5M",
-                    "PT15M",
-                    "PT30M",
-                    "PT1H",
-                    "PT6H",
-                    "PT12H",
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Average",
-                  "dimensions": [],
-                  "displayDescription": "An optional override that increases the maximum number of inodes for the volume.",
-                  "displayName": "Volume Inodes Quota",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": false,
-                  "internalMetricName": "VolumeInodesQuota",
-                  "isInternal": false,
-                  "name": "VolumeInodesQuota",
+                  "name": "FileAccessLogGenerationRate",
                   "sourceMdmAccount": "MicrosoftNetAppShoebox2",
                   "sourceMdmNamespace": "NetAppUsageAndMetrics",
                   "supportedAggregationTypes": [
@@ -2096,13 +2044,13 @@
     },
     {
       "displayName": "Volumes resource type",
-      "name": "netAppAccounts/capacityPools/volumes/latestBackupStatus",
+      "name": "netAppAccounts/capacityPools/volumes/latestBackupStatus/current",
       "operations": [
         {
           "description": "Get the status of the backup for a volume",
           "displayName": "Get volume's backup status",
           "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/latestBackupStatus/read",
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/latestBackupStatus/current/read",
           "origin": "user,system",
           "properties": null
         }
@@ -2110,81 +2058,80 @@
     },
     {
       "displayName": "Volumes resource type",
-      "name": "netAppAccounts/capacityPools/volumes/latestRestoreStatus",
+      "name": "netAppAccounts/capacityPools/volumes/latestRestoreStatus/current",
       "operations": [
         {
           "description": "Get the status of the restore for a volume",
           "displayName": "Get volume's restore status",
           "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/latestRestoreStatus/read",
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/latestRestoreStatus/current/read",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Accounts resource type",
-      "name": "netAppAccounts/providers/Microsoft.Insights/metricDefinitions",
+      "displayName": "QuotaLimit resource type",
+      "name": "netAppAccounts/quotaLimits",
       "operations": [
         {
-          "description": "Gets the available metrics for Volume resource.",
-          "displayName": "Read volume metric definitions.",
+          "description": "Reads a Quotalimit resource type.",
+          "displayName": "Read QuotaLimit resource type",
           "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/metricDefinitions/read",
-          "origin": "system",
-          "properties": {
-            "serviceSpecification": {
-              "metricSpecifications": [
-                {
-                  "aggregationType": "Average",
-                  "dimensions": [],
-                  "displayDescription": "File access log generation Rate for subscription",
-                  "displayName": "File Access Log Generation Rate",
-                  "enableRegionalMdmAccount": true,
-                  "fillGapWithZero": false,
-                  "internalMetricName": "FileAccessLogGenerationRate",
-                  "isInternal": false,
-                  "name": "FileAccessLogGenerationRate",
-                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
-                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
-                  "supportedAggregationTypes": [
-                    "Average"
-                  ],
-                  "supportedTimeGrainTypes": [
-                    "PT5M",
-                    "PT15M",
-                    "PT30M",
-                    "PT1H",
-                    "PT6H",
-                    "PT12H",
-                    "P1D"
-                  ],
-                  "unit": "Count"
-                }
-              ]
-            }
-          }
+          "name": "Microsoft.NetApp/netAppAccounts/quotaLimits/read",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
     {
-      "displayName": "Accounts resource type",
-      "name": "netAppAccounts/providers/Microsoft.Insights/diagnosticSettings",
+      "displayName": "Buckets resource type",
+      "name": "netAppAccounts/capacityPools/volumes/buckets",
       "operations": [
         {
-          "description": "Gets the diagnostic setting for the resource.",
-          "displayName": "Read diagnostic setting.",
+          "description": "Reads a bucket resource.",
+          "displayName": "Read bucket resource",
           "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/read",
-          "origin": "system",
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/read",
+          "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Creates or updates the diagnostic setting for the resource.",
-          "displayName": "Write diagnostic setting.",
+          "description": "Writes a bucket resource.",
+          "displayName": "Write bucket resource",
           "isDataAction": false,
-          "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/write",
-          "origin": "system",
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a bucket resource.",
+          "displayName": "Delete bucket resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restores files from a bucket resource",
+          "displayName": "Single File Bucket Restore",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/generateCredentials/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Usage resource type",
+      "name": "locations/usages",
+      "operations": [
+        {
+          "description": "Reads a usage resource type",
+          "displayName": "Read usage resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/locations/usages/read",
+          "origin": "user,system",
           "properties": null
         }
       ]
