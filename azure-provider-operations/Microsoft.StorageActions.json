@@ -4,8 +4,8 @@
   "name": "Microsoft.StorageActions",
   "operations": [
     {
-      "description": null,
-      "displayName": null,
+      "description": "Register the subscription for Microsoft.StorageActions",
+      "displayName": "Register the Microsoft.StorageActions",
       "isDataAction": false,
       "name": "Microsoft.StorageActions/register/action",
       "origin": null,
@@ -30,14 +30,6 @@
           "displayName": "Get Storage Task",
           "isDataAction": false,
           "name": "Microsoft.StorageActions/storageTasks/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Promote specific version of storage task to current version",
-          "displayName": "Promote Storage Task Version",
-          "isDataAction": false,
-          "name": "Microsoft.StorageActions/storageTasks/promote/action",
           "origin": null,
           "properties": null
         },
@@ -80,12 +72,12 @@
       ]
     },
     {
-      "displayName": "",
+      "displayName": "locations",
       "name": "locations",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "previewActions",
+          "displayName": "previewActions",
           "isDataAction": false,
           "name": "Microsoft.StorageActions/locations/previewActions/action",
           "origin": null,
@@ -94,12 +86,12 @@
       ]
     },
     {
-      "displayName": "",
+      "displayName": "operations",
       "name": "operations",
       "operations": [
         {
-          "description": null,
-          "displayName": null,
+          "description": "read operations",
+          "displayName": "read_operations",
           "isDataAction": false,
           "name": "Microsoft.StorageActions/operations/read",
           "origin": null,
@@ -108,14 +100,22 @@
       ]
     },
     {
-      "displayName": "Storage Tasks",
-      "name": "storageTasks/versions",
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "List all versions of a storage task",
-          "displayName": "List Storage Task Versions",
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.StorageActions/storageTasks/versions/read",
+          "name": "Microsoft.StorageActions/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.StorageActions/locations/operationStatuses/write",
           "origin": null,
           "properties": null
         }
