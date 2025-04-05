@@ -2406,6 +2406,86 @@
                     "Total"
                   ],
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
+                      "displayName": "Agent Id",
+                      "internalName": "agent.id",
+                      "name": "AgentId",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Run Status",
+                      "internalName": "status.name",
+                      "name": "RunStatus",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Status Code",
+                      "internalName": "status.code",
+                      "name": "StatusCode",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Stream Type",
+                      "internalName": "stream.type",
+                      "name": "StreamType",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of runs by AI Agents in this workspace",
+                  "displayName": "Runs",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.runs",
+                  "name": "Runs",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
+                      "displayName": "Error Code",
+                      "internalName": "error.code",
+                      "name": "ErrorCode",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Index Status",
+                      "internalName": "status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Vector Store Id",
+                      "internalName": "vector_store.id",
+                      "name": "VectorStoreId",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of files indexed for file search in this workspace",
+                  "displayName": "IndexedFiles",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.indexed_files",
+                  "name": "IndexedFiles",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
                 }
               ]
             }
