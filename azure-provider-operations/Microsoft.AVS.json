@@ -60,7 +60,7 @@
         {
           "description": "Lists the AdminCredentials for privateClouds.",
           "displayName": "List privateClouds AdminCredentials",
-          "isDataAction": true,
+          "isDataAction": false,
           "name": "Microsoft.AVS/privateClouds/listAdminCredentials/action",
           "origin": "user,system",
           "properties": {}
@@ -68,7 +68,7 @@
         {
           "description": "Rotate Vcenter password for the PrivateCloud.",
           "displayName": "Private Cloud Vcenter password rotation",
-          "isDataAction": true,
+          "isDataAction": false,
           "name": "Microsoft.AVS/privateClouds/rotateVcenterPassword/action",
           "origin": "user,system",
           "properties": {}
@@ -76,7 +76,7 @@
         {
           "description": "Rotate Nsxt CloudAdmin password for the PrivateCloud.",
           "displayName": "Private Cloud Nsxt Cloud Admin password rotation",
-          "isDataAction": true,
+          "isDataAction": false,
           "name": "Microsoft.AVS/privateClouds/rotateNsxtPassword/action",
           "origin": "user,system",
           "properties": {}
@@ -84,7 +84,7 @@
         {
           "description": "Rotate Nsxt CloudAdmin password for the PrivateCloud.",
           "displayName": "Private Cloud Nsxt Cloud Admin password rotation",
-          "isDataAction": true,
+          "isDataAction": false,
           "name": "Microsoft.AVS/privateClouds/rotateNsxtCloudAdminPassword/action",
           "origin": "user,system",
           "properties": {}
@@ -800,6 +800,64 @@
           "displayName": "Delete EventGrid Subscription for AVS notification",
           "isDataAction": false,
           "name": "Microsoft.AVS/privateClouds/eventGridFilters/delete",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "AVS Run Command package",
+      "name": "privateClouds/scriptPackages",
+      "operations": [
+        {
+          "description": "View AVS Run Command packages",
+          "displayName": "View AVS Run Command packages",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/scriptPackages/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "AVS Run Command package commandlet",
+      "name": "privateClouds/scriptPackages/scriptCmdlets",
+      "operations": [
+        {
+          "description": "View AVS Run Command package commandlets",
+          "displayName": "View AVS Run Command package commandlets",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/scriptPackages/scriptCmdlets/read",
+          "origin": "user,system",
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "displayName": "AVS Run Command script execution",
+      "name": "privateClouds/scriptExecutions",
+      "operations": [
+        {
+          "description": "View AVS Run Command script executions",
+          "displayName": "View AVS Run Command script executions",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/scriptExecutions/read",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Create AVS Run Command script executions",
+          "displayName": "Create AVS Run Command script executions",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/scriptExecutions/write",
+          "origin": "user,system",
+          "properties": {}
+        },
+        {
+          "description": "Cancel/Delete AVS Run Command script executions",
+          "displayName": "Delete AVS Run Command script executions",
+          "isDataAction": false,
+          "name": "Microsoft.AVS/privateClouds/scriptExecutions/delete",
           "origin": "user,system",
           "properties": {}
         }
