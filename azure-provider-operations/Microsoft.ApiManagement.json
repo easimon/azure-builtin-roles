@@ -1501,96 +1501,6 @@
       ]
     },
     {
-      "displayName": "API issues",
-      "name": "service/apis/issues",
-      "operations": [
-        {
-          "description": "Lists all issues associated with the specified API. or Gets the details of the Issue for an API specified by its identifier.",
-          "displayName": "Get API Issues or API Management issue details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates a new Issue for an API or updates an existing one. or Updates an existing issue for an API.",
-          "displayName": "Adds issue or Updates issue",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the specified Issue from an API.",
-          "displayName": "Removes issue",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Issue Attachments",
-      "name": "service/apis/issues/attachments",
-      "operations": [
-        {
-          "description": "Lists all attachments for the Issue associated with the specified API. or Gets the details of the issue Attachment for an API specified by its identifier.",
-          "displayName": "Get attachments or Get attachments details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/attachments/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates a new Attachment for the Issue in an API or updates an existing one.",
-          "displayName": "Add issue attachment",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/attachments/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the specified comment from an Issue.",
-          "displayName": "Remove attachments",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/attachments/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Issue Comments",
-      "name": "service/apis/issues/comments",
-      "operations": [
-        {
-          "description": "Lists all comments for the Issue associated with the specified API. or Gets the details of the issue Comment for an API specified by its identifier.",
-          "displayName": "Get comments or Get comment details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/comments/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates a new Comment for the Issue in an API or updates an existing one.",
-          "displayName": "Add api comment",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/comments/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the specified comment from an Issue.",
-          "displayName": "Removes comment",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/apis/issues/comments/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Tags descriptions",
       "name": "service/apis/tagDescriptions",
       "operations": [
@@ -2445,20 +2355,6 @@
       ]
     },
     {
-      "displayName": "Collection of all API Management issues",
-      "name": "service/issues",
-      "operations": [
-        {
-          "description": "Lists a collection of issues in the specified service instance. or Gets API Management issue details",
-          "displayName": "Lists a collection of issues in the specified service instance. or Get the issue details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/issues/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "External caches",
       "name": "service/caches",
       "operations": [
@@ -2751,8 +2647,8 @@
           "properties": null
         },
         {
-          "description": "Request subscription for a new product",
-          "displayName": "Request product subscription",
+          "description": "Create hostname configuration",
+          "displayName": "Add hostname configuration",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/gateways/hostnameConfigurations/write",
           "origin": null,
@@ -5365,6 +5261,44 @@
           "displayName": "Sync configuration for Kubernetes-managed workspaces",
           "isDataAction": true,
           "name": "Microsoft.ApiManagement/service/workspaces/kubernetesManaged/agent/syncConfiguration/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Collection of all API Management client applications",
+      "name": "service/clientApplications",
+      "operations": [
+        {
+          "description": "Gets all API Management client applications. or Gets API Management application details",
+          "displayName": "Get client applications list or Gets API Management application details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/clientApplications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Registers an application to API Management or Updates application details",
+          "displayName": "Create client application or Update client application",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/clientApplications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes existing application",
+          "displayName": "Delete client application",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/clientApplications/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Client Application secrets.",
+          "displayName": "Get Client Application secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/clientApplications/listSecrets/action",
           "origin": null,
           "properties": null
         }
