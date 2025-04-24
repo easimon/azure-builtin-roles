@@ -203,7 +203,7 @@
       "operations": [
         {
           "description": "List DbNode resources by CloudVmCluster",
-          "displayName": "DbNodes_ListByCloudVmCluster",
+          "displayName": "DbNodes_ListByParent",
           "isDataAction": false,
           "name": "Oracle.Database/cloudVmClusters/dbNodes/read",
           "origin": null,
@@ -233,7 +233,7 @@
       "operations": [
         {
           "description": "List VirtualNetworkAddress resources by CloudVmCluster",
-          "displayName": "VirtualNetworkAddresses_ListByCloudVmCluster",
+          "displayName": "VirtualNetworkAddresses_ListByParent",
           "isDataAction": false,
           "name": "Oracle.Database/cloudVmClusters/virtualNetworkAddresses/read",
           "origin": null,
@@ -348,7 +348,7 @@
       "name": "locations/giVersions",
       "operations": [
         {
-          "description": "List GiVersion resources by Location",
+          "description": "List GiVersion resources by SubscriptionLocationResource",
           "displayName": "GiVersions_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/giVersions/read",
@@ -370,7 +370,7 @@
       "name": "locations/dbSystemShapes",
       "operations": [
         {
-          "description": "List DbSystemShape resources by Location",
+          "description": "List DbSystemShape resources by SubscriptionLocationResource",
           "displayName": "DbSystemShapes_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/dbSystemShapes/read",
@@ -393,7 +393,7 @@
       "operations": [
         {
           "description": "List DbServer resources by CloudExadataInfrastructure",
-          "displayName": "DbServers_ListByCloudExadataInfrastructure",
+          "displayName": "DbServers_ListByParent",
           "isDataAction": false,
           "name": "Oracle.Database/cloudExadataInfrastructures/dbServers/read",
           "origin": null,
@@ -414,7 +414,7 @@
       "name": "locations/dnsPrivateViews",
       "operations": [
         {
-          "description": "List DnsPrivateView resources by Location",
+          "description": "List DnsPrivateView resources by SubscriptionLocationResource",
           "displayName": "DnsPrivateViews_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/dnsPrivateViews/read",
@@ -436,7 +436,7 @@
       "name": "locations/dnsPrivateZones",
       "operations": [
         {
-          "description": "List DnsPrivateZone resources by Location",
+          "description": "List DnsPrivateZone resources by SubscriptionLocationResource",
           "displayName": "DnsPrivateZones_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/dnsPrivateZones/read",
@@ -506,6 +506,14 @@
           "properties": null
         },
         {
+          "description": "Perform ChangeDisasterRecoveryConfiguration action on Autonomous Database",
+          "displayName": "AutonomousDatabases_ChangeDisasterRecoveryConfiguration",
+          "isDataAction": false,
+          "name": "Oracle.Database/autonomousDatabases/changeDisasterRecoveryConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Perform failover action on Autonomous Database",
           "displayName": "AutonomousDatabases_Failover",
           "isDataAction": false,
@@ -552,7 +560,7 @@
       "name": "locations/autonomousDatabaseCharacterSets",
       "operations": [
         {
-          "description": "List AutonomousDatabaseCharacterSet resources by Location",
+          "description": "List AutonomousDatabaseCharacterSet resources by SubscriptionLocationResource",
           "displayName": "AutonomousDatabaseCharacterSets_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/autonomousDatabaseCharacterSets/read",
@@ -574,7 +582,7 @@
       "name": "locations/autonomousDatabaseNationalCharacterSets",
       "operations": [
         {
-          "description": "List AutonomousDatabaseNationalCharacterSet resources by Location",
+          "description": "List AutonomousDatabaseNationalCharacterSet resources by SubscriptionLocationResource",
           "displayName": "AutonomousDatabaseNationalCharacterSets_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/autonomousDatabaseNationalCharacterSets/read",
@@ -596,7 +604,7 @@
       "name": "locations/autonomousDbVersions",
       "operations": [
         {
-          "description": "List AutonomousDbVersion resources by Location",
+          "description": "List AutonomousDbVersion resources by SubscriptionLocationResource",
           "displayName": "AutonomousDatabaseVersions_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/autonomousDbVersions/read",
@@ -618,7 +626,7 @@
       "name": "locations/systemVersions",
       "operations": [
         {
-          "description": "List SystemVersion resources by Location",
+          "description": "List SystemVersion resources by SubscriptionLocationResource",
           "displayName": "SystemVersions_ListByLocation",
           "isDataAction": false,
           "name": "Oracle.Database/locations/systemVersions/read",
@@ -641,7 +649,7 @@
       "operations": [
         {
           "description": "List AutonomousDatabaseBackup resources by AutonomousDatabase",
-          "displayName": "AutonomousDatabaseBackups_ListByAutonomousDatabase",
+          "displayName": "AutonomousDatabaseBackups_ListByParent",
           "isDataAction": false,
           "name": "Oracle.Database/autonomousDatabases/autonomousDatabaseBackups/read",
           "origin": null,
@@ -866,6 +874,114 @@
           "displayName": "FlexComponents_Get",
           "isDataAction": false,
           "name": "Oracle.Database/locations/flexComponents/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "resourceAnchors",
+      "name": "resourceAnchors",
+      "operations": [
+        {
+          "description": "List ResourceAnchor resources by subscription ID",
+          "displayName": "ResourceAnchors_ListBySubscription",
+          "isDataAction": false,
+          "name": "Oracle.Database/resourceAnchors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ResourceAnchor resources by resource group",
+          "displayName": "ResourceAnchors_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Oracle.Database/resourceAnchors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ResourceAnchor",
+          "displayName": "ResourceAnchors_Get",
+          "isDataAction": false,
+          "name": "Oracle.Database/resourceAnchors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ResourceAnchor",
+          "displayName": "ResourceAnchors_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Oracle.Database/resourceAnchors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ResourceAnchor",
+          "displayName": "ResourceAnchors_Delete",
+          "isDataAction": false,
+          "name": "Oracle.Database/resourceAnchors/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ResourceAnchor",
+          "displayName": "ResourceAnchors_Update",
+          "isDataAction": false,
+          "name": "Oracle.Database/resourceAnchors/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkAnchors",
+      "name": "networkAnchors",
+      "operations": [
+        {
+          "description": "List NetworkAnchor resources by subscription ID",
+          "displayName": "NetworkAnchors_ListBySubscription",
+          "isDataAction": false,
+          "name": "Oracle.Database/networkAnchors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List NetworkAnchor resources by resource group",
+          "displayName": "NetworkAnchors_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Oracle.Database/networkAnchors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a NetworkAnchor",
+          "displayName": "NetworkAnchors_Get",
+          "isDataAction": false,
+          "name": "Oracle.Database/networkAnchors/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a NetworkAnchor",
+          "displayName": "NetworkAnchors_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Oracle.Database/networkAnchors/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a NetworkAnchor",
+          "displayName": "NetworkAnchors_Delete",
+          "isDataAction": false,
+          "name": "Oracle.Database/networkAnchors/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a NetworkAnchor",
+          "displayName": "NetworkAnchors_Update",
+          "isDataAction": false,
+          "name": "Oracle.Database/networkAnchors/write",
           "origin": null,
           "properties": null
         }
