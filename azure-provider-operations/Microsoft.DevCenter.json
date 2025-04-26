@@ -566,6 +566,22 @@
           "name": "Microsoft.DevCenter/projects/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Gets applicable inherited settings for this project.",
+          "displayName": "Projects_GetInheritedSettings",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/getInheritedSettings/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists SKUs available to the project",
+          "displayName": "Skus_ListByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/listSkus/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -890,6 +906,22 @@
           "properties": null
         },
         {
+          "description": "Allows an admin to read dev box actions.",
+          "displayName": "Projects_Users_DevBoxes_AdminActionRead",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminActionRead/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Allows an admin to skip or delay dev box actions.",
+          "displayName": "Projects_Users_DevBoxes_AdminActionManage",
+          "isDataAction": true,
+          "name": "Microsoft.DevCenter/projects/users/devboxes/adminActionManage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Allows a user to read dev box actions.",
           "displayName": "Projects_Users_DevBoxes_UserActionRead",
           "isDataAction": true,
@@ -1208,6 +1240,202 @@
           "displayName": "ProjectCatalogEnvironmentDefinitions_GetErrorDetails",
           "isDataAction": false,
           "name": "Microsoft.DevCenter/projects/catalogs/environmentDefinitions/getErrorDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/catalogs/tasks",
+      "name": "devcenters/catalogs/tasks",
+      "operations": [
+        {
+          "description": "List Tasks in the catalog.",
+          "displayName": "CustomizationTasks_ListByCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/tasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a Task from the catalog",
+          "displayName": "CustomizationTasks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/tasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Customization Task error details",
+          "displayName": "CustomizationTasks_GetErrorDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/catalogs/tasks/getErrorDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/images",
+      "name": "projects/images",
+      "operations": [
+        {
+          "description": "Lists images for a project.",
+          "displayName": "Images_ListByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/images/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an image.",
+          "displayName": "Images_GetByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/images/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/images/versions",
+      "name": "projects/images/versions",
+      "operations": [
+        {
+          "description": "Lists versions for an image.",
+          "displayName": "ImageVersions_ListByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/images/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an image version.",
+          "displayName": "ImageVersions_GetByProject",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/images/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/catalogs/imageDefinitions",
+      "name": "projects/catalogs/imageDefinitions",
+      "operations": [
+        {
+          "description": "List Image Definitions in the catalog.",
+          "displayName": "ProjectCatalogImageDefinitions_ListByProjectCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets an Image Definition from the catalog",
+          "displayName": "ProjectCatalogImageDefinitions_GetByProjectCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Image Definition error details",
+          "displayName": "ProjectCatalogImageDefinitions_GetErrorDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/getErrorDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Builds an image for the specified Image Definition.",
+          "displayName": "ProjectCatalogImageDefinitions_BuildImage",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/buildImage/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects/catalogs/imageDefinitions/builds",
+      "name": "projects/catalogs/imageDefinitions/builds",
+      "operations": [
+        {
+          "description": "Lists builds for a specified image definition.",
+          "displayName": "ProjectCatalogImageDefinitionBuilds_ListByImageDefinition",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/builds/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a build for a specified image definition.",
+          "displayName": "ProjectCatalogImageDefinitionBuild_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/builds/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels the specified build for an image definition.",
+          "displayName": "ProjectCatalogImageDefinitionBuild_Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/builds/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets Build details",
+          "displayName": "ProjectCatalogImageDefinitionBuild_GetBuildDetails",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/projects/catalogs/imageDefinitions/builds/getBuildDetails/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "devcenters/projectPolicies",
+      "name": "devcenters/projectPolicies",
+      "operations": [
+        {
+          "description": "Lists all project policies in the dev center",
+          "displayName": "ProjectPolicies_ListByDevCenter",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/projectPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a specific project policy.",
+          "displayName": "ProjectPolicies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/projectPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an project policy.",
+          "displayName": "ProjectPolicies_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/projectPolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an project policy.",
+          "displayName": "ProjectPolicies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/projectPolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Partially updates an project policy.",
+          "displayName": "ProjectPolicies_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DevCenter/devcenters/projectPolicies/write",
           "origin": null,
           "properties": null
         }
