@@ -2412,6 +2412,99 @@
                   "category": "Agents",
                   "dimensions": [
                     {
+                      "displayName": "Event Type",
+                      "internalName": "event.type",
+                      "name": "EventType",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of events for AI Agents in this workspace",
+                  "displayName": "Agents",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.agents",
+                  "name": "Agents",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
+                      "displayName": "Error Code",
+                      "internalName": "error.code",
+                      "name": "ErrorCode",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Index Status",
+                      "internalName": "status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Vector Store Id",
+                      "internalName": "vector_store.id",
+                      "name": "VectorStoreId",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of files indexed for file search in this workspace",
+                  "displayName": "IndexedFiles",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.indexed_files",
+                  "name": "IndexedFiles",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
+                      "displayName": "Event Type",
+                      "internalName": "event.type",
+                      "name": "EventType",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Thread Id",
+                      "internalName": "thread.id",
+                      "name": "ThreadId",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Number of events for AI Agent messages in this workspace",
+                  "displayName": "Messages",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.messages",
+                  "name": "Messages",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
                       "displayName": "Agent Id",
                       "internalName": "agent.id",
                       "name": "AgentId",
@@ -2455,29 +2548,79 @@
                   "category": "Agents",
                   "dimensions": [
                     {
-                      "displayName": "Error Code",
-                      "internalName": "error.code",
-                      "name": "ErrorCode",
-                      "toBeExportedForShoebox": false
-                    },
-                    {
-                      "displayName": "Index Status",
-                      "internalName": "status",
-                      "name": "Status",
-                      "toBeExportedForShoebox": false
-                    },
-                    {
-                      "displayName": "Vector Store Id",
-                      "internalName": "vector_store.id",
-                      "name": "VectorStoreId",
+                      "displayName": "Event Type",
+                      "internalName": "event.type",
+                      "name": "EventType",
                       "toBeExportedForShoebox": false
                     }
                   ],
-                  "displayDescription": "Number of files indexed for file search in this workspace",
-                  "displayName": "IndexedFiles",
+                  "displayDescription": "Number of events for AI Agent threads in this workspace",
+                  "displayName": "Threads",
                   "fillGapWithZero": true,
-                  "internalMetricName": "agents.azmon.indexed_files",
-                  "name": "IndexedFiles",
+                  "internalMetricName": "agents.azmon.threads",
+                  "name": "Threads",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
+                      "displayName": "Agent Id",
+                      "internalName": "agent.id",
+                      "name": "AgentId",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Token Type",
+                      "internalName": "token.type",
+                      "name": "TokenType",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Count of tokens by AI Agents in this workspace",
+                  "displayName": "Tokens",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.tokens",
+                  "name": "Tokens",
+                  "resourceIdDimensionNameOverride": "microsoft.resourceId",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Maximum",
+                    "Minimum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "category": "Agents",
+                  "dimensions": [
+                    {
+                      "displayName": "Agent Id",
+                      "internalName": "agent.id",
+                      "name": "AgentId",
+                      "toBeExportedForShoebox": false
+                    },
+                    {
+                      "displayName": "Tool Name",
+                      "internalName": "tool.name",
+                      "name": "ToolName",
+                      "toBeExportedForShoebox": false
+                    }
+                  ],
+                  "displayDescription": "Tool calls made by AI Agents in this workspace",
+                  "displayName": "ToolCalls",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "agents.azmon.tool_calls",
+                  "name": "ToolCalls",
                   "resourceIdDimensionNameOverride": "microsoft.resourceId",
                   "supportedAggregationTypes": [
                     "Average",
