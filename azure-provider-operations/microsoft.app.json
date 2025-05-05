@@ -243,8 +243,24 @@
     },
     {
       "displayName": "Managed Environment",
-      "name": "managedenvironments",
+      "name": "managedEnvironments",
       "operations": [
+        {
+          "description": "Approve Private Endpoint Connections",
+          "displayName": "Approve Private Endpoint Connections",
+          "isDataAction": true,
+          "name": "Microsoft.App/managedEnvironments/privateEndpointConnectionsApproval/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Check reource name availability for a Managed Environment",
+          "displayName": "Check Managed Environment Name Availability",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/checknameavailability/action",
+          "origin": "user, system",
+          "properties": null
+        },
         {
           "description": "Allows to create a Container App in a Managed Environment",
           "displayName": "Join Managed Environment",
@@ -282,14 +298,6 @@
           "displayName": "Auth Token for Managed Environment Dev APIs",
           "isDataAction": false,
           "name": "microsoft.app/managedenvironments/getauthtoken/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Check reource name availability for a Managed Environment",
-          "displayName": "Check Managed Environment Name Availability",
-          "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/checknameavailability/action",
           "origin": "user, system",
           "properties": null
         }
@@ -1788,6 +1796,36 @@
           "displayName": "Create conversation threads with an SRE Agent",
           "isDataAction": true,
           "name": "Microsoft.App/agents/threads/write",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SRE Agent",
+      "name": "agents",
+      "operations": [
+        {
+          "description": "Read SRE Agent properties",
+          "displayName": "Read SRE Agent",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update a SRE Agent",
+          "displayName": "Create or update SRE Agent",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a SRE Agent",
+          "displayName": "Delete SRE Agent",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/delete",
           "origin": "user, system",
           "properties": null
         }
