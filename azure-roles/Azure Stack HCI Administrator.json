@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2023-02-03T05:08:48.396845+00:00",
+  "createdOn": "2023-02-07T16:15:03.945591+00:00",
   "description": "Grants full access to the cluster and its resources, including the ability to register Azure Stack HCI and assign others as Azure Arc HCI VM Contributor and/or Azure Arc HCI VM Reader",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/bda0d508-adf1-4af0-9c28-88919fc3ae06",
   "name": "bda0d508-adf1-4af0-9c28-88919fc3ae06",
@@ -107,12 +107,7 @@
         "Microsoft.Resources/subscriptions/resourceGroups/read",
         "Microsoft.AzureStackHCI/StorageContainers/Write",
         "Microsoft.AzureStackHCI/StorageContainers/Read",
-        "Microsoft.HybridContainerService/register/action",
-        "Microsoft.HybridCompute/settings/write",
-        "Microsoft.HybridCompute/settings/read",
-        "Microsoft.HybridCompute/gateways/read",
-        "Microsoft.HybridCompute/gateways/write",
-        "Microsoft.HybridCompute/gateways/delete"
+        "Microsoft.HybridContainerService/register/action"
       ],
       "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{f5819b54-e033-4d82-ac66-4fec3cbf3f4c, cd570a14-e51a-42ad-bac8-bafd67325302, b64e21ea-ac4e-4cdf-9dc9-5b892992bee7, 4b3fe76c-f777-4d24-a2d7-b027b0f7b273, 874d1c73-6003-4e60-a13a-cb31ea190a85,865ae368-6a45-4bd1-8fbf-0d5151f56fc1,7b1f81f9-4196-4058-8aae-762e593270df,4633458b-17de-408a-b874-0445c86b69e6,c99c945f-8bd1-4fb1-a903-01460aae6068})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{f5819b54-e033-4d82-ac66-4fec3cbf3f4c, cd570a14-e51a-42ad-bac8-bafd67325302, b64e21ea-ac4e-4cdf-9dc9-5b892992bee7, 4b3fe76c-f777-4d24-a2d7-b027b0f7b273, 874d1c73-6003-4e60-a13a-cb31ea190a85,865ae368-6a45-4bd1-8fbf-0d5151f56fc1,7b1f81f9-4196-4058-8aae-762e593270df,4633458b-17de-408a-b874-0445c86b69e6,c99c945f-8bd1-4fb1-a903-01460aae6068}))",
       "conditionVersion": "2.0",
@@ -125,5 +120,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-05-06T15:13:46.682611+00:00"
+  "updatedOn": "2025-02-03T16:08:24.490811+00:00"
 }
