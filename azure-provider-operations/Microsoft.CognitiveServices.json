@@ -17027,6 +17027,14 @@
           "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers/delete",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "List analyzers.\r\nGet analyzer properties.*",
+          "displayName": "ContentAnalyzers_List|ContentAnalyzers_Get*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers/read",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -17035,10 +17043,50 @@
       "name": "accounts/MultiModalIntelligence",
       "operations": [
         {
-          "description": "Extract content and fields from input.",
-          "displayName": "Analyzers_Analyze",
+          "description": "Extract content and fields from input.\r\nExtract content and fields from input.*",
+          "displayName": "Analyzers_Analyze|ContentAnalyzers_Analyze*",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers:analyze/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Extract content and fields from input.",
+          "displayName": "ContentAnalyzers_AnalyzeBinary",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers:analyzebinary/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Classify content with optional splitting.",
+          "displayName": "ContentClassifiers_Classify",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/classifiers:classify/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Classify content with optional splitting.",
+          "displayName": "ContentClassifiers_ClassifyBinary",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/classifiers:classifybinary/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Compare the similarity between two faces.",
+          "displayName": "PersonDirectories_CompareFaces",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/faces:compare/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Detect faces in an image.",
+          "displayName": "PersonDirectories_DetectFaces",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/faces:detect/action",
           "origin": "user",
           "properties": null
         }
@@ -17051,6 +17099,14 @@
         {
           "description": "Get the status of an analyzer creation operation.",
           "displayName": "Analyzers_GetAnalyzerOperationStatus",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers/operations/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get the status of an analyzer creation operation.",
+          "displayName": "ContentAnalyzers_GetOperationStatus",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers/operations/read",
           "origin": "user",
@@ -18913,6 +18969,142 @@
           "displayName": "Read evaluation runs",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/AIServices/evaluations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "analyzerresults*",
+      "name": "accounts/MultiModalIntelligence/analyzerresults",
+      "operations": [
+        {
+          "description": "Get the result of an analysis operation.",
+          "displayName": "ContentAnalyzers_GetResult",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzerresults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "files*",
+      "name": "accounts/MultiModalIntelligence/analyzerresults/files",
+      "operations": [
+        {
+          "description": "Get a file associated with the result of an analysis operation.",
+          "displayName": "ContentAnalyzers_GetResultFile",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzerresults/files/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "classifierresults*",
+      "name": "accounts/MultiModalIntelligence/classifierresults",
+      "operations": [
+        {
+          "description": "Get the result of a classifier operation.",
+          "displayName": "ContentClassifiers_GetResult",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/classifierresults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "classifiers*",
+      "name": "accounts/MultiModalIntelligence/classifiers",
+      "operations": [
+        {
+          "description": "List classifiers.\r\nGet classifier properties.*",
+          "displayName": "ContentClassifiers_List|ContentClassifiers_Get*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/classifiers/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations*",
+      "name": "accounts/MultiModalIntelligence/classifiers/operations",
+      "operations": [
+        {
+          "description": "Get the status of a classifier creation operation.",
+          "displayName": "ContentClassifiers_GetOperationStatus",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/classifiers/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "persondirectories*",
+      "name": "accounts/MultiModalIntelligence/persondirectories",
+      "operations": [
+        {
+          "description": "List person directories.\r\nGet person directory properties.*",
+          "displayName": "PersonDirectories_List|PersonDirectories_Get*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Find similar faces.",
+          "displayName": "PersonDirectories_FindSimilarFaces",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/faces:find/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Verify if a face matches the person.",
+          "displayName": "PersonDirectories_VerifyPerson",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/persons:verify/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Identify the person from a face.",
+          "displayName": "PersonDirectories_IdentifyPerson",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/persons:identify/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "faces*",
+      "name": "accounts/MultiModalIntelligence/persondirectories/faces",
+      "operations": [
+        {
+          "description": "List faces.\r\nGet face properties.*",
+          "displayName": "PersonDirectories_ListFaces|PersonDirectories_GetFace*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/faces/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "persons*",
+      "name": "accounts/MultiModalIntelligence/persondirectories/persons",
+      "operations": [
+        {
+          "description": "List persons.\r\nGet person properties.*",
+          "displayName": "PersonDirectories_ListPersons|PersonDirectories_GetPerson*",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/persons/read",
           "origin": "user",
           "properties": null
         }
