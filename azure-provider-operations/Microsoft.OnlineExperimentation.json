@@ -70,50 +70,58 @@
       "name": "workspaces",
       "operations": [
         {
-          "description": "Gets all experiment workspaces in the specified subscription.",
-          "displayName": "OnlineExperimentWorkspaces_ListBySubscription",
+          "description": "Gets all online experimentation workspaces in the specified subscription.",
+          "displayName": "OnlineExperimentationWorkspaces_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.OnlineExperimentation/workspaces/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets all experiment workspaces in a resource group.",
-          "displayName": "OnlineExperimentWorkspaces_ListByResourceGroup",
+          "description": "Gets all online experimentation workspaces in a resource group.",
+          "displayName": "OnlineExperimentationWorkspaces_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.OnlineExperimentation/workspaces/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets an experiment workspace",
-          "displayName": "OnlineExperimentWorkspaces_Get",
+          "description": "Gets an online experimentation workspace.",
+          "displayName": "OnlineExperimentationWorkspaces_Get",
           "isDataAction": false,
           "name": "Microsoft.OnlineExperimentation/workspaces/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create an experiment workspace, or update an existing workspace",
-          "displayName": "OnlineExperimentWorkspaces_CreateOrUpdate",
+          "description": "Create an online experimentation workspace or update an existing workspace.",
+          "displayName": "OnlineExperimentationWorkspaces_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.OnlineExperimentation/workspaces/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes an experiment workspace",
-          "displayName": "OnlineExperimentWorkspaces_Delete",
+          "description": "Deletes an online experimentation workspace.",
+          "displayName": "OnlineExperimentationWorkspaces_Delete",
           "isDataAction": false,
           "name": "Microsoft.OnlineExperimentation/workspaces/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Patch an experiment workspace",
-          "displayName": "OnlineExperimentWorkspaces_Update",
+          "description": "Patch an online experimentation workspace.",
+          "displayName": "OnlineExperimentationWorkspaces_Update",
           "isDataAction": false,
           "name": "Microsoft.OnlineExperimentation/workspaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connections on workspaces",
+          "displayName": "Approve Private Endpoint Connections on workspaces",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/PrivateEndpointConnectionsApproval/action",
           "origin": null,
           "properties": null
         },
@@ -138,6 +146,66 @@
           "displayName": "OnlineExperimentWorkspaces_Delete",
           "isDataAction": true,
           "name": "Microsoft.OnlineExperimentation/workspaces/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/privateLinkResources",
+      "name": "workspaces/privateLinkResources",
+      "operations": [
+        {
+          "description": "Gets the list of private link resources for an online experimentation workspace resource.",
+          "displayName": "PrivateLinkResources_List",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a private link resource for an online experimentation workspace resource.",
+          "displayName": "PrivateLinkResources_Get",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "workspaces/privateEndpointConnections",
+      "name": "workspaces/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Gets all the private endpoint connections configured on an online experimentation workspace resource.",
+          "displayName": "PrivateEndpointConnections_List",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the private endpoint connection details for an online experimentation workspace resource.",
+          "displayName": "PrivateEndpointConnections_Get",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates private endpoint connection status (Approval/Rejected) for an online experimentation workspace resource. This gets invoked by resource admin.",
+          "displayName": "PrivateEndpointConnections_Update",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes private endpoint connection for an online experimentation workspace resource.",
+          "displayName": "PrivateEndpointConnections_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.OnlineExperimentation/workspaces/privateEndpointConnections/delete",
           "origin": null,
           "properties": null
         }
