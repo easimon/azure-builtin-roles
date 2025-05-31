@@ -9,11 +9,27 @@
   "name": "e4395492-1534-4db2-bedf-88c14621589c",
   "permissions": [
     {
-      "actions": [],
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Media/mediaservices/*/read",
+        "Microsoft.Media/mediaservices/assets/*",
+        "Microsoft.Media/mediaservices/assets/assetfilters/*",
+        "Microsoft.Media/mediaservices/streamingLocators/*",
+        "Microsoft.Media/mediaservices/transforms/jobs/*"
+      ],
       "condition": null,
       "conditionVersion": null,
       "dataActions": [],
-      "notActions": [],
+      "notActions": [
+        "Microsoft.Media/mediaservices/assets/getEncryptionKey/action",
+        "Microsoft.Media/mediaservices/streamingLocators/listContentKeys/action"
+      ],
       "notDataActions": []
     }
   ],
@@ -21,5 +37,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-05-29T05:55:43.105959+00:00"
+  "updatedOn": "2021-11-11T20:15:07.506848+00:00"
 }
