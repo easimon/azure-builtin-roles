@@ -4,8 +4,8 @@
   "name": "Microsoft.DevTestLab",
   "operations": [
     {
-      "description": "Registers the subscription",
-      "displayName": "Register Subscription",
+      "description": "Az előfizetés regisztrálása",
+      "displayName": "Előfizetés regisztrálása",
       "isDataAction": false,
       "name": "Microsoft.DevTestLab/register/action",
       "origin": null,
@@ -14,7 +14,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "policy sets",
+      "displayName": "szabályzatkészlet",
       "name": "labs/policySets",
       "operations": [
         {
@@ -26,8 +26,8 @@
           "properties": null
         },
         {
-          "description": "Evaluates lab policy.",
-          "displayName": "Evaluate policy",
+          "description": "Tesztkörnyezet szabályzatának értékelése.",
+          "displayName": "Szabályzat értékelése",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/policySets/EvaluatePolicies/action",
           "origin": null,
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "displayName": "Labs",
+      "displayName": "Tesztkörnyezet",
       "name": "labs",
       "operations": [
         {
@@ -64,56 +64,56 @@
           "properties": null
         },
         {
-          "description": "List disk images available for custom image creation.",
-          "displayName": "List VHDs",
+          "description": "Egyéni rendszerképek létrehozásához használható lemezképek listája.",
+          "displayName": "Virtuális merevlemezek listája",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ListVhds/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Generate a URI for uploading custom disk images to a Lab.",
-          "displayName": "Generate image upload URI",
+          "description": "URI létrehozása egyéni rendszerképek tesztkörnyezetbe való feltöltéséhez.",
+          "displayName": "URI létrehozása rendszerkép feltöltéséhez",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/GenerateUploadUri/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create virtual machines in a lab.",
-          "displayName": "Create a virtual machine",
+          "description": "Virtuális gépek létrehozása tesztkörnyezetben.",
+          "displayName": "Virtuális gép létrehozása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/CreateEnvironment/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Claim a random claimable virtual machine in the lab.",
-          "displayName": "Claim Any Virtual Machine",
+          "description": "Véletlenszerűen választott gép igénylése a tesztkörnyezet igényelhető virtuális gépei közül.",
+          "displayName": "Tetszőleges virtuális gép igénylése",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ClaimAnyVm/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Exports the lab resource usage into a storage account",
-          "displayName": "Exports the lab resource usage into a storage account",
+          "description": "A művelet tárfiókba exportálja a tesztkörnyezet erőforrás-használati adatait",
+          "displayName": "A művelet tárfiókba exportálja a tesztkörnyezet erőforrás-használati adatait",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ExportResourceUsage/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Import a virtual machine into a different lab.",
-          "displayName": "Import a virtual machine",
+          "description": "Virtuális gép importálása másik tesztkörnyezetbe.",
+          "displayName": "Virtuális gép importálása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ImportVirtualMachine/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Ensure the current user has a valid profile in the lab.",
-          "displayName": "Ensure Current User Profile",
+          "description": "Győződjön meg arról, hogy az aktuális felhasználó érvényes profillal rendelkezik a tesztkörnyezetben.",
+          "displayName": "Aktuális felhasználói profil ellenőrzése",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/EnsureCurrentUserProfile/action",
           "origin": null,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "displayName": "policies",
+      "displayName": "szabályzat",
       "name": "labs/policySets/policies",
       "operations": [
         {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "ütemezés",
       "name": "labs/schedules",
       "operations": [
         {
@@ -180,16 +180,16 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Ütemezés végrehajtása.",
+          "displayName": "Ütemezés végrehajtása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists all applicable schedules",
-          "displayName": "List all applicable schedules",
+          "description": "Az összes vonatkozó ütemezés listázása",
+          "displayName": "Összes vonatkozó ütemezés listázása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/ListApplicable/action",
           "origin": null,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "ütemezés",
       "name": "schedules",
       "operations": [
         {
@@ -226,16 +226,16 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Ütemezés végrehajtása.",
+          "displayName": "Ütemezés végrehajtása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates a schedule's target resource Id.",
-          "displayName": "Retarget schedule.",
+          "description": "A művelet frissíti az ütemezés céljaként szolgáló erőforrás-azonosítót.",
+          "displayName": "Új cél megadása az ütemezéshez.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Retarget/action",
           "origin": null,
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "ütemezés",
       "name": "labs/virtualMachines/schedules",
       "operations": [
         {
@@ -272,8 +272,8 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Ütemezés végrehajtása.",
+          "displayName": "Ütemezés végrehajtása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/schedules/Execute/action",
           "origin": null,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "ütemezés",
       "name": "labs/users/serviceFabrics/schedules",
       "operations": [
         {
@@ -310,8 +310,8 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Ütemezés végrehajtása.",
+          "displayName": "Ütemezés végrehajtása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/schedules/Execute/action",
           "origin": null,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "displayName": "Artifact sources",
+      "displayName": "Összetevőforrás",
       "name": "labs/artifactSources",
       "operations": [
         {
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "displayName": "Artifacts",
+      "displayName": "Összetevő",
       "name": "labs/artifactSources/artifacts",
       "operations": [
         {
@@ -362,8 +362,8 @@
           "properties": null
         },
         {
-          "description": "Generates an ARM template for the given artifact, uploads the required files to a storage account, and validates the generated artifact.",
-          "displayName": "Generates an ARM template for the given artifact",
+          "description": "ARM-sablon létrehozása adott összetevőhöz, a szükséges fájlok feltöltése a tárfiókba, és a létrehozott összetevő érvényesítése.",
+          "displayName": "ARM-sablon létrehozása adott összetevőhöz",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/artifactSources/artifacts/GenerateArmTemplate/action",
           "origin": null,
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "displayName": "gallery images",
+      "displayName": "katalógus-rendszerkép",
       "name": "labs/galleryImages",
       "operations": [
         {
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "displayName": "custom images",
+      "displayName": "egyéni rendszerkép",
       "name": "labs/customImages",
       "operations": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "displayName": "virtual networks",
+      "displayName": "virtuális hálózat",
       "name": "labs/virtualNetworks",
       "operations": [
         {
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "displayName": "Virtual machines",
+      "displayName": "Virtuális gép",
       "name": "labs/virtualMachines",
       "operations": [
         {
@@ -474,128 +474,128 @@
           "properties": null
         },
         {
-          "description": "Attach a new or existing data disk to virtual machine.",
-          "displayName": "Add or attach a data disk",
+          "description": "Új vagy meglévő adatlemez csatlakoztatása virtuális géphez.",
+          "displayName": "Adatlemez hozzáadása vagy csatlakoztatása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/AddDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Apply artifacts to virtual machine.",
-          "displayName": "Apply artifacts to virtual machine",
+          "description": "Összetevők alkalmazása virtuális gépre.",
+          "displayName": "Összetevők alkalmazása virtuális gépre",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ApplyArtifacts/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Take ownership of an existing virtual machine",
-          "displayName": "Claim a virtual machine",
+          "description": "Egy meglévő virtuális gép tulajdonba vétele",
+          "displayName": "Virtuális gép igénylése",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Claim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Clears the artifact results of the virtual machine.",
-          "displayName": "Clear artifact results",
+          "description": "A virtuális gép műtermék-eredményeinek törlése",
+          "displayName": "Műtermék-eredmények törlése",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ClearArtifactResults/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Detach the specified disk from the virtual machine.",
-          "displayName": "Detach the specified disk from the virtual machine",
+          "description": "A megadott lemez leválasztása a virtuális gépről.",
+          "displayName": "A megadott lemez leválasztása a virtuális gépről",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/DetachDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets a string that represents the contents of the RDP file for the virtual machine",
-          "displayName": "Get RDP file contents",
+          "description": "A virtuális gép számára az RDP-fájl tartalmát jelölő sztring beolvasása",
+          "displayName": "RDP-fájl tartalmának beolvasása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/GetRdpFileContents/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the applicable start/stop schedules, if any.",
-          "displayName": "List all applicable schedules",
+          "description": "Az alkalmazható indítási és leállítási ütemezések listázása, ha vannak ilyenek.",
+          "displayName": "Összes vonatkozó ütemezés listázása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ListApplicableSchedules/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Redeploy a virtual machine",
-          "displayName": "Redeploy a virtual machine",
+          "description": "Virtuális gép újbóli üzembe helyezése",
+          "displayName": "Virtuális gép újbóli üzembe helyezése",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Redeploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Resize Virtual Machine.",
-          "displayName": "Resize Virtual Machine.",
+          "description": "Egy virtuális gép átméretezése.",
+          "displayName": "Egy virtuális gép átméretezése.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Resize/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Restart a virtual machine.",
-          "displayName": "Restart virtual machine",
+          "description": "Egy virtuális gép újraindítása.",
+          "displayName": "Virtuális gép újraindítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Restart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Start a virtual machine.",
-          "displayName": "Start virtual machine",
+          "description": "Virtuális gép indítása.",
+          "displayName": "Virtuális gép indítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stop a virtual machine",
-          "displayName": "Stop virtual machine",
+          "description": "Virtuális gép leállítása",
+          "displayName": "Virtuális gép leállítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hibernate a virtual machine",
-          "displayName": "Hibernate virtual machine",
+          "description": "Virtuális gép hibernálása",
+          "displayName": "Virtuális gép hibernálása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Hibernate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Transfers all data disks attached to the virtual machine to be owned by the current user.",
-          "displayName": "Transfer data disks to the current user.",
+          "description": "A virtuális géphez csatolt összes adatlemez átadása az aktuális felhasználó tulajdonába.",
+          "displayName": "Adatlemezek átadása az aktuális felhasználónak.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/TransferDisks/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Release ownership of an existing virtual machine",
-          "displayName": "Unclaim a virtual machine",
+          "description": "Meglévő virtuális gép tulajdonjogának visszaadása",
+          "displayName": "Virtuális gép tulajdonjogának visszaadása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/UnClaim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Change security profile of a virtual machine",
-          "displayName": "Change virtual machine security profile",
+          "description": "Virtuális gép biztonsági profiljának módosítása",
+          "displayName": "Virtuális gép biztonsági profiljának módosítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ChangeSecurityProfile/action",
           "origin": null,
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "displayName": "Formulas",
+      "displayName": "Képlet",
       "name": "labs/formulas",
       "operations": [
         {
@@ -634,7 +634,7 @@
       ]
     },
     {
-      "displayName": "costs",
+      "displayName": "költség",
       "name": "labs/costs",
       "operations": [
         {
@@ -684,16 +684,16 @@
           "properties": null
         },
         {
-          "description": "Attach and create the lease of the disk to the virtual machine.",
-          "displayName": "Attach disk",
+          "description": "Lemez csatlakoztatása, és bérlet létrehozása a virtuális géphez.",
+          "displayName": "Lemez csatlakoztatása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Attach/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Detach and break the lease of the disk attached to the virtual machine.",
-          "displayName": "Detach and break the lease of the disk attached to the virtual machine",
+          "description": "A virtuális géphez csatlakoztatott lemez leválasztása és a bérlet megszakítása.",
+          "displayName": "A virtuális géphez csatlakoztatott lemez leválasztása és a bérlet megszakítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Detach/action",
           "origin": null,
@@ -702,7 +702,7 @@
       ]
     },
     {
-      "displayName": "user profiles",
+      "displayName": "felhasználói profil",
       "name": "labs/users",
       "operations": [
         {
@@ -732,7 +732,7 @@
       ]
     },
     {
-      "displayName": "Notification Channels",
+      "displayName": "Értesítési csatornák",
       "name": "labs/notificationChannels",
       "operations": [
         {
@@ -760,8 +760,8 @@
           "properties": null
         },
         {
-          "description": "Send notification to provided channel.",
-          "displayName": "Notify",
+          "description": "Értesítés küldése a megadott csatornára.",
+          "displayName": "Értesítés",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/notificationChannels/Notify/action",
           "origin": null,
@@ -770,7 +770,7 @@
       ]
     },
     {
-      "displayName": "secrets",
+      "displayName": "titkos kód",
       "name": "labs/users/secrets",
       "operations": [
         {
@@ -800,7 +800,7 @@
       ]
     },
     {
-      "displayName": "operations",
+      "displayName": "művelet",
       "name": "locations/operations",
       "operations": [
         {
@@ -814,7 +814,7 @@
       ]
     },
     {
-      "displayName": "Azure Resource Manager templates",
+      "displayName": "Azure Resource Manager-sablonok",
       "name": "labs/artifactSources/armTemplates",
       "operations": [
         {
@@ -828,7 +828,7 @@
       ]
     },
     {
-      "displayName": "environments",
+      "displayName": "környezet",
       "name": "labs/users/environments",
       "operations": [
         {
@@ -858,7 +858,7 @@
       ]
     },
     {
-      "displayName": "Service runners",
+      "displayName": "Szolgáltatásfuttató",
       "name": "labs/serviceRunners",
       "operations": [
         {
@@ -888,7 +888,7 @@
       ]
     },
     {
-      "displayName": "Service Fabrics",
+      "displayName": "Service Fabric-példány",
       "name": "labs/users/serviceFabrics",
       "operations": [
         {
@@ -916,24 +916,24 @@
           "properties": null
         },
         {
-          "description": "Start a service fabric.",
-          "displayName": "Start service fabric",
+          "description": "Service Fabric-példány indítása.",
+          "displayName": "Service Fabric indítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stop a service fabric",
-          "displayName": "Stop service fabric",
+          "description": "Service Fabric-példány leállítása",
+          "displayName": "Service Fabric leállítása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the applicable start/stop schedules, if any.",
-          "displayName": "List all applicable schedules",
+          "description": "Az alkalmazható indítási és leállítási ütemezések listázása, ha vannak ilyenek.",
+          "displayName": "Összes vonatkozó ütemezés listázása",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/ListApplicableSchedules/action",
           "origin": null,
@@ -942,7 +942,7 @@
       ]
     },
     {
-      "displayName": "Virtual Machine Pools",
+      "displayName": "Virtuálisgép-készletek",
       "name": "labs/vmPools",
       "operations": [
         {
@@ -972,7 +972,7 @@
       ]
     },
     {
-      "displayName": "Shared Galleries",
+      "displayName": "Megosztott katalógusok",
       "name": "labs/sharedGalleries",
       "operations": [
         {
@@ -1002,7 +1002,7 @@
       ]
     },
     {
-      "displayName": "Shared Images",
+      "displayName": "Megosztott lemezképek",
       "name": "labs/sharedGalleries/sharedImages",
       "operations": [
         {
@@ -1062,7 +1062,7 @@
       ]
     },
     {
-      "displayName": "Lab Secrets",
+      "displayName": "Tesztkörnyezeti titkos kódok",
       "name": "labs/secrets",
       "operations": [
         {
