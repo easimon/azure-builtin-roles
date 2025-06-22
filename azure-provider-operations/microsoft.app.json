@@ -1010,7 +1010,7 @@
       ]
     },
     {
-      "displayName": "Session Pool",
+      "displayName": "Session",
       "name": "sessionPools/sessions",
       "operations": [
         {
@@ -1018,6 +1018,22 @@
           "displayName": "Operate Session",
           "isDataAction": true,
           "name": "microsoft.app/sessionPools/sessions/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Generate sessions",
+          "displayName": "Generate Sessions",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/sessions/generatesessions/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get a Session",
+          "displayName": "Read Session",
+          "isDataAction": false,
+          "name": "microsoft.app/sessionpools/sessions/read",
           "origin": "user, system",
           "properties": null
         }
@@ -1796,6 +1812,20 @@
           "displayName": "Delete SRE Agent",
           "isDataAction": false,
           "name": "Microsoft.App/agents/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Interpreters",
+      "name": "sessionpools/interpreters",
+      "operations": [
+        {
+          "description": "Execute Code",
+          "displayName": "Execute Code",
+          "isDataAction": true,
+          "name": "microsoft.app/sessionpools/interpreters/execute/action",
           "origin": "user, system",
           "properties": null
         }
