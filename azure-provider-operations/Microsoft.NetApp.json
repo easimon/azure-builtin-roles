@@ -1181,6 +1181,32 @@
                     "P1D"
                   ],
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "dimensions": [],
+                  "displayDescription": "Latency for Exceeded Throughput",
+                  "displayName": "QoS latency delta",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": false,
+                  "internalMetricName": "QosLatencyDelta",
+                  "isInternal": false,
+                  "name": "QosLatencyDelta",
+                  "sourceMdmAccount": "MicrosoftNetAppShoebox2",
+                  "sourceMdmNamespace": "NetAppUsageAndMetrics",
+                  "supportedAggregationTypes": [
+                    "Average"
+                  ],
+                  "supportedTimeGrainTypes": [
+                    "PT5M",
+                    "PT15M",
+                    "PT30M",
+                    "PT1H",
+                    "PT6H",
+                    "PT12H",
+                    "P1D"
+                  ],
+                  "unit": "MilliSeconds"
                 }
               ]
             }
@@ -2259,6 +2285,28 @@
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/write",
           "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "RansomwareReports resource type",
+      "name": "netAppAccounts/capacityPools/volumes/ransomwareReports",
+      "operations": [
+        {
+          "description": "Returns the details of Ransomware Report resource(s).",
+          "displayName": "Read RansomwareReport(s) resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/ransomwareReports/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Clear suspsects from RansomwareReports",
+          "displayName": "RansomwareReports clear suspsects",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/ransomwareReports/clearsuspects/action",
+          "origin": "user,system",
           "properties": null
         }
       ]
