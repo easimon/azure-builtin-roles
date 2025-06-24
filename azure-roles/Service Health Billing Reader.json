@@ -1,0 +1,39 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-06-23T15:07:40.678901+00:00",
+  "description": "Grants permissions to view billing information present in service health events",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/32c34659-0f83-4a4c-80f2-63a244f8ae0b",
+  "name": "32c34659-0f83-4a4c-80f2-63a244f8ae0b",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ResourceHealth/events/action",
+        "Microsoft.ResourceHealth/AvailabilityStatuses/read",
+        "Microsoft.ResourceHealth/AvailabilityStatuses/current/read",
+        "Microsoft.ResourceHealth/Operations/read",
+        "Microsoft.ResourceHealth/emergingissues/read",
+        "Microsoft.ResourceHealth/events/read",
+        "Microsoft.ResourceHealth/events/fetchBillingCommunicationDetails/action",
+        "Microsoft.ResourceHealth/events/impactedResources/read",
+        "Microsoft.ResourceHealth/metadata/read",
+        "Microsoft.ResourceHealth/potentialoutages/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [
+        "Microsoft.ResourceHealth/events/fetchEventDetails/action",
+        "Microsoft.ResourceHealth/events/listSecurityAdvisoryImpactedResources/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Service Health Billing Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-06-23T15:07:40.678901+00:00"
+}
