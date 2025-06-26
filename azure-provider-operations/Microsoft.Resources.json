@@ -1,27 +1,27 @@
 {
-  "displayName": "Microsoft Kaynakları",
+  "displayName": "Microsoft Resources",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Resources",
   "name": "Microsoft.Resources",
   "operations": [
     {
-      "description": "Kaynak adının geçerliliğini denetleyin.",
-      "displayName": "Kaynak Adını Denetle",
+      "description": "Check the resource name for validity.",
+      "displayName": "Check Resource Name",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkResourceName/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Sağlanan şablonun karmasını hesaplayın.",
-      "displayName": "Şablon Karmasını Hesapla",
+      "description": "Calculate the hash of provided template.",
+      "displayName": "Calculate Template Hash",
       "isDataAction": false,
       "name": "Microsoft.Resources/calculateTemplateHash/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Bölge Eşlerini Denetle",
-      "displayName": "Bölge Eşlerini Denetle",
+      "description": "Check Zone Peers",
+      "displayName": "Check Zone Peers",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkZonePeers/action",
       "origin": null,
@@ -30,12 +30,12 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Kiracı",
+      "displayName": "Tenant",
       "name": "tenants",
       "operations": [
         {
-          "description": "Kiracı listesini alır.",
-          "displayName": "Kiracıları Al",
+          "description": "Gets the list of tenants.",
+          "displayName": "Get Tenants",
           "isDataAction": false,
           "name": "Microsoft.Resources/tenants/read",
           "origin": null,
@@ -44,12 +44,12 @@
       ]
     },
     {
-      "displayName": "Sağlayıcılar",
+      "displayName": "Providers",
       "name": "providers",
       "operations": [
         {
-          "description": "Sağlayıcıların listesini alın.",
-          "displayName": "Sağlayıcıları Al",
+          "description": "Get the list of providers.",
+          "displayName": "Get Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/providers/read",
           "origin": null,
@@ -58,12 +58,12 @@
       ]
     },
     {
-      "displayName": "Kaynaklar",
+      "displayName": "Resources",
       "name": "resources",
       "operations": [
         {
-          "description": "Filtrelere göre kaynak listelerini alın.",
-          "displayName": "Kaynakları Al",
+          "description": "Get the list of resources based upon filters.",
+          "displayName": "Get Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/resources/read",
           "origin": null,
@@ -72,12 +72,12 @@
       ]
     },
     {
-      "displayName": "Abonelik",
+      "displayName": "Subscription",
       "name": "subscriptions",
       "operations": [
         {
-          "description": "Aboneliklerin listesini alır.",
-          "displayName": "Abonelikleri Al",
+          "description": "Gets the list of subscriptions.",
+          "displayName": "Get Subscriptions",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/read",
           "origin": null,
@@ -86,12 +86,12 @@
       ]
     },
     {
-      "displayName": "Abonelik Kaynağı",
+      "displayName": "Subscription Resource",
       "name": "subscriptions/resources",
       "operations": [
         {
-          "description": "Bir aboneliğin kaynaklarını alır.",
-          "displayName": "Abonelik Kaynaklarını Al",
+          "description": "Gets resources of a subscription.",
+          "displayName": "Get Subscription Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resources/read",
           "origin": null,
@@ -100,12 +100,12 @@
       ]
     },
     {
-      "displayName": "Konum",
+      "displayName": "Location",
       "name": "subscriptions/locations",
       "operations": [
         {
-          "description": "Desteklenen konumların listesini alır.",
-          "displayName": "Konumları Al",
+          "description": "Gets the list of locations supported.",
+          "displayName": "Get Locations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/locations/read",
           "origin": null,
@@ -114,12 +114,12 @@
       ]
     },
     {
-      "displayName": "Kaynak Sağlayıcıları",
+      "displayName": "Resource Providers",
       "name": "subscriptions/providers",
       "operations": [
         {
-          "description": "Kaynak sağlayıcılarını alır veya listeler.",
-          "displayName": "Kaynak Sağlayıcıları Al",
+          "description": "Gets or lists resource providers.",
+          "displayName": "Get Resource Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/providers/read",
           "origin": null,
@@ -128,12 +128,12 @@
       ]
     },
     {
-      "displayName": "Abonelik İşlem Sonuçları",
+      "displayName": "Subscription Operation Results",
       "name": "subscriptions/operationresults",
       "operations": [
         {
-          "description": "Abonelik işlem sonuçlarını alın.",
-          "displayName": "Abonelik İşlem Sonuçlarını Al",
+          "description": "Get the subscription operation results.",
+          "displayName": "Get Subscription Operation Results",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/operationresults/read",
           "origin": null,
@@ -142,44 +142,44 @@
       ]
     },
     {
-      "displayName": "Kaynak Grubu",
+      "displayName": "Resource Group",
       "name": "subscriptions/resourceGroups",
       "operations": [
         {
-          "description": "Kaynak gruplarını alır veya listeler.",
-          "displayName": "Kaynak Grubu Al",
+          "description": "Gets or lists resource groups.",
+          "displayName": "Get Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Kaynak grubunu oluşturur veya güncelleştirir.",
-          "displayName": "Kaynak Grubu Oluştur",
+          "description": "Creates or updates a resource group.",
+          "displayName": "Create Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir kaynak grubunu ve tüm kaynaklarını siler.",
-          "displayName": "Kaynak Grubunu Sil",
+          "description": "Deletes a resource group and all its resources.",
+          "displayName": "Delete Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Kaynakları bir kaynak grubundan diğerine taşır.",
-          "displayName": "Kaynak Grubu Kaynaklarını Taşı",
+          "description": "Moves resources from one resource group to another.",
+          "displayName": "Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/moveResources/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir kaynak grubundan diğerine kaynak taşıma işlemini doğrular.",
-          "displayName": "Kaynak Grubu Kaynaklarını Taşımayı Doğrula",
+          "description": "Validate move of resources from one resource group to another.",
+          "displayName": "Validate Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/validateMoveResources/action",
           "origin": null,
@@ -188,12 +188,12 @@
       ]
     },
     {
-      "displayName": "Kaynak Grubu Kaynakları",
+      "displayName": "Resource Group Resources",
       "name": "subscriptions/resourcegroups/resources",
       "operations": [
         {
-          "description": "Kaynak grubun kaynaklarını alır.",
-          "displayName": "Kaynak Grubun Kaynaklarını Al",
+          "description": "Gets the resources for the resource group.",
+          "displayName": "Get Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
           "origin": null,
@@ -202,28 +202,28 @@
       ]
     },
     {
-      "displayName": "Abonelik Etiketi",
+      "displayName": "Subscription Tag",
       "name": "subscriptions/tagNames",
       "operations": [
         {
-          "description": "Abonelik etiketlerini alır veya listeler.",
-          "displayName": "Abonelik Etiketi Al",
+          "description": "Gets or lists subscription tags.",
+          "displayName": "Get Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir abonelik etiketi ekler.",
-          "displayName": "Abonelik Etiketi Ekle",
+          "description": "Adds a subscription tag.",
+          "displayName": "Add Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir abonelik etiketini siler.",
-          "displayName": "Abonelik Etiketini Sil",
+          "description": "Deletes a subscription tag.",
+          "displayName": "Delete Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/delete",
           "origin": null,
@@ -232,28 +232,28 @@
       ]
     },
     {
-      "displayName": "Abonelik Etiket Değeri",
+      "displayName": "Subscription Tag Value",
       "name": "subscriptions/tagNames/tagValues",
       "operations": [
         {
-          "description": "Abonelik etiketi değerlerini alır veya listeler.",
-          "displayName": "Abonelik Etiketi Değerini Al",
+          "description": "Gets or lists subscription tag values.",
+          "displayName": "Get Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir abonelik etiketi değeri ekler.",
-          "displayName": "Abonelik Etiketi Değeri Ekle",
+          "description": "Adds a subscription tag value.",
+          "displayName": "Add Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir abonelik etiketi değerini siler.",
-          "displayName": "Abonelik Etiketi Değerini Sil",
+          "description": "Deletes a subscription tag value.",
+          "displayName": "Delete Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/delete",
           "origin": null,
@@ -262,36 +262,36 @@
       ]
     },
     {
-      "displayName": "Dağıtım",
+      "displayName": "Deployment",
       "name": "deployments",
       "operations": [
         {
-          "description": "Dağıtımları alır veya listeler.",
-          "displayName": "Dağıtımı Al",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtımı oluşturur veya güncelleştirir.",
-          "displayName": "Dağıtım Oluştur",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtımı siler.",
-          "displayName": "Dağıtımı Sil",
+          "description": "Deletes a deployment.",
+          "displayName": "Delete Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtımı iptal eder.",
-          "displayName": "Dağıtımı İptal Et",
+          "description": "Cancels a deployment.",
+          "displayName": "Cancel Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/cancel/action",
           "origin": null,
@@ -299,23 +299,23 @@
         },
         {
           "description": "Validates a deployment.",
-          "displayName": "Dağıtımı Doğrula",
+          "displayName": "Validate Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/validate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Şablon dağıtım değişikliklerini tahmin eder.",
-          "displayName": "Dağıtım Durum Çözümlemesi",
+          "description": "Predicts template deployment changes.",
+          "displayName": "Deployment What-If",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/whatIf/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Şablonu dağıtım için dışarı aktarın",
-          "displayName": "Şablonu dağıtım için dışarı aktar",
+          "description": "Export template for a deployment",
+          "displayName": "Export template for deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/exportTemplate/action",
           "origin": null,
@@ -324,20 +324,20 @@
       ]
     },
     {
-      "displayName": "Dağıtım",
+      "displayName": "Deployment",
       "name": "subscriptions/resourcegroups/deployments",
       "operations": [
         {
-          "description": "Dağıtımları alır veya listeler.",
-          "displayName": "Dağıtımı Al",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtımı oluşturur veya güncelleştirir.",
-          "displayName": "Dağıtım Oluştur",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
           "origin": null,
@@ -346,12 +346,12 @@
       ]
     },
     {
-      "displayName": "Dağıtım İşlemi",
+      "displayName": "Deployment Operation",
       "name": "subscriptions/resourcegroups/deployments/operations",
       "operations": [
         {
-          "description": "Dağıtım işlemlerini alır veya listeler.",
-          "displayName": "Dağıtım İşlemini Al",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
           "origin": null,
@@ -360,12 +360,12 @@
       ]
     },
     {
-      "displayName": "Dağıtım işlemi durumu",
+      "displayName": "Deployment operation status",
       "name": "subscriptions/resourcegroups/deployments/operationstatuses",
       "operations": [
         {
-          "description": "Dağıtım işlemi durumlarını alır veya listeler.",
-          "displayName": "Dağıtım işletim durumunu al",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read",
           "origin": null,
@@ -374,12 +374,12 @@
       ]
     },
     {
-      "displayName": "Dağıtım İşlemi",
+      "displayName": "Deployment Operation",
       "name": "deployments/operations",
       "operations": [
         {
-          "description": "Dağıtım işlemlerini alır veya listeler.",
-          "displayName": "Dağıtım İşlemini Al",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operations/read",
           "origin": null,
@@ -388,28 +388,28 @@
       ]
     },
     {
-      "displayName": "Kaynak Bağlantı",
+      "displayName": "Resource Link",
       "name": "links",
       "operations": [
         {
-          "description": "Kaynak bağlantılarını alır veya listeler.",
-          "displayName": "Kaynak Bağlantısını Al",
+          "description": "Gets or lists resource links.",
+          "displayName": "Get Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir kaynak bağlantısını oluşturur veya güncelleştirir.",
-          "displayName": "Kaynak Bağlantısı Oluştur",
+          "description": "Creates or updates a resource link.",
+          "displayName": "Create Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir kaynak bağlantısını siler.",
-          "displayName": "Kaynak Bağlantısını Sil",
+          "description": "Deletes a resource link.",
+          "displayName": "Delete Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/delete",
           "origin": null,
@@ -418,12 +418,12 @@
       ]
     },
     {
-      "displayName": "Market",
+      "displayName": "Marketplace",
       "name": "marketplace",
       "operations": [
         {
-          "description": "Marketten bir kaynak satın alır.",
-          "displayName": "Kaynak Satın Al",
+          "description": "Purchases a resource from the marketplace.",
+          "displayName": "Purchase Resource",
           "isDataAction": false,
           "name": "Microsoft.Resources/marketplace/purchase/action",
           "origin": "System",
@@ -432,28 +432,28 @@
       ]
     },
     {
-      "displayName": "Etiketler",
+      "displayName": "Tags",
       "name": "tags",
       "operations": [
         {
-          "description": "Bir kaynaktaki tüm etiketleri alır.",
-          "displayName": "Etiketi oku",
+          "description": "Gets all the tags on a resource.",
+          "displayName": "Read tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Mevcut etiketleri yeni bir etiket kümesiyle değiştirerek veya birleştirerek veya mevcut etiketleri kaldırarak bir kaynağın etiketlerini güncelleştirir.",
-          "displayName": "Etiket yaz",
+          "description": "Updates the tags on a resource by replacing or merging existing tags with a new set of tags, or removing existing tags.",
+          "displayName": "Write tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir kaynaktaki tüm etiketleri kaldırır.",
-          "displayName": "Etiketleri sil",
+          "description": "Removes all the tags on a resource.",
+          "displayName": "Delete tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/delete",
           "origin": null,
@@ -462,12 +462,12 @@
       ]
     },
     {
-      "displayName": "Dağıtım işlemi durumu",
+      "displayName": "Deployment operation status",
       "name": "deployments/operationstatuses",
       "operations": [
         {
-          "description": "Dağıtım işlemi durumlarını alır veya listeler.",
-          "displayName": "Dağıtım işletim durumunu al",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operationstatuses/read",
           "origin": null,
@@ -476,28 +476,28 @@
       ]
     },
     {
-      "displayName": "Dağıtım Betikleri",
+      "displayName": "Deployment Scripts",
       "name": "deploymentScripts",
       "operations": [
         {
-          "description": "Dağıtım betiklerini alır veya listeler",
-          "displayName": "Dağıtım betiklerini oku",
+          "description": "Gets or lists deployment scripts",
+          "displayName": "Read deployment scripts",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtım betiği oluşturur veya güncelleştirir",
-          "displayName": "Dağıtım betiği yazma",
+          "description": "Creates or updates a deployment script",
+          "displayName": "Write deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtım betiğini siler",
-          "displayName": "Dağıtım betiğini silin",
+          "description": "Deletes a deployment script",
+          "displayName": "Delete deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/delete",
           "origin": null,
@@ -506,12 +506,12 @@
       ]
     },
     {
-      "displayName": "Dağıtım Betiği Günlükleri",
+      "displayName": "Deployment Script Logs",
       "name": "deploymentScripts/logs",
       "operations": [
         {
-          "description": "Dağıtım betiği günlüklerini alır veya listeler",
-          "displayName": "Dağıtım betiği günlüklerini oku",
+          "description": "Gets or lists deployment script logs",
+          "displayName": "Read deployment script logs",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/logs/read",
           "origin": null,
@@ -520,12 +520,12 @@
       ]
     },
     {
-      "displayName": "İlke Uyumluluğunu Denetle",
+      "displayName": "Check Policy Compliance",
       "name": "checkPolicyCompliance",
       "operations": [
         {
-          "description": "Belirli bir kaynağın uyumluluk durumunu kaynak ilkelerine karşı denetleyin.",
-          "displayName": "İlke Uyumluluğunu Denetle",
+          "description": "Check the compliance status of a given resource against resource policies.",
+          "displayName": "Check Policy Compliance",
           "isDataAction": false,
           "name": "Microsoft.Resources/checkPolicyCompliance/read",
           "origin": null,
@@ -534,28 +534,28 @@
       ]
     },
     {
-      "displayName": "Şablon Belirtimleri",
+      "displayName": "Template Specs",
       "name": "templateSpecs",
       "operations": [
         {
-          "description": "Şablon belirtimlerini alır veya listeler",
-          "displayName": "Şablon belirtimini oku",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Şablon belirtimini oluşturur veya güncelleştirir",
-          "displayName": "Şablon belirtimini yaz",
+          "description": "Creates or updates a template spec",
+          "displayName": "Write template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Şablon belirtimini siler",
-          "displayName": "Şablon belirtimini sil",
+          "description": "Deletes a template spec",
+          "displayName": "Delete a template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/delete",
           "origin": null,
@@ -564,28 +564,28 @@
       ]
     },
     {
-      "displayName": "Şablon Belirtimi Sürümleri",
+      "displayName": "Template Spec Versions",
       "name": "templateSpecs/versions",
       "operations": [
         {
-          "description": "Şablon belirtimlerini alır veya listeler",
-          "displayName": "Şablon belirtimi sürümünü oku",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Şablon belirtimi sürümünü oluşturur veya güncelleştirir",
-          "displayName": "Şablon belirtimi sürümünü yaz",
+          "description": "Creates or updates a template spec version",
+          "displayName": "Write a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Şablon belirtimi sürümünü siler",
-          "displayName": "Şablon belirtimi sürümünü sil",
+          "description": "Deletes a template spec version",
+          "displayName": "Delete a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/delete",
           "origin": null,
@@ -594,12 +594,12 @@
       ]
     },
     {
-      "displayName": "Değişiklikler",
+      "displayName": "Changes",
       "name": "changes",
       "operations": [
         {
-          "description": "Değişiklikleri alır veya listeler",
-          "displayName": "Değişiklikleri Oku",
+          "description": "Gets or lists changes",
+          "displayName": "Read Changes",
           "isDataAction": false,
           "name": "Microsoft.Resources/changes/read",
           "origin": null,
@@ -608,12 +608,12 @@
       ]
     },
     {
-      "displayName": "Abonelik Kayıtları",
+      "displayName": "Subscription Registrations",
       "name": "subscriptionRegistrations",
       "operations": [
         {
-          "description": "Kaynak sağlayıcısı ad alanı için Abonelik Kaydını alın.",
-          "displayName": "Abonelik Kayıtlarını Al",
+          "description": "Get Subscription Registration for a resource provider namespace.",
+          "displayName": "Get Subscription Registrations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptionRegistrations/read",
           "origin": null,
@@ -622,28 +622,28 @@
       ]
     },
     {
-      "displayName": "Dağıtım Yığınları",
+      "displayName": "Deployment Stacks",
       "name": "deploymentStacks",
       "operations": [
         {
-          "description": "Dağıtım yığınlarını alır veya listeler",
-          "displayName": "Dağıtım yığınını okuma",
+          "description": "Gets or lists deployment stacks",
+          "displayName": "Read deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir dağıtım yığını oluşturur veya güncelleştirir",
-          "displayName": "Dağıtım yığınını yazma",
+          "description": "Creates or updates a deployment stack",
+          "displayName": "Write deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Dağıtım yığınını siler",
-          "displayName": "Dağıtım yığınını silme",
+          "description": "Deletes a deployment stack",
+          "displayName": "Delete a deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/delete",
           "origin": null,
@@ -676,12 +676,12 @@
       ]
     },
     {
-      "displayName": "Veri Sınırı",
+      "displayName": "Data Boundary",
       "name": "dataBoundaries",
       "operations": [
         {
-          "description": "Veri sınırını kiracı düzeyinde kabul edin",
-          "displayName": "Veri Sınırını Kabul Et",
+          "description": "Tenant level opt-in to data boundary",
+          "displayName": "Opt-in to Data Boundary",
           "isDataAction": false,
           "name": "Microsoft.Resources/dataBoundaries/write",
           "origin": null,
@@ -690,28 +690,28 @@
       ]
     },
     {
-      "displayName": "Mobo Aracısı",
+      "displayName": "Mobo Broker",
       "name": "moboBrokers",
       "operations": [
         {
-          "description": "Mobo aracılarını alır veya listeler",
-          "displayName": "Mobo Aracısı Alma",
+          "description": "Gets or lists mobo brokers",
+          "displayName": "Get Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir mobo aracısı oluşturur veya bu aracıyı güncelleştirir",
-          "displayName": "Mobo Aracısı Oluşturma",
+          "description": "Creates or updates a mobo broker",
+          "displayName": "Create Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Bir mobo aracısını siler",
-          "displayName": "Mobo aracısını sil",
+          "description": "Deletes a mobo broker",
+          "displayName": "Delete mobo broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/delete",
           "origin": null,
@@ -720,12 +720,12 @@
       ]
     },
     {
-      "displayName": "Mobo Hizmet İşlemi Durumu",
+      "displayName": "Mobo Service Operation Status",
       "name": "locations/moboOperationStatuses",
       "operations": [
         {
-          "description": "Kaynağın Mobo Hizmet İşlemi Durumunu okur.",
-          "displayName": "Mobo Hizmet İşlemi Durumunu alır.",
+          "description": "Reads the Mobo Service Operation Status for the resource.",
+          "displayName": "Get the Mobo Service Operation Status",
           "isDataAction": false,
           "name": "Microsoft.Resources/locations/moboOperationStatuses/read",
           "origin": null,
