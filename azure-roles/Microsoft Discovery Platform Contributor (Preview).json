@@ -1,0 +1,60 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-07-01T15:14:22.667876+00:00",
+  "description": "Grants permissions to view and operate on most Discovery platform resources, including workspaces, supercomputers, storages, agents, bookshelves, data containers, models, tools, workflows, and investigations, as well as perform data plane actions, but does not allow creating, updating, or deleting core resources such as workspaces, supercomputers, storages, bookshelves, node pools, or projects. This role is in preview and subject to change.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/01288891-85ee-45a7-b367-9db3b752fc65",
+  "name": "01288891-85ee-45a7-b367-9db3b752fc65",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Discovery/locations/operationStatuses/read",
+        "Microsoft.Discovery/operations/read",
+        "Microsoft.Discovery/workspaces/read",
+        "Microsoft.Discovery/supercomputers/read",
+        "Microsoft.Discovery/storages/read",
+        "Microsoft.Discovery/agents/*",
+        "Microsoft.Discovery/bookshelves/read",
+        "Microsoft.Discovery/dataContainers/*",
+        "Microsoft.Discovery/dataContainers/dataAssets/*",
+        "Microsoft.Discovery/models/*",
+        "Microsoft.Discovery/supercomputers/nodePools/read",
+        "Microsoft.Discovery/tools/*",
+        "Microsoft.Discovery/workflows/*",
+        "Microsoft.Discovery/workspaces/projects/read",
+        "Microsoft.Discovery/operations/read",
+        "Microsoft.Insights/AlertRules/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.Discovery/*"
+      ],
+      "notActions": [
+        "Microsoft.Discovery/workspaces/write",
+        "Microsoft.Discovery/workspaces/delete",
+        "Microsoft.Discovery/supercomputers/write",
+        "Microsoft.Discovery/supercomputers/delete",
+        "Microsoft.Discovery/storages/write",
+        "Microsoft.Discovery/storages/delete",
+        "Microsoft.Discovery/bookshelves/write",
+        "Microsoft.Discovery/bookshelves/delete",
+        "Microsoft.Discovery/supercomputers/nodePools/write",
+        "Microsoft.Discovery/supercomputers/nodePools/delete",
+        "Microsoft.Discovery/workspaces/projects/write",
+        "Microsoft.Discovery/workspaces/projects/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Microsoft Discovery Platform Contributor (Preview)",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-07-01T15:14:22.667876+00:00"
+}
