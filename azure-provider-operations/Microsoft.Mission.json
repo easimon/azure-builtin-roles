@@ -132,6 +132,38 @@
       "name": "virtualEnclaves",
       "operations": [
         {
+          "description": "Callback that triggers on approval state change.",
+          "displayName": "VirtualEnclave_ApprovalCallback",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/approvalCallback/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval deletion state change.",
+          "displayName": "VirtualEnclave_ApprovalDeletionCallback",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/approvalDeletionCallback/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval state change.",
+          "displayName": "VirtualEnclave_HandleApprovalCreation",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/handleApprovalCreation/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval deletion state change.",
+          "displayName": "VirtualEnclave_HandleApprovalDeletion",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/handleApprovalDeletion/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "List EnclaveResource resources by subscription ID",
           "displayName": "VirtualEnclave_ListBySubscription",
           "isDataAction": false,
@@ -176,22 +208,6 @@
           "displayName": "VirtualEnclave_Update",
           "isDataAction": false,
           "name": "Microsoft.Mission/virtualEnclaves/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Callback that triggers on approval state change.",
-          "displayName": "VirtualEnclave_ApprovalCallback",
-          "isDataAction": false,
-          "name": "Microsoft.Mission/virtualEnclaves/approvalCallback/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Callback that triggers on approval deletion state change.",
-          "displayName": "VirtualEnclave_ApprovalDeletionCallback",
-          "isDataAction": false,
-          "name": "Microsoft.Mission/virtualEnclaves/approvalDeletionCallback/action",
           "origin": null,
           "properties": null
         }
@@ -372,6 +388,22 @@
           "name": "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval state change.",
+          "displayName": "EnclaveEndpoints_HandleApprovalCreation",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/handleApprovalCreation/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval deletion state change.",
+          "displayName": "EnclaveEndpoints_HandleApprovalDeletion",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/handleApprovalDeletion/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -442,6 +474,22 @@
           "name": "Microsoft.Mission/communities/communityEndpoints/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval state change.",
+          "displayName": "CommunityEndpoints_HandleApprovalCreation",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/communities/communityEndpoints/handleApprovalCreation/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval deletion state change.",
+          "displayName": "CommunityEndpoints_HandleApprovalDeletion",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/communities/communityEndpoints/handleApprovalDeletion/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -510,6 +558,22 @@
           "displayName": "EnclaveConnection_Update",
           "isDataAction": false,
           "name": "Microsoft.Mission/enclaveConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval state change.",
+          "displayName": "EnclaveConnection_HandleApprovalCreation",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/enclaveConnections/handleApprovalCreation/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Callback that triggers on approval deletion state change.",
+          "displayName": "EnclaveConnection_HandleApprovalDeletion",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/enclaveConnections/handleApprovalDeletion/action",
           "origin": null,
           "properties": null
         }
@@ -618,6 +682,14 @@
           "displayName": "Approval_Update",
           "isDataAction": false,
           "name": "Microsoft.Mission/approvals/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upon receiving approval or rejection from approver, this facilitates actions on approval resource",
+          "displayName": "Approval_NotifyInitiator",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/approvals/notifyInitiator/action",
           "origin": null,
           "properties": null
         }
