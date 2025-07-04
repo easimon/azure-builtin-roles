@@ -1,0 +1,35 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-07-01T15:14:22.667876+00:00",
+  "description": "Grants full access to manage Microsoft.Discovery resources. This role in preview and subjet to change.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
+  "name": "7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Discovery/locations/operationStatuses/read",
+        "Microsoft.Discovery/checkNameAvailability/action",
+        "Microsoft.Discovery/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830}))",
+      "conditionVersion": "2.0",
+      "dataActions": [
+        "Microsoft.Discovery/*"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Microsoft Discovery Platform Administrator (Preview)",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-07-01T15:14:22.667876+00:00"
+}
