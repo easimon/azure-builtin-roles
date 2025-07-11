@@ -4,7 +4,7 @@
   "name": "Microsoft.Quantum",
   "operations": [
     {
-      "description": "Registers the subscription for the quantum resource provider and enables the creation of quantum workspaces.",
+      "description": "Registers the subscription for the Quantum Resource Provider and enables the creation of Quantum Workspaces.",
       "displayName": "Registers the Quantum Resource Provider",
       "isDataAction": false,
       "name": "Microsoft.Quantum/register/action",
@@ -14,44 +14,44 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Workspaces",
+      "displayName": "Workspace",
       "name": "Workspaces",
       "operations": [
         {
           "description": "Read Workspace",
-          "displayName": "Gets/List workspace resources",
+          "displayName": "Get Workspace resource",
           "isDataAction": false,
           "name": "Microsoft.Quantum/Workspaces/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Writes Workspace",
-          "displayName": "Create/update workspace resources",
+          "description": "Write Workspace",
+          "displayName": "Create/update Workspace resource",
           "isDataAction": false,
           "name": "Microsoft.Quantum/Workspaces/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes Workspace",
-          "displayName": "Deletes workspace resource",
+          "description": "Delete Workspace",
+          "displayName": "Delete Workspace resource",
           "isDataAction": false,
           "name": "Microsoft.Quantum/Workspaces/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Regenerate workspace api key",
-          "displayName": "Regenerate workspace api key",
+          "description": "Regenerate Workspace api key",
+          "displayName": "Regenerate Workspace api key",
           "isDataAction": false,
           "name": "Microsoft.Quantum/Workspaces/regenerateKey/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List workspace api keys",
-          "displayName": "List workspace api keys",
+          "description": "List Workspace api keys",
+          "displayName": "List Workspace api keys",
           "isDataAction": false,
           "name": "Microsoft.Quantum/Workspaces/listKeys/action",
           "origin": null,
@@ -60,12 +60,12 @@
       ]
     },
     {
-      "displayName": "Workspaces",
+      "displayName": "Workspace",
       "name": "locations/offerings",
       "operations": [
         {
           "description": "Read providers supported",
-          "displayName": "Read quantum workspace's available providers",
+          "displayName": "Read Quantum Workspace's available providers",
           "isDataAction": false,
           "name": "Microsoft.Quantum/locations/offerings/read",
           "origin": null,
@@ -74,12 +74,12 @@
       ]
     },
     {
-      "displayName": "Workspaces",
+      "displayName": "Workspace",
       "name": "Workspaces/jobs",
       "operations": [
         {
           "description": "Read jobs and other data",
-          "displayName": "Read quantum workspace's jobs and other data",
+          "displayName": "Read Quantum Workspace's jobs and other data",
           "isDataAction": true,
           "name": "Microsoft.Quantum/Workspaces/jobs/read",
           "origin": null,
@@ -87,9 +87,83 @@
         },
         {
           "description": "Write jobs and other data",
-          "displayName": "Create/update quantum workspace jobs and other data",
+          "displayName": "Create/update Quantum Workspace jobs and other data",
           "isDataAction": true,
           "name": "Microsoft.Quantum/Workspaces/jobs/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts",
+      "operations": [
+        {
+          "description": "Read ProviderAccount",
+          "displayName": "Get ProviderAccount resource",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write ProviderAccount",
+          "displayName": "Create/update ProviderAccount resource",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes ProviderAccount",
+          "displayName": "Deletes ProviderAccount resource",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/jobs",
+      "operations": [
+        {
+          "description": "Read ProviderAccount's jobs and other data",
+          "displayName": "Read Quantum ProviderAccount's jobs and other data",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/jobs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write ProviderAccount's jobs and other data",
+          "displayName": "Update/Cancel Quantum ProviderAccount's jobs and other data",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/jobs/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/devices",
+      "operations": [
+        {
+          "description": "Read ProviderAccount's devices and other data",
+          "displayName": "Read Quantum ProviderAccount's devices and other data",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/devices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write ProviderAccount's devices and other data",
+          "displayName": "Update Quantum ProviderAccount's devices and other data",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/devices/write",
           "origin": null,
           "properties": null
         }
