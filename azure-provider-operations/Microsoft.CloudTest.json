@@ -42,7 +42,7 @@
           "properties": null
         },
         {
-          "description": "Reads the credentials for leased VM's in CloudTest pools",
+          "description": "Reads the credentials for leased VMs in CloudTest pools",
           "displayName": "Read Leased VMs in CloudTest pool",
           "isDataAction": false,
           "name": "Microsoft.CloudTest/pools/leases/action",
@@ -106,6 +106,14 @@
           "displayName": "Delete 1ES Hosted Pool",
           "isDataAction": false,
           "name": "Microsoft.CloudTest/hostedpools/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reads the credentials for leased VMs in 1ES Hosted pools",
+          "displayName": "Read Leased VMs in 1ES Hosted pool",
+          "isDataAction": false,
+          "name": "Microsoft.CloudTest/hostedpools/leases/action",
           "origin": null,
           "properties": null
         }
@@ -176,16 +184,16 @@
       "name": "pools/leases",
       "operations": [
         {
-          "description": "Completes lease for VM's in CloudTest pools",
-          "displayName": "Complete Lease for VM's in CloudTest pool",
+          "description": "Completes lease for VMs in CloudTest pools",
+          "displayName": "Complete Lease for VMs in CloudTest pool",
           "isDataAction": false,
           "name": "Microsoft.CloudTest/pools/leases/complete/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Extends lease for VM's in CloudTest pools",
-          "displayName": "Extend Lease for VM's in CloudTest pool",
+          "description": "Extends lease for VMs in CloudTest pools",
+          "displayName": "Extend Lease for VMs in CloudTest pool",
           "isDataAction": false,
           "name": "Microsoft.CloudTest/pools/leases/extend/action",
           "origin": null,
@@ -218,6 +226,28 @@
           "displayName": "Delete 1ES Build Cache",
           "isDataAction": false,
           "name": "Microsoft.CloudTest/buildcaches/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "hostedpools",
+      "name": "hostedpools/leases",
+      "operations": [
+        {
+          "description": "Completes lease for VMs in 1ES Hosted pools",
+          "displayName": "Complete Lease for VMs in 1ES Hosted pool",
+          "isDataAction": false,
+          "name": "Microsoft.CloudTest/hostedpools/leases/complete/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Extends lease for VMs in 1ES Hosted pools",
+          "displayName": "Extend Lease for VMs in 1ES Hosted pool",
+          "isDataAction": false,
+          "name": "Microsoft.CloudTest/hostedpools/leases/extend/action",
           "origin": null,
           "properties": null
         }
