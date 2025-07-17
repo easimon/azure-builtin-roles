@@ -167,51 +167,7 @@
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/metricDefinitions/read",
           "origin": "system",
-          "properties": {
-            "serviceSpecification": {
-              "metricSpecifications": [
-                {
-                  "aggregationType": "Average",
-                  "availabilities": [
-                    {
-                      "blobDuration": "PT1H",
-                      "timeGrain": "PT1M"
-                    }
-                  ],
-                  "displayDescription": "Average search latency for the search service",
-                  "displayName": "Search Latency",
-                  "name": "SearchLatency",
-                  "unit": "Seconds"
-                },
-                {
-                  "aggregationType": "Average",
-                  "availabilities": [
-                    {
-                      "blobDuration": "PT1H",
-                      "timeGrain": "PT1M"
-                    }
-                  ],
-                  "displayDescription": "Search queries per second for the search service",
-                  "displayName": "Search queries per second",
-                  "name": "SearchQueriesPerSecond",
-                  "unit": "CountPerSecond"
-                },
-                {
-                  "aggregationType": "Average",
-                  "availabilities": [
-                    {
-                      "blobDuration": "PT1H",
-                      "timeGrain": "PT1M"
-                    }
-                  ],
-                  "displayDescription": "Percentage of search queries that were throttled for the search service",
-                  "displayName": "Throttled search queries percentage",
-                  "name": "ThrottledSearchQueriesPercentage",
-                  "unit": "Percent"
-                }
-              ]
-            }
-          }
+          "properties": null
         }
       ]
     },
@@ -225,17 +181,7 @@
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/logDefinitions/read",
           "origin": "system",
-          "properties": {
-            "serviceSpecification": {
-              "logSpecifications": [
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Operation Logs",
-                  "name": "OperationLogs"
-                }
-              ]
-            }
-          }
+          "properties": null
         }
       ]
     },
@@ -631,20 +577,6 @@
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/networkSecurityPerimeterConfigurations/reconcile/action",
           "origin": "system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Offerings",
-      "name": "offerings",
-      "operations": [
-        {
-          "description": "Lists all of the features and SKUs offered by the Azure AI Search service in each region.",
-          "displayName": "Get Offerings",
-          "isDataAction": false,
-          "name": "Microsoft.Search/offerings/read",
-          "origin": "user,system",
           "properties": null
         }
       ]
