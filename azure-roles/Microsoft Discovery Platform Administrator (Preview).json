@@ -20,7 +20,9 @@
         "Microsoft.Network/virtualNetworks/subnets/read",
         "Microsoft.Network/virtualNetworks/read",
         "Microsoft.Network/virtualNetworks/subnets/join/action",
-        "Microsoft.Support/*"
+        "Microsoft.Support/*",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete"
       ],
       "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830}))",
       "conditionVersion": "2.0",
@@ -35,5 +37,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-07-14T15:01:12.539466+00:00"
+  "updatedOn": "2025-07-22T16:42:36.741223+00:00"
 }
