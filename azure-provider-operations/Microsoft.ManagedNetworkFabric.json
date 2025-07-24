@@ -164,18 +164,26 @@
       "name": "networkFabrics",
       "operations": [
         {
-          "description": "Get Network Fabric resource details.",
-          "displayName": "NetworkFabrics_Get",
+          "description": "Post action: Triggers diff of NetworkFabric ARM Configuration.",
+          "displayName": "NetworkFabrics_ArmConfigurationDiff",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/armConfigurationDiff/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create Network Fabric resource.",
-          "displayName": "NetworkFabrics_Create",
+          "description": "Post action: Returns a status of commit batch operation.",
+          "displayName": "NetworkFabrics_CommitBatchStatus",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitBatchStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Atomic update of the given Network Fabric instance. Sync update of NFA resources at Fabric level.",
+          "displayName": "NetworkFabrics_CommitConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitConfiguration/action",
           "origin": null,
           "properties": null
         },
@@ -188,74 +196,10 @@
           "properties": null
         },
         {
-          "description": "Update certain properties of the Network Fabric resource.",
-          "displayName": "NetworkFabrics_Update",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List all the Network Fabric resources in the given resource group.",
-          "displayName": "NetworkFabrics_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List all the Network Fabric resources in the given subscription.",
-          "displayName": "NetworkFabrics_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Provisions the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_Provision",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/provision/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Deprovisions the underlying resources in the given Network Fabric instance.",
           "displayName": "NetworkFabrics_Deprovision",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/deprovision/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Restores the configuration to last known good config.",
-          "displayName": "NetworkFabrics_restoreConfig",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/restoreConfig/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Updates the status of the ManagementNetworkConfiguration.",
-          "displayName": "NetworkFabrics_getManagementNetworkConfigurationStatus",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getManagementNetworkConfigurationStatus/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Enables layer 2 configuration for the given Network Fabric.",
-          "displayName": "NetworkFabrics_enableNniLayer2",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/enableNniLayer2/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Enables layer 3 configuration for the given Network Fabric.",
-          "displayName": "NetworkFabrics_enableNniLayer3",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/enableNniLayer3/action",
           "origin": null,
           "properties": null
         },
@@ -276,50 +220,42 @@
           "properties": null
         },
         {
+          "description": "Post action: Discards a Batch operation in progress.",
+          "displayName": "NetworkFabrics_DiscardCommitBatch",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/discardCommitBatch/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables layer 2 configuration for the given Network Fabric.",
+          "displayName": "NetworkFabrics_enableNniLayer2",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/enableNniLayer2/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables layer 3 configuration for the given Network Fabric.",
+          "displayName": "NetworkFabrics_enableNniLayer3",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/enableNniLayer3/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the status of the ManagementNetworkConfiguration.",
+          "displayName": "NetworkFabrics_getManagementNetworkConfigurationStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getManagementNetworkConfigurationStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Provides the Nni status of layer2 and layer3 networks for the given Network Fabric",
           "displayName": "NetworkFabrics_getNniStatus",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/getNniStatus/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Upgrades the version of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_Upgrade",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/upgrade/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Refreshes the configuration of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_RefreshConfiguration",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/refreshConfiguration/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Updates the Workload Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_UpdateWorkloadManagementBfdConfiguration",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/updateWorkloadManagementBfdConfiguration/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Updates the Infra Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_UpdateInfraManagementBfdConfiguration",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/updateInfraManagementBfdConfiguration/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Validates the configuration of the underlying resources in the given Network Fabric instance.",
-          "displayName": "NetworkFabrics_ValidateConfiguration",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/validateConfiguration/action",
           "origin": null,
           "properties": null
         },
@@ -332,26 +268,10 @@
           "properties": null
         },
         {
-          "description": "Atomic update of the given Network Fabric instance. Sync update of NFA resources at Fabric level.",
-          "displayName": "NetworkFabrics_CommitConfiguration",
+          "description": "Join action for Network Fabric resource.",
+          "displayName": "NetworkFabrics_Join",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitConfiguration/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Post action: Returns a status of commit batch operation.",
-          "displayName": "NetworkFabrics_CommitBatchStatus",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/commitBatchStatus/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Post action: Discards a Batch operation in progress.",
-          "displayName": "NetworkFabrics_DiscardCommitBatch",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/discardCommitBatch/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/join/action",
           "origin": null,
           "properties": null
         },
@@ -364,6 +284,118 @@
           "properties": null
         },
         {
+          "description": "Provisions the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_Provision",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/provision/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get Network Fabric resource details.",
+          "displayName": "NetworkFabrics_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Fabric resources in the given resource group.",
+          "displayName": "NetworkFabrics_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Fabric resources in the given subscription.",
+          "displayName": "NetworkFabrics_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes the configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_RefreshConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/refreshConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restores the configuration to last known good config.",
+          "displayName": "NetworkFabrics_restoreConfig",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/restoreConfig/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates all Network Devices to use the latest certificates. Does not generate new certificates. Allows network devices missed during a previous certificate rotation to be brought back into sync.",
+          "displayName": "NetworkFabrics_ResyncCertificates",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/resyncCertificates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Terminal Server and all Network Devices to use the latest passwords. Does not generate new passwords.\n\nAllows devices to be brought back in sync after a partially successful password rotation.",
+          "displayName": "NetworkFabrics_ResyncPasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/resyncPasswords/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new certificates, then updates the Network Devices to use the new certificates. Note that disabled devices cannot be updated and must be resynchronized with the new certificates once they are enabled.",
+          "displayName": "NetworkFabrics_RotateCertificates",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/rotateCertificates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new passwords, then updates the Terminal Server and Network Devices to use the new passwords.\n\nNote that disabled devices cannot be updated and must be resynchronized with the new passwords once they are enabled.\n\nFails if any of the devices could not be updated with the new password.\nFailed devices should be resynchronized with the new passwords once possible.",
+          "displayName": "NetworkFabrics_RotatePasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/rotatePasswords/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Infra Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_UpdateInfraManagementBfdConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/updateInfraManagementBfdConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Workload Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_UpdateWorkloadManagementBfdConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/updateWorkloadManagementBfdConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the version of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_Upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validates the configuration of the underlying resources in the given Network Fabric instance.",
+          "displayName": "NetworkFabrics_ValidateConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/validateConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Post action: Triggers view of network fabric configuration.",
           "displayName": "NetworkFabrics_ViewDeviceConfiguration",
           "isDataAction": false,
@@ -372,18 +404,18 @@
           "properties": null
         },
         {
-          "description": "Post action: Triggers diff of NetworkFabric ARM Configuration.",
-          "displayName": "NetworkFabrics_ArmConfigurationDiff",
+          "description": "Create Network Fabric resource.",
+          "displayName": "NetworkFabrics_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/armConfigurationDiff/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Join action for Network Fabric resource.",
-          "displayName": "NetworkFabrics_Join",
+          "description": "Update certain properties of the Network Fabric resource.",
+          "displayName": "NetworkFabrics_Update",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/join/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/write",
           "origin": null,
           "properties": null
         }
@@ -456,22 +488,6 @@
       "name": "networkDevices",
       "operations": [
         {
-          "description": "Gets the Network Device resource details.",
-          "displayName": "NetworkDevices_Get",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a Network Device resource",
-          "displayName": "NetworkDevices_Create",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Delete the Network Device resource.",
           "displayName": "NetworkDevices_Delete",
           "isDataAction": false,
@@ -480,10 +496,42 @@
           "properties": null
         },
         {
-          "description": "Update certain properties of the Network Device resource.",
-          "displayName": "NetworkDevices_Update",
+          "description": "Generate Support Package for the given Network Device.",
+          "displayName": "NetworkDevices_generateSupportPackage",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/write",
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/generateSupportPackage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the dynamic interface maps for the given Network Device.",
+          "displayName": "NetworkDevices_getDynamicInterfaceMaps",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getDynamicInterfaceMaps/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the static interface maps for the given Network Device.",
+          "displayName": "NetworkDevices_getStaticInterfaceMaps",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getStaticInterfaceMaps/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the running status of the Network Device.",
+          "displayName": "NetworkDevices_getStatus",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Network Device resource details.",
+          "displayName": "NetworkDevices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/read",
           "origin": null,
           "properties": null
         },
@@ -512,62 +560,6 @@
           "properties": null
         },
         {
-          "description": "Restore the configuration of the Network Device resource to last known good configuration.",
-          "displayName": "NetworkDevices_restoreConfig",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/restoreConfig/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update the SKU version of the Network Device resource.",
-          "displayName": "NetworkDevices_updateVersion",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updateVersion/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Generate Support Package for the given Network Device.",
-          "displayName": "NetworkDevices_generateSupportPackage",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/generateSupportPackage/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update PDU power cycle of the Network Device.",
-          "displayName": "NetworkDevices_updatePowerCycle",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updatePowerCycle/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get the running status of the Network Device.",
-          "displayName": "NetworkDevices_getStatus",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getStatus/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get the static interface maps for the given Network Device.",
-          "displayName": "NetworkDevices_getStaticInterfaceMaps",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getStaticInterfaceMaps/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get the dynamic interface maps for the given Network Device.",
-          "displayName": "NetworkDevices_getDynamicInterfaceMaps",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/getDynamicInterfaceMaps/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Refreshes the configuration the Network Device.",
           "displayName": "NetworkDevices_RefreshConfiguration",
           "isDataAction": false,
@@ -576,18 +568,26 @@
           "properties": null
         },
         {
-          "description": "Updates the Administrative state of the Network Device.",
-          "displayName": "NetworkDevices_UpdateAdministrativeState",
+          "description": "Restore the configuration of the Network Device resource to last known good configuration.",
+          "displayName": "NetworkDevices_restoreConfig",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updateAdministrativeState/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/restoreConfig/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Upgrades the version of the Network Device.",
-          "displayName": "NetworkDevices_Upgrade",
+          "description": "Updates the Network Device to use the latest certificates. Does not generate new certificates. Allows network devices missed during a previous certificate rotation to be brought back into sync.",
+          "displayName": "NetworkDevices_ResyncCertificates",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkDevices/upgrade/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/resyncCertificates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Network Device to use the latest passwords. Does not generate new passwords. Allows network devices missed during a previous password rotation to be brought back into sync.",
+          "displayName": "NetworkDevices_ResyncPasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/resyncPasswords/action",
           "origin": null,
           "properties": null
         },
@@ -604,6 +604,54 @@
           "displayName": "NetworkDevices_RunRwCommand",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/runRwCommand/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Administrative state of the Network Device.",
+          "displayName": "NetworkDevices_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update PDU power cycle of the Network Device.",
+          "displayName": "NetworkDevices_updatePowerCycle",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updatePowerCycle/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the SKU version of the Network Device resource.",
+          "displayName": "NetworkDevices_updateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/updateVersion/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the version of the Network Device.",
+          "displayName": "NetworkDevices_Upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Network Device resource",
+          "displayName": "NetworkDevices_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update certain properties of the Network Device resource.",
+          "displayName": "NetworkDevices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/write",
           "origin": null,
           "properties": null
         }
@@ -810,18 +858,26 @@
       "name": "l3IsolationDomains",
       "operations": [
         {
-          "description": "Retrieves details of this L3 Isolation Domain.",
-          "displayName": "L3IsolationDomains_Get",
+          "description": "Clears ARP tables for this Isolation Domain.",
+          "displayName": "L3IsolationDomains_clearArpTable",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearArpTable/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create isolation domain resources for layer 3 connectivity between compute nodes and for communication with external services .This configuration is applied on the devices only after the creation of networks is completed and isolation domain is enabled.",
-          "displayName": "L3IsolationDomains_Create",
+          "description": "Clears IPv6 neighbor tables for this Isolation Domain.",
+          "displayName": "L3IsolationDomains_clearNeighborTable",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearNeighborTable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Commits the configuration of the given resources.",
+          "displayName": "L3IsolationDomains_CommitConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/commitConfiguration/action",
           "origin": null,
           "properties": null
         },
@@ -834,10 +890,18 @@
           "properties": null
         },
         {
-          "description": "API to update certain properties of the L3 Isolation Domain resource.",
-          "displayName": "L3IsolationDomains_Update",
+          "description": "Join action for L3 Isolation Domain resource.",
+          "displayName": "L3IsolationDomains_Join",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves details of this L3 Isolation Domain.",
+          "displayName": "L3IsolationDomains_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/read",
           "origin": null,
           "properties": null
         },
@@ -866,7 +930,7 @@
           "properties": null
         },
         {
-          "description": "Enables racks for this Isolation Domain.",
+          "description": "Updates the administrative state of the L3 Isolation Domain resource.",
           "displayName": "L3IsolationDomains_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/updateAdministrativeState/action",
@@ -890,22 +954,6 @@
           "properties": null
         },
         {
-          "description": "Clears ARP tables for this Isolation Domain.",
-          "displayName": "L3IsolationDomains_clearArpTable",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearArpTable/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Clears IPv6 neighbor tables for this Isolation Domain.",
-          "displayName": "L3IsolationDomains_clearNeighborTable",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/clearNeighborTable/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Validates the configuration of the resources.",
           "displayName": "L3IsolationDomains_ValidateConfiguration",
           "isDataAction": false,
@@ -914,18 +962,18 @@
           "properties": null
         },
         {
-          "description": "Commits the configuration of the given resources.",
-          "displayName": "L3IsolationDomains_CommitConfiguration",
+          "description": "Create isolation domain resources for layer 3 connectivity between compute nodes and for communication with external services .This configuration is applied on the devices only after the creation of networks is completed and isolation domain is enabled.",
+          "displayName": "L3IsolationDomains_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/commitConfiguration/action",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Join action for L3 Isolation Domain resource.",
-          "displayName": "L3IsolationDomains_Join",
+          "description": "API to update certain properties of the L3 Isolation Domain resource.",
+          "displayName": "L3IsolationDomains_Update",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/join/action",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/write",
           "origin": null,
           "properties": null
         }
@@ -1242,18 +1290,18 @@
       "name": "l3IsolationDomains/internalNetworks",
       "operations": [
         {
-          "description": "Gets a InternalNetworks.",
-          "displayName": "InternalNetworks_Get",
+          "description": "clearArpEntries for internalNetwork.",
+          "displayName": "InternalNetworks_clearArpEntries",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/clearArpEntries/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates InternalNetwork PUT method.",
-          "displayName": "InternalNetworks_Create",
+          "description": "clearIpv6Neighbors for internalNetwork.",
+          "displayName": "InternalNetworks_clearIpv6Neighbors",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/clearIpv6Neighbors/action",
           "origin": null,
           "properties": null
         },
@@ -1266,16 +1314,32 @@
           "properties": null
         },
         {
-          "description": "Updates a InternalNetworks.",
-          "displayName": "InternalNetworks_Update",
+          "description": "Join action for InternalNetworks resource.",
+          "displayName": "InternalNetworks_Join",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/write",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a InternalNetworks.",
+          "displayName": "InternalNetworks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Displays InternalNetworks list by resource group GET method.",
           "displayName": "InternalNetworks_List",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Displays InternalNetworks list by resource group GET method.",
+          "displayName": "InternalNetworks_ListByL3IsolationDomain",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/read",
           "origin": null,
@@ -1290,7 +1354,7 @@
           "properties": null
         },
         {
-          "description": "Update Administrative state of  InternalNetworks on resources referred by their resource ids.",
+          "description": "Executes update operation to enable or disable administrative State for InternalNetwork.",
           "displayName": "InternalNetworks_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateAdministrativeState/action",
@@ -1298,26 +1362,10 @@
           "properties": null
         },
         {
-          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
-          "displayName": "InternalNetworks_UpdateBgpAdministrativeState",
+          "description": "BFD administrative state for either static or bgp for internalNetwork.",
+          "displayName": "InternalNetworks_UpdateBfdAdministrativeState",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBgpAdministrativeState/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update Static Route BFD administrative state for internalNetwork.",
-          "displayName": "InternalNetworks_UpdateStaticRouteBfdAdministrativeState",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateStaticRouteBfdAdministrativeState/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
-          "displayName": "InternalNetworks_updateBgpState",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBgpState/action",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBfdAdministrativeState/action",
           "origin": null,
           "properties": null
         },
@@ -1338,22 +1386,6 @@
           "properties": null
         },
         {
-          "description": "clearIpv6Neighbors for internalNetwork.",
-          "displayName": "InternalNetworks_clearIpv6Neighbors",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/clearIpv6Neighbors/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "clearArpEntries for internalNetwork.",
-          "displayName": "InternalNetworks_clearArpEntries",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/clearArpEntries/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Update BfdForStaticRoutes for internalNetwork.",
           "displayName": "InternalNetworks_updateBfdForStaticRouteAdministrativeState",
           "isDataAction": false,
@@ -1370,26 +1402,42 @@
           "properties": null
         },
         {
-          "description": "BFD administrative state for either static or bgp for internalNetwork.",
-          "displayName": "InternalNetworks_UpdateBfdAdministrativeState",
+          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
+          "displayName": "InternalNetworks_UpdateBgpAdministrativeState",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBfdAdministrativeState/action",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBgpAdministrativeState/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Join action for InternalNetworks resource.",
-          "displayName": "InternalNetworks_Join",
+          "description": "Update BGP state for internalNetwork. Allowed only on edge devices.",
+          "displayName": "InternalNetworks_updateBgpState",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/join/action",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateBgpState/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Displays InternalNetworks list by resource group GET method.",
-          "displayName": "InternalNetworks_ListByL3IsolationDomain",
+          "description": "Update Static Route BFD administrative state for internalNetwork.",
+          "displayName": "InternalNetworks_UpdateStaticRouteBfdAdministrativeState",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/read",
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateStaticRouteBfdAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates InternalNetwork PUT method.",
+          "displayName": "InternalNetworks_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates a InternalNetworks.",
+          "displayName": "InternalNetworks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/write",
           "origin": null,
           "properties": null
         }
@@ -1400,22 +1448,6 @@
       "name": "networkFabrics/networkToNetworkInterconnects",
       "operations": [
         {
-          "description": "Implements NetworkToNetworkInterconnects GET method.",
-          "displayName": "NetworkToNetworkInterconnects_Get",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Configuration used to setup CE-PE connectivity PUT Method.",
-          "displayName": "NetworkToNetworkInterconnects_Create",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Implements NetworkToNetworkInterconnects DELETE method.",
           "displayName": "NetworkToNetworkInterconnects_Delete",
           "isDataAction": false,
@@ -1424,10 +1456,34 @@
           "properties": null
         },
         {
-          "description": "Updates the NPB Static Route BFD Administrative State.",
-          "displayName": "NetworkToNetworkInterconnects_updateNpbStaticRouteBfdAdministrativeState",
+          "description": "Join action for NetworkToNetworkInterconnects resource.",
+          "displayName": "NetworkToNetworkInterconnects_Join",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateNpbStaticRouteBfdAdministrativeState/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements NetworkToNetworkInterconnects GET method.",
+          "displayName": "NetworkToNetworkInterconnects_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements Network To Network Interconnects list by Network Fabric GET method.",
+          "displayName": "NetworkToNetworkInterconnects_List",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements Network To Network Interconnects list by Network Fabric GET method.",
+          "displayName": "NetworkToNetworkInterconnects_ListByNetworkFabric",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/read",
           "origin": null,
           "properties": null
         },
@@ -1448,26 +1504,18 @@
           "properties": null
         },
         {
-          "description": "Join action for NetworkToNetworkInterconnects resource.",
-          "displayName": "NetworkToNetworkInterconnects_Join",
+          "description": "Updates the NPB Static Route BFD Administrative State.",
+          "displayName": "NetworkToNetworkInterconnects_UpdateNpbStaticRouteBfdAdministrativeState",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/join/action",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateNpbStaticRouteBfdAdministrativeState/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Implements Network To Network Interconnects list by Network Fabric GET method.",
-          "displayName": "NetworkToNetworkInterconnects_ListByNetworkFabric",
+          "description": "Configuration used to setup CE-PE connectivity PUT Method.",
+          "displayName": "NetworkToNetworkInterconnects_Create",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Implements Network To Network Interconnects list by Network Fabric GET method.",
-          "displayName": "NetworkToNetworkInterconnects_List",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/read",
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/write",
           "origin": null,
           "properties": null
         },
@@ -2014,22 +2062,6 @@
       "name": "neighborGroups",
       "operations": [
         {
-          "description": "Gets the Neighbor Group.",
-          "displayName": "NeighborGroups_Get",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Implements the Neighbor Group PUT method.",
-          "displayName": "NeighborGroups_Create",
-          "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Implements Neighbor Group DELETE method.",
           "displayName": "NeighborGroups_Delete",
           "isDataAction": false,
@@ -2038,10 +2070,18 @@
           "properties": null
         },
         {
-          "description": "Updates the Neighbor Group.",
-          "displayName": "NeighborGroups_Update",
+          "description": "Join action for Neighbor Group resource.",
+          "displayName": "NeighborGroups_Join",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/write",
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Neighbor Group.",
+          "displayName": "NeighborGroups_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/read",
           "origin": null,
           "properties": null
         },
@@ -2062,10 +2102,26 @@
           "properties": null
         },
         {
-          "description": "Join action for Neighbor Group resource.",
-          "displayName": "NeighborGroups_Join",
+          "description": "Resync the Neighbor Group after a configuration change.",
+          "displayName": "NeighborGroups_Resync",
           "isDataAction": false,
-          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/join/action",
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/resync/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Implements the Neighbor Group PUT method.",
+          "displayName": "NeighborGroups_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Neighbor Group.",
+          "displayName": "NeighborGroups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/write",
           "origin": null,
           "properties": null
         }
@@ -3152,6 +3208,154 @@
           "displayName": "InternetGateway_Rules_Internal_Resource_Create",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/igwrs2s/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkBootstrapDevices",
+      "name": "networkBootstrapDevices",
+      "operations": [
+        {
+          "description": "Deletes a Network Bootstrap Device resource.",
+          "displayName": "NetworkBootstrapDevices_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a Network Bootstrap Device resource details.",
+          "displayName": "NetworkBootstrapDevices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all the Network Bootstrap Device resources in a given resource group.",
+          "displayName": "NetworkBootstrapDevices_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Bootstrap Device resources in a given subscription.",
+          "displayName": "NetworkBootstrapDevices_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reboot the Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_Reboot",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/reboot/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes the configuration of Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_RefreshConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/refreshConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Network Bootstrap Device to use the latest passwords. Does not generate new passwords. Allows network bootstrap devices missed during a previous password rotation to be brought back into sync.",
+          "displayName": "NetworkBootstrapDevices_ResyncPasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/resyncPasswords/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Administrative state of the Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the version of the Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_Upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Network Bootstrap Device resource",
+          "displayName": "NetworkBootstrapDevices_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update certain properties of the Network Bootstrap Device resource.",
+          "displayName": "NetworkBootstrapDevices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkBootstrapDevices/networkBootstrapInterfaces",
+      "name": "networkBootstrapDevices/networkBootstrapInterfaces",
+      "operations": [
+        {
+          "description": "Delete the Network Bootstrap Interface resource.",
+          "displayName": "NetworkBootstrapInterfaces_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Network Bootstrap Interface resource details.",
+          "displayName": "NetworkBootstrapInterfaces_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Bootstrap Interface resources in a given resource group.",
+          "displayName": "NetworkBootstrapInterfaces_ListByNetworkBootstrapDevice",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the admin state of the Network Interface.",
+          "displayName": "NetworkBootstrapInterfaces_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Network Bootstrap Interface resource.",
+          "displayName": "NetworkBootstrapInterfaces_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update certain properties of the Network Bootstrap Interface resource.",
+          "displayName": "NetworkBootstrapInterfaces_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/write",
           "origin": null,
           "properties": null
         }
