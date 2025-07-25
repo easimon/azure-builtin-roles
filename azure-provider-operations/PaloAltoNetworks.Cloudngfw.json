@@ -13,7 +13,7 @@
     },
     {
       "description": "action listSupportInfo",
-      "displayName": "PaloAltoNetworksCloudngfwOperations_listSupportInfo",
+      "displayName": "action_listSupportInfo",
       "isDataAction": false,
       "name": "PaloAltoNetworks.Cloudngfw/listSupportInfo/action",
       "origin": null,
@@ -21,25 +21,25 @@
     },
     {
       "description": "action createProductSerialNumber",
-      "displayName": "PaloAltoNetworksCloudngfwOperations_createProductSerialNumber",
+      "displayName": "action_createProductSerialNumber",
       "isDataAction": false,
       "name": "PaloAltoNetworks.Cloudngfw/createProductSerialNumber/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "action listCloudManagerTenants",
-      "displayName": "PaloAltoNetworksCloudngfwOperations_listCloudManagerTenants",
+      "description": "action listProductSerialNumberStatus",
+      "displayName": "action_listProductSerialNumberStatus",
       "isDataAction": false,
-      "name": "PaloAltoNetworks.Cloudngfw/listCloudManagerTenants/action",
+      "name": "PaloAltoNetworks.Cloudngfw/listProductSerialNumberStatus/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "action listProductSerialNumberStatus",
-      "displayName": "PaloAltoNetworksCloudngfwOperations_listProductSerialNumberStatus",
+      "description": "action listCloudManagerTenants",
+      "displayName": "action_listCloudManagerTenants",
       "isDataAction": false,
-      "name": "PaloAltoNetworks.Cloudngfw/listProductSerialNumberStatus/action",
+      "name": "PaloAltoNetworks.Cloudngfw/listCloudManagerTenants/action",
       "origin": null,
       "properties": null
     },
@@ -864,22 +864,38 @@
       ]
     },
     {
-      "displayName": "firewalls/statuses",
-      "name": "firewalls/statuses",
+      "displayName": "firewalls/metrics",
+      "name": "firewalls/metrics",
       "operations": [
         {
-          "description": "List FirewallStatusResource resources by Firewalls",
-          "displayName": "FirewallStatus_ListByFirewalls",
+          "description": "List FirewallMetricsResource resources",
+          "displayName": "MetricsObjectFirewall_ListByFirewalls",
           "isDataAction": false,
-          "name": "PaloAltoNetworks.Cloudngfw/firewalls/statuses/read",
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a FirewallStatusResource",
-          "displayName": "FirewallStatus_Get",
+          "description": "Get a FirewallMetricsResource",
+          "displayName": "MetricsObjectFirewall_Get",
           "isDataAction": false,
-          "name": "PaloAltoNetworks.Cloudngfw/firewalls/statuses/read",
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a FirewallMetricsResource",
+          "displayName": "MetricsObjectFirewall_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a FirewallMetricsResource",
+          "displayName": "MetricsObjectFirewall_Delete",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/delete",
           "origin": null,
           "properties": null
         }
