@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-07-02T15:23:29.383938+00:00",
+  "createdOn": "2025-07-01T15:14:22.667876+00:00",
   "description": "Grants full access to manage Microsoft.Discovery resources. This role in preview and subjet to change.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
   "name": "7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
@@ -20,7 +20,9 @@
         "Microsoft.Network/virtualNetworks/subnets/read",
         "Microsoft.Network/virtualNetworks/read",
         "Microsoft.Network/virtualNetworks/subnets/join/action",
-        "Microsoft.Support/*"
+        "Microsoft.Support/*",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete"
       ],
       "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830}))",
       "conditionVersion": "2.0",
@@ -35,5 +37,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-07-16T15:09:06.747474+00:00"
+  "updatedOn": "2025-07-23T16:53:36.843759+00:00"
 }
