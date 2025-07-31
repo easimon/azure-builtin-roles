@@ -332,6 +332,38 @@
           "properties": null
         },
         {
+          "description": "Updates all Network Devices to use the latest certificates. Does not generate new certificates. Allows network devices missed during a previous certificate rotation to be brought back into sync.",
+          "displayName": "NetworkFabrics_ResyncCertificates",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/resyncCertificates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Terminal Server and all Network Devices to use the latest passwords. Does not generate new passwords.  Allows devices to be brought back in sync after a partially successful password rotation.",
+          "displayName": "NetworkFabrics_ResyncPasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/resyncPasswords/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new certificates, then updates the Network Devices to use the new certificates. Note that disabled devices cannot be updated and must be resynchronized with the new certificates once they are enabled.",
+          "displayName": "NetworkFabrics_RotateCertificates",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/rotateCertificates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates new passwords, then updates the Terminal Server and Network Devices to use the new passwords.  Note that disabled devices cannot be updated and must be resynchronized with the new passwords once they are enabled.  Fails if any of the devices could not be updated with the new password. Failed devices should be resynchronized with the new passwords once possible.",
+          "displayName": "NetworkFabrics_RotatePasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkFabrics/rotatePasswords/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Updates the Infra Management BFD Configuration of the underlying resources in the given Network Fabric instance.",
           "displayName": "NetworkFabrics_UpdateInfraManagementBfdConfiguration",
           "isDataAction": false,
@@ -540,6 +572,22 @@
           "displayName": "NetworkDevices_restoreConfig",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkDevices/restoreConfig/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Network Device to use the latest certificates. Does not generate new certificates. Allows network devices missed during a previous certificate rotation to be brought back into sync.",
+          "displayName": "NetworkDevices_ResyncCertificates",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/resyncCertificates/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Network Device to use the latest passwords. Does not generate new passwords. Allows network devices missed during a previous password rotation to be brought back into sync.",
+          "displayName": "NetworkDevices_ResyncPasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkDevices/resyncPasswords/action",
           "origin": null,
           "properties": null
         },
@@ -882,7 +930,7 @@
           "properties": null
         },
         {
-          "description": "Enables racks for this Isolation Domain.",
+          "description": "Updates the administrative state of the L3 Isolation Domain resource.",
           "displayName": "L3IsolationDomains_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/updateAdministrativeState/action",
@@ -1306,7 +1354,7 @@
           "properties": null
         },
         {
-          "description": "Update Administrative state of  InternalNetworks on resources referred by their resource ids.",
+          "description": "Executes update operation to enable or disable administrative State for InternalNetwork.",
           "displayName": "InternalNetworks_UpdateAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks/updateAdministrativeState/action",
@@ -1457,7 +1505,7 @@
         },
         {
           "description": "Updates the NPB Static Route BFD Administrative State.",
-          "displayName": "NetworkToNetworkInterconnects_updateNpbStaticRouteBfdAdministrativeState",
+          "displayName": "NetworkToNetworkInterconnects_UpdateNpbStaticRouteBfdAdministrativeState",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/networkFabrics/networkToNetworkInterconnects/updateNpbStaticRouteBfdAdministrativeState/action",
           "origin": null,
@@ -2050,6 +2098,14 @@
           "displayName": "NeighborGroups_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/neighborGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resync the Neighbor Group after a configuration change.",
+          "displayName": "NeighborGroups_Resync",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/neighborGroups/resync/action",
           "origin": null,
           "properties": null
         },
@@ -3152,6 +3208,154 @@
           "displayName": "InternetGateway_Rules_Internal_Resource_Create",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/internetGatewayRules/igwrs2s/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkBootstrapDevices",
+      "name": "networkBootstrapDevices",
+      "operations": [
+        {
+          "description": "Deletes a Network Bootstrap Device resource.",
+          "displayName": "NetworkBootstrapDevices_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a Network Bootstrap Device resource details.",
+          "displayName": "NetworkBootstrapDevices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all the Network Bootstrap Device resources in a given resource group.",
+          "displayName": "NetworkBootstrapDevices_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Bootstrap Device resources in a given subscription.",
+          "displayName": "NetworkBootstrapDevices_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reboot the Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_Reboot",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/reboot/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes the configuration of Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_RefreshConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/refreshConfiguration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Network Bootstrap Device to use the latest passwords. Does not generate new passwords. Allows network bootstrap devices missed during a previous password rotation to be brought back into sync.",
+          "displayName": "NetworkBootstrapDevices_ResyncPasswords",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/resyncPasswords/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Administrative state of the Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Upgrades the version of the Network Bootstrap Device.",
+          "displayName": "NetworkBootstrapDevices_Upgrade",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/upgrade/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a Network Bootstrap Device resource",
+          "displayName": "NetworkBootstrapDevices_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update certain properties of the Network Bootstrap Device resource.",
+          "displayName": "NetworkBootstrapDevices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "networkBootstrapDevices/networkBootstrapInterfaces",
+      "name": "networkBootstrapDevices/networkBootstrapInterfaces",
+      "operations": [
+        {
+          "description": "Delete the Network Bootstrap Interface resource.",
+          "displayName": "NetworkBootstrapInterfaces_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Network Bootstrap Interface resource details.",
+          "displayName": "NetworkBootstrapInterfaces_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List all the Network Bootstrap Interface resources in a given resource group.",
+          "displayName": "NetworkBootstrapInterfaces_ListByNetworkBootstrapDevice",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the admin state of the Network Interface.",
+          "displayName": "NetworkBootstrapInterfaces_UpdateAdministrativeState",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/updateAdministrativeState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Network Bootstrap Interface resource.",
+          "displayName": "NetworkBootstrapInterfaces_Create",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update certain properties of the Network Bootstrap Interface resource.",
+          "displayName": "NetworkBootstrapInterfaces_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/networkBootstrapDevices/networkBootstrapInterfaces/write",
           "origin": null,
           "properties": null
         }
