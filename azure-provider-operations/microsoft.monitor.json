@@ -192,7 +192,7 @@
       ]
     },
     {
-      "displayName": "Monitoring Accounts",
+      "displayName": "Pipeline Groups",
       "name": "pipelineGroups",
       "operations": [
         {
@@ -216,6 +216,14 @@
           "displayName": "Delete Pipeline Groups",
           "isDataAction": false,
           "name": "microsoft.monitor/pipelineGroups/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Execute a transform for a Pipeline Group",
+          "displayName": "Pipeline Groups Execute Transform",
+          "isDataAction": false,
+          "name": "microsoft.monitor/pipelineGroups/executetransform/action",
           "origin": "user, system",
           "properties": null
         }
@@ -342,6 +350,168 @@
           "displayName": "Delete SLIs",
           "isDataAction": false,
           "name": "microsoft.monitor/slis/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Monitoring Accounts",
+      "name": "accounts/metricsContainers",
+      "operations": [
+        {
+          "description": "Read Monitoring Account Metrics Container",
+          "displayName": "Read Monitoring Account Metrics Container",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/metricsContainers/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Write Monitoring Account Metrics Container",
+          "displayName": "Write Monitoring Account Metrics Container",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/metricsContainers/write",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issues",
+      "name": "accounts/issues",
+      "operations": [
+        {
+          "description": "Read an Issue",
+          "displayName": "Read Issue",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update an Issue",
+          "displayName": "Create or Update Issue",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete an Issue",
+          "displayName": "Delete Issue",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Start Investigation for an Issue",
+          "displayName": "Start Investigation",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/startInvestigation/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Add or Update Issue Related Alerts",
+          "displayName": "Add or Update Alerts",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/addOrUpdateAlerts/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Add or Update Issue Related Resources",
+          "displayName": "Add or Update Resources",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/addOrUpdateResources/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issues",
+      "name": "accounts/issues/getInvestigationResult",
+      "operations": [
+        {
+          "description": "Get Investigation Result for an Issue",
+          "displayName": "Get Investigation Result",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/getInvestigationResult/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issues",
+      "name": "accounts/issues/fetchInvestigationResult",
+      "operations": [
+        {
+          "description": "Fetch Investigation Result for an Issue",
+          "displayName": "Fetch Investigation Result",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/fetchInvestigationResult/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issues",
+      "name": "accounts/issues/listAlerts",
+      "operations": [
+        {
+          "description": "List Issue Related Alerts",
+          "displayName": "List Alerts",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/listAlerts/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Issues",
+      "name": "accounts/issues/listResources",
+      "operations": [
+        {
+          "description": "List Issue Related Resources",
+          "displayName": "List Resources",
+          "isDataAction": false,
+          "name": "microsoft.monitor/accounts/issues/listResources/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Monitor settings",
+      "name": "settings",
+      "operations": [
+        {
+          "description": "Read Azure Monitor settings for the given scope",
+          "displayName": "Read Azure Monitor settings",
+          "isDataAction": false,
+          "name": "microsoft.monitor/settings/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update Azure Monitor settings for the given scope",
+          "displayName": "Create or Update Azure Monitor settings",
+          "isDataAction": false,
+          "name": "microsoft.monitor/settings/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete Azure Monitor Settings for the given scope",
+          "displayName": "Delete Azure Monitor settings",
+          "isDataAction": false,
+          "name": "microsoft.monitor/settings/delete",
           "origin": "user, system",
           "properties": null
         }
