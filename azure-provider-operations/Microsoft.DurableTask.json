@@ -1,5 +1,5 @@
 {
-  "displayName": "Durable Task Scheduler",
+  "displayName": "Microsoft.DurableTask",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.DurableTask",
   "name": "Microsoft.DurableTask",
   "operations": [
@@ -70,6 +70,14 @@
           "name": "Microsoft.DurableTask/schedulers/read",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connections on schedulers",
+          "displayName": "Approve Private Endpoint Connections on schedulers",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/PrivateEndpointConnectionsApproval/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -98,58 +106,6 @@
           "displayName": "Read Durable Task Scheduler Task Hub",
           "isDataAction": false,
           "name": "Microsoft.DurableTask/schedulers/taskhubs/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Orchestrations",
-      "name": "orchestrations/metadata",
-      "operations": [
-        {
-          "description": "Gets or lists orchestration metadata, but not payloads",
-          "displayName": "Gets or lists orchestration metadata, but not payloads",
-          "isDataAction": true,
-          "name": "Microsoft.DurableTask/orchestrations/metadata/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Orchestrations",
-      "name": "orchestrations",
-      "operations": [
-        {
-          "description": "Gets or list orchestrations metadata, including payloads",
-          "displayName": "Gets or list orchestrations metadata, including payloads",
-          "isDataAction": true,
-          "name": "Microsoft.DurableTask/orchestrations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Manages orchestrations",
-          "displayName": "Manages orchestrations",
-          "isDataAction": true,
-          "name": "Microsoft.DurableTask/orchestrations/manage/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get orchestration and activity work-items and post results",
-          "displayName": "Get orchestration and activity work-items and post results",
-          "isDataAction": true,
-          "name": "Microsoft.DurableTask/orchestrations/execute/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Can invoke RaiseEvent",
-          "displayName": "Can invoke RaiseEvent",
-          "isDataAction": true,
-          "name": "Microsoft.DurableTask/orchestrations/raiseevents/action",
           "origin": null,
           "properties": null
         }
