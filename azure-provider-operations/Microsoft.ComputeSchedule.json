@@ -22,30 +22,14 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "locations/virtualMachinesSubmitStart",
+      "displayName": "locations/virtualMachinesCancelOperations",
       "name": "locations",
       "operations": [
         {
-          "description": "VirtualMachinesSubmitStart: Schedule start operation for a batch of virtual machines at datetime in future.",
-          "displayName": "ScheduledActions_VirtualMachinesSubmitStart",
+          "description": "VirtualMachinesCancelOperations: Cancel a previously submitted (start/deallocate/hibernate) request",
+          "displayName": "ScheduledActions_VirtualMachinesCancelOperations",
           "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitStart/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "VirtualMachinesExecuteDelete: Execute delete operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
-          "displayName": "ScheduledActions_VirtualMachinesExecuteDelete",
-          "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteDelete/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "VirtualMachinesExecuteHibernate: Execute hibernate operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
-          "displayName": "ScheduledActions_VirtualMachinesExecuteHibernate",
-          "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteHibernate/action",
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesCancelOperations/action",
           "origin": null,
           "properties": null
         },
@@ -58,26 +42,18 @@
           "properties": null
         },
         {
+          "description": "VirtualMachinesExecuteHibernate: Execute hibernate operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
+          "displayName": "ScheduledActions_VirtualMachinesExecuteHibernate",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteHibernate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "VirtualMachinesExecuteStart: Execute start operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
           "displayName": "ScheduledActions_VirtualMachinesExecuteStart",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteStart/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "VirtualMachinesSubmitDeallocate: Schedule deallocate operation for a batch of virtual machines at datetime in future.",
-          "displayName": "ScheduledActions_VirtualMachinesSubmitDeallocate",
-          "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitDeallocate/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "VirtualMachinesGetOperationErrors: Get error details on operation errors (like transient errors encountered, additional logs) if they exist.",
-          "displayName": "ScheduledActions_VirtualMachinesGetOperationErrors",
-          "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationErrors/action",
           "origin": null,
           "properties": null
         },
@@ -90,6 +66,14 @@
           "properties": null
         },
         {
+          "description": "VirtualMachinesSubmitDeallocate: Schedule deallocate operation for a batch of virtual machines at datetime in future.",
+          "displayName": "ScheduledActions_VirtualMachinesSubmitDeallocate",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitDeallocate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "VirtualMachinesSubmitHibernate: Schedule hibernate operation for a batch of virtual machines at datetime in future.",
           "displayName": "ScheduledActions_VirtualMachinesSubmitHibernate",
           "isDataAction": false,
@@ -98,18 +82,34 @@
           "properties": null
         },
         {
-          "description": "VirtualMachinesExecuteCreate: Execute create operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
-          "displayName": "ScheduledActions_VirtualMachinesExecuteCreate",
+          "description": "VirtualMachinesSubmitStart: Schedule start operation for a batch of virtual machines at datetime in future.",
+          "displayName": "ScheduledActions_VirtualMachinesSubmitStart",
           "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteCreate/action",
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitStart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "VirtualMachinesCancelOperations: Cancel a previously submitted (start/deallocate/hibernate) request",
-          "displayName": "ScheduledActions_VirtualMachinesCancelOperations",
+          "description": "VirtualMachinesGetOperationErrors: Get error details on operation errors (like transient errors encountered, additional logs) if they exist.",
+          "displayName": "ScheduledActions_VirtualMachinesGetOperationErrors",
           "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesCancelOperations/action",
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationErrors/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "VirtualMachinesExecuteDelete: Execute delete operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
+          "displayName": "ScheduledActions_VirtualMachinesExecuteDelete",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteDelete/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "VirtualMachinesExecuteCreate: Execute create operation for a batch of virtual machines, this operation is triggered as soon as Computeschedule receives it.",
+          "displayName": "ScheduledActions_VirtualMachinesExecuteCreate",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteCreate/action",
           "origin": null,
           "properties": null
         }
@@ -423,14 +423,6 @@
         },
         {
           "description": "A synchronous resource action.",
-          "displayName": "ScheduledActions_ListResources",
-          "isDataAction": false,
-          "name": "Microsoft.ComputeSchedule/scheduledActions/listResources/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "A synchronous resource action.",
           "displayName": "ScheduledActions_PatchResources",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/scheduledActions/patchResources/action",
@@ -508,6 +500,34 @@
           "displayName": "OccurrenceExtension_ListOccurrenceByVms",
           "isDataAction": false,
           "name": "Microsoft.ComputeSchedule/associatedOccurrences/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "scheduledActions/resources",
+      "name": "scheduledActions/resources",
+      "operations": [
+        {
+          "description": "List resources attached to Scheduled Actions",
+          "displayName": "ScheduledActions_ListResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/scheduledActions/resources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "scheduledActions/occurrences/resources",
+      "name": "scheduledActions/occurrences/resources",
+      "operations": [
+        {
+          "description": "List resources attached to Scheduled Actions for the given occurrence",
+          "displayName": "Occurrences_ListResources",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeSchedule/scheduledActions/occurrences/resources/read",
           "origin": null,
           "properties": null
         }
