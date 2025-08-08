@@ -1,8 +1,734 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft.ChangeSafety",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ChangeSafety",
   "name": "Microsoft.ChangeSafety",
-  "operations": [],
-  "resourceTypes": [],
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.ChangeSafety",
+      "displayName": "Register the Microsoft.ChangeSafety",
+      "isDataAction": false,
+      "name": "Microsoft.ChangeSafety/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.ChangeSafety",
+      "displayName": "Unregister the Microsoft.ChangeSafety",
+      "isDataAction": false,
+      "name": "Microsoft.ChangeSafety/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "locations/operationstatuses",
+      "name": "locations/operationstatuses",
+      "operations": [
+        {
+          "description": "read operationstatuses",
+          "displayName": "read_operationstatuses",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/locations/operationstatuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "write operationstatuses",
+          "displayName": "write_operationstatuses",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/locations/operationstatuses/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "changeStates",
+      "name": "changeStates",
+      "operations": [
+        {
+          "description": "List ChangeState resources by subscription ID",
+          "displayName": "ChangeStates_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ChangeState",
+          "displayName": "ChangeStates_GetAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ChangeState",
+          "displayName": "ChangeStates_CreateOrUpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ChangeState",
+          "displayName": "ChangeStates_DeleteAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ChangeState",
+          "displayName": "ChangeStates_UpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets list of next stages that are eligible to put in 'InProgress' state in a changestate resource at subscription level.",
+          "displayName": "ChangeStates_RetrieveNextStagesAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/retrieveNextStages/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verify the change validity at subscription level.",
+          "displayName": "ChangeStates_VerifyChangeValidityAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/verifyChangeValidity/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ChangeState resources by resource group",
+          "displayName": "ChangeStates_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ChangeState",
+          "displayName": "ChangeStates_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ChangeState",
+          "displayName": "ChangeStates_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ChangeState",
+          "displayName": "ChangeStates_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ChangeState",
+          "displayName": "ChangeStates_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets list of next stages that are eligible to put in 'InProgress' state in a changestate resource.",
+          "displayName": "ChangeStates_RetrieveNextStages",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/retrieveNextStages/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verify the change validity.",
+          "displayName": "ChangeStates_VerifyChangeValidity",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/verifyChangeValidity/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "changeStates/stageProgressions",
+      "name": "changeStates/stageProgressions",
+      "operations": [
+        {
+          "description": "List StageProgression resources by ChangeState",
+          "displayName": "StageProgressions_ListByParentAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a StageProgression",
+          "displayName": "StageProgressions_CreateOrUpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a StageProgression",
+          "displayName": "StageProgressions_DeleteAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a StageProgression",
+          "displayName": "StageProgressions_UpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List StageProgression resources by ChangeState",
+          "displayName": "StageProgressions_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a StageProgression",
+          "displayName": "StageProgressions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a StageProgression",
+          "displayName": "StageProgressions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a StageProgression",
+          "displayName": "StageProgressions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a StageProgression",
+          "displayName": "StageProgressions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "stageMaps",
+      "name": "stageMaps",
+      "operations": [
+        {
+          "description": "List StageMap resources by resource group",
+          "displayName": "StageMaps_ListByManagementGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a StageMap",
+          "displayName": "StageMaps_GetAtManagementGroupLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a StageMap",
+          "displayName": "StageMaps_CreateOrUpdateAtManagementGroupLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a StageMap",
+          "displayName": "StageMaps_DeleteAtManagementGroupLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a StageMap",
+          "displayName": "StageMaps_UpdateAtManagementGroupLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List StageMap resources by subscription ID",
+          "displayName": "StageMaps_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a StageMap",
+          "displayName": "StageMaps_GetAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a StageMap",
+          "displayName": "StageMaps_CreateOrUpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a StageMap",
+          "displayName": "StageMaps_DeleteAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a StageMap",
+          "displayName": "StageMaps_UpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List StageMap resources by resource group",
+          "displayName": "StageMaps_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a StageMap",
+          "displayName": "StageMaps_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a StageMap",
+          "displayName": "StageMaps_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a StageMap",
+          "displayName": "StageMaps_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a StageMap",
+          "displayName": "StageMaps_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/stageMaps/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "validators",
+      "name": "validators",
+      "operations": [
+        {
+          "description": "List the validators.",
+          "displayName": "Validators_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Validator",
+          "displayName": "Validators_GetAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Validator",
+          "displayName": "Validators_CreateOrUpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Validator",
+          "displayName": "Validators_DeleteAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Validator",
+          "displayName": "Validators_UpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the validators.",
+          "displayName": "Validators_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the validator.",
+          "displayName": "Validators_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create the validator.",
+          "displayName": "Validators_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the validator.",
+          "displayName": "Validators_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the validator.",
+          "displayName": "Validators_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "validators/versions",
+      "name": "validators/versions",
+      "operations": [
+        {
+          "description": "List the validator versions.",
+          "displayName": "Validators_ListVersionBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ValidatorVersion",
+          "displayName": "Validators_GetVersionAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ValidatorVersion",
+          "displayName": "Validators_CreateOrUpdateVersionAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ValidatorVersion",
+          "displayName": "Validators_DeleteVersionAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ValidatorVersion",
+          "displayName": "Validators_UpdateVersionAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the validator versions.",
+          "displayName": "Validators_ListVersionByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the validator version.",
+          "displayName": "Validators_GetVersion",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create the validator version.",
+          "displayName": "Validators_CreateOrUpdateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the validator version.",
+          "displayName": "Validators_DeleteVersion",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the validator version.",
+          "displayName": "Validators_UpdateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validators/versions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "validations",
+      "name": "validations",
+      "operations": [
+        {
+          "description": "List the validations.",
+          "displayName": "Validations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Validation",
+          "displayName": "Validations_GetAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Validation",
+          "displayName": "Validations_CreateOrUpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Validation",
+          "displayName": "Validations_DeleteAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Validation",
+          "displayName": "Validations_UpdateAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the validations.",
+          "displayName": "Validations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the validation.",
+          "displayName": "Validations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a validation.",
+          "displayName": "Validations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the validation.",
+          "displayName": "Validations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Validation can be re-run by doing a PUT operation with the same parameters. The output of the validation will be updated based on the new validation run.",
+          "displayName": "Validations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/validations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "safeRollouts",
+      "name": "safeRollouts",
+      "operations": [
+        {
+          "description": "List SafeRollout resources by subscription ID",
+          "displayName": "SafeRollouts_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SafeRollout resources by resource group",
+          "displayName": "SafeRollouts_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SafeRollout",
+          "displayName": "SafeRollouts_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a SafeRollout",
+          "displayName": "SafeRollouts_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a SafeRollout",
+          "displayName": "SafeRollouts_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a SafeRollout",
+          "displayName": "SafeRollouts_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel the SafeRollout.",
+          "displayName": "SafeRollouts_Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "safeRollouts/steps",
+      "name": "safeRollouts/steps",
+      "operations": [
+        {
+          "description": "List Step resources by subscription ID",
+          "displayName": "Steps_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/steps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Step resources by SafeRollout",
+          "displayName": "Steps_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/steps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Step",
+          "displayName": "Steps_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/steps/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
