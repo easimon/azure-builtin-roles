@@ -236,6 +236,14 @@
       "name": "workspaces",
       "operations": [
         {
+          "description": "The operation to get a url for file upload.",
+          "displayName": "Workspaces_GenerateUploadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.IoTFirmwareDefense/workspaces/generateUploadUrl/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Lists all of the firmware analysis workspaces in the specified subscription.",
           "displayName": "Workspaces_ListBySubscription",
           "isDataAction": false,
@@ -284,7 +292,7 @@
           "properties": null
         },
         {
-          "description": "The operation to get a url for file upload.",
+          "description": "Generate a URL for uploading a firmware image.",
           "displayName": "Workspaces_GenerateUploadUrl",
           "isDataAction": false,
           "name": "Microsoft.IoTFirmwareDefense/workspaces/generateUploadUrl/action",
@@ -480,7 +488,7 @@
       "name": "workspaces/firmwares/sbomComponents",
       "operations": [
         {
-          "description": "Lists SBOM analysis results of a firmware.",
+          "description": "Lists sbom analysis results of a firmware.",
           "displayName": "SbomComponents_ListByFirmware",
           "isDataAction": false,
           "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/sbomComponents/read",
@@ -508,7 +516,7 @@
       "name": "workspaces/firmwares/cryptoCertificates",
       "operations": [
         {
-          "description": "Lists cryptographic certificate analysis results found in a firmware.",
+          "description": "Lists crypto certificate analysis results of a firmware.",
           "displayName": "CryptoCertificates_ListByFirmware",
           "isDataAction": false,
           "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/cryptoCertificates/read",
@@ -522,7 +530,7 @@
       "name": "workspaces/firmwares/cryptoKeys",
       "operations": [
         {
-          "description": "Lists cryptographic key analysis results found in a firmware.",
+          "description": "Lists crypto key analysis results of a firmware.",
           "displayName": "CryptoKeys_ListByFirmware",
           "isDataAction": false,
           "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/cryptoKeys/read",
@@ -598,20 +606,6 @@
           "displayName": "write_operationStatuses",
           "isDataAction": false,
           "name": "Microsoft.IoTFirmwareDefense/locations/operationStatuses/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "workspaces/firmwares/commonVulnerabilitiesAndExposures",
-      "name": "workspaces/firmwares/commonVulnerabilitiesAndExposures",
-      "operations": [
-        {
-          "description": "Lists CVE analysis results of a firmware.",
-          "displayName": "Cves_ListByFirmware",
-          "isDataAction": false,
-          "name": "Microsoft.IoTFirmwareDefense/workspaces/firmwares/commonVulnerabilitiesAndExposures/read",
           "origin": null,
           "properties": null
         }
