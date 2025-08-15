@@ -20,7 +20,7 @@
       "properties": null
     },
     {
-      "description": "Lists approved schemas for Azure Data Transfer.",
+      "description": "Retrieves the list of approved schemas available for Azure Data Transfer. This operation has reached end of life support starting version 2025-05-30-preview. For schema support please create and use a FlowProfile resource.",
       "displayName": "AzureDataTransfer_listApprovedSchemas",
       "isDataAction": false,
       "name": "Microsoft.AzureDataTransfer/listApprovedSchemas/action",
@@ -28,7 +28,7 @@
       "properties": null
     },
     {
-      "description": "Validates a schema for Azure Data Transfer.",
+      "description": "Validates the structure and content of a schema for use in Azure Data Transfer. This operation has reached end of life support starting version 2025-05-30-preview. For schema support please create and use a FlowProfile resource.",
       "displayName": "AzureDataTransfer_validateSchema",
       "isDataAction": false,
       "name": "Microsoft.AzureDataTransfer/validateSchema/action",
@@ -102,54 +102,6 @@
           "properties": null
         },
         {
-          "description": "Gets pipelines in a subscription.",
-          "displayName": "Pipelines_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets pipelines in a resource group.",
-          "displayName": "Pipelines_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets pipeline resource.",
-          "displayName": "Pipelines_Get",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or updates the pipeline resource.",
-          "displayName": "Pipelines_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the pipeline resource.",
-          "displayName": "Pipelines_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Updates the pipeline resource.",
-          "displayName": "Pipelines_Update",
-          "isDataAction": false,
-          "name": "Microsoft.AzureDataTransfer/pipelines/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Approves the specified connection request in a pipeline.",
           "displayName": "Pipelines_ApproveConnection",
           "isDataAction": false,
@@ -175,6 +127,94 @@
         },
         {
           "description": "Rejects the specified connection request in a pipeline.",
+          "displayName": "Pipelines_RejectConnection",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/rejectConnection/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all Pipeline resources within the current subscription.",
+          "displayName": "Pipelines_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all Pipeline resources within the specified resource group.",
+          "displayName": "Pipelines_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves the specified Pipeline resource.",
+          "displayName": "Pipelines_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new Pipeline resource or updates an existing one. This operation is asynchronous and returns the resulting Pipeline.",
+          "displayName": "Pipelines_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified Pipeline resource.",
+          "displayName": "Pipelines_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Applies partial updates to an existing Pipeline resource. This operation supports patch semantics and returns the updated Pipeline.",
+          "displayName": "Pipelines_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approves a pending connection request associated with the specified Pipeline.",
+          "displayName": "Pipelines_ApproveConnection",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/approveConnection/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Executes a privileged or administrative action on the specified Pipeline.",
+          "displayName": "Pipelines_ExecuteAction",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/executeAction/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all Flows associated with the specified Pipeline.",
+          "displayName": "ListFlowsByPipeline_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/listFlows/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the schemas associated with a specific connection in the Pipeline. This operation has reached end of life support starting version 2025-05-30-preview. For schema support please create and use a FlowProfile resource.",
+          "displayName": "ListSchemas_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/listSchemas/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Rejects a pending connection request associated with the specified Pipeline.",
           "displayName": "Pipelines_RejectConnection",
           "isDataAction": false,
           "name": "Microsoft.AzureDataTransfer/pipelines/rejectConnection/action",
