@@ -124,6 +124,14 @@
           "name": "Microsoft.Mission/communities/write",
           "origin": "System",
           "properties": null
+        },
+        {
+          "description": "Set Maintenance Mode on a Community.",
+          "displayName": "Community_SetMaintenanceMode",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/communities/setMaintenanceMode/action",
+          "origin": "System",
+          "properties": null
         }
       ]
     },
@@ -208,6 +216,38 @@
           "displayName": "VirtualEnclave_Update",
           "isDataAction": false,
           "name": "Microsoft.Mission/virtualEnclaves/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Set Maintenance Mode on a Virtual Enclave.",
+          "displayName": "VirtualEnclave_SetMaintenanceMode",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/setMaintenanceMode/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Add or Remove Workload Admininistrators.",
+          "displayName": "VirtualEnclave_SetWorkloadRoleAssignments",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Add or Remove Virtual Enclave Admininistrators.",
+          "displayName": "VirtualEnclave_SetEnclaveRoleAssignments",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Modify Subnets within a Virtual Enclave.",
+          "displayName": "VirtualEnclave_SetSubnetConfiguration",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualenclaves/setSubnetConfiguration/action",
           "origin": "System",
           "properties": null
         }
@@ -404,6 +444,14 @@
           "name": "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/write",
           "origin": "System",
           "properties": null
+        },
+        {
+          "description": "Connect to an Enclave Endpoint.",
+          "displayName": "EnclaveEndpoint_Connect",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/connect/action",
+          "origin": "System",
+          "properties": null
         }
       ]
     },
@@ -488,6 +536,14 @@
           "displayName": "CommunityEndpoints_Update",
           "isDataAction": false,
           "name": "Microsoft.Mission/communities/communityEndpoints/write",
+          "origin": "System",
+          "properties": null
+        },
+        {
+          "description": "Connect to a Community Endpoint.",
+          "displayName": "CommunityEndpoint_Connect",
+          "isDataAction": false,
+          "name": "Microsoft.Mission/communities/communityEndpoints/connect/action",
           "origin": "System",
           "properties": null
         }
@@ -578,10 +634,10 @@
           "properties": null
         },
         {
-          "description": "Sets the Enclave Connection source CIDR.",
+          "description": "Update Source IP Addresses in an Enclave Connection.",
           "displayName": "EnclaveConnection_SetSourceCidr",
           "isDataAction": false,
-          "name": "Microsoft.Mission/enclaveConnections/SetSourceCidr/action",
+          "name": "Microsoft.Mission/enclaveConnections/setSourceCidr/action",
           "origin": "System",
           "properties": null
         }
