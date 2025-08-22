@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-03-01T16:23:20.672727+00:00",
+  "createdOn": "2024-02-28T16:09:25.851316+00:00",
   "description": "Users with admin access can sign in, view and edit all of the bot resources, scenarios and configuration setting including the bot instance keys & secrets.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/f1082fec-a70f-419f-9230-885d2550fb38",
   "name": "f1082fec-a70f-419f-9230-885d2550fb38",
@@ -13,17 +13,33 @@
       "condition": null,
       "conditionVersion": null,
       "dataActions": [
-        "Microsoft.HealthBot/healthBots/*"
+        "Microsoft.HealthBot/healthBots/ResourceData/Read",
+        "Microsoft.HealthBot/healthBots/Metadata/Read",
+        "Microsoft.HealthBot/healthBots/CopilotStudioSolution/*",
+        "Microsoft.HealthBot/healthBots/Feedback/Read",
+        "Microsoft.HealthBot/healthBots/Users/Read",
+        "Microsoft.HealthBot/healthBots/AuditTrails/Read",
+        "Microsoft.HealthBot/healthBots/AnalyticReport/Read",
+        "Microsoft.HealthBot/healthBots/ExposedSkill/Read",
+        "Microsoft.HealthBot/healthBots/RegisteredSkills/Read",
+        "Microsoft.HealthBot/healthBots/Configuration/*",
+        "Microsoft.HealthBot/healthBots/Localization/*",
+        "Microsoft.HealthBot/healthBots/AuthenticationProviders/*",
+        "Microsoft.HealthBot/healthBots/Channels/*",
+        "Microsoft.HealthBot/healthBots/DataConnections/*",
+        "Microsoft.HealthBot/healthBots/OpenAPIPlugins/*",
+        "Microsoft.HealthBot/healthBots/Scenarios/*",
+        "Microsoft.HealthBot/healthBots/LanguageModels/*",
+        "Microsoft.HealthBot/healthBots/Resources/*",
+        "Microsoft.HealthBot/healthBots/Admin/*"
       ],
       "notActions": [],
-      "notDataActions": [
-        "Microsoft.HealthBot/healthBots/HealthSafeguards/*"
-      ]
+      "notDataActions": []
     }
   ],
   "roleName": "Healthcare Agent Admin",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-03-17T15:14:48.330955+00:00"
+  "updatedOn": "2025-08-21T10:13:28.743149+00:00"
 }
