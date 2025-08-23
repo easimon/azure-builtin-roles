@@ -12,22 +12,6 @@
       "properties": null
     },
     {
-      "description": "Evaluates whether the request payload can create a new resource. Currently only supports CloudService resource type.",
-      "displayName": "ProviderLevelActions_CanCreate",
-      "isDataAction": false,
-      "name": "Microsoft.SaaSHub/canCreate/action",
-      "origin": null,
-      "properties": null
-    },
-    {
-      "description": "Evaluates whether the request payload can create a new resource. Currently only supports SaaS resource type.",
-      "displayName": "ProviderLevelActions_TenantLevelCanCreate",
-      "isDataAction": false,
-      "name": "Microsoft.SaaSHub/tenantLevelCanCreate/action",
-      "origin": null,
-      "properties": null
-    },
-    {
       "description": "Register the subscription for Microsoft.SaaSHub",
       "displayName": "Register the Microsoft.SaaSHub",
       "isDataAction": false,
@@ -40,6 +24,22 @@
       "displayName": "Unregister the Microsoft.SaaSHub",
       "isDataAction": false,
       "name": "Microsoft.SaaSHub/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates whether the request payload can create a new resource. Currently only supports CloudService resource type.",
+      "displayName": "ProviderLevelActions_CanCreate",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/canCreate/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates whether the request payload can create a new SaaS resource.\nNot available in API versions 2023-01-01-preview.",
+      "displayName": "ProviderLevelActions_TenantLevelCanCreate",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/tenantLevelCanCreate/action",
       "origin": null,
       "properties": null
     }
@@ -75,7 +75,7 @@
           "description": "read operations",
           "displayName": "read_operations",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/operations/read",
+          "name": "Microsoft.SaasHub/operations/read",
           "origin": null,
           "properties": null
         }
@@ -216,6 +216,46 @@
       "name": "saasResources",
       "operations": [
         {
+          "description": "Evaluates whether an existing Saas resource can be cancelled.",
+          "displayName": "SaasResources_CanCancel",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/canCancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether the source Saas resource can be merged to target Saas resource.",
+          "displayName": "SaasResources_CanMerge",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/canMerge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether the request payload can update an existing Saas resource.",
+          "displayName": "SaasResources_CanUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/canUpdate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancels a SaaSHub Saas resource.",
+          "displayName": "SaasResources_Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Merges multiple Saas resources into one target Saas resource. The resource name in URL is the target, and the list of source Saas resource and quantity will be specified in request payload",
+          "displayName": "SaasResources_Merge",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/merge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Lists the SaaSHub Saas resource under the tenant.",
           "displayName": "SaasResources_ListByTenant",
           "isDataAction": false,
@@ -256,42 +296,10 @@
           "properties": null
         },
         {
-          "description": "Evaluates whether an existing Saas resource can be cancelled.",
-          "displayName": "SaasResources_CanCancel",
+          "description": "Gets the refundable quantity for a SaaSHub Saas resource.",
+          "displayName": "SaasResources_RefundableQuantity",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/canCancel/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Evaluates whether the source Saas resource can be merged to target Saas resource.",
-          "displayName": "SaasResources_CanMerge",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/canMerge/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Evaluates whether the request payload can update an existing Saas resource.",
-          "displayName": "SaasResources_CanUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/canUpdate/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Cancels a SaaSHub Saas resource.",
-          "displayName": "SaasResources_Cancel",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/cancel/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Merges multiple Saas resources into one target Saas resource. The resource name in URL is the target, and the list of source Saas resource and quantity will be specified in request payload",
-          "displayName": "SaasResources_Merge",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/merge/action",
+          "name": "Microsoft.SaaSHub/saasResources/refundableQuantity/action",
           "origin": null,
           "properties": null
         }
@@ -305,7 +313,7 @@
           "description": "read tenantOperationStatuses",
           "displayName": "read_tenantOperationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/locations/tenantOperationStatuses/read",
+          "name": "Microsoft.SaasHub/locations/tenantOperationStatuses/read",
           "origin": null,
           "properties": null
         },
@@ -313,7 +321,7 @@
           "description": "write tenantOperationStatuses",
           "displayName": "write_tenantOperationStatuses",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/locations/tenantOperationStatuses/write",
+          "name": "Microsoft.SaasHub/locations/tenantOperationStatuses/write",
           "origin": null,
           "properties": null
         }
