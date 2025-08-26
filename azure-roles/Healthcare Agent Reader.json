@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-03-01T16:23:20.671728+00:00",
+  "createdOn": "2024-02-28T16:09:25.669144+00:00",
   "description": "Users with reader access can sign in, have read-only access to the bot resources, scenarios and configuration setting except for the bot instance keys & secrets (including Authentication, Data Connection and Channels keys) and the end-user inputs (including Feedback, Unrecognized utterances and Conversation logs).",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/eb5a76d5-50e7-4c33-a449-070e7c9c4cf2",
   "name": "eb5a76d5-50e7-4c33-a449-070e7c9c4cf2",
@@ -13,19 +13,31 @@
       "condition": null,
       "conditionVersion": null,
       "dataActions": [
-        "Microsoft.HealthBot/healthBots/*/Read",
-        "Microsoft.HealthBot/healthBots/Reader/Action"
+        "Microsoft.HealthBot/healthBots/ResourceData/Read",
+        "Microsoft.HealthBot/healthBots/Metadata/Read",
+        "Microsoft.HealthBot/healthBots/CopilotStudioSolution/RestoreBuiltinTemplate/Read",
+        "Microsoft.HealthBot/healthBots/Feedback/Read",
+        "Microsoft.HealthBot/healthBots/Users/Read",
+        "Microsoft.HealthBot/healthBots/AuditTrails/Read",
+        "Microsoft.HealthBot/healthBots/AnalyticReport/Read",
+        "Microsoft.HealthBot/healthBots/ExposedSkill/Read",
+        "Microsoft.HealthBot/healthBots/RegisteredSkills/Read",
+        "Microsoft.HealthBot/healthBots/Configuration/Read",
+        "Microsoft.HealthBot/healthBots/Localization/Read",
+        "Microsoft.HealthBot/healthBots/AuthenticationProviders/Read",
+        "Microsoft.HealthBot/healthBots/DataConnections/Read",
+        "Microsoft.HealthBot/healthBots/OpenAPIPlugins/Read",
+        "Microsoft.HealthBot/healthBots/Scenarios/*/Read",
+        "Microsoft.HealthBot/healthBots/LanguageModels/Read",
+        "Microsoft.HealthBot/healthBots/Resources/Files/Read"
       ],
       "notActions": [],
-      "notDataActions": [
-        "Microsoft.HealthBot/healthBots/Admin/*",
-        "Microsoft.HealthBot/healthBots/HealthSafeguards/*"
-      ]
+      "notDataActions": []
     }
   ],
   "roleName": "Healthcare Agent Reader",
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-03-17T15:14:48.727183+00:00"
+  "updatedOn": "2025-08-21T10:13:28.738148+00:00"
 }
