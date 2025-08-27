@@ -386,6 +386,100 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "pipelines/listConnections",
+      "name": "pipelines/connections",
+      "operations": [
+        {
+          "description": "List the Connection resources associated with a Pipeline.",
+          "displayName": "Pipelines_ListConnections",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/connections/list/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "pipelines/listConnectionFlows",
+      "name": "pipelines/connections/flows",
+      "operations": [
+        {
+          "description": "List the Flows associated with Connections on a Pipeline.",
+          "displayName": "Pipelines_ListConnectionFlows",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/connections/flows/list/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "pipelines/quarantineListObjects",
+      "name": "pipelines/quarantine/object",
+      "operations": [
+        {
+          "description": "List quarantined objects for a Flow.",
+          "displayName": "Pipelines_QuarantineListObjects",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/list/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Release a quarantined object for a Flow.",
+          "displayName": "Pipelines_QuarantineReleaseObject",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/release/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reject a quarantined object for a Flow.",
+          "displayName": "Pipelines_QuarantineRejectObject",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/reject/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Download a quarantined object for inspection.",
+          "displayName": "Pipelines_QuarantineDownloadObject",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/download/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "pipelines/quarantineListObjectJobs",
+      "name": "pipelines/quarantine/object/jobs",
+      "operations": [
+        {
+          "description": "List the policies evaluated for a quarantined object.",
+          "displayName": "Pipelines_QuarantineListObjectJobs",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/jobs/list/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "pipelines/quarantineDownloadObjectStatus",
+      "name": "pipelines/quarantine/object/download",
+      "operations": [
+        {
+          "description": "Get the status of a download operation for a quarantined object.",
+          "displayName": "Pipelines_QuarantineDownloadObjectStatus",
+          "isDataAction": true,
+          "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/download/status/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
