@@ -28,18 +28,18 @@
       "properties": null
     },
     {
-      "description": "Evaluates whether the request payload can create a new resource. Currently only supports CloudService resource type.",
-      "displayName": "ProviderLevelActions_CanCreate",
-      "isDataAction": false,
-      "name": "Microsoft.SaaSHub/canCreate/action",
-      "origin": null,
-      "properties": null
-    },
-    {
       "description": "Evaluates whether the request payload can create a new SaaS resource.\nNot available in API versions 2023-01-01-preview.",
       "displayName": "ProviderLevelActions_TenantLevelCanCreate",
       "isDataAction": false,
       "name": "Microsoft.SaaSHub/tenantLevelCanCreate/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates whether the request payload can create a new cloud service resource.\nOnly available in API version 2025-07-01-preview.",
+      "displayName": "ResourceGroupLevelProviderActions_CanCreate",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/canCreate/action",
       "origin": null,
       "properties": null
     }
@@ -86,54 +86,6 @@
       "name": "cloudServices",
       "operations": [
         {
-          "description": "Lists the SaaSHub cloud service under the cloud subscription. Cloud subscription must be created under Microsoft Customer Agreement.",
-          "displayName": "CloudServices_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/cloudServices/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists the SaaSHub cloud services under the resource group.",
-          "displayName": "CloudServices_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/cloudServices/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets a SaaSHub cloud service by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "CloudServices_Get",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/cloudServices/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or updates a SaaSHub cloud service.",
-          "displayName": "CloudServices_Create",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/cloudServices/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes a SaaSHub cloud service resource.",
-          "displayName": "CloudServices_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/cloudServices/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Updates the properties of a SaaSHub cloud service.",
-          "displayName": "CloudServices_Update",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/cloudServices/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Cancels a SaaSHub cloud service.",
           "displayName": "CloudServices_Cancel",
           "isDataAction": false,
@@ -170,6 +122,94 @@
           "displayName": "CloudServices_CanMerge",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/cloudServices/canMerge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the SaaSHub cloud services under the subscription.",
+          "displayName": "CloudServices_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the SaaSHub cloud services under the resource group.",
+          "displayName": "CloudServices_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a SaaSHub cloud service by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "CloudServices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a SaaSHub cloud service.",
+          "displayName": "CloudServices_Create",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a SaaSHub cloud service.",
+          "displayName": "CloudServices_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the properties of a SaaSHub cloud service.",
+          "displayName": "CloudServices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether an existing cloud service can be cancelled.",
+          "displayName": "CloudServices_CanCancel",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/canCancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether the source cloud service can be merged to target cloud service.",
+          "displayName": "CloudServices_CanMerge",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/canMerge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether the request payload can update an existing cloud service.",
+          "displayName": "CloudServices_CanUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/canUpdate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Merges multiple cloud services into one target cloud service. The resource name in URL is the target, and the list of source cloud service and quantity will be specified in request payload",
+          "displayName": "CloudServices_Merge",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/merge/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the refundable quantity for a SaaSHub cloud service.",
+          "displayName": "CloudServices_RefundableQuantity",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/cloudServices/refundableQuantity/action",
           "origin": null,
           "properties": null
         }
