@@ -500,6 +500,31 @@
                   "unit": "Count"
                 },
                 {
+                  "aggregationType": "Maximum",
+                  "dimensions": [
+                    {
+                      "displayName": "Current Agent Version",
+                      "name": "CurrentAgentVersion",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Server Name",
+                      "name": "ServerName",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Emits the number of days until the agent version expires",
+                  "displayName": "Agent Version Expiration Information",
+                  "fillGapWithZero": false,
+                  "name": "StorageSyncAgentVersionExpirationDays",
+                  "supportedAggregationTypes": [
+                    "Count",
+                    "Minimum",
+                    "Maximum"
+                  ],
+                  "unit": "Count"
+                },
+                {
                   "aggregationType": "Average",
                   "dimensions": [
                     {
