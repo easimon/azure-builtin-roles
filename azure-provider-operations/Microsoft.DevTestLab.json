@@ -4,8 +4,8 @@
   "name": "Microsoft.DevTestLab",
   "operations": [
     {
-      "description": "Registers the subscription",
-      "displayName": "Register Subscription",
+      "description": "Zaregistruje předplatné.",
+      "displayName": "Zaregistrovat předplatné",
       "isDataAction": false,
       "name": "Microsoft.DevTestLab/register/action",
       "origin": null,
@@ -14,7 +14,7 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "policy sets",
+      "displayName": "sady zásad",
       "name": "labs/policySets",
       "operations": [
         {
@@ -26,8 +26,8 @@
           "properties": null
         },
         {
-          "description": "Evaluates lab policy.",
-          "displayName": "Evaluate policy",
+          "description": "Vyhodnotí zásady testovacího prostředí.",
+          "displayName": "Vyhodnotit zásady",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/policySets/EvaluatePolicies/action",
           "origin": null,
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "displayName": "Labs",
+      "displayName": "Testovací prostředí",
       "name": "labs",
       "operations": [
         {
@@ -64,56 +64,56 @@
           "properties": null
         },
         {
-          "description": "List disk images available for custom image creation.",
-          "displayName": "List VHDs",
+          "description": "Výpis imagí disků, které jsou k dispozici pro vytváření vlastních imagí",
+          "displayName": "Vypsat VHD",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ListVhds/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Generate a URI for uploading custom disk images to a Lab.",
-          "displayName": "Generate image upload URI",
+          "description": "Vygeneruje identifikátor URI pro nahrání vlastních imagí disků do testovacího prostředí.",
+          "displayName": "Vygenerovat URI pro nahrání image",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/GenerateUploadUri/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create virtual machines in a lab.",
-          "displayName": "Create a virtual machine",
+          "description": "Vytvoří virtuální počítače v testovacím prostředí.",
+          "displayName": "Vytvořit virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/CreateEnvironment/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Claim a random claimable virtual machine in the lab.",
-          "displayName": "Claim Any Virtual Machine",
+          "description": "Nárokuje náhodný nárokovatelný virtuální počítač v testovacím prostředí.",
+          "displayName": "Nárokovat libovolný virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ClaimAnyVm/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Exports the lab resource usage into a storage account",
-          "displayName": "Exports the lab resource usage into a storage account",
+          "description": "Exportuje využití prostředku testovacího prostředí do účtu úložiště.",
+          "displayName": "Exportuje využití prostředku testovacího prostředí do účtu úložiště.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ExportResourceUsage/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Import a virtual machine into a different lab.",
-          "displayName": "Import a virtual machine",
+          "description": "Umožňuje naimportovat virtuální počítač do jiného testovacího prostředí.",
+          "displayName": "Importovat virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/ImportVirtualMachine/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Ensure the current user has a valid profile in the lab.",
-          "displayName": "Ensure Current User Profile",
+          "description": "Ověří, jestli má aktuální uživatel v testovacím prostředí platný profil.",
+          "displayName": "Ověřit profil aktuálního uživatele",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/EnsureCurrentUserProfile/action",
           "origin": null,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "displayName": "policies",
+      "displayName": "zásady",
       "name": "labs/policySets/policies",
       "operations": [
         {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "plány",
       "name": "labs/schedules",
       "operations": [
         {
@@ -180,16 +180,16 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Spuštění plánu",
+          "displayName": "Spustit plán",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists all applicable schedules",
-          "displayName": "List all applicable schedules",
+          "description": "Výpis všech použitelných plánů",
+          "displayName": "Vypsat všechny použitelné plány",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/schedules/ListApplicable/action",
           "origin": null,
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "plány",
       "name": "schedules",
       "operations": [
         {
@@ -226,16 +226,16 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Spuštění plánu",
+          "displayName": "Spustit plán",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Execute/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Updates a schedule's target resource Id.",
-          "displayName": "Retarget schedule.",
+          "description": "Aktualizuje ID cílového prostředku v plánu.",
+          "displayName": "Změnit cíl plánu",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/schedules/Retarget/action",
           "origin": null,
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "plány",
       "name": "labs/virtualMachines/schedules",
       "operations": [
         {
@@ -272,8 +272,8 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Spuštění plánu",
+          "displayName": "Spustit plán",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/schedules/Execute/action",
           "origin": null,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "displayName": "schedules",
+      "displayName": "plány",
       "name": "labs/users/serviceFabrics/schedules",
       "operations": [
         {
@@ -310,8 +310,8 @@
           "properties": null
         },
         {
-          "description": "Execute a schedule.",
-          "displayName": "Execute schedule",
+          "description": "Spuštění plánu",
+          "displayName": "Spustit plán",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/schedules/Execute/action",
           "origin": null,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "displayName": "Artifact sources",
+      "displayName": "Zdroje artefaktů",
       "name": "labs/artifactSources",
       "operations": [
         {
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "displayName": "Artifacts",
+      "displayName": "Artefakty",
       "name": "labs/artifactSources/artifacts",
       "operations": [
         {
@@ -362,8 +362,8 @@
           "properties": null
         },
         {
-          "description": "Generates an ARM template for the given artifact, uploads the required files to a storage account, and validates the generated artifact.",
-          "displayName": "Generates an ARM template for the given artifact",
+          "description": "Vygeneruje šablonu ARM pro daný artefakt, nahraje požadované soubory na účet úložiště a ověří vygenerovaný artefakt.",
+          "displayName": "Vygenerovat šablonu ARM pro daný artefakt",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/artifactSources/artifacts/GenerateArmTemplate/action",
           "origin": null,
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "displayName": "gallery images",
+      "displayName": "image z galerie",
       "name": "labs/galleryImages",
       "operations": [
         {
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "displayName": "custom images",
+      "displayName": "vlastní image",
       "name": "labs/customImages",
       "operations": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "displayName": "virtual networks",
+      "displayName": "virtuální sítě",
       "name": "labs/virtualNetworks",
       "operations": [
         {
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "displayName": "Virtual machines",
+      "displayName": "Virtuální počítače",
       "name": "labs/virtualMachines",
       "operations": [
         {
@@ -474,128 +474,128 @@
           "properties": null
         },
         {
-          "description": "Attach a new or existing data disk to virtual machine.",
-          "displayName": "Add or attach a data disk",
+          "description": "Připojí nový nebo existující datový disk k virtuálnímu počítači.",
+          "displayName": "Přidat nebo připojit datový disk",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/AddDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Apply artifacts to virtual machine.",
-          "displayName": "Apply artifacts to virtual machine",
+          "description": "Použití artefaktů ve virtuálním počítači",
+          "displayName": "Použít artefakty ve virtuálním počítači",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ApplyArtifacts/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Take ownership of an existing virtual machine",
-          "displayName": "Claim a virtual machine",
+          "description": "Převezme vlastnictví existujícího virtuálního počítače.",
+          "displayName": "Nárokovat virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Claim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Clears the artifact results of the virtual machine.",
-          "displayName": "Clear artifact results",
+          "description": "Vymaže výsledky artefaktu virtuálního počítače.",
+          "displayName": "Vymazat výsledky artefaktu",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ClearArtifactResults/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Detach the specified disk from the virtual machine.",
-          "displayName": "Detach the specified disk from the virtual machine",
+          "description": "Odpojí zadaný disk od virtuálního počítače.",
+          "displayName": "Odpojit zadaný disk od virtuálního počítače",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/DetachDataDisk/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets a string that represents the contents of the RDP file for the virtual machine",
-          "displayName": "Get RDP file contents",
+          "description": "Získá řetězec, který představuje obsah souboru RDP pro virtuální počítač.",
+          "displayName": "Získat obsah souboru RDP",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/GetRdpFileContents/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the applicable start/stop schedules, if any.",
-          "displayName": "List all applicable schedules",
+          "description": "Obsahuje případné použitelné časy spuštění/zastavení.",
+          "displayName": "Vypsat všechny použitelné plány",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ListApplicableSchedules/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Redeploy a virtual machine",
-          "displayName": "Redeploy a virtual machine",
+          "description": "Znovu nasadí virtuální počítač.",
+          "displayName": "Znovu nasadit virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Redeploy/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Resize Virtual Machine.",
-          "displayName": "Resize Virtual Machine.",
+          "description": "Umožňuje změnit velikost virtuálního počítače.",
+          "displayName": "Změnit velikost virtuálního počítače",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Resize/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Restart a virtual machine.",
-          "displayName": "Restart virtual machine",
+          "description": "Restartuje virtuální počítač.",
+          "displayName": "Restartovat virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Restart/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Start a virtual machine.",
-          "displayName": "Start virtual machine",
+          "description": "Spuštění virtuálního počítače",
+          "displayName": "Spustit virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stop a virtual machine",
-          "displayName": "Stop virtual machine",
+          "description": "Zastavení virtuálního počítače",
+          "displayName": "Zastavit virtuální počítač",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Hibernate a virtual machine",
-          "displayName": "Hibernate virtual machine",
+          "description": "Hibernace virtuálního počítače",
+          "displayName": "Hibernace virtuálního počítače",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/Hibernate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Transfers all data disks attached to the virtual machine to be owned by the current user.",
-          "displayName": "Transfer data disks to the current user.",
+          "description": "Převede všechny datové disky připojené k virtuálnímu počítači do vlastnictví aktuálního uživatele.",
+          "displayName": "Převede datové disky na aktuálního uživatele.",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/TransferDisks/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Release ownership of an existing virtual machine",
-          "displayName": "Unclaim a virtual machine",
+          "description": "Uvolní vlastnictví existujícího virtuálního počítače.",
+          "displayName": "Vzdát se virtuálního počítače",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/UnClaim/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Change security profile of a virtual machine",
-          "displayName": "Change virtual machine security profile",
+          "description": "Změnit profil zabezpečení virtuálního počítače",
+          "displayName": "Změnit profil zabezpečení virtuálního počítače",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/virtualMachines/ChangeSecurityProfile/action",
           "origin": null,
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "displayName": "Formulas",
+      "displayName": "Vzorce",
       "name": "labs/formulas",
       "operations": [
         {
@@ -634,7 +634,7 @@
       ]
     },
     {
-      "displayName": "costs",
+      "displayName": "náklady",
       "name": "labs/costs",
       "operations": [
         {
@@ -684,16 +684,16 @@
           "properties": null
         },
         {
-          "description": "Attach and create the lease of the disk to the virtual machine.",
-          "displayName": "Attach disk",
+          "description": "Připojí a vytvoří zapůjčení disku k virtuálnímu počítači.",
+          "displayName": "Připojit disk",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Attach/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Detach and break the lease of the disk attached to the virtual machine.",
-          "displayName": "Detach and break the lease of the disk attached to the virtual machine",
+          "description": "Odpojení a zrušení zapůjčení disku připojeného k virtuálnímu počítači",
+          "displayName": "Odpojit a zrušit zapůjčení disku připojeného k virtuálnímu počítači",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/disks/Detach/action",
           "origin": null,
@@ -702,7 +702,7 @@
       ]
     },
     {
-      "displayName": "user profiles",
+      "displayName": "profily uživatelů",
       "name": "labs/users",
       "operations": [
         {
@@ -732,7 +732,7 @@
       ]
     },
     {
-      "displayName": "Notification Channels",
+      "displayName": "Kanály oznámení",
       "name": "labs/notificationChannels",
       "operations": [
         {
@@ -760,8 +760,8 @@
           "properties": null
         },
         {
-          "description": "Send notification to provided channel.",
-          "displayName": "Notify",
+          "description": "Odešle oznámení zadanému kanálu.",
+          "displayName": "Oznámit",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/notificationChannels/Notify/action",
           "origin": null,
@@ -770,7 +770,7 @@
       ]
     },
     {
-      "displayName": "secrets",
+      "displayName": "tajné kódy",
       "name": "labs/users/secrets",
       "operations": [
         {
@@ -800,7 +800,7 @@
       ]
     },
     {
-      "displayName": "operations",
+      "displayName": "operace",
       "name": "locations/operations",
       "operations": [
         {
@@ -814,7 +814,7 @@
       ]
     },
     {
-      "displayName": "Azure Resource Manager templates",
+      "displayName": "Šablony Azure Resource Manageru",
       "name": "labs/artifactSources/armTemplates",
       "operations": [
         {
@@ -828,7 +828,7 @@
       ]
     },
     {
-      "displayName": "environments",
+      "displayName": "prostředí",
       "name": "labs/users/environments",
       "operations": [
         {
@@ -858,7 +858,7 @@
       ]
     },
     {
-      "displayName": "Service runners",
+      "displayName": "Spouštěče služeb",
       "name": "labs/serviceRunners",
       "operations": [
         {
@@ -888,7 +888,7 @@
       ]
     },
     {
-      "displayName": "Service Fabrics",
+      "displayName": "Prostředky Service Fabric",
       "name": "labs/users/serviceFabrics",
       "operations": [
         {
@@ -916,24 +916,24 @@
           "properties": null
         },
         {
-          "description": "Start a service fabric.",
-          "displayName": "Start service fabric",
+          "description": "Spustí Service Fabric.",
+          "displayName": "Spustit Service Fabric",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Start/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Stop a service fabric",
-          "displayName": "Stop service fabric",
+          "description": "Zastaví Service Fabric.",
+          "displayName": "Zastavit Service Fabric",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/Stop/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the applicable start/stop schedules, if any.",
-          "displayName": "List all applicable schedules",
+          "description": "Obsahuje případné použitelné časy spuštění/zastavení.",
+          "displayName": "Vypsat všechny použitelné plány",
           "isDataAction": false,
           "name": "Microsoft.DevTestLab/labs/users/serviceFabrics/ListApplicableSchedules/action",
           "origin": null,
@@ -942,7 +942,7 @@
       ]
     },
     {
-      "displayName": "Virtual Machine Pools",
+      "displayName": "Fondy virtuálních počítačů",
       "name": "labs/vmPools",
       "operations": [
         {
@@ -972,7 +972,7 @@
       ]
     },
     {
-      "displayName": "Shared Galleries",
+      "displayName": "Sdílené galerie",
       "name": "labs/sharedGalleries",
       "operations": [
         {
@@ -1002,7 +1002,7 @@
       ]
     },
     {
-      "displayName": "Shared Images",
+      "displayName": "Sdílené image",
       "name": "labs/sharedGalleries/sharedImages",
       "operations": [
         {
@@ -1062,7 +1062,7 @@
       ]
     },
     {
-      "displayName": "Lab Secrets",
+      "displayName": "Tajné kódy testovacího prostředí",
       "name": "labs/secrets",
       "operations": [
         {
