@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-01-30T16:11:37.799613+00:00",
+  "createdOn": "2024-02-01T16:31:39.191454+00:00",
   "description": "Manage and update the cloud controller manager deployed on top of OpenShift.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/a1f96423-95ce-4224-ab27-4e3dc72facd4",
   "name": "a1f96423-95ce-4224-ab27-4e3dc72facd4",
@@ -26,7 +26,18 @@
         "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
         "Microsoft.Network/networkSecurityGroups/join/action",
         "Microsoft.Network/publicIPPrefixes/join/action",
-        "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action"
+        "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/privatelinkservices/write",
+        "Microsoft.Network/privatelinkservices/read",
+        "Microsoft.Network/privatelinkservices/delete",
+        "Microsoft.Network/loadBalancers/loadBalancingRules/read",
+        "Microsoft.Network/serviceEndpointPolicies/join/action",
+        "Microsoft.Network/natGateways/join/action",
+        "Microsoft.Network/networkIntentPolicies/join/action",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/routeTables/join/action",
+        "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -39,5 +50,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-03-11T15:14:12.450475+00:00"
+  "updatedOn": "2025-09-25T15:33:00.045004+00:00"
 }
