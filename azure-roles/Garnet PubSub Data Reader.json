@@ -1,0 +1,40 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-09-26T22:46:03.134787+00:00",
+  "description": "Allows read access to all channels within the Garnet resource",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/da9adf61-39cd-41d5-87a0-30b21f7270d8",
+  "name": "da9adf61-39cd-41d5-87a0-30b21f7270d8",
+  "permissions": [
+    {
+      "actions": [],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.DocumentDB/garnetClusters/acl/clientid/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/clientinfo/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/configget/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/echo/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/info/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/keyslot/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/nodes/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/ping/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/slots/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/channels/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/psubscribe/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/punsubscribe/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/subscribe/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/unsubscribe/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Garnet PubSub Data Reader",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-09-26T22:46:03.134787+00:00"
+}
