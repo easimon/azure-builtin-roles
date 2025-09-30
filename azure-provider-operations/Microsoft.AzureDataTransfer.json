@@ -4,22 +4,6 @@
   "name": "Microsoft.AzureDataTransfer",
   "operations": [
     {
-      "description": "Register the subscription for Microsoft.AzureDataTransfer",
-      "displayName": "Register the Microsoft.AzureDataTransfer",
-      "isDataAction": false,
-      "name": "Microsoft.AzureDataTransfer/register/action",
-      "origin": null,
-      "properties": null
-    },
-    {
-      "description": "Unregister the subscription for Microsoft.AzureDataTransfer",
-      "displayName": "Unregister the Microsoft.AzureDataTransfer",
-      "isDataAction": false,
-      "name": "Microsoft.AzureDataTransfer/unregister/action",
-      "origin": null,
-      "properties": null
-    },
-    {
       "description": "Retrieves the list of approved schemas available for Azure Data Transfer. This operation has reached end of life support starting version 2025-05-30-preview. For schema support please create and use a FlowProfile resource.",
       "displayName": "AzureDataTransfer_listApprovedSchemas",
       "isDataAction": false,
@@ -32,6 +16,30 @@
       "displayName": "AzureDataTransfer_validateSchema",
       "isDataAction": false,
       "name": "Microsoft.AzureDataTransfer/validateSchema/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Retrieves the list of FlowProfiles within a Pipeline that is available for Azure Data Transfer.",
+      "displayName": "AzureDataTransfer_ListFlowProfiles",
+      "isDataAction": false,
+      "name": "Microsoft.AzureDataTransfer/listFlowProfiles/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Register the subscription for Microsoft.AzureDataTransfer",
+      "displayName": "Register the Microsoft.AzureDataTransfer",
+      "isDataAction": false,
+      "name": "Microsoft.AzureDataTransfer/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.AzureDataTransfer",
+      "displayName": "Unregister the Microsoft.AzureDataTransfer",
+      "isDataAction": false,
+      "name": "Microsoft.AzureDataTransfer/unregister/action",
       "origin": null,
       "properties": null
     }
@@ -476,6 +484,52 @@
           "displayName": "Pipelines_QuarantineDownloadObjectStatus",
           "isDataAction": true,
           "name": "Microsoft.AzureDataTransfer/pipelines/quarantine/object/download/status/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "pipelines/flowProfiles",
+      "name": "pipelines/flowProfiles",
+      "operations": [
+        {
+          "description": "Gets flowprofiles in a pipeline.",
+          "displayName": "FlowProfiles_ListByPipeline",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/flowProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets flowProfile resource.",
+          "displayName": "FlowProfiles_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/flowProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the flowProfile resource.",
+          "displayName": "FlowProfiles_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/flowProfiles/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the flowProfile resource.",
+          "displayName": "FlowProfiles_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/flowProfiles/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the flowProfile resource.",
+          "displayName": "FlowProfiles_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/flowProfiles/write",
           "origin": null,
           "properties": null
         }
