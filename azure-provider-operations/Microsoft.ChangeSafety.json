@@ -48,42 +48,42 @@
       "name": "changeStates",
       "operations": [
         {
-          "description": "List ChangeState resources by subscription ID",
-          "displayName": "ChangeStates_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a ChangeState",
-          "displayName": "ChangeStates_GetAtSubscriptionLevel",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a ChangeState",
-          "displayName": "ChangeStates_CreateOrUpdateAtSubscriptionLevel",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Delete a ChangeState",
-          "displayName": "ChangeStates_DeleteAtSubscriptionLevel",
+          "displayName": "ChangeStates_Delete",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update a ChangeState",
-          "displayName": "ChangeStates_UpdateAtSubscriptionLevel",
+          "description": "Create a ChangeState",
+          "displayName": "ChangeStates_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ChangeState",
+          "displayName": "ChangeStates_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ChangeState resources by resource group",
+          "displayName": "ChangeStates_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the audit trail action, for a change state at subscription level.",
+          "displayName": "ChangeStates_RetrieveAuditTrailAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/retrieveAuditTrail/action",
           "origin": null,
           "properties": null
         },
@@ -104,24 +104,8 @@
           "properties": null
         },
         {
-          "description": "List ChangeState resources by resource group",
-          "displayName": "ChangeStates_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a ChangeState",
-          "displayName": "ChangeStates_Get",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a ChangeState",
-          "displayName": "ChangeStates_CreateOrUpdate",
+          "description": "Update a ChangeState",
+          "displayName": "ChangeStates_UpdateAtSubscriptionLevel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/write",
           "origin": null,
@@ -129,17 +113,33 @@
         },
         {
           "description": "Delete a ChangeState",
-          "displayName": "ChangeStates_Delete",
+          "displayName": "ChangeStates_DeleteAtSubscriptionLevel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update a ChangeState",
-          "displayName": "ChangeStates_Update",
+          "description": "Create a ChangeState",
+          "displayName": "ChangeStates_CreateOrUpdateAtSubscriptionLevel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ChangeState",
+          "displayName": "ChangeStates_GetAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ChangeState resources by subscription ID",
+          "displayName": "ChangeStates_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/read",
           "origin": null,
           "properties": null
         },
@@ -158,6 +158,30 @@
           "name": "Microsoft.ChangeSafety/changeStates/verifyChangeValidity/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Update a ChangeState",
+          "displayName": "ChangeStates_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the audit trail action, for a change state.",
+          "displayName": "ChangeStates_RetrieveAuditTrail",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/retrieveAuditTrail/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read changestates",
+          "displayName": "read_changestates",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changestates/read",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -166,16 +190,40 @@
       "name": "changeStates/stageProgressions",
       "operations": [
         {
-          "description": "List StageProgression resources by ChangeState",
-          "displayName": "StageProgressions_ListByParentAtSubscriptionLevel",
+          "description": "Create a StageProgression",
+          "displayName": "StageProgressions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a StageProgression",
+          "displayName": "StageProgressions_Get",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a StageProgression",
-          "displayName": "StageProgressions_CreateOrUpdateAtSubscriptionLevel",
+          "description": "List StageProgression resources by ChangeState",
+          "displayName": "StageProgressions_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the audit trail action, for a StageProgression at subscription level.",
+          "displayName": "StageProgressions_RetrieveAuditTrailAtSubscriptionLevel",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/retrieveAuditTrail/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a StageProgression",
+          "displayName": "StageProgressions_UpdateAtSubscriptionLevel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
           "origin": null,
@@ -190,34 +238,26 @@
           "properties": null
         },
         {
-          "description": "Update a StageProgression",
-          "displayName": "StageProgressions_UpdateAtSubscriptionLevel",
+          "description": "Create a StageProgression",
+          "displayName": "StageProgressions_CreateOrUpdateAtSubscriptionLevel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List StageProgression resources by ChangeState",
-          "displayName": "StageProgressions_ListByParent",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
           "origin": null,
           "properties": null
         },
         {
           "description": "Get a StageProgression",
-          "displayName": "StageProgressions_Get",
+          "displayName": "StageProgressions_GetAtSubscriptionLevel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a StageProgression",
-          "displayName": "StageProgressions_CreateOrUpdate",
+          "description": "List StageProgression resources by ChangeState",
+          "displayName": "StageProgressions_ListByParentAtSubscriptionLevel",
           "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
           "origin": null,
           "properties": null
         },
@@ -234,6 +274,14 @@
           "displayName": "StageProgressions_Update",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the audit trail action, for a StageProgression.",
+          "displayName": "StageProgressions_RetrieveAuditTrail",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeStates/stageProgressions/retrieveAuditTrail/action",
           "origin": null,
           "properties": null
         }
