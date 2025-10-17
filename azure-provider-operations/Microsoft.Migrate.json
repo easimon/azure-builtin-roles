@@ -110,6 +110,14 @@
           "name": "Microsoft.Migrate/migrateProjects/registrationDetails/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Update the Task details",
+          "displayName": "Post the task operation",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/tasksummary/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -2958,6 +2966,14 @@
           "name": "Microsoft.Migrate/migrateProjects/waves/delete",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Refresh the Wave execution readiness and execution status information",
+          "displayName": "Refresh the Wave execution readiness and execution status information",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/waves/refresh/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -3048,14 +3064,6 @@
           "name": "Microsoft.Migrate/migrateProjects/tasks/delete",
           "origin": "user,system",
           "properties": null
-        },
-        {
-          "description": "Update the Task details",
-          "displayName": "Post the task operation",
-          "isDataAction": false,
-          "name": "Microsoft.Migrate/migrateProjects/tasks/summary/action",
-          "origin": "user,system",
-          "properties": null
         }
       ]
     },
@@ -3083,6 +3091,258 @@
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentProjects/heterogeneousAssessments/summaries/read",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "mongodb AssessmentOptions",
+      "name": "assessmentProjects/mongodbAssessmentOptions",
+      "operations": [
+        {
+          "description": "Gets the properties of the mongodb AssessmentOptions",
+          "displayName": "Get mongodb AssessmentOptions",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessmentOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "mongodb Assessments",
+      "name": "assessmentProjects/mongodbAssessments",
+      "operations": [
+        {
+          "description": "Gets the properties of the mongodb Assessment",
+          "displayName": "Get mongodb Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a mongodb Assessment or updates an existing mongodb Assessment",
+          "displayName": "Create or update mongodb Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the mongodb Assessment which are available in the given location",
+          "displayName": "Delete mongodb Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get Blob SAS URI for the mongodb AssessmentReport",
+          "displayName": "Get mongodb AssessmentReport",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/downloadurl/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Recalculate summaries for an assessments",
+          "displayName": "RecalculateSummaries",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/recalculateSummaries/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "mongodb AssessmentSummaries",
+      "name": "assessmentProjects/mongodbAssessments/summaries",
+      "operations": [
+        {
+          "description": "Gets the properties of the mongodb AssessmentSummary",
+          "displayName": "Get mongodb AssessmentSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/summaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "mongodb Collectors",
+      "name": "assessmentProjects/mongodbcollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of the mongodb Collector",
+          "displayName": "Get mongodb Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbcollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a mongodb Collector or updates an existing mongodb Collector",
+          "displayName": "Create or update mongodb Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbcollectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the mongodb Collector which are available in the given location",
+          "displayName": "Delete mongodb Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbcollectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedInstances",
+      "name": "assessmentProjects/mongodbAssessments/assessedInstances",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedInstances ",
+          "displayName": "Get assessedInstances",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/assessedInstances/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/mongodbAssessments/assessedInstances/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fileshare AssessmentOptions",
+      "name": "assessmentProjects/fileshareAssessmentOptions",
+      "operations": [
+        {
+          "description": "Gets the properties of the fileshare AssessmentOptions",
+          "displayName": "Get fileshare AssessmentOptions",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessmentOptions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fileshare Assessments",
+      "name": "assessmentProjects/fileshareAssessments",
+      "operations": [
+        {
+          "description": "Gets the properties of the fileshare Assessment",
+          "displayName": "Get fileshare Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a fileshare Assessment or updates an existing fileshare Assessment",
+          "displayName": "Create or update fileshare Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the fileshare Assessment which are available in the given location",
+          "displayName": "Delete fileshare Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get Blob SAS URI for the fileshare AssessmentReport",
+          "displayName": "Get fileshare AssessmentReport",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/downloadurl/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Recalculate summaries for an assessments",
+          "displayName": "RecalculateSummaries",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/recalculateSummaries/action",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fileshare AssessmentSummaries",
+      "name": "assessmentProjects/fileshareAssessments/summaries",
+      "operations": [
+        {
+          "description": "Gets the properties of the fileshare AssessmentSummary",
+          "displayName": "Get fileshare AssessmentSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/summaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fileshare Collectors",
+      "name": "assessmentProjects/filesharecollectors",
+      "operations": [
+        {
+          "description": "Gets the properties of the fileshare Collector",
+          "displayName": "Get fileshare Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/filesharecollectors/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a fileshare Collector or updates an existing fileshare Collector",
+          "displayName": "Create or update fileshare Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/filesharecollectors/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the fileshare Collector which are available in the given location",
+          "displayName": "Delete fileshare Collector",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/filesharecollectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedFileShares",
+      "name": "assessmentProjects/fileshareAssessments/assessedFileShares",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedFileShares ",
+          "displayName": "Get assessedFileShares",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/assessedFileShares/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/assessedFileShares/write",
+          "origin": "system",
           "properties": null
         }
       ]
