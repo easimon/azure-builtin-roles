@@ -1,0 +1,44 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-10-17T08:43:22.945377+00:00",
+  "description": "This role allows users to view, assign and delete resiliency goals for the service group, as well as modify the list of service group members that get evaluated against the goal. This role also allows a user to assign goal related permissions to other users.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/a2b7cc47-30ec-462f-a2f4-9ac6e1c266af",
+  "name": "a2b7cc47-30ec-462f-a2f4-9ac6e1c266af",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write"
+      ],
+      "condition": "@Resource[HasObotoken] boolequals true && (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {de754d53-652d-4c75-a67f-1e48d8b49c97, acdd72a7-3385-48ef-bd42-f606fba81ae7, b0d8363b-8ddd-447d-831f-62ca05bff136, b24988ac-6180-42a0-ab88-20f7382dd24c, 7c2e40b7-25eb-482a-82cb-78ba06cb46d5})",
+      "conditionVersion": "2.0",
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    },
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Management/ServiceGroups/read",
+        "Microsoft.Relationships/ServiceGroupMember/read",
+        "Microsoft.AzureResilienceManagement/goalTemplates/*",
+        "Microsoft.AzureResilienceManagement/goalAssignments/*",
+        "Microsoft.AzureResilienceManagement/goalAssignments/goalResources/*",
+        "Microsoft.AzureResilienceManagement/locations/operationStatuses/read",
+        "Microsoft.AzureResilienceManagement/operations/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Resilience Management Goals Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-10-17T08:43:22.945377+00:00"
+}
