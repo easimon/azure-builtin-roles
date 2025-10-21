@@ -3,15 +3,22 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-10-10T15:52:47.600852+00:00",
+  "createdOn": "2025-10-07T15:22:16.680056+00:00",
   "description": "Operator Role of Azure Resilience Management Recovery Service",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/517781b0-5ad4-4418-94d5-f2421834b586",
   "name": "517781b0-5ad4-4418-94d5-f2421834b586",
   "permissions": [
     {
       "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Automation/automationAccounts/runbooks/read",
         "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
-        "Microsoft.AzureResilienceManagement/recoveryPlans/*/read"
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
+        "Microsoft.Insights/alertRules/",
+        "Microsoft.Management/ServiceGroups/read",
+        "Microsoft.Relationships/ServiceGroupMember/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -24,5 +31,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-10-10T15:52:47.600852+00:00"
+  "updatedOn": "2025-10-20T15:12:56.230161+00:00"
 }
