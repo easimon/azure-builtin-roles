@@ -1,0 +1,66 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-10-22T18:33:37.494647+00:00",
+  "description": "Allows read/write access to most objects in a namespace. This role does not allow viewing or modifying roles or role bindings. However, this role allows accessing Secrets and running Pods as any ServiceAccount in the namespace, so it can be used to gain the API access levels of any ServiceAccount in the namespace.  Applying this role at cluster scope will give access across all namespaces.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/50346970-0998-40f2-b47d-f3b8809840f8",
+  "name": "50346970-0998-40f2-b47d-f3b8809840f8",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.ContainerService/fleets/members/apps/controllerrevisions/read",
+        "Microsoft.ContainerService/fleets/members/apps/daemonsets/*",
+        "Microsoft.ContainerService/fleets/members/apps/deployments/*",
+        "Microsoft.ContainerService/fleets/members/apps/replicasets/*",
+        "Microsoft.ContainerService/fleets/members/apps/statefulsets/*",
+        "Microsoft.ContainerService/fleets/members/autoscaling/horizontalpodautoscalers/*",
+        "Microsoft.ContainerService/fleets/members/batch/cronjobs/*",
+        "Microsoft.ContainerService/fleets/members/coordination.k8s.io/leases/read",
+        "Microsoft.ContainerService/fleets/members/coordination.k8s.io/leases/write",
+        "Microsoft.ContainerService/fleets/members/coordination.k8s.io/leases/delete",
+        "Microsoft.ContainerService/fleets/members/discovery.k8s.io/endpointslices/read",
+        "Microsoft.ContainerService/fleets/members/batch/jobs/*",
+        "Microsoft.ContainerService/fleets/members/configmaps/*",
+        "Microsoft.ContainerService/fleets/members/endpoints/*",
+        "Microsoft.ContainerService/fleets/members/events.k8s.io/events/read",
+        "Microsoft.ContainerService/fleets/members/events/*",
+        "Microsoft.ContainerService/fleets/members/extensions/daemonsets/*",
+        "Microsoft.ContainerService/fleets/members/extensions/deployments/*",
+        "Microsoft.ContainerService/fleets/members/extensions/ingresses/*",
+        "Microsoft.ContainerService/fleets/members/extensions/networkpolicies/*",
+        "Microsoft.ContainerService/fleets/members/extensions/replicasets/*",
+        "Microsoft.ContainerService/fleets/members/limitranges/read",
+        "Microsoft.ContainerService/fleets/members/metrics.k8s.io/pods/read",
+        "Microsoft.ContainerService/fleets/members/metrics.k8s.io/nodes/read",
+        "Microsoft.ContainerService/fleets/members/namespaces/read",
+        "Microsoft.ContainerService/fleets/members/networking.k8s.io/ingresses/*",
+        "Microsoft.ContainerService/fleets/members/networking.k8s.io/networkpolicies/*",
+        "Microsoft.ContainerService/fleets/members/persistentvolumeclaims/*",
+        "Microsoft.ContainerService/fleets/members/pods/*",
+        "Microsoft.ContainerService/fleets/members/policy/poddisruptionbudgets/*",
+        "Microsoft.ContainerService/fleets/members/replicationcontrollers/*",
+        "Microsoft.ContainerService/fleets/members/resourcequotas/read",
+        "Microsoft.ContainerService/fleets/members/secrets/*",
+        "Microsoft.ContainerService/fleets/members/serviceaccounts/*",
+        "Microsoft.ContainerService/fleets/members/services/*"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Kubernetes Fleet Manager RBAC Writer for Member Clusters",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-10-22T18:33:37.494647+00:00"
+}
