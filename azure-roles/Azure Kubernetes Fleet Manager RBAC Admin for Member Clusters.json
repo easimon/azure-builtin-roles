@@ -1,0 +1,37 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-10-22T18:33:37.496647+00:00",
+  "description": "This role grants admin access - provides write permissions on most objects within a namespace, with the exception of ResourceQuota object and the namespace object itself. Applying this role at cluster scope will give access across all namespaces.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/d1f699ed-700a-4c77-a22f-29890ac7b115",
+  "name": "d1f699ed-700a-4c77-a22f-29890ac7b115",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.ContainerService/fleets/members/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.ContainerService/fleets/members/resourcequotas/write",
+        "Microsoft.ContainerService/fleets/members/resourcequotas/delete",
+        "Microsoft.ContainerService/fleets/members/namespaces/write",
+        "Microsoft.ContainerService/fleets/members/namespaces/delete"
+      ]
+    }
+  ],
+  "roleName": "Azure Kubernetes Fleet Manager RBAC Admin for Member Clusters",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-10-22T18:33:37.496647+00:00"
+}
