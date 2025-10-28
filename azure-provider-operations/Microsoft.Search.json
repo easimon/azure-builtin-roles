@@ -595,15 +595,15 @@
         },
         {
           "description": "Create new agents or modify existing agent configurations.",
-          "displayName": "Create or Update Agents",
+          "displayName": "Create or Update Agent",
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/agents/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Delete agents.",
-          "displayName": "Delete Agents",
+          "description": "Delete an agent.",
+          "displayName": "Delete Agent",
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/agents/delete",
           "origin": "user,system",
@@ -616,8 +616,8 @@
       "name": "searchServices/knowledgeSources",
       "operations": [
         {
-          "description": "Read knowledge sources.",
-          "displayName": "Read Knowledge Sources",
+          "description": "Read Knowledge Sources.",
+          "displayName": "Read Knowledge Source",
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/knowledgeSources/read",
           "origin": "user,system",
@@ -625,17 +625,91 @@
         },
         {
           "description": "Create new knowledge sources or modify existing knowledge sources.",
-          "displayName": "Create or Update Knowledge Sources",
+          "displayName": "Create or Update Knowledge Source",
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/knowledgeSources/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Delete knowledge sources.",
-          "displayName": "Delete Knowledge Sources",
+          "description": "Delete a knowledge source.",
+          "displayName": "Delete Knowledge Source",
           "isDataAction": false,
           "name": "Microsoft.Search/searchServices/knowledgeSources/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Offerings",
+      "name": "offerings",
+      "operations": [
+        {
+          "description": "Lists all of the features and SKUs offered by the Azure AI Search service in each region.",
+          "displayName": "Get Offerings",
+          "isDataAction": false,
+          "name": "Microsoft.Search/offerings/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Aliases",
+      "name": "searchServices/aliases",
+      "operations": [
+        {
+          "description": "Return an alias or a list of aliases.",
+          "displayName": "Read Alias",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/aliases/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create an alias or modify its properties.",
+          "displayName": "Create or Update Alias",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/aliases/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete an alias.",
+          "displayName": "Delete Alias",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/aliases/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Knowledge Bases",
+      "name": "searchServices/knowledgeBases",
+      "operations": [
+        {
+          "description": "Return a knowledge base or a list of knowledge bases.",
+          "displayName": "Read Knowledge Base",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/knowledgeBases/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a knowledge base or modify its properties.",
+          "displayName": "Create or Update Knowledge Base",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/knowledgeBases/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a knowledge base.",
+          "displayName": "Delete Knowledge Base",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/knowledgeBases/delete",
           "origin": "user,system",
           "properties": null
         }
