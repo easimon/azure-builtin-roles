@@ -2619,14 +2619,38 @@
       ]
     },
     {
-      "displayName": "Refresh Containers",
+      "displayName": "Recovery Points",
       "name": "Vaults/backupFabrics",
       "operations": [
+        {
+          "description": "Get Recovery Points for Protected Items.",
+          "displayName": "Get Recovery Points",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/getRecoveryPoints/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Restore Recovery Points for Protected Items.",
+          "displayName": "Restore Recovery Points",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/preCheckRestore/action",
+          "origin": "user",
+          "properties": null
+        },
         {
           "description": "Refreshes the container list",
           "displayName": "Refresh container",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/refreshContainers/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Restore Recovery Points for Protected Items.",
+          "displayName": "Restore Recovery Points",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/restore/action",
           "origin": "user",
           "properties": null
         }
@@ -2859,6 +2883,34 @@
           "displayName": "Get DeletedVault Operation Status",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/locations/deletedVaults/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Results",
+      "name": "Vaults/backupFabrics/recoveryPointOperationResults",
+      "operations": [
+        {
+          "description": "Gets Result of Operation Performed on Protected Items.",
+          "displayName": "Get Protected Items Operation Results",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/recoveryPointOperationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation Status",
+      "name": "Vaults/backupFabrics/validateBulkRestoreOperationsStatus",
+      "operations": [
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/validateBulkRestoreOperationsStatus/read",
           "origin": "user",
           "properties": null
         }
