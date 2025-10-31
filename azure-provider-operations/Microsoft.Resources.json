@@ -1,27 +1,27 @@
 {
-  "displayName": "Prostředky Microsoftu",
+  "displayName": "Microsoft Resources",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Resources",
   "name": "Microsoft.Resources",
   "operations": [
     {
-      "description": "Zkontroluje správnost názvu prostředku.",
-      "displayName": "Zkontrolovat název prostředku",
+      "description": "Check the resource name for validity.",
+      "displayName": "Check Resource Name",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkResourceName/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Vypočítá hodnotu hash poskytnuté šablony.",
-      "displayName": "Vypočítat hodnotu hash šablony",
+      "description": "Calculate the hash of provided template.",
+      "displayName": "Calculate Template Hash",
       "isDataAction": false,
       "name": "Microsoft.Resources/calculateTemplateHash/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "Zkontrolovat partnery zóny",
-      "displayName": "Zkontrolovat partnery zóny",
+      "description": "Check Zone Peers",
+      "displayName": "Check Zone Peers",
       "isDataAction": false,
       "name": "Microsoft.Resources/checkZonePeers/action",
       "origin": null,
@@ -30,12 +30,12 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "Klient",
+      "displayName": "Tenant",
       "name": "tenants",
       "operations": [
         {
-          "description": "Získá výpis klientů.",
-          "displayName": "Získat klienty",
+          "description": "Gets the list of tenants.",
+          "displayName": "Get Tenants",
           "isDataAction": false,
           "name": "Microsoft.Resources/tenants/read",
           "origin": null,
@@ -44,12 +44,12 @@
       ]
     },
     {
-      "displayName": "Zprostředkovatelé",
+      "displayName": "Providers",
       "name": "providers",
       "operations": [
         {
-          "description": "Načte seznam zprostředkovatelů.",
-          "displayName": "Načíst zprostředkovatele",
+          "description": "Get the list of providers.",
+          "displayName": "Get Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/providers/read",
           "origin": null,
@@ -58,12 +58,12 @@
       ]
     },
     {
-      "displayName": "Prostředky",
+      "displayName": "Resources",
       "name": "resources",
       "operations": [
         {
-          "description": "Načte seznam prostředků na základě filtrů.",
-          "displayName": "Načíst prostředky",
+          "description": "Get the list of resources based upon filters.",
+          "displayName": "Get Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/resources/read",
           "origin": null,
@@ -72,12 +72,12 @@
       ]
     },
     {
-      "displayName": "Předplatné",
+      "displayName": "Subscription",
       "name": "subscriptions",
       "operations": [
         {
-          "description": "Získá výpis předplatných.",
-          "displayName": "Získat předplatná",
+          "description": "Gets the list of subscriptions.",
+          "displayName": "Get Subscriptions",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/read",
           "origin": null,
@@ -86,12 +86,12 @@
       ]
     },
     {
-      "displayName": "Prostředek předplatného",
+      "displayName": "Subscription Resource",
       "name": "subscriptions/resources",
       "operations": [
         {
-          "description": "Získá prostředky předplatného.",
-          "displayName": "Získat prostředky předplatného",
+          "description": "Gets resources of a subscription.",
+          "displayName": "Get Subscription Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resources/read",
           "origin": null,
@@ -100,12 +100,12 @@
       ]
     },
     {
-      "displayName": "Umístění",
+      "displayName": "Location",
       "name": "subscriptions/locations",
       "operations": [
         {
-          "description": "Získá výpis podporovaných umístění.",
-          "displayName": "Získat umístění",
+          "description": "Gets the list of locations supported.",
+          "displayName": "Get Locations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/locations/read",
           "origin": null,
@@ -114,12 +114,12 @@
       ]
     },
     {
-      "displayName": "Zprostředkovatelé prostředků",
+      "displayName": "Resource Providers",
       "name": "subscriptions/providers",
       "operations": [
         {
-          "description": "Načte nebo vypíše zprostředkovatele prostředků.",
-          "displayName": "Získat zprostředkovatele prostředků",
+          "description": "Gets or lists resource providers.",
+          "displayName": "Get Resource Providers",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/providers/read",
           "origin": null,
@@ -128,12 +128,12 @@
       ]
     },
     {
-      "displayName": "Výsledky operací s předplatným",
+      "displayName": "Subscription Operation Results",
       "name": "subscriptions/operationresults",
       "operations": [
         {
-          "description": "Načte výsledky operací s předplatným.",
-          "displayName": "Načíst výsledky operací s předplatným",
+          "description": "Get the subscription operation results.",
+          "displayName": "Get Subscription Operation Results",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/operationresults/read",
           "origin": null,
@@ -142,44 +142,44 @@
       ]
     },
     {
-      "displayName": "Skupina prostředků",
+      "displayName": "Resource Group",
       "name": "subscriptions/resourceGroups",
       "operations": [
         {
-          "description": "Načte nebo vypíše skupinu prostředků.",
-          "displayName": "Získat skupinu prostředků",
+          "description": "Gets or lists resource groups.",
+          "displayName": "Get Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje skupinu prostředků.",
-          "displayName": "Vytvořit skupinu prostředků",
+          "description": "Creates or updates a resource group.",
+          "displayName": "Create Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní skupinu prostředků a všechny její prostředky.",
-          "displayName": "Odstranit skupinu prostředků",
+          "description": "Deletes a resource group and all its resources.",
+          "displayName": "Delete Resource Group",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Přesune prostředky z jedné skupiny prostředků do jiné.",
-          "displayName": "Přesunout prostředky skupiny prostředků",
+          "description": "Moves resources from one resource group to another.",
+          "displayName": "Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/moveResources/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Ověří přesun prostředků z jedné skupiny prostředků do jiné.",
-          "displayName": "Ověřit přesun prostředků skupiny prostředků",
+          "description": "Validate move of resources from one resource group to another.",
+          "displayName": "Validate Move Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourceGroups/validateMoveResources/action",
           "origin": null,
@@ -188,12 +188,12 @@
       ]
     },
     {
-      "displayName": "Prostředky skupiny prostředků",
+      "displayName": "Resource Group Resources",
       "name": "subscriptions/resourcegroups/resources",
       "operations": [
         {
-          "description": "Načte prostředky pro skupinu prostředků.",
-          "displayName": "Načíst prostředky skupiny prostředků",
+          "description": "Gets the resources for the resource group.",
+          "displayName": "Get Resource Group Resources",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
           "origin": null,
@@ -202,28 +202,28 @@
       ]
     },
     {
-      "displayName": "Značka předplatného",
+      "displayName": "Subscription Tag",
       "name": "subscriptions/tagNames",
       "operations": [
         {
-          "description": "Načte nebo vypíše značky předplatného.",
-          "displayName": "Získat značku předplatného",
+          "description": "Gets or lists subscription tags.",
+          "displayName": "Get Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Přidá značku předplatného.",
-          "displayName": "Přidat značku předplatného",
+          "description": "Adds a subscription tag.",
+          "displayName": "Add Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní značku předplatného.",
-          "displayName": "Odstranit značku předplatného",
+          "description": "Deletes a subscription tag.",
+          "displayName": "Delete Subscription Tag",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/delete",
           "origin": null,
@@ -232,28 +232,28 @@
       ]
     },
     {
-      "displayName": "Hodnota značky předplatného",
+      "displayName": "Subscription Tag Value",
       "name": "subscriptions/tagNames/tagValues",
       "operations": [
         {
-          "description": "Načte nebo vypíše hodnoty značky předplatného.",
-          "displayName": "Získat hodnotu značky předplatného",
+          "description": "Gets or lists subscription tag values.",
+          "displayName": "Get Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Přidá hodnotu značky předplatného.",
-          "displayName": "Přidat hodnotu značky předplatného",
+          "description": "Adds a subscription tag value.",
+          "displayName": "Add Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní hodnotu značky předplatného.",
-          "displayName": "Odstranit hodnotu značky předplatného",
+          "description": "Deletes a subscription tag value.",
+          "displayName": "Delete Subscription Tag Value",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/tagNames/tagValues/delete",
           "origin": null,
@@ -262,36 +262,36 @@
       ]
     },
     {
-      "displayName": "Nasazení",
+      "displayName": "Deployment",
       "name": "deployments",
       "operations": [
         {
-          "description": "Načte nebo vypíše nasazení.",
-          "displayName": "Získat nasazení",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje nasazení.",
-          "displayName": "Vytvořit nasazení",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní nasazení.",
-          "displayName": "Odstranit nasazení",
+          "description": "Deletes a deployment.",
+          "displayName": "Delete Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Zruší nasazení.",
-          "displayName": "Zrušit nasazení",
+          "description": "Cancels a deployment.",
+          "displayName": "Cancel Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/cancel/action",
           "origin": null,
@@ -299,23 +299,23 @@
         },
         {
           "description": "Validates a deployment.",
-          "displayName": "Ověřit nasazení",
+          "displayName": "Validate Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/validate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Predikuje změny nasazení šablon.",
-          "displayName": "Citlivostní analýza nasazení",
+          "description": "Predicts template deployment changes.",
+          "displayName": "Deployment What-If",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/whatIf/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Exportovat šablonu pro nasazení",
-          "displayName": "Exportovat šablonu pro nasazení",
+          "description": "Export template for a deployment",
+          "displayName": "Export template for deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/exportTemplate/action",
           "origin": null,
@@ -324,20 +324,20 @@
       ]
     },
     {
-      "displayName": "Nasazení",
+      "displayName": "Deployment",
       "name": "subscriptions/resourcegroups/deployments",
       "operations": [
         {
-          "description": "Načte nebo vypíše nasazení.",
-          "displayName": "Získat nasazení",
+          "description": "Gets or lists deployments.",
+          "displayName": "Get Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje nasazení.",
-          "displayName": "Vytvořit nasazení",
+          "description": "Creates or updates an deployment.",
+          "displayName": "Create Deployment",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
           "origin": null,
@@ -346,12 +346,12 @@
       ]
     },
     {
-      "displayName": "Operace nasazení",
+      "displayName": "Deployment Operation",
       "name": "subscriptions/resourcegroups/deployments/operations",
       "operations": [
         {
-          "description": "Načte nebo vypíše operace nasazení.",
-          "displayName": "Získat operace nasazení",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
           "origin": null,
@@ -360,12 +360,12 @@
       ]
     },
     {
-      "displayName": "Stav operace nasazení",
+      "displayName": "Deployment operation status",
       "name": "subscriptions/resourcegroups/deployments/operationstatuses",
       "operations": [
         {
-          "description": "Získá nebo vypíše stavy operace nasazení.",
-          "displayName": "Získat stav operace nasazení",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read",
           "origin": null,
@@ -374,12 +374,12 @@
       ]
     },
     {
-      "displayName": "Operace nasazení",
+      "displayName": "Deployment Operation",
       "name": "deployments/operations",
       "operations": [
         {
-          "description": "Načte nebo vypíše operace nasazení.",
-          "displayName": "Získat operace nasazení",
+          "description": "Gets or lists deployment operations.",
+          "displayName": "Get Deployment Operation",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operations/read",
           "origin": null,
@@ -388,28 +388,28 @@
       ]
     },
     {
-      "displayName": "Odkaz na prostředek",
+      "displayName": "Resource Link",
       "name": "links",
       "operations": [
         {
-          "description": "Načte nebo vypíše odkazy na prostředek.",
-          "displayName": "Získat odkaz na prostředek",
+          "description": "Gets or lists resource links.",
+          "displayName": "Get Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje odkaz na prostředek.",
-          "displayName": "Vytvořit odkaz na prostředek",
+          "description": "Creates or updates a resource link.",
+          "displayName": "Create Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní odkaz na prostředek.",
-          "displayName": "Odstranit odkaz na prostředek",
+          "description": "Deletes a resource link.",
+          "displayName": "Delete Resource Link",
           "isDataAction": false,
           "name": "Microsoft.Resources/links/delete",
           "origin": null,
@@ -422,8 +422,8 @@
       "name": "marketplace",
       "operations": [
         {
-          "description": "Umožňuje koupit prostředek z Marketplace.",
-          "displayName": "Koupit prostředek",
+          "description": "Purchases a resource from the marketplace.",
+          "displayName": "Purchase Resource",
           "isDataAction": false,
           "name": "Microsoft.Resources/marketplace/purchase/action",
           "origin": "System",
@@ -432,28 +432,28 @@
       ]
     },
     {
-      "displayName": "Značky",
+      "displayName": "Tags",
       "name": "tags",
       "operations": [
         {
-          "description": "Získá všechny značky v prostředku.",
-          "displayName": "Přečíst značky",
+          "description": "Gets all the tags on a resource.",
+          "displayName": "Read tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Aktualizuje značky v prostředku tak, že nahradí nebo sloučí stávající značky s novou sadou značek, nebo odebere existující značky.",
-          "displayName": "Zapsat značky",
+          "description": "Updates the tags on a resource by replacing or merging existing tags with a new set of tags, or removing existing tags.",
+          "displayName": "Write tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odebere všechny značky v prostředku.",
-          "displayName": "Odstranit značky",
+          "description": "Removes all the tags on a resource.",
+          "displayName": "Delete tags",
           "isDataAction": false,
           "name": "Microsoft.Resources/tags/delete",
           "origin": null,
@@ -462,12 +462,12 @@
       ]
     },
     {
-      "displayName": "Stav operace nasazení",
+      "displayName": "Deployment operation status",
       "name": "deployments/operationstatuses",
       "operations": [
         {
-          "description": "Získá nebo vypíše stavy operace nasazení.",
-          "displayName": "Získat stav operace nasazení",
+          "description": "Gets or lists deployment operation statuses.",
+          "displayName": "Get deployment operation status",
           "isDataAction": false,
           "name": "Microsoft.Resources/deployments/operationstatuses/read",
           "origin": null,
@@ -476,28 +476,28 @@
       ]
     },
     {
-      "displayName": "Skripty nasazení",
+      "displayName": "Deployment Scripts",
       "name": "deploymentScripts",
       "operations": [
         {
-          "description": "Získá nebo vypíše skripty nasazení.",
-          "displayName": "Přečíst skripty nasazení",
+          "description": "Gets or lists deployment scripts",
+          "displayName": "Read deployment scripts",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje skript nasazení.",
-          "displayName": "Napsat skript nasazení",
+          "description": "Creates or updates a deployment script",
+          "displayName": "Write deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní skript nasazení.",
-          "displayName": "Odstranit skript nasazení",
+          "description": "Deletes a deployment script",
+          "displayName": "Delete deployment script",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/delete",
           "origin": null,
@@ -506,12 +506,12 @@
       ]
     },
     {
-      "displayName": "Protokoly skriptů nasazení",
+      "displayName": "Deployment Script Logs",
       "name": "deploymentScripts/logs",
       "operations": [
         {
-          "description": "Získá nebo vypíše protokoly skriptů nasazení.",
-          "displayName": "Přečíst protokoly skriptů nasazení",
+          "description": "Gets or lists deployment script logs",
+          "displayName": "Read deployment script logs",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentScripts/logs/read",
           "origin": null,
@@ -520,12 +520,12 @@
       ]
     },
     {
-      "displayName": "Zkontrolovat dodržování zásad",
+      "displayName": "Check Policy Compliance",
       "name": "checkPolicyCompliance",
       "operations": [
         {
-          "description": "Kontrola stavu dodržování zásad daného prostředku",
-          "displayName": "Zkontrolovat dodržování zásad",
+          "description": "Check the compliance status of a given resource against resource policies.",
+          "displayName": "Check Policy Compliance",
           "isDataAction": false,
           "name": "Microsoft.Resources/checkPolicyCompliance/read",
           "origin": null,
@@ -534,28 +534,28 @@
       ]
     },
     {
-      "displayName": "Specifikace šablon",
+      "displayName": "Template Specs",
       "name": "templateSpecs",
       "operations": [
         {
-          "description": "Získá nebo vypíše specifikace šablon.",
-          "displayName": "Přečíst specifikaci šablony",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje specifikaci šablony.",
-          "displayName": "Zapsat specifikaci šablony",
+          "description": "Creates or updates a template spec",
+          "displayName": "Write template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní specifikaci šablony.",
-          "displayName": "Odstranit specifikaci šablony",
+          "description": "Deletes a template spec",
+          "displayName": "Delete a template spec",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/delete",
           "origin": null,
@@ -564,28 +564,28 @@
       ]
     },
     {
-      "displayName": "Verze specifikací šablon",
+      "displayName": "Template Spec Versions",
       "name": "templateSpecs/versions",
       "operations": [
         {
-          "description": "Získá nebo vypíše specifikace šablon.",
-          "displayName": "Přečíst verzi specifikace šablony",
+          "description": "Gets or lists template specs",
+          "displayName": "Read template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje verzi specifikace šablony.",
-          "displayName": "Zapsat verzi specifikace šablony",
+          "description": "Creates or updates a template spec version",
+          "displayName": "Write a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní verzi specifikace šablony.",
-          "displayName": "Odstranit verzi specifikace šablony",
+          "description": "Deletes a template spec version",
+          "displayName": "Delete a template spec version",
           "isDataAction": false,
           "name": "Microsoft.Resources/templateSpecs/versions/delete",
           "origin": null,
@@ -594,12 +594,12 @@
       ]
     },
     {
-      "displayName": "Změny",
+      "displayName": "Changes",
       "name": "changes",
       "operations": [
         {
-          "description": "Načte nebo vypíše změny.",
-          "displayName": "Číst změny",
+          "description": "Gets or lists changes",
+          "displayName": "Read Changes",
           "isDataAction": false,
           "name": "Microsoft.Resources/changes/read",
           "origin": null,
@@ -608,12 +608,12 @@
       ]
     },
     {
-      "displayName": "Registrace předplatného",
+      "displayName": "Subscription Registrations",
       "name": "subscriptionRegistrations",
       "operations": [
         {
-          "description": "Načtěte registraci předplatného pro obor názvů poskytovatele prostředků.",
-          "displayName": "Načíst registrace předplatného",
+          "description": "Get Subscription Registration for a resource provider namespace.",
+          "displayName": "Get Subscription Registrations",
           "isDataAction": false,
           "name": "Microsoft.Resources/subscriptionRegistrations/read",
           "origin": null,
@@ -622,28 +622,28 @@
       ]
     },
     {
-      "displayName": "Zásobníky nasazení",
+      "displayName": "Deployment Stacks",
       "name": "deploymentStacks",
       "operations": [
         {
-          "description": "Načte nebo vypíše zásobníky nasazení.",
-          "displayName": "Číst zásobník nasazení",
+          "description": "Gets or lists deployment stacks",
+          "displayName": "Read deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje zásobník nasazení.",
-          "displayName": "Zapisovat zásobníku nasazení",
+          "description": "Creates or updates a deployment stack",
+          "displayName": "Write deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní zásobník nasazení.",
-          "displayName": "Odstranit zásobník nasazení",
+          "description": "Deletes a deployment stack",
+          "displayName": "Delete a deployment stack",
           "isDataAction": false,
           "name": "Microsoft.Resources/deploymentStacks/delete",
           "origin": null,
@@ -676,12 +676,12 @@
       ]
     },
     {
-      "displayName": "Hranice dat",
+      "displayName": "Data Boundary",
       "name": "dataBoundaries",
       "operations": [
         {
-          "description": "Výslovný souhlas na úrovni tenanta s hranicí dat",
-          "displayName": "Výslovný souhlas s hranicí dat",
+          "description": "Tenant level opt-in to data boundary",
+          "displayName": "Opt-in to Data Boundary",
           "isDataAction": false,
           "name": "Microsoft.Resources/dataBoundaries/write",
           "origin": null,
@@ -694,24 +694,24 @@
       "name": "moboBrokers",
       "operations": [
         {
-          "description": "Získá nebo vypíše zprostředkovatele Mobo Broker.",
-          "displayName": "Získat zprostředkovatele Mobo Broker",
+          "description": "Gets or lists mobo brokers",
+          "displayName": "Get Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Vytvoří nebo aktualizuje zprostředkovatele Mobo Broker.",
-          "displayName": "Vytvořit zprostředkovatele Mobo Broker",
+          "description": "Creates or updates a mobo broker",
+          "displayName": "Create Mobo Broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Odstraní zprostředkovatele Mobo Broker.",
-          "displayName": "Odstranit zprostředkovatele Mobo Broker",
+          "description": "Deletes a mobo broker",
+          "displayName": "Delete mobo broker",
           "isDataAction": false,
           "name": "Microsoft.Resources/moboBrokers/delete",
           "origin": null,
@@ -720,12 +720,12 @@
       ]
     },
     {
-      "displayName": "Stav operace služby Mobo",
+      "displayName": "Mobo Service Operation Status",
       "name": "locations/moboOperationStatuses",
       "operations": [
         {
-          "description": "Umožňuje načíst stav operace služby Mobo pro prostředek.",
-          "displayName": "Získat stav operace služby Mobo",
+          "description": "Reads the Mobo Service Operation Status for the resource.",
+          "displayName": "Get the Mobo Service Operation Status",
           "isDataAction": false,
           "name": "Microsoft.Resources/locations/moboOperationStatuses/read",
           "origin": null,
