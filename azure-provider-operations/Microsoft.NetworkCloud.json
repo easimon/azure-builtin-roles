@@ -274,8 +274,16 @@
       "name": "clusterManagers",
       "operations": [
         {
-          "description": "Get a list of cluster managers in the provided subscription.",
-          "displayName": "ClusterManagers_ListBySubscription",
+          "description": "Delete the provided cluster manager.",
+          "displayName": "ClusterManagers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the properties of the provided cluster manager.",
+          "displayName": "ClusterManagers_Get",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusterManagers/read",
           "origin": null,
@@ -290,8 +298,8 @@
           "properties": null
         },
         {
-          "description": "Get the properties of the provided cluster manager.",
-          "displayName": "ClusterManagers_Get",
+          "description": "Get a list of cluster managers in the provided subscription.",
+          "displayName": "ClusterManagers_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusterManagers/read",
           "origin": null,
@@ -306,18 +314,18 @@
           "properties": null
         },
         {
-          "description": "Delete the provided cluster manager.",
-          "displayName": "ClusterManagers_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusterManagers/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Patch properties of the provided cluster manager, or update the tags assigned to the cluster manager. Properties and tag updates can be done independently.",
           "displayName": "ClusterManagers_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/clusterManagers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update the private endpoint connection for the Azure Relay namespace managed by the specified cluster manager. Use this operation to approve or reject a pending private endpoint connection request for the relay namespace managed by the cluster manager.",
+          "displayName": "ClusterManagers_UpdateRelayPrivateEndpointConnection",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusterManagers/updateRelayPrivateEndpointConnection/action",
           "origin": null,
           "properties": null
         }
@@ -392,6 +400,14 @@
           "properties": null
         },
         {
+          "description": "Trigger the continuation of an update for a cluster with a matching update strategy that has paused after completing a segment of the update.",
+          "displayName": "Clusters_ContinueUpdateVersion",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/clusters/continueUpdateVersion/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Triggers the execution of a runtime protection scan to detect and remediate detected issues, in accordance with the cluster configuration.",
           "displayName": "Clusters_ScanRuntime",
           "isDataAction": false,
@@ -400,10 +416,10 @@
           "properties": null
         },
         {
-          "description": "Trigger the continuation of an update for a cluster with a matching update strategy that has paused after completing a segment of the update.",
-          "displayName": "Clusters_ContinueUpdateVersion",
+          "description": "Trigger an inspection of the cluster to perform validation and optional corrective actions based on the supplied additional actions and filters.",
+          "displayName": "Clusters_Inspect",
           "isDataAction": false,
-          "name": "Microsoft.NetworkCloud/clusters/continueUpdateVersion/action",
+          "name": "Microsoft.NetworkCloud/clusters/inspect/action",
           "origin": null,
           "properties": null
         }
@@ -1260,6 +1276,114 @@
           "displayName": "KubernetesClusterFeatures_Update",
           "isDataAction": false,
           "name": "Microsoft.NetworkCloud/kubernetesClusters/features/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "accessBridges",
+      "name": "accessBridges",
+      "operations": [
+        {
+          "description": "Delete the specified access bridge.",
+          "displayName": "AccessBridges_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/accessBridges/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the properties of the provided access bridge.",
+          "displayName": "AccessBridges_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/accessBridges/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of access bridges in the provided resource group.",
+          "displayName": "AccessBridges_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/accessBridges/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of access bridges in the provided subscription.",
+          "displayName": "AccessBridges_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/accessBridges/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a new access bridge or update the properties of the existing access bridge.",
+          "displayName": "AccessBridges_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/accessBridges/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update properties of the provided access bridge, or update tags associated with the access bridge. Properties and tag updates can be done independently.",
+          "displayName": "AccessBridges_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/accessBridges/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "kubernetesVersions",
+      "name": "kubernetesVersions",
+      "operations": [
+        {
+          "description": "Delete the specified Kubernetes version resource.",
+          "displayName": "KubernetesVersions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesVersions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the Kubernetes version resource that describes the available Kubernetes versions for deployment.",
+          "displayName": "KubernetesVersions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of Kubernetes version resources in the provided resource group.",
+          "displayName": "KubernetesVersions_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a list of Kubernetes version resources in the provided subscription.",
+          "displayName": "KubernetesVersions_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesVersions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create the Kubernetes version resource or update its tags. This resource is system managed and should only be created with the name \"default\".",
+          "displayName": "KubernetesVersions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesVersions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update tags associated with the Kubernetes version resource. No other properties are supported for update.",
+          "displayName": "KubernetesVersions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkCloud/kubernetesVersions/write",
           "origin": null,
           "properties": null
         }
