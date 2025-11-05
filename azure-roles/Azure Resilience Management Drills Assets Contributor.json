@@ -1,0 +1,41 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2025-10-30T13:20:01.686694+00:00",
+  "description": "This Role grants permissions on the Chaos Subscription to create, read, and delete Resource Groups, Automation Accounts, and Chaos Experiments for managing chaos engineering workflows required by Azure Resilience Management Drills",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/344b740c-5e7c-4d32-89b2-ee3b51cb89bc",
+  "name": "344b740c-5e7c-4d32-89b2-ee3b51cb89bc",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Automation/automationAccounts/delete",
+        "Microsoft.Automation/automationAccounts/read",
+        "Microsoft.Automation/automationAccounts/write",
+        "Microsoft.Automation/automationAccounts/runbooks/delete",
+        "Microsoft.Automation/automationAccounts/runbooks/read",
+        "Microsoft.Automation/automationAccounts/runbooks/write",
+        "Microsoft.Chaos/experiments/delete",
+        "Microsoft.Chaos/experiments/read",
+        "Microsoft.Chaos/experiments/write",
+        "Microsoft.Chaos/locations/operationResults/read",
+        "Microsoft.Chaos/locations/operationStatuses/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/delete",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure Resilience Management Drills Assets Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2025-10-30T13:20:01.686694+00:00"
+}
