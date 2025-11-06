@@ -26,39 +26,15 @@
       "name": "MySQLSites",
       "operations": [
         {
-          "description": "Gets the MySQLSites resource.",
-          "displayName": "MySQLSites_Get",
+          "description": "Retrieves all MySQL discovery sites across all resource groups within a subscription, providing a comprehensive view of MySQL discovery environments.",
+          "displayName": "MySQLSites_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the MySQLSites resource.",
-          "displayName": "MySQLSites_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the MySQLSites resource.",
-          "displayName": "MySQLSites_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Patch the MySQLSites resource.",
-          "displayName": "MySQLSites_Update",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lits the MySQLSites resource in a resource group.",
+          "description": "Retrieves all MySQL discovery sites within a specific resource group, providing an overview of discovery environments and their current status.",
           "displayName": "MySQLSites_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/read",
@@ -66,8 +42,32 @@
           "properties": null
         },
         {
-          "description": "Lists the MySQLSites resource in a subscription.",
-          "displayName": "MySQLSites_ListBySubscription",
+          "description": "Partially updates specific properties of an existing MySQL discovery site without replacing the entire resource. Use this operation to modify tags or update site configuration parameters.",
+          "displayName": "MySQLSites_Update",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Permanently removes a MySQL discovery site and all its associated discovery data. This operation cannot be undone and will stop all ongoing discovery processes for the site.",
+          "displayName": "MySQLSites_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new MySQL discovery site or updates an existing one. This operation establishes the discovery environment for MySQL servers and configures the association with master sites and migration projects.",
+          "displayName": "MySQLSites_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves detailed information about a specific MySQL discovery site, including its configuration, associated resources, and current operational status.",
+          "displayName": "MySQLSites_Get",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/read",
           "origin": null,
@@ -88,31 +88,15 @@
       "name": "MySQLSites/MySQLServers",
       "operations": [
         {
-          "description": "Gets the MySQLServers resource.",
-          "displayName": "MySQLServers_Get",
+          "description": "Retrieves all MySQL servers discovered within a specific discovery site.",
+          "displayName": "MySQLServers_ListBySite",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the MySQLServers resource.",
-          "displayName": "MySQLServers_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the MySQLServers resource.",
-          "displayName": "MySQLServers_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Patch the MySQLServers resource.",
+          "description": "Partially updates specific properties of a discovered MySQL server without replacing the entire discovery record. Use this operation to update tags, labels, or specific server metrics.",
           "displayName": "MySQLServers_Update",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/write",
@@ -120,8 +104,24 @@
           "properties": null
         },
         {
-          "description": "Lists the MySQLServers resource in MySQLSites.",
-          "displayName": "MySQLServers_ListBySite",
+          "description": "Removes a MySQL server from the discovery inventory, deleting all associated discovery data and metrics for the specified server.",
+          "displayName": "MySQLServers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the discovery record for a MySQL server with detailed configuration, version information, database metrics, and host machine properties.",
+          "displayName": "MySQLServers_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves comprehensive information about a specific discovered MySQL server, including version details, database count, host machine properties, and current support status.",
+          "displayName": "MySQLServers_Get",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/MySQLServers/read",
           "origin": null,
@@ -222,31 +222,15 @@
           "properties": null
         },
         {
-          "description": "Gets the Agents resource.",
-          "displayName": "Agents_Get",
+          "description": "Retrieves all MySQL discovery agents configured within a specific discovery site, including their health status, configuration details, and operational information.",
+          "displayName": "Agents_ListBySite",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the Agents resource.",
-          "displayName": "Agents_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the Agents resource.",
-          "displayName": "Agents_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Patch the Agents resource.",
+          "description": "Partially updates specific properties of a MySQL discovery agent, such as health details or configuration parameters, without replacing the entire agent resource.",
           "displayName": "Agents_Update",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/write",
@@ -254,10 +238,34 @@
           "properties": null
         },
         {
-          "description": "Lists the Agents resource in MySQLSites.",
-          "displayName": "Agents_ListBySite",
+          "description": "Permanently removes a MySQL discovery agent from the site, stopping all discovery operations performed by this agent and cleaning up associated configurations.",
+          "displayName": "Agents_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new MySQL discovery agent or updates an existing one with service principal credentials, appliance configuration, and fabric site association for performing MySQL discovery operations.",
+          "displayName": "Agents_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves detailed information about a specific MySQL discovery agent, including its health status, service principal configuration, and associated appliance details.",
+          "displayName": "Agents_Get",
           "isDataAction": false,
           "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Initiates a refresh operation for a specific MySQL discovery agent to re-discover MySQL servers, update configurations, and synchronize with the latest environment state.",
+          "displayName": "Agents_TriggerRefresh",
+          "isDataAction": false,
+          "name": "Microsoft.MySQLDiscovery/MySQLSites/agents/refresh/action",
           "origin": null,
           "properties": null
         }
