@@ -18727,6 +18727,14 @@
           "name": "Microsoft.CognitiveServices/accounts/projects/delete",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Enables or disables an application",
+          "displayName": "Enable or disable applications",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -19747,36 +19755,6 @@
       ]
     },
     {
-      "displayName": "applications",
-      "name": "accounts/AIServices/applications",
-      "operations": [
-        {
-          "description": "Get applications",
-          "displayName": "Get applications",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/AIServices/applications/read",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Create applications",
-          "displayName": "Create applications",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/AIServices/applications/write",
-          "origin": "user",
-          "properties": null
-        },
-        {
-          "description": "Delete applications",
-          "displayName": "Delete applications",
-          "isDataAction": true,
-          "name": "Microsoft.CognitiveServices/accounts/AIServices/applications/delete",
-          "origin": "user",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "usage",
       "name": "accounts/AIServices/usage",
       "operations": [
@@ -19845,6 +19823,88 @@
           "displayName": "Delete Responsible AI Tool Labels",
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/raiToolLabels/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/applications",
+      "operations": [
+        {
+          "description": "Invoke an application",
+          "displayName": "Invoke an application",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/applications/invoke/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Project",
+      "name": "accounts/projects/applications",
+      "operations": [
+        {
+          "description": "Reads an application",
+          "displayName": "Read applications",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes an application",
+          "displayName": "Write applications",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an application",
+          "displayName": "Delete applications",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts or stops an application agent deployment",
+          "displayName": "Start or stop application agent deployments",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/agentdeployments/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Project",
+      "name": "accounts/projects/applications/agentdeployments",
+      "operations": [
+        {
+          "description": "Reads an application agent deployment",
+          "displayName": "Read application agent deployments",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/agentdeployments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes an agent deployment for an application",
+          "displayName": "Write application agent deployments",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/agentdeployments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an agent deployment under an application",
+          "displayName": "Delete application agent deployments",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/projects/applications/agentdeployments/delete",
           "origin": "user,system",
           "properties": null
         }
