@@ -1,27 +1,209 @@
 {
-  "displayName": "Microsoft.SoftwarePlan",
+  "displayName": "Microsoft SoftwarePlan",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.SoftwarePlan",
   "name": "Microsoft.SoftwarePlan",
   "operations": [
     {
-      "description": null,
-      "displayName": "Registers the resource provider",
+      "description": "Register SoftwarePlan resource provider",
+      "displayName": "Register Microsoft SoftwarePlan",
       "isDataAction": false,
       "name": "Microsoft.SoftwarePlan/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Refresh license summary items for a billing account",
+      "displayName": "Refresh License Summary for a billing account",
+      "isDataAction": false,
+      "name": "Microsoft.SoftwarePlan/refreshLicenseSummary/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Validate software subscription purchase request",
+      "displayName": "Validate Software Subscription Purchase",
+      "isDataAction": false,
+      "name": "Microsoft.SoftwarePlan/validateSoftwareSubscriptionCreate/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Validate software subscription purchase request",
+      "displayName": "Tenant Level Validate Software Subscription Purchase",
+      "isDataAction": false,
+      "name": "Microsoft.SoftwarePlan/tenantLevelValidateSoftwareSubscriptionCreate/action",
       "origin": null,
       "properties": null
     }
   ],
   "resourceTypes": [
     {
-      "displayName": "Operations",
-      "name": "operations",
+      "displayName": "Software Subscriptions",
+      "name": "softwareSubscriptions",
       "operations": [
         {
-          "description": null,
-          "displayName": "List of operations supported by provider.",
+          "description": "Read any software subscription",
+          "displayName": "Read Software Subscriptions",
           "isDataAction": false,
-          "name": "Microsoft.SoftwarePlan/operations/read",
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any software subscription",
+          "displayName": "Create or Update Software Subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any software subscription",
+          "displayName": "Delete Software Subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel any software subscription",
+          "displayName": "Cancel Software Subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List keys of any software subscription",
+          "displayName": "List Keys of Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/listKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refresh Fulfillment of a Software Subscription",
+          "displayName": "Refresh Fulfillment of a Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/refreshFulfillment/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Software Billing Subscriptions",
+      "name": "softwareBillingSubscriptions",
+      "operations": [
+        {
+          "description": "Read any software billing subscription",
+          "displayName": "Read Software Billing Subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareBillingSubscriptions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "License Summary",
+      "name": "licenseSummary",
+      "operations": [
+        {
+          "description": "Read license summary items for a billing account",
+          "displayName": "Read License Summary for a billing account",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/licenseSummary/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Hybrid Use Benefits",
+      "name": "hybridUseBenefits",
+      "operations": [
+        {
+          "description": "Read any hybrid use benefit",
+          "displayName": "Read Hybrid Use Benefits",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/hybridUseBenefits/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update any hybrid use benefit",
+          "displayName": "Create or Update Hybrid Use Benefits",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/hybridUseBenefits/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any hybrid use benefit",
+          "displayName": "Delete Hybrid Use Benefits",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/hybridUseBenefits/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SoftwareSubscriptions/ProductKeys",
+      "name": "softwareSubscriptions/productKeys",
+      "operations": [
+        {
+          "description": "List Product Keys of a software subscription",
+          "displayName": "List Product Keys of a Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Provide Full 5x5 Key of a Product Key of a Software Subscription",
+          "displayName": "Provide Full 5x5 Key of a Product Key of a Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/showFullKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Process Activation Units Offset on a Product Key Activations",
+          "displayName": "Process Activation Units Offset on a Product Key Activations",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/processActivationUnitsOffset/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Replace a Product Key of a Software Subscription",
+          "displayName": "Replace a Product Key of a Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/replaceKey/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SoftwareSubscriptions/ProductDownloadOptions",
+      "name": "softwareSubscriptions/productDownloadOptions",
+      "operations": [
+        {
+          "description": "List Product Download Options of a Software Subscription",
+          "displayName": "List Product Download Options of a Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/productDownloadOptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate Product Download Links of a Software Subscription",
+          "displayName": "Generate Product Download Links of a Software Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwareSubscriptions/productDownloadOptions/generateDownloadLinks/action",
           "origin": null,
           "properties": null
         }
