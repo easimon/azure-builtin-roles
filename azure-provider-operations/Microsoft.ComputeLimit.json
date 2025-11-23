@@ -1,8 +1,83 @@
 {
-  "displayName": null,
+  "displayName": "Microsoft Compute Limit",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ComputeLimit",
   "name": "Microsoft.ComputeLimit",
   "operations": [],
-  "resourceTypes": [],
+  "resourceTypes": [
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Reads all available operations for the Microsoft.ComputeLimit resource provider.",
+          "displayName": "Read Available Operations",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Guest Subscriptions",
+      "name": "locations/guestSubscriptions",
+      "operations": [
+        {
+          "description": "Reads guest subscriptions for a given host subscription within a location.",
+          "displayName": "Read Guest Subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/locations/guestSubscriptions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Adds a subscription as a guest to consume a host subscription's shared compute limits.",
+          "displayName": "Add Guest Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/locations/guestSubscriptions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Removes a subscription as a guest preventing it from consuming the host subscription's shared compute limits.",
+          "displayName": "Delete Guest Subscription",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/locations/guestSubscriptions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Shared Limits",
+      "name": "locations/sharedLimits",
+      "operations": [
+        {
+          "description": "Lists all compute shared limits a host subscription shares with its guest subscriptions.",
+          "displayName": "Read Shared Limits",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/locations/sharedLimits/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Enables sharing of a compute limit by a host subscription with its guest subscriptions.",
+          "displayName": "Enable Shared Limit",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/locations/sharedLimits/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Disables sharing of a compute limit by a host subscription with its guest subscriptions.",
+          "displayName": "Disable Shared Limit",
+          "isDataAction": false,
+          "name": "Microsoft.ComputeLimit/locations/sharedLimits/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
