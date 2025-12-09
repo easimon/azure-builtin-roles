@@ -1282,52 +1282,120 @@
       ]
     },
     {
-      "displayName": "Certificates",
-      "name": "batchAccounts/certificates",
+      "displayName": "ComputePools",
+      "name": "batchAccounts/computePools",
       "operations": [
         {
-          "description": "Lists certificates on a Batch account or gets the properties of a certificate",
-          "displayName": "List or Get Certificates",
+          "description": "Lists Compute Pools on a Batch Account or gets the properties of a Compute Pool",
+          "displayName": "List or Get Compute Pools",
           "isDataAction": false,
-          "name": "Microsoft.Batch/batchAccounts/certificates/read",
+          "name": "Microsoft.Batch/batchAccounts/computePools/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates a new certificate on a Batch account or updates an existing certificate",
-          "displayName": "Create or Update Certificate",
+          "description": "Creates a new Compute Pool on a Batch Account or updates an existing Compute Pool",
+          "displayName": "Create or Update Compute Pool",
           "isDataAction": false,
-          "name": "Microsoft.Batch/batchAccounts/certificates/write",
+          "name": "Microsoft.Batch/batchAccounts/computePools/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes a certificate from a Batch account",
-          "displayName": "Delete Certificate",
+          "description": "Deletes a Compute Pool from a Batch Account",
+          "displayName": "Delete Compute Pool",
           "isDataAction": false,
-          "name": "Microsoft.Batch/batchAccounts/certificates/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Cancels the failed deletion of a certificate on a Batch account",
-          "displayName": "Cancel Delete Certificate",
-          "isDataAction": false,
-          "name": "Microsoft.Batch/batchAccounts/certificates/cancelDelete/action",
+          "name": "Microsoft.Batch/batchAccounts/computePools/delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Certificates",
-      "name": "batchAccounts/certificateOperationResults",
+      "displayName": "ComputePools",
+      "name": "batchAccounts/computePoolOperationResults",
       "operations": [
         {
-          "description": "Gets the results of a long running certificate operation on a Batch account",
-          "displayName": "Get Certificate Operation Results",
+          "description": "Gets the results of a long running Compute Pool operation on a Batch Account",
+          "displayName": "Get Compute Pool Operation Results",
           "isDataAction": false,
-          "name": "Microsoft.Batch/batchAccounts/certificateOperationResults/read",
+          "name": "Microsoft.Batch/batchAccounts/computePoolOperationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ComputeNodes",
+      "name": "batchAccounts/computePools/computeNodes",
+      "operations": [
+        {
+          "description": "Lists Compute Nodes on a Compute Pool or gets the properties of a Compute Node",
+          "displayName": "List or Get Compute Nodes",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates an existing Compute Node",
+          "displayName": "Update Compute Node",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Remove a Compute Node from a Compute Pool",
+          "displayName": "Remove Compute Node",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/remove/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reboot a Compute Node",
+          "displayName": "Reboot Compute Node",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/reboot/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reimage a Compute Node",
+          "displayName": "Reimage Compute Node",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/reimage/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deallocate a Compute Node",
+          "displayName": "Deallocate Compute Node",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/deallocate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Start a Compute Node",
+          "displayName": "Start Compute Node",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computePools/computeNodes/start/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ComputeNodes",
+      "name": "batchAccounts/computeNodeOperationResults",
+      "operations": [
+        {
+          "description": "Gets the results of a long running Compute Node operation on a Batch Account",
+          "displayName": "Get Compute Node Operation Results",
+          "isDataAction": false,
+          "name": "Microsoft.Batch/batchAccounts/computeNodeOperationResults/read",
           "origin": null,
           "properties": null
         }
