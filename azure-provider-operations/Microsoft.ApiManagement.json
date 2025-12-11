@@ -1206,7 +1206,7 @@
       "operations": [
         {
           "description": "Lists all subscriptions of the API Management service instance. or Gets the specified Subscription entity (without keys).",
-          "displayName": "Get subscriptions list or Get subscripiton details",
+          "displayName": "Get subscriptions list or Get subscription details",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/subscriptions/read",
           "origin": null,
@@ -1246,7 +1246,7 @@
         },
         {
           "description": "Gets the specified Subscription keys.",
-          "displayName": "Get subscripiton keys",
+          "displayName": "Get subscription keys",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/subscriptions/listSecrets/action",
           "origin": null,
@@ -3874,7 +3874,7 @@
       "operations": [
         {
           "description": "Lists all subscriptions of the API Management service instance. or Gets the specified Subscription entity (without keys).",
-          "displayName": "Get subscriptions list or Get subscripiton details",
+          "displayName": "Get subscriptions list or Get subscription details",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/read",
           "origin": null,
@@ -3914,7 +3914,7 @@
         },
         {
           "description": "Gets the specified Subscription keys.",
-          "displayName": "Get subscripiton keys",
+          "displayName": "Get subscription keys",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/workspaces/subscriptions/listSecrets/action",
           "origin": null,
@@ -4909,36 +4909,6 @@
       ]
     },
     {
-      "displayName": "Documentations",
-      "name": "service/workspaces/documentations",
-      "operations": [
-        {
-          "description": "Lists all Documentations of the API Management service instance. or Gets the details of the documentation specified by its identifier.",
-          "displayName": "Get documentations list or Get documentation details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/documentations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or Updates a documentation. or Updates the specified documentation of the API Management service instance.",
-          "displayName": "Create documentation or Update documentation",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/documentations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete documentation.",
-          "displayName": "Remove documentation",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/documentations/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "Tenant policies configuration",
       "name": "service/policyRestrictions",
       "operations": [
@@ -4963,36 +4933,6 @@
           "displayName": "Remove Tenant policy restriction from policies",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/policyRestrictions/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "documentations",
-      "name": "service/documentations",
-      "operations": [
-        {
-          "description": "Lists all Documentations of the API Management service instance. or Gets the details of the documentation specified by its identifier.",
-          "displayName": "Get documentations list or Get documentation details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/documentations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or Updates a documentation. or Updates the specified documentation of the API Management service instance.",
-          "displayName": "Create documentation or Update documentation",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/documentations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete documentation.",
-          "displayName": "Remove documentation",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/documentations/delete",
           "origin": null,
           "properties": null
         }
@@ -5299,6 +5239,96 @@
           "displayName": "Get Client Application secrets",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/clientApplications/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API MCP tools",
+      "name": "service/apis/tools",
+      "operations": [
+        {
+          "description": "Lists a collection of mcp tools for the specified API. or Gets the details of the API MCP tool specified by its identifier.",
+          "displayName": "Get API McpTools or Get API mcp tool details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new mcp tool in the API or updates an existing one. or Updates the details of the mcp tool in the API specified by its identifier.",
+          "displayName": "Create API mcp tool or Update API mcp tool",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified mcp tool in the API.",
+          "displayName": "Remove API mcp tool",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/apis/tools/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API MCP tools",
+      "name": "service/workspaces/apis/tools",
+      "operations": [
+        {
+          "description": "Lists a collection of mcp tools for the specified API. or Gets the details of the API MCP tool specified by its identifier.",
+          "displayName": "Get API McpTools or Get API mcp tool details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new mcp tool in the API or updates an existing one. or Updates the details of the mcp tool in the API specified by its identifier.",
+          "displayName": "Create API mcp tool or Update API mcp tool",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified mcp tool in the API.",
+          "displayName": "Remove API mcp tool",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/apis/tools/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "API MCP tools",
+      "name": "service/tenants/apis/tools",
+      "operations": [
+        {
+          "description": "Lists a collection of mcp tools for the specified API. or Gets the details of the API MCP tool specified by its identifier.",
+          "displayName": "Get API McpTools or Get API mcp tool details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new mcp tool in the API or updates an existing one. or Updates the details of the mcp tool in the API specified by its identifier.",
+          "displayName": "Create API mcp tool or Update API mcp tool",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified mcp tool in the API.",
+          "displayName": "Remove API mcp tool",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/tenants/apis/tools/delete",
           "origin": null,
           "properties": null
         }
