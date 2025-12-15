@@ -59,7 +59,7 @@ jobs:
     needs: update
     steps:
       - name: Download Tweets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           path: ${{ env.TWEET_PATH }}/
       - name: Create Matrix
