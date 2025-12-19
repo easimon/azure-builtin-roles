@@ -70,7 +70,7 @@
       "name": "storagePools",
       "operations": [
         {
-          "description": "List StoragePool resources by subscription ID",
+          "description": "List storage pools by Azure subscription ID",
           "displayName": "StoragePools_ListBySubscription",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/read",
@@ -78,7 +78,7 @@
           "properties": null
         },
         {
-          "description": "List StoragePool resources by resource group",
+          "description": "List storage pools by resource group",
           "displayName": "StoragePools_ListByResourceGroup",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/read",
@@ -86,7 +86,7 @@
           "properties": null
         },
         {
-          "description": "Get a StoragePool",
+          "description": "Get a storage pool",
           "displayName": "StoragePools_Get",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/read",
@@ -94,7 +94,7 @@
           "properties": null
         },
         {
-          "description": "Create a StoragePool",
+          "description": "Create a storage pool",
           "displayName": "StoragePools_Create",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/write",
@@ -102,7 +102,7 @@
           "properties": null
         },
         {
-          "description": "Delete a StoragePool",
+          "description": "Delete a storage pool",
           "displayName": "StoragePools_Delete",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/delete",
@@ -110,7 +110,7 @@
           "properties": null
         },
         {
-          "description": "Update a StoragePool",
+          "description": "Update a storage pool",
           "displayName": "StoragePools_Update",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/write",
@@ -118,7 +118,7 @@
           "properties": null
         },
         {
-          "description": "Disables the AVS connection support for a specific Storage Pool",
+          "description": "Disable the existing AVS connection",
           "displayName": "StoragePools_DisableAvsConnection",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/disableAvsConnection/action",
@@ -126,7 +126,7 @@
           "properties": null
         },
         {
-          "description": "Enables the AVS connection support for a specific Storage Pool",
+          "description": "Initiate a connection between the storage pool and a specified AVS SDDC resource",
           "displayName": "StoragePools_EnableAvsConnection",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/enableAvsConnection/action",
@@ -134,7 +134,7 @@
           "properties": null
         },
         {
-          "description": "Finalize the AVS connection for a specific Storage Pool",
+          "description": "Finalize an already started AVS connection to a specific AVS SDDC",
           "displayName": "StoragePools_FinalizeAvsConnection",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/finalizeAvsConnection/action",
@@ -142,7 +142,7 @@
           "properties": null
         },
         {
-          "description": "Returns the information about the on-going connection of the storage pool to AVS",
+          "description": "Returns current information about an on-going connection to an AVS instance",
           "displayName": "StoragePools_GetAvsConnection",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/getAvsConnection/action",
@@ -158,7 +158,7 @@
           "properties": null
         },
         {
-          "description": "Lists health metadata for specific Storage Pool.",
+          "description": "Retrieve health metrics of a storage pool",
           "displayName": "StoragePools_GetHealthStatus",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/getHealthStatus/action",
@@ -166,7 +166,7 @@
           "properties": null
         },
         {
-          "description": "Make sure that all steps necessary to enable this storage pool to be connected to the AVS instance are fully working, and fix them if not",
+          "description": "Test and repair, if needed, all configuration elements of the storage pool connection to the AVS instance",
           "displayName": "StoragePools_RepairAvsConnection",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/repairAvsConnection/action",
@@ -180,7 +180,7 @@
       "name": "reservations",
       "operations": [
         {
-          "description": "List Reservation resources by subscription ID",
+          "description": "List reservations by Azure subscription ID",
           "displayName": "Reservations_ListBySubscription",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/read",
@@ -188,7 +188,7 @@
           "properties": null
         },
         {
-          "description": "List Reservation resources by resource group",
+          "description": "List reservations by resource group",
           "displayName": "Reservations_ListByResourceGroup",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/read",
@@ -196,7 +196,7 @@
           "properties": null
         },
         {
-          "description": "Get a Reservation",
+          "description": "Get a reservation",
           "displayName": "Reservations_Get",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/read",
@@ -204,7 +204,7 @@
           "properties": null
         },
         {
-          "description": "Create a Reservation",
+          "description": "Create a reservation",
           "displayName": "Reservations_Create",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/write",
@@ -212,7 +212,7 @@
           "properties": null
         },
         {
-          "description": "Delete a Reservation",
+          "description": "Delete a reservation",
           "displayName": "Reservations_Delete",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/delete",
@@ -220,7 +220,7 @@
           "properties": null
         },
         {
-          "description": "Update a Reservation",
+          "description": "Update a reservation",
           "displayName": "Reservations_Update",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/write",
@@ -228,7 +228,23 @@
           "properties": null
         },
         {
-          "description": "Limits used for creation of resources.",
+          "description": "Provides a summarized report along with actions for resources billed via given reservation",
+          "displayName": "Reservations_GetBillingReport",
+          "isDataAction": false,
+          "name": "PureStorage.Block/reservations/getBillingReport/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Provides various statistics about resources billed via given reservation.",
+          "displayName": "Reservations_GetBillingStatus",
+          "isDataAction": false,
+          "name": "PureStorage.Block/reservations/getBillingStatus/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Limits constraining certain resource properties.",
           "displayName": "Reservations_GetResourceLimits",
           "isDataAction": false,
           "name": "PureStorage.Block/reservations/getResourceLimits/action",
@@ -242,7 +258,7 @@
       "name": "storagePools/avsStorageContainers",
       "operations": [
         {
-          "description": "List AvsStorageContainer resources by StoragePool",
+          "description": "List AVS storage containers by storage pool",
           "displayName": "AvsStorageContainers_ListByStoragePool",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/read",
@@ -250,7 +266,7 @@
           "properties": null
         },
         {
-          "description": "Get a AvsStorageContainer",
+          "description": "Get an AVS storage container",
           "displayName": "AvsStorageContainers_Get",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/read",
@@ -258,7 +274,7 @@
           "properties": null
         },
         {
-          "description": "Delete a AvsStorageContainer",
+          "description": "Delete an AVS storage container",
           "displayName": "AvsStorageContainers_Delete",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/delete",
@@ -272,7 +288,7 @@
       "name": "storagePools/avsVms",
       "operations": [
         {
-          "description": "List AvsVm resources by StoragePool",
+          "description": "List AVS VMs by storage pool",
           "displayName": "AvsVms_ListByStoragePool",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/read",
@@ -280,7 +296,7 @@
           "properties": null
         },
         {
-          "description": "Get a AvsVm",
+          "description": "Get an AVS VM",
           "displayName": "AvsVms_Get",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/read",
@@ -288,7 +304,7 @@
           "properties": null
         },
         {
-          "description": "Delete a AvsVm",
+          "description": "Delete an AVS VM",
           "displayName": "AvsVms_Delete",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/delete",
@@ -296,7 +312,7 @@
           "properties": null
         },
         {
-          "description": "Update a AvsVm",
+          "description": "Update an AVS VM",
           "displayName": "AvsVms_Update",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/write",
@@ -310,7 +326,7 @@
       "name": "storagePools/avsStorageContainers/volumes",
       "operations": [
         {
-          "description": "List AvsStorageContainerVolume resources by AvsStorageContainer",
+          "description": "List volumes in an AVS storage container",
           "displayName": "AvsStorageContainerVolumes_ListByAvsStorageContainer",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/volumes/read",
@@ -318,7 +334,7 @@
           "properties": null
         },
         {
-          "description": "Get a AvsStorageContainerVolume",
+          "description": "Get a volume in an AVS storage container",
           "displayName": "AvsStorageContainerVolumes_Get",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/volumes/read",
@@ -326,7 +342,7 @@
           "properties": null
         },
         {
-          "description": "Delete a AvsStorageContainerVolume",
+          "description": "Delete a volume in an AVS storage container",
           "displayName": "AvsStorageContainerVolumes_Delete",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/volumes/delete",
@@ -334,7 +350,7 @@
           "properties": null
         },
         {
-          "description": "Update a AvsStorageContainerVolume",
+          "description": "Update a volume in an AVS storage container",
           "displayName": "AvsStorageContainerVolumes_Update",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsStorageContainers/volumes/write",
@@ -348,7 +364,7 @@
       "name": "storagePools/avsVms/avsVmVolumes",
       "operations": [
         {
-          "description": "List AvsVmVolume resources by AvsVm",
+          "description": "List volumes in an AVS VM",
           "displayName": "AvsVmVolumes_ListByAvsVm",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/avsVmVolumes/read",
@@ -356,7 +372,7 @@
           "properties": null
         },
         {
-          "description": "Get a AvsVmVolume",
+          "description": "Get a volume in an AVS VM",
           "displayName": "AvsVmVolumes_Get",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/avsVmVolumes/read",
@@ -364,7 +380,7 @@
           "properties": null
         },
         {
-          "description": "Delete a AvsVmVolume",
+          "description": "Delete a volume in an AVS VM",
           "displayName": "AvsVmVolumes_Delete",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/avsVmVolumes/delete",
@@ -372,10 +388,24 @@
           "properties": null
         },
         {
-          "description": "Update a AvsVmVolume",
+          "description": "Update a volume in an AVS VM",
           "displayName": "AvsVmVolumes_Update",
           "isDataAction": false,
           "name": "PureStorage.Block/storagePools/avsVms/avsVmVolumes/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "registeredSubscriptions",
+      "name": "registeredSubscriptions",
+      "operations": [
+        {
+          "description": "read registeredSubscriptions",
+          "displayName": "read_registeredSubscriptions",
+          "isDataAction": false,
+          "name": "PureStorage.Block/registeredSubscriptions/read",
           "origin": null,
           "properties": null
         }
