@@ -1634,11 +1634,11 @@
       ]
     },
     {
-      "displayName": "Database Top Queries Statistics",
+      "displayName": "Database Query Statistics",
       "name": "servers/databases/topQueries/statistics",
       "operations": [
         {
-          "description": "Returns aggregated runtime statistics for selected query in selected time period",
+          "description": "Returns aggregated statistics for selected query in selected time period",
           "displayName": "Get Database Top Queries statistics",
           "isDataAction": false,
           "name": "Microsoft.Sql/servers/databases/topQueries/statistics/read",
@@ -1648,19 +1648,11 @@
       ]
     },
     {
-      "displayName": "Database Top Queries query text",
+      "displayName": "Database Top Queries",
       "name": "servers/databases/topQueries",
       "operations": [
         {
-          "description": "Returns the Transact-SQL text for selected query ID",
-          "displayName": "Get Database Top Queries query text",
-          "isDataAction": false,
-          "name": "Microsoft.Sql/servers/databases/topQueries/queryText/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Returns aggregated runtime statistics for selected query in selected time period",
+          "description": "Returns aggregated statistics for selected number of queries in selected time period",
           "displayName": "Get Top Queries for the database",
           "isDataAction": false,
           "name": "Microsoft.Sql/servers/databases/topQueries/read",
@@ -7772,6 +7764,22 @@
           "name": "Microsoft.Sql/managedInstances/distributedAvailabilityGroups/failover/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Adds databases to an existing Azure SQL Managed Instance Link",
+          "displayName": "Adds databases to an existing Azure SQL Managed Instance Link",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/managedInstances/distributedAvailabilityGroups/addDatabases/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes databases from an existing Azure SQL Managed Instance Link",
+          "displayName": "Removes databases from an existing Azure SQL Managed Instance Link",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/managedInstances/distributedAvailabilityGroups/removeDatabases/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -8950,6 +8958,20 @@
           "displayName": "Get instance pool operations for specific instance pool",
           "isDataAction": false,
           "name": "Microsoft.Sql/instancePools/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Database Top Queries Query Text",
+      "name": "servers/databases/topQueries/queryText",
+      "operations": [
+        {
+          "description": "Returns the text for selected query ID",
+          "displayName": "Get Database Top Queries query text",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/servers/databases/topQueries/queryText/read",
           "origin": null,
           "properties": null
         }
