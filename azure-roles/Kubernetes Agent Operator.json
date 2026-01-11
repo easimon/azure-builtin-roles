@@ -1,0 +1,44 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2024-03-22T15:55:37.942777+00:00",
+  "description": "Grants Microsoft Defender for Cloud access to Azure Kubernetes Services",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "name": "5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.ContainerService/managedClusters/read",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write",
+        "Microsoft.ContainerService/managedClusters/write",
+        "Microsoft.Security/pricings/securityoperators/read",
+        "Microsoft.OperationalInsights/workspaces/write",
+        "Microsoft.OperationalInsights/workspaces/read",
+        "Microsoft.OperationalInsights/workspaces/listKeys/action",
+        "Microsoft.OperationalInsights/workspaces/sharedkeys/action",
+        "Microsoft.OperationalInsights/workspaces/sharedkeys/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Kubernetes Agent Operator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2024-12-09T16:09:08.130056+00:00"
+}
