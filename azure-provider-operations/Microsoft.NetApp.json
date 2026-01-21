@@ -115,7 +115,7 @@
         },
         {
           "description": "Moves volume to another pool.",
-          "displayName": "Change pool for volume",
+          "displayName": "Change pool for volume.",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/poolChange/action",
           "origin": "user,system",
@@ -254,6 +254,14 @@
           "displayName": "List user and group quota report",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listQuotaReport/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Update AVS datastore information for a volume. Operation can only be called from Azure Vmware Solution",
+          "displayName": "Update AVS datastore information",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/updateAVSDataStoreInfo/action",
           "origin": "user,system",
           "properties": null
         }
@@ -2364,10 +2372,332 @@
           "properties": null
         },
         {
-          "description": "Moves volume to another pool.",
-          "displayName": "Change pool for volume",
+          "description": "Moves a cache volume to another pool.",
+          "displayName": "Change pool for a cache volume.",
           "isDataAction": false,
           "name": "Microsoft.NetApp/netAppAccounts/capacityPools/caches/poolChange/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic backup policies resource type",
+      "name": "elasticAccounts/elasticBackupPolicies",
+      "operations": [
+        {
+          "description": "Returns the details of elastic backup policy resource(s).",
+          "displayName": "Read elastic backup policy(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupPolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an elastic backup policy resource.",
+          "displayName": "Write elastic backup policy",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupPolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic backup policy.",
+          "displayName": "Delete an elastic backup policy",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupPolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic backup vault resource type",
+      "name": "elasticAccounts/elasticBackupVaults",
+      "operations": [
+        {
+          "description": "Reads an elastic backup vault resource.",
+          "displayName": "Read elastic backup vault resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupVaults/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes an elastic backup vault resource.",
+          "displayName": "Write elastic backup vault resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupVaults/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic backup vault resource.",
+          "displayName": "Delete an elastic backup vault resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupVaults/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic backups resource type",
+      "name": "elasticAccounts/elasticBackupVaults/elasticBackups",
+      "operations": [
+        {
+          "description": "Reads an elastic backup resource.",
+          "displayName": "Read elastic backup resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupVaults/elasticBackups/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Writes an elastic backup resource.",
+          "displayName": "Write elastic backup resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupVaults/elasticBackups/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic backup resource.",
+          "displayName": "Delete an elastic backup resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticBackupVaults/elasticBackups/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic snapshots resource type",
+      "name": "elasticAccounts/elasticCapacityPools/elasticVolumes/elasticSnapshots",
+      "operations": [
+        {
+          "description": "Returns the details of elastic snapshot resource(s).",
+          "displayName": "Read elastic snapshots(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/elasticSnapshots/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates an elastic snapshot.",
+          "displayName": "Write elastic snapshot",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/elasticSnapshots/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic snapshot.",
+          "displayName": "Delete an elastic snapshot",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/elasticSnapshots/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic Accounts resource type",
+      "name": "elasticAccounts",
+      "operations": [
+        {
+          "description": "Returns the details of elastic account resource(s).",
+          "displayName": "Read elastic account(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an elastic account resource.",
+          "displayName": "Write elastic account",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic account.",
+          "displayName": "Delete an elastic account",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic capacity pools resource type",
+      "name": "elasticAccounts/elasticCapacityPools",
+      "operations": [
+        {
+          "description": "Returns the details of elastic capacity pool resource(s).",
+          "displayName": "Read elastic capacity pool(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an elastic capacity pool resource.",
+          "displayName": "Write an elastic capacity pool",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic capacity pool.",
+          "displayName": "Delete an elastic capacity pool",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Change logical availability zone for an elastic capacityPool in a zone aware region and storage.",
+          "displayName": "Change availability zone for an elastic capacityPool",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/changeZone/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Checks file path availability for an elastic capacity pool.",
+          "displayName": "Elastic pool file path availability check",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/checkVolumeFilePathAvailability/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic volumes resource type",
+      "name": "elasticAccounts/elasticCapacityPools/elasticVolumes",
+      "operations": [
+        {
+          "description": "Returns the details of elastic volume resource(s).",
+          "displayName": "Read elastic volume(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an elastic volume resource.",
+          "displayName": "Write elastic volume",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic volume.",
+          "displayName": "Delete an elastic volume",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Revert volume to specific snapshot",
+          "displayName": "Revert volume resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticCapacityPools/elasticVolumes/revert/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic snapshot policies resource type",
+      "name": "elasticAccounts/elasticSnapshotPolicies",
+      "operations": [
+        {
+          "description": "Returns the details of elastic snapshot policy resource(s).",
+          "displayName": "Read elastic snapshot policy(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticSnapshotPolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an elastic snapshot policy resource.",
+          "displayName": "Write elastic snapshot policy",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticSnapshotPolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an elastic snapshot policy.",
+          "displayName": "Delete an elastic snapshot policy",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticSnapshotPolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic snapshot policies resource type",
+      "name": "elasticAccounts/elasticSnapshotPolicies/elasticVolumes",
+      "operations": [
+        {
+          "description": "List connected elastic volumes",
+          "displayName": "List elastic volumes connected to the elastic snapshot policy",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/elasticAccounts/elasticSnapshotPolicies/elasticVolumes/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Elastic RegionInfos resource type",
+      "name": "locations/elasticRegionInfos",
+      "operations": [
+        {
+          "description": "Reads an elastic regionInfos resource",
+          "displayName": "Read an elastic regionInfos resource",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/locations/elasticRegionInfos/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ActiveDirectoryConfigs resource type",
+      "name": "activeDirectoryConfigs",
+      "operations": [
+        {
+          "description": "Returns the details of an active directory config resource(s).",
+          "displayName": "Read an active directory config(s)",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/activeDirectoryConfigs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an active directory config resource.",
+          "displayName": "Write an active directory config",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/activeDirectoryConfigs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an active directory config.",
+          "displayName": "Delete an active directory config",
+          "isDataAction": false,
+          "name": "Microsoft.NetApp/activeDirectoryConfigs/delete",
           "origin": "user,system",
           "properties": null
         }
