@@ -2680,6 +2680,14 @@
           "name": "Microsoft.Migrate/assessmentProjects/heterogeneousAssessments/downloadurl/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Generate the heterogeneous AssessmentReport",
+          "displayName": "Get heterogeneous AssessmentReport",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/heterogeneousAssessments/generateReport/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -2933,7 +2941,7 @@
           "description": "Update Operation Status",
           "displayName": "Update Operation status",
           "isDataAction": false,
-          "name": "Microsoft.Migrate/locations/operationStatuses/write",
+          "name": "Microsoft.Migrate/locations/operationStatuses/read",
           "origin": "system",
           "properties": null
         }
@@ -3343,6 +3351,44 @@
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentProjects/fileshareAssessments/assessedFileShares/write",
           "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Report",
+      "name": "migrateProjects/reports",
+      "operations": [
+        {
+          "description": "Get Report",
+          "displayName": "Gets Report",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/reports/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or Update Report",
+          "displayName": "Creates or Updates Report",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/reports/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete Report",
+          "displayName": "Deletes Report",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/reports/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Get Blob SAS URI for the Report",
+          "displayName": "Gets Blob SAS URI for the Report",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/reports/download/action",
+          "origin": "user,system",
           "properties": null
         }
       ]
