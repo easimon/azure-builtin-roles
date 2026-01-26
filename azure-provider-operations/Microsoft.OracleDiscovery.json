@@ -22,22 +22,14 @@
   ],
   "resourceTypes": [
     {
-      "displayName": "locations/operationStatuses",
-      "name": "locations/operationStatuses",
+      "displayName": "operations",
+      "name": "operations",
       "operations": [
         {
-          "description": "read operationStatuses",
-          "displayName": "read_operationStatuses",
+          "description": "read operations",
+          "displayName": "read_operations",
           "isDataAction": false,
-          "name": "Microsoft.OracleDiscovery/locations/operationStatuses/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "write operationStatuses",
-          "displayName": "write_operationStatuses",
-          "isDataAction": false,
-          "name": "Microsoft.OracleDiscovery/locations/operationStatuses/write",
+          "name": "Microsoft.OracleDiscovery/operations/read",
           "origin": null,
           "properties": null
         }
@@ -48,16 +40,32 @@
       "name": "OracleSites",
       "operations": [
         {
-          "description": "Gets the OracleSites resource.",
-          "displayName": "OracleSites_Get",
+          "description": "Trigger Refresh Refresh action",
+          "displayName": "OracleSites_TriggerRefresh",
+          "isDataAction": false,
+          "name": "Microsoft.OracleDiscovery/OracleSites/Refresh/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the OracleSites resource in a subscription.",
+          "displayName": "OracleSites_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the OracleSites resource.",
-          "displayName": "OracleSites_CreateOrUpdate",
+          "description": "Lits the OracleSites resource in a resource group.",
+          "displayName": "OracleSites_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.OracleDiscovery/OracleSites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Patch the OracleSites resource.",
+          "displayName": "OracleSites_Update",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/write",
           "origin": null,
@@ -72,32 +80,16 @@
           "properties": null
         },
         {
-          "description": "Patch the OracleSites resource.",
-          "displayName": "OracleSites_Update",
+          "description": "Puts the OracleSites resource.",
+          "displayName": "OracleSites_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Trigger Refresh Refresh action",
-          "displayName": "OracleSites_TriggerRefresh",
-          "isDataAction": false,
-          "name": "Microsoft.OracleDiscovery/OracleSites/Refresh/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lits the OracleSites resource in a resource group.",
-          "displayName": "OracleSites_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.OracleDiscovery/OracleSites/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists the OracleSites resource in a subscription.",
-          "displayName": "OracleSites_ListBySubscription",
+          "description": "Gets the OracleSites resource.",
+          "displayName": "OracleSites_Get",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/read",
           "origin": null,
@@ -110,16 +102,16 @@
       "name": "OracleSites/OracleServers",
       "operations": [
         {
-          "description": "Gets the OracleServers resource.",
-          "displayName": "OracleServers_Get",
+          "description": "Lists the OracleSites resource in OracleSites.",
+          "displayName": "OracleServers_ListBySite",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleServers/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the OracleServers resource.",
-          "displayName": "OracleServers_CreateOrUpdate",
+          "description": "Patch the OracleSites resource.",
+          "displayName": "OracleServers_Update",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleServers/write",
           "origin": null,
@@ -134,16 +126,16 @@
           "properties": null
         },
         {
-          "description": "Patch the OracleSites resource.",
-          "displayName": "OracleServers_Update",
+          "description": "Puts the OracleServers resource.",
+          "displayName": "OracleServers_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleServers/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the OracleSites resource in OracleSites.",
-          "displayName": "OracleServers_ListBySite",
+          "description": "Gets the OracleServers resource.",
+          "displayName": "OracleServers_Get",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleServers/read",
           "origin": null,
@@ -156,16 +148,16 @@
       "name": "OracleSites/OracleDatabases",
       "operations": [
         {
-          "description": "Gets the OracleDatabases resource.",
-          "displayName": "OracleDatabases_Get",
+          "description": "Lists the OracleSites resource in OracleSites.",
+          "displayName": "OracleDatabases_ListBySite",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleDatabases/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the OracleDatabases resource.",
-          "displayName": "OracleDatabases_CreateOrUpdate",
+          "description": "Patch the OracleDatabases resource.",
+          "displayName": "OracleDatabases_Update",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleDatabases/write",
           "origin": null,
@@ -180,16 +172,16 @@
           "properties": null
         },
         {
-          "description": "Patch the OracleDatabases resource.",
-          "displayName": "OracleDatabases_Update",
+          "description": "Puts the OracleDatabases resource.",
+          "displayName": "OracleDatabases_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleDatabases/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the OracleSites resource in OracleSites.",
-          "displayName": "OracleDatabases_ListBySite",
+          "description": "Gets the OracleDatabases resource.",
+          "displayName": "OracleDatabases_Get",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/OracleDatabases/read",
           "origin": null,
@@ -202,16 +194,16 @@
       "name": "OracleSites/Summaries",
       "operations": [
         {
-          "description": "Gets the Summaries resource.",
-          "displayName": "Summaries_Get",
+          "description": "Lists the Summaries resource in OracleSites.",
+          "displayName": "Summaries_ListBySite",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/Summaries/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Puts the Summaries resource.",
-          "displayName": "Summaries_CreateOrUpdate",
+          "description": "Patch the Summaries resource.",
+          "displayName": "Summaries_Update",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/Summaries/write",
           "origin": null,
@@ -226,18 +218,40 @@
           "properties": null
         },
         {
-          "description": "Patch the Summaries resource.",
-          "displayName": "Summaries_Update",
+          "description": "Puts the Summaries resource.",
+          "displayName": "Summaries_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/Summaries/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Lists the Summaries resource in OracleSites.",
-          "displayName": "Summaries_ListBySite",
+          "description": "Gets the Summaries resource.",
+          "displayName": "Summaries_Get",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/Summaries/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.OracleDiscovery/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.OracleDiscovery/locations/operationStatuses/read",
           "origin": null,
           "properties": null
         }
@@ -284,20 +298,6 @@
           "displayName": "ErrorSummaries_ListBySite",
           "isDataAction": false,
           "name": "Microsoft.OracleDiscovery/OracleSites/ErrorSummaries/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "operations",
-      "name": "operations",
-      "operations": [
-        {
-          "description": "read operations",
-          "displayName": "read_operations",
-          "isDataAction": false,
-          "name": "Microsoft.OracleDiscovery/operations/read",
           "origin": null,
           "properties": null
         }
