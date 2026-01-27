@@ -1,282 +1,238 @@
 {
-  "displayName": "Orbital Resource Provider",
+  "displayName": "Microsoft.Orbital",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.Orbital",
   "name": "Microsoft.Orbital",
   "operations": [
     {
-      "description": "Registers the subscription for the Orbital Resource Provider.",
-      "displayName": "Registers the Orbital Resource Provider",
+      "description": "Register the subscription for Microsoft.Orbital",
+      "displayName": "Register the Microsoft.Orbital",
       "isDataAction": false,
       "name": "Microsoft.Orbital/register/action",
-      "origin": "user,system",
+      "origin": "User",
       "properties": null
     },
     {
-      "description": "Moves Terminal to the given resourceGroup or/and subscription.",
-      "displayName": "Moves Terminal to across different resourceGroup or/and subscription",
+      "description": "Unregister the subscription for Microsoft.Orbital",
+      "displayName": "Unregister the Microsoft.Orbital",
       "isDataAction": false,
-      "name": "Microsoft.Orbital/moveResources/action",
-      "origin": "user,system",
-      "properties": null
-    },
-    {
-      "description": "Determine whether a Terminal can be moved to the given resourceGroup or/and subscription.",
-      "displayName": "Determine Whether a Terminal Can be Moved across different resourceGroup or/and subscription",
-      "isDataAction": false,
-      "name": "Microsoft.Orbital/validateMoveResources/action",
-      "origin": "user,system",
+      "name": "Microsoft.Orbital/unregister/action",
+      "origin": "User",
       "properties": null
     }
   ],
   "resourceTypes": [
     {
-      "displayName": "Microsoft.Orbital",
+      "displayName": "operations",
       "name": "operations",
       "operations": [
         {
-          "description": "Reads the Orbital Resource Provider operations.",
-          "displayName": "Reads the Orbital Resource Provider operations",
+          "description": "read operations",
+          "displayName": "read_operations",
           "isDataAction": false,
           "name": "Microsoft.Orbital/operations/read",
-          "origin": "user,system",
+          "origin": "User",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Contacts",
-      "name": "spacecrafts/contacts",
-      "operations": [
-        {
-          "description": "Delete any Contact",
-          "displayName": "Delete Contact",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/contacts/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Read any Contact",
-          "displayName": "Read Contact",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/contacts/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Create any Contact",
-          "displayName": "Create Contact",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/contacts/write",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Contact Profiles",
-      "name": "contactProfiles",
-      "operations": [
-        {
-          "description": "Delete any Contact Profile",
-          "displayName": "Delete Contact Profile",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/contactProfiles/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Read any Contact Profile",
-          "displayName": "Read Contact Profile",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/contactProfiles/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Create or Update any Contact Profile",
-          "displayName": "Create or Update Contact Profile",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/contactProfiles/write",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Ground Stations",
-      "name": "groundStations",
-      "operations": [
-        {
-          "description": "Delete any Ground Station",
-          "displayName": "Delete Ground Station",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/groundStations/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Read any Ground Station",
-          "displayName": "Read Ground Station",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/groundStations/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Create or Update any Ground Station",
-          "displayName": "Create or Update Ground Station",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/groundStations/write",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Available Ground Stations",
-      "name": "availableGroundStations",
-      "operations": [
-        {
-          "description": "Read any Available Ground Station",
-          "displayName": "Read Available Ground Station",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/availableGroundStations/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Spacecrafts",
-      "name": "spacecrafts",
-      "operations": [
-        {
-          "description": "Delete any Spacecraft",
-          "displayName": "Delete Spacecraft",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "List time windows during which a Spacecraft is visible and available for contact",
-          "displayName": "List Available Contacts for Spacecraft",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/listAvailableContacts/action",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Read any Spacecraft",
-          "displayName": "Read Spacecraft",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Create or Update any Spacecraft",
-          "displayName": "Create or Update Spacecraft",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/spacecrafts/write",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Terminals",
-      "name": "terminals",
-      "operations": [
-        {
-          "description": "Read any Terminal",
-          "displayName": "Read Terminal",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/terminals/read",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Async Operations",
-      "name": "asyncOperations",
-      "operations": [
-        {
-          "description": "Delete any Async Operation",
-          "displayName": "Delete Async Operation",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/asyncOperations/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Read any Async Operation",
-          "displayName": "Read Async Operation",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/asyncOperations/read",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Create any Async Operation",
-          "displayName": "Create Async Operation",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/asyncOperations/write",
-          "origin": "user,system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Geo Catalogs",
+      "displayName": "geoCatalogs",
       "name": "geoCatalogs",
       "operations": [
         {
-          "description": "Delete any Geo Catalog",
-          "displayName": "Delete Geo Catalog",
-          "isDataAction": false,
-          "name": "Microsoft.Orbital/geoCatalogs/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Read any Geo Catalog",
-          "displayName": "Read Geo Catalog",
+          "description": "List GeoCatalog resources by subscription ID",
+          "displayName": "GeoCatalogs_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Orbital/geoCatalogs/read",
-          "origin": "user,system",
+          "origin": "User",
           "properties": null
         },
         {
-          "description": "Create or Update any Geo Catalog",
-          "displayName": "Create or Update Geo Catalog",
+          "description": "List GeoCatalog resources by resource group",
+          "displayName": "GeoCatalogs_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Get a GeoCatalog",
+          "displayName": "GeoCatalogs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Create a GeoCatalog",
+          "displayName": "GeoCatalogs_Create",
           "isDataAction": false,
           "name": "Microsoft.Orbital/geoCatalogs/write",
-          "origin": "user,system",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Delete a GeoCatalog",
+          "displayName": "GeoCatalogs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/delete",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Update a GeoCatalog",
+          "displayName": "GeoCatalogs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Approve Private Endpoint Connections on geocatalogs",
+          "displayName": "Approve Private Endpoint Connections on geocatalogs",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geocatalogs/PrivateEndpointConnectionsApproval/action",
+          "origin": "User",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Locations/operation Statuses",
-      "name": "locations/operationStatuses",
+      "displayName": "locations/operationstatuses",
+      "name": "locations/operationstatuses",
       "operations": [
         {
-          "description": "Read any Locations/operation Status",
-          "displayName": "Read Locations/operation Status",
+          "description": "read operationstatuses",
+          "displayName": "read_operationstatuses",
           "isDataAction": false,
-          "name": "Microsoft.Orbital/locations/operationStatuses/read",
-          "origin": "user,system",
+          "name": "Microsoft.Orbital/locations/operationstatuses/read",
+          "origin": "User",
           "properties": null
         },
         {
-          "description": "Create or Update any Locations/operation Status",
-          "displayName": "Create or Update Locations/operation Status",
+          "description": "write operationstatuses",
+          "displayName": "write_operationstatuses",
           "isDataAction": false,
-          "name": "Microsoft.Orbital/locations/operationStatuses/write",
-          "origin": "user,system",
+          "name": "Microsoft.Orbital/locations/operationstatuses/write",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "geoCatalogs/privateEndpointConnections",
+      "name": "geoCatalogs/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "List private endpoint connections on the given resource",
+          "displayName": "PrivateEndpointConnections_ListByGeoCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnections/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Get a specific private connection",
+          "displayName": "PrivateEndpointConnections_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnections/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Create a private endpoint connection",
+          "displayName": "PrivateEndpointConnections_Create",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnections/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Delete a private endpoint connection",
+          "displayName": "PrivateEndpointConnections_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnections/delete",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "geoCatalogs/privateLinkResources",
+      "name": "geoCatalogs/privateLinkResources",
+      "operations": [
+        {
+          "description": "List private links on the given resource",
+          "displayName": "PrivateLinks_ListByGeoCatalog",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateLinkResources/read",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "geoCatalogs/privateEndpointConnectionProxies",
+      "name": "geoCatalogs/privateEndpointConnectionProxies",
+      "operations": [
+        {
+          "description": "Get a private endpoint connection proxy",
+          "displayName": "PrivateEndpointConnectionProxies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnectionProxies/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Create or update a private endpoint connection proxy",
+          "displayName": "PrivateEndpointConnectionProxies_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnectionProxies/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Delete a private endpoint connection proxy",
+          "displayName": "PrivateEndpointConnectionProxies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnectionProxies/delete",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Validate a private endpoint connection proxy",
+          "displayName": "PrivateEndpointConnectionProxies_Validate",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/geoCatalogs/privateEndpointConnectionProxies/validate/action",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/privateEndpointConnectionProxyAzureAsyncOperation",
+      "name": "locations/privateEndpointConnectionProxyAzureAsyncOperation",
+      "operations": [
+        {
+          "description": "Read private endpoint connection proxy async operation",
+          "displayName": "PrivateEndpointConnectionProxyAzureAsyncOperation_Read",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/locations/privateEndpointConnectionProxyAzureAsyncOperation/read",
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/privateEndpointConnectionProxyOperationResults",
+      "name": "locations/privateEndpointConnectionProxyOperationResults",
+      "operations": [
+        {
+          "description": "Read private endpoint connection proxy operation results",
+          "displayName": "PrivateEndpointConnectionProxyOperationResults_Read",
+          "isDataAction": false,
+          "name": "Microsoft.Orbital/locations/privateEndpointConnectionProxyOperationResults/read",
+          "origin": "User",
           "properties": null
         }
       ]
