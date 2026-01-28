@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-10-30T13:20:01.688694+00:00",
+  "createdOn": "2025-11-04T16:13:14.550712+00:00",
   "description": "This Role grants permissions on the Chaos Subscription to create, read, and delete Resource Groups, Automation Accounts, and Chaos Experiments, and assigns necessary roles to Drill and Chaos MSIs for executing post actions required by Azure Resilience Management Drills.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/5a2ec2f1-2375-4950-9906-59ec1d979249",
   "name": "5a2ec2f1-2375-4950-9906-59ec1d979249",
@@ -12,6 +12,9 @@
       "actions": [
         "Microsoft.Authorization/*/read",
         "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Resources/subscriptions/resourceGroups/delete",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
         "Microsoft.Automation/automationAccounts/delete",
         "Microsoft.Automation/automationAccounts/read",
         "Microsoft.Automation/automationAccounts/write",
@@ -22,19 +25,7 @@
         "Microsoft.Chaos/experiments/read",
         "Microsoft.Chaos/experiments/write",
         "Microsoft.Chaos/locations/operationResults/read",
-        "Microsoft.Chaos/locations/operationStatuses/read",
-        "Microsoft.Insights/dataCollectionEndpoints/read",
-        "Microsoft.Insights/dataCollectionEndpoints/write",
-        "Microsoft.Insights/dataCollectionRules/read",
-        "Microsoft.Insights/dataCollectionRules/write",
-        "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
-        "Microsoft.OperationalInsights/workspaces/tables/read",
-        "Microsoft.OperationalInsights/workspaces/tables/write",
-        "Microsoft.OperationalInsights/workspaces/read",
-        "Microsoft.OperationalInsights/workspaces/write",
-        "Microsoft.Resources/subscriptions/resourceGroups/delete",
-        "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Resources/subscriptions/resourceGroups/write"
+        "Microsoft.Chaos/locations/operationStatuses/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -47,5 +38,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-01-26T16:13:38.734163+00:00"
+  "updatedOn": "2025-11-04T16:13:14.550712+00:00"
 }
