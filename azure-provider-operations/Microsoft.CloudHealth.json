@@ -102,18 +102,10 @@
       "name": "healthmodels/entities",
       "operations": [
         {
-          "description": "List Entity resources by HealthModel",
-          "displayName": "Entities_ListByHealthModel",
+          "description": "Delete a Entity",
+          "displayName": "Entities_Delete",
           "isDataAction": false,
-          "name": "Microsoft.CloudHealth/healthmodels/entities/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a Entity",
-          "displayName": "Entities_Get",
-          "isDataAction": false,
-          "name": "Microsoft.CloudHealth/healthmodels/entities/read",
+          "name": "Microsoft.CloudHealth/healthmodels/entities/delete",
           "origin": null,
           "properties": null
         },
@@ -126,10 +118,42 @@
           "properties": null
         },
         {
-          "description": "Delete a Entity",
-          "displayName": "Entities_Delete",
+          "description": "Get a Entity",
+          "displayName": "Entities_Get",
           "isDataAction": false,
-          "name": "Microsoft.CloudHealth/healthmodels/entities/delete",
+          "name": "Microsoft.CloudHealth/healthmodels/entities/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Entity resources by HealthModel",
+          "displayName": "Entities_ListByHealthModel",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/entities/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the health state transition history for an entity",
+          "displayName": "Entities_GetHistory",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/entities/getHistory/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the time series history for a signal on an entity",
+          "displayName": "Entities_GetSignalHistory",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/entities/getSignalHistory/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Ingest a health report for a specific signal on an entity (the entity must already exist)",
+          "displayName": "Entities_IngestHealthReport",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/entities/ingestHealthReport/action",
           "origin": null,
           "properties": null
         }
