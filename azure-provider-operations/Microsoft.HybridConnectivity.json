@@ -4,22 +4,6 @@
   "name": "Microsoft.HybridConnectivity",
   "operations": [
     {
-      "description": "Retrieve AWS Cloud Formation template",
-      "displayName": "GenerateAwsTemplate_Post",
-      "isDataAction": false,
-      "name": "Microsoft.HybridConnectivity/generateAwsTemplate/action",
-      "origin": null,
-      "properties": null
-    },
-    {
-      "description": "Retrieve GCP Access Control template",
-      "displayName": "GenerateGcpTemplate_Post",
-      "isDataAction": false,
-      "name": "Microsoft.HybridConnectivity/generateGcpTemplate/action",
-      "origin": null,
-      "properties": null
-    },
-    {
       "description": "Register the subscription for Microsoft.HybridConnectivity",
       "displayName": "Register the Microsoft.HybridConnectivity",
       "isDataAction": false,
@@ -32,6 +16,22 @@
       "displayName": "Unregister the Microsoft.HybridConnectivity",
       "isDataAction": false,
       "name": "Microsoft.HybridConnectivity/unregister/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Retrieve AWS Cloud Formation template",
+      "displayName": "GenerateAwsTemplate_Post",
+      "isDataAction": false,
+      "name": "Microsoft.HybridConnectivity/generateAwsTemplate/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Retrieve GCP Access Configuration Script",
+      "displayName": "GenerateGcpTemplate_Post",
+      "isDataAction": false,
+      "name": "Microsoft.HybridConnectivity/generateGcpTemplate/action",
       "origin": null,
       "properties": null
     }
@@ -48,26 +48,18 @@
           "name": "Microsoft.HybridConnectivity/Locations/OperationStatuses/read",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "write OperationStatuses",
-          "displayName": "write_OperationStatuses",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/Locations/OperationStatuses/write",
-          "origin": null,
-          "properties": null
         }
       ]
     },
     {
       "displayName": "Operations",
-      "name": "Operations",
+      "name": "operations",
       "operations": [
         {
-          "description": "read Operations",
-          "displayName": "read_Operations",
+          "description": "Get the list of Operations",
+          "displayName": "Get operations",
           "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/Operations/read",
+          "name": "Microsoft.HybridConnectivity/operations/read",
           "origin": null,
           "properties": null
         }
@@ -78,16 +70,8 @@
       "name": "endpoints",
       "operations": [
         {
-          "description": "List of endpoints to the target resource.",
-          "displayName": "Endpoints_List",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets the endpoint to the resource.",
-          "displayName": "Endpoints_Get",
+          "description": "Get or list of endpoints to the target resource.",
+          "displayName": "Get/List endpoints",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/read",
           "origin": null,
@@ -95,7 +79,7 @@
         },
         {
           "description": "Create or update the endpoint to the target resource.",
-          "displayName": "Endpoints_CreateOrUpdate",
+          "displayName": "Create/Update endpoint",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/write",
           "origin": null,
@@ -103,39 +87,31 @@
         },
         {
           "description": "Deletes the endpoint access to the target resource.",
-          "displayName": "Endpoints_Delete",
+          "displayName": "Delete endpoint",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update the endpoint to the target resource.",
-          "displayName": "Endpoints_Update",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets the endpoint access credentials to the resource.",
-          "displayName": "Endpoints_ListCredentials",
+          "description": "List the endpoint access credentials to the resource.",
+          "displayName": "List credentials for endpoint access",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/listCredentials/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets the ingress gateway endpoint credentials ",
-          "displayName": "Endpoints_ListIngressGatewayCredentials",
+          "description": "List the ingress gateway access credentials to the resource.",
+          "displayName": "List ingress gateway credentials for endpoint access",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/listIngressGatewayCredentials/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Fetches the managed proxy details ",
-          "displayName": "Endpoints_ListManagedProxyDetails",
+          "description": "List the managed proxy details to the resource.",
+          "displayName": "List managed proxy details for endpoint access",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/listManagedProxyDetails/action",
           "origin": null,
@@ -144,46 +120,30 @@
       ]
     },
     {
-      "displayName": "endpoints/serviceConfigurations",
+      "displayName": "serviceconfigurations",
       "name": "endpoints/serviceConfigurations",
       "operations": [
         {
-          "description": "API to enumerate registered services in service configurations under a Endpoint Resource",
-          "displayName": "ServiceConfigurations_ListByEndpointResource",
+          "description": "Get or list of serviceConfigurations to the endpoints resource.",
+          "displayName": "Get/List serviceConfigurations",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets the details about the service to the resource.",
-          "displayName": "ServiceConfigurations_Get",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update a service in serviceConfiguration for the endpoint resource.",
-          "displayName": "ServiceConfigurations_CreateOrupdate",
+          "description": "Create or update the serviceConfigurations to the endpoints resource.",
+          "displayName": "Create/Update serviceConfiguration",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes the service details to the target resource.",
-          "displayName": "ServiceConfigurations_Delete",
+          "description": "Deletes the serviceConfigurations access to the endpoints resource.",
+          "displayName": "Delete serviceConfigurations",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update the service details in the service configurations of the target resource.",
-          "displayName": "ServiceConfigurations_Update",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
           "origin": null,
           "properties": null
         }
@@ -194,23 +154,15 @@
       "name": "solutionTypes",
       "operations": [
         {
-          "description": "List SolutionTypeResource resources by subscription ID",
-          "displayName": "SolutionTypes_ListBySubscription",
+          "description": "Retrieve the list of available solution types.",
+          "displayName": "SolutionTypes_List",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionTypes/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List SolutionTypeResource resources by resource group",
-          "displayName": "SolutionTypes_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.HybridConnectivity/solutionTypes/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a SolutionTypeResource",
+          "description": "Retrieve the solution type by provided solution type.",
           "displayName": "SolutionTypes_Get",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionTypes/read",
@@ -224,40 +176,40 @@
       "name": "solutionConfigurations",
       "operations": [
         {
-          "description": "List SolutionConfiguration resources by parent",
-          "displayName": "SolutionConfigurations_List",
+          "description": "Retrieve the List of solution configuration resources.",
+          "displayName": "SolutionConfiguration_List",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a SolutionConfiguration",
-          "displayName": "SolutionConfigurations_Get",
+          "description": "Retrieve the solution configuration identified by solution name.",
+          "displayName": "SolutionConfiguration_Get",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a SolutionConfiguration",
-          "displayName": "SolutionConfigurations_CreateOrUpdate",
+          "description": "Creates solution configuration with provided solution name",
+          "displayName": "SolutionConfiguration_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a SolutionConfiguration",
-          "displayName": "SolutionConfigurations_Delete",
+          "description": "Deletes the solution configuration with provided solution name.",
+          "displayName": "SolutionConfiguration_Delete",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update a SolutionConfiguration",
-          "displayName": "SolutionConfigurations_Update",
+          "description": "Updates the solution configuration for solution name.",
+          "displayName": "SolutionConfiguration_Update",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/write",
           "origin": null,
@@ -278,16 +230,16 @@
       "name": "solutionConfigurations/inventory",
       "operations": [
         {
-          "description": "List InventoryResource resources by SolutionConfiguration",
-          "displayName": "Inventory_ListBySolutionConfiguration",
+          "description": "Retrieve the inventory identified by inventory id.",
+          "displayName": "Inventory_GetBySolution",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/inventory/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a InventoryResource",
-          "displayName": "Inventory_Get",
+          "description": "Retrieve a list of inventory by solution name.",
+          "displayName": "Inventory_ListBySolution",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/solutionConfigurations/inventory/read",
           "origin": null,
@@ -300,55 +252,55 @@
       "name": "publicCloudConnectors",
       "operations": [
         {
-          "description": "List PublicCloudConnector resources by subscription ID",
-          "displayName": "PublicCloudConnectors_ListBySubscription",
+          "description": "Gets the public cloud connectors in the subscription.",
+          "displayName": "publicCloudConnectors_SubscriptionList",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List PublicCloudConnector resources by resource group",
-          "displayName": "PublicCloudConnectors_ListByResourceGroup",
+          "description": "Gets the publicCloudConnector in the resource group.",
+          "displayName": "publicCloudConnectors_ResourceGroupList",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a PublicCloudConnector",
-          "displayName": "PublicCloudConnectors_Get",
+          "description": "Gets the public cloud connectors.",
+          "displayName": "publicCloudConnectors_Get",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a PublicCloudConnector",
-          "displayName": "PublicCloudConnectors_CreateOrUpdate",
+          "description": "Creates public cloud connectors resource.",
+          "displayName": "publicCloudConnectors_CreatePublicCloudConnectors",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a PublicCloudConnector",
-          "displayName": "PublicCloudConnectors_Delete",
+          "description": "Deletes the public cloud connectors resource.",
+          "displayName": "publicConnectors_Delete",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update a PublicCloudConnector",
-          "displayName": "PublicCloudConnectors_Update",
+          "description": "Update the public cloud connectors resource.",
+          "displayName": "publicCloudConnectors_Update",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "A long-running resource action.",
+          "description": "Tests the permissions of solution configurations under public cloud connector.",
           "displayName": "PublicCloudConnectors_TestPermissions",
           "isDataAction": false,
           "name": "Microsoft.HybridConnectivity/publicCloudConnectors/testPermissions/action",
