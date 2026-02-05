@@ -676,32 +676,8 @@
       "name": "safeRollouts",
       "operations": [
         {
-          "description": "List SafeRollout resources by subscription ID",
-          "displayName": "SafeRollouts_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/safeRollouts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List SafeRollout resources by resource group",
-          "displayName": "SafeRollouts_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/safeRollouts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a SafeRollout",
-          "displayName": "SafeRollouts_Get",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/safeRollouts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a SafeRollout",
-          "displayName": "SafeRollouts_CreateOrUpdate",
+          "description": "Update a SafeRollout",
+          "displayName": "SafeRollouts_Update",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/safeRollouts/write",
           "origin": null,
@@ -716,10 +692,34 @@
           "properties": null
         },
         {
-          "description": "Update a SafeRollout",
-          "displayName": "SafeRollouts_Update",
+          "description": "Create a SafeRollout",
+          "displayName": "SafeRollouts_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/safeRollouts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a SafeRollout",
+          "displayName": "SafeRollouts_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SafeRollout resources by resource group",
+          "displayName": "SafeRollouts_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List SafeRollout resources by subscription ID",
+          "displayName": "SafeRollouts_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/read",
           "origin": null,
           "properties": null
         },
@@ -728,6 +728,22 @@
           "displayName": "SafeRollouts_Cancel",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/safeRollouts/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Pause the SafeRollout.",
+          "displayName": "SafeRollouts_Pause",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/pause/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resume the SafeRollout.",
+          "displayName": "SafeRollouts_Resume",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/resume/action",
           "origin": null,
           "properties": null
         }
@@ -1016,6 +1032,44 @@
           "displayName": "ChangeRecordStageProgressions_RetrieveAuditTrail",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeRecords/stageProgressions/retrieveAuditTrail/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "safeRollouts/stages",
+      "name": "safeRollouts/stages",
+      "operations": [
+        {
+          "description": "Get a Stage",
+          "displayName": "Stages_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/stages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Stage resources by SafeRollout",
+          "displayName": "Stages_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/stages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Stage resources by subscription ID",
+          "displayName": "Stages_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/stages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retry the SafeRollout stage.",
+          "displayName": "Stages_Retry",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/safeRollouts/stages/retry/action",
           "origin": null,
           "properties": null
         }
