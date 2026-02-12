@@ -3,8 +3,8 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-07-02T15:23:29.383938+00:00",
-  "description": "Grants full access to manage Microsoft.Discovery resources. This role in preview and subjet to change.",
+  "createdOn": "2025-07-01T15:14:22.667876+00:00",
+  "description": "Grants full access to manage Microsoft.Discovery resources. This role is in preview and subject to change.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
   "name": "7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
   "permissions": [
@@ -24,7 +24,7 @@
         "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Authorization/roleAssignments/delete"
       ],
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830}))",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293}))",
       "conditionVersion": "2.0",
       "dataActions": [
         "Microsoft.Discovery/*"
@@ -37,5 +37,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-07-24T17:05:02.327244+00:00"
+  "updatedOn": "2026-02-11T16:50:04.203944+00:00"
 }
