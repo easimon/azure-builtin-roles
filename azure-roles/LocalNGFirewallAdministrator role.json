@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2023-02-07T16:15:03.946591+00:00",
+  "createdOn": "2023-02-02T11:42:39.266021+00:00",
   "description": "Allows user to create, modify, describe, or delete NGFirewalls.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/a8835c7d-b5cb-47fa-b6f0-65ea10ce07a2",
   "name": "a8835c7d-b5cb-47fa-b6f0-65ea10ce07a2",
@@ -37,7 +37,14 @@
         "Microsoft.Network/virtualWans/read",
         "Microsoft.Network/virtualWans/virtualHubs/read",
         "Microsoft.Network/networkSecurityGroups/read",
-        "Microsoft.Network/networkSecurityGroups/join/action"
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "PaloAltoNetworks.Cloudngfw/localRulestacks/fqdnlists/read",
+        "PaloAltoNetworks.Cloudngfw/localRulestacks/localRules/read",
+        "PaloAltoNetworks.Cloudngfw/localRulestacks/listFirewalls/action",
+        "PaloAltoNetworks.Cloudngfw/createProductSerialNumber/action",
+        "PaloAltoNetworks.Cloudngfw/listCloudManagerTenants/action",
+        "PaloAltoNetworks.Cloudngfw/listProductSerialNumberStatus/action",
+        "PaloAltoNetworks.Cloudngfw/listSupportInfo/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -50,5 +57,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2023-03-15T15:29:59.382105+00:00"
+  "updatedOn": "2026-02-17T16:13:16.953562+00:00"
 }
