@@ -218,6 +218,14 @@
           "properties": null
         },
         {
+          "description": "Sets admin state for load balancer backend addresses associated with the specified virtual machines or VM scale set instances",
+          "displayName": "Set Lb Backend Admin State",
+          "isDataAction": false,
+          "name": "Microsoft.Network/locations/setLbBackendAdminState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Allocates or validates a Bare Metal Tenant",
           "displayName": "Allocate or validate a Bare Metal Tenant",
           "isDataAction": false,
@@ -6690,6 +6698,14 @@
           "properties": null
         },
         {
+          "description": "Gets virtualnetworkgateway effective routes",
+          "displayName": "Gets virtualnetworkgateway effective routes",
+          "isDataAction": false,
+          "name": "microsoft.network/virtualnetworkgateways/geteffectiveroutes/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Starts a Virtual Network Gateway Packet Capture.",
           "displayName": "Starts a Virtual Network Gateway Packet Capture.",
           "isDataAction": false,
@@ -7058,6 +7074,22 @@
           "displayName": "Join Express Route Cross Connection",
           "isDataAction": false,
           "name": "Microsoft.Network/expressRouteCrossConnections/join/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Express Route Cross Connection Confirm Activation Key",
+          "displayName": "Express Route Cross Connection Confirm Activation Key",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/confirmActivationKey/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Express Route Cross Connection operation to propose Interconnect",
+          "displayName": "Express Route Cross Connection operation to propose Interconnect",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/proposeInterconnect/action",
           "origin": null,
           "properties": null
         }
@@ -12507,6 +12539,14 @@
           "properties": null
         },
         {
+          "description": "Get Firewall Policy PacFile",
+          "displayName": "Get Firewall Policy PacFile",
+          "isDataAction": false,
+          "name": "Microsoft.Network/firewallPolicies/pacFile/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Deploy Firewall Policy Draft",
           "displayName": "Deploy Firewall Policy Draft",
           "isDataAction": false,
@@ -14785,6 +14825,14 @@
           "properties": null
         },
         {
+          "description": "Get VMSS Resource ID",
+          "displayName": "Get VMSS Resource ID",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkVirtualAppliances/getVmssResourceId/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Get Network Virtual Appliance Boot Diagnostic Logs",
           "displayName": "Get Network Virtual Appliance Boot Diagnostic Logs",
           "isDataAction": false,
@@ -16443,6 +16491,14 @@
           "name": "Microsoft.Network/networkManagers/ipamPools/getPoolUsage/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Action permission for list Associated Resource To Ipam Pool",
+          "displayName": "List Associated Resource To Ipam Pool",
+          "isDataAction": false,
+          "name": "microsoft.network/networkmanagers/ipampools/listassociatedresources/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -17553,6 +17609,110 @@
           "displayName": "Get DNS Resolver Policy Operation Status",
           "isDataAction": false,
           "name": "Microsoft.Network/locations/dnsResolverPolicyOperationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ExpressRouteLag",
+      "name": "expressRouteLags",
+      "operations": [
+        {
+          "description": "Gets ExpressRouteLag",
+          "displayName": "Gets ExpressRouteLag",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteLags/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates ExpressRouteLag",
+          "displayName": "Creates or updates ExpressRouteLag",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteLags/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes ExpressRouteLag",
+          "displayName": "Deletes ExpressRouteLag",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteLags/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ipam Pool Static Cidr",
+      "name": "networkmanagers/ipampools/staticcidrs",
+      "operations": [
+        {
+          "description": "Deletes a static CIDR from an Ipam Pool",
+          "displayName": "Delete Ipam Pool Static Cidr",
+          "isDataAction": false,
+          "name": "microsoft.network/networkmanagers/ipampools/staticcidrs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a static CIDR from an Ipam Pool",
+          "displayName": "Get Ipam Pool Static Cidr",
+          "isDataAction": false,
+          "name": "microsoft.network/networkmanagers/ipampools/staticcidrs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a static CIDR in an Ipam Pool",
+          "displayName": "Create Or Update Ipam Pool Static Cidr",
+          "isDataAction": false,
+          "name": "microsoft.network/networkmanagers/ipampools/staticcidrs/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Interconnect Group",
+      "name": "interconnectGroups",
+      "operations": [
+        {
+          "description": "Get Interconnect Group",
+          "displayName": "Get Interconnect Group",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Interconnect Group",
+          "displayName": "Create or update Interconnect Group",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Interconnect Group",
+          "displayName": "Delete Interconnect Group",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Interconnect Group Subgroup",
+      "name": "interconnectGroups/subgroups",
+      "operations": [
+        {
+          "description": "Get Interconnect Group Subgroup",
+          "displayName": "Get Interconnect Group Subgroup",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/subgroups/read",
           "origin": null,
           "properties": null
         }
