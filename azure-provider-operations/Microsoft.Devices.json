@@ -2149,204 +2149,6 @@
       ]
     },
     {
-      "displayName": "Microsoft.Devices/provisioningServices",
-      "name": "provisioningServices",
-      "operations": [
-        {
-          "description": "Get IotDps resource",
-          "displayName": "Get IotDps resource",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/Read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create IotDps resource",
-          "displayName": "Create IotDps resource",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/Write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete IotDps resource",
-          "displayName": "Delete IotDps resource",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/Delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get all IotDps keys",
-          "displayName": "Get all IotDps keys",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/listkeys/Action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Approve or reject a private endpoint connection",
-          "displayName": "Approve Private Endpoint Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionsApproval/Action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "provisioningServices",
-      "name": "provisioningServices/diagnosticSettings",
-      "operations": [
-        {
-          "description": "Gets the diagnostic setting for the resource",
-          "displayName": "Get Diagnostic Setting",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/diagnosticSettings/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or updates the diagnostic setting for the resource",
-          "displayName": "Set Diagnostic Setting",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/diagnosticSettings/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "provisioningServices",
-      "name": "provisioningServices/metricDefinitions",
-      "operations": [
-        {
-          "description": "Gets the available metrics for the provisioning service",
-          "displayName": "Read provisioning service metric definitions",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/metricDefinitions/read",
-          "origin": null,
-          "properties": {
-            "serviceSpecification": {
-              "metricSpecifications": [
-                {
-                  "aggregationType": "Total",
-                  "availabilities": [
-                    {
-                      "blobDuration": "PT1H",
-                      "timeGrain": "PT1M"
-                    }
-                  ],
-                  "dimensions": [
-                    {
-                      "displayName": "Provisioning service name",
-                      "name": "ProvisioningServiceName"
-                    },
-                    {
-                      "displayName": "IoT hub name",
-                      "name": "IotHubName"
-                    },
-                    {
-                      "displayName": "Status",
-                      "name": "Status",
-                      "toBeExportedForShoebox": true
-                    }
-                  ],
-                  "displayDescription": "Number of device registrations attempted",
-                  "displayName": "Registration attempts",
-                  "fillGapWithZero": true,
-                  "name": "RegistrationAttempts",
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Total",
-                  "availabilities": [
-                    {
-                      "blobDuration": "PT1H",
-                      "timeGrain": "PT1M"
-                    }
-                  ],
-                  "dimensions": [
-                    {
-                      "displayName": "Provisioning service name",
-                      "name": "ProvisioningServiceName"
-                    },
-                    {
-                      "displayName": "IoT hub name",
-                      "name": "IotHubName"
-                    }
-                  ],
-                  "displayDescription": "Number of devices assigned to an IoT hub",
-                  "displayName": "Devices assigned",
-                  "fillGapWithZero": true,
-                  "name": "DeviceAssignments",
-                  "unit": "Count"
-                },
-                {
-                  "aggregationType": "Total",
-                  "availabilities": [
-                    {
-                      "blobDuration": "PT1H",
-                      "timeGrain": "PT1M"
-                    }
-                  ],
-                  "dimensions": [
-                    {
-                      "displayName": "Provisioning service name",
-                      "name": "ProvisioningServiceName"
-                    },
-                    {
-                      "displayName": "Status",
-                      "name": "Status",
-                      "toBeExportedForShoebox": true
-                    },
-                    {
-                      "displayName": "Protocol",
-                      "name": "Protocol"
-                    }
-                  ],
-                  "displayDescription": "Number of device attestations attempted",
-                  "displayName": "Attestation attempts",
-                  "fillGapWithZero": true,
-                  "name": "AttestationAttempts",
-                  "unit": "Count"
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "displayName": "provisioningServices",
-      "name": "provisioningServices/logDefinitions",
-      "operations": [
-        {
-          "description": "Gets the available log definitions for the provisioning Service",
-          "displayName": "Read provisioning service log definitions",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/logDefinitions/read",
-          "origin": null,
-          "properties": {
-            "serviceSpecification": {
-              "logSpecifications": [
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Device Operations",
-                  "name": "DeviceOperations"
-                },
-                {
-                  "blobDuration": "PT1H",
-                  "displayName": "Service Operations",
-                  "name": "ServiceOperations"
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
       "displayName": "Microsoft.Devices/IotHubs/EventGridFilters",
       "name": "iotHubs/eventGridFilters",
       "operations": [
@@ -2537,116 +2339,6 @@
       ]
     },
     {
-      "displayName": "Microsoft.Devices/provisioningServices/PrivateLinkResources",
-      "name": "provisioningServices/privateLinkResources",
-      "operations": [
-        {
-          "description": "Gets private link resources for IotHub",
-          "displayName": "Get Private Link Resources",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateLinkResources/Read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnectionProxies",
-      "name": "provisioningServices/privateEndpointConnectionProxies",
-      "operations": [
-        {
-          "description": "Validates private endpoint connection proxy input during create",
-          "displayName": "Validate Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/validate/Action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets properties for specified private endpoint connection proxy",
-          "displayName": "Get Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or updates a private endpoint connection proxy",
-          "displayName": "Put Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes an existing private endpoint connection proxy",
-          "displayName": "Delete Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnectionProxies",
-      "name": "provisioningServices/privateEndpointConnectionProxies/operationResults",
-      "operations": [
-        {
-          "description": "Get the result of an async operation on a private endpoint connection proxy",
-          "displayName": "Get Private Endpoint Connection Proxy Async Operation Result",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/operationResults/Read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnections",
-      "name": "provisioningServices/privateEndpointConnections",
-      "operations": [
-        {
-          "description": "Gets all the private endpoint connections for the specified iot hub",
-          "displayName": "Get All Private Endpoint Connections",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes an existing private endpoint connection",
-          "displayName": "Delete Private Endpoint Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or updates a private endpoint connection",
-          "displayName": "Put Private Endpoint Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnections",
-      "name": "provisioningServices/privateEndpointConnections/operationResults",
-      "operations": [
-        {
-          "description": "Get the result of an async operation on a private endpoint connection",
-          "displayName": "Get Private Endpoint Connection Async Operation Result",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/operationResults/Read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "IotHubs",
       "name": "IotHubs/devices",
       "operations": [
@@ -2823,6 +2515,336 @@
       ]
     },
     {
+      "displayName": "Microsoft.Devices/IotHubs/NetworkSecurityPerimeters",
+      "name": "iotHubs/networkSecurityPerimeterConfigurations",
+      "operations": [
+        {
+          "description": "List all NSP configurations associated with the IotHub",
+          "displayName": "List NSP configurations",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterConfigurations/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/IotHubs/NetworkSecurityPerimeters",
+      "name": "iotHubs/networkSecurityPerimeterAssociationProxies",
+      "operations": [
+        {
+          "description": "List all NSP association proxies associated with the IotHub",
+          "displayName": "List NSP association proxies",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Put an NSP association proxy on the IotHub to associate the resource with the NSP",
+          "displayName": "Put NSP association proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete an NSP association proxy to disassociate the IotHub resource from the NSP",
+          "displayName": "Delete NSP association proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Microsoft.Devices/provisioningServices",
+      "name": "provisioningServices",
+      "operations": [
+        {
+          "description": "Get IotDps resource",
+          "displayName": "Get IotDps resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create IotDps resource",
+          "displayName": "Create IotDps resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete IotDps resource",
+          "displayName": "Delete IotDps resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get all IotDps keys",
+          "displayName": "Get all IotDps keys",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/listkeys/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a private endpoint connection",
+          "displayName": "Approve Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionsApproval/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/operationresults",
+      "operations": [
+        {
+          "description": "Get DPS Operation Result",
+          "displayName": "Get DPS Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/operationresults/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/skus",
+      "operations": [
+        {
+          "description": "Get valid IotDps Skus",
+          "displayName": "Get valid IotDps Skus",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/skus/Read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/keys",
+      "operations": [
+        {
+          "description": "Get IotDps Keys for key name",
+          "displayName": "Get IotDps Keys for key name",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/keys/listkeys/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "",
+      "name": "provisioningServices/certificates",
+      "operations": [
+        {
+          "description": "Gets the Certificate",
+          "displayName": "Gets the Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Certificate",
+          "displayName": "Create or Update Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes Certificate",
+          "displayName": "Deletes Certificate",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate Verification code",
+          "displayName": "Generate Verification code",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/generateVerificationCode/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Verify Certificate resource",
+          "displayName": "Verify Certificate resource",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/certificates/verify/Action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/diagnosticSettings",
+      "operations": [
+        {
+          "description": "Gets the diagnostic setting for the resource",
+          "displayName": "Get Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/diagnosticSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the diagnostic setting for the resource",
+          "displayName": "Set Diagnostic Setting",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/diagnosticSettings/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/metricDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available metrics for the provisioning service",
+          "displayName": "Read provisioning service metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "IoT hub name",
+                      "name": "IotHubName"
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Number of device registrations attempted",
+                  "displayName": "Registration attempts",
+                  "fillGapWithZero": true,
+                  "name": "RegistrationAttempts",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "IoT hub name",
+                      "name": "IotHubName"
+                    }
+                  ],
+                  "displayDescription": "Number of devices assigned to an IoT hub",
+                  "displayName": "Devices assigned",
+                  "fillGapWithZero": true,
+                  "name": "DeviceAssignments",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Number of device attestations attempted",
+                  "displayName": "Attestation attempts",
+                  "fillGapWithZero": true,
+                  "name": "AttestationAttempts",
+                  "unit": "Count"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "provisioningServices",
+      "name": "provisioningServices/logDefinitions",
+      "operations": [
+        {
+          "description": "Gets the available log definitions for the provisioning Service",
+          "displayName": "Read provisioning service log definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/logDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "logSpecifications": [
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Device Operations",
+                  "name": "DeviceOperations"
+                },
+                {
+                  "blobDuration": "PT1H",
+                  "displayName": "Service Operations",
+                  "name": "ServiceOperations"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
       "displayName": "provisioningServices",
       "name": "provisioningServices/enrollments",
       "operations": [
@@ -2919,132 +2941,110 @@
       ]
     },
     {
-      "displayName": "Microsoft.Devices/IotHubs/NetworkSecurityPerimeters",
-      "name": "iotHubs/networkSecurityPerimeterConfigurations",
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateLinkResources",
+      "name": "provisioningServices/privateLinkResources",
       "operations": [
         {
-          "description": "List all NSP configurations associated with the IotHub",
-          "displayName": "List NSP configurations",
+          "description": "Gets private link resources for IotHub",
+          "displayName": "Get Private Link Resources",
           "isDataAction": false,
-          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterConfigurations/Read",
+          "name": "Microsoft.Devices/provisioningServices/privateLinkResources/Read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Microsoft.Devices/IotHubs/NetworkSecurityPerimeters",
-      "name": "iotHubs/networkSecurityPerimeterAssociationProxies",
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnectionProxies",
+      "name": "provisioningServices/privateEndpointConnectionProxies",
       "operations": [
         {
-          "description": "List all NSP association proxies associated with the IotHub",
-          "displayName": "List NSP association proxies",
+          "description": "Validates private endpoint connection proxy input during create",
+          "displayName": "Validate Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Read",
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/validate/Action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Put an NSP association proxy on the IotHub to associate the resource with the NSP",
-          "displayName": "Put NSP association proxy",
+          "description": "Gets properties for specified private endpoint connection proxy",
+          "displayName": "Get Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Write",
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete an NSP association proxy to disassociate the IotHub resource from the NSP",
-          "displayName": "Delete NSP association proxy",
+          "description": "Creates or updates a private endpoint connection proxy",
+          "displayName": "Put Private Endpoint Connection Proxy",
           "isDataAction": false,
-          "name": "Microsoft.Devices/iotHubs/networkSecurityPerimeterAssociationProxies/Delete",
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection proxy",
+          "displayName": "Delete Private Endpoint Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/Delete",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "",
-      "name": "provisioningServices/operationresults",
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnectionProxies",
+      "name": "provisioningServices/privateEndpointConnectionProxies/operationResults",
       "operations": [
         {
-          "description": "Get DPS Operation Result",
-          "displayName": "Get DPS Operation Result",
+          "description": "Get the result of an async operation on a private endpoint connection proxy",
+          "displayName": "Get Private Endpoint Connection Proxy Async Operation Result",
           "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/operationresults/Read",
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnectionProxies/operationResults/Read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "",
-      "name": "provisioningServices/skus",
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnections",
+      "name": "provisioningServices/privateEndpointConnections",
       "operations": [
         {
-          "description": "Get valid IotDps Skus",
-          "displayName": "Get valid IotDps Skus",
+          "description": "Gets all the private endpoint connections for the specified iot hub",
+          "displayName": "Get All Private Endpoint Connections",
           "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/skus/Read",
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing private endpoint connection",
+          "displayName": "Delete Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a private endpoint connection",
+          "displayName": "Put Private Endpoint Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/Write",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "",
-      "name": "provisioningServices/keys",
+      "displayName": "Microsoft.Devices/provisioningServices/PrivateEndpointConnections",
+      "name": "provisioningServices/privateEndpointConnections/operationResults",
       "operations": [
         {
-          "description": "Get IotDps Keys for key name",
-          "displayName": "Get IotDps Keys for key name",
+          "description": "Get the result of an async operation on a private endpoint connection",
+          "displayName": "Get Private Endpoint Connection Async Operation Result",
           "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/keys/listkeys/Action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "",
-      "name": "provisioningServices/certificates",
-      "operations": [
-        {
-          "description": "Gets the Certificate",
-          "displayName": "Gets the Certificate",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/certificates/Read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or Update Certificate",
-          "displayName": "Create or Update Certificate",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/certificates/Write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes Certificate",
-          "displayName": "Deletes Certificate",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/certificates/Delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Generate Verification code",
-          "displayName": "Generate Verification code",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/certificates/generateVerificationCode/Action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Verify Certificate resource",
-          "displayName": "Verify Certificate resource",
-          "isDataAction": false,
-          "name": "Microsoft.Devices/provisioningServices/certificates/verify/Action",
+          "name": "Microsoft.Devices/provisioningServices/privateEndpointConnections/operationResults/Read",
           "origin": null,
           "properties": null
         }
