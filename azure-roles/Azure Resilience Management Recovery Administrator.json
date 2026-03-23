@@ -3,24 +3,15 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-10-07T15:22:16.398890+00:00",
+  "createdOn": "2025-10-10T15:52:47.600852+00:00",
   "description": "Administrator Role of Azure Resilience Management Recovery Service",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/481d9636-d9f0-468b-b93d-6056318e6f36",
   "name": "481d9636-d9f0-468b-b93d-6056318e6f36",
   "permissions": [
     {
       "actions": [
-        "Microsoft.Authorization/roleAssignments/write"
-      ],
-      "condition": "@Resource[HasObotoken] boolequals true && (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {de754d53-652d-4c75-a67f-1e48d8b49c97, acdd72a7-3385-48ef-bd42-f606fba81ae7, 494ae006-db33-4328-bf46-533a6560a3ca, 6670b86ea3f74917ac9b5d6ab1be4567, 4fe576fe-1146-4730-92eb-48519fa6bf9f, 32e6a4ec-6095-4e37-b54b-12aa350ba81f, 05b1aaf9-00c9-477b-b0e8-2da660b78c51, b54df9c1-53dc-45cc-a86d-7a83cced2ed0, 3b5a0aa9-eccd-48dc-9011-f2fd03b5e5f9})",
-      "conditionVersion": "2.0",
-      "dataActions": [],
-      "notActions": [],
-      "notDataActions": []
-    },
-    {
-      "actions": [
         "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Automation/automationAccounts/runbooks/read",
         "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
         "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
@@ -44,5 +35,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-03-18T03:33:32.119376+00:00"
+  "updatedOn": "2025-10-23T15:34:37.380679+00:00"
 }
