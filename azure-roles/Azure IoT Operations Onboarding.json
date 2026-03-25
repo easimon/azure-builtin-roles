@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-07-07T15:00:14.086795+00:00",
+  "createdOn": "2025-07-03T20:10:17.437320+00:00",
   "description": "User can Azure arc connect and deploy Azure IoT Operations securely.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/7b7c71ed-33fa-4ed2-a91a-e56d5da260b5",
   "name": "7b7c71ed-33fa-4ed2-a91a-e56d5da260b5",
@@ -15,14 +15,14 @@
         "Microsoft.DeviceRegistry/schemaRegistries/read",
         "Microsoft.DeviceRegistry/schemaRegistries/write",
         "Microsoft.Authorization/*/read",
-        "Microsoft.Authorization/*/write",
+        "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Insights/alertRules/*",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/resourceGroups/read",
         "Microsoft.Edge/sites/read"
       ],
-      "condition": null,
-      "conditionVersion": null,
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, b24988ac-6180-42a0-ab88-20f7382dd24c}))",
+      "conditionVersion": "2.0",
       "dataActions": [],
       "notActions": [],
       "notDataActions": []
@@ -32,5 +32,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-07-17T15:20:09.299408+00:00"
+  "updatedOn": "2026-03-24T15:13:37.003144+00:00"
 }
