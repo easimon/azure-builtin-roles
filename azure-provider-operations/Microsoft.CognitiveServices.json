@@ -88,6 +88,14 @@
           "name": "Microsoft.CognitiveServices/accounts/privateEndpointConnectionsApproval/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Provision the managed network of the Cognitive Services Account.",
+          "displayName": "Provision the managed network of the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/provisionManagedNetwork/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -20152,6 +20160,66 @@
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/MAI/chat/completions/action",
           "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cognitive Services Account Managed Network",
+      "name": "accounts/managedNetworks",
+      "operations": [
+        {
+          "description": "Get the managed network associated with the Cognitive Services Account.",
+          "displayName": "Get the managed network associated with the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/managedNetworks/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the managed network associated with the Cognitive Services Account.",
+          "displayName": "Creates or updates the managed network associated with the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/managedNetworks/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Manages the outbound rules of the managed network associated with the Cognitive Services Account.",
+          "displayName": "Manages the outbound rules of the managed network associated with the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/managedNetworks/batchOutboundRules/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cognitive Services Account Managed Network Outbound Rules",
+      "name": "accounts/managedNetworks/outboundRules",
+      "operations": [
+        {
+          "description": "Gets the outbound rules of managed network associated with the Cognitive Services Account.",
+          "displayName": "Gets the outbound rules of managed network associated with the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/managedNetworks/outboundRules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an outbound rule of managed network associated with the Cognitive Services Account.",
+          "displayName": "Creates or updates an outbound rule of managed network associated with the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/managedNetworks/outboundRules/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an outbound rule of managed network associated with the Cognitive Services Account.",
+          "displayName": "Deletes an outbound rule of managed network associated with the Cognitive Services Account",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/managedNetworks/outboundRules/delete",
+          "origin": "user,system",
           "properties": null
         }
       ]
