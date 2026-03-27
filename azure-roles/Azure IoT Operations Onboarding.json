@@ -15,14 +15,14 @@
         "Microsoft.DeviceRegistry/schemaRegistries/read",
         "Microsoft.DeviceRegistry/schemaRegistries/write",
         "Microsoft.Authorization/*/read",
-        "Microsoft.Authorization/*/write",
+        "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Insights/alertRules/*",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/resourceGroups/read",
         "Microsoft.Edge/sites/read"
       ],
-      "condition": null,
-      "conditionVersion": null,
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, b24988ac-6180-42a0-ab88-20f7382dd24c}))",
+      "conditionVersion": "2.0",
       "dataActions": [],
       "notActions": [],
       "notDataActions": []
@@ -32,5 +32,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-07-17T15:20:09.299408+00:00"
+  "updatedOn": "2026-03-26T15:29:47.949578+00:00"
 }
