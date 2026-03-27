@@ -98,14 +98,6 @@
           "properties": null
         },
         {
-          "description": "Checks availability of namespace alias under given subscription.",
-          "displayName": "Check Disaster Recovery alias name availability",
-          "isDataAction": false,
-          "name": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Remove ACS namespace",
           "displayName": "Remove ACS namespace",
           "isDataAction": false,
@@ -540,7 +532,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "SuccessfulRequests",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -574,7 +566,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "ServerErrors",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -608,7 +600,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "UserErrors",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -646,7 +638,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "ThrottledRequests",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -671,7 +663,7 @@
                   "internalMetricName": "IncomingRequests",
                   "isDimensionRequired": false,
                   "name": "IncomingRequests",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -696,7 +688,7 @@
                   "internalMetricName": "IncomingMessages",
                   "isDimensionRequired": false,
                   "name": "IncomingMessages",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -721,7 +713,7 @@
                   "internalMetricName": "OutgoingMessages",
                   "isDimensionRequired": false,
                   "name": "OutgoingMessages",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -739,7 +731,7 @@
                   "internalMetricName": "NamespaceActiveConnections",
                   "isDimensionRequired": false,
                   "name": "ActiveConnections",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Total"
@@ -767,7 +759,7 @@
                   "internalMetricName": "ConnectionOpen",
                   "isDimensionRequired": false,
                   "name": "ConnectionsOpened",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -792,7 +784,7 @@
                   "internalMetricName": "ConnectionClose",
                   "isDimensionRequired": false,
                   "name": "ConnectionsClosed",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -818,7 +810,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "Size",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -849,7 +841,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "Messages",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -880,7 +872,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "ActiveMessages",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -911,7 +903,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "DeadletteredMessages",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -942,7 +934,7 @@
                   "isDimensionRequired": false,
                   "lockAggregationType": "Total",
                   "name": "ScheduledMessages",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Average",
@@ -972,7 +964,7 @@
                   "internalMetricName": "CompleteMessage",
                   "isDimensionRequired": false,
                   "name": "CompleteMessage",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -997,7 +989,7 @@
                   "internalMetricName": "AbandonMessage",
                   "isDimensionRequired": false,
                   "name": "AbandonMessage",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1028,7 +1020,7 @@
                   "lockAggregationType": "Max",
                   "metricFilterPattern": "(?i)^premium$",
                   "name": "NamespaceCpuUsage",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Max"
@@ -1062,7 +1054,7 @@
                   "lockAggregationType": "Max",
                   "metricFilterPattern": "(?i)^premium$",
                   "name": "NamespaceMemoryUsage",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "supportedAggregationTypes": [
                     "Max"
@@ -1082,7 +1074,7 @@
                   "fillGapWithZero": true,
                   "internalMetricName": "MessageStorePendingCheckpointBacklogOperationCount",
                   "name": "PendingCheckpointOperationCount",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -1107,7 +1099,7 @@
                   "internalMetricName": "GatewaySendLatency",
                   "isDimensionRequired": false,
                   "name": "ServerSendLatency",
-                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmAccount": "ServiceBus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Milliseconds"
                 },
@@ -1247,8 +1239,8 @@
       "name": "namespaces/disasterrecoveryconfigs",
       "operations": [
         {
-          "description": "Checks availability of namespace alias under given subscription (Deprecated).",
-          "displayName": "Get alias availability (Deprecated)",
+          "description": "Checks availability of namespace alias under given subscription.",
+          "displayName": "Get alias availability.",
           "isDataAction": false,
           "name": "Microsoft.ServiceBus/namespaces/disasterrecoveryconfigs/checkNameAvailability/action",
           "origin": null,
