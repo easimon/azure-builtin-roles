@@ -44,7 +44,7 @@
       "properties": null
     },
     {
-      "description": "Evaluates whether multiple transaction requests can be processed at tenant level.\nOnly available in API version 2025-07-01-preview.",
+      "description": "Evaluates whether multiple transaction requests can be processed at tenant level.\nOnly available starting in API version 2025-07-01-preview.",
       "displayName": "ProviderLevelActions_TenantLevelCanTransact",
       "isDataAction": false,
       "name": "Microsoft.SaaSHub/tenantLevelCanTransact/action",
@@ -68,10 +68,26 @@
       "properties": null
     },
     {
-      "description": "Gets coterm end dates for multiple resources at tenant level.\nOnly available in API version 2025-07-01-preview.",
-      "displayName": "ProviderLevelActions_TenantLevelGetCotermEndDates",
+      "description": "Gets coterm end dates for multiple resources at tenant level.\nOnly available starting in API version 2026-03-31-preview.",
+      "displayName": "ProviderLevelActions_TenantLevelGetCotermEndDatesBulk",
       "isDataAction": false,
       "name": "Microsoft.SaaSHub/tenantLevelCoterminousDates/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates customer eligibility for promotions on one or more products.\nOnly available starting in API version 2026-03-31-preview.",
+      "displayName": "ProviderLevelActions_ValidatePromotions",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/validatePromotions/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates whether customers qualify for future price concessions when purchasing Microsoft 365 products.\nOn each evaluated product, hydrates the catalog product SKU for the constraints and checks whether\nthe sum of new and existing resources would meet the requirements for concessions.\nOnly available starting in API version 2026-03-31-preview.",
+      "displayName": "ProviderLevelActions_ValidateFuturePriceEligibility",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/validateFuturePriceEligibility/action",
       "origin": null,
       "properties": null
     }
@@ -328,24 +344,16 @@
           "properties": null
         },
         {
-          "description": "Lists the SaaSHub Saas resource under the tenant.",
-          "displayName": "SaasResources_ListByTenant",
+          "description": "Gets the refundable quantity for a SaaSHub Saas resource.",
+          "displayName": "SaasResources_RefundableQuantity",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/read",
+          "name": "Microsoft.SaaSHub/saasResources/refundableQuantity/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets a SaaSHub Saas resource by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
-          "displayName": "SaasResources_Get",
-          "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or updates a SaaSHub Saas resource.",
-          "displayName": "SaasResources_Create",
+          "description": "Updates the properties of a SaaSHub Saas resource.",
+          "displayName": "SaasResources_Update",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/saasResources/write",
           "origin": null,
@@ -360,18 +368,34 @@
           "properties": null
         },
         {
-          "description": "Updates the properties of a SaaSHub Saas resource.",
-          "displayName": "SaasResources_Update",
+          "description": "Creates or updates a SaaSHub Saas resource.",
+          "displayName": "SaasResources_Create",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/saasResources/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets the refundable quantity for a SaaSHub Saas resource.",
-          "displayName": "SaasResources_RefundableQuantity",
+          "description": "Gets a SaaSHub Saas resource by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "SaasResources_Get",
           "isDataAction": false,
-          "name": "Microsoft.SaaSHub/saasResources/refundableQuantity/action",
+          "name": "Microsoft.SaaSHub/saasResources/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the SaaSHub Saas resource under the tenant.",
+          "displayName": "SaasResources_ListByTenant",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Transfers a SaasResource to another partner tenant.\nOnly available starting in API version 2026-03-31-preview.",
+          "displayName": "SaasResources_TransferToPartner",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/transferToPartner/action",
           "origin": null,
           "properties": null
         }
