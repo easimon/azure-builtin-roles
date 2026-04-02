@@ -8,7 +8,7 @@
       "displayName": "Register the Microsoft.Genome",
       "isDataAction": false,
       "name": "Microsoft.Genome/register/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     },
     {
@@ -16,7 +16,7 @@
       "displayName": "Unregister the Microsoft.Genome",
       "isDataAction": false,
       "name": "Microsoft.Genome/unregister/action",
-      "origin": null,
+      "origin": "System",
       "properties": null
     }
   ],
@@ -26,35 +26,11 @@
       "name": "accounts",
       "operations": [
         {
-          "description": "Update properties of an existing Genome account.",
-          "displayName": "GenomeAccounts_BeginUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.Genome/accounts/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a Genome account.",
-          "displayName": "GenomeAccounts_BeginDelete",
-          "isDataAction": false,
-          "name": "Microsoft.Genome/accounts/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Provision a new Genome account.",
-          "displayName": "GenomeAccounts_BeginCreate",
-          "isDataAction": false,
-          "name": "Microsoft.Genome/accounts/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Get details of a Genome account.",
           "displayName": "GenomeAccounts_Get",
           "isDataAction": false,
           "name": "Microsoft.Genome/accounts/read",
-          "origin": null,
+          "origin": "User, System",
           "properties": null
         },
         {
@@ -62,7 +38,7 @@
           "displayName": "GenomeAccounts_ListByResourceGroup",
           "isDataAction": false,
           "name": "Microsoft.Genome/accounts/read",
-          "origin": null,
+          "origin": "User, System",
           "properties": null
         },
         {
@@ -70,7 +46,31 @@
           "displayName": "GenomeAccounts_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.Genome/accounts/read",
-          "origin": null,
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Provision a new Genome account.",
+          "displayName": "GenomeAccounts_BeginCreate",
+          "isDataAction": false,
+          "name": "Microsoft.Genome/accounts/write",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Update properties of an existing Genome account.",
+          "displayName": "GenomeAccounts_BeginUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.Genome/accounts/write",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Delete a Genome account.",
+          "displayName": "GenomeAccounts_BeginDelete",
+          "isDataAction": false,
+          "name": "Microsoft.Genome/accounts/delete",
+          "origin": "User, System",
           "properties": null
         }
       ]
@@ -80,19 +80,19 @@
       "name": "locations/operationStatuses",
       "operations": [
         {
-          "description": "write operationStatuses",
-          "displayName": "write_operationStatuses",
-          "isDataAction": false,
-          "name": "Microsoft.Genome/locations/operationStatuses/write",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "read operationStatuses",
           "displayName": "read_operationStatuses",
           "isDataAction": false,
           "name": "Microsoft.Genome/locations/operationStatuses/read",
-          "origin": null,
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.Genome/locations/operationStatuses/write",
+          "origin": "User, System",
           "properties": null
         }
       ]
@@ -106,7 +106,29 @@
           "displayName": "read_operations",
           "isDataAction": false,
           "name": "Microsoft.Genome/operations/read",
-          "origin": null,
+          "origin": "System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "data",
+      "name": "data",
+      "operations": [
+        {
+          "description": "Read data from Genome accounts",
+          "displayName": "Read Genome Data",
+          "isDataAction": true,
+          "name": "Microsoft.Genome/data/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Write data to Genome accounts",
+          "displayName": "Write Genome Data",
+          "isDataAction": true,
+          "name": "Microsoft.Genome/data/write",
+          "origin": "User",
           "properties": null
         }
       ]
