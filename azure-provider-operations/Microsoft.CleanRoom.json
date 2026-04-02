@@ -200,22 +200,6 @@
       "name": "consortiums",
       "operations": [
         {
-          "description": "Pauses consortium.",
-          "displayName": "Consortiums_Pause",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/consortiums/pause/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Resumes consortium.",
-          "displayName": "Consortiums_Resume",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/consortiums/resume/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "List consortiums in a subscription.",
           "displayName": "Consortiums_ListBySubscription",
           "isDataAction": false,
@@ -262,6 +246,22 @@
           "name": "Microsoft.CleanRoom/consortiums/write",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Pauses consortium.",
+          "displayName": "Consortiums_Pause",
+          "isDataAction": false,
+          "name": "Microsoft.CleanRoom/consortiums/pause/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resumes consortium.",
+          "displayName": "Consortiums_Resume",
+          "isDataAction": false,
+          "name": "Microsoft.CleanRoom/consortiums/resume/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -270,32 +270,8 @@
       "name": "collaborations",
       "operations": [
         {
-          "description": "Updates tags on a collaboration.",
-          "displayName": "Collaborations_Update",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes a collaboration.",
-          "displayName": "Collaborations_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update a collaboration.",
-          "displayName": "Collaborations_Create",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a collaboration.",
-          "displayName": "Collaborations_Get",
+          "description": "List collaborations in a subscription.",
+          "displayName": "Collaborations_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.CleanRoom/collaborations/read",
           "origin": null,
@@ -310,50 +286,34 @@
           "properties": null
         },
         {
-          "description": "List collaborations in a subscription.",
-          "displayName": "Collaborations_ListBySubscription",
+          "description": "Get a collaboration.",
+          "displayName": "Collaborations_Get",
           "isDataAction": false,
           "name": "Microsoft.CleanRoom/collaborations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Adds a collaborator to a collaboration.",
-          "displayName": "Collaborations_AddCollaborator",
+          "description": "Create or update a collaboration.",
+          "displayName": "Collaborations_Create",
           "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/addCollaborator/action",
+          "name": "Microsoft.CleanRoom/collaborations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Enables a workload on a collaboration.",
-          "displayName": "Collaborations_EnableWorkload",
+          "description": "Deletes a collaboration.",
+          "displayName": "Collaborations_Delete",
           "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/enableWorkload/action",
+          "name": "Microsoft.CleanRoom/collaborations/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Pauses collaboration.",
-          "displayName": "Collaborations_Pause",
+          "description": "Updates tags on a collaboration.",
+          "displayName": "Collaborations_Update",
           "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/pause/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Recovers collaboration.",
-          "displayName": "Collaborations_Recover",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/recover/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Resumes collaboration.",
-          "displayName": "Collaborations_Resume",
-          "isDataAction": false,
-          "name": "Microsoft.CleanRoom/collaborations/resume/action",
+          "name": "Microsoft.CleanRoom/collaborations/write",
           "origin": null,
           "properties": null
         }
@@ -408,6 +368,36 @@
           "displayName": "ConsortiumViews_Update",
           "isDataAction": false,
           "name": "Microsoft.CleanRoom/consortiumViews/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "consortiumViews/contracts",
+      "name": "consortiumViews/contracts",
+      "operations": [
+        {
+          "description": "List contracts in a consortium view.",
+          "displayName": "ConsortiumViewContracts_ListByConsortiumView",
+          "isDataAction": false,
+          "name": "Microsoft.CleanRoom/consortiumViews/contracts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a contract.",
+          "displayName": "ConsortiumViewContracts_Get",
+          "isDataAction": false,
+          "name": "Microsoft.CleanRoom/consortiumViews/contracts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generates and proposes contract template.",
+          "displayName": "ConsortiumViewContracts_ProposeTemplate",
+          "isDataAction": false,
+          "name": "Microsoft.CleanRoom/consortiumViews/contracts/proposeTemplate/action",
           "origin": null,
           "properties": null
         }
