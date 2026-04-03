@@ -795,16 +795,8 @@
     },
     {
       "displayName": "changeRecords",
-      "name": "changerecords",
+      "name": "changeRecords",
       "operations": [
-        {
-          "description": "read changerecords",
-          "displayName": "read_changerecords",
-          "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changerecords/read",
-          "origin": null,
-          "properties": null
-        },
         {
           "description": "Update a ChangeRecord",
           "displayName": "ChangeRecords_Update",
@@ -838,6 +830,14 @@
           "properties": null
         },
         {
+          "description": "List ChangeRecord resources by resource group",
+          "displayName": "ChangeRecords_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeRecords/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Retrieve the audit trail action for a ChangeRecord at subscription level.",
           "displayName": "ChangeRecords_RetrieveAuditTrailAtSubscriptionLevel",
           "isDataAction": false,
@@ -862,10 +862,10 @@
           "properties": null
         },
         {
-          "description": "List ChangeRecord resources by resource group",
-          "displayName": "ChangeRecords_ListByResourceGroup",
+          "description": "Retrieves a complete view of all stages defined in the ChangeRecord's associated StageMap, merged with current execution status from existing StageProgression resources at subscription level.",
+          "displayName": "ChangeRecords_RetrieveAllStagesAtSubscriptionLevel",
           "isDataAction": false,
-          "name": "Microsoft.ChangeSafety/changeRecords/read",
+          "name": "Microsoft.ChangeSafety/changeRecords/retrieveAllStages/action",
           "origin": null,
           "properties": null
         },
@@ -930,6 +930,22 @@
           "displayName": "ChangeRecords_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ChangeSafety/changeRecords/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieves a complete view of all stages defined in the ChangeRecord's associated StageMap, merged with current execution status from existing StageProgression resources.",
+          "displayName": "ChangeRecords_RetrieveAllStages",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changeRecords/retrieveAllStages/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read changerecords",
+          "displayName": "read_changerecords",
+          "isDataAction": false,
+          "name": "Microsoft.ChangeSafety/changerecords/read",
           "origin": null,
           "properties": null
         }
