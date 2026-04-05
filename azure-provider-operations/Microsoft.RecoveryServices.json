@@ -106,6 +106,14 @@
       "name": "Vaults",
       "operations": [
         {
+          "description": "Retrieves the status of the cross-tenant vault mapping.",
+          "displayName": "Retrieve cross-tenant vault mapping status.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Export Jobs",
           "displayName": "Export Jobs",
           "isDataAction": false,
@@ -2911,6 +2919,172 @@
           "displayName": "Validate Operation on Protected Item",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/validateBulkRestoreOperationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Results",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/operationResults",
+      "operations": [
+        {
+          "description": "Retrieves the results of operations performed on protected items from cross-tenant mapped vault.",
+          "displayName": "Retrieve operation results for protected items from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/operationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Status",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/operationsStatus",
+      "operations": [
+        {
+          "description": "Retrieves the status of operations performed on protected items from cross-tenant mapped vault.",
+          "displayName": "Retrieve protected items operation status from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems",
+      "operations": [
+        {
+          "description": "Returns object details of the Protected Item",
+          "displayName": "Get Protected Item Details",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/recoveryPoints",
+      "operations": [
+        {
+          "description": "Returns a list of all recovery points from the cross-tenant mapped vault.",
+          "displayName": "Retrieve all recovery points from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Restore recovery point from cross-tenant mapped vault for the protected items.",
+          "displayName": "Restore recovery point from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupJobs",
+      "operations": [
+        {
+          "description": "Returns a list of all jobs from the cross-tenant mapped vault.",
+          "displayName": "Retrieve all jobs from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupJobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Items",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupProtectedItems",
+      "operations": [
+        {
+          "description": "Returns a list of all protected items from the cross-tenant mapped vault.",
+          "displayName": "Retrieve all protected items from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupProtectedItems/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation",
+      "name": "Vaults/backupCrossTenantVaultMapping",
+      "operations": [
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupTriggerValidateOperation/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupValidateOperation/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Retrieves the cross-tenant vault mapping.",
+          "displayName": "Retrieve the cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Remove the backup cross-tenant vault mapping.",
+          "displayName": "Remove the cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/remove/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create a backup cross-tenant vault mapping.",
+          "displayName": "Create a cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation Results",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupValidateOperationResults",
+      "operations": [
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupValidateOperationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation Status",
+      "name": "Vaults/backupCrossTenantVaultMapping/backupValidateOperationsStatuses",
+      "operations": [
+        {
+          "description": "Validate Operation on Protected Item",
+          "displayName": "Validate Operation on Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMapping/backupValidateOperationsStatuses/read",
           "origin": "user",
           "properties": null
         }
