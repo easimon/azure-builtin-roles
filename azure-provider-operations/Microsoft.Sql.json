@@ -1648,9 +1648,17 @@
       ]
     },
     {
-      "displayName": "Database Top Queries",
+      "displayName": "Database Top Queries Query Text",
       "name": "servers/databases/topQueries",
       "operations": [
+        {
+          "description": "Returns the text for selected query ID",
+          "displayName": "Get Database Top Queries query text",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/servers/databases/topQueries/queryText/action",
+          "origin": null,
+          "properties": null
+        },
         {
           "description": "Returns aggregated statistics for selected number of queries in selected time period",
           "displayName": "Get Top Queries for the database",
@@ -8962,14 +8970,28 @@
       ]
     },
     {
-      "displayName": "Database Top Queries Query Text",
-      "name": "servers/databases/topQueries/queryText",
+      "displayName": "Top queries of managed instance",
+      "name": "managedInstances/topqueries",
       "operations": [
         {
-          "description": "Returns the text for selected query ID",
-          "displayName": "Get Database Top Queries query text",
+          "description": "Get top resource consuming queries of a managed instance",
+          "displayName": "Get top resource consuming queries of a managed instance",
           "isDataAction": false,
-          "name": "Microsoft.Sql/servers/databases/topQueries/queryText/read",
+          "name": "Microsoft.Sql/managedInstances/topqueries/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Top consuming databases of managed instance",
+      "name": "managedInstances/topdatabases",
+      "operations": [
+        {
+          "description": "Get top resource consuming databases of a managed instance",
+          "displayName": "Get top resource consuming databases of a managed instance",
+          "isDataAction": false,
+          "name": "Microsoft.Sql/managedInstances/topdatabases/read",
           "origin": null,
           "properties": null
         }
