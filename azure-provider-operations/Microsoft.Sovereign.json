@@ -146,39 +146,15 @@
       "name": "landingZoneAccounts",
       "operations": [
         {
-          "description": "List the landing zone accounts within a subscription.",
-          "displayName": "LandingZoneAccountOperations_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.Sovereign/landingZoneAccounts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List the landing zone accounts within a resource group.",
-          "displayName": "LandingZoneAccountOperations_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.Sovereign/landingZoneAccounts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a landing zone account.",
-          "displayName": "LandingZoneAccountOperations_Get",
-          "isDataAction": false,
-          "name": "Microsoft.Sovereign/landingZoneAccounts/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a landing zone account.",
-          "displayName": "LandingZoneAccountOperations_Create",
+          "description": "Updates the landing zone account.",
+          "displayName": "LandingZoneAccountOperations_Update",
           "isDataAction": false,
           "name": "Microsoft.Sovereign/landingZoneAccounts/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes a landing zone account.",
+          "description": "Deletes the landing zone account.",
           "displayName": "LandingZoneAccountOperations_Delete",
           "isDataAction": false,
           "name": "Microsoft.Sovereign/landingZoneAccounts/delete",
@@ -186,10 +162,34 @@
           "properties": null
         },
         {
-          "description": "Update a landing zone account.",
-          "displayName": "LandingZoneAccountOperations_Update",
+          "description": "Creates the landing zone account.",
+          "displayName": "LandingZoneAccountOperations_Create",
           "isDataAction": false,
           "name": "Microsoft.Sovereign/landingZoneAccounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the landing zone account.",
+          "displayName": "LandingZoneAccountOperations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the landing zone accounts within a resource group.",
+          "displayName": "LandingZoneAccountOperations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the landing zone accounts within a subscription.",
+          "displayName": "LandingZoneAccountOperations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/read",
           "origin": null,
           "properties": null
         }
@@ -294,31 +294,7 @@
       "name": "landingZoneAccounts/landingZoneRegistrations",
       "operations": [
         {
-          "description": "List the landing zone registrations within a landing zone account.",
-          "displayName": "LandingZoneRegistrationOperations_List",
-          "isDataAction": false,
-          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a landing zone registration.",
-          "displayName": "LandingZoneRegistrationOperations_Get",
-          "isDataAction": false,
-          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a landing zone registration.",
-          "displayName": "LandingZoneRegistrationOperations_Create",
-          "isDataAction": false,
-          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a landing zone registration.",
+          "description": "Deletes the landing zone registration.",
           "displayName": "LandingZoneRegistrationOperations_Delete",
           "isDataAction": false,
           "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/delete",
@@ -326,10 +302,120 @@
           "properties": null
         },
         {
-          "description": "Update a landing zone registration.",
+          "description": "Creates the landing zone registration.",
+          "displayName": "LandingZoneRegistrationOperations_Create",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the landing zone registration.",
+          "displayName": "LandingZoneRegistrationOperations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the landing zone registrations within a resource group.",
+          "displayName": "LandingZoneRegistrationOperations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the landing zone registrations within a subscription.",
+          "displayName": "LandingZoneRegistrationOperations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the landing zone registration.",
           "displayName": "LandingZoneRegistrationOperations_Update",
           "isDataAction": false,
           "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Compute drift for landing zone registration.",
+          "displayName": "LandingZoneRegistrationOperations_Drift",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/landingZoneAccounts/landingZoneRegistrations/drift/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "sovereignViews",
+      "name": "sovereignViews",
+      "operations": [
+        {
+          "description": "Lists the Sovereign View resources within a subscription.",
+          "displayName": "SovereignViewOperations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the Sovereign View resources within a resource group.",
+          "displayName": "SovereignViewOperations_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the Sovereign View resource.",
+          "displayName": "SovereignViewOperations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates the Sovereign View resource.",
+          "displayName": "SovereignViewOperations_Create",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the Sovereign View resource.",
+          "displayName": "SovereignViewOperations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the Sovereign View resource.",
+          "displayName": "SovereignViewOperations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets compliance details for the Sovereign View resource.",
+          "displayName": "SovereignViewOperations_ComplianceDetails",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/complianceDetails/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the compliance summary for the Sovereign View resource.",
+          "displayName": "SovereignViewOperations_ComplianceSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Sovereign/sovereignViews/complianceSummary/action",
           "origin": null,
           "properties": null
         }
