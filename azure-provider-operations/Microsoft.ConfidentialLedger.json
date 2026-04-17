@@ -13,7 +13,7 @@
           "displayName": "Read transactions",
           "isDataAction": true,
           "name": "Microsoft.ConfidentialLedger/ledgers/transactions/read",
-          "origin": null,
+          "origin": "User",
           "properties": null
         },
         {
@@ -21,7 +21,45 @@
           "displayName": "Write transactions",
           "isDataAction": true,
           "name": "Microsoft.ConfidentialLedger/ledgers/transactions/write",
-          "origin": null,
+          "origin": "User",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ledgers",
+      "name": "ledgers",
+      "operations": [
+        {
+          "description": "Reads ledger(s)",
+          "displayName": "Gets/Lists Confidential Ledger resources",
+          "isDataAction": false,
+          "name": "Microsoft.ConfidentialLedger/ledgers/read",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Writes ledger",
+          "displayName": "Creates/updates Confidential Ledger resources",
+          "isDataAction": false,
+          "name": "Microsoft.ConfidentialLedger/ledgers/write",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Export ledger files",
+          "displayName": "Backup/Exports Confidential Ledger resources",
+          "isDataAction": false,
+          "name": "Microsoft.ConfidentialLedger/ledgers/filesExport/action",
+          "origin": "User",
+          "properties": null
+        },
+        {
+          "description": "Deletes ledger",
+          "displayName": "Deletes Confidential Ledger resource",
+          "isDataAction": false,
+          "name": "Microsoft.ConfidentialLedger/ledgers/delete",
+          "origin": "User",
           "properties": null
         }
       ]
