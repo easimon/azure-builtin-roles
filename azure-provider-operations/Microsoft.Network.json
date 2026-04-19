@@ -1561,14 +1561,6 @@
           "name": "Microsoft.Network/applicationSecurityGroups/listIpConfigurations/action",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Lists address prefix sets in an application security group",
-          "displayName": "List Address Prefix Sets",
-          "isDataAction": false,
-          "name": "Microsoft.Network/applicationSecurityGroups/listAddressPrefixSets/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -2384,14 +2376,6 @@
           "properties": null
         },
         {
-          "description": "Gets an application gateway resource health",
-          "displayName": "Get an application gateway resource health",
-          "isDataAction": false,
-          "name": "Microsoft.Network/applicationGateways/applicationGatewayHealth/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Gets an application gateway backend health on demand for given http setting and backend pool",
           "displayName": "Get an application gateway backend health on demand",
           "isDataAction": false,
@@ -2608,14 +2592,6 @@
           "displayName": "Delete Traffic Manager Profile",
           "isDataAction": false,
           "name": "Microsoft.Network/trafficManagerProfiles/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Establishes a link between a DNS record and a Traffic Manager Profile so that the traffic manager profile can't be removed while it is being referenced by the dns record",
-          "displayName": "Establishes a link between a DNS record and a Traffic Manager Profile",
-          "isDataAction": false,
-          "name": "Microsoft.Network/trafficManagerProfiles/validateLink/action",
           "origin": null,
           "properties": null
         }
@@ -7122,14 +7098,6 @@
           "displayName": "Express Route Notify Multi Cloud Connection Status",
           "isDataAction": false,
           "name": "Microsoft.Network/expressRouteCrossConnections/notifyConnectionStatus/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Express Route Deprovision Multi Cloud Connection",
-          "displayName": "Express Route Deprovision Multi Cloud Connection",
-          "isDataAction": false,
-          "name": "Microsoft.Network/expressRouteCrossConnections/deprovisionConnection/action",
           "origin": null,
           "properties": null
         }
@@ -17363,6 +17331,22 @@
           "name": "Microsoft.Network/networkWatchers/agents/register/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Fetch Network Watcher Agent Registration detail",
+          "displayName": "Fetch Network Watcher Agent Registration",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkWatchers/agents/fetchRegistrationInfo/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deregisters a Network Watcher Agent",
+          "displayName": "Deregister Network Watcher Agent",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkWatchers/agents/deregister/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -17665,22 +17649,6 @@
           "name": "Microsoft.Network/expressRouteLags/delete",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Generates LOA for ExpressRouteLag",
-          "displayName": "Generates LOA for ExpressRouteLag",
-          "isDataAction": false,
-          "name": "Microsoft.Network/expressRouteLags/generateloa/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Joins ExpressRouteLag",
-          "displayName": "Joins ExpressRouteLag",
-          "isDataAction": false,
-          "name": "Microsoft.Network/expressRouteLags/join/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -17783,66 +17751,6 @@
           "displayName": "Get Interconnect Group Subgroup",
           "isDataAction": false,
           "name": "Microsoft.Network/interconnectGroups/subgroups/read",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Address Prefix Set",
-      "name": "applicationSecurityGroups/addressPrefixSets",
-      "operations": [
-        {
-          "description": "Creates an address prefix set or updates an existing address prefix set",
-          "displayName": "Create or Update Address Prefix Set",
-          "isDataAction": false,
-          "name": "Microsoft.Network/applicationSecurityGroups/addressPrefixSets/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets an Address Prefix Set",
-          "displayName": "Get Address Prefix Set",
-          "isDataAction": false,
-          "name": "Microsoft.Network/applicationSecurityGroups/addressPrefixSets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes an Address Prefix Set",
-          "displayName": "Delete Address Prefix Set",
-          "isDataAction": false,
-          "name": "Microsoft.Network/applicationSecurityGroups/addressPrefixSets/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "First Party Service Tag",
-      "name": "firstPartyServiceTags",
-      "operations": [
-        {
-          "description": "Get First Party Service Tag",
-          "displayName": "Get First Party Service Tag",
-          "isDataAction": false,
-          "name": "Microsoft.Network/firstPartyServiceTags/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or Update First Party Service Tag",
-          "displayName": "Create or Update First Party Service Tag",
-          "isDataAction": false,
-          "name": "Microsoft.Network/firstPartyServiceTags/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete First Party Service Tag",
-          "displayName": "Delete First Party Service Tag",
-          "isDataAction": false,
-          "name": "Microsoft.Network/firstPartyServiceTags/delete",
           "origin": null,
           "properties": null
         }
