@@ -795,6 +795,962 @@
                   "metricFilterPattern": "^Personalizer$",
                   "name": "MatchedRewards",
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "Scenario",
+                      "name": "Scenario"
+                    },
+                    {
+                      "displayName": "RunId",
+                      "name": "runId"
+                    },
+                    {
+                      "displayName": "NodeId",
+                      "name": "NodeId"
+                    },
+                    {
+                      "displayName": "ClusterName",
+                      "name": "ClusterName"
+                    }
+                  ],
+                  "displayDescription": "Percentage of utilization on a CPU node. Utilization is reported at one minute intervals.",
+                  "displayName": "CpuUtilization",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuUtilization",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "Scenario",
+                      "name": "Scenario"
+                    },
+                    {
+                      "displayName": "RunId",
+                      "name": "runId"
+                    },
+                    {
+                      "displayName": "NodeId",
+                      "name": "NodeId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ClusterName",
+                      "name": "ClusterName"
+                    }
+                  ],
+                  "displayDescription": "Percentage of utilization on a GPU node. Utilization is reported at one minute intervals.",
+                  "displayName": "GpuUtilization",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuUtilization",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "Scenario",
+                      "name": "Scenario"
+                    },
+                    {
+                      "displayName": "RunId",
+                      "name": "runId"
+                    },
+                    {
+                      "displayName": "NodeId",
+                      "name": "NodeId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ClusterName",
+                      "name": "ClusterName"
+                    }
+                  ],
+                  "displayDescription": "Percentage of memory utilization on a GPU node. Utilization is reported at one minute intervals.",
+                  "displayName": "GpuMemoryUtilization",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuMemoryUtilization",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "Scenario",
+                      "name": "Scenario"
+                    },
+                    {
+                      "displayName": "RunId",
+                      "name": "runId"
+                    },
+                    {
+                      "displayName": "RootRunId",
+                      "name": "rootRunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Interval energy in Joules on a GPU node. Energy is reported at one minute intervals.",
+                  "displayName": "GpuEnergyJoules",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuEnergyJoules",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Utilization of a CPU node in millicores. Utilization is aggregated in one minute intervals.",
+                  "displayName": "CpuUtilizationMillicores",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuUtilizationMillicores",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Maximum capacity of a CPU node in millicores. Capacity is aggregated in one minute intervals.",
+                  "displayName": "CpuCapacityMillicores",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuCapacityMillicores",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Utilization percentage of a CPU node. Utilization is aggregated in one minute intervals.",
+                  "displayName": "CpuUtilizationPercentage",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuUtilizationPercentage",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Utilization of a GPU device in milli-GPUs. Utilization is aggregated in one minute intervals.",
+                  "displayName": "GpuUtilizationMilliGPUs",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuUtilizationMilliGPUs",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Maximum capacity of a GPU device in milli-GPUs. Capacity is aggregated in one minute intervals.",
+                  "displayName": "GpuCapacityMilliGPUs",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuCapacityMilliGPUs",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Utilization percentage of a GPU device. Utilization is aggregated in one minute intervals.",
+                  "displayName": "GpuUtilizationPercentage",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuUtilizationPercentage",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Memory utilization of a GPU device in megabytes. Utilization aggregated in one minute intervals.",
+                  "displayName": "GpuMemoryUtilizationMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuMemoryUtilizationMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Maximum memory capacity of a GPU device in megabytes. Capacity aggregated in one minute intervals.",
+                  "displayName": "GpuMemoryCapacityMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuMemoryCapacityMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Memory utilization percentage of a GPU device. Utilization aggregated in one minute intervals.",
+                  "displayName": "GpuMemoryUtilizationPercentage",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "GpuMemoryUtilizationPercentage",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Memory utilization percentage of a CPU node. Utilization is aggregated in one minute intervals.",
+                  "displayName": "CpuMemoryUtilizationPercentage",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuMemoryUtilizationPercentage",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Memory utilization of a CPU node in megabytes. Utilization is aggregated in one minute intervals.",
+                  "displayName": "CpuMemoryUtilizationMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuMemoryUtilizationMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Maximum memory capacity of a CPU node in megabytes. Capacity is aggregated in one minute intervals.",
+                  "displayName": "CpuMemoryCapacityMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "CpuMemoryCapacityMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    }
+                  ],
+                  "displayDescription": "Network data received in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "NetworkInputMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "NetworkInputMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    }
+                  ],
+                  "displayDescription": "Network data sent in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "NetworkOutputMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "NetworkOutputMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    }
+                  ],
+                  "displayDescription": "Network data received over InfiniBand in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "IBReceiveMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "IBReceiveMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    },
+                    {
+                      "displayName": "DeviceId",
+                      "name": "DeviceId"
+                    }
+                  ],
+                  "displayDescription": "Network data sent over InfiniBand in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "IBTransmitMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "IBTransmitMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Used disk space in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "DiskUsedMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "DiskUsedMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Available disk space in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "DiskAvailMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "DiskAvailMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Data read from disk in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "DiskReadMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "DiskReadMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Data written into disk in megabytes. Metrics are aggregated in one minute intervals.",
+                  "displayName": "DiskWriteMegabytes",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "DiskWriteMegabytes",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Azure Blob Storage API calls success count.",
+                  "displayName": "StorageAPISuccessCount",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "StorageAPISuccessCount",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Resource",
+                  "dimensions": [
+                    {
+                      "displayName": "RunId",
+                      "name": "RunId"
+                    },
+                    {
+                      "displayName": "InstanceId",
+                      "name": "InstanceId"
+                    },
+                    {
+                      "displayName": "ComputeName",
+                      "name": "ComputeName"
+                    }
+                  ],
+                  "displayDescription": "Azure Blob Storage API calls failure count.",
+                  "displayName": "StorageAPIFailureCount",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "StorageAPIFailureCount",
+                  "unit": "Count"
                 }
               ]
             }
