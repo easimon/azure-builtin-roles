@@ -266,6 +266,22 @@
           "name": "Microsoft.Billing/billingAccounts/refresh/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Disables a billing account.",
+          "displayName": "BillingAccounts_Disable",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/disable/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables a billing account.",
+          "displayName": "BillingAccounts_Enable",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/enable/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -2942,6 +2958,34 @@
           "displayName": "Policies_CreateOrUpdateByInvoiceSection",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/policies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Delete Eligibility",
+      "name": "billingAccounts/addresses/validateDeleteEligibility",
+      "operations": [
+        {
+          "description": "Validates if the address is eligible for deletion.",
+          "displayName": "Address_ValidateDeleteEligibility",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/addresses/validateDeleteEligibility/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ensure Default Cloud Subscription",
+      "name": "billingAccounts/billingProfiles/invoiceSections/ensureDefaultCloudSubscription",
+      "operations": [
+        {
+          "description": "Ensures a default cloud subscription exists for an invoice section. If one does not exist, it will be created. This operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "Policies_EnsureDefaultCloudSubscriptionByInvoiceSection",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/invoiceSections/ensureDefaultCloudSubscription/write",
           "origin": null,
           "properties": null
         }
