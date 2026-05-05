@@ -1,0 +1,84 @@
+{
+  "displayName": "Microsoft Inference Service",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.InferenceService",
+  "name": "Microsoft.InferenceService",
+  "operations": [
+    {
+      "description": "Registers the subscription for the Microsoft.InferenceService resource provider.",
+      "displayName": "Register the Inference Service resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.InferenceService/register/action",
+      "origin": "user,system",
+      "properties": null
+    },
+    {
+      "description": "Unregisters the subscription from the Microsoft.InferenceService resource provider.",
+      "displayName": "Unregister the Inference Service resource provider",
+      "isDataAction": false,
+      "name": "Microsoft.InferenceService/unregister/action",
+      "origin": "user,system",
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "Operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "Lists all operations supported by the Microsoft.InferenceService resource provider.",
+          "displayName": "List operations",
+          "isDataAction": false,
+          "name": "Microsoft.InferenceService/operations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Inference Accounts",
+      "name": "inferenceAccounts",
+      "operations": [
+        {
+          "description": "Reads an inference service.",
+          "displayName": "Read inference service",
+          "isDataAction": false,
+          "name": "Microsoft.InferenceService/inferenceAccounts/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an inference service.",
+          "displayName": "Write inference service",
+          "isDataAction": false,
+          "name": "Microsoft.InferenceService/inferenceAccounts/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an inference service.",
+          "displayName": "Delete inference service",
+          "isDataAction": false,
+          "name": "Microsoft.InferenceService/inferenceAccounts/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Inference Accounts",
+      "name": "inferenceAccounts/invoke",
+      "operations": [
+        {
+          "description": "Invokes the semantic reranker on an inference account.",
+          "displayName": "Invoke Semantic Reranker",
+          "isDataAction": true,
+          "name": "Microsoft.InferenceService/inferenceAccounts/invoke/semanticReranker/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}
