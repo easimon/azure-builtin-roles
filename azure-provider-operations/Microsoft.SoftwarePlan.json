@@ -1,5 +1,5 @@
 {
-  "displayName": "Microsoft SoftwarePlan",
+  "displayName": "Microsoft.SoftwarePlan",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.SoftwarePlan",
   "name": "Microsoft.SoftwarePlan",
   "operations": [
@@ -48,6 +48,14 @@
       "displayName": "Validate Software Benefit Purchase",
       "isDataAction": false,
       "name": "Microsoft.SoftwarePlan/validateSoftwareBenefitCreate/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Validate software perpetual product purchase request",
+      "displayName": "Validate Software Perpetual Product Purchase",
+      "isDataAction": false,
+      "name": "Microsoft.SoftwarePlan/validateSoftwarePerpetualProductCreate/action",
       "origin": null,
       "properties": null
     }
@@ -308,6 +316,88 @@
           "displayName": "Create Software Benefits",
           "isDataAction": false,
           "name": "Microsoft.SoftwarePlan/softwareBenefits/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Software Perpetual Products",
+      "name": "softwarePerpetualProducts",
+      "operations": [
+        {
+          "description": "Read any software perpetual product",
+          "displayName": "Read Software Perpetual Products",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any software perpetual product",
+          "displayName": "Create or Update Software Perpetual Products",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any software perpetual product",
+          "displayName": "Delete Software Perpetual Products",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel any software perpetual product",
+          "displayName": "Cancel Software Perpetual Products",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SoftwarePerpetualProducts/ProductKeys",
+      "name": "softwarePerpetualProducts/productKeys",
+      "operations": [
+        {
+          "description": "List Product Keys of a software perpetual product",
+          "displayName": "List Product Keys of a Software Perpetual Product",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/productKeys/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Provide Full 5x5 Key of a Product Key of a Software Perpetual Product",
+          "displayName": "Provide Full 5x5 Key of a Product Key of a Software Perpetual Product",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/productKeys/showFullKey/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SoftwarePerpetualProducts/ProductDownloadOptions",
+      "name": "softwarePerpetualProducts/productDownloadOptions",
+      "operations": [
+        {
+          "description": "List Product Download Options of a Software Perpetual Product",
+          "displayName": "List Product Download Options of a Software Perpetual Product",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/productDownloadOptions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate Product Download Links of a Software Perpetual Product",
+          "displayName": "Generate Product Download Links of a Software Perpetual Product",
+          "isDataAction": false,
+          "name": "Microsoft.SoftwarePlan/softwarePerpetualProducts/productDownloadOptions/generateDownloadLinks/action",
           "origin": null,
           "properties": null
         }
