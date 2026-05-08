@@ -34,24 +34,16 @@
           "properties": null
         },
         {
-          "description": "List GoalAssignment resources by tenant",
-          "displayName": "GoalAssignments_List",
+          "description": "Refreshes the goal resources under a goal assignment. This operation scans for new resources under the scope of the assignment.",
+          "displayName": "GoalAssignments_RefreshGoalResources",
           "isDataAction": false,
-          "name": "Microsoft.AzureResilienceManagement/goalAssignments/read",
+          "name": "Microsoft.AzureResilienceManagement/goalAssignments/refreshGoalResources/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a GoalAssignment",
-          "displayName": "GoalAssignments_Get",
-          "isDataAction": false,
-          "name": "Microsoft.AzureResilienceManagement/goalAssignments/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a GoalAssignment",
-          "displayName": "GoalAssignments_CreateOrUpdate",
+          "description": "Update a GoalAssignment",
+          "displayName": "GoalAssignments_Update",
           "isDataAction": false,
           "name": "Microsoft.AzureResilienceManagement/goalAssignments/write",
           "origin": null,
@@ -66,18 +58,34 @@
           "properties": null
         },
         {
-          "description": "Update a GoalAssignment",
-          "displayName": "GoalAssignments_Update",
+          "description": "Create a GoalAssignment",
+          "displayName": "GoalAssignments_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.AzureResilienceManagement/goalAssignments/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Refreshes the goal resources under a goal assignment. This operation scans for new resources under the scope of the assignment.",
-          "displayName": "GoalAssignments_RefreshGoalResources",
+          "description": "Get a GoalAssignment",
+          "displayName": "GoalAssignments_Get",
           "isDataAction": false,
-          "name": "Microsoft.AzureResilienceManagement/goalAssignments/refreshGoalResources/action",
+          "name": "Microsoft.AzureResilienceManagement/goalAssignments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List GoalAssignment resources by tenant",
+          "displayName": "GoalAssignments_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/goalAssignments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Recommends capacity improvements for resources under the goal assignments scope. Returns AI-powered capacity assessments and recommendations.",
+          "displayName": "GoalAssignments_RecommendCapacity",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/goalAssignments/recommendCapacity/action",
           "origin": null,
           "properties": null
         }
@@ -208,6 +216,22 @@
           "displayName": "Drills_ValidateForExecution",
           "isDataAction": false,
           "name": "Microsoft.AzureResilienceManagement/drills/validateForExecution/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This triggers detection of any drifts from the desired state of Resources and RBAC.",
+          "displayName": "Drills_RefreshReadinessState",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/drills/refreshReadinessState/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This triggers detection of any drifts from the desired state of Resources and RBAC.",
+          "displayName": "Drills_ResyncReadinessCheck",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/drills/resyncReadinessCheck/action",
           "origin": null,
           "properties": null
         }
