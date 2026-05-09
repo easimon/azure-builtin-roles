@@ -3,8 +3,8 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2026-04-13T15:08:05.140814+00:00",
-  "description": "Role allows users to collect diagnostic information regarding their Virtual Machine",
+  "createdOn": "2026-04-08T17:59:44.443784+00:00",
+  "description": "Collect diagnostic information regarding Virtual Machine and Virtual Machine Scale Sets",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/64375caa-ac3e-48b3-9492-da4d60aba7bb",
   "name": "64375caa-ac3e-48b3-9492-da4d60aba7bb",
   "permissions": [
@@ -12,7 +12,10 @@
       "actions": [
         "Microsoft.Compute/virtualMachines/DiagnosticRunCommands/write",
         "Microsoft.Compute/virtualMachines/DiagnosticRunCommands/read",
-        "Microsoft.Compute/virtualMachines/DiagnosticRunCommands/delete"
+        "Microsoft.Compute/virtualMachines/DiagnosticRunCommands/delete",
+        "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/DiagnosticRunCommands/write",
+        "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/DiagnosticRunCommands/read",
+        "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/DiagnosticRunCommands/delete"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -25,5 +28,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-04-13T15:08:05.140814+00:00"
+  "updatedOn": "2026-05-05T20:37:12.681350+00:00"
 }
