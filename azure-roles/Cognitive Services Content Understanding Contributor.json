@@ -1,0 +1,36 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-05-08T21:43:39.289224+00:00",
+  "description": "Has access to read, create, update, analyze, and test operations for Azure AI Content Understanding. Can manage analyzers, classifiers, labeling projects, and person directories, but cannot delete analyzers or classifiers, manage role assignments, or list account keys.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/59a2dba3-6303-4fd8-9a2e-8cbb4bdda972",
+  "name": "59a2dba3-6303-4fd8-9a2e-8cbb4bdda972",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/*"
+      ],
+      "notActions": [],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/analyzers/delete",
+        "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/classifiers/delete",
+        "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/persondirectories/delete",
+        "Microsoft.CognitiveServices/accounts/MultiModalIntelligence/labelingProjects/delete"
+      ]
+    }
+  ],
+  "roleName": "Cognitive Services Content Understanding Contributor",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-05-08T21:43:39.289224+00:00"
+}
