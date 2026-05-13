@@ -262,6 +262,14 @@
           "properties": null
         },
         {
+          "description": "Initiates a diagnostic support check on the environment",
+          "displayName": "Run Support Check",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/runsupportcheck/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
           "description": "Allows to create a Container App in a Managed Environment",
           "displayName": "Join Managed Environment",
           "isDataAction": false,
@@ -3026,6 +3034,48 @@
           "displayName": "Delete Content Package",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/contentpackages/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Support Check",
+      "name": "managedenvironments/supportchecks",
+      "operations": [
+        {
+          "description": "Lists available support check types for the environment",
+          "displayName": "List Support Check Types",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/supportchecks/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Support Check Operation",
+      "name": "managedenvironments/supportcheckoperations",
+      "operations": [
+        {
+          "description": "Gets the status and result of a support check operation",
+          "displayName": "Get Support Check Status",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/supportcheckoperations/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Environment Mode",
+      "name": "locations/availablemanagedenvironmentsmodes",
+      "operations": [
+        {
+          "description": "Get Available Environment Modes in a Region",
+          "displayName": "Read Available Environment Modes",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/availablemanagedenvironmentsmodes/read",
           "origin": "user, system",
           "properties": null
         }
