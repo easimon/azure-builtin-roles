@@ -43,9 +43,85 @@
         },
         {
           "description": "Deletes all compute resources of Azure Fleet resource",
-          "displayName": "Delete Virtual Machine and Virtual Machine scale sets in a Azure Fleet resource",
+          "displayName": "Delete Virtual Machines and Virtual Machine Scale Sets in an Azure Fleet resource",
           "isDataAction": false,
           "name": "Microsoft.AzureFleet/fleets/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine Scale Sets",
+      "name": "virtualMachineScaleSets",
+      "operations": [
+        {
+          "description": "Gets the properties of a Virtual Machine Scale Set",
+          "displayName": "Get Virtual Machine Scale Sets",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Virtual Machine Scale Set or updates an existing one",
+          "displayName": "Create or Update Virtual Machine Scale Sets",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Virtual Machine Scale Set",
+          "displayName": "Delete Virtual Machine Scale Sets",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restarts one or more Virtual Machines in a Virtual Machine Scale Set",
+          "displayName": "Restart Virtual Machines in a Virtual Machine Scale Set",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/restart/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reimages one or more Virtual Machines in a Virtual Machine Scale Set",
+          "displayName": "Reimage Virtual Machines in a Virtual Machine Scale Set",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/reimage/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine Scale Sets Virtual Machines",
+      "name": "virtualMachineScaleSets/virtualMachines",
+      "operations": [
+        {
+          "description": "Gets the properties of a Virtual Machine in a Virtual Machine Scale Set",
+          "displayName": "Get Virtual Machines",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/virtualMachines/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Restarts a Virtual Machine in a Virtual Machine Scale Set",
+          "displayName": "Restart Virtual Machines",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/virtualMachines/restart/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Reimages a Virtual Machine in a Virtual Machine Scale Set",
+          "displayName": "Reimage Virtual Machines",
+          "isDataAction": false,
+          "name": "Microsoft.AzureFleet/virtualMachineScaleSets/virtualMachines/reimage/action",
           "origin": "user,system",
           "properties": null
         }
