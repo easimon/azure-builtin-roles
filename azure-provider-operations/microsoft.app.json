@@ -3080,6 +3080,72 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Artifact App Replicas",
+      "name": "artifactApps/replicas",
+      "operations": [
+        {
+          "description": "List replicas of an artifact app",
+          "displayName": "List Artifact App Replicas",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifactApps/replicas/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Version",
+      "name": "artifacts/versions",
+      "operations": [
+        {
+          "description": "List versions of an artifact resource",
+          "displayName": "List Artifact Versions",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Cancel an in-flight artifact version build",
+          "displayName": "Cancel Artifact Version Build",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/cancel/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Enable an artifact version for use by ArtifactApps",
+          "displayName": "Enable Artifact Version",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/enable/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Disable an artifact version from use by ArtifactApps",
+          "displayName": "Disable Artifact Version",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/disable/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Version Operation Status",
+      "name": "artifacts/versions/operationStatus",
+      "operations": [
+        {
+          "description": "Get the status of an artifact version's build operation",
+          "displayName": "Get Artifact Version Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/operationStatus/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
