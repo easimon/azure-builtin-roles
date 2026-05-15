@@ -1132,52 +1132,6 @@
       ]
     },
     {
-      "displayName": "LanguageModel",
-      "name": "services/workspaces/languageModels",
-      "operations": [
-        {
-          "description": "Creates or updates specified language model.",
-          "displayName": "Create or update language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/languageModels/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Returns paginated collection of language models.",
-          "displayName": "List language models",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/languageModels/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Returns the details of the specified language model.",
-          "displayName": "Get language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/languageModels/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Checks if specified language model exists",
-          "displayName": "Checks language model exists",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/languageModels/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Deletes specified language model.",
-          "displayName": "Delete language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiCenter/services/workspaces/languageModels/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "McpRegistryConfig",
       "name": "services/workspaces/mcpRegistries",
       "operations": [
@@ -1240,6 +1194,228 @@
           "displayName": "Delete skill evaluation configuration",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/workspaces/skillEvaluationConfigurations/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AgentArtifact",
+      "name": "services/workspaces/agents/versions/artifacts",
+      "operations": [
+        {
+          "description": "Creates or updates the metadata for the specified agent artifact.",
+          "displayName": "Create or update agent artifact",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of agent artifacts.",
+          "displayName": "List agent artifacts",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified agent artifact.",
+          "displayName": "Get agent artifact",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks if specified agent artifact exists",
+          "displayName": "Checks agent artifact exists",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified agent artifact.",
+          "displayName": "Delete agent artifact",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Uploads a single file for the specified agent artifact.",
+          "displayName": "Upload agent artifact content",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the base64-encoded file for the specified agent artifact (≤3 MiB).",
+          "displayName": "Download agent artifact content",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agent",
+      "name": "services/workspaces/agents",
+      "operations": [
+        {
+          "description": "Creates or updates specified agent.",
+          "displayName": "Create or update agent",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of agents.",
+          "displayName": "List agents",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified agent.",
+          "displayName": "Get agent",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks if specified agent exists",
+          "displayName": "Checks agent exists",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified agent.",
+          "displayName": "Delete agent",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AgentVersion",
+      "name": "services/workspaces/agents/versions",
+      "operations": [
+        {
+          "description": "Creates or updates specified agent version.",
+          "displayName": "Create or update agent version",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of agent versions.",
+          "displayName": "List agent versions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified agent version.",
+          "displayName": "Get agent version",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks if specified agent version exists",
+          "displayName": "Checks agent version exists",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified agent version.",
+          "displayName": "Delete agent version",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DataApiSettings",
+      "name": "services/dataApiSettings",
+      "operations": [
+        {
+          "description": "Creates or updates the DataAPI settings configuration for the catalog.",
+          "displayName": "Create or update DataAPI settings.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/dataApiSettings/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the DataAPI settings for the catalog. Synthesizes permissive defaults when no document exists.",
+          "displayName": "Get DataAPI settings.",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/dataApiSettings/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Model",
+      "name": "services/workspaces/models",
+      "operations": [
+        {
+          "description": "Creates or updates specified model.",
+          "displayName": "Create or update model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/models/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of models.",
+          "displayName": "List models",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/models/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified model.",
+          "displayName": "Get model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/models/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks if specified model exists",
+          "displayName": "Checks model exists",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/models/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified model.",
+          "displayName": "Delete model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/models/delete",
           "origin": "user, system",
           "properties": null
         }
