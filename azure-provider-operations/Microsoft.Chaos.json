@@ -232,6 +232,184 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Workspace",
+      "name": "workspaces",
+      "operations": [
+        {
+          "description": "Gets a Workspace resource or lists all Workspace resources in a resource group or subscription.",
+          "displayName": "Gets a Workspace.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Workspace resource in a resource group.",
+          "displayName": "Creates or updates a Workspace.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Workspace resource in a resource group.",
+          "displayName": "Deletes a Workspace.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Refreshes recommendation status for all scenarios in a given workspace.",
+          "displayName": "Refreshes recommendations for a Workspace.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/refreshRecommendations/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Scenario",
+      "name": "workspaces/scenarios",
+      "operations": [
+        {
+          "description": "Gets a Scenario resource or lists all Scenario resources in a Workspace.",
+          "displayName": "Gets a Scenario.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DiscoveredResource",
+      "name": "workspaces/discoveredResources",
+      "operations": [
+        {
+          "description": "Gets a Discovered Resource or lists all Discovered Resources in a Workspace.",
+          "displayName": "Gets a Discovered Resource.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discoveredResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ScenarioConfiguration",
+      "name": "workspaces/scenarios/configurations",
+      "operations": [
+        {
+          "description": "Gets a Scenario Configuration resource or lists all Scenario Configuration resources for a Scenario.",
+          "displayName": "Gets a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Scenario Configuration resource for a Scenario.",
+          "displayName": "Creates or updates a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Scenario Configuration resource for a Scenario.",
+          "displayName": "Deletes a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Executes the scenario with the given scenario configuration.",
+          "displayName": "Executes a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/execute/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Discovers all Azure resources for the given scenario configuration.",
+          "displayName": "Discovers resources for a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/discover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validates the given scenario configuration.",
+          "displayName": "Validates a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/validate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Fixes resource permissions for the given scenario configuration.",
+          "displayName": "Fixes resource permissions for a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/fixResourcePermissions/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validation",
+      "name": "workspaces/scenarios/configurations/validations",
+      "operations": [
+        {
+          "description": "Gets the latest validation for a Scenario Configuration.",
+          "displayName": "Gets the latest Validation.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/validations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ScenarioRun",
+      "name": "workspaces/scenarios/runs",
+      "operations": [
+        {
+          "description": "Gets a Scenario Run resource or lists all Scenario Run resources for a Scenario.",
+          "displayName": "Gets a Scenario Run.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Cancels a running Scenario Run.",
+          "displayName": "Cancels a Scenario Run.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/cancel/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "WorkspaceOperationResult",
+      "name": "locations/workspaceOperationResults",
+      "operations": [
+        {
+          "description": "Gets a Workspace Operation Result.",
+          "displayName": "Gets a Workspace Operation Result.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/locations/workspaceOperationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
