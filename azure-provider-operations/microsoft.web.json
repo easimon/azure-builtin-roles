@@ -36,10 +36,10 @@
       "properties": null
     },
     {
-      "description": "Performs an action on an AI Gateway",
-      "displayName": "AI Gateway Action",
+      "description": "Performs an action on an Connector Gateway",
+      "displayName": "Connector Gateway Action",
       "isDataAction": false,
-      "name": "Microsoft.Web/aiGateways/action",
+      "name": "Microsoft.Web/connectorGateways/action",
       "origin": "user,system",
       "properties": null
     }
@@ -13430,144 +13430,220 @@
       ]
     },
     {
-      "displayName": "AI Gateway",
-      "name": "aiGateways",
+      "displayName": "Connector Gateway",
+      "name": "connectorGateways",
       "operations": [
         {
-          "description": "Gets the properties of an AI Gateway",
-          "displayName": "Get AI Gateway",
+          "description": "Gets the properties of an Connector Gateway",
+          "displayName": "Get Connector Gateway",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/read",
+          "name": "Microsoft.Web/connectorGateways/read",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Creates a new AI Gateway or updates an existing one",
-          "displayName": "Create or Update AI Gateway",
+          "description": "Creates a new Connector Gateway or updates an existing one",
+          "displayName": "Create or Update Connector Gateway",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/write",
+          "name": "Microsoft.Web/connectorGateways/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Deletes an existing AI Gateway",
-          "displayName": "Delete AI Gateway",
+          "description": "Deletes an existing Connector Gateway",
+          "displayName": "Delete Connector Gateway",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/delete",
+          "name": "Microsoft.Web/connectorGateways/delete",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Perform an action on an AI Gateway Connection",
-          "displayName": "AI Gateway Connection Action",
+          "description": "Perform an action on an Connector Gateway Connection",
+          "displayName": "Connector Gateway Connection Action",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/connections/action",
+          "name": "Microsoft.Web/connectorGateways/connections/action",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Perform an action on an AI Gateway MCP Server Config",
-          "displayName": "AI Gateway MCP Server Config Action",
+          "description": "Performs an action on a Connector Gateway Custom Connector",
+          "displayName": "Connector Gateway Custom Connector Action",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/mcpserverconfigs/action",
+          "name": "Microsoft.Web/connectorGateways/customConnectors/action",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Perform an action on an AI Gateway Trigger Config",
-          "displayName": "AI Gateway Trigger Config Action",
+          "description": "Perform an action on an Connector Gateway MCP Server Config",
+          "displayName": "Connector Gateway MCP Server Config Action",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/triggerconfigs/action",
+          "name": "Microsoft.Web/connectorGateways/mcpserverconfigs/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Perform an action on an Connector Gateway Trigger Config",
+          "displayName": "Connector Gateway Trigger Config Action",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/triggerconfigs/action",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "AI Gateway Connection",
-      "name": "aiGateways/connections",
+      "displayName": "Connector Gateway Connection",
+      "name": "connectorGateways/connections",
       "operations": [
         {
-          "description": "Gets the properties of an AI Gateway Connection",
-          "displayName": "Get AI Gateway Connection",
+          "description": "Gets the properties of an Connector Gateway Connection",
+          "displayName": "Get Connector Gateway Connection",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/connections/read",
+          "name": "Microsoft.Web/connectorGateways/connections/read",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Creates a new AI Gateway Connection or updates an existing one",
-          "displayName": "Create or Update AI Gateway Connection",
+          "description": "Creates a new Connector Gateway Connection or updates an existing one",
+          "displayName": "Create or Update Connector Gateway Connection",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/connections/write",
+          "name": "Microsoft.Web/connectorGateways/connections/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Delete an existing AI Gateway Connection",
-          "displayName": "Delete AI Gateway Connection",
+          "description": "Delete an existing Connector Gateway Connection",
+          "displayName": "Delete Connector Gateway Connection",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/connections/delete",
+          "name": "Microsoft.Web/connectorGateways/connections/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Performs an action on a Connector Gateway Connection Access Policy",
+          "displayName": "Connector Gateway Connection Access Policy Action",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/connections/accessPolicies/action",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "AI Gateway MCP Server Config",
-      "name": "aiGateways/mcpserverconfigs",
+      "displayName": "Connector Gateway Connection Access Policy",
+      "name": "connectorGateways/connections/accessPolicies",
       "operations": [
         {
-          "description": "Get the properties of an AI Gateway MCP Server Config",
-          "displayName": "Get AI Gateway MCP Server Config",
+          "description": "Gets the properties of a Connector Gateway Connection Access Policy",
+          "displayName": "Get Connector Gateway Connection Access Policy",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/mcpserverconfigs/read",
+          "name": "Microsoft.Web/connectorGateways/connections/accessPolicies/read",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Create a new AI Gateway MCP Server Config or update an existing one",
-          "displayName": "Create or Update AI Gateway MCP Server Config",
+          "description": "Creates a new Connector Gateway Connection Access Policy or updates an existing one",
+          "displayName": "Create or Update Connector Gateway Connection Access Policy",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/mcpserverconfigs/write",
+          "name": "Microsoft.Web/connectorGateways/connections/accessPolicies/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Delete an existing AI Gateway MCP Server Config",
-          "displayName": "Delete AI Gateway MCP Server Config",
+          "description": "Deletes an existing Connector Gateway Connection Access Policy",
+          "displayName": "Delete Connector Gateway Connection Access Policy",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/mcpserverconfigs/delete",
+          "name": "Microsoft.Web/connectorGateways/connections/accessPolicies/delete",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "AI Gateway Trigger Config",
-      "name": "aiGateways/triggerconfigs",
+      "displayName": "Connector Gateway Custom Connector",
+      "name": "connectorGateways/customConnectors",
       "operations": [
         {
-          "description": "Get the properties of an AI Gateway Trigger Config",
-          "displayName": "Get AI Gateway Trigger Config",
+          "description": "Gets the properties of a Connector Gateway Custom Connector",
+          "displayName": "Get Connector Gateway Custom Connector",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/triggerconfigs/read",
+          "name": "Microsoft.Web/connectorGateways/customConnectors/read",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Create a new AI Gateway Trigger Config or update an existing one",
-          "displayName": "Create or Update AI Gateway Trigger Config",
+          "description": "Creates a new Connector Gateway Custom Connector or updates an existing one",
+          "displayName": "Create or Update Connector Gateway Custom Connector",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/triggerconfigs/write",
+          "name": "Microsoft.Web/connectorGateways/customConnectors/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Delete an existing AI Gateway Trigger Config",
-          "displayName": "Delete AI Gateway Trigger Config",
+          "description": "Deletes an existing Connector Gateway Custom Connector",
+          "displayName": "Delete Connector Gateway Custom Connector",
           "isDataAction": false,
-          "name": "Microsoft.Web/aiGateways/triggerconfigs/delete",
+          "name": "Microsoft.Web/connectorGateways/customConnectors/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Connector Gateway MCP Server Config",
+      "name": "connectorGateways/mcpserverconfigs",
+      "operations": [
+        {
+          "description": "Get the properties of an Connector Gateway MCP Server Config",
+          "displayName": "Get Connector Gateway MCP Server Config",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/mcpserverconfigs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a new Connector Gateway MCP Server Config or update an existing one",
+          "displayName": "Create or Update Connector Gateway MCP Server Config",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/mcpserverconfigs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete an existing Connector Gateway MCP Server Config",
+          "displayName": "Delete Connector Gateway MCP Server Config",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/mcpserverconfigs/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Connector Gateway Trigger Config",
+      "name": "connectorGateways/triggerconfigs",
+      "operations": [
+        {
+          "description": "Get the properties of an Connector Gateway Trigger Config",
+          "displayName": "Get Connector Gateway Trigger Config",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/triggerconfigs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a new Connector Gateway Trigger Config or update an existing one",
+          "displayName": "Create or Update Connector Gateway Trigger Config",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/triggerconfigs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete an existing Connector Gateway Trigger Config",
+          "displayName": "Delete Connector Gateway Trigger Config",
+          "isDataAction": false,
+          "name": "Microsoft.Web/connectorGateways/triggerconfigs/delete",
           "origin": "user,system",
           "properties": null
         }
