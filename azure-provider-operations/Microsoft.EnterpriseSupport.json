@@ -18,6 +18,14 @@
       "name": "Microsoft.EnterpriseSupport/enterpriseSupports/Action",
       "origin": "System",
       "properties": null
+    },
+    {
+      "description": "Register the Enterprise Support resource provider and enable creation of resources",
+      "displayName": "Registers the Enterprise Support Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.EnterpriseSupport/register/action",
+      "origin": "User, System",
+      "properties": null
     }
   ],
   "resourceTypes": [
@@ -104,6 +112,58 @@
           "displayName": "Read Operation Result.",
           "isDataAction": false,
           "name": "Microsoft.EnterpriseSupport/locations/operationresults/read",
+          "origin": "User, System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operationStatuses",
+      "name": "operationStatuses",
+      "operations": [
+        {
+          "description": "Read the status of an asynchronous operation.",
+          "displayName": "Read Operation Status.",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/operationStatuses/read",
+          "origin": "User, System",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "supportPlans",
+      "name": "supportPlans",
+      "operations": [
+        {
+          "description": "Reads Support Plan resources",
+          "displayName": "Gets/Lists the Support Plan resources",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/supportPlans/read",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Writes Support Plan resources",
+          "displayName": "Creates/Updates the Support Plan resources",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/supportPlans/write",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Deletes Support Plan resources",
+          "displayName": "Deletes the Support Plan resources",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/supportPlans/delete",
+          "origin": "User, System",
+          "properties": null
+        },
+        {
+          "description": "Cancels a Support Plan",
+          "displayName": "Cancel Support Plan",
+          "isDataAction": false,
+          "name": "Microsoft.EnterpriseSupport/supportPlans/cancel/action",
           "origin": "User, System",
           "properties": null
         }
