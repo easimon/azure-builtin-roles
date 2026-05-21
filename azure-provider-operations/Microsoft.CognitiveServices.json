@@ -18859,14 +18859,30 @@
       ]
     },
     {
-      "displayName": "Azure AI Providers APIs",
+      "displayName": "agents",
       "name": "accounts/AIServices",
       "operations": [
+        {
+          "description": "Create agent optimization runs",
+          "displayName": "Create agent optimization runs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/optimization/action",
+          "origin": "user",
+          "properties": null
+        },
         {
           "description": "Perform an action on a provider model",
           "displayName": "Perform an action on a provider model",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/AIServices/providers/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Perform an action on a MAAP managed deployment",
+          "displayName": "Perform an action on a MAAP managed deployment",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managed-deployments/action",
           "origin": "user",
           "properties": null
         }
@@ -20452,6 +20468,296 @@
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/locations/managedComputeUsages/read",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/endpoints",
+      "operations": [
+        {
+          "description": "[DEPRECATED] Invoke an endpoint",
+          "displayName": "Invoke an endpoint",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/endpoints/invoke/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Interact with an endpoint",
+          "displayName": "Interact with an endpoint",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/endpoints/interact/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/agents/state",
+      "operations": [
+        {
+          "description": "Set agent state to disabled",
+          "displayName": "Agent state disable",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/agents/state/disable/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Set agent state to enabled",
+          "displayName": "Agent state enable",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/agents/state/enable/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/managedAgentIdentityBlueprints",
+      "operations": [
+        {
+          "description": "Create or update a managed agent identity blueprint",
+          "displayName": "Create or update a managed agent identity blueprint",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managedAgentIdentityBlueprints/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get or list managed agent identity blueprint",
+          "displayName": "Get or list managed agent identity blueprints",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managedAgentIdentityBlueprints/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a managed agent identity blueprint",
+          "displayName": "Delete a managed agent identity blueprint",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managedAgentIdentityBlueprints/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/optimization",
+      "operations": [
+        {
+          "description": "Update agent optimization configurations",
+          "displayName": "Update agent optimization configurations",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/optimization/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Read agent optimization runs and results",
+          "displayName": "Read agent optimization runs and results",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/optimization/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete agent optimization runs",
+          "displayName": "Delete agent optimization runs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/optimization/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Cancel running agent optimization runs",
+          "displayName": "Cancel agent optimization runs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/optimization/cancel/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs",
+      "name": "accounts/AIServices/jobs",
+      "operations": [
+        {
+          "description": "Create or update a job, or append content to a job artifact",
+          "displayName": "Create or update a job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/jobs/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Cancel a running job",
+          "displayName": "Cancel a job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/jobs/cancel/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "List and get jobs and artifacts",
+          "displayName": "List and get jobs and artifacts",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/jobs/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a job",
+          "displayName": "Delete a job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/jobs/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs/metrics",
+      "name": "accounts/AIServices/jobs/metrics",
+      "operations": [
+        {
+          "description": "Read metrics for a job run",
+          "displayName": "Read metrics for a job run",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/jobs/metrics/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "jobs/history",
+      "name": "accounts/AIServices/jobs/history/runs",
+      "operations": [
+        {
+          "description": "List or get run history for a job",
+          "displayName": "List or get run history for a job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/jobs/history/runs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "index",
+      "name": "accounts/AIServices/index/entities",
+      "operations": [
+        {
+          "description": "Query index entities",
+          "displayName": "Query index entities",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/index/entities/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "routines",
+      "name": "accounts/AIServices/routines",
+      "operations": [
+        {
+          "description": "Get or list routines",
+          "displayName": "Get or list routines",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/routines/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create or update a routine",
+          "displayName": "Create or update a routine",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/routines/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a routine",
+          "displayName": "Delete a routine",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/routines/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Dispatch a routine",
+          "displayName": "Dispatch a routine",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/routines/dispatch/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "tasks",
+      "name": "accounts/AIServices/tasks",
+      "operations": [
+        {
+          "description": "Get or list tasks",
+          "displayName": "Get or list tasks",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/tasks/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create or update a task",
+          "displayName": "Create or update a task",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/tasks/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a task",
+          "displayName": "Delete a task",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/tasks/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "data_generation_jobs",
+      "name": "accounts/AIServices/data_generation_jobs",
+      "operations": [
+        {
+          "description": "Create or cancel a data generation job",
+          "displayName": "Create or cancel a data generation job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/data_generation_jobs/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "List and get data generation jobs",
+          "displayName": "List and get data generation jobs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/data_generation_jobs/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a data generation job",
+          "displayName": "Delete a data generation job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/data_generation_jobs/delete",
+          "origin": "user",
           "properties": null
         }
       ]
