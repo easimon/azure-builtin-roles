@@ -2188,6 +2188,190 @@
       ]
     },
     {
+      "displayName": "Support Check",
+      "name": "managedenvironments/supportchecks",
+      "operations": [
+        {
+          "description": "Lists available support check types for the environment",
+          "displayName": "List Support Check Types",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/supportchecks/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Support Check Operation",
+      "name": "managedenvironments/supportcheckoperations",
+      "operations": [
+        {
+          "description": "Gets the status and result of a support check operation",
+          "displayName": "Get Support Check Status",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/supportcheckoperations/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Environment Mode",
+      "name": "locations/availablemanagedenvironmentsmodes",
+      "operations": [
+        {
+          "description": "Get Available Environment Modes in a Region",
+          "displayName": "Read Available Environment Modes",
+          "isDataAction": false,
+          "name": "microsoft.app/locations/availablemanagedenvironmentsmodes/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Apps",
+      "name": "artifactApps",
+      "operations": [
+        {
+          "description": "Create or update an artifact app resource",
+          "displayName": "Create or Update Artifact App",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifactApps/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get an artifact app resource",
+          "displayName": "Get Artifact App",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifactApps/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete an artifact app resource",
+          "displayName": "Delete Artifact App",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifactApps/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Stop a running artifact app",
+          "displayName": "Stop Artifact App",
+          "isDataAction": true,
+          "name": "Microsoft.App/artifactApps/stop/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Resume a stopped artifact app",
+          "displayName": "Resume Artifact App",
+          "isDataAction": true,
+          "name": "Microsoft.App/artifactApps/start/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact App Replicas",
+      "name": "artifactApps/replicas",
+      "operations": [
+        {
+          "description": "List replicas of an artifact app",
+          "displayName": "List Artifact App Replicas",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifactApps/replicas/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifacts",
+      "name": "artifacts",
+      "operations": [
+        {
+          "description": "Create or update an artifact resource",
+          "displayName": "Create or Update Artifact",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get an artifact resource",
+          "displayName": "Get Artifact",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete an artifact resource",
+          "displayName": "Delete Artifact",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Version",
+      "name": "artifacts/versions",
+      "operations": [
+        {
+          "description": "List versions of an artifact resource",
+          "displayName": "List Artifact Versions",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Cancel an in-flight artifact version build",
+          "displayName": "Cancel Artifact Version Build",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/cancel/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Enable an artifact version for use by ArtifactApps",
+          "displayName": "Enable Artifact Version",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/enable/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Disable an artifact version from use by ArtifactApps",
+          "displayName": "Disable Artifact Version",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/disable/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Artifact Version Operation Status",
+      "name": "artifacts/versions/operationStatus",
+      "operations": [
+        {
+          "description": "Get the status of an artifact version's build operation",
+          "displayName": "Get Artifact Version Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.App/artifacts/versions/operationStatus/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
       "displayName": "Sandbox Groups",
       "name": "sandboxGroups",
       "operations": [
@@ -2248,6 +2432,36 @@
       ]
     },
     {
+      "displayName": "AgentIdentity",
+      "name": "sandboxGroups/agentIdentities",
+      "operations": [
+        {
+          "description": "List agent identities in a sandbox group",
+          "displayName": "List Agent Identities",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/agentIdentities/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create a new agent identity in a sandbox group",
+          "displayName": "Create Agent Identity",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/agentIdentities/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete an agent identity in a sandbox group",
+          "displayName": "Delete Agent Identity",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/agentIdentities/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
       "displayName": "Connection",
       "name": "sandboxGroups/connections",
       "operations": [
@@ -2272,6 +2486,36 @@
           "displayName": "Delete Connection",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/connections/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ContentPackage",
+      "name": "sandboxGroups/contentpackages",
+      "operations": [
+        {
+          "description": "List content packages in a sandbox group",
+          "displayName": "List Content Packages",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/contentpackages/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create a content package by uploading binary content in a sandbox group",
+          "displayName": "Create Content Package",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/contentpackages/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a content package in a sandbox group",
+          "displayName": "Delete Content Package",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/contentpackages/delete",
           "origin": "user, system",
           "properties": null
         }
@@ -2646,6 +2890,58 @@
       ]
     },
     {
+      "displayName": "Metrics",
+      "name": "sandboxGroups/metrics",
+      "operations": [
+        {
+          "description": "Get aggregated vCPU and memory usage metrics for a sandbox group",
+          "displayName": "Get Sandbox Group Metrics",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/metrics/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Secret",
+      "name": "sandboxGroups/secrets",
+      "operations": [
+        {
+          "description": "List secrets in a sandbox group",
+          "displayName": "List Secrets",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/secrets/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Peek at a secret's values in a sandbox group",
+          "displayName": "Peek Secret",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/secrets/peek/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update a secret in a sandbox group",
+          "displayName": "Upsert Secret",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/secrets/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a secret in a sandbox group",
+          "displayName": "Delete Secret",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/secrets/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
       "displayName": "Snapshot",
       "name": "sandboxGroups/snapshots/count",
       "operations": [
@@ -2736,412 +3032,6 @@
           "displayName": "Delete Path",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/volumes/files/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Secret",
-      "name": "sandboxGroups/secrets",
-      "operations": [
-        {
-          "description": "List secrets in a sandbox group",
-          "displayName": "List Secrets",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/secrets/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Peek at a secret's values in a sandbox group",
-          "displayName": "Peek Secret",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/secrets/peek/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create or update a secret in a sandbox group",
-          "displayName": "Upsert Secret",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/secrets/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete a secret in a sandbox group",
-          "displayName": "Delete Secret",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/secrets/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifact Apps",
-      "name": "artifactApps",
-      "operations": [
-        {
-          "description": "Create or update an artifact app resource",
-          "displayName": "Create or Update Artifact App",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifactApps/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Get an artifact app resource",
-          "displayName": "Get Artifact App",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifactApps/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete an artifact app resource",
-          "displayName": "Delete Artifact App",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifactApps/delete",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Stop a running artifact app",
-          "displayName": "Stop Artifact App",
-          "isDataAction": true,
-          "name": "Microsoft.App/artifactApps/stop/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Resume a stopped artifact app",
-          "displayName": "Resume Artifact App",
-          "isDataAction": true,
-          "name": "Microsoft.App/artifactApps/start/action",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifacts",
-      "name": "artifacts",
-      "operations": [
-        {
-          "description": "Create or update an artifact resource",
-          "displayName": "Create or Update Artifact",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Get an artifact resource",
-          "displayName": "Get Artifact",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete an artifact resource",
-          "displayName": "Delete Artifact",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Metrics",
-      "name": "sandboxGroups/metrics",
-      "operations": [
-        {
-          "description": "Get aggregated vCPU and memory usage metrics for a sandbox group",
-          "displayName": "Get Sandbox Group Metrics",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/metrics/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "AgentIdentity",
-      "name": "sandboxGroups/agentIdentities",
-      "operations": [
-        {
-          "description": "List agent identities in a sandbox group",
-          "displayName": "List Agent Identities",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/agentIdentities/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create a new agent identity in a sandbox group",
-          "displayName": "Create Agent Identity",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/agentIdentities/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete an agent identity in a sandbox group",
-          "displayName": "Delete Agent Identity",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/agentIdentities/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "ContentPackage",
-      "name": "sandboxGroups/contentpackages",
-      "operations": [
-        {
-          "description": "List content packages in a sandbox group",
-          "displayName": "List Content Packages",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/contentpackages/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create a content package by uploading binary content in a sandbox group",
-          "displayName": "Create Content Package",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/contentpackages/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete a content package in a sandbox group",
-          "displayName": "Delete Content Package",
-          "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/contentpackages/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifact App Replicas",
-      "name": "artifactApps/replicas",
-      "operations": [
-        {
-          "description": "List replicas of an artifact app",
-          "displayName": "List Artifact App Replicas",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifactApps/replicas/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifact Version",
-      "name": "artifacts/versions",
-      "operations": [
-        {
-          "description": "List versions of an artifact resource",
-          "displayName": "List Artifact Versions",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/versions/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Cancel an in-flight artifact version build",
-          "displayName": "Cancel Artifact Version Build",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/versions/cancel/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Enable an artifact version for use by ArtifactApps",
-          "displayName": "Enable Artifact Version",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/versions/enable/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Disable an artifact version from use by ArtifactApps",
-          "displayName": "Disable Artifact Version",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/versions/disable/action",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Artifact Version Operation Status",
-      "name": "artifacts/versions/operationStatus",
-      "operations": [
-        {
-          "description": "Get the status of an artifact version's build operation",
-          "displayName": "Get Artifact Version Operation Status",
-          "isDataAction": false,
-          "name": "Microsoft.App/artifacts/versions/operationStatus/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Support Check",
-      "name": "managedenvironments/supportchecks",
-      "operations": [
-        {
-          "description": "Lists available support check types for the environment",
-          "displayName": "List Support Check Types",
-          "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/supportchecks/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Support Check Operation",
-      "name": "managedenvironments/supportcheckoperations",
-      "operations": [
-        {
-          "description": "Gets the status and result of a support check operation",
-          "displayName": "Get Support Check Status",
-          "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/supportcheckoperations/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Environment Mode",
-      "name": "locations/availablemanagedenvironmentsmodes",
-      "operations": [
-        {
-          "description": "Get Available Environment Modes in a Region",
-          "displayName": "Read Available Environment Modes",
-          "isDataAction": false,
-          "name": "microsoft.app/locations/availablemanagedenvironmentsmodes/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Sandbox Group Operation Status",
-      "name": "locations/sandboxGroupOperationStatuses",
-      "operations": [
-        {
-          "description": "Get a long running sandbox group operation status",
-          "displayName": "Get Sandbox Group Operation Status",
-          "isDataAction": false,
-          "name": "Microsoft.App/locations/sandboxGroupOperationStatuses/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Sandbox Group Operation Result",
-      "name": "locations/sandboxGroupOperationResults",
-      "operations": [
-        {
-          "description": "Get a long running sandbox group operation result",
-          "displayName": "Get Sandbox Group Operation Result",
-          "isDataAction": false,
-          "name": "Microsoft.App/locations/sandboxGroupOperationResults/read",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Sandbox Group Private Endpoint Connection Proxy",
-      "name": "sandboxGroups/privateEndpointConnectionProxies",
-      "operations": [
-        {
-          "description": "Validate a sandbox group private endpoint connection proxy",
-          "displayName": "Validate Sandbox Group Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnectionProxies/validate/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create or update a sandbox group private endpoint connection proxy",
-          "displayName": "Create or Update Sandbox Group Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnectionProxies/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Get a sandbox group private endpoint connection proxy",
-          "displayName": "Get Sandbox Group Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnectionProxies/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete a sandbox group private endpoint connection proxy",
-          "displayName": "Delete Sandbox Group Private Endpoint Connection Proxy",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnectionProxies/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Sandbox Group Private Endpoint Connection",
-      "name": "sandboxGroups/privateEndpointConnections",
-      "operations": [
-        {
-          "description": "List private endpoint connections for a sandbox group",
-          "displayName": "List Sandbox Group Private Endpoint Connections",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnections/read",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Create or update a sandbox group private endpoint connection",
-          "displayName": "Create or Update Sandbox Group Private Endpoint Connection",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnections/write",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
-          "description": "Delete a sandbox group private endpoint connection",
-          "displayName": "Delete Sandbox Group Private Endpoint Connection",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateEndpointConnections/delete",
-          "origin": "user, system",
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Sandbox Group Private Link Resource",
-      "name": "sandboxGroups/privateLinkResources",
-      "operations": [
-        {
-          "description": "List private link resources for a sandbox group",
-          "displayName": "List Sandbox Group Private Link Resources",
-          "isDataAction": false,
-          "name": "Microsoft.App/sandboxGroups/privateLinkResources/read",
           "origin": "user, system",
           "properties": null
         }
