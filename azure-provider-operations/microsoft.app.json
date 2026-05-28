@@ -2272,6 +2272,14 @@
           "name": "Microsoft.App/artifactApps/start/action",
           "origin": "user, system",
           "properties": null
+        },
+        {
+          "description": "List the resolved secrets of an artifact app",
+          "displayName": "List Artifact App Secrets",
+          "isDataAction": true,
+          "name": "Microsoft.App/artifactApps/listSecrets/action",
+          "origin": "user, system",
+          "properties": null
         }
       ]
     },
@@ -2314,6 +2322,14 @@
           "displayName": "Delete Artifact",
           "isDataAction": false,
           "name": "Microsoft.App/artifacts/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "List the resolved secrets of an artifact",
+          "displayName": "List Artifact Secrets",
+          "isDataAction": true,
+          "name": "Microsoft.App/artifacts/listSecrets/action",
           "origin": "user, system",
           "properties": null
         }
@@ -3032,6 +3048,20 @@
           "displayName": "Delete Path",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/volumes/files/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Quota Policy",
+      "name": "quotaPolicy",
+      "operations": [
+        {
+          "description": "Request a quota increase for a subscription",
+          "displayName": "Request Quota Increase",
+          "isDataAction": false,
+          "name": "Microsoft.App/quotaPolicy/write",
           "origin": "user, system",
           "properties": null
         }
