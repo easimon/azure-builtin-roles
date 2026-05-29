@@ -1,8 +1,225 @@
 {
-  "displayName": null,
+  "displayName": "",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.HorizonDB",
   "name": "Microsoft.HorizonDB",
   "operations": [],
-  "resourceTypes": [],
+  "resourceTypes": [
+    {
+      "displayName": "HorizonDb Cluster",
+      "name": "clusters",
+      "operations": [
+        {
+          "description": "Creates a HorizonDb cluster with the specified parameters or update the properties or tags for the specified cluster.",
+          "displayName": "Create/Update HorizonDb cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing HorizonDb cluster.",
+          "displayName": "Delete HorizonDb cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Return the list of HorizonDb clusters or gets the properties for the specified cluster.",
+          "displayName": "List/Get HorizonDb cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all HorizonDb clusters in the subscription.",
+          "displayName": "List HorizonDb clusters in subscription",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Firewall Rule",
+      "name": "clusters/pools/firewallRules",
+      "operations": [
+        {
+          "description": "Creates or updates a HorizonDb firewall rule with the specified parameters.",
+          "displayName": "Create/Update HorizonDb firewall rule",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/firewallRules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing HorizonDb firewall rule.",
+          "displayName": "Delete HorizonDb firewall rule",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/firewallRules/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all firewall rules for the specified HorizonDb pool.",
+          "displayName": "List HorizonDb firewall rules",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/firewallRules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the properties for the specified HorizonDb firewall rule.",
+          "displayName": "Get HorizonDb firewall rule",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/firewallRules/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Parameter Group",
+      "name": "parameterGroups",
+      "operations": [
+        {
+          "description": "Creates or updates a HorizonDb parameter group with the specified parameters.",
+          "displayName": "Create/Update HorizonDb parameter group",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/parameterGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing HorizonDb parameter group.",
+          "displayName": "Delete HorizonDb parameter group",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/parameterGroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the properties for the specified HorizonDb parameter group.",
+          "displayName": "Get HorizonDb parameter group",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/parameterGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all HorizonDb parameter groups in the subscription.",
+          "displayName": "List HorizonDb parameter groups in subscription",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/parameterGroups/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Parameter Group",
+      "name": "parameterGroups/connections",
+      "operations": [
+        {
+          "description": "Gets the clusters connected to a HorizonDb parameter group.",
+          "displayName": "Get HorizonDb parameter group connections",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/parameterGroups/connections/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Parameter Group",
+      "name": "parameterGroups/versions",
+      "operations": [
+        {
+          "description": "Gets the versions of a HorizonDb parameter group.",
+          "displayName": "Get HorizonDb parameter group versions",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/parameterGroups/versions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Pool",
+      "name": "clusters/pools",
+      "operations": [
+        {
+          "description": "Creates or updates a HorizonDb pool with the specified parameters.",
+          "displayName": "Create/Update HorizonDb pool",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing HorizonDb pool.",
+          "displayName": "Delete HorizonDb pool",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Replica",
+      "name": "clusters/pools/replicas",
+      "operations": [
+        {
+          "description": "Creates or updates a HorizonDb replica with the specified parameters.",
+          "displayName": "Create/Update HorizonDb replica",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/replicas/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the properties for the specified HorizonDb replica.",
+          "displayName": "Get HorizonDb replica",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/replicas/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing HorizonDb replica.",
+          "displayName": "Delete HorizonDb replica",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/replicas/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "System AI Model",
+      "name": "clusters/systemAiModels",
+      "operations": [
+        {
+          "description": "Deletes an existing System AI Model.",
+          "displayName": "Delete System AI Model",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/systemAiModels/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the properties for the specified System AI Model.",
+          "displayName": "Get System AI Model",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/systemAiModels/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
   "type": "Microsoft.Authorization/providerOperations"
 }
