@@ -1803,6 +1803,14 @@
           "name": "Microsoft.ApiManagement/service/backends/reconnect/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Gets the secrets of the backend specified by its identifier.",
+          "displayName": "Get backend secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/backends/listSecrets/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -5071,6 +5079,14 @@
           "name": "Microsoft.ApiManagement/service/workspaces/backends/reconnect/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Gets the secrets of the backend specified by its identifier.",
+          "displayName": "Get backend secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/backends/listSecrets/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -5359,6 +5375,364 @@
           "displayName": "Remove language model",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/languageModels/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ToolServers",
+      "name": "service/toolServers",
+      "operations": [
+        {
+          "description": "Lists a collection of tool servers in the specified service instance. or Gets the details of the tool server specified by its identifier.",
+          "displayName": "Get tool servers list or Get tool server details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/toolServers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a tool server. or Updates an existing tool server.",
+          "displayName": "Add tool server or Update tool server",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/toolServers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified tool server.",
+          "displayName": "Remove tool server",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/toolServers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the secret subtrees (header values, oauth2.clientSecret, openApi.specSource.contentBase64) for each endpoint on the tool server, keyed by namespace. Intended for round-trip add/edit/remove-endpoint scenarios where the caller needs the existing credentials to merge back into a subsequent PUT/PATCH.",
+          "displayName": "List tool server secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/toolServers/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OAuth2 dance: get authorize-URL login links",
+      "name": "service/toolServers/endpoints",
+      "operations": [
+        {
+          "description": "Mints PKCE state and returns the IdP authorize URL plus redirect URI for the operator-driven OAuth 2.0 Authorization Code dance. or Clears the persisted refresh_token and bumps the OAuth2 configVersion. Idempotent; does not call the IdP.",
+          "displayName": "Get OAuth2 login links or Disconnect OAuth2 endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/toolServers/endpoints/oauth2/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ModelProviders",
+      "name": "service/modelProviders",
+      "operations": [
+        {
+          "description": "Lists a collection of model providers in the specified service instance. or Gets the details of the model provider specified by its identifier.",
+          "displayName": "Get model providers list or Get model provider details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a model provider. or Updates an existing model provider.",
+          "displayName": "Add model provider or Update model provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified model provider.",
+          "displayName": "Remove model provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns credential metadata for a model provider.",
+          "displayName": "List model provider credentials",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/listCredentials/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Models",
+      "name": "service/modelProviders/models",
+      "operations": [
+        {
+          "description": "Lists a collection of models under a specific model provider. or Gets the details of the model specified by its identifier.",
+          "displayName": "Get models list (under provider) or Get model details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/models/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a model. or Updates an existing model.",
+          "displayName": "Add model or Update model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/models/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified model.",
+          "displayName": "Remove model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/modelProviders/models/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Models",
+      "name": "service/models",
+      "operations": [
+        {
+          "description": "Lists all models across all model providers.",
+          "displayName": "Get models list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/models/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Models",
+      "name": "service/workspaces/models",
+      "operations": [
+        {
+          "description": "Lists all models across all model providers in a workspace.",
+          "displayName": "Get models list",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/models/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ModelProviders",
+      "name": "service/workspaces/modelProviders",
+      "operations": [
+        {
+          "description": "Lists a collection of model providers under a workspace. or Gets the details of the model provider specified by its identifier.",
+          "displayName": "Get model providers list or Get model provider details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a model provider. or Updates an existing model provider.",
+          "displayName": "Add model provider or Update model provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified model provider.",
+          "displayName": "Remove model provider",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns metadata describing the configured credentials of a Custom-kind model provider without revealing secret values.",
+          "displayName": "List model provider credentials",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/listCredentials/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AiGatewayModels",
+      "name": "service/workspaces/modelProviders/models",
+      "operations": [
+        {
+          "description": "Lists a collection of models under a specific model provider. or Gets the details of the model specified by its identifier.",
+          "displayName": "Get models list (under provider) or Get model details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/models/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a model under a model provider. or Updates an existing model.",
+          "displayName": "Add model or Update model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/models/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified model.",
+          "displayName": "Remove model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/modelProviders/models/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ToolServers",
+      "name": "service/workspaces/toolServers",
+      "operations": [
+        {
+          "description": "Lists a collection of tool servers under a workspace. or Gets the details of the tool server specified by its identifier.",
+          "displayName": "Get tool servers list or Get tool server details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/toolServers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a tool server. or Updates an existing tool server.",
+          "displayName": "Add tool server or Update tool server",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/toolServers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified tool server.",
+          "displayName": "Remove tool server",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/toolServers/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the secret subtrees (header values, oauth2.clientSecret, openApi.specSource.contentBase64) for each endpoint on the tool server, keyed by namespace. Intended for round-trip add/edit/remove-endpoint scenarios where the caller needs the existing credentials to merge back into a subsequent PUT/PATCH.",
+          "displayName": "List tool server secrets",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/toolServers/listSecrets/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OAuth2 dance: get authorize-URL login links (workspace scope)",
+      "name": "service/workspaces/toolServers/endpoints",
+      "operations": [
+        {
+          "description": "Mints PKCE state and returns the IdP authorize URL plus redirect URI for the operator-driven OAuth 2.0 Authorization Code dance. or Clears the persisted refresh_token and bumps the OAuth2 configVersion. Idempotent; does not call the IdP.",
+          "displayName": "Get OAuth2 login links or Disconnect OAuth2 endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/toolServers/endpoints/oauth2/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "LanguageModels",
+      "name": "service/workspaces/languageModels",
+      "operations": [
+        {
+          "description": "Lists a collection of language models. or Gets the details of the language model.",
+          "displayName": "Get language models list or Get language model details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/languageModels/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates a language model. or Updates an existing language model.",
+          "displayName": "Add language model or Update language model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/languageModels/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified language model.",
+          "displayName": "Remove language model",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/languageModels/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Agents",
+      "name": "service/agents",
+      "operations": [
+        {
+          "description": "Lists a collection of agents in the specified service instance. or Gets the details of the agent specified by its identifier.",
+          "displayName": "Get agents list or Get agent details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/agents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates an agent. or Updates an existing agent.",
+          "displayName": "Add agent or Update agent",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/agents/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified agent.",
+          "displayName": "Remove agent",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/agents/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AiGatewayTenants",
+      "name": "service/aigatewaytenants",
+      "operations": [
+        {
+          "description": "Lists a collection of AI Gateway tenants in the specified service instance. or Gets the details of the AI Gateway tenant specified by its identifier.",
+          "displayName": "Get AI Gateway tenants list or Get AI Gateway tenant details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/aigatewaytenants/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates an AI Gateway tenant. or Updates an existing AI Gateway tenant.",
+          "displayName": "Add AI Gateway tenant or Update AI Gateway tenant",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/aigatewaytenants/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified AI Gateway tenant.",
+          "displayName": "Remove AI Gateway tenant",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/aigatewaytenants/delete",
           "origin": null,
           "properties": null
         }
