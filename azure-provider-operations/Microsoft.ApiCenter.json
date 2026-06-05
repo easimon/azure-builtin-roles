@@ -1082,6 +1082,22 @@
           "name": "Microsoft.ApiCenter/services/workspaces/skills/artifacts/write",
           "origin": "user, system",
           "properties": null
+        },
+        {
+          "description": "Uploads a single file for the specified skill artifact via JSON inline content.",
+          "displayName": "Upload skill artifact content (JSON)",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/artifacts/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the base64-encoded file for the specified skill artifact (≤3 MiB).",
+          "displayName": "Download skill artifact content",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/artifacts/read",
+          "origin": "user, system",
+          "properties": null
         }
       ]
     },
@@ -1204,8 +1220,16 @@
       "name": "services/workspaces/agents/versions/artifacts",
       "operations": [
         {
-          "description": "Creates or updates the metadata for the specified agent artifact.",
-          "displayName": "Create or update agent artifact",
+          "description": "Creates or updates the metadata for the definition agent artifact.",
+          "displayName": "Create or update definition artifact",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the A2A agent card artifact.",
+          "displayName": "Create or update A2A artifact",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/write",
           "origin": "user, system",
@@ -1246,6 +1270,14 @@
         {
           "description": "Uploads a single file for the specified agent artifact.",
           "displayName": "Upload agent artifact content",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Uploads a single file for the specified agent artifact via JSON inline content.",
+          "displayName": "Upload agent artifact content (JSON)",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/workspaces/agents/versions/artifacts/write",
           "origin": "user, system",
@@ -1462,6 +1494,52 @@
           "displayName": "Delete agent evaluation configuration",
           "isDataAction": false,
           "name": "Microsoft.ApiCenter/services/workspaces/agentEvaluationConfigurations/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SkillVersion",
+      "name": "services/workspaces/skills/versions",
+      "operations": [
+        {
+          "description": "Creates or updates specified skill version.",
+          "displayName": "Create or update skill version",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/versions/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns paginated collection of skill versions.",
+          "displayName": "List skill versions",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Returns the details of the specified skill version.",
+          "displayName": "Get skill version",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Checks if specified skill version exists",
+          "displayName": "Checks skill version exists",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/versions/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Deletes specified skill version.",
+          "displayName": "Delete skill version",
+          "isDataAction": false,
+          "name": "Microsoft.ApiCenter/services/workspaces/skills/versions/delete",
           "origin": "user, system",
           "properties": null
         }
