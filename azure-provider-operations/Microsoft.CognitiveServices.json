@@ -15745,9 +15745,17 @@
       ]
     },
     {
-      "displayName": "Data",
+      "displayName": "Projects",
       "name": "accounts/CustomAvatar",
       "operations": [
+        {
+          "description": "Authorize copy to project.",
+          "displayName": "Authorize Copy",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/projects/action",
+          "origin": "user",
+          "properties": null
+        },
         {
           "description": "Validate custom avatar training data.",
           "displayName": "Validate Data",
@@ -15761,6 +15769,14 @@
           "displayName": "Deploy Model",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/models/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Copies photo avatars.",
+          "displayName": "Copy Photo Avatar",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/photoavatars/action",
           "origin": "user",
           "properties": null
         }
@@ -20757,6 +20773,36 @@
           "displayName": "Delete a data generation job",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/AIServices/data_generation_jobs/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Photo Avatars",
+      "name": "accounts/CustomAvatar/photoavatars",
+      "operations": [
+        {
+          "description": "Gets one or more photo avatars.",
+          "displayName": "Read Photo Avatars",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/photoavatars/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Creates photo avatars.",
+          "displayName": "Create Photo Avatar",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/photoavatars/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Deletes photo avatars.",
+          "displayName": "Delete Photo Avatar",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/photoavatars/delete",
           "origin": "user",
           "properties": null
         }
