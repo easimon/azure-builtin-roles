@@ -60,7 +60,7 @@
       ]
     },
     {
-      "displayName": "Migrate Projects ",
+      "displayName": "Wave",
       "name": "migrateProjects",
       "operations": [
         {
@@ -124,6 +124,38 @@
           "displayName": "Post Action to Refresh Entities",
           "isDataAction": false,
           "name": "Microsoft.Migrate/migrateProjects/refreshentities/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create Waves From the latest active Wave Plan",
+          "displayName": "Post Action to Create Waves From Plan",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/createwavesfromplan/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Fetch a short-lived write-targeted SAS URI for the wave-plan CSV staging container",
+          "displayName": "Post Action to Fetch SAS URI",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/fetchsasuri/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "List Wave Plans for an assessment",
+          "displayName": "Post Action to Get Wave Plans",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/getwaveplans/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Import a customer-authored Wave Plan from a CSV upload",
+          "displayName": "Post Action to Import Wave Plan",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/migrateProjects/importwaveplan/action",
           "origin": "user,system",
           "properties": null
         },
@@ -3404,6 +3436,270 @@
           "displayName": "Patch assessed entities",
           "isDataAction": false,
           "name": "Microsoft.Migrate/assessmentProjects/mongoAssessments/assessedInstances/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "network Assessments",
+      "name": "assessmentProjects/networkAssessments",
+      "operations": [
+        {
+          "description": "Gets the properties of the network Assessment",
+          "displayName": "Get network Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a network Assessment or updates an existing network Assessment",
+          "displayName": "Create or update network Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the network Assessment which are available in the given location",
+          "displayName": "Delete network Assessment",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "network AssessmentSummaries",
+      "name": "assessmentProjects/networkAssessments/summaries",
+      "operations": [
+        {
+          "description": "Gets the properties of the network AssessmentSummary",
+          "displayName": "Get network AssessmentSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/summaries/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedApplicationGateways",
+      "name": "assessmentProjects/networkAssessments/assessedApplicationGateways",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedApplicationGateways ",
+          "displayName": "Get assessedApplicationGateways",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedApplicationGateways/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedApplicationGateways/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedAppGwRoutingRules",
+      "name": "assessmentProjects/networkAssessments/assessedApplicationGateways/assessedAppGwRoutingRules",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedAppGwRoutingRules ",
+          "displayName": "Get assessedAppGwRoutingRules",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedApplicationGateways/assessedAppGwRoutingRules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedApplicationGateways/assessedAppGwRoutingRules/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedLoadBalancers",
+      "name": "assessmentProjects/networkAssessments/assessedLoadBalancers",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedLoadBalancers ",
+          "displayName": "Get assessedLoadBalancers",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedLoadBalancers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedLoadBalancers/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedLbRules",
+      "name": "assessmentProjects/networkAssessments/assessedLoadBalancers/assessedLbRules",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedLbRules ",
+          "displayName": "Get assessedLbRules",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedLoadBalancers/assessedLbRules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedLoadBalancers/assessedLbRules/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedInboundNatRules",
+      "name": "assessmentProjects/networkAssessments/assessedLoadBalancers/assessedInboundNatRules",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedInboundNatRules ",
+          "displayName": "Get assessedInboundNatRules",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedLoadBalancers/assessedInboundNatRules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedLoadBalancers/assessedInboundNatRules/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedVirtualNetworks",
+      "name": "assessmentProjects/networkAssessments/assessedVirtualNetworks",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedVirtualNetworks ",
+          "displayName": "Get assessedVirtualNetworks",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedVirtualNetworks/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedVirtualNetworks/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedSubnets",
+      "name": "assessmentProjects/networkAssessments/assessedVirtualNetworks/assessedSubnets",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedSubnets ",
+          "displayName": "Get assessedSubnets",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedVirtualNetworks/assessedSubnets/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedVirtualNetworks/assessedSubnets/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedNetworkSecurityGroups",
+      "name": "assessmentProjects/networkAssessments/assessedNetworkSecurityGroups",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedNetworkSecurityGroups ",
+          "displayName": "Get assessedNetworkSecurityGroups",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedNetworkSecurityGroups/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedNetworkSecurityGroups/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedNsgRules",
+      "name": "assessmentProjects/networkAssessments/assessedNetworkSecurityGroups/assessedNsgRules",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedNsgRules ",
+          "displayName": "Get assessedNsgRules",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedNetworkSecurityGroups/assessedNsgRules/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedNetworkSecurityGroups/assessedNsgRules/write",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessedNetworkTopologies",
+      "name": "assessmentProjects/networkAssessments/assessedNetworkTopologies",
+      "operations": [
+        {
+          "description": "Gets the properties of the assessedNetworkTopologies ",
+          "displayName": "Get assessedNetworkTopologies",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedNetworkTopologies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Patch assessed entities",
+          "displayName": "Patch assessed entities",
+          "isDataAction": false,
+          "name": "Microsoft.Migrate/assessmentProjects/networkAssessments/assessedNetworkTopologies/write",
           "origin": "system",
           "properties": null
         }
