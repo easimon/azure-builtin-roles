@@ -1,0 +1,146 @@
+{
+  "displayName": "Microsoft.BillingTrust",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.BillingTrust",
+  "name": "Microsoft.BillingTrust",
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.BillingTrust",
+      "displayName": "Register the Microsoft.BillingTrust",
+      "isDataAction": false,
+      "name": "Microsoft.BillingTrust/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.BillingTrust",
+      "displayName": "Unregister the Microsoft.BillingTrust",
+      "isDataAction": false,
+      "name": "Microsoft.BillingTrust/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessments",
+      "name": "assessments",
+      "operations": [
+        {
+          "description": "Delete an assessment. Long-running operation — returns 202 + 204 + default with `Azure-AsyncOperation` (preferred) and `Location` polling headers.",
+          "displayName": "Assessments_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update an Assessment. Long-running operation — returns 200 (replace) or 201 (create) with the `Azure-AsyncOperation` polling header on both responses.",
+          "displayName": "Assessments_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Assessment",
+          "displayName": "Assessments_Get",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Assessment resources by parent",
+          "displayName": "Assessments_List",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Request a time-bound, principal-bound upload token for supplemental document uploads.",
+          "displayName": "Assessments_ListUploadToken",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/listUploadToken/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "assessments/rules",
+      "name": "assessments/rules",
+      "operations": [
+        {
+          "description": "Update a Rule. The PATCH body is discriminated by `kind` and must match the existing rule's kind. For `eduQualification` rules, only `supplementalDocuments` is patchable, and only when `evaluationState == actionRequired`. For `businessVerification` rules, the patchable fields are `supplementalDocuments` and `externalId`, and only when `evaluationState` is `pending` or `actionRequired`. All other field/state combinations are rejected with 400 InvalidParameterValue or 409 RuleNotActionable.",
+          "displayName": "Rules_Update",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/rules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update a Rule. **This operation is required for RPaaS tracked-resource\ncache population and MUST remain in the public spec.** Rules are created by the\nservice when the parent assessment is created; they are not directly creatable\nby end users. All customer PUT calls are rejected at runtime with\n`OperationNotAllowed` via the RPaaS ResourceCreationValidate extension.\nUse PATCH to modify rule fields that the customer is authorized to change.\nPeer RPs with the same topology (extension singleton parent + proxy child)\ndeclare an identical public PUT for the same RPaaS cache-population reason:\nMicrosoft.ScVmm/virtualMachineInstances/guestAgents,\nMicrosoft.ConnectedVMwarevSphere/virtualMachineInstances/guestAgents.",
+          "displayName": "Rules_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/rules/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Rule",
+          "displayName": "Rules_Get",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/rules/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Rule resources by Assessment",
+          "displayName": "Rules_List",
+          "isDataAction": false,
+          "name": "Microsoft.BillingTrust/assessments/rules/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}
