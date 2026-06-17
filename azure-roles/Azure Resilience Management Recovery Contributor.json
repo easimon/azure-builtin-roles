@@ -10,22 +10,32 @@
   "permissions": [
     {
       "actions": [
-        "Microsoft.Authorization/roleAssignments/write"
-      ],
-      "condition": "@Resource[HasObotoken] boolequals true && (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {de754d53-652d-4c75-a67f-1e48d8b49c97, acdd72a7-3385-48ef-bd42-f606fba81ae7, 494ae006-db33-4328-bf46-533a6560a3ca, 6670b86ea3f74917ac9b5d6ab1be4567, 4fe576fe-1146-4730-92eb-48519fa6bf9f, 32e6a4ec-6095-4e37-b54b-12aa350ba81f, 05b1aaf9-00c9-477b-b0e8-2da660b78c51, b54df9c1-53dc-45cc-a86d-7a83cced2ed0, 3b5a0aa9-eccd-48dc-9011-f2fd03b5e5f9})",
-      "conditionVersion": "2.0",
-      "dataActions": [],
-      "notActions": [],
-      "notDataActions": []
-    },
-    {
-      "actions": [
         "Microsoft.Authorization/*/read",
         "Microsoft.Automation/automationAccounts/runbooks/read",
-        "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
-        "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
-        "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
-        "Microsoft.AzureResilienceManagement/recoveryPlans/*/write",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/read",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/write",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/delete",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/finalize/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/checkReadiness/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/failover/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/failoverCommit/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/reprotect/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/testFailover/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/testFailoverCleanup/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/validateForOperation/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/validateForFailover/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/validateForFailoverCommit/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/validateForReprotect/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/validateForTestFailover/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/validateForTestFailoverCleanup/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/updateResources/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryResources/read",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/read",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/cancel/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/resume/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/retry/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/recoveryJobResources/read",
+        "Microsoft.AzureResilienceManagement/locations/OperationStatuses/read",
         "Microsoft.Insights/alertRules/",
         "Microsoft.Management/ServiceGroups/read",
         "Microsoft.Relationships/ServiceGroupMember/read",
@@ -50,5 +60,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-04-15T15:17:50.689071+00:00"
+  "updatedOn": "2026-06-16T15:19:48.099691+00:00"
 }
