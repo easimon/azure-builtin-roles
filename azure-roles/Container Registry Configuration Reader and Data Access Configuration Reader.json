@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-11-06T16:01:17.404151+00:00",
+  "createdOn": "2024-10-31T23:06:21.117394+00:00",
   "description": "Provides permissions to list container registries and registry configuration properties. Provides permissions to list data access configuration such as admin user credentials, scope maps, and tokens, which can be used to read, write or delete repositories and images. Does not provide direct permissions to read, list, or write registry contents including repositories and images. Does not provide permissions to modify data plane content such as imports, Artifact Cache or Sync, and Transfer Pipelines. Does not provide permissions for managing Tasks.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/69b07be0-09bf-439a-b9a6-e73de851bd59",
   "name": "69b07be0-09bf-439a-b9a6-e73de851bd59",
@@ -36,7 +36,13 @@
         "Microsoft.Insights/AlertRules/Activated/Action",
         "Microsoft.Insights/AlertRules/Resolved/Action",
         "Microsoft.Insights/AlertRules/Throttled/Action",
-        "Microsoft.Insights/AlertRules/Incidents/Read"
+        "Microsoft.Insights/AlertRules/Incidents/Read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -49,5 +55,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-11-06T16:01:17.404151+00:00"
+  "updatedOn": "2026-06-22T15:01:09.895410+00:00"
 }
