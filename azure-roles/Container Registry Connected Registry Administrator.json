@@ -1,0 +1,41 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-06-23T15:06:43.859413+00:00",
+  "description": "Can manage connected registries in a container registry, including the scope maps and tokens required to provision and operate them.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/281928aa-9782-4d9a-954a-3f34c1ed9f95",
+  "name": "281928aa-9782-4d9a-954a-3f34c1ed9f95",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/read",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/read",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/write",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/delete",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/deactivate/action",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/resync/action",
+        "Microsoft.ContainerRegistry/registries/scopeMaps/read",
+        "Microsoft.ContainerRegistry/registries/scopeMaps/write",
+        "Microsoft.ContainerRegistry/registries/scopeMaps/delete",
+        "Microsoft.ContainerRegistry/registries/scopeMaps/operationStatuses/read",
+        "Microsoft.ContainerRegistry/registries/tokens/read",
+        "Microsoft.ContainerRegistry/registries/tokens/write",
+        "Microsoft.ContainerRegistry/registries/tokens/delete",
+        "Microsoft.ContainerRegistry/registries/tokens/operationStatuses/read",
+        "Microsoft.ContainerRegistry/registries/generateCredentials/action"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Container Registry Connected Registry Administrator",
+  "roleType": "BuiltInRole",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-06-23T15:06:43.859413+00:00"
+}
