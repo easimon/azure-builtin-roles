@@ -18673,6 +18673,14 @@
           "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/digest:sign/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Generate perceptible provenance content disclaimer.",
+          "displayName": "Generate perceptible disclaimer",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/perceptible:overlay/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -20803,6 +20811,172 @@
           "displayName": "Delete Photo Avatar",
           "isDataAction": true,
           "name": "Microsoft.CognitiveServices/accounts/CustomAvatar/photoavatars/delete",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Data-generation-jobs",
+      "name": "accounts/OpenAI/data-generation-jobs",
+      "operations": [
+        {
+          "description": "Create and cancel Data-generation-jobs.",
+          "displayName": "Create and cancel Data-generation-jobs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/data-generation-jobs/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete Data-generation-jobs.",
+          "displayName": "Delete Data-generation-jobs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/data-generation-jobs/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Gets information about data generation jobs.",
+          "displayName": "Read data generation metadata",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/OpenAI/data-generation-jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content Safety",
+      "name": "accounts/ContentSafety/provenance/image",
+      "operations": [
+        {
+          "description": "A sync API for content provenance manifest binding to image.",
+          "displayName": "Bind content provenance manifest to image",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/image/manifest:bind/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content Safety",
+      "name": "accounts/ContentSafety/provenance/audio",
+      "operations": [
+        {
+          "description": "A sync API for content provenance manifest binding to audio.",
+          "displayName": "Bind content provenance manifest to audio",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/audio/manifest:bind/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content Safety",
+      "name": "accounts/ContentSafety/provenance/video",
+      "operations": [
+        {
+          "description": "A sync API for content provenance manifest binding to video.",
+          "displayName": "Bind content provenance manifest to video",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/video/manifest:bind/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content Safety",
+      "name": "accounts/ContentSafety/provenance/operations",
+      "operations": [
+        {
+          "description": "Retrieves the current state and (when terminal) the result of an asynchronous provenance operation.",
+          "displayName": "Gets the status and result of a provenance operation.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/operations/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Content Safety",
+      "name": "accounts/ContentSafety/provenance/jobs",
+      "operations": [
+        {
+          "description": "Create Async Provenance Job",
+          "displayName": "Create Async Provenance Job",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/jobs/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get or List Async Provenance Jobs",
+          "displayName": "Get or List Async Provenance Jobs",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/ContentSafety/provenance/jobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/agents/endpoints",
+      "operations": [
+        {
+          "description": "Allows passing the x-ms-user-identity header to make agent requests on behalf of a specific end user for per-user session isolation.",
+          "displayName": "User identity impersonation",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/agents/endpoints/UserIdentityImpersonation/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fine_tuning",
+      "name": "accounts/AIServices/fine_tuning_deployments",
+      "operations": [
+        {
+          "description": "Auto-deploy a fine-tuned model after a fine-tuning job completes. Requires this action in addition to fine_tuning/write when the job creation request includes auto-deployment parameters (e.g. 'suffix').",
+          "displayName": "Deploy a fine-tuned model",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/fine_tuning_deployments/write",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Managed Compute Deployments API",
+      "name": "accounts/AIServices/managedComputeDeployments",
+      "operations": [
+        {
+          "description": "Create or update a managed compute deployment.",
+          "displayName": "Create or update a managed compute deployment.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managedComputeDeployments/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "List or get managed compute deployments.",
+          "displayName": "List or get managed compute deployments.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managedComputeDeployments/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a managed compute deployment.",
+          "displayName": "Delete a managed compute deployment.",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/managedComputeDeployments/delete",
           "origin": "user",
           "properties": null
         }
