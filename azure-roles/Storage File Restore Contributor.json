@@ -3,14 +3,17 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2026-06-23T15:06:43.118470+00:00",
+  "createdOn": "2026-06-25T15:28:57.353606+00:00",
   "description": "Lets you perform file share restore operations using Azure Backup on the storage account",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/e7a9e73d-4397-41f2-a282-af8b65aaa2dc",
   "name": "e7a9e73d-4397-41f2-a282-af8b65aaa2dc",
   "permissions": [
     {
       "actions": [
-        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read",
+        "Microsoft.Authorization/permissions/read",
+        "Microsoft.Authorization/denyAssignments/read",
         "Microsoft.Storage/storageAccounts/fileServices/shares/read",
         "Microsoft.Storage/storageAccounts/read"
       ],
@@ -32,5 +35,5 @@
   "roleType": "BuiltInRole",
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-07-03T07:53:35.997974+00:00"
+  "updatedOn": "2026-06-25T15:28:57.353606+00:00"
 }
