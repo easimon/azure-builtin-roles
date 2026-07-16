@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-04-24T15:23:10.831108+00:00",
+  "createdOn": "2025-04-22T15:07:10.021159+00:00",
   "description": "Lets you perform developer actions and management actions on Microsoft Foundry Projects. Allows for making role assignments, but limited to Cognitive Service User role.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/eadc314b-1a2d-4efa-be10-5d325db5065e",
   "name": "eadc314b-1a2d-4efa-be10-5d325db5065e",
@@ -26,12 +26,17 @@
         "Microsoft.CognitiveServices/*"
       ],
       "notActions": [],
-      "notDataActions": []
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/AIServices/agents/endpoints/UserIdentityImpersonation/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes-deployments/write",
+        "Microsoft.CognitiveServices/accounts/AIServices/fine_tuning_deployments/write"
+      ]
     }
   ],
   "roleName": "Foundry Project Manager",
   "roleType": "BuiltInRole",
+  "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-05-18T15:09:01.422497+00:00"
+  "updatedOn": "2026-07-14T15:27:58.692813+00:00"
 }
