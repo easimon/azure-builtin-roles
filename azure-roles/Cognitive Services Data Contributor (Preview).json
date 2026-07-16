@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-10-22T15:14:05.009599+00:00",
+  "createdOn": "2024-10-17T23:22:42.188819+00:00",
   "description": "Allows to call data plane APIs, but not any control plane APIs for Microsoft Cognitive Services. This role is in preview and subject to change.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/19c28022-e58e-450d-a464-0b2a53034789",
   "name": "19c28022-e58e-450d-a464-0b2a53034789",
@@ -16,12 +16,16 @@
         "Microsoft.CognitiveServices/*"
       ],
       "notActions": [],
-      "notDataActions": []
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/OpenAI/fine-tunes-deployments/write",
+        "Microsoft.CognitiveServices/accounts/AIServices/fine_tuning_deployments/write"
+      ]
     }
   ],
   "roleName": "Cognitive Services Data Contributor (Preview)",
   "roleType": "BuiltInRole",
+  "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-10-22T15:14:05.009599+00:00"
+  "updatedOn": "2026-07-14T15:27:58.693813+00:00"
 }
