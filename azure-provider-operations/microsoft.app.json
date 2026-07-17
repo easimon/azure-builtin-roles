@@ -3112,14 +3112,52 @@
       ]
     },
     {
-      "displayName": "Quota Policy",
-      "name": "quotaPolicy",
+      "displayName": "SRE Agent Data Connector",
+      "name": "agents/dataconnectors",
       "operations": [
         {
-          "description": "Request a quota increase for a subscription",
-          "displayName": "Request Quota Increase",
+          "description": "Read data connectors in an SRE agent",
+          "displayName": "Read data connectors in an SRE agent",
           "isDataAction": false,
-          "name": "Microsoft.App/quotaPolicy/write",
+          "name": "Microsoft.App/agents/dataconnectors/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Update data connectors in an SRE agent",
+          "displayName": "Update data connectors in an SRE agent",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/dataconnectors/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete existing data connectors in an SRE agent",
+          "displayName": "Delete data connectors in an SRE agent",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/dataconnectors/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "List secrets of an SRE agent data connector",
+          "displayName": "List SRE Agent Data Connector Secrets",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/dataconnectors/listSecrets/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Volume",
+      "name": "sandboxGroups/volumes/count",
+      "operations": [
+        {
+          "description": "Get the count of volumes in a sandbox group, grouped by volume type",
+          "displayName": "Get Volume Count",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/volumes/count/read",
           "origin": "user, system",
           "properties": null
         }
