@@ -322,7 +322,7 @@
           "properties": null
         },
         {
-          "description": "Starts a target recommendation job for the SQL Server instance. Only one job can run at a time. If the previous job is in a non-terminal state (NotStarted or InProgress), calling this operation again returns the existing job status without creating a new job. A new job is created only when the previous job has reached a terminal state (Succeeded or Failed). This operation does not return recommendations directly. Use the GetTargetRecommendationReports API to check the job status and retrieve the target recommendation report if the jobStatus is Succeeded.",
+          "description": "Starts a target recommendation job for the SQL Server instance.",
           "displayName": "SqlServerInstances_RunTargetRecommendationJob",
           "isDataAction": false,
           "name": "Microsoft.AzureArcData/sqlServerInstances/runTargetRecommendationJob/action",
@@ -330,7 +330,7 @@
           "properties": null
         },
         {
-          "description": "Retrieves the current job status and the latest target recommendation report for the SQL Server instance. The response always includes the jobStatus field, which indicates the state of the most recent target recommendation job (NotStarted, InProgress, Succeeded, or Failed). The report data is included in the response only when the jobStatus is Succeeded. A target recommendation job must be started using the RunTargetRecommendationJob API before calling this API. Only the most recent report is returned. If the report contains more sections than can be returned in a single response, use the nextReportOffset and nextSectionOffset values from the response to retrieve the remaining data.",
+          "description": "Retrieves the current job status and the latest target recommendation report for the SQL Server instance.",
           "displayName": "SqlServerInstances_GetTargetRecommendationReports",
           "isDataAction": false,
           "name": "Microsoft.AzureArcData/sqlServerInstances/getTargetRecommendationReports/action",
@@ -338,7 +338,7 @@
           "properties": null
         },
         {
-          "description": "Retrieves the migration readiness report for the SQL Server instance. The report contains an assessment of the instance's readiness for migration to Azure SQL targets.",
+          "description": "Retrieves the migration readiness report for the SQL Server instance.",
           "displayName": "SqlServerInstances_GetMigrationReadinessReport",
           "isDataAction": false,
           "name": "Microsoft.AzureArcData/sqlServerInstances/getMigrationReadinessReport/action",
