@@ -304,6 +304,80 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Failover Instance",
+      "name": "schedulers/failoverInstances",
+      "operations": [
+        {
+          "description": "Create or Update Durable Task Scheduler Failover Instance to enable disaster recovery",
+          "displayName": "Create or Update Durable Task Scheduler Failover Instance",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/failoverInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Read Durable Task Scheduler Failover Instance disaster recovery status",
+          "displayName": "Read Durable Task Scheduler Failover Instance",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/failoverInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Durable Task Scheduler Failover Instance to disable disaster recovery",
+          "displayName": "Delete Durable Task Scheduler Failover Instance",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/failoverInstances/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Initiate a planned failover to make this scheduler the primary",
+          "displayName": "Failover Durable Task Scheduler",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/failoverInstances/failover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Initiate a forced failover to make this scheduler the primary, potentially allowing data loss",
+          "displayName": "Force Failover Durable Task Scheduler Allowing Data Loss",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/failoverInstances/forceFailoverAllowDataLoss/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Detector",
+      "name": "schedulers/detectors",
+      "operations": [
+        {
+          "description": "Read Durable Task Scheduler Detector",
+          "displayName": "Read Durable Task Scheduler Detector",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/detectors/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Internal Operations",
+      "name": "schedulers/internalOperations",
+      "operations": [
+        {
+          "description": "Internal operation used by the resource provider to manage disaster recovery configuration",
+          "displayName": "DR Action",
+          "isDataAction": false,
+          "name": "Microsoft.DurableTask/schedulers/internalOperations/draction/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
