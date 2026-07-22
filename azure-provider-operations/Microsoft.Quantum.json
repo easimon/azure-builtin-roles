@@ -56,6 +56,14 @@
           "name": "Microsoft.Quantum/Workspaces/listKeys/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Interact with the Azure Quantum AI researcher agent scoped to a workspace",
+          "displayName": "Chat with the Azure Quantum researcher agent for a workspace",
+          "isDataAction": true,
+          "name": "Microsoft.Quantum/Workspaces/chat/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -122,6 +130,14 @@
           "name": "Microsoft.Quantum/providerAccounts/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Interact with the Azure Quantum AI operator agent scoped to a provider account",
+          "displayName": "Chat with the Azure Quantum operator agent for a provider account",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/chat/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -178,6 +194,92 @@
           "displayName": "List subscription's available suite offers",
           "isDataAction": false,
           "name": "Microsoft.Quantum/suiteOffers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Interact with the Azure Quantum AI admin agent scoped to a subscription's suite offers",
+          "displayName": "Chat with the Azure Quantum admin agent for a subscription's suite offers",
+          "isDataAction": true,
+          "name": "Microsoft.Quantum/suiteOffers/chat/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/quotaUsages",
+      "operations": [
+        {
+          "description": "Read ProviderAccount's quota usages",
+          "displayName": "Read Quantum ProviderAccount's quota usages",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/quotaUsages/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/diagnostics",
+      "operations": [
+        {
+          "description": "Read ProviderAccount's AI diagnostics analysis results",
+          "displayName": "Read Quantum ProviderAccount's AI diagnostics analysis results",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/diagnostics/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/providers/Microsoft.Insights/metrics",
+      "operations": [
+        {
+          "description": "Read Quantum ProviderAccount's emitted metrics",
+          "displayName": "Read Quantum ProviderAccount's emitted metrics",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/providers/Microsoft.Insights/metrics/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/messages",
+      "operations": [
+        {
+          "description": "Read Quantum ProviderAccount's emitted messages",
+          "displayName": "Read Quantum ProviderAccount's emitted messages",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/messages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Write Quantum ProviderAccount's emitted messages",
+          "displayName": "Write Quantum ProviderAccount's emitted messages",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/messages/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ProviderAccount",
+      "name": "providerAccounts/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Read Quantum ProviderAccount's  metric definitions",
+          "displayName": "Read Quantum ProviderAccount's metric definitions",
+          "isDataAction": false,
+          "name": "Microsoft.Quantum/providerAccounts/providers/Microsoft.Insights/metricDefinitions/read",
           "origin": null,
           "properties": null
         }
