@@ -614,6 +614,14 @@
           "name": "Microsoft.Network/virtualNetworks/subnets/unprepareNetworkPolicies/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Lists Network Intent Policies attached to a subnet",
+          "displayName": "Get Subnet Network Intent Policies",
+          "isDataAction": false,
+          "name": "Microsoft.Network/virtualNetworks/subnets/getNetworkPolicies/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -17787,6 +17795,14 @@
           "name": "Microsoft.Network/interconnectGroups/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Get InterconnectGroup Node Availability",
+          "displayName": "Get InterconnectGroup Node Availability",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/nodeAvailability/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -18001,6 +18017,238 @@
           "displayName": "Get an AuthorizationKey for ExpressRouteLagAuthorization",
           "isDataAction": false,
           "name": "Microsoft.Network/expressRouteLags/authorizations/listkeys/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Traffic Manager Profile",
+      "name": "privatetrafficmanagerprofiles",
+      "operations": [
+        {
+          "description": "Gets the Private Traffic Manager Profile Properties, in JSON format",
+          "displayName": "Get Private Traffic Manager Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates a Private Traffic Manager Profile, in JSON format",
+          "displayName": "Create Or Update a Private Traffic Manager Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Private Traffic Manager Profile",
+          "displayName": "Delete a Private Traffic Manager Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Establishes a link between a private DNS record and a Private Traffic Manager Profile so that the private traffic manager profile can't be removed while it is being referenced by the private DNS record",
+          "displayName": "Establishes a link between a Private DNS record and a Private Traffic Manager Profile",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/validateLink/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Traffic Manager Profile Endpoint",
+      "name": "privatetrafficmanagerprofiles/endpoints",
+      "operations": [
+        {
+          "description": "Gets the Private Traffic Manager Profile Endpoint Properties, in JSON format",
+          "displayName": "Get Private Traffic Manager Profile Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/endpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates a Private Traffic Manager Profile Endpoint, in JSON format",
+          "displayName": "Create Or Update a Private Traffic Manager Profile Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/endpoints/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Private Traffic Manager Profile Endpoint",
+          "displayName": "Delete a Private Traffic Manager Profile Endpoint",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/endpoints/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Traffic Manager Profile Health Policy",
+      "name": "privatetrafficmanagerprofiles/healthPolicies",
+      "operations": [
+        {
+          "description": "Gets the Private Traffic Manager Profile Health Policy Properties, in JSON format",
+          "displayName": "Get Private Traffic Manager Profile Health Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/healthPolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates a Private Traffic Manager Profile Health Policy, in JSON format",
+          "displayName": "Create Or Update a Private Traffic Manager Profile Health Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/healthPolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Private Traffic Manager Profile Health Policy",
+          "displayName": "Delete a Private Traffic Manager Profile Health Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/healthPolicies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topology Map",
+      "name": "topologymaps",
+      "operations": [
+        {
+          "description": "Gets the Topology Map Properties, in JSON format",
+          "displayName": "Get Topology Map",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymaps/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates a Topology Map, in JSON format",
+          "displayName": "Create Or Update a Topology Map",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymaps/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Topology Map",
+          "displayName": "Delete a Topology Map",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymaps/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topology Map Operation",
+      "name": "topologymapsoperations",
+      "operations": [
+        {
+          "description": "Gets the Topology Map Operation details, in JSON format",
+          "displayName": "Get Topology Map Operation",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymapsoperations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Topology Map Site",
+      "name": "topologymaps/sites",
+      "operations": [
+        {
+          "description": "Gets the Topology Map Site Properties, in JSON format",
+          "displayName": "Get Topology Map Site",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymaps/sites/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates a Topology Map Site, in JSON format",
+          "displayName": "Create Or Update a Topology Map Site",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymaps/sites/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Topology Map Site",
+          "displayName": "Delete a Topology Map Site",
+          "isDataAction": false,
+          "name": "Microsoft.Network/topologymaps/sites/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Azure Service Connection Controller",
+      "name": "azureserviceconnectioncontrollers",
+      "operations": [
+        {
+          "description": "Gets the Azure Service Connection Controller Properties, in JSON format",
+          "displayName": "Get Azure Service Connection Controller",
+          "isDataAction": false,
+          "name": "Microsoft.Network/azureserviceconnectioncontrollers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates Azure Service Connection Controller, in JSON format",
+          "displayName": "Create Or Update Azure Service Connection Controller",
+          "isDataAction": false,
+          "name": "Microsoft.Network/azureserviceconnectioncontrollers/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an Azure Service Connection Controller",
+          "displayName": "Delete Azure Service Connection Controller",
+          "isDataAction": false,
+          "name": "Microsoft.Network/azureserviceconnectioncontrollers/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Probing Gateway",
+      "name": "probinggateways",
+      "operations": [
+        {
+          "description": "Gets the Probing Gateway Properties, in JSON format",
+          "displayName": "Get Probing Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.Network/probinggateways/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates Or Updates a Probing Gateway, in JSON format",
+          "displayName": "Create Or Update a Probing Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.Network/probinggateways/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a Probing Gateway",
+          "displayName": "Delete a Probing Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.Network/probinggateways/delete",
           "origin": null,
           "properties": null
         }
