@@ -13,8 +13,8 @@
         "Microsoft.OperationalInsights/workspaces/query/read",
         "Microsoft.OperationalInsights/workspaces/read"
       ],
-      "condition": null,
-      "conditionVersion": null,
+      "condition": "((!(ActionMatches{'Microsoft.OperationalInsights/workspaces/tables/data/read'})) OR (@Resource[Microsoft.OperationalInsights/workspaces/tables:protectionLevel] ForAllOfAnyValues:StringEquals {'General'}))",
+      "conditionVersion": "2.0",
       "dataActions": [
         "Microsoft.OperationalInsights/workspaces/tables/data/read"
       ],
@@ -27,5 +27,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-09-11T09:53:03.678328+00:00"
+  "updatedOn": "2026-07-23T12:32:48.696124+00:00"
 }
