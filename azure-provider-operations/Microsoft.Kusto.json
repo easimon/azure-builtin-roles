@@ -898,6 +898,35 @@
                   "unit": "Count"
                 },
                 {
+                  "aggregationType": "Count",
+                  "category": "Materialized View health and performance",
+                  "dimensions": [
+                    {
+                      "displayName": "Database",
+                      "name": "Database"
+                    },
+                    {
+                      "displayName": "Materialized View Name",
+                      "name": "MaterializedViewName"
+                    },
+                    {
+                      "displayName": "Reason",
+                      "name": "Reason"
+                    }
+                  ],
+                  "displayDescription": "Indicates that the materialized view was disabled due to a permanent error.",
+                  "displayName": "Materialized View Disabled by Error",
+                  "enableRegionalMdmAccount": true,
+                  "fillGapWithZero": true,
+                  "name": "MaterializedViewDisabledByError",
+                  "sourceMdmAccount": "Kusto",
+                  "sourceMdmNamespace": "CustomerMetrics",
+                  "supportedAggregationTypes": [
+                    "Count"
+                  ],
+                  "unit": "Count"
+                },
+                {
                   "aggregationType": "Average",
                   "category": "Materialized View health and performance",
                   "dimensions": [
