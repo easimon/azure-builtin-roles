@@ -12,6 +12,14 @@
       "properties": null
     },
     {
+      "description": "Resolve the token to get the SaaS resource ID and activate the SaaS resource",
+      "displayName": "SaaSOperationGroup_ActivateResource",
+      "isDataAction": false,
+      "name": "Commvault.ContentStore/activateSaaS/action",
+      "origin": null,
+      "properties": null
+    },
+    {
       "description": "Register the subscription for Commvault.ContentStore",
       "displayName": "Register the Commvault.ContentStore",
       "isDataAction": false,
@@ -80,54 +88,316 @@
       ]
     },
     {
-      "displayName": "entities",
-      "name": "entities",
+      "displayName": "cloudAccounts",
+      "name": "cloudAccounts",
       "operations": [
         {
-          "description": "List Entity resources by subscription ID",
-          "displayName": "Entities_ListBySubscription",
+          "description": "List CloudAccount resources by subscription ID",
+          "displayName": "CloudAccounts_ListBySubscription",
           "isDataAction": false,
-          "name": "Commvault.ContentStore/entities/read",
+          "name": "Commvault.ContentStore/cloudAccounts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List Entity resources by resource group",
-          "displayName": "Entities_ListByResourceGroup",
+          "description": "List CloudAccount resources by resource group",
+          "displayName": "CloudAccounts_ListByResourceGroup",
           "isDataAction": false,
-          "name": "Commvault.ContentStore/entities/read",
+          "name": "Commvault.ContentStore/cloudAccounts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a Entity",
-          "displayName": "Entities_Get",
+          "description": "Get a CloudAccount",
+          "displayName": "CloudAccounts_Get",
           "isDataAction": false,
-          "name": "Commvault.ContentStore/entities/read",
+          "name": "Commvault.ContentStore/cloudAccounts/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a Entity",
-          "displayName": "Entities_CreateOrUpdate",
+          "description": "Create a CloudAccount",
+          "displayName": "CloudAccounts_CreateOrUpdate",
           "isDataAction": false,
-          "name": "Commvault.ContentStore/entities/write",
+          "name": "Commvault.ContentStore/cloudAccounts/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a Entity",
-          "displayName": "Entities_Delete",
+          "description": "Delete a CloudAccount",
+          "displayName": "CloudAccounts_Delete",
           "isDataAction": false,
-          "name": "Commvault.ContentStore/entities/delete",
+          "name": "Commvault.ContentStore/cloudAccounts/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Update a Entity",
-          "displayName": "Entities_Update",
+          "description": "Update a CloudAccount",
+          "displayName": "CloudAccounts_Update",
           "isDataAction": false,
-          "name": "Commvault.ContentStore/entities/write",
+          "name": "Commvault.ContentStore/cloudAccounts/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the latest SaaS linked to the cloud account.",
+          "displayName": "CloudAccounts_LatestLinkedSaaS",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/latestLinkedSaaS/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Links a new SaaS to the cloud account.",
+          "displayName": "CloudAccounts_LinkSaaS",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/linkSaaS/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "cloudAccounts/storages",
+      "name": "cloudAccounts/storages",
+      "operations": [
+        {
+          "description": "List Storage resources by CloudAccount",
+          "displayName": "Storages_ListByCloudAccount",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Storage",
+          "displayName": "Storages_Get",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Storage",
+          "displayName": "Storages_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Storage",
+          "displayName": "Storages_Delete",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Disable compliance lock on the storage. Initiates an out-of-band multi-person authorization (MPA) email approval workflow on the partner side. The storage compliance lock status transitions to 'DisablementPending' immediately; once the MPA approval completes, the status becomes 'Disabled' (observable via the refresh action).",
+          "displayName": "Storages_DisableComplianceLock",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/disableComplianceLock/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enable compliance lock on the storage. Synchronous operation.",
+          "displayName": "Storages_EnableComplianceLock",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/enableComplianceLock/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refresh storage state from partner. Fetches latest compliance lock status from Commvault and updates the ARM resource.",
+          "displayName": "Storages_Refresh",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/storages/refresh/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "cloudAccounts/plans",
+      "name": "cloudAccounts/plans",
+      "operations": [
+        {
+          "description": "List CommvaultPlan resources by CloudAccount",
+          "displayName": "Plans_ListByCloudAccount",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/plans/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CommvaultPlan",
+          "displayName": "Plans_Get",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/plans/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CommvaultPlan",
+          "displayName": "Plans_CreateOrupdate",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/plans/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CommvaultPlan",
+          "displayName": "Plans_Delete",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/plans/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "cloudAccounts/protectionGroups",
+      "name": "cloudAccounts/protectionGroups",
+      "operations": [
+        {
+          "description": "List ProtectionGroup resources by CloudAccount",
+          "displayName": "ProtectionGroups_ListByCloudAccount",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ProtectionGroup",
+          "displayName": "ProtectionGroups_Get",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ProtectionGroup",
+          "displayName": "ProtectionGroups_CreateOrupdate",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a ProtectionGroup",
+          "displayName": "ProtectionGroups_Delete",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Ad-hoc backup of protected items resource in given protection group.",
+          "displayName": "ProtectionGroups_Backup",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/backup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restore resource for a protected items in given protection group.",
+          "displayName": "ProtectionGroups_Restore",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/restore/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Resume Backup for a Protection Group.",
+          "displayName": "ProtectionGroups_ResumeBackup",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/resumeBackup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stop Backup for a Protection Group",
+          "displayName": "ProtectionGroups_StopBackup",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/stopBackup/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "cloudAccounts/protectionGroups/protectedItems",
+      "name": "cloudAccounts/protectionGroups/protectedItems",
+      "operations": [
+        {
+          "description": "List ProtectedItem resources by ProtectionGroup",
+          "displayName": "ProtectedItems_ListByProtectionGroup",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/protectedItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ProtectedItem",
+          "displayName": "ProtectedItems_Get",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/protectedItems/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Limits used for creation of resources.",
+          "displayName": "ProtectedItems_GetRestorePoints",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/protectedItems/getRestorePoints/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restore resource for a protected item.",
+          "displayName": "ProtectedItems_Restore",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/protectionGroups/protectedItems/restore/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "cloudAccounts/roleMappings",
+      "name": "cloudAccounts/roleMappings",
+      "operations": [
+        {
+          "description": "List RoleMapping resources by CloudAccount",
+          "displayName": "RoleMappings_List",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/roleMappings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RoleMapping",
+          "displayName": "RoleMappings_Get",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/roleMappings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RoleMapping",
+          "displayName": "RoleMappings_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/roleMappings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a RoleMapping",
+          "displayName": "RoleMappings_Delete",
+          "isDataAction": false,
+          "name": "Commvault.ContentStore/cloudAccounts/roleMappings/delete",
           "origin": null,
           "properties": null
         }
