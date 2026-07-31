@@ -218,24 +218,24 @@
       "name": "storageMovers/projects/jobDefinitions",
       "operations": [
         {
-          "description": "Lists all Job Definitions in a Project.",
-          "displayName": "JobDefinitions_List",
+          "description": "Creates a new Job Run resource for the specified Job Definition and passes it to the Agent for execution.",
+          "displayName": "JobDefinitions_StartJob",
           "isDataAction": false,
-          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/read",
+          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/startJob/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets a Job Definition resource.",
-          "displayName": "JobDefinitions_Get",
+          "description": "Requests the Agent of any active instance of this Job Definition to stop.",
+          "displayName": "JobDefinitions_StopJob",
           "isDataAction": false,
-          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/read",
+          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/stopJob/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates or updates a Job Definition resource, which contains configuration for a single unit of managed data transfer.",
-          "displayName": "JobDefinitions_CreateOrUpdate",
+          "description": "Updates properties for a Job Definition resource. Properties not specified in the request body will be unchanged.",
+          "displayName": "JobDefinitions_Update",
           "isDataAction": false,
           "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/write",
           "origin": null,
@@ -250,26 +250,34 @@
           "properties": null
         },
         {
-          "description": "Updates properties for a Job Definition resource. Properties not specified in the request body will be unchanged.",
-          "displayName": "JobDefinitions_Update",
+          "description": "Creates or updates a Job Definition resource, which contains configuration for a single unit of managed data transfer.",
+          "displayName": "JobDefinitions_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Creates a new Job Run resource for the specified Job Definition and passes it to the Agent for execution.",
-          "displayName": "JobDefinitions_StartJob",
+          "description": "Gets a Job Definition resource.",
+          "displayName": "JobDefinitions_Get",
           "isDataAction": false,
-          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/startJob/action",
+          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Requests the Agent of any active instance of this Job Definition to stop.",
-          "displayName": "JobDefinitions_StopJob",
+          "description": "Lists all Job Definitions in a Project.",
+          "displayName": "JobDefinitions_List",
           "isDataAction": false,
-          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/stopJob/action",
+          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Post action to reconcile the running job.",
+          "displayName": "JobDefinitions_ReconcileJob",
+          "isDataAction": false,
+          "name": "Microsoft.StorageMover/storageMovers/projects/jobDefinitions/reconcileJob/action",
           "origin": null,
           "properties": null
         }
