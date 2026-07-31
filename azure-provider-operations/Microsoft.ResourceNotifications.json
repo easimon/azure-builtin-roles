@@ -2,7 +2,16 @@
   "displayName": "Microsoft Resource Notifications",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ResourceNotifications",
   "name": "Microsoft.ResourceNotifications",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Permission to manage subscriptions to ResourceNotifications",
+      "displayName": "Permission to manage subscriptions granted",
+      "isDataAction": false,
+      "name": "Microsoft.ResourceNotifications/subscribe/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "Operation",
@@ -113,6 +122,50 @@
           "displayName": "Permission subscribeToaksresources granted",
           "isDataAction": false,
           "name": "Microsoft.ResourceNotifications/systemTopics/subscribetoaksresources/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resource subscriptions",
+      "name": "resourceSubscriptions",
+      "operations": [
+        {
+          "description": "Creates/Updates the specified resource subscription",
+          "displayName": "Create/Update resource subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceNotifications/resourceSubscriptions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified resource subscription",
+          "displayName": "Delete resource subscriptions",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceNotifications/resourceSubscriptions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Resource subscription destinations",
+      "name": "resourceSubscriptions/destinations",
+      "operations": [
+        {
+          "description": "Creates/Updates the specified resource subscription destination",
+          "displayName": "Create/Update resource subscription destinations",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceNotifications/resourceSubscriptions/destinations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified resource subscription destination",
+          "displayName": "Delete resource subscription destinations",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceNotifications/resourceSubscriptions/destinations/delete",
           "origin": null,
           "properties": null
         }
