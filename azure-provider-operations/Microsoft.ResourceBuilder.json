@@ -40,7 +40,7 @@
       "name": "workspaces/datasets",
       "operations": [
         {
-          "description": "Delete a Dataset",
+          "description": "Delete a dataset.\n\nDelete-time dependency validation is enforced. A dataset cannot be deleted while one or more jobs\nstill reference it as an input or output through `JobProperties.inputs` or `JobProperties.outputs`\n(via `JobDataset.dataset`). If any consuming job exists, the delete is rejected with the\n`ResourceDeleteHasActiveConsumers` error (code `ARB-RP-228`) and the dataset is not deleted. The error reports the total\nnumber of consumers and returns links to the consuming jobs, each with the property path of the reference.\n\nRequired steps before deleting a dataset:\n1. Identify every job whose `properties.inputs` or `properties.outputs` reference this dataset.\n2. For each consuming job, either update it to remove the reference to this dataset or delete the job\n(and, where applicable, the pipeline that contains it).\n3. Once no job references this dataset, retry this delete request.",
           "displayName": "Datasets_Delete",
           "isDataAction": false,
           "name": "Microsoft.ResourceBuilder/workspaces/datasets/delete",
@@ -86,7 +86,7 @@
           "properties": null
         },
         {
-          "description": "Delete a Workspace",
+          "description": "Delete a workspace.\n\nDeleting a workspace cascades to all child resources (datasets, data connections, pipelines, jobs,\nand runs), which are removed as part of the ARM delete. A workspace is not subject to active-consumer\ndependency validation, so this delete is not blocked by references between its child resources.",
           "displayName": "Workspaces_Delete",
           "isDataAction": false,
           "name": "Microsoft.ResourceBuilder/workspaces/delete",
@@ -132,7 +132,7 @@
       "name": "workspaces/pipelines",
       "operations": [
         {
-          "description": "Delete a Pipeline",
+          "description": "Delete a pipeline.\n\nDeleting a pipeline cascades to its child resources (jobs and runs), which are removed as part of\nthe ARM delete. A pipeline is not subject to active-consumer dependency validation, so this delete\nis not blocked by references from its child jobs.",
           "displayName": "Pipelines_Delete",
           "isDataAction": false,
           "name": "Microsoft.ResourceBuilder/workspaces/pipelines/delete",
@@ -178,7 +178,7 @@
       "name": "workspaces/pipelines/jobs",
       "operations": [
         {
-          "description": "Delete a Job",
+          "description": "Delete a job.\n\nDelete-time dependency validation is enforced. A job cannot be deleted while its parent pipeline\nstill references it by name through `PipelineProperties.activities[].job` (a `ReferencePipelineJob`).\nIf the parent pipeline references this job, the delete is rejected with the\n`ResourceDeleteHasActiveConsumers` error (code `ARB-RP-228`) and the job is not deleted. The error reports the consuming\npipeline and the property path of the reference.\n\nRequired steps before deleting a job:\n1. Update the parent pipeline to remove the activity that references this job, or delete the pipeline.\n2. Once no pipeline activity references this job, retry this delete request.",
           "displayName": "Jobs_Delete",
           "isDataAction": false,
           "name": "Microsoft.ResourceBuilder/workspaces/pipelines/jobs/delete",
@@ -216,18 +216,10 @@
       "name": "workspaces/dataConnections",
       "operations": [
         {
-          "description": "List DataConnection resources by Workspace",
-          "displayName": "DataConnections_List",
+          "description": "Delete a data connection.\n\nDelete-time dependency validation is enforced. A data connection cannot be deleted while one or\nmore datasets in the same workspace still reference it through `DatasetProperties.connection.id`.\nIf any consuming dataset exists, the delete is rejected with the `ResourceDeleteHasActiveConsumers`\nerror (code `ARB-RP-228`) and the data connection is not deleted. The error reports the total number of consumers and\nreturns links to the consuming datasets, each with the property path of the reference.\n\nRequired steps before deleting a data connection:\n1. Identify every dataset in the workspace whose `properties.connection.id` references this data connection.\n2. For each consuming dataset, either update it to reference a different data connection (detach)\nor delete the dataset.\n3. Once no dataset references this data connection, retry this delete request.",
+          "displayName": "DataConnections_Delete",
           "isDataAction": false,
-          "name": "Microsoft.ResourceBuilder/workspaces/dataConnections/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a DataConnection",
-          "displayName": "DataConnections_Get",
-          "isDataAction": false,
-          "name": "Microsoft.ResourceBuilder/workspaces/dataConnections/read",
+          "name": "Microsoft.ResourceBuilder/workspaces/dataConnections/delete",
           "origin": null,
           "properties": null
         },
@@ -240,10 +232,18 @@
           "properties": null
         },
         {
-          "description": "Delete a DataConnection",
-          "displayName": "DataConnections_Delete",
+          "description": "Get a DataConnection",
+          "displayName": "DataConnections_Get",
           "isDataAction": false,
-          "name": "Microsoft.ResourceBuilder/workspaces/dataConnections/delete",
+          "name": "Microsoft.ResourceBuilder/workspaces/dataConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List DataConnection resources by Workspace",
+          "displayName": "DataConnections_List",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceBuilder/workspaces/dataConnections/read",
           "origin": null,
           "properties": null
         }
