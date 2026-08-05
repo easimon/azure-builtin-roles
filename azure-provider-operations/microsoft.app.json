@@ -262,14 +262,6 @@
           "properties": null
         },
         {
-          "description": "Initiates a diagnostic support check on the environment",
-          "displayName": "Run Support Check",
-          "isDataAction": false,
-          "name": "microsoft.app/managedenvironments/runsupportcheck/action",
-          "origin": "user, system",
-          "properties": null
-        },
-        {
           "description": "Allows to create a Container App in a Managed Environment",
           "displayName": "Join Managed Environment",
           "isDataAction": false,
@@ -306,6 +298,22 @@
           "displayName": "Auth Token for Managed Environment Dev APIs",
           "isDataAction": false,
           "name": "microsoft.app/managedenvironments/getauthtoken/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Dry-run check whether a Managed Environment can be migrated to a target mode. Read-only; does not perform any changes.",
+          "displayName": "Check Managed Environment Migration Eligibility",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/checkmigrationeligibility/action",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Initiates a diagnostic support check on the environment",
+          "displayName": "Run Support Check",
+          "isDataAction": false,
+          "name": "microsoft.app/managedenvironments/runsupportcheck/action",
           "origin": "user, system",
           "properties": null
         }
@@ -1808,6 +1816,14 @@
           "displayName": "Delete SRE Agent",
           "isDataAction": false,
           "name": "Microsoft.App/agents/delete",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "List secrets for an Agent",
+          "displayName": "List Agent Secrets",
+          "isDataAction": false,
+          "name": "Microsoft.App/agents/listSecrets/action",
           "origin": "user, system",
           "properties": null
         }
