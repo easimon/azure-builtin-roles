@@ -48,7 +48,7 @@ jobs:
       - name: Check for differences
         run: ./scripts/process-changes.sh "${{ matrix.dir }}"
       - name: Upload Tweets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: tweets-${{ matrix.type }}
           path: ${{ env.TWEET_PATH }}/
