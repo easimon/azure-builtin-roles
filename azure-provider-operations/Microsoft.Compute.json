@@ -3093,6 +3093,22 @@
           "name": "Microsoft.Compute/snapshots/upload/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Update the immutability policy of a Snapshot",
+          "displayName": "Update Snapshot Immutability Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/snapshots/updateImmutabilityPolicy/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Lock the immutability policy of a Snapshot",
+          "displayName": "Lock Snapshot Immutability Policy",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/snapshots/updateImmutabilityPolicyLock/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -5448,6 +5464,50 @@
           "displayName": "Deploy a new VM/VMSS using Interconnect Block",
           "isDataAction": false,
           "name": "Microsoft.Compute/interconnectBlocks/deploy/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Direct Shared Galleries Shared To Subscription",
+      "name": "locations/sharedGallerySubscriptions/sharedGalleries",
+      "operations": [
+        {
+          "description": "Accepts a Direct Shared Gallery that is shared with the subscription",
+          "displayName": "Accept Direct Shared Gallery shared with the subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/locations/sharedGallerySubscriptions/sharedGalleries/accept/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Rejects a Direct Shared Gallery that is shared with the subscription",
+          "displayName": "Reject Direct Shared Gallery shared with the subscription",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/locations/sharedGallerySubscriptions/sharedGalleries/reject/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Direct Shared Galleries Shared To Tenant",
+      "name": "locations/tenantLevelSharedGallerySubscriptions/sharedGalleries",
+      "operations": [
+        {
+          "description": "Accepts a Direct Shared Gallery that is shared with the tenant",
+          "displayName": "Accept Direct Shared Gallery shared with the tenant",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/locations/tenantLevelSharedGallerySubscriptions/sharedGalleries/accept/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Rejects a Direct Shared Gallery that is shared with the tenant",
+          "displayName": "Reject Direct Shared Gallery shared with the tenant",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/locations/tenantLevelSharedGallerySubscriptions/sharedGalleries/reject/action",
           "origin": "user,system",
           "properties": null
         }
