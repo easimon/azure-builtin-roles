@@ -3,13 +3,17 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2024-10-23T15:16:13.905329+00:00",
+  "createdOn": "2024-10-21T15:04:47.782770+00:00",
   "description": "Grants read-only access to most Kubernetes cluster-scoped resources in the fleet-managed hub cluster.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/bd80684d-2f5f-4130-892a-0955546282de",
   "name": "bd80684d-2f5f-4130-892a-0955546282de",
   "permissions": [
     {
       "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
         "Microsoft.ContainerService/fleets/read",
         "Microsoft.ContainerService/fleets/listCredentials/action"
       ],
@@ -47,7 +51,6 @@
         "Microsoft.ContainerService/fleets/cluster.kubernetes-fleet.io/memberclusters/read",
         "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourceplacements/read",
         "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourcebindings/read",
-        "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourcesnapshots/read",
         "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterschedulingpolicysnapshots/read",
         "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourceoverrides/read",
         "Microsoft.ContainerService/fleets/placement.kubernetes-fleet.io/clusterresourceoverridesnapshots/read"
@@ -61,5 +64,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-10-23T15:16:13.905329+00:00"
+  "updatedOn": "2026-08-10T15:05:09.901638+00:00"
 }
