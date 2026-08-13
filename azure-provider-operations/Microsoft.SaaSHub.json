@@ -90,6 +90,30 @@
       "name": "Microsoft.SaaSHub/validateFuturePriceEligibility/action",
       "origin": null,
       "properties": null
+    },
+    {
+      "description": "Returns customer-owned SaaS resources that are eligible for consolidation to a target product.\nOnly available starting in API version 2026-03-31-preview.",
+      "displayName": "ProviderLevelActions_ListConsolidableResources",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/listConsolidableResources/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates customer eligibility for promotional renewal pricing on the purchase line items\nin a quote, cart or order for a customer who is renewing their agreement or contract.\nOnly available starting in API version 2026-03-31-preview.",
+      "displayName": "ProviderLevelActions_ValidateRenewalPricingEligibility",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/validateRenewalPricingEligibility/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Evaluates customer eligibility for one or more add-ons.\nOnly available starting in API version 2026-03-31-preview.",
+      "displayName": "ProviderLevelActions_ValidateAddOnEligibility",
+      "isDataAction": false,
+      "name": "Microsoft.SaaSHub/validateAddOnEligibility/action",
+      "origin": null,
+      "properties": null
     }
   ],
   "resourceTypes": [
@@ -396,6 +420,22 @@
           "displayName": "SaasResources_TransferToPartner",
           "isDataAction": false,
           "name": "Microsoft.SaaSHub/saasResources/transferToPartner/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Evaluates whether one or more source SaaS resources can be cancelled or have seats reduced into the target SaaS resource.\nThe resource name in the URL is the anchored target resource.\nOnly available starting in API version 2026-03-31-preview.",
+          "displayName": "SaasResources_CanCancelOrReduceSeatsForIncludedResources",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/canCancelOrReduceSeatsForIncludedResources/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Consolidates one or more source SaaS resources into the target SaaS resource.\nThe resource name in the URL is the anchored target resource.\nOnly available starting in API version 2026-03-31-preview.",
+          "displayName": "SaasResources_CancelOrReduceSeatsForIncludedResources",
+          "isDataAction": false,
+          "name": "Microsoft.SaaSHub/saasResources/cancelOrReduceSeatsForIncludedResources/action",
           "origin": null,
           "properties": null
         }
