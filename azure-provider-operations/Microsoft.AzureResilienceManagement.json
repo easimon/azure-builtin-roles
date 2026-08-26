@@ -602,22 +602,6 @@
       "name": "drills/drillRuns",
       "operations": [
         {
-          "description": "List DrillRun resources by Drill",
-          "displayName": "DrillRuns_List",
-          "isDataAction": false,
-          "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a DrillRun",
-          "displayName": "DrillRuns_Get",
-          "isDataAction": false,
-          "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/read",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "This enables the user to add notes on this Drill Run.",
           "displayName": "DrillRuns_AddNotes",
           "isDataAction": false,
@@ -670,6 +654,38 @@
           "displayName": "DrillRuns_TestFailOverCleanup",
           "isDataAction": false,
           "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/testFailOverCleanup/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a DrillRun",
+          "displayName": "DrillRuns_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List DrillRun resources by Drill",
+          "displayName": "DrillRuns_List",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This generates, or regenerates, the report for this Drill Run. The action is idempotent and is safe to call at any time: a call that arrives while a generation is already running joins it, and a call made after a failed attempt retries it. A report that has been finalized is never regenerated.",
+          "displayName": "DrillRuns_GenerateReport",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/generateReport/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "This returns a short-lived, read-only URL to download the report for this Drill Run. The URL expires at the returned expiryTimestamp and grants access to that single report only.",
+          "displayName": "DrillRuns_ListReportDownloadUrl",
+          "isDataAction": false,
+          "name": "Microsoft.AzureResilienceManagement/drills/drillRuns/listReportDownloadUrl/action",
           "origin": null,
           "properties": null
         }
