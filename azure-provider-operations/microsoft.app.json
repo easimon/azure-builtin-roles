@@ -2626,7 +2626,7 @@
           "properties": null
         },
         {
-          "description": "Create a new disk image in a sandbox group",
+          "description": "Create a new disk image using a discriminated source in a sandbox group",
           "displayName": "Create Disk Image",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/diskimages/write",
@@ -2700,8 +2700,8 @@
           "properties": null
         },
         {
-          "description": "Generate an execution token for a sandbox",
-          "displayName": "Generate Sandbox Token",
+          "description": "Create a new sandbox in a sandbox group",
+          "displayName": "Create Sandbox",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/sandboxes/write",
           "origin": "user, system",
@@ -3140,6 +3140,64 @@
           "displayName": "Delete Path",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/volumes/files/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sandbox",
+      "name": "sandboxGroups/sandboxes/podVolumes",
+      "operations": [
+        {
+          "description": "Add pod volume mounts to a running sandbox",
+          "displayName": "Add Pod Volume Mounts",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/sandboxes/podVolumes/write",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sandbox",
+      "name": "sandboxGroups/sandboxes/egressDecisions",
+      "operations": [
+        {
+          "description": "Get egress decisions for a running sandbox",
+          "displayName": "Get Egress Decisions",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/sandboxes/egressDecisions/read",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Credential",
+      "name": "sandboxGroups/credentials",
+      "operations": [
+        {
+          "description": "List credentials in a sandbox group",
+          "displayName": "List Credentials",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/credentials/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create or update a credential in a sandbox group",
+          "displayName": "Create Or Update Credential",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/credentials/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete a credential in a sandbox group",
+          "displayName": "Delete Credential",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/credentials/delete",
           "origin": "user, system",
           "properties": null
         }
