@@ -4,7 +4,7 @@
   ],
   "createdBy": null,
   "createdOn": "2026-02-18T16:26:11.441159+00:00",
-  "description": "Gives you full access to manage Device Update accounts, instances, and private endpoint connections",
+  "description": "Gives you full access to manage Device Update accounts, instances, linked accounts, linking operations, and private endpoint connections",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/f82fbe13-0f98-4809-af81-b82c343db82f",
   "name": "f82fbe13-0f98-4809-af81-b82c343db82f",
   "permissions": [
@@ -22,7 +22,14 @@
         "Microsoft.DeviceUpdate/accounts/instances/delete",
         "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/read",
         "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/write",
-        "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/delete"
+        "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/delete",
+        "Microsoft.DeviceUpdate/updateInstances/read",
+        "Microsoft.DeviceUpdate/updateInstances/write",
+        "Microsoft.DeviceUpdate/updateInstances/delete",
+        "Microsoft.DeviceUpdate/updateInstances/linkPreflight/action",
+        "Microsoft.DeviceUpdate/updateInstances/linkInitiate/action",
+        "Microsoft.DeviceUpdate/updateInstances/linkNotify/action",
+        "Microsoft.DeviceUpdate/updateInstances/linkUpdate/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -36,5 +43,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-02-18T16:26:11.441159+00:00"
+  "updatedOn": "2026-08-27T15:42:24.287055+00:00"
 }
