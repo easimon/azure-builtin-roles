@@ -3820,6 +3820,76 @@
                   "sourceMdmAccount": "AzureEventGrid",
                   "sourceMdmNamespace": "ResourceMetricsV2",
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "internalName": "EventSubscriptionName",
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "ThrottleType"
+                    },
+                    {
+                      "name": "EnforcementStage"
+                    }
+                  ],
+                  "displayDescription": "The number of times Event Grid throttled an operation because a namespace exceeded its throughput or bandwidth limit.",
+                  "displayName": "Throttling Enforcements",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EGV2.ThrottlingEnforcements",
+                  "isDimensionRequired": false,
+                  "name": "ThrottlingEnforcements",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetricsV2",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "internalName": "SubResourceId",
+                      "name": "Topic"
+                    },
+                    {
+                      "internalName": "EventSubscriptionName",
+                      "name": "EventSubscriptionName"
+                    },
+                    {
+                      "name": "ThrottleType"
+                    },
+                    {
+                      "name": "EnforcementStage"
+                    }
+                  ],
+                  "displayDescription": "The delay in milliseconds applied when Event Grid throttled an operation because a namespace exceeded its throughput or bandwidth limit.",
+                  "displayName": "Throttling Wait Time",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "EGV2.ThrottlingWaitTime",
+                  "isDimensionRequired": false,
+                  "name": "ThrottlingWaitTime",
+                  "resourceIdDimensionNameOverride": null,
+                  "sourceMdmAccount": "AzureEventGrid",
+                  "sourceMdmNamespace": "ResourceMetricsV2",
+                  "unit": "Milliseconds"
                 }
               ]
             }
