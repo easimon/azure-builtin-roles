@@ -264,6 +264,14 @@
           "properties": null
         },
         {
+          "description": "Provision Instant Item Recovery for Protected Item",
+          "displayName": "Provision Instant Item Recovery for Protected Item",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/fetchInstantItemRecoveryOperationResult/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Move Recovery point to another tier",
           "displayName": "Move Recovery point to another tier",
           "isDataAction": false,
@@ -3053,6 +3061,14 @@
           "properties": null
         },
         {
+          "description": "Retrieves the cross-tenant vault mapping.",
+          "displayName": "Retrieve the cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Remove the backup cross-tenant vault mapping.",
           "displayName": "Remove the cross-tenant vault mapping.",
           "isDataAction": false,
@@ -3149,6 +3165,92 @@
           "displayName": "Recovery Services Protected Items and Protected Servers usage summaries details.",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupUsageSummaries/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Vaults/backupCrossTenantVaultMappings/backupFabrics",
+      "operations": [
+        {
+          "description": "Returns a list of all recovery points from the cross-tenant mapped vault.",
+          "displayName": "Retrieve all recovery points from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/getRecoveryPoints/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Restore recovery point from cross-tenant mapped vault for the protected items.",
+          "displayName": "Restore recovery point from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/preCheckRestore/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers bulk restore from the cross-tenant mapped vault.",
+          "displayName": "Trigger bulk restore from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/restore/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Status",
+      "name": "Vaults/backupCrossTenantVaultMappings/backupFabrics/operationsStatus",
+      "operations": [
+        {
+          "description": "Retrieves bulk restore operation status from the cross-tenant mapped vault.",
+          "displayName": "Retrieve bulk restore operation status from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/operationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Protected Item Operation Results",
+      "name": "Vaults/backupCrossTenantVaultMappings/backupFabrics/recoveryPointOperationResults",
+      "operations": [
+        {
+          "description": "Retrieves bulk restore operation result from the cross-tenant mapped vault.",
+          "displayName": "Retrieve bulk restore operation result from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/recoveryPointOperationResults/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validate Operation Status",
+      "name": "Vaults/backupCrossTenantVaultMappings/backupFabrics/validateBulkRestoreOperationsStatus",
+      "operations": [
+        {
+          "description": "Retrieves bulk restore precheck operation status from the cross-tenant mapped vault.",
+          "displayName": "Retrieve bulk restore precheck operation status from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/validateBulkRestoreOperationsStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs",
+      "name": "Vaults/backupCrossTenantVaultMappings/backupJobs/backupChildJobs",
+      "operations": [
+        {
+          "description": "Returns a list of all jobs from the cross-tenant mapped vault.",
+          "displayName": "Retrieve all jobs from cross-tenant mapped vault.",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupJobs/backupChildJobs/read",
           "origin": "user",
           "properties": null
         }
