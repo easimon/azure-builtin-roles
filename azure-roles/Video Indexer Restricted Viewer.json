@@ -11,7 +11,8 @@
     {
       "actions": [
         "Microsoft.VideoIndexer/*/read",
-        "Microsoft.VideoIndexer/accounts/*/action"
+        "Microsoft.VideoIndexer/accounts/generateRestrictedViewerAccessToken/action",
+        "Microsoft.VideoIndexer/accounts/generateExtensionRestrictedViewerAccessToken/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -19,7 +20,9 @@
       "notActions": [
         "Microsoft.VideoIndexer/*/write",
         "Microsoft.VideoIndexer/*/delete",
-        "Microsoft.VideoIndexer/accounts/generateAccessToken/action"
+        "Microsoft.VideoIndexer/accounts/generateAccessToken/action",
+        "Microsoft.VideoIndexer/accounts/generateExtensionAccessToken/action",
+        "Microsoft.VideoIndexer/accounts/PrivateEndpointConnectionsApproval/action"
       ],
       "notDataActions": []
     }
@@ -29,5 +32,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2022-08-10T22:23:56.457609+00:00"
+  "updatedOn": "2026-08-28T16:22:22.365437+00:00"
 }
