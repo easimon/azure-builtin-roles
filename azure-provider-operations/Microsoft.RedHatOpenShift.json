@@ -2,14 +2,23 @@
   "displayName": "Azure Red Hat OpenShift",
   "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.RedHatOpenShift",
   "name": "Microsoft.RedHatOpenShift",
-  "operations": [],
+  "operations": [
+    {
+      "description": "Register the subscription for the Azure Red Hat OpenShift (ARO) resource provider and enable the creation of OpenShift clusters",
+      "displayName": "Register the Azure Red Hat OpenShift (ARO) Resource Provider",
+      "isDataAction": false,
+      "name": "Microsoft.RedHatOpenShift/register/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
   "resourceTypes": [
     {
       "displayName": "locations/operationresults",
       "name": "locations/operationresults",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Read operation results",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/locations/operationresults/read",
@@ -23,7 +32,7 @@
       "name": "locations/operationsstatus",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Read operations status",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/locations/operationsstatus/read",
@@ -37,7 +46,7 @@
       "name": "openShiftClusters",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Read OpenShift cluster",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/openShiftClusters/read",
@@ -45,7 +54,7 @@
           "properties": null
         },
         {
-          "description": null,
+          "description": "",
           "displayName": "Write OpenShift cluster",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/openShiftClusters/write",
@@ -53,7 +62,7 @@
           "properties": null
         },
         {
-          "description": null,
+          "description": "",
           "displayName": "Delete OpenShift cluster",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/openShiftClusters/delete",
@@ -61,7 +70,7 @@
           "properties": null
         },
         {
-          "description": null,
+          "description": "",
           "displayName": "List credentials of an OpenShift cluster",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/openShiftClusters/listCredentials/action",
@@ -69,7 +78,7 @@
           "properties": null
         },
         {
-          "description": null,
+          "description": "",
           "displayName": "List Admin Kubeconfig of an OpenShift cluster",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/openShiftClusters/listAdminCredentials/action",
@@ -83,7 +92,7 @@
       "name": "operations",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Read operations",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/operations/read",
@@ -97,7 +106,7 @@
       "name": "openShiftClusters/detectors",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Get OpenShift Cluster Detector",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/openShiftClusters/detectors/read",
@@ -111,7 +120,7 @@
       "name": "locations/listPlatformWorkloadIdentityRoleSets",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Lists all PlatformWorkloadIdentityRoleSets available in the specified location",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/locations/listPlatformWorkloadIdentityRoleSets/read",
@@ -125,11 +134,159 @@
       "name": "locations/openshiftVersions",
       "operations": [
         {
-          "description": null,
+          "description": "",
           "displayName": "Lists all OpenShift versions available to install in the specified location",
           "isDataAction": false,
           "name": "Microsoft.RedHatOpenShift/locations/openshiftVersions/read",
           "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Hosted Control Plane (HCP) OpenShift Clusters",
+      "name": "hcpOpenShiftClusters",
+      "operations": [
+        {
+          "description": "Read any Hosted Control Plane (HCP) OpenShift Clusters",
+          "displayName": "Read Hosted Control Plane (HCP) OpenShift Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Hosted Control Plane (HCP) OpenShift Clusters",
+          "displayName": "Create or Update Hosted Control Plane (HCP) OpenShift Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Hosted Control Plane (HCP) OpenShift Clusters",
+          "displayName": "Delete Hosted Control Plane (HCP) OpenShift Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Request a kubeconfig file for a Hosted Control Plane (HCP) OpenShift Cluster that authenticates using a limited-time signed certificate with administrator permissions",
+          "displayName": "Request Administrator Credential",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/requestadmincredential/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Revoke all unexpired certificates issued for user access to a Hosted Control Plane (HCP) OpenShift Cluster",
+          "displayName": "Revoke All Credentials",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/revokecredentials/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Node Pools",
+      "name": "hcpOpenShiftClusters/nodePools",
+      "operations": [
+        {
+          "description": "Read any Node Pools",
+          "displayName": "Read Node Pool",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/nodePools/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any Node Pools",
+          "displayName": "Create or Update Node Pool",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/nodePools/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any Node Pools",
+          "displayName": "Delete Node Pool",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/nodePools/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "External Authentication Configurations",
+      "name": "hcpOpenShiftClusters/externalAuths",
+      "operations": [
+        {
+          "description": "Read any External Authentication Configurations",
+          "displayName": "Read External Authentication Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/externalAuths/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update any External Authentication Configurations",
+          "displayName": "Create or Update External Authentication Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/externalAuths/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete any External Authentication Configurations",
+          "displayName": "Delete External Authentication Configuration",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/hcpOpenShiftClusters/externalAuths/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "OpenShift Container Platform Versions",
+      "name": "locations/hcpOpenShiftVersions",
+      "operations": [
+        {
+          "description": "Read any OpenShift Container Platform Versions",
+          "displayName": "Read OpenShift Container Platform Version",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/locations/hcpOpenShiftVersions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Asynchronous Operation Results",
+      "name": "locations/hcpOperationResults",
+      "operations": [
+        {
+          "description": "Read the result of a successful asynchronous operation",
+          "displayName": "Read Asynchronous Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/locations/hcpOperationResults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Asynchronous Operation Statuses",
+      "name": "locations/hcpOperationStatuses",
+      "operations": [
+        {
+          "description": "Read the status of an ongoing or failed asynchronous operation",
+          "displayName": "Read Asynchronous Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.RedHatOpenShift/locations/hcpOperationStatuses/read",
+          "origin": null,
           "properties": null
         }
       ]
