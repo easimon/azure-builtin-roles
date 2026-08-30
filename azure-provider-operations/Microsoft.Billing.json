@@ -56,8 +56,8 @@
       "name": "billingAccounts/billingSubscriptions",
       "operations": [
         {
-          "description": "Lists the subscriptions for a billing account.",
-          "displayName": "BillingSubscriptions_ListByBillingAccount",
+          "description": "Gets a subscription by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement,  Microsoft Partner Agreement, and Enterprise Agreement.",
+          "displayName": "BillingSubscriptions_Get",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingSubscriptions/read",
           "origin": null,
@@ -3116,6 +3116,20 @@
           "displayName": "Policies_EnsureDefaultInvoiceSectionByBillingProfile",
           "isDataAction": false,
           "name": "Microsoft.Billing/billingAccounts/billingProfiles/ensureDefaultCloudSubscription/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Default Cloud Subscription",
+      "name": "billingAccounts/billingProfiles/defaultCloudSubscription",
+      "operations": [
+        {
+          "description": "Gets the default cloud subscription policy at billing profile scope by reading the default invoice section policy. This operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.",
+          "displayName": "Policies_GetDefaultCloudSubscriptionByBillingProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Billing/billingAccounts/billingProfiles/defaultCloudSubscription/read",
           "origin": null,
           "properties": null
         }
