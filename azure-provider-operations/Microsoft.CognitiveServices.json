@@ -1751,6 +1751,294 @@
                   "metricFilterPattern": "^OpenAI$|^AIServices$",
                   "name": "StorageAPIFailureCount",
                   "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    },
+                    {
+                      "displayName": "StatusCode",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "StatusCodeClass",
+                      "name": "StatusCodeClass"
+                    },
+                    {
+                      "displayName": "StatusText",
+                      "name": "StatusText"
+                    }
+                  ],
+                  "displayDescription": "Count of Reinforcement Learning control plane requests, split by operation, protocol, authentication type and HTTP status. Use this to see overall demand on the service and to spot traffic that is failing - group by StatusCodeClass to separate 4xx caller errors from 5xx service errors. A data point is emitted for every request, so intervals with no traffic report 0. This metric is in preview.",
+                  "displayName": "Reinforcement Learning requests (Preview)",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "Requests",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    },
+                    {
+                      "displayName": "StatusCode",
+                      "name": "StatusCode"
+                    },
+                    {
+                      "displayName": "StatusCodeClass",
+                      "name": "StatusCodeClass"
+                    },
+                    {
+                      "displayName": "StatusText",
+                      "name": "StatusText"
+                    }
+                  ],
+                  "displayDescription": "Count of Reinforcement Learning control plane requests that failed, meaning those returning a 4xx or 5xx HTTP status. Alert on a rise in this metric, and group by StatusCode and Operation to find which API is failing. Divide by Reinforcement Learning requests over the same interval to obtain an error rate. A data point is emitted for every failed request, so intervals with no errors report 0. This metric is in preview.",
+                  "displayName": "Reinforcement Learning errors (Preview)",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "Errors",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Percentage of Reinforcement Learning control plane requests that completed without a service side failure, calculated as requests not returning a 5xx status divided by total requests. Caller errors such as 400 and 404 are excluded because they reflect the request rather than service health. Alert when this drops below your target, for example 99.9 percent, and group by Operation to identify the affected API. Gaps mean no requests were made in that interval rather than zero availability. This metric is in preview.",
+                  "displayName": "Reinforcement Learning availability (Preview)",
+                  "fillGapWithZero": false,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "Availability",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "Operation",
+                      "name": "Operation"
+                    },
+                    {
+                      "displayName": "Authentication",
+                      "name": "Authentication"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Time in milliseconds from the Reinforcement Learning service receiving a request to returning the final response, including time spent waiting on downstream dependencies such as storage, the environment registry and sandbox provisioning. This is the latency a caller actually experiences. Group by Operation to compare create, get and list calls and identify slow operations. Gaps mean no requests were made rather than zero latency. This metric is in preview.",
+                  "displayName": "Reinforcement Learning latency (Preview)",
+                  "fillGapWithZero": false,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "RleLatency",
+                  "unit": "MilliSeconds"
+                },
+                {
+                  "aggregationType": "Count",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "EnvironmentId",
+                      "name": "EnvironmentId"
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status"
+                    },
+                    {
+                      "displayName": "ErrorCode",
+                      "name": "ErrorCode"
+                    }
+                  ],
+                  "displayDescription": "Count of Reinforcement Learning environment version create operations, split by outcome and failure reason. Use this to track authoring activity in a project and to alert on a rise in failed creates - filter Status to 'failure' and group by ErrorCode to identify the cause. A data point is emitted each time a create is attempted, so intervals with no authoring activity report 0. This metric is in preview.",
+                  "displayName": "Reinforcement Learning environment versions (Preview)",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "EnvironmentVersions",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Count",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "EnvironmentId",
+                      "name": "EnvironmentId"
+                    },
+                    {
+                      "displayName": "Status",
+                      "name": "Status"
+                    },
+                    {
+                      "displayName": "ErrorCode",
+                      "name": "ErrorCode"
+                    },
+                    {
+                      "displayName": "SandboxCpu",
+                      "name": "SandboxCpu"
+                    },
+                    {
+                      "displayName": "SandboxMemory",
+                      "name": "SandboxMemory"
+                    }
+                  ],
+                  "displayDescription": "Count of Reinforcement Learning environment sandbox lease requests, split by outcome, failure reason, and the CPU and memory size requested. Use this to understand how much sandbox capacity a project is requesting over time, and to alert on lease failures - filter Status to 'failure' and group by ErrorCode. A data point is emitted each time a lease is requested, so intervals with no activity report 0. This metric is in preview.",
+                  "displayName": "Reinforcement Learning sandbox leases (Preview)",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "SandboxLeases",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "QuotaScope",
+                      "name": "QuotaScope"
+                    }
+                  ],
+                  "displayDescription": "Percentage of the subscription's concurrent sandbox allowance that is currently reserved, calculated as the number of sandboxes held divided by the per subscription concurrent sandbox limit. Use this to see how close a subscription is to exhausting its allowance before further sandbox leases are rejected, and alert above 75 percent to get warning ahead of throttling. Only the per subscription bucket is reported, so QuotaScope is always 'Subscription'. This is a point in time level sampled when a sandbox is reserved or released, so gaps mean the value was not measured rather than that usage was zero. This metric is in preview.",
+                  "displayName": "Reinforcement Learning sandbox quota usage (Preview)",
+                  "fillGapWithZero": false,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "SandboxQuotaUsage",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    },
+                    {
+                      "blobDuration": "P1D",
+                      "timeGrain": "PT1H"
+                    }
+                  ],
+                  "category": "Reinforcement Learning Environments",
+                  "dimensions": [
+                    {
+                      "displayName": "QuotaScope",
+                      "name": "QuotaScope"
+                    }
+                  ],
+                  "displayDescription": "Count of Reinforcement Learning sandbox lease requests rejected because a concurrent sandbox quota was already at its limit. Group by QuotaScope to separate rejections caused by the per subscription limit, which are returned to the caller as HTTP 429 and can be resolved by stopping an unused sandbox, from rejections caused by the regional service limit, which are returned as HTTP 503 and mean the region is temporarily saturated. Read this together with Reinforcement Learning sandbox quota usage to confirm that lease failures are caused by quota limits rather than by errors. A data point is emitted for each rejected lease, so intervals with no throttling report 0. This metric is in preview.",
+                  "displayName": "Reinforcement Learning throttled sandbox leases (Preview)",
+                  "fillGapWithZero": true,
+                  "metricFilterPattern": "^OpenAI$|^AIServices$",
+                  "name": "ThrottledLeases",
+                  "unit": "Count"
                 }
               ]
             }
@@ -21197,6 +21485,96 @@
           "displayName": "Deletes Deployment",
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/arcDeployments/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Budget policies",
+      "name": "accounts/budgetPolicies",
+      "operations": [
+        {
+          "description": "Read budget policies",
+          "displayName": "Read budget policies",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/budgetPolicies/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create or update budget policies",
+          "displayName": "Create or update budget policies",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/budgetPolicies/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete budget policies",
+          "displayName": "Delete budget policies",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/budgetPolicies/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Responsible AI Regos",
+      "name": "accounts/raiRegos",
+      "operations": [
+        {
+          "description": "Gets reusable Responsible AI Rego resources.",
+          "displayName": "Get Responsible AI Regos",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiRegos/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a reusable Responsible AI Rego resource.",
+          "displayName": "Create or update a Responsible AI Rego",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiRegos/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a reusable Responsible AI Rego resource.",
+          "displayName": "Delete a Responsible AI Rego",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiRegos/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Responsible AI policy bindings",
+      "name": "accounts/raiBindings",
+      "operations": [
+        {
+          "description": "Gets Responsible AI policy bindings.",
+          "displayName": "Get Responsible AI policy bindings",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiBindings/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a Responsible AI policy binding.",
+          "displayName": "Create or update a Responsible AI policy binding",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiBindings/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Responsible AI policy binding.",
+          "displayName": "Delete a Responsible AI policy binding",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/raiBindings/delete",
           "origin": "user,system",
           "properties": null
         }
