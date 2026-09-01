@@ -12,34 +12,34 @@
       "properties": null
     },
     {
-      "description": "action listSupportInfo",
-      "displayName": "action_listSupportInfo",
+      "description": "A long-running provider action.",
+      "displayName": "PaloAltoNetworksCloudngfwOperations_listSupportInfo",
       "isDataAction": false,
       "name": "PaloAltoNetworks.Cloudngfw/listSupportInfo/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "action createProductSerialNumber",
-      "displayName": "action_createProductSerialNumber",
+      "description": "A long-running provider action.",
+      "displayName": "PaloAltoNetworksCloudngfwOperations_createProductSerialNumber",
       "isDataAction": false,
       "name": "PaloAltoNetworks.Cloudngfw/createProductSerialNumber/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "action listProductSerialNumberStatus",
-      "displayName": "action_listProductSerialNumberStatus",
+      "description": "A long-running provider action.",
+      "displayName": "PaloAltoNetworksCloudngfwOperations_listCloudManagerTenants",
       "isDataAction": false,
-      "name": "PaloAltoNetworks.Cloudngfw/listProductSerialNumberStatus/action",
+      "name": "PaloAltoNetworks.Cloudngfw/listCloudManagerTenants/action",
       "origin": null,
       "properties": null
     },
     {
-      "description": "action listCloudManagerTenants",
-      "displayName": "action_listCloudManagerTenants",
+      "description": "A long-running provider action.",
+      "displayName": "PaloAltoNetworksCloudngfwOperations_listProductSerialNumberStatus",
       "isDataAction": false,
-      "name": "PaloAltoNetworks.Cloudngfw/listCloudManagerTenants/action",
+      "name": "PaloAltoNetworks.Cloudngfw/listProductSerialNumberStatus/action",
       "origin": null,
       "properties": null
     },
@@ -868,7 +868,7 @@
       "name": "firewalls/metrics",
       "operations": [
         {
-          "description": "List FirewallMetricsResource resources",
+          "description": "List MetricsObjectFirewallResource resources by Firewalls",
           "displayName": "MetricsObjectFirewall_ListByFirewalls",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/read",
@@ -876,7 +876,7 @@
           "properties": null
         },
         {
-          "description": "Get a FirewallMetricsResource",
+          "description": "Get a MetricsObjectFirewallResource",
           "displayName": "MetricsObjectFirewall_Get",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/read",
@@ -884,7 +884,7 @@
           "properties": null
         },
         {
-          "description": "Create a FirewallMetricsResource",
+          "description": "Create a MetricsObjectFirewallResource",
           "displayName": "MetricsObjectFirewall_CreateOrUpdate",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/write",
@@ -892,7 +892,7 @@
           "properties": null
         },
         {
-          "description": "Delete a FirewallMetricsResource",
+          "description": "Delete a MetricsObjectFirewallResource",
           "displayName": "MetricsObjectFirewall_Delete",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/metrics/delete",
@@ -906,34 +906,94 @@
       "name": "firewalls/customCaptureConfigurations",
       "operations": [
         {
-          "description": "List CustomCaptureConfigurations resources by Firewall",
-          "displayName": "CustomCaptureConfigurations_ListByFirewall",
+          "description": "List Custom Capture Configurations under a firewall. The resource is a singleton (name is fixed to 'default'), so the response contains at most one entry.",
+          "displayName": "CustomCaptureConfigurationsFirewallResources_ListByFirewall",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/customCaptureConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a CustomCaptureConfigurations resource",
-          "displayName": "CustomCaptureConfigurations_Get",
+          "description": "Get the current Custom Capture Configuration for a firewall. Always returns 200 OK + body. Caller reads properties.pcapStatus to know whether to keep polling. Body field properties.nextCheckInSeconds advises when to poll next (omitted on terminal states).",
+          "displayName": "CustomCaptureConfigurationsFirewallResources_Get",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/customCaptureConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create or update a CustomCaptureConfigurations resource (start a packet capture)",
-          "displayName": "CustomCaptureConfigurations_CreateOrUpdate",
+          "description": "Start a Custom Capture Configuration on a firewall. SYNC - returns 200 OK + body immediately. Body's properties.pcapStatus reflects current state (typically InProgress). Caller polls GET on its own clock using properties.nextCheckInSeconds as the cadence hint.",
+          "displayName": "CustomCaptureConfigurationsFirewallResources_CreateOrUpdate",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/customCaptureConfigurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a CustomCaptureConfigurations resource",
-          "displayName": "CustomCaptureConfigurations_Delete",
+          "description": "Delete the Custom Capture Configuration on a firewall. SYNC - clears any in-progress or terminal capture state. Returns 200 on success or 204 when no configuration exists.",
+          "displayName": "CustomCaptureConfigurationsFirewallResources_Delete",
           "isDataAction": false,
           "name": "PaloAltoNetworks.Cloudngfw/firewalls/customCaptureConfigurations/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "firewalls/statuses",
+      "name": "firewalls/statuses",
+      "operations": [
+        {
+          "description": "List FirewallStatusResource resources by Firewalls",
+          "displayName": "FirewallStatus_ListByFirewalls",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/statuses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a FirewallStatusResource",
+          "displayName": "FirewallStatus_Get",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/statuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "firewalls/logIngestionSettings",
+      "name": "firewalls/logIngestionSettings",
+      "operations": [
+        {
+          "description": "List the Log Ingestion Settings under a firewall. The resource is a singleton (name is fixed to 'default'), so the response contains at most one entry.",
+          "displayName": "LogIngestionSettingsResources_ListByFirewall",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/logIngestionSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the Log Ingestion Settings for a firewall. Live read from the partner. Returns 200 OK with the current settings, or 404 when log ingestion has not been configured.",
+          "displayName": "LogIngestionSettingsResources_Get",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/logIngestionSettings/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update the Log Ingestion Settings for a firewall. SYNC - forwards to the partner and returns 200 OK (or 201 Created on first create) with the persisted settings. commonDestination.monitorConfigurationsV2 (dcrId, logIngestionEndpoint, dcrImmutableId, streamName) drives where the firewall logs are ingested.",
+          "displayName": "LogIngestionSettingsResources_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/logIngestionSettings/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete (clear) the Log Ingestion Settings for a firewall. SYNC - soft-clears the DCR destination on the partner (logs have no partner delete API). Returns 200 on success or 204 when nothing is configured.",
+          "displayName": "LogIngestionSettingsResources_Delete",
+          "isDataAction": false,
+          "name": "PaloAltoNetworks.Cloudngfw/firewalls/logIngestionSettings/delete",
           "origin": null,
           "properties": null
         }
