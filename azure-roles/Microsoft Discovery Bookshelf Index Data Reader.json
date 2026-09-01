@@ -1,0 +1,32 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-03-20T05:40:26.265418+00:00",
+  "description": "Grants query access to search and retrieve data from Microsoft Discovery Bookshelf knowledge bases, and read-only access to list Bookshelves and their knowledge bases. This is the minimum role required to use the retrieve action when linking a knowledge base to an agent.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/8ec773c5-7ce6-4b78-91d1-182f8faa536d",
+  "name": "8ec773c5-7ce6-4b78-91d1-182f8faa536d",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Discovery/bookshelves/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.Discovery/bookshelf/knowledgeBaseVersions/query/action",
+        "Microsoft.Discovery/bookshelf/knowledgebases/operations/read",
+        "Microsoft.Discovery/bookshelf/knowledgebases/read"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Microsoft Discovery Bookshelf Index Data Reader",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-08-27T06:37:59.311294+00:00"
+}
