@@ -1356,6 +1356,32 @@
                   "unit": "Count"
                 },
                 {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Throttle Type",
+                      "name": "ThrottleType"
+                    }
+                  ],
+                  "displayDescription": "Number of throttled requests by throttle types",
+                  "displayName": "Number of throttled requests",
+                  "fillGapWithZero": true,
+                  "name": "throttledRequests",
+                  "supportedAggregationTypes": [
+                    "Average",
+                    "Minimum",
+                    "Maximum",
+                    "Total"
+                  ],
+                  "unit": "Count"
+                },
+                {
                   "aggregationType": "Maximum",
                   "availabilities": [
                     {
