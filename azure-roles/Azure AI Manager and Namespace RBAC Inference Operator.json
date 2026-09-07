@@ -1,0 +1,65 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-07-21T15:13:50.694733+00:00",
+  "description": "Allows read access to all objects in an Azure AI Manager namespace, plus the ability to read Secrets and invoke inference against AI models deployed in that namespace. This role does not allow modifying objects, roles, or role bindings. However, the ability to read Secrets allows the holder to obtain ServiceAccount tokens in the namespace. Applying this role at the AI Manager scope will give access across all namespaces.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/82b2f1a9-9593-4498-a824-c209343a28ec",
+  "name": "82b2f1a9-9593-4498-a824-c209343a28ec",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.ContainerService/aiManagers/apps/controllerrevisions/read",
+        "Microsoft.ContainerService/aiManagers/apps/daemonsets/read",
+        "Microsoft.ContainerService/aiManagers/apps/deployments/read",
+        "Microsoft.ContainerService/aiManagers/apps/replicasets/read",
+        "Microsoft.ContainerService/aiManagers/apps/statefulsets/read",
+        "Microsoft.ContainerService/aiManagers/autoscaling/horizontalpodautoscalers/read",
+        "Microsoft.ContainerService/aiManagers/batch/cronjobs/read",
+        "Microsoft.ContainerService/aiManagers/batch/jobs/read",
+        "Microsoft.ContainerService/aiManagers/configmaps/read",
+        "Microsoft.ContainerService/aiManagers/discovery.k8s.io/endpointslices/read",
+        "Microsoft.ContainerService/aiManagers/endpoints/read",
+        "Microsoft.ContainerService/aiManagers/events.k8s.io/events/read",
+        "Microsoft.ContainerService/aiManagers/events/read",
+        "Microsoft.ContainerService/aiManagers/extensions/daemonsets/read",
+        "Microsoft.ContainerService/aiManagers/extensions/deployments/read",
+        "Microsoft.ContainerService/aiManagers/extensions/ingresses/read",
+        "Microsoft.ContainerService/aiManagers/extensions/networkpolicies/read",
+        "Microsoft.ContainerService/aiManagers/extensions/replicasets/read",
+        "Microsoft.ContainerService/aiManagers/limitranges/read",
+        "Microsoft.ContainerService/aiManagers/metrics.k8s.io/pods/read",
+        "Microsoft.ContainerService/aiManagers/metrics.k8s.io/nodes/read",
+        "Microsoft.ContainerService/aiManagers/namespaces/read",
+        "Microsoft.ContainerService/aiManagers/networking.k8s.io/ingresses/read",
+        "Microsoft.ContainerService/aiManagers/networking.k8s.io/networkpolicies/read",
+        "Microsoft.ContainerService/aiManagers/persistentvolumeclaims/read",
+        "Microsoft.ContainerService/aiManagers/pods/read",
+        "Microsoft.ContainerService/aiManagers/policy/poddisruptionbudgets/read",
+        "Microsoft.ContainerService/aiManagers/replicationcontrollers/read",
+        "Microsoft.ContainerService/aiManagers/resourcequotas/read",
+        "Microsoft.ContainerService/aiManagers/serviceaccounts/read",
+        "Microsoft.ContainerService/aiManagers/services/read",
+        "Microsoft.ContainerService/aiManagers/secrets/read",
+        "Microsoft.ContainerService/aiManagers/inference/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure AI Manager and Namespace RBAC Inference Operator",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-07-21T15:13:50.694733+00:00"
+}
