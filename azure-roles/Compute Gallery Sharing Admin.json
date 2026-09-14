@@ -3,14 +3,16 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2022-03-10T08:38:48.265267+00:00",
-  "description": "This role allows user to share gallery to another subscription/tenant or share it to the public.",
+  "createdOn": "2022-03-10T02:34:45.040472+00:00",
+  "description": "This role allows user to share gallery to another subscription/tenant or share it to the public or to accept/reject galleries shared to the user's subscription.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/1ef6a3be-d0ac-425d-8c01-acb62866290b",
   "name": "1ef6a3be-d0ac-425d-8c01-acb62866290b",
   "permissions": [
     {
       "actions": [
-        "Microsoft.Compute/galleries/share/action"
+        "Microsoft.Compute/galleries/share/action",
+        "Microsoft.Compute/locations/sharedGallerySubscriptions/sharedGalleries/accept/action",
+        "Microsoft.Compute/locations/sharedGallerySubscriptions/sharedGalleries/reject/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -24,5 +26,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2022-03-26T04:43:12.793303+00:00"
+  "updatedOn": "2026-09-11T12:22:43.714524+00:00"
 }
