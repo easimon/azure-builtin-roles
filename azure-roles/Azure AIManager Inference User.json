@@ -1,0 +1,33 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-07-15T23:34:03.154014+00:00",
+  "description": "Allows read access to read access keys and invoke inference against AI models deployed in a namespace. applying this role at the AIManager scope will give access across all namespaces.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/82b2f1a9-9593-4498-a824-c209343a28ec",
+  "name": "82b2f1a9-9593-4498-a824-c209343a28ec",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.ContainerService/aiManagers/namespaces/inference/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure AIManager Inference User",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-09-10T22:37:07.961400+00:00"
+}
