@@ -288,6 +288,14 @@
           "name": "Microsoft.DataProtection/backupVaults/validateForBackup/action",
           "origin": "user",
           "properties": null
+        },
+        {
+          "description": "Retrieves the status of the cross-tenant vault mapping.",
+          "displayName": "Retrieve cross-tenant vault mapping status.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappingStatus/action",
+          "origin": "user",
+          "properties": null
         }
       ]
     },
@@ -654,6 +662,162 @@
           "displayName": "List the deleted backup instances under the deleted vault",
           "isDataAction": false,
           "name": "Microsoft.DataProtection/subscriptions/providers/locations/deletedVaults/deletedBackupInstances/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Create Cross Tenant Vault Mapping",
+      "name": "backupVaults/crossTenantVaultMappings",
+      "operations": [
+        {
+          "description": "Create a backup cross-tenant vault mapping.",
+          "displayName": "Create a cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Retrieves the cross-tenant vault mapping.",
+          "displayName": "Retrieve the cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Remove the backup cross-tenant vault mapping.",
+          "displayName": "Remove the cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/remove/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Retrieves the cross-tenant vault mapping.",
+          "displayName": "Retrieve the cross-tenant vault mapping.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Instance",
+      "name": "backupVaults/crossTenantVaultMappings/backupInstances",
+      "operations": [
+        {
+          "description": "Returns all Backup Instances",
+          "displayName": "Get Backup Instances",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns details of the Backup Instance",
+          "displayName": "Get Backup Instance Details",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Finds Restorable Time Ranges",
+          "displayName": "Find Restorable Time Ranges",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/findRestorableTimeRanges/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Validates for Restore of the Backup Instance",
+          "displayName": "Validate for Restore of Backup Instance",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/validateRestore/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Triggers restore on the Backup Instance",
+          "displayName": "Restore Backup Instance",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/restore/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "backupVaults/crossTenantVaultMappings/backupInstances/recoveryPoints",
+      "operations": [
+        {
+          "description": "Returns all Recovery Points",
+          "displayName": "Get Recovery Points",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/recoveryPoints/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Returns details of the Recovery Point",
+          "displayName": "Get Recovery Point Details",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/recoveryPoints/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Jobs",
+      "name": "backupVaults/crossTenantVaultMappings/backupJobs",
+      "operations": [
+        {
+          "description": "List cross region restore jobs of backup instance from secondary region.",
+          "displayName": "Fetch cross region restore jobs.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupJobs/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Get cross region restore job details from secondary region.",
+          "displayName": "Fetch cross region restore job.",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupJobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Operation Status",
+      "name": "backupVaults/crossTenantVaultMappings/backupInstances/operationStatus",
+      "operations": [
+        {
+          "description": "Returns Backup Operation Status for Backup Vault.",
+          "displayName": "Get Backup Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/operationStatus/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Backup Operation Status",
+      "name": "backupVaults/crossTenantVaultMappings/backupInstances/operationResults",
+      "operations": [
+        {
+          "description": "Returns Backup Operation Result for Backup Vault.",
+          "displayName": "Get Backup Operation Result",
+          "isDataAction": false,
+          "name": "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/operationResults/read",
           "origin": "user",
           "properties": null
         }
