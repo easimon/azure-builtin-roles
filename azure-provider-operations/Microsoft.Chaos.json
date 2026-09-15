@@ -234,98 +234,372 @@
       ]
     },
     {
-      "displayName": "Private Accesses",
-      "name": "privateAccesses",
+      "displayName": "Workspace",
+      "name": "workspaces",
       "operations": [
         {
-          "description": "Gets all Private Accesses that extend a tracked resource.",
-          "displayName": "Gets all privateAccesses.",
+          "description": "Creates or updates a Chaos Workspace resource in a resource group.",
+          "displayName": "Creates or updates a Workspace.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/read",
+          "name": "Microsoft.Chaos/workspaces/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Creates or updates a Private Access resource in a resource group.",
-          "displayName": "Creates or updates a Private Access.",
+          "description": "Deletes a Chaos Workspace resource in a resource group.",
+          "displayName": "Deletes a Workspace.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/write",
+          "name": "Microsoft.Chaos/workspaces/delete",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Deletes a Private Access resource in a resource group.",
-          "displayName": "Deletes a Private Access.",
+          "description": "Gets Chaos Workspace resources.",
+          "displayName": "Gets Workspaces.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/delete",
+          "name": "Microsoft.Chaos/workspaces/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Triggers resource discovery for all scenarios in a given workspace.",
+          "displayName": "Discovers resources for a Workspace.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discover/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Triggers template evaluation for all scenarios in a given workspace.",
+          "displayName": "Evaluates templates for a Workspace.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/evaluate/action",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Private Endpoint Connection Proxies",
-      "name": "privateAccesses/privateEndpointConnectionProxies",
+      "displayName": "Scenario",
+      "name": "workspaces/scenarios",
       "operations": [
         {
-          "description": "Gets all Private Endpoint Connection Proxies that extend a tracked resource.",
-          "displayName": "Gets all Private Endpoint Connection Proxies.",
+          "description": "Creates or updates a Scenario resource in a Workspace.",
+          "displayName": "Creates or updates a Scenario.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnectionProxies/read",
+          "name": "Microsoft.Chaos/workspaces/scenarios/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Creates or updates a Private Endpoint Connection Proxy resource in a resource group.",
-          "displayName": "Creates or updates a Private Endpoint Connection Proxy.",
+          "description": "Deletes a Scenario resource in a Workspace.",
+          "displayName": "Deletes a Scenario.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnectionProxies/write",
+          "name": "Microsoft.Chaos/workspaces/scenarios/delete",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Deletes a Private Endpoint Connection Proxy resource in a resource group.",
-          "displayName": "Deletes a Private Endpoint Connection Proxy.",
+          "description": "Gets Scenario resources in a Workspace.",
+          "displayName": "Gets Scenarios.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnectionProxies/delete",
-          "origin": "user,system",
-          "properties": null
-        },
-        {
-          "description": "Validates a Private Endpoint Connection Proxy resource in a resource group.",
-          "displayName": "Validates a Private Endpoint Connection Proxy.",
-          "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnectionProxies/validate/action",
+          "name": "Microsoft.Chaos/workspaces/scenarios/read",
           "origin": "user,system",
           "properties": null
         }
       ]
     },
     {
-      "displayName": "Private Endpoint Connections",
-      "name": "privateAccesses/privateEndpointConnections",
+      "displayName": "ScenarioConfiguration",
+      "name": "workspaces/scenarios/configurations",
       "operations": [
         {
-          "description": "Gets all Private Endpoint Connection that extend a tracked resource.",
-          "displayName": "Gets all Private Endpoint Connection.",
+          "description": "Gets a Scenario Configuration resource or lists all Scenario Configuration resources for a Scenario.",
+          "displayName": "Gets a Scenario Configuration.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnections/read",
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/read",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Creates or updates a Private Endpoint Connection resource in a resource group.",
-          "displayName": "Creates or updates a Private Endpoint Connection.",
+          "description": "Creates or updates a Scenario Configuration resource for a Scenario.",
+          "displayName": "Creates or updates a Scenario Configuration.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnections/write",
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/write",
           "origin": "user,system",
           "properties": null
         },
         {
-          "description": "Deletes a Private Endpoint Connection resource in a resource group.",
-          "displayName": "Deletes a Private Endpoint Connection.",
+          "description": "Deletes a Scenario Configuration resource for a Scenario.",
+          "displayName": "Deletes a Scenario Configuration.",
           "isDataAction": false,
-          "name": "Microsoft.Chaos/privateAccesses/privateEndpointConnections/delete",
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Executes the scenario with the given scenario configuration.",
+          "displayName": "Executes a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/execute/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Validates the given scenario configuration.",
+          "displayName": "Validates a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/validate/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Fixes resource permissions for the given scenario configuration.",
+          "displayName": "Fixes resource permissions for a Scenario Configuration.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/fixResourcePermissions/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ScenarioConfiguration",
+      "name": "workspaces/scenarios/configurations/fixResourcePermissions",
+      "operations": [
+        {
+          "description": "Gets the latest fix resource permissions result for a Scenario Configuration.",
+          "displayName": "Gets the latest fix resource permissions result.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/fixResourcePermissions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Validation",
+      "name": "workspaces/scenarios/configurations/validations",
+      "operations": [
+        {
+          "description": "Gets the latest validation for a Scenario Configuration.",
+          "displayName": "Gets the latest Validation.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/configurations/validations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Run",
+      "name": "workspaces/scenarios/runs",
+      "operations": [
+        {
+          "description": "Creates or updates a Run resource in a Scenario.",
+          "displayName": "Creates or updates a Run.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Run resource in a Scenario.",
+          "displayName": "Deletes a Run.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets Run resources in a Scenario.",
+          "displayName": "Gets Runs.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a Scenario Run.",
+          "displayName": "Starts a Run.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/start/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Cancels a running Scenario Run.",
+          "displayName": "Cancels a Run.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/scenarios/runs/cancel/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Discovery",
+      "name": "workspaces/discoveries",
+      "operations": [
+        {
+          "description": "Creates or updates a Discovery resource in a Workspace.",
+          "displayName": "Creates or updates a Discovery.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discoveries/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Discovery resource in a Workspace.",
+          "displayName": "Deletes a Discovery.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discoveries/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets Discovery resources in a Workspace.",
+          "displayName": "Gets Discoveries.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discoveries/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Starts a Discovery operation in a Workspace.",
+          "displayName": "Starts a Discovery.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discoveries/start/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DiscoveredResource",
+      "name": "workspaces/discoveredResources",
+      "operations": [
+        {
+          "description": "Gets resources discovered by a Workspace Discovery.",
+          "displayName": "Gets Discovered Resources.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/discoveredResources/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Evaluation",
+      "name": "workspaces/evaluations",
+      "operations": [
+        {
+          "description": "Creates or updates an Evaluation resource in a Workspace.",
+          "displayName": "Creates or updates an Evaluation.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/evaluations/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an Evaluation resource in a Workspace.",
+          "displayName": "Deletes an Evaluation.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/evaluations/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets Evaluation resources in a Workspace.",
+          "displayName": "Gets Evaluations.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/evaluations/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Connection",
+      "name": "workspaces/connections",
+      "operations": [
+        {
+          "description": "Creates or updates a Connection resource in a Workspace.",
+          "displayName": "Creates or updates a Connection.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/connections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a Connection resource in a Workspace.",
+          "displayName": "Deletes a Connection.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/connections/delete",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Gets Connection resources in a Workspace.",
+          "displayName": "Gets Connections.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/connections/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "WorkspaceOperationResult",
+      "name": "workspaces/operationResults",
+      "operations": [
+        {
+          "description": "Gets a Workspace Operation Result.",
+          "displayName": "Gets a Workspace Operation Result.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/workspaces/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "WorkspaceOperationResult",
+      "name": "locations/workspaceOperationResults",
+      "operations": [
+        {
+          "description": "Gets a Workspace Operation Result.",
+          "displayName": "Gets a Workspace Operation Result.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/locations/workspaceOperationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Action",
+      "name": "locations/actions",
+      "operations": [
+        {
+          "description": "Gets all Actions.",
+          "displayName": "Gets all Actions.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/locations/actions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ActionVersion",
+      "name": "locations/actionVersions",
+      "operations": [
+        {
+          "description": "Gets all Action Versions.",
+          "displayName": "Gets all Action Versions.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/locations/actionVersions/read",
           "origin": "user,system",
           "properties": null
         }
