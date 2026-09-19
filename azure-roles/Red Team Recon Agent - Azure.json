@@ -1,0 +1,69 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-09-18T14:00:56.289346+00:00",
+  "description": "Read approved Azure resources and security metadata.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/7e2a3b84-6f91-4c5d-b8a2-1f37e9d4ac60",
+  "name": "7e2a3b84-6f91-4c5d-b8a2-1f37e9d4ac60",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ResourceGraph/resources/read",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/dnsZones/read",
+        "Microsoft.Network/dnsZones/CNAME/read",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/extensions/read",
+        "Microsoft.Web/sites/read",
+        "Microsoft.Web/sites/config/read",
+        "Microsoft.Web/sites/config/list/action",
+        "Microsoft.ContainerService/managedClusters/read",
+        "Microsoft.KeyVault/vaults/read",
+        "Microsoft.ContainerRegistry/registries/read",
+        "Microsoft.Sql/servers/read",
+        "Microsoft.Sql/servers/firewallRules/read",
+        "Microsoft.DocumentDB/databaseAccounts/read",
+        "Microsoft.Automation/automationAccounts/read",
+        "Microsoft.OperationalInsights/workspaces/read",
+        "Microsoft.OperationalInsights/workspaces/query/read",
+        "Microsoft.OperationalInsights/workspaces/search/action",
+        "Microsoft.Security/assessments/read",
+        "Microsoft.Security/assessments/subAssessments/read",
+        "Microsoft.Security/alerts/read",
+        "Microsoft.Security/locations/alerts/read",
+        "Microsoft.Security/secureScores/read",
+        "Microsoft.Security/secureScoreControls/read",
+        "Microsoft.Security/secureScores/secureScoreControls/read",
+        "Microsoft.Security/tasks/read",
+        "Microsoft.Security/locations/tasks/read",
+        "Microsoft.Security/automations/read",
+        "Microsoft.Security/complianceResults/read",
+        "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
+        "Microsoft.Authorization/roleAssignments/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.KeyVault/vaults/secrets/readMetadata/action",
+        "Microsoft.KeyVault/vaults/keys/read",
+        "Microsoft.KeyVault/vaults/certificates/read"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Red Team Recon Agent - Azure",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-09-18T14:00:56.289346+00:00"
+}
