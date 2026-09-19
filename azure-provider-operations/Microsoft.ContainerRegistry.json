@@ -1444,6 +1444,190 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Workflow Factories",
+      "name": "workflowFactories",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified workflow factory or lists all the workflow factories under the specified resource group or subscription.",
+          "displayName": "Get Workflow Factory or List Workflow Factories",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a workflow factory with the specified parameters.",
+          "displayName": "Create or Update Workflow Factory",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a workflow factory.",
+          "displayName": "Delete Workflow Factory",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflow Factories",
+      "name": "workflowFactories/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a workflow factory async operation status",
+          "displayName": "Get Workflow Factory Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deleted Workflow Factories",
+      "name": "deletedWorkflowFactories",
+      "operations": [
+        {
+          "description": "Gets the properties of a soft-deleted workflow factory or lists all soft-deleted workflow factories in the specified subscription.",
+          "displayName": "Get Deleted Workflow Factory or List Deleted Workflow Factories",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/deletedWorkflowFactories/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Permanently purges a soft-deleted workflow factory and all its child resources.",
+          "displayName": "Purge Deleted Workflow Factory",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/deletedWorkflowFactories/purge/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflows",
+      "name": "workflowFactories/workflows",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified workflow or lists all the workflows the specified resource group or subscription.",
+          "displayName": "Get Workflow or List Workflows",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a workflow with the specified parameters.",
+          "displayName": "Create or Update Workflow",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a workflow.",
+          "displayName": "Delete Workflow",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Schedules a run for the specified workflow.",
+          "displayName": "Schedule Workflow Run",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/scheduleRun/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflows",
+      "name": "workflowFactories/workflows/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a workflow async operation status",
+          "displayName": "Get Workflow Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Deleted Workflows",
+      "name": "workflowFactories/deletedWorkflows",
+      "operations": [
+        {
+          "description": "Gets the properties of a soft-deleted workflow or lists all soft-deleted workflows in the specified workflow factory.",
+          "displayName": "Get Deleted Workflow or List Deleted Workflows",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/deletedWorkflows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Recovers a soft-deleted workflow, restoring it to active state.",
+          "displayName": "Recover Deleted Workflow",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/deletedWorkflows/recover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Permanently purges a soft-deleted workflow and initiates cleanup of associated runs.",
+          "displayName": "Purge Deleted Workflow",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/deletedWorkflows/purge/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflows",
+      "name": "workflowFactories/workflows/runs",
+      "operations": [
+        {
+          "description": "Gets the properties of the specified workflow run or lists all the workflow runs for the specified workflow.",
+          "displayName": "Get Workflow Run or List Workflow Runs",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/runs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel an existing run.",
+          "displayName": "Cancel an existing run.",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/runs/cancel/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workflows",
+      "name": "workflowFactories/workflows/runs/operationStatuses",
+      "operations": [
+        {
+          "description": "Gets a workflow run async operation status",
+          "displayName": "Get Workflow Run Async Operation Status",
+          "isDataAction": false,
+          "name": "Microsoft.ContainerRegistry/workflowFactories/workflows/runs/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
