@@ -166,6 +166,14 @@
           "properties": null
         },
         {
+          "description": "Provides a single-call API to restore a VM to a previous known-good state by restoring all disks from a VM Restore Point and swapping them onto an existing stopped VM, eliminating manual multi-step disk orchestration and any dependency on Azure Backup vault infrastructure.",
+          "displayName": "Restore Virtual Machine",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/restore/action",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
           "description": "Executes a predefined script on the virtual machine",
           "displayName": "Run Command on Virtual Machine",
           "isDataAction": false,
@@ -5508,6 +5516,212 @@
           "displayName": "Reject Direct Shared Gallery shared with the tenant",
           "isDataAction": false,
           "name": "Microsoft.Compute/locations/tenantLevelSharedGallerySubscriptions/sharedGalleries/reject/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine Protection",
+      "name": "virtualMachines/vmProtection",
+      "operations": [
+        {
+          "description": "Gets the Virtual Machine Protection properties",
+          "displayName": "Get Virtual Machine Protection",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmProtection/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Updates the Virtual Machine Protection properties",
+          "displayName": "Update Virtual Machine Protection",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmProtection/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Configures the Virtual Machine Protection properties",
+          "displayName": "Configure Virtual Machine Protection",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmProtection/configureProtection/action",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine VM Applications",
+      "name": "virtualMachines/vmApplications",
+      "operations": [
+        {
+          "description": "Get the properties of a VM Application on a virtual machine",
+          "displayName": "Get the properties of a VM Application on a virtual machine",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmApplications/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a VM Application or update an existing one on a virtual machine",
+          "displayName": "Create a VM Application or update an existing one on a virtual machine",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmApplications/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a VM Application from a virtual machine",
+          "displayName": "Delete a VM Application from a virtual machine",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmApplications/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine Application Instance View",
+      "name": "virtualMachines/vmApplications/instanceView",
+      "operations": [
+        {
+          "description": "Get detailed runtime status of a VM Application on a virtual machine",
+          "displayName": "Get detailed runtime status of a VM Application on a virtual machine",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachines/vmApplications/instanceView/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine Scale Set Application",
+      "name": "virtualMachineScaleSets/applications",
+      "operations": [
+        {
+          "description": "Get the properties of a VM Application on a virtual machine scale set",
+          "displayName": "Get the properties of a VM Application on a virtual machine scale set",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachineScaleSets/applications/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Create a new VM Application or update an existing one on a virtual machine scale set",
+          "displayName": "Create a new VM Application or update an existing one on a virtual machine scale set",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachineScaleSets/applications/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete a VM Application from a virtual machine scale set",
+          "displayName": "Delete a VM Application from a virtual machine scale set",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachineScaleSets/applications/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Virtual Machine Scale Set Virtual Machine Application",
+      "name": "virtualMachineScaleSets/virtualMachines/applications",
+      "operations": [
+        {
+          "description": "Get the properties of a VM Application on a virtual machine scale set's instance",
+          "displayName": "Get the properties of a VM Application on a virtual machine scale set's instance",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/applications/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Instance View of Virtual Machine Application in Scale Set",
+      "name": "virtualMachineScaleSets/virtualMachines/applications/instanceView",
+      "operations": [
+        {
+          "description": "Get detailed runtime status of a VM Application on a virtual machine scale set's instance",
+          "displayName": "Get detailed runtime status of a VM Application on a virtual machine scale set's instance",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/applications/instanceView/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "GalleryInstanceProfiles",
+      "name": "galleries/instanceProfiles",
+      "operations": [
+        {
+          "description": "Gets the properties of Gallery Instance Profile",
+          "displayName": "Get Gallery InstanceProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/galleries/instanceProfiles/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Gallery Instance Profile or updates an existing one",
+          "displayName": "Create or Update Gallery InstanceProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/galleries/instanceProfiles/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Gallery Instance Profile",
+          "displayName": "Delete Gallery InstanceProfile",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/galleries/instanceProfiles/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "GalleryInstanceProfilesVersions",
+      "name": "galleries/instanceProfiles/versions",
+      "operations": [
+        {
+          "description": "Gets the properties of Gallery Instance Profile Version",
+          "displayName": "Get Gallery InstanceProfile Version",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/galleries/instanceProfiles/versions/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates a new Gallery Instance Profile Version or updates an existing one",
+          "displayName": "Create or Update Gallery InstanceProfile Version",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/galleries/instanceProfiles/versions/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes the Gallery Instance Profile Version",
+          "displayName": "Delete Gallery InstanceProfile Version",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/galleries/instanceProfiles/versions/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SkuMixPlacementScores",
+      "name": "locations/skuMixPlacementScores",
+      "operations": [
+        {
+          "description": "Create a request for generating SKU Mix Placement Scores",
+          "displayName": "Generate SKU Mix Placement Scores",
+          "isDataAction": false,
+          "name": "Microsoft.Compute/locations/skuMixPlacementScores/generate/action",
           "origin": "user,system",
           "properties": null
         }
