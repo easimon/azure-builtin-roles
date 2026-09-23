@@ -12,14 +12,15 @@
       "actions": [
         "Microsoft.InferenceService/inferenceAccounts/write",
         "Microsoft.InferenceService/inferenceAccounts/read",
-        "Microsoft.InferenceService/inferenceAccounts/delete",
-        "Microsoft.InferenceService/inferenceAccounts/listKeys/action",
-        "Microsoft.InferenceService/inferenceAccounts/regenerateKeys/action"
+        "Microsoft.InferenceService/inferenceAccounts/delete"
       ],
       "condition": null,
       "conditionVersion": null,
       "dataActions": [],
-      "notActions": [],
+      "notActions": [
+        "Microsoft.InferenceService/inferenceAccounts/listKeys/action",
+        "Microsoft.InferenceService/inferenceAccounts/regenerateKeys/action"
+      ],
       "notDataActions": [
         "Microsoft.InferenceService/inferenceAccounts/invoke/*"
       ]
@@ -30,5 +31,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-07-28T15:14:03.102092+00:00"
+  "updatedOn": "2026-09-22T15:16:59.012486+00:00"
 }
