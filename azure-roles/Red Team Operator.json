@@ -3,8 +3,8 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2026-09-23T13:41:41.726752+00:00",
-  "description": "Read approved Azure reconnaissance, security posture, Key Vault metadata, App Service configuration, and Log Analytics information; no role-assignment management.",
+  "createdOn": "2026-09-23T13:42:45.661746+00:00",
+  "description": "Operate Perception with approved Azure read permissions.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/9ab4e761-2c0f-4d8e-a573-6f18c92deab7",
   "name": "9ab4e761-2c0f-4d8e-a573-6f18c92deab7",
   "permissions": [
@@ -12,9 +12,7 @@
       "actions": [
         "Microsoft.Resources/subscriptions/read",
         "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Resources/subscriptions/providers/read",
         "Microsoft.ResourceGraph/resources/read",
-        "Microsoft.Resources/deployments/read",
         "Microsoft.Storage/storageAccounts/read",
         "Microsoft.Storage/storageAccounts/blobServices/containers/read",
         "Microsoft.Network/publicIPAddresses/read",
@@ -38,12 +36,16 @@
         "Microsoft.OperationalInsights/workspaces/query/read",
         "Microsoft.OperationalInsights/workspaces/search/action",
         "Microsoft.Security/assessments/read",
-        "Microsoft.Security/assessmentMetadata/read",
+        "Microsoft.Security/assessments/subAssessments/read",
         "Microsoft.Security/alerts/read",
+        "Microsoft.Security/locations/alerts/read",
         "Microsoft.Security/secureScores/read",
         "Microsoft.Security/secureScoreControls/read",
+        "Microsoft.Security/secureScores/secureScoreControls/read",
         "Microsoft.Security/tasks/read",
+        "Microsoft.Security/locations/tasks/read",
         "Microsoft.Security/automations/read",
+        "Microsoft.Security/complianceResults/read",
         "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
         "Microsoft.Authorization/roleAssignments/read"
       ],
@@ -63,5 +65,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-09-23T13:50:11.762074+00:00"
+  "updatedOn": "2026-09-23T13:42:45.661746+00:00"
 }
