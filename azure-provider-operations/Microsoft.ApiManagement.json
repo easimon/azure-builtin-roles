@@ -5429,36 +5429,6 @@
       ]
     },
     {
-      "displayName": "LanguageModels",
-      "name": "service/languageModels",
-      "operations": [
-        {
-          "description": "Lists a collection of language models in the specified service instance. or Gets the details of the language model specified by its identifier.",
-          "displayName": "Get language models list or Get language model details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/languageModels/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or Updates a language model. or Updates an existing language model.",
-          "displayName": "Add language model or Update language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/languageModels/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the specified language model.",
-          "displayName": "Remove language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/languageModels/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "ToolServers",
       "name": "service/toolServers",
       "operations": [
@@ -5497,12 +5467,12 @@
       ]
     },
     {
-      "displayName": "OAuth2 dance: get authorize-URL login links",
+      "displayName": "Get the Gateway OAuth2 start and callback links",
       "name": "service/toolServers/endpoints",
       "operations": [
         {
-          "description": "Mints PKCE state and returns the IdP authorize URL plus redirect URI for the operator-driven OAuth 2.0 Authorization Code dance. or Clears the persisted refresh_token and bumps the OAuth2 configVersion. Idempotent; does not call the IdP.",
-          "displayName": "Get OAuth2 login links or Disconnect OAuth2 endpoint",
+          "description": "Returns a short-lived Gateway start link and the Gateway callback redirect URI for the configured OAuth 2.0 Authorization Code endpoint.",
+          "displayName": "Get OAuth2 login links",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/toolServers/endpoints/oauth2/action",
           "origin": null,
@@ -5729,44 +5699,14 @@
       ]
     },
     {
-      "displayName": "OAuth2 dance: get authorize-URL login links (workspace scope)",
+      "displayName": "Get the Gateway OAuth2 start and callback links (workspace scope)",
       "name": "service/workspaces/toolServers/endpoints",
       "operations": [
         {
-          "description": "Mints PKCE state and returns the IdP authorize URL plus redirect URI for the operator-driven OAuth 2.0 Authorization Code dance. or Clears the persisted refresh_token and bumps the OAuth2 configVersion. Idempotent; does not call the IdP.",
-          "displayName": "Get OAuth2 login links or Disconnect OAuth2 endpoint",
+          "description": "Returns a short-lived Gateway start link and the Gateway callback redirect URI for the configured OAuth 2.0 Authorization Code endpoint.",
+          "displayName": "Get OAuth2 login links",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/service/workspaces/toolServers/endpoints/oauth2/action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "LanguageModels",
-      "name": "service/workspaces/languageModels",
-      "operations": [
-        {
-          "description": "Lists a collection of language models. or Gets the details of the language model.",
-          "displayName": "Get language models list or Get language model details",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/languageModels/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Creates or Updates a language model. or Updates an existing language model.",
-          "displayName": "Add language model or Update language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/languageModels/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes the specified language model.",
-          "displayName": "Remove language model",
-          "isDataAction": false,
-          "name": "Microsoft.ApiManagement/service/workspaces/languageModels/delete",
           "origin": null,
           "properties": null
         }
@@ -6199,14 +6139,6 @@
           "name": "Microsoft.ApiManagement/aigateways/workspaces/models/read",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Invokes an AI Gateway model API.",
-          "displayName": "Invoke AI Gateway model",
-          "isDataAction": true,
-          "name": "Microsoft.ApiManagement/aigateways/workspaces/models/invoke/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -6305,24 +6237,16 @@
           "name": "Microsoft.ApiManagement/aigateways/workspaces/toolServers/listSecrets/action",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Invokes an AI Gateway tool server.",
-          "displayName": "Invoke AI Gateway tool server",
-          "isDataAction": true,
-          "name": "Microsoft.ApiManagement/aigateways/workspaces/toolServers/invoke/action",
-          "origin": null,
-          "properties": null
         }
       ]
     },
     {
-      "displayName": "OAuth2 dance: get authorize-URL login links (workspace scope)",
+      "displayName": "Get the Gateway OAuth2 start and callback links (workspace scope)",
       "name": "aigateways/workspaces/toolServers/endpoints",
       "operations": [
         {
-          "description": "Mints PKCE state and returns the IdP authorize URL plus redirect URI for the operator-driven OAuth 2.0 Authorization Code dance. or Clears the persisted refresh_token and bumps the OAuth2 configVersion. Idempotent; does not call the IdP.",
-          "displayName": "Get OAuth2 login links or Disconnect OAuth2 endpoint",
+          "description": "Returns a short-lived Gateway start link and the Gateway callback redirect URI for the configured OAuth 2.0 Authorization Code endpoint.",
+          "displayName": "Get OAuth2 login links",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/aigateways/workspaces/toolServers/endpoints/oauth2/action",
           "origin": null,
@@ -6355,6 +6279,88 @@
           "displayName": "Remove telemetry exporter",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/aigateways/workspaces/telemetryExporters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Aliases",
+      "name": "service/aliases",
+      "operations": [
+        {
+          "description": "Lists a collection of aliases in the specified service instance. or Gets the details of the alias specified by its identifier.",
+          "displayName": "Get aliases list or Get alias details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/aliases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates an alias. or Updates an existing alias.",
+          "displayName": "Add alias or Update alias",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/aliases/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified alias.",
+          "displayName": "Remove alias",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/aliases/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Aliases",
+      "name": "service/workspaces/aliases",
+      "operations": [
+        {
+          "description": "Lists a collection of aliases in a workspace. or Gets the details of the alias specified by its identifier.",
+          "displayName": "Get aliases list or Get alias details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/aliases/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or Updates an alias. or Updates an existing alias.",
+          "displayName": "Add alias or Update alias",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/aliases/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the specified alias.",
+          "displayName": "Remove alias",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/service/workspaces/aliases/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Workspace",
+      "name": "aigateways/workspaces",
+      "operations": [
+        {
+          "description": "Gets the details of the Workspace specified by its identifier.",
+          "displayName": "Workspace details",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/aigateways/workspaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the details of the Workspace specified by its identifier.",
+          "displayName": "Update Workspace",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/aigateways/workspaces/write",
           "origin": null,
           "properties": null
         }
