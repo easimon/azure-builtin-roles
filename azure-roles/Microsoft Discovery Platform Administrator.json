@@ -24,7 +24,7 @@
         "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Authorization/roleAssignments/delete"
       ],
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR ((@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293}) AND (@Request[Microsoft.Authorization/roleAssignments:PrincipalType] ForAnyOfAnyValues:StringEquals{'ServicePrincipal'}))) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293}))",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR ((@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293, 506c2fa4-2713-45d3-a893-4b1360a66e88}) AND (@Request[Microsoft.Authorization/roleAssignments:PrincipalType] ForAnyOfAnyValues:StringEquals{'ServicePrincipal'}))) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293, 506c2fa4-2713-45d3-a893-4b1360a66e88}))",
       "conditionVersion": "2.0",
       "dataActions": [
         "Microsoft.Discovery/*"
@@ -38,5 +38,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-08-27T07:08:14.413319+00:00"
+  "updatedOn": "2026-09-24T12:48:41.190735+00:00"
 }
