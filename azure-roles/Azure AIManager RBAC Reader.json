@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2026-06-11T15:25:28.742628+00:00",
+  "createdOn": "2026-06-08T15:00:25.030352+00:00",
   "description": "Allows read-only access to all Kubernetes objects in an Azure AIManager, except Secrets, roles, and role bindings. Applying this role at the AIManager scope will give access across all namespaces.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/9c77f8a7-b0b9-4462-844c-de6e66add8ba",
   "name": "9c77f8a7-b0b9-4462-844c-de6e66add8ba",
@@ -18,40 +18,25 @@
       "condition": null,
       "conditionVersion": null,
       "dataActions": [
-        "Microsoft.ContainerService/aiManagers/apps/controllerrevisions/read",
-        "Microsoft.ContainerService/aiManagers/apps/daemonsets/read",
-        "Microsoft.ContainerService/aiManagers/apps/deployments/read",
-        "Microsoft.ContainerService/aiManagers/apps/replicasets/read",
-        "Microsoft.ContainerService/aiManagers/apps/statefulsets/read",
-        "Microsoft.ContainerService/aiManagers/autoscaling/horizontalpodautoscalers/read",
-        "Microsoft.ContainerService/aiManagers/batch/cronjobs/read",
-        "Microsoft.ContainerService/aiManagers/batch/jobs/read",
-        "Microsoft.ContainerService/aiManagers/configmaps/read",
-        "Microsoft.ContainerService/aiManagers/discovery.k8s.io/endpointslices/read",
-        "Microsoft.ContainerService/aiManagers/endpoints/read",
-        "Microsoft.ContainerService/aiManagers/events.k8s.io/events/read",
-        "Microsoft.ContainerService/aiManagers/events/read",
-        "Microsoft.ContainerService/aiManagers/extensions/daemonsets/read",
-        "Microsoft.ContainerService/aiManagers/extensions/deployments/read",
-        "Microsoft.ContainerService/aiManagers/extensions/ingresses/read",
-        "Microsoft.ContainerService/aiManagers/extensions/networkpolicies/read",
-        "Microsoft.ContainerService/aiManagers/extensions/replicasets/read",
-        "Microsoft.ContainerService/aiManagers/limitranges/read",
-        "Microsoft.ContainerService/aiManagers/metrics.k8s.io/pods/read",
-        "Microsoft.ContainerService/aiManagers/metrics.k8s.io/nodes/read",
-        "Microsoft.ContainerService/aiManagers/namespaces/read",
-        "Microsoft.ContainerService/aiManagers/networking.k8s.io/ingresses/read",
-        "Microsoft.ContainerService/aiManagers/networking.k8s.io/networkpolicies/read",
-        "Microsoft.ContainerService/aiManagers/persistentvolumeclaims/read",
-        "Microsoft.ContainerService/aiManagers/pods/read",
-        "Microsoft.ContainerService/aiManagers/policy/poddisruptionbudgets/read",
-        "Microsoft.ContainerService/aiManagers/replicationcontrollers/read",
-        "Microsoft.ContainerService/aiManagers/resourcequotas/read",
-        "Microsoft.ContainerService/aiManagers/serviceaccounts/read",
-        "Microsoft.ContainerService/aiManagers/services/read"
+        "Microsoft.ContainerService/aiManagers/*/read",
+        "Microsoft.ContainerService/aiManagers/apps/*/read",
+        "Microsoft.ContainerService/aiManagers/autoscaling/*/read",
+        "Microsoft.ContainerService/aiManagers/batch/*/read",
+        "Microsoft.ContainerService/aiManagers/discovery.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/events.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/extensions/*/read",
+        "Microsoft.ContainerService/aiManagers/metrics.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/networking.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/policy/*/read"
       ],
       "notActions": [],
-      "notDataActions": []
+      "notDataActions": [
+        "Microsoft.ContainerService/aiManagers/secrets/*",
+        "Microsoft.ContainerService/aiManagers/rbac.authorization.k8s.io/clusterroles/*",
+        "Microsoft.ContainerService/aiManagers/rbac.authorization.k8s.io/clusterrolebindings/*",
+        "Microsoft.ContainerService/aiManagers/rbac.authorization.k8s.io/roles/*",
+        "Microsoft.ContainerService/aiManagers/rbac.authorization.k8s.io/rolebindings/*"
+      ]
     }
   ],
   "roleName": "Azure AIManager RBAC Reader",
@@ -59,5 +44,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-09-22T15:16:59.011487+00:00"
+  "updatedOn": "2026-09-23T16:42:52.383197+00:00"
 }
