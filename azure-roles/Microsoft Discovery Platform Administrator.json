@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-07-03T15:24:07.919032+00:00",
+  "createdOn": "2025-06-30T15:04:02.738122+00:00",
   "description": "Grants full access to manage Microsoft.Discovery resources.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
   "name": "7a2b6e6c-472e-4b39-8878-a26eb63d75c6",
@@ -24,7 +24,7 @@
         "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Authorization/roleAssignments/delete"
       ],
-      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR ((@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293}) AND (@Request[Microsoft.Authorization/roleAssignments:PrincipalType] ForAnyOfAnyValues:StringEquals{'ServicePrincipal'}))) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293}))",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR ((@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293, 506c2fa4-2713-45d3-a893-4b1360a66e88}) AND (@Request[Microsoft.Authorization/roleAssignments:PrincipalType] ForAnyOfAnyValues:StringEquals{'ServicePrincipal'}))) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{4d97b98b-1d4f-4787-a291-c67834d212e7, f1a07417-d97a-45cb-824c-7a7467783830, acdd72a7-3385-48ef-bd42-f606fba81ae7, 92aaf0da-9dab-42b6-94a3-d43ce8d16293, 506c2fa4-2713-45d3-a893-4b1360a66e88}))",
       "conditionVersion": "2.0",
       "dataActions": [
         "Microsoft.Discovery/*"
@@ -38,5 +38,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-09-01T15:08:52.430255+00:00"
+  "updatedOn": "2026-09-24T12:48:41.190735+00:00"
 }
