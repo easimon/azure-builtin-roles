@@ -1,0 +1,49 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-09-25T17:24:48.975171+00:00",
+  "description": "Can validate configurations and execute, cancel, and monitor Chaos Studio scenario runs. Cannot author or delete workspace resources, trigger discovery or evaluation, or fix resource permissions. Intended for SREs and on-call engineers.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/08debc4b-0ada-478e-b198-db165d97e7de",
+  "name": "08debc4b-0ada-478e-b198-db165d97e7de",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Chaos/workspaces/read",
+        "Microsoft.Chaos/workspaces/connections/read",
+        "Microsoft.Chaos/workspaces/discoveredResources/read",
+        "Microsoft.Chaos/workspaces/discoveries/read",
+        "Microsoft.Chaos/workspaces/evaluations/read",
+        "Microsoft.Chaos/workspaces/operationResults/read",
+        "Microsoft.Chaos/workspaces/scenarios/read",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/read",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/execute/action",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/validate/action",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/validations/read",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/fixResourcePermissions/read",
+        "Microsoft.Chaos/workspaces/scenarios/runs/read",
+        "Microsoft.Chaos/workspaces/scenarios/runs/cancel/action",
+        "Microsoft.Chaos/operations/read",
+        "Microsoft.Chaos/locations/actions/read",
+        "Microsoft.Chaos/locations/actionVersions/read",
+        "Microsoft.Chaos/locations/operationStatuses/read",
+        "Microsoft.Chaos/locations/operationResults/read",
+        "Microsoft.Chaos/locations/targetTypes/read",
+        "Microsoft.Chaos/locations/targetTypes/capabilityTypes/read",
+        "Microsoft.Chaos/locations/workspaceOperationResults/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Chaos Scenario Operator",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-09-25T17:24:48.975171+00:00"
+}
