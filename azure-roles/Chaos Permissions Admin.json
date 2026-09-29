@@ -1,0 +1,47 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-09-25T17:24:48.332317+00:00",
+  "description": "Can review and fix resource permissions for Chaos Studio scenario configurations, with read-only access to other workspace resources and results. Cannot author resources, trigger discovery or evaluation, validate configurations, or execute or cancel runs. Intended for security and IAM administrators.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/1091dee8-a09b-4205-95fa-b0100e8f006d",
+  "name": "1091dee8-a09b-4205-95fa-b0100e8f006d",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Chaos/workspaces/read",
+        "Microsoft.Chaos/workspaces/connections/read",
+        "Microsoft.Chaos/workspaces/discoveredResources/read",
+        "Microsoft.Chaos/workspaces/discoveries/read",
+        "Microsoft.Chaos/workspaces/evaluations/read",
+        "Microsoft.Chaos/workspaces/operationResults/read",
+        "Microsoft.Chaos/workspaces/scenarios/read",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/read",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/fixResourcePermissions/action",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/fixResourcePermissions/read",
+        "Microsoft.Chaos/workspaces/scenarios/configurations/validations/read",
+        "Microsoft.Chaos/workspaces/scenarios/runs/read",
+        "Microsoft.Chaos/operations/read",
+        "Microsoft.Chaos/locations/actions/read",
+        "Microsoft.Chaos/locations/actionVersions/read",
+        "Microsoft.Chaos/locations/operationStatuses/read",
+        "Microsoft.Chaos/locations/operationResults/read",
+        "Microsoft.Chaos/locations/targetTypes/read",
+        "Microsoft.Chaos/locations/targetTypes/capabilityTypes/read",
+        "Microsoft.Chaos/locations/workspaceOperationResults/read"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Chaos Permissions Admin",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-09-25T17:24:48.332317+00:00"
+}
