@@ -1,0 +1,34 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-09-25T09:51:46.475672+00:00",
+  "description": "Grants the data-plane permissions required to list repositories, read repository content and metadata, and communicate with the ACR gateway for ReadOnly Connected Registry synchronization.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/2b7c9e07-f345-488e-ac2f-78e83b45fda4",
+  "name": "2b7c9e07-f345-488e-ac2f-78e83b45fda4",
+  "permissions": [
+    {
+      "actions": [],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/config/read",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/config/write",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/message/read",
+        "Microsoft.ContainerRegistry/registries/connectedRegistries/message/write",
+        "Microsoft.ContainerRegistry/registries/catalog/read",
+        "Microsoft.ContainerRegistry/registries/repositories/content/read",
+        "Microsoft.ContainerRegistry/registries/repositories/metadata/read"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Container Registry Connected Registry Sync Reader",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-09-25T09:51:46.475672+00:00"
+}
