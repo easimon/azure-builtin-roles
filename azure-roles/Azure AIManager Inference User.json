@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2026-07-21T15:13:50.694733+00:00",
+  "createdOn": "2026-07-20T15:05:49.655095+00:00",
   "description": "Allows read access to read access keys and invoke inference against AI models deployed in a namespace. applying this role at the AIManager scope will give access across all namespaces.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/82b2f1a9-9593-4498-a824-c209343a28ec",
   "name": "82b2f1a9-9593-4498-a824-c209343a28ec",
@@ -13,7 +13,8 @@
         "Microsoft.Authorization/*/read",
         "Microsoft.Resources/subscriptions/operationresults/read",
         "Microsoft.Resources/subscriptions/read",
-        "Microsoft.Resources/subscriptions/resourceGroups/read"
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ContainerService/aiManagers/namespaces/listAccessKeys/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -29,5 +30,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-09-15T15:19:15.061849+00:00"
+  "updatedOn": "2026-10-01T19:15:51.824587+00:00"
 }
