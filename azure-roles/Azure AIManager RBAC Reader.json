@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2026-06-11T15:25:28.742628+00:00",
+  "createdOn": "2026-06-10T15:17:43.428984+00:00",
   "description": "Allows read-only access to all Kubernetes objects in an Azure AIManager, except Secrets, roles, and role bindings. Applying this role at the AIManager scope will give access across all namespaces.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/9c77f8a7-b0b9-4462-844c-de6e66add8ba",
   "name": "9c77f8a7-b0b9-4462-844c-de6e66add8ba",
@@ -19,15 +19,27 @@
       "conditionVersion": null,
       "dataActions": [
         "Microsoft.ContainerService/aiManagers/*/read",
+        "Microsoft.ContainerService/aiManagers/approuting.kubernetes.azure.com/*/read",
         "Microsoft.ContainerService/aiManagers/apps/*/read",
         "Microsoft.ContainerService/aiManagers/autoscaling/*/read",
+        "Microsoft.ContainerService/aiManagers/azmonitoring.coreos.com/*/read",
         "Microsoft.ContainerService/aiManagers/batch/*/read",
+        "Microsoft.ContainerService/aiManagers/cilium.io/*/read",
         "Microsoft.ContainerService/aiManagers/discovery.k8s.io/*/read",
         "Microsoft.ContainerService/aiManagers/events.k8s.io/*/read",
         "Microsoft.ContainerService/aiManagers/extensions/*/read",
+        "Microsoft.ContainerService/aiManagers/gateway.networking.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/inference.networking.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/llm-d.ai/*/read",
+        "Microsoft.ContainerService/aiManagers/kaito.sh/*/read",
+        "Microsoft.ContainerService/aiManagers/karpenter.azure.com/*/read",
+        "Microsoft.ContainerService/aiManagers/karpenter.sh/*/read",
+        "Microsoft.ContainerService/aiManagers/keda.sh/*/read",
         "Microsoft.ContainerService/aiManagers/metrics.k8s.io/*/read",
+        "Microsoft.ContainerService/aiManagers/networking.istio.io/*/read",
         "Microsoft.ContainerService/aiManagers/networking.k8s.io/*/read",
-        "Microsoft.ContainerService/aiManagers/policy/*/read"
+        "Microsoft.ContainerService/aiManagers/policy/*/read",
+        "Microsoft.ContainerService/aiManagers/security.istio.io/*/read"
       ],
       "notActions": [],
       "notDataActions": [
@@ -44,5 +56,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2026-09-28T15:13:14.495945+00:00"
+  "updatedOn": "2026-10-01T19:15:51.853593+00:00"
 }
