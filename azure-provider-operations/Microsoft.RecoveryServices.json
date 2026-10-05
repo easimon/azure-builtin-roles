@@ -678,6 +678,14 @@
           "properties": null
         },
         {
+          "description": "Get extended info of a recovery point in the secondary region.",
+          "displayName": "Get Cross Region Recovery Point Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Locations/backupCrrRPExtendedInfo/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "",
           "displayName": "Pre Validate Enable Protection",
           "isDataAction": false,
@@ -2647,6 +2655,14 @@
       "name": "Vaults/backupFabrics",
       "operations": [
         {
+          "description": "Get extended info of a recovery point.",
+          "displayName": "Get Recovery Point Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfo/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Get Recovery Points for Protected Items.",
           "displayName": "Get Recovery Points",
           "isDataAction": false,
@@ -3237,6 +3253,34 @@
           "displayName": "Retrieve all jobs from cross-tenant mapped vault.",
           "isDataAction": false,
           "name": "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupJobs/backupChildJobs/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Locations/backupCrrRPExtendedInfoOperationResult",
+      "operations": [
+        {
+          "description": "Get extended info of a recovery point in the secondary region.",
+          "displayName": "Get Cross Region Recovery Point Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Locations/backupCrrRPExtendedInfoOperationResult/read",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Recovery Points",
+      "name": "Vaults/backupFabrics/getRPExtendedInfoOperationResult",
+      "operations": [
+        {
+          "description": "Get extended info of a recovery point.",
+          "displayName": "Get Recovery Point Extended Info",
+          "isDataAction": false,
+          "name": "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfoOperationResult/read",
           "origin": "user",
           "properties": null
         }
