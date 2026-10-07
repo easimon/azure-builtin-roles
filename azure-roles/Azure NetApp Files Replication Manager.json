@@ -1,0 +1,49 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-10-06T15:21:53.900299+00:00",
+  "description": "Allows full replication lifecycle operations for Azure NetApp Files resources",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/17279d5b-dadc-4ed6-89b8-a1bdb7c911d7",
+  "name": "17279d5b-dadc-4ed6-89b8-a1bdb7c911d7",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.NetApp/*/read",
+        "Microsoft.NetApp/locations/checkfilepathavailability/action",
+        "Microsoft.NetApp/locations/checknameavailability/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/authorizeExternalReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/authorizeReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/breakReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/createOnPremMigrationReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/deleteReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeExternalReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeOnPremMigration/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeRelocation/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/peerClusterForOnPremMigration/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/peerExternalCluster/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/reestablishReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/reInitializeReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/resyncReplication/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/revertRelocation/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/performReplicationTransfer/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/caches/listPeeringPassphrases/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listReplications/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/relocate/action"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure NetApp Files Replication Manager",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-10-06T15:21:53.900299+00:00"
+}
