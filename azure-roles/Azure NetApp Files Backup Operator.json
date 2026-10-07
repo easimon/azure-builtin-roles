@@ -1,0 +1,41 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-10-06T15:21:53.913299+00:00",
+  "description": "Allows backup creation and restore operations for Azure NetApp Files resources",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/ed55662f-36d4-4cdf-803b-9f0a4611d841",
+  "name": "ed55662f-36d4-4cdf-803b-9f0a4611d841",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.NetApp/*/read",
+        "Microsoft.NetApp/locations/checkfilepathavailability/action",
+        "Microsoft.NetApp/locations/checknameavailability/action",
+        "Microsoft.NetApp/netAppAccounts/accountBackups/write",
+        "Microsoft.NetApp/netAppAccounts/backupPolicies/write",
+        "Microsoft.NetApp/netAppAccounts/backupVaults/write",
+        "Microsoft.NetApp/netAppAccounts/backupVaults/backups/write",
+        "Microsoft.NetApp/netAppAccounts/backupVaults/backups/restoreFiles/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/write",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots/restoreFiles/action",
+        "Microsoft.NetApp/netAppAccounts/migrateBackups/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/migrateBackups/action",
+        "Microsoft.NetApp/netAppAccounts/snapshotPolicies/write"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure NetApp Files Backup Operator",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-10-06T15:21:53.913299+00:00"
+}
