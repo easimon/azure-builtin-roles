@@ -1,0 +1,41 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-10-06T15:21:53.898299+00:00",
+  "description": "Allows capacity and cost-impacting operations for Azure NetApp Files resources",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/9a2eb804-9386-45a4-a977-605001278085",
+  "name": "9a2eb804-9386-45a4-a977-605001278085",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.NetApp/*/read",
+        "Microsoft.NetApp/locations/checkfilepathavailability/action",
+        "Microsoft.NetApp/locations/checknameavailability/action",
+        "Microsoft.NetApp/locations/checkquotaavailability/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/write",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/delete",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/changeZone/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/caches/poolChange/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/volumeQuotaRules/write",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/volumeQuotaRules/delete",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/subvolumes/getMetadata/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listQuotaReport/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listReplications/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/poolChange/action"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure NetApp Files Cost Manager",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-10-06T15:21:53.898299+00:00"
+}
