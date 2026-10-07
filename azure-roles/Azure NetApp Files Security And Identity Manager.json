@@ -1,0 +1,45 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-10-06T15:21:53.899300+00:00",
+  "description": "Allows security and identity operations for Azure NetApp Files resources",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/b24ae3d9-cb64-4f41-b0f9-945879b43a72",
+  "name": "b24ae3d9-cb64-4f41-b0f9-945879b43a72",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.NetApp/*/read",
+        "Microsoft.NetApp/locations/checkfilepathavailability/action",
+        "Microsoft.NetApp/locations/checknameavailability/action",
+        "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.NetApp/netAppAccounts/changeKeyVault/action",
+        "Microsoft.NetApp/netAppAccounts/migrateEncryption/action",
+        "Microsoft.NetApp/netAppAccounts/renewCredentials/action",
+        "Microsoft.NetApp/netAppAccounts/transitionToCmk/action",
+        "Microsoft.NetApp/netAppAccounts/getKeyVaultStatus/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/ransomwareReports/clearsuspects/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/resetCifsPassword/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/getGroupIdListForLdapUser/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/generateCredentials/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/generateAkvCredentials/action",
+        "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/refreshCertificate/action",
+        "Microsoft.NetApp/netAppAccounts/snapshotPolicies/write",
+        "Microsoft.NetApp/netAppAccounts/snapshotPolicies/delete"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "Azure NetApp Files Security And Identity Manager",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-10-06T15:21:53.899300+00:00"
+}
