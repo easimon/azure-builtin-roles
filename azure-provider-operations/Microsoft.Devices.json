@@ -2774,6 +2774,11 @@
                       "displayName": "Status",
                       "name": "Status",
                       "toBeExportedForShoebox": true
+                    },
+                    {
+                      "displayName": "Provisioning type",
+                      "name": "ProvisioningType",
+                      "toBeExportedForShoebox": true
                     }
                   ],
                   "displayDescription": "Number of device registrations attempted",
@@ -2833,6 +2838,74 @@
                   "displayName": "Attestation attempts",
                   "fillGapWithZero": true,
                   "name": "AttestationAttempts",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Number of device registration attempts that failed authentication",
+                  "displayName": "Device registration authentication errors",
+                  "fillGapWithZero": true,
+                  "name": "DeviceRegistrationAuthenticationErrors",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "ProvisioningServiceName"
+                    },
+                    {
+                      "displayName": "Protocol",
+                      "name": "Protocol"
+                    }
+                  ],
+                  "displayDescription": "Number of device registration attempts that were throttled",
+                  "displayName": "Device registration throttling errors",
+                  "fillGapWithZero": true,
+                  "name": "DeviceRegistrationThrottlingErrors",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Average",
+                  "availabilities": [
+                    {
+                      "blobDuration": "PT1H",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "displayName": "Provisioning service name",
+                      "name": "DpsName"
+                    }
+                  ],
+                  "displayDescription": "Number of device registration records in the provisioning service",
+                  "displayName": "Number of registrations",
+                  "fillGapWithZero": true,
+                  "name": "NumberOfRegistrations",
                   "unit": "Count"
                 }
               ]
