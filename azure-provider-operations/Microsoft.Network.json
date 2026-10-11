@@ -7164,6 +7164,54 @@
           "name": "Microsoft.Network/expressRouteCrossConnections/deprovisionConnection/action",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Migrate Express Route Circuit",
+          "displayName": "Migrate Express Route Circuit",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/migrateCircuit/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Prepare Express Route Circuit Migration",
+          "displayName": "Prepare Express Route Circuit Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/prepareCircuitMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Shut Down BGP For Express Route Circuit Migration",
+          "displayName": "Shut Down BGP For Express Route Circuit Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/shutDownBgpForCircuitMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Restore BGP For Express Route Circuit Migration",
+          "displayName": "Restore BGP For Express Route Circuit Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/restoreBgpForCircuitMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Commit Express Route Circuit Migration",
+          "displayName": "Commit Express Route Circuit Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/commitCircuitMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Rollback Express Route Circuit Migration",
+          "displayName": "Rollback Express Route Circuit Migration",
+          "isDataAction": false,
+          "name": "Microsoft.Network/expressRouteCrossConnections/rollbackCircuitMigration/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -10329,6 +10377,38 @@
           "displayName": "Resets a P2SVpnGateway",
           "isDataAction": false,
           "name": "microsoft.network/p2sVpnGateways/reset/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Prepare migration for a P2S VPN gateway",
+          "displayName": "Prepare migration for a P2S VPN gateway",
+          "isDataAction": false,
+          "name": "microsoft.network/p2sVpnGateways/prepareMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Execute migration for a P2S VPN gateway",
+          "displayName": "Execute migration for a P2S VPN gateway",
+          "isDataAction": false,
+          "name": "microsoft.network/p2sVpnGateways/executeMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Commit migration for a P2S VPN gateway",
+          "displayName": "Commit migration for a P2S VPN gateway",
+          "isDataAction": false,
+          "name": "microsoft.network/p2sVpnGateways/commitMigration/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Abort migration for a P2S VPN gateway",
+          "displayName": "Abort migration for a P2S VPN gateway",
+          "isDataAction": false,
+          "name": "microsoft.network/p2sVpnGateways/abortMigration/action",
           "origin": null,
           "properties": null
         },
@@ -18083,7 +18163,7 @@
           "properties": null
         },
         {
-          "description": "Establishes a link between a private DNS record and a Private Traffic Manager Profile so that the private traffic manager profile can't be removed while it is being referenced by the private DNS record",
+          "description": "Establishes a link between a Private DNS record and a Private Traffic Manager Profile so that the private traffic manager profile can't be removed while it is being referenced by the Private DNS record",
           "displayName": "Establishes a link between a Private DNS record and a Private Traffic Manager Profile",
           "isDataAction": false,
           "name": "Microsoft.Network/privatetrafficmanagerprofiles/validateLink/action",
@@ -18385,6 +18465,106 @@
           "displayName": "Delete Virtual Network Appliance Capability",
           "isDataAction": false,
           "name": "Microsoft.Network/virtualNetworkAppliances/capabilities/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Traffic Manager Profile",
+      "name": "trafficManagerProfiles/validateLink",
+      "operations": [
+        {
+          "description": "Grants permission to invoke validateLink for a DNS record on a Traffic Manager profile",
+          "displayName": "Authorize Traffic Manager link validation",
+          "isDataAction": false,
+          "name": "Microsoft.Network/trafficManagerProfiles/validateLink/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Network Security Perimeter and Profile combined",
+      "name": "networkSecurityPerimeters/perimeterProfiles",
+      "operations": [
+        {
+          "description": "Gets a NSP Perimeter Profile combined resource",
+          "displayName": "Gets a NSP Perimeter Profile combined resource",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/perimeterProfiles/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NSP Access Rule Role Assignment",
+      "name": "networkSecurityPerimeters/profiles/accessRuleRoleAssignments",
+      "operations": [
+        {
+          "description": "Gets a NSP Access Rule Role Assignment",
+          "displayName": "Gets a NSP Access Rule Role Assignment",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/profiles/accessRuleRoleAssignments/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "NSP Resource Association Mapping",
+      "name": "networkSecurityPerimeters/resourceAssociationMappings",
+      "operations": [
+        {
+          "description": "Gets a NSP Resource Association Mapping",
+          "displayName": "Gets a NSP Resource Association Mapping",
+          "isDataAction": false,
+          "name": "Microsoft.Network/networkSecurityPerimeters/resourceAssociationMappings/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Interconnect Group Logical Subgroup",
+      "name": "interconnectGroups/logicalSubgroups",
+      "operations": [
+        {
+          "description": "Get Interconnect Group Logical Subgroup",
+          "displayName": "Get Interconnect Group Logical Subgroup",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/logicalSubgroups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or update Interconnect Group Logical Subgroup",
+          "displayName": "Create or update Interconnect Group Logical Subgroup",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/logicalSubgroups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Interconnect Group Logical Subgroup",
+          "displayName": "Delete Interconnect Group Logical Subgroup",
+          "isDataAction": false,
+          "name": "Microsoft.Network/interconnectGroups/logicalSubgroups/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Traffic Manager Profile",
+      "name": "privatetrafficmanagerprofiles/validateLink",
+      "operations": [
+        {
+          "description": "Grants permission to invoke validateLink for a Private DNS record on a Private Traffic Manager profile",
+          "displayName": "Authorize Private Traffic Manager link validation",
+          "isDataAction": false,
+          "name": "Microsoft.Network/privatetrafficmanagerprofiles/validateLink/read",
           "origin": null,
           "properties": null
         }
