@@ -890,6 +890,14 @@
           "name": "Microsoft.Discovery/workspaces/projects/delete",
           "origin": null,
           "properties": null
+        },
+        {
+          "description": "Submit a tool run in the specified project.",
+          "displayName": "Projects_RunTool",
+          "isDataAction": true,
+          "name": "Microsoft.Discovery/workspaces/projects/runTool/action",
+          "origin": null,
+          "properties": null
         }
       ]
     },
@@ -1214,6 +1222,44 @@
           "displayName": "Workspaces_GetPrivateLinkResource",
           "isDataAction": false,
           "name": "Microsoft.Discovery/workspaces/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "projects",
+      "name": "workspaces/projects/operations",
+      "operations": [
+        {
+          "description": "List and read tool-run operation records, status, logs, pods and compute usage in the specified project.",
+          "displayName": "ToolRuns_Read",
+          "isDataAction": true,
+          "name": "Microsoft.Discovery/workspaces/projects/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel a tool-run operation in the specified project.",
+          "displayName": "Projects_CancelToolRun",
+          "isDataAction": true,
+          "name": "Microsoft.Discovery/workspaces/projects/operations/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Reconcile tool-run operations in the specified project.",
+          "displayName": "Projects_ReconcileToolRuns",
+          "isDataAction": true,
+          "name": "Microsoft.Discovery/workspaces/projects/operations/reconcile/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Connect to a running tool-run pod in the specified project by attaching a debug container.",
+          "displayName": "Projects_ConnectToolRun",
+          "isDataAction": true,
+          "name": "Microsoft.Discovery/workspaces/projects/operations/connect/action",
           "origin": null,
           "properties": null
         }
