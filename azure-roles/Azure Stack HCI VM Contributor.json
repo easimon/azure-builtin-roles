@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2023-10-20T22:51:51.824222+00:00",
+  "createdOn": "2023-10-24T15:25:56.603327+00:00",
   "description": "Grants permissions to perform all VM actions",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/874d1c73-6003-4e60-a13a-cb31ea190a85",
   "name": "874d1c73-6003-4e60-a13a-cb31ea190a85",
@@ -28,6 +28,10 @@
         "Microsoft.AzureStackHCI/Clusters/ArcSettings/Read",
         "Microsoft.AzureStackHCI/NetworkSecurityGroups/Read",
         "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Read",
+        "Microsoft.Compute/disks/delete",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Compute/disks/beginGetAccess/action",
         "Microsoft.Insights/AlertRules/Write",
         "Microsoft.Insights/AlertRules/Delete",
         "Microsoft.Insights/AlertRules/Read",
@@ -84,7 +88,8 @@
         "Microsoft.HybridCompute/licenses/delete",
         "Microsoft.ExtendedLocation/customLocations/Read",
         "Microsoft.ExtendedLocation/customLocations/deploy/action",
-        "Microsoft.KubernetesConfiguration/extensions/read"
+        "Microsoft.KubernetesConfiguration/extensions/read",
+        "Microsoft.AzureStackHCI/clusters/volumes/deploy/action"
       ],
       "condition": null,
       "conditionVersion": null,
@@ -98,5 +103,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2024-06-21T16:41:03.146999+00:00"
+  "updatedOn": "2026-10-15T15:29:38.829466+00:00"
 }
