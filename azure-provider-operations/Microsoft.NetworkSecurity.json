@@ -42,7 +42,7 @@
           "properties": null
         },
         {
-          "description": "Create a PolicyGroup",
+          "description": "Creates or replaces a PolicyGroup.\n\nIf the PUT introduces a ContentInspection policy in networkSecurityPolicies and any\nassociated fabric has no configured inspection connection, reject the\nrequest with HTTP 409 and error code ContentInspectionCapabilityDisabled, targeting\nproperties.networkSecurityPolicies. Validate before persisting or distributing policy changes,\npreserving the previously accepted policies on rejection. Do not partially apply changes to\ncompatible fabrics or silently skip inspection for fabrics without an inspection connection.\n\nCompatibility uses the associated fabrics' stored configuration, independent of whether\npolicy selectors currently match traffic. This is a configuration check, not a fresh Content\nSafety connectivity probe. Changes that do not introduce ContentInspection policies do not\nrequire this check; transient connection failures do not remove a fabric's configuration.\nExisting legacy fabrics without a profile retain their regional Content Safety connection,\nwhich satisfies the inspection prerequisite without new probes, management calls, or key\nretrieval. A connection still being validated is not an absent connection.\nUnattached groups and groups associated only with compatible fabrics may\ncontain ContentInspection policies. Removing those policies or detaching a group\nremains allowed, subject to other validation. Tags-only PATCH does not change policy contents.\nError messages must not disclose associated fabric IDs the caller is not authorized to read.\n\nExample rejection response (HTTP 409 Conflict):\n\n```json\n{\n  \"error\": {\n    \"code\": \"ContentInspectionCapabilityDisabled\",\n    \"message\": \"The proposed ContentInspection policy is incompatible with an associated fabric that has no configured inspection connection.\",\n    \"target\": \"properties.networkSecurityPolicies\"\n  }\n}\n```",
           "displayName": "PolicyGroups_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkSecurity/policyGroups/write",
@@ -132,7 +132,7 @@
           "properties": null
         },
         {
-          "description": "Create a AgentFabric",
+          "description": "Creates or replaces an AgentFabric.\n\nBefore accepting the request or changing policy-group associations, validate the policy\ntypes in every proposed defaultPolicyGroups reference against the fabric's effective\ninspection configuration. If no connection is configured and any referenced group contains a\nContentInspection policy, reject the request with HTTP 409 and error code\nContentInspectionCapabilityDisabled, targeting properties.defaultPolicyGroups. No incompatible\nassociation change is accepted. This check does not depend on whether policy selectors\ncurrently match traffic.\n\nOmitting contentInspectionProfile or supplying {} on PUT for an existing fabric preserves its\ncustomer-owned connection, legacy regional connection, or absence of connection.\nDo not persist {} over the stored connection or cancel a pending connection update.\nNew-fabric omission or {} requests no inspection capability and no regional fallback.\nExisting legacy fabrics without a profile retain their regional Content Safety connection,\nwhich satisfies the inspection prerequisite without new probes, management calls, or key\nretrieval. A connection still being validated is not an absent connection.\nError messages must not disclose associated fabric IDs the caller is not authorized to read.\n\nIf a connection update is in progress for this fabric, reject a PUT requesting a different\nconnection with HTTP 409 Conflict, without changing the connection update already in progress.\nA retry of the same requested connection is not a conflicting change. This does not prevent\nlater key rotations or endpoint replacements.\n\nIn API version `2026-10-07-preview` and later, reject definite invalid customer connection input before\naccepting PUT with HTTP 400 Bad Request. A nonempty profile must contain both endpoint and apiKey.\nReject a missing field before connection validation, without retrieving a saved key or comparing\nwith the saved endpoint to permit key omission. Only a truly empty object is a connection no-op;\npartial objects or objects containing only unrecognized fields must not be treated as empty.\nInvalid input also includes a null or nonobject profile;\na malformed, untrusted, or unsupported endpoint (including a non-HTTPS or unrecognized Azure\naccount host or an unsupported cloud); and explicit null, empty, or wrong-type endpoint or key.\nAn endpoint without a key is invalid even when unchanged; a key without an endpoint is invalid.\nAn omitted profile or {} is not invalid connection input. Its no-op applies only to connection\nhandling; caller authorization, other Fabric fields, policy compatibility, and ordinary\npending-operation rules still apply.\n\nFor service-level connection validation rejection, return ContentInspectionConnectionValidationFailed\nin the standard error response, targeting properties.contentInspectionProfile or its endpoint\nor apiKey field when the invalid field is known. Ordinary schema/model validation may retain\nits standard HTTP 400 errors. The connection code also applies to definitively rejected\ncredentials or a confirmed account/access setting or missing required Content Safety API\ncapability that prevents use of the supplied connection. Interpret upstream 401/403 responses\nto distinguish credentials from account access, local authentication, or network restrictions;\ndo not report them as authentication/authorization failures of the Fabric caller.\n\nThrottling (HTTP 429), service failures (5xx), DNS/TLS failures, timeouts, and inconclusive\navailability do not establish bad customer input and must not be classified as this HTTP 400\nrejection. A DNS timeout or an arbitrary upstream 404 does not prove that the account is absent.\nIf a definite validation rejection is discovered after PUT acceptance, report terminal Failed\nwith the corresponding error in the established long-running operation status response;\nthe accepted PUT response does not become HTTP 400. Failed replacement preserves the previously\nactive connection; never validate or operate failed customer input using regional credentials.\nError responses must not contain key values or raw upstream response bodies.\n\nExample connection rejection response (HTTP 400 Bad Request):\n\n```json\n{\n  \"error\": {\n    \"code\": \"ContentInspectionConnectionValidationFailed\",\n    \"message\": \"The supplied Content Safety connection could not be validated. Verify the endpoint, API key, and account access settings.\",\n    \"target\": \"properties.contentInspectionProfile\"\n  }\n}\n```\n\nExample rejection response (HTTP 409 Conflict):\n\n```json\n{\n  \"error\": {\n    \"code\": \"ContentInspectionCapabilityDisabled\",\n    \"message\": \"The referenced policy group contains a ContentInspection policy, but this fabric has no configured inspection connection.\",\n    \"target\": \"properties.defaultPolicyGroups\"\n  }\n}\n```",
           "displayName": "AgentFabrics_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.NetworkSecurity/agentFabrics/write",
@@ -460,6 +460,74 @@
           "displayName": "NeuroShieldMitigations_ListByNeuroShield",
           "isDataAction": false,
           "name": "Microsoft.NetworkSecurity/neuroShields/mitigations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agentFabrics/clusterAssociations",
+      "name": "agentFabrics/clusterAssociations",
+      "operations": [
+        {
+          "description": "List ClusterAssociation resources by AgentFabric",
+          "displayName": "ClusterAssociations_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/clusterAssociations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ClusterAssociation",
+          "displayName": "ClusterAssociations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/clusterAssociations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ClusterAssociation",
+          "displayName": "ClusterAssociations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/clusterAssociations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the association. Idempotent: returns `202 Accepted` when completion is\nasynchronous, and `204 No Content` when it completes synchronously or the\nassociation is already absent.\n\nFor an association enrolling an ACI SandboxGroup (`clusterResourceId` of type\n`Microsoft.ContainerInstance/sandboxGroups`), the service returns\n`409 ClusterAssociationNotEmpty` while any Member still references the\nSandboxGroup. All such Members must be deleted before the association can be\nremoved.\n\n```json\n{\n  \"error\": {\n    \"code\": \"ClusterAssociationNotEmpty\",\n    \"message\": \"The ClusterAssociation cannot be deleted because one or more members still reference it.\",\n    \"target\": \"properties.clusterResourceId\"\n  }\n}\n```",
+          "displayName": "ClusterAssociations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/clusterAssociations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ClusterAssociation",
+          "displayName": "ClusterAssociations_Update",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/clusterAssociations/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agentFabrics/egressTrustBundles",
+      "name": "agentFabrics/egressTrustBundles",
+      "operations": [
+        {
+          "description": "Lists the egress TLS-inspection trust bundles for the fabric. The bundle is a singleton,\nso this returns the single `default` bundle. It exists because Azure Policy cannot\npopulate compliance data for a resource type that has no collection GET.",
+          "displayName": "EgressTrustBundles_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/egressTrustBundles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the egress TLS-inspection trust bundle for the fabric.\n\nThe bundle changes rarely, so callers are expected to cache it for the advertised\nvalidity period rather than reading it per workload. To decide whether a cached copy is\nstill current, compare `bundleVersion`: it is derived from the anchor set, so it changes\nexactly when the anchors change and is stable otherwise. Every read returns the full\nbundle together with refreshed cache metadata.",
+          "displayName": "EgressTrustBundles_Get",
+          "isDataAction": false,
+          "name": "Microsoft.NetworkSecurity/agentFabrics/egressTrustBundles/read",
           "origin": null,
           "properties": null
         }
