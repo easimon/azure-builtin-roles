@@ -1493,6 +1493,194 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "Azure Database for PostgreSQL Flexible Server DBAgent",
+      "name": "flexibleServers/dbAgents",
+      "operations": [
+        {
+          "description": "Lists the DBAgent resources for a Flexible Server.",
+          "displayName": "List DBAgent resources.",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the current DBAgent state for a Flexible Server.",
+          "displayName": "Get DBAgent state.",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enables or disables DBAgent for a Flexible Server.",
+          "displayName": "Update DBAgent state.",
+          "isDataAction": false,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgents/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent issues",
+      "name": "flexibleServers/dbAgent/issues",
+      "operations": [
+        {
+          "description": "Reads DBAgent issue summaries, details, workflow state, and remediation recommendations for a PostgreSQL flexible server.",
+          "displayName": "Read DBAgent issues",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/issues/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates DBAgent issues only for acknowledgement, dismissal, and manual-application evidence on a PostgreSQL flexible server.",
+          "displayName": "Update DBAgent issue workflow",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/issues/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent diagnostic data",
+      "name": "flexibleServers/dbAgent/diagnosticData",
+      "operations": [
+        {
+          "description": "Reads DBAgent investigation, run, traversal, health-runtime, and event evidence for a PostgreSQL flexible server.",
+          "displayName": "Read DBAgent diagnostic data",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/diagnosticData/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent custom instructions",
+      "name": "flexibleServers/dbAgent/instructions",
+      "operations": [
+        {
+          "description": "Reads only DBAgent custom instructions for a PostgreSQL flexible server; Always-Allow entries and DBAgent settings are excluded.",
+          "displayName": "Read DBAgent custom instructions",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates only DBAgent custom instructions for a PostgreSQL flexible server; Always-Allow entries and DBAgent settings are excluded.",
+          "displayName": "Create or update DBAgent custom instructions",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes only DBAgent custom instructions for a PostgreSQL flexible server; Always-Allow entries and DBAgent settings are excluded.",
+          "displayName": "Delete DBAgent custom instructions",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent investigations",
+      "name": "flexibleServers/dbAgent/investigations",
+      "operations": [
+        {
+          "description": "Force-resolves a DBAgent investigation for a PostgreSQL flexible server.",
+          "displayName": "Force-resolve DBAgent investigations",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/investigations/forceResolve/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent tasks",
+      "name": "flexibleServers/dbAgent/tasks",
+      "operations": [
+        {
+          "description": "Reads DBAgent task definitions, execution state, and results for a PostgreSQL flexible server.",
+          "displayName": "Read DBAgent tasks",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/tasks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts execution of a DBAgent task for a PostgreSQL flexible server.",
+          "displayName": "Execute DBAgent tasks",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/tasks/execute/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent database mitigations",
+      "name": "flexibleServers/dbAgent/mitigations/database",
+      "operations": [
+        {
+          "description": "Approves or rejects a DBAgent-proposed PostgreSQL database-engine mitigation for runner execution on a flexible server.",
+          "displayName": "Approve DBAgent database mitigations",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/mitigations/database/approve/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent server mitigations",
+      "name": "flexibleServers/dbAgent/mitigations/server",
+      "operations": [
+        {
+          "description": "Approves or rejects a DBAgent-proposed Azure resource-level mitigation for a PostgreSQL flexible server.",
+          "displayName": "Approve DBAgent server mitigations",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/mitigations/server/approve/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent client executions",
+      "name": "flexibleServers/dbAgent/clientExecutions",
+      "operations": [
+        {
+          "description": "Starts client execution of an already approved DBAgent server mitigation for a PostgreSQL flexible server.",
+          "displayName": "Start DBAgent client executions",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/clientExecutions/start/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "DBAgent client executions",
+      "name": "flexibleServers/dbAgent/clientExecutions/results",
+      "operations": [
+        {
+          "description": "Reports integrity-sensitive results from client execution of an approved DBAgent server mitigation for a PostgreSQL flexible server.",
+          "displayName": "Report DBAgent client execution results",
+          "isDataAction": true,
+          "name": "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/clientExecutions/results/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
