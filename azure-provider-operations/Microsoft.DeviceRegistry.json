@@ -32,14 +32,6 @@
           "name": "Microsoft.DeviceRegistry/operationStatuses/read",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "write operationStatuses",
-          "displayName": "write_operationStatuses",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/operationStatuses/write",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -50,6 +42,14 @@
         {
           "description": "read operations",
           "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/operations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the operations for the provider",
+          "displayName": "Operations_List",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/operations/read",
           "origin": null,
@@ -70,10 +70,10 @@
           "properties": null
         },
         {
-          "description": "write operationStatuses",
-          "displayName": "write_operationStatuses",
+          "description": "Returns the current status of an async operation.",
+          "displayName": "OperationStatus_Get",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/locations/operationStatuses/write",
+          "name": "Microsoft.DeviceRegistry/locations/operationStatuses/read",
           "origin": null,
           "properties": null
         }
@@ -318,90 +318,20 @@
       ]
     },
     {
-      "displayName": "discoveredAssetEndpointProfiles",
-      "name": "discoveredAssetEndpointProfiles",
-      "operations": [
-        {
-          "description": "List DiscoveredAssetEndpointProfile resources by subscription ID",
-          "displayName": "DiscoveredAssetEndpointProfiles_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List DiscoveredAssetEndpointProfile resources by resource group",
-          "displayName": "DiscoveredAssetEndpointProfiles_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a DiscoveredAssetEndpointProfile",
-          "displayName": "DiscoveredAssetEndpointProfiles_Get",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a DiscoveredAssetEndpointProfile",
-          "displayName": "DiscoveredAssetEndpointProfiles_CreateOrReplace",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a DiscoveredAssetEndpointProfile",
-          "displayName": "DiscoveredAssetEndpointProfiles_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a DiscoveredAssetEndpointProfile",
-          "displayName": "DiscoveredAssetEndpointProfiles_Update",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssetEndpointProfiles/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
       "displayName": "namespaces",
       "name": "namespaces",
       "operations": [
         {
-          "description": "List Namespace resources by subscription ID",
-          "displayName": "Namespaces_ListBySubscription",
+          "description": "Migrate the resources into Namespace",
+          "displayName": "Namespaces_Migrate",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/migrate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List Namespace resources by resource group",
-          "displayName": "Namespaces_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a Namespace",
-          "displayName": "Namespaces_Get",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a Namespace",
-          "displayName": "Namespaces_CreateOrReplace",
+          "description": "Update a Namespace",
+          "displayName": "Namespaces_Update",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/namespaces/write",
           "origin": null,
@@ -416,18 +346,50 @@
           "properties": null
         },
         {
-          "description": "Update a Namespace",
-          "displayName": "Namespaces_Update",
+          "description": "Create a Namespace",
+          "displayName": "Namespaces_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/namespaces/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Migrate the resources into Namespace",
-          "displayName": "Namespaces_Migrate",
+          "description": "Get a Namespace",
+          "displayName": "Namespaces_Get",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/migrate/action",
+          "name": "Microsoft.DeviceRegistry/namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Namespace resources by resource group",
+          "displayName": "Namespaces_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List Namespace resources by subscription ID",
+          "displayName": "Namespaces_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Generate a report for a namespace. The generated report is retrieved separately via the getLatestReport action.",
+          "displayName": "Namespaces_GenerateReport",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/generateReport/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get the most recently generated report of the given type and target without triggering a new report generation.",
+          "displayName": "Namespaces_GetLatestReport",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/getLatestReport/action",
           "origin": null,
           "properties": null
         }
@@ -438,24 +400,8 @@
       "name": "namespaces/discoveredAssets",
       "operations": [
         {
-          "description": "List NamespaceDiscoveredAsset resources by Namespace",
-          "displayName": "NamespaceDiscoveredAssets_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a NamespaceDiscoveredAsset",
-          "displayName": "NamespaceDiscoveredAssets_Get",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a NamespaceDiscoveredAsset",
-          "displayName": "NamespaceDiscoveredAssets_CreateOrReplace",
+          "description": "Update a NamespaceDiscoveredAsset",
+          "displayName": "NamespaceDiscoveredAssets_Update",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/write",
           "origin": null,
@@ -470,118 +416,34 @@
           "properties": null
         },
         {
-          "description": "Update a NamespaceDiscoveredAsset",
-          "displayName": "NamespaceDiscoveredAssets_Update",
+          "description": "Create a NamespaceDiscoveredAsset",
+          "displayName": "NamespaceDiscoveredAssets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/write",
           "origin": null,
           "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "devices",
-      "name": "devices",
-      "operations": [
+        },
         {
-          "description": "List Device resources by subscription ID",
-          "displayName": "Devices_ListBySubscription",
+          "description": "Get a NamespaceDiscoveredAsset",
+          "displayName": "NamespaceDiscoveredAssets_Get",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/devices/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List Device resources by resource group",
-          "displayName": "Devices_ListByResourceGroup",
+          "description": "List NamespaceDiscoveredAsset resources by Namespace",
+          "displayName": "NamespaceDiscoveredAssets_ListByResourceGroup",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/devices/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a Device",
-          "displayName": "Devices_Get",
+          "description": "List NamespaceDiscoveredAsset resources by Namespace",
+          "displayName": "NamespaceDiscoveredAssets_ListByNamespace",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/devices/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a Device",
-          "displayName": "Devices_CreateOrReplace",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/devices/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a Device",
-          "displayName": "Devices_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/devices/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a Device",
-          "displayName": "Devices_Update",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/devices/write",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "namespaces/discoveredAssetEndpointProfiles",
-      "name": "namespaces/discoveredAssetEndpointProfiles",
-      "operations": [
-        {
-          "description": "List NamespaceDiscoveredAssetEndpointProfile resources by subscription ID",
-          "displayName": "NamespaceDiscoveredAssetEndpointProfiles_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssetEndpointProfiles/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List NamespaceDiscoveredAssetEndpointProfile resources by Namespace",
-          "displayName": "NamespaceDiscoveredAssetEndpointProfiles_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssetEndpointProfiles/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a NamespaceDiscoveredAssetEndpointProfile",
-          "displayName": "NamespaceDiscoveredAssetEndpointProfiles_Get",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssetEndpointProfiles/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a NamespaceDiscoveredAssetEndpointProfile",
-          "displayName": "NamespaceDiscoveredAssetEndpointProfiles_CreateOrReplace",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssetEndpointProfiles/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a NamespaceDiscoveredAssetEndpointProfile",
-          "displayName": "NamespaceDiscoveredAssetEndpointProfiles_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssetEndpointProfiles/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a NamespaceDiscoveredAssetEndpointProfile",
-          "displayName": "NamespaceDiscoveredAssetEndpointProfiles_Update",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssetEndpointProfiles/write",
+          "name": "Microsoft.DeviceRegistry/namespaces/discoveredAssets/read",
           "origin": null,
           "properties": null
         }
@@ -632,64 +494,10 @@
           "properties": null
         },
         {
-          "description": "Allows device revocation using device based policies.",
-          "displayName": "Devices_Revoke",
+          "description": "List NamespaceDevice resources by Namespace",
+          "displayName": "NamespaceDevices_ListByNamespace",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/devices/revoke/action",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "discoveredAssets",
-      "name": "discoveredAssets",
-      "operations": [
-        {
-          "description": "List DiscoveredAsset resources by subscription ID",
-          "displayName": "DiscoveredAssets_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "List DiscoveredAsset resources by resource group",
-          "displayName": "DiscoveredAssets_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a DiscoveredAsset",
-          "displayName": "DiscoveredAssets_Get",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a DiscoveredAsset",
-          "displayName": "DiscoveredAssets_CreateOrReplace",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssets/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a DiscoveredAsset",
-          "displayName": "DiscoveredAssets_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssets/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a DiscoveredAsset",
-          "displayName": "DiscoveredAssets_Update",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/discoveredAssets/write",
+          "name": "Microsoft.DeviceRegistry/namespaces/devices/read",
           "origin": null,
           "properties": null
         }
@@ -722,24 +530,8 @@
       "name": "namespaces/assets",
       "operations": [
         {
-          "description": "List NamespaceAsset resources by Namespace",
-          "displayName": "NamespaceAssets_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get a NamespaceAsset",
-          "displayName": "NamespaceAssets_Get",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assets/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a NamespaceAsset",
-          "displayName": "NamespaceAssets_CreateOrReplace",
+          "description": "Update a NamespaceAsset",
+          "displayName": "NamespaceAssets_Update",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/namespaces/assets/write",
           "origin": null,
@@ -754,64 +546,42 @@
           "properties": null
         },
         {
-          "description": "Update a NamespaceAsset",
-          "displayName": "NamespaceAssets_Update",
+          "description": "Create a NamespaceAsset",
+          "displayName": "NamespaceAssets_CreateOrReplace",
           "isDataAction": false,
           "name": "Microsoft.DeviceRegistry/namespaces/assets/write",
           "origin": null,
           "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "namespaces/assetEndpointProfiles",
-      "name": "namespaces/assetEndpointProfiles",
-      "operations": [
+        },
         {
-          "description": "List NamespaceAssetEndpointProfile resources by subscription ID",
-          "displayName": "NamespaceAssetEndpointProfiles_ListBySubscription",
+          "description": "Get a NamespaceAsset",
+          "displayName": "NamespaceAssets_Get",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assetEndpointProfiles/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/assets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List NamespaceAssetEndpointProfile resources by Namespace",
-          "displayName": "NamespaceAssetEndpointProfiles_ListByResourceGroup",
+          "description": "List NamespaceAsset resources by Namespace",
+          "displayName": "NamespaceAssets_ListByResourceGroup",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assetEndpointProfiles/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/assets/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a NamespaceAssetEndpointProfile",
-          "displayName": "NamespaceAssetEndpointProfiles_Get",
+          "description": "A long-running resource action.",
+          "displayName": "NamespaceAssets_ExecuteAction",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assetEndpointProfiles/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/assets/executeAction/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a NamespaceAssetEndpointProfile",
-          "displayName": "NamespaceAssetEndpointProfiles_CreateOrReplace",
+          "description": "List NamespaceAsset resources by Namespace",
+          "displayName": "NamespaceAssets_ListByNamespace",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assetEndpointProfiles/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a NamespaceAssetEndpointProfile",
-          "displayName": "NamespaceAssetEndpointProfiles_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assetEndpointProfiles/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a NamespaceAssetEndpointProfile",
-          "displayName": "NamespaceAssetEndpointProfiles_Update",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/assetEndpointProfiles/write",
+          "name": "Microsoft.DeviceRegistry/namespaces/assets/read",
           "origin": null,
           "properties": null
         }
@@ -860,120 +630,470 @@
           "name": "Microsoft.DeviceRegistry/namespaces/discoveredDevices/write",
           "origin": null,
           "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "namespaces/credentials",
-      "name": "namespaces/credentials",
-      "operations": [
-        {
-          "description": "List Credential resources by Namespace",
-          "displayName": "Credentials_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/read",
-          "origin": null,
-          "properties": null
         },
         {
-          "description": "Get a Credential",
-          "displayName": "Credentials_Get",
+          "description": "List NamespaceDiscoveredDevice resources by Namespace",
+          "displayName": "NamespaceDiscoveredDevices_ListByNamespace",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create a Credential",
-          "displayName": "Credentials_CreateOrUpdate",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Delete a Credential",
-          "displayName": "Credentials_Delete",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Update a Credential",
-          "displayName": "Credentials_Update",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "A long-running resource action.",
-          "displayName": "Credentials_Synchronize",
-          "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/synchronize/action",
+          "name": "Microsoft.DeviceRegistry/namespaces/discoveredDevices/read",
           "origin": null,
           "properties": null
         }
       ]
     },
     {
-      "displayName": "namespaces/credentials/policies",
-      "name": "namespaces/credentials/policies",
+      "displayName": "locations/asyncOperationStatuses",
+      "name": "locations/asyncOperationStatuses",
       "operations": [
         {
-          "description": "Update a Policy",
-          "displayName": "Policies_Update",
+          "description": "Returns the current status of an async operation.",
+          "displayName": "AsyncOperationStatus_Get",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/write",
+          "name": "Microsoft.DeviceRegistry/locations/asyncOperationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/certificateAuthorities",
+      "name": "namespaces/certificateAuthorities",
+      "operations": [
+        {
+          "description": "List CertificateAuthority resources by Namespace",
+          "displayName": "CertificateAuthorities_ListByNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a Policy",
-          "displayName": "Policies_Delete",
+          "description": "Get a CertificateAuthority",
+          "displayName": "CertificateAuthorities_Get",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/delete",
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Create a Policy",
-          "displayName": "Policies_CreateOrUpdate",
+          "description": "Create a CertificateAuthority",
+          "displayName": "CertificateAuthorities_CreateOrReplace",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/write",
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Get a Policy",
-          "displayName": "Policies_Get",
+          "description": "Update a CertificateAuthority",
+          "displayName": "CertificateAuthorities_Update",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "List Policy resources by Credential",
-          "displayName": "Policies_ListByResourceGroup",
+          "description": "Delete a CertificateAuthority",
+          "displayName": "CertificateAuthorities_Delete",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/read",
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Allows certificate issuance using certificate based policies.",
-          "displayName": "Policies_IssueCertificate",
-          "isDataAction": true,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/issueCertificate/action",
+          "description": "Activates a Certificate Authority of type `ICA` and issuer type `External`. If the Certificate Authority is an invalid type, the API responds with HTTP 400.",
+          "displayName": "CertificateAuthorities_Activate",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/activate/action",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Allows certificate revocation using certificate based policies.",
-          "displayName": "Policies_RevokeIssuer",
+          "description": "Revokes a Certificate Authority of type `ICA` and issuer type `Microsoft`. If the Certificate Authority is an invalid type, the API responds with HTTP 400.",
+          "displayName": "CertificateAuthorities_RevokeAndRotate",
           "isDataAction": false,
-          "name": "Microsoft.DeviceRegistry/namespaces/credentials/policies/revokeIssuer/action",
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/revokeAndRotate/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/certificateAuthorities/certificatePolicies",
+      "name": "namespaces/certificateAuthorities/certificatePolicies",
+      "operations": [
+        {
+          "description": "List CertificatePolicy resources by CertificateAuthority",
+          "displayName": "CertificatePolicies_ListByCertificateAuthority",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/certificatePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a CertificatePolicy",
+          "displayName": "CertificatePolicies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/certificatePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a CertificatePolicy",
+          "displayName": "CertificatePolicies_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/certificatePolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a CertificatePolicy",
+          "displayName": "CertificatePolicies_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/certificatePolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a CertificatePolicy",
+          "displayName": "CertificatePolicies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/certificateAuthorities/certificatePolicies/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/registryDevices",
+      "name": "namespaces/registryDevices",
+      "operations": [
+        {
+          "description": "List RegistryDevice resources by Namespace",
+          "displayName": "RegistryDevices_ListByNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RegistryDevice",
+          "displayName": "RegistryDevices_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RegistryDevice",
+          "displayName": "RegistryDevices_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a RegistryDevice",
+          "displayName": "RegistryDevices_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a RegistryDevice",
+          "displayName": "RegistryDevices_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/groups",
+      "name": "namespaces/groups",
+      "operations": [
+        {
+          "description": "List Group resources by Namespace",
+          "displayName": "Groups_ListByNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Group",
+          "displayName": "Groups_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Group",
+          "displayName": "Groups_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Group",
+          "displayName": "Groups_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Group",
+          "displayName": "Groups_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the current count of members of this group.",
+          "displayName": "Groups_CountMembers",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/countMembers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the current members of a namespace group.",
+          "displayName": "Groups_ListMembers",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/listMembers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Refreshes the members of this group.",
+          "displayName": "Groups_RefreshMembers",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/groups/refreshMembers/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/jobRuns",
+      "name": "namespaces/jobRuns",
+      "operations": [
+        {
+          "description": "List job runs by namespace, across all jobs in the namespace.",
+          "displayName": "JobRuns_ListByNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/jobs",
+      "name": "namespaces/jobs",
+      "operations": [
+        {
+          "description": "List Job resources by Namespace",
+          "displayName": "Jobs_ListByNamespace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a Job",
+          "displayName": "Jobs_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a Job",
+          "displayName": "Jobs_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a Job",
+          "displayName": "Jobs_Update",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a Job",
+          "displayName": "Jobs_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/jobs/runs",
+      "name": "namespaces/jobs/runs",
+      "operations": [
+        {
+          "description": "List JobRun resources by Job",
+          "displayName": "JobRuns_ListByJob",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a JobRun",
+          "displayName": "JobRuns_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a JobRun",
+          "displayName": "JobRuns_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a JobRun",
+          "displayName": "JobRuns_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Cancel a job run.",
+          "displayName": "JobRuns_Cancel",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/cancel/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a summary of the progress of a job run.",
+          "displayName": "JobRuns_GetSummary",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/getSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Browse the results of a job run to find individual device statuses.",
+          "displayName": "JobRuns_ListResults",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/jobs/runs/listResults/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/registryDevices/attributes",
+      "name": "namespaces/registryDevices/attributes",
+      "operations": [
+        {
+          "description": "List RegistryDeviceAttribute resources by RegistryDevice",
+          "displayName": "RegistryDeviceAttributes_ListByDevice",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/attributes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RegistryDeviceAttribute",
+          "displayName": "RegistryDeviceAttributes_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/attributes/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RegistryDeviceAttribute",
+          "displayName": "RegistryDeviceAttributes_CreateOrReplace",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/attributes/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a RegistryDeviceAttribute",
+          "displayName": "RegistryDeviceAttributes_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/attributes/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/registryDevices/authenticationProfiles",
+      "name": "namespaces/registryDevices/authenticationProfiles",
+      "operations": [
+        {
+          "description": "List RegistryDeviceAuthenticationProfile resources by RegistryDevice",
+          "displayName": "RegistryDeviceAuthenticationProfiles_ListByDevice",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/authenticationProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RegistryDeviceAuthenticationProfile",
+          "displayName": "RegistryDeviceAuthenticationProfiles_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/authenticationProfiles/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Retrieve the plaintext symmetric keys of a device authentication profile. Only valid when the profile's authentication type is SymmetricKey; profiles of any other type return 400 with the InvalidAuthenticationType error code.",
+          "displayName": "RegistryDeviceAuthenticationProfiles_ListKeys",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/authenticationProfiles/listKeys/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Revoke certificates issued for the device authentication profile. Applies to Microsoft-managed X.509 certificates: invalidates outstanding certificates via the PKI revocation list. The authentication profile itself is preserved.",
+          "displayName": "RegistryDeviceAuthenticationProfiles_RevokeCertificates",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/authenticationProfiles/revokeCertificates/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "namespaces/registryDevices/capabilities",
+      "name": "namespaces/registryDevices/capabilities",
+      "operations": [
+        {
+          "description": "List RegistryDeviceCapability resources by RegistryDevice",
+          "displayName": "RegistryDeviceCapabilities_ListByDevice",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/capabilities/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RegistryDeviceCapability",
+          "displayName": "RegistryDeviceCapabilities_Get",
+          "isDataAction": false,
+          "name": "Microsoft.DeviceRegistry/namespaces/registryDevices/capabilities/read",
           "origin": null,
           "properties": null
         }
