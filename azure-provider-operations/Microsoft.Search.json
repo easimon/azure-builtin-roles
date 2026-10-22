@@ -126,6 +126,14 @@
           "name": "Microsoft.Search/searchServices/privateEndpointConnectionsApproval/action",
           "origin": "user,system",
           "properties": null
+        },
+        {
+          "description": "Allows the creation of a replication connection onto this search service.",
+          "displayName": "Allow Incoming Replication Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnectionsApproval/action",
+          "origin": "user,system",
+          "properties": null
         }
       ]
     },
@@ -838,6 +846,184 @@
           "displayName": "Get Operation Result",
           "isDataAction": false,
           "name": "Microsoft.Search/locations/operationResults/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Connection",
+      "name": "searchServices/replicationConnections",
+      "operations": [
+        {
+          "description": "Creates a replication connection to a leader search service or updates an existing replication connection.",
+          "displayName": "Create or Update Replication Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnections/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Returns the list of replication connections or gets the properties of a replication connection.",
+          "displayName": "Get Replication Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnections/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a replication connection to a leader search service.",
+          "displayName": "Delete Replication Connection",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnections/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Follower",
+      "name": "searchServices/replicationFollowers",
+      "operations": [
+        {
+          "description": "Approves or rejects a replication follower of the leader search service.",
+          "displayName": "Update Replication Follower",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationFollowers/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Returns the list of replication followers or gets the properties of a replication follower.",
+          "displayName": "Get Replication Follower",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationFollowers/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes a replication follower of the leader search service.",
+          "displayName": "Delete Replication Follower",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationFollowers/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replication Connection Proxy",
+      "name": "searchServices/replicationConnectionProxies",
+      "operations": [
+        {
+          "description": "Creates or updates an internal replication connection proxy on the leader search service.",
+          "displayName": "Create or Update Replication Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnectionProxies/write",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Returns the list of internal replication connection proxies or gets the properties of a replication connection proxy.",
+          "displayName": "Get Replication Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnectionProxies/read",
+          "origin": "system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an internal replication connection proxy on the leader search service.",
+          "displayName": "Delete Replication Connection Proxy",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replicationConnectionProxies/delete",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Private Link Service Details",
+      "name": "searchServices/privateLinkServiceDetails",
+      "operations": [
+        {
+          "description": "Gets the private link service alias for the leader search service.",
+          "displayName": "Get Private Link Service Details",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/privateLinkServiceDetails/read",
+          "origin": "system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Index Replication",
+      "name": "searchServices/indexes/replication",
+      "operations": [
+        {
+          "description": "Create or update the replication configuration for an index.",
+          "displayName": "Create or Update Index Replication",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/indexes/replication/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read the replication configuration for an index.",
+          "displayName": "Read Index Replication",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/indexes/replication/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the replication configuration for an index.",
+          "displayName": "Delete Index Replication",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/indexes/replication/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Knowledge Base Replication",
+      "name": "searchServices/knowledgeBases/replication",
+      "operations": [
+        {
+          "description": "Create or update the replication configuration for a knowledge base.",
+          "displayName": "Create or Update Knowledge Base Replication",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/knowledgeBases/replication/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Read the replication configuration for a knowledge base.",
+          "displayName": "Read Knowledge Base Replication",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/knowledgeBases/replication/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Delete the replication configuration for a knowledge base.",
+          "displayName": "Delete Knowledge Base Replication",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/knowledgeBases/replication/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Replications",
+      "name": "searchServices/replications",
+      "operations": [
+        {
+          "description": "Return a replication or a list of replications.",
+          "displayName": "Read Replications",
+          "isDataAction": false,
+          "name": "Microsoft.Search/searchServices/replications/read",
           "origin": "user,system",
           "properties": null
         }
