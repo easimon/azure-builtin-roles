@@ -2322,7 +2322,7 @@
         {
           "description": "Stop a running artifact app",
           "displayName": "Stop Artifact App",
-          "isDataAction": true,
+          "isDataAction": false,
           "name": "Microsoft.App/artifactApps/stop/action",
           "origin": "user, system",
           "properties": null
@@ -2330,7 +2330,7 @@
         {
           "description": "Resume a stopped artifact app",
           "displayName": "Resume Artifact App",
-          "isDataAction": true,
+          "isDataAction": false,
           "name": "Microsoft.App/artifactApps/start/action",
           "origin": "user, system",
           "properties": null
@@ -2716,8 +2716,8 @@
           "properties": null
         },
         {
-          "description": "Create a new sandbox in a sandbox group",
-          "displayName": "Create Sandbox",
+          "description": "Update labels on a sandbox in a sandbox group",
+          "displayName": "Update Sandbox Labels",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/sandboxes/write",
           "origin": "user, system",
@@ -3214,6 +3214,20 @@
           "displayName": "Delete Credential",
           "isDataAction": true,
           "name": "Microsoft.App/sandboxGroups/credentials/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sandbox",
+      "name": "sandboxGroups/sandboxes/portforward",
+      "operations": [
+        {
+          "description": "Start a TCP port-forward session via WebSocket in a running sandbox",
+          "displayName": "Port Forward Stream",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/sandboxes/portforward/stream/action",
           "origin": "user, system",
           "properties": null
         }
