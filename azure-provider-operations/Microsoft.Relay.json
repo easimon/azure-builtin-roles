@@ -413,7 +413,7 @@
                   "internalMetricName": "ListenerConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "ListenerConnections-Success",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -446,7 +446,7 @@
                   "internalMetricName": "ListenerConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "ListenerConnections-ClientError",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -479,7 +479,7 @@
                   "internalMetricName": "ListenerConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "ListenerConnections-ServerError",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -512,7 +512,7 @@
                   "internalMetricName": "SenderConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "SenderConnections-Success",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -545,7 +545,7 @@
                   "internalMetricName": "SenderConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "SenderConnections-ClientError",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -578,7 +578,7 @@
                   "internalMetricName": "SenderConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "SenderConnections-ServerError",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -602,7 +602,7 @@
                   "internalMetricName": "ListenerConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "ListenerConnections-TotalRequests",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -626,7 +626,7 @@
                   "internalMetricName": "SenderConnectionAttempts",
                   "isDimensionRequired": false,
                   "name": "SenderConnections-TotalRequests",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -650,7 +650,7 @@
                   "internalMetricName": "ActiveConnectionsCount",
                   "isDimensionRequired": false,
                   "name": "ActiveConnections",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -674,7 +674,7 @@
                   "internalMetricName": "ActiveListenersCount",
                   "isDimensionRequired": false,
                   "name": "ActiveListeners",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -698,7 +698,7 @@
                   "internalMetricName": "BytesTransferred",
                   "isDimensionRequired": false,
                   "name": "BytesTransferred",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Bytes"
                 },
@@ -722,7 +722,7 @@
                   "internalMetricName": "ListenerConnectionDisconnects",
                   "isDimensionRequired": false,
                   "name": "ListenerDisconnects",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 },
@@ -746,7 +746,7 @@
                   "internalMetricName": "SenderConnectionDisconnects",
                   "isDimensionRequired": false,
                   "name": "SenderDisconnects",
-                  "sourceMdmAccount": "sbaustraliaeast",
+                  "sourceMdmAccount": "sbcentralus",
                   "sourceMdmNamespace": "OperationQoSMetrics",
                   "unit": "Count"
                 }
@@ -1035,6 +1035,523 @@
           "displayName": "Receive messages",
           "isDataAction": true,
           "name": "Microsoft.Relay/namespaces/messages/listen/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Cluster metrics",
+      "name": "clusters/providers/Microsoft.Insights/metricDefinitions",
+      "operations": [
+        {
+          "description": "Get list of Cluster metrics Resource Descriptions",
+          "displayName": "Get Cluster metrics",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/providers/Microsoft.Insights/metricDefinitions/read",
+          "origin": null,
+          "properties": {
+            "serviceSpecification": {
+              "metricSpecifications": [
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Successful ListenerConnections across the Relay Cluster.",
+                  "displayName": "ListenerConnections-Success",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-Success",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ClientError on ListenerConnections across the Relay Cluster.",
+                  "displayName": "ListenerConnections-ClientError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-ClientError",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ServerError on ListenerConnections across the Relay Cluster.",
+                  "displayName": "ListenerConnections-ServerError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-ServerError",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "Success"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "Successful SenderConnections across the Relay Cluster.",
+                  "displayName": "SenderConnections-Success",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-Success",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "ClientError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ClientError on SenderConnections across the Relay Cluster.",
+                  "displayName": "SenderConnections-ClientError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-ClientError",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "InternalServerError"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "OperationResult"
+                    }
+                  ],
+                  "displayDescription": "ServerError on SenderConnections across the Relay Cluster.",
+                  "displayName": "SenderConnections-ServerError",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-ServerError",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total ListenerConnections across the Relay Cluster.",
+                  "displayName": "ListenerConnections-TotalRequests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "ListenerConnections-TotalRequests",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total SenderConnections requests across the Relay Cluster.",
+                  "displayName": "SenderConnections-TotalRequests",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionAttempts",
+                  "isDimensionRequired": false,
+                  "name": "SenderConnections-TotalRequests",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total ActiveConnections across the Relay Cluster.",
+                  "displayName": "ActiveConnections",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ActiveConnectionsCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ActiveConnections",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total ActiveListeners across the Relay Cluster.",
+                  "displayName": "ActiveListeners",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ActiveListenersCount",
+                  "isDimensionRequired": false,
+                  "lockAggregationType": "Total",
+                  "name": "ActiveListeners",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "supportedAggregationTypes": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                  ],
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total BytesTransferred across the Relay Cluster.",
+                  "displayName": "BytesTransferred",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "BytesTransferred",
+                  "isDimensionRequired": false,
+                  "name": "BytesTransferred",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Bytes"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total ListenerDisconnects across the Relay Cluster.",
+                  "displayName": "ListenerDisconnects",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "ListenerConnectionDisconnects",
+                  "isDimensionRequired": false,
+                  "name": "ListenerDisconnects",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Total",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "displayDescription": "Total SenderDisconnects across the Relay Cluster.",
+                  "displayName": "SenderDisconnects",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "SenderConnectionDisconnects",
+                  "isDimensionRequired": false,
+                  "name": "SenderDisconnects",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Count"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "isHidden": false,
+                      "name": "Role",
+                      "toBeExportedForShoebox": true
+                    },
+                    {
+                      "defaultDimensionValues": [
+                        {
+                          "value": "_Total"
+                        }
+                      ],
+                      "isHidden": true,
+                      "name": "Instance"
+                    }
+                  ],
+                  "displayDescription": "CPU utilization for the Relay Cluster as a percentage",
+                  "displayName": "CPU",
+                  "fillGapWithZero": true,
+                  "internalMetricName": "Processor\\% Processor Time",
+                  "name": "CPU",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "PerformanceCountersV2",
+                  "unit": "Percent"
+                },
+                {
+                  "aggregationType": "Maximum",
+                  "availabilities": [
+                    {
+                      "blobDuration": "P30D",
+                      "timeGrain": "PT1M"
+                    }
+                  ],
+                  "dimensions": [
+                    {
+                      "isHidden": false,
+                      "name": "Role",
+                      "toBeExportedForShoebox": true
+                    }
+                  ],
+                  "displayDescription": "Available memory for the Relay Cluster as a percentage of total memory.",
+                  "displayName": "Available Memory",
+                  "fillGapWithZero": false,
+                  "internalMetricName": "NodeMemoryUtilization",
+                  "name": "AvailableMemory",
+                  "resourceIdDimensionNameOverride": "ScaleUnit",
+                  "sourceMdmAccount": "sbcentralus",
+                  "sourceMdmNamespace": "OperationQoSMetrics",
+                  "unit": "Percent"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Relay Cluster",
+      "name": "clusters",
+      "operations": [
+        {
+          "description": "Gets Relay Cluster Resource",
+          "displayName": "Gets Relay Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create or Update Relay Cluster Resource",
+          "displayName": "Create or Update Relay Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete Relay Cluster Resource",
+          "displayName": "Delete Relay Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Relay Cluster",
+      "name": "clusters/namespaces",
+      "operations": [
+        {
+          "description": "List namespace ARM IDs for namespaces within a cluster.",
+          "displayName": "List namespaces within a cluster read operation",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/namespaces/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Relay Cluster",
+      "name": "clusters/skus",
+      "operations": [
+        {
+          "description": "Get the SKU and supported capacity range for a Relay cluster.",
+          "displayName": "Get cluster SKU read operation",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/skus/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Relay Cluster",
+      "name": "clusters/operationresults",
+      "operations": [
+        {
+          "description": "Get the status of an asynchronous cluster operation.",
+          "displayName": "Get Cluster Resource",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/clusters/operationresults/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Relay Cluster",
+      "name": "availableClusterRegions",
+      "operations": [
+        {
+          "description": "Read operation to list available pre-provisioned clusters by Azure region.",
+          "displayName": "List available clusters read operation",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/availableClusterRegions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Sku",
+      "name": "sku",
+      "operations": [
+        {
+          "description": "Get list of Sku Resource Descriptions",
+          "displayName": "Get Sku",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/sku/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SkuRegions",
+      "name": "sku/regions",
+      "operations": [
+        {
+          "description": "Get list of SkuRegions Resource Descriptions",
+          "displayName": "Get SkuRegions",
+          "isDataAction": false,
+          "name": "Microsoft.Relay/sku/regions/read",
           "origin": null,
           "properties": null
         }
