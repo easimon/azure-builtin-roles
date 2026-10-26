@@ -19127,6 +19127,14 @@
       "name": "accounts/AIServices/agents",
       "operations": [
         {
+          "description": "Allow user to publish agents",
+          "displayName": "Publish agent",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/agents/publish/action",
+          "origin": "user",
+          "properties": null
+        },
+        {
           "description": "Create update agents, threads, and messages",
           "displayName": "Create or update agents, threads, and messages",
           "isDataAction": true,
@@ -21651,6 +21659,88 @@
           "displayName": "Delete Adapter Deployment",
           "isDataAction": false,
           "name": "Microsoft.CognitiveServices/accounts/adapterDeployments/delete",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "agents",
+      "name": "accounts/AIServices/agents/session",
+      "operations": [
+        {
+          "description": "Open and control an interactive exec session in a hosted agent sandbox",
+          "displayName": "Execute commands in hosted agent sessions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/agents/session/exec/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "reinforcement learning environments",
+      "name": "accounts/AIServices/rl_environments",
+      "operations": [
+        {
+          "description": "Get or list reinforcement learning environments and versions",
+          "displayName": "Get or list reinforcement learning environments and versions",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/rl_environments/read",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Create or update a reinforcement learning environment or version",
+          "displayName": "Create or update a reinforcement learning environment or version",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/rl_environments/write",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Delete a reinforcement learning environment version",
+          "displayName": "Delete a reinforcement learning environment version",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/rl_environments/delete",
+          "origin": "user",
+          "properties": null
+        },
+        {
+          "description": "Invoke a reinforcement learning environment",
+          "displayName": "Invoke a reinforcement learning environment",
+          "isDataAction": true,
+          "name": "Microsoft.CognitiveServices/accounts/AIServices/rl_environments/invoke/action",
+          "origin": "user",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Attached AKS Clusters",
+      "name": "accounts/attachedAksClusters",
+      "operations": [
+        {
+          "description": "Reads attached AKS clusters under an account.",
+          "displayName": "Read Attached AKS Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/attachedAksClusters/read",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Creates or updates an attached AKS cluster under an account.",
+          "displayName": "Attach AKS Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/attachedAksClusters/write",
+          "origin": "user,system",
+          "properties": null
+        },
+        {
+          "description": "Deletes an attached AKS cluster under an account.",
+          "displayName": "Detach AKS Cluster",
+          "isDataAction": false,
+          "name": "Microsoft.CognitiveServices/accounts/attachedAksClusters/delete",
           "origin": "user,system",
           "properties": null
         }
