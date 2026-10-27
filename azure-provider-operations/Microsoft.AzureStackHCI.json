@@ -956,6 +956,14 @@
       "name": "EdgeMachines",
       "operations": [
         {
+          "description": "Gets the SSH public keys trusted by an EdgeMachine.",
+          "displayName": "Gets SSH trust anchor public keys",
+          "isDataAction": false,
+          "name": "Microsoft.AzureStackHCI/EdgeMachines/getSshTrustAnchor/Action",
+          "origin": "User",
+          "properties": null
+        },
+        {
           "description": "Creates or updates a EdgeMachine",
           "displayName": "Create/update EdgeMachine resources",
           "isDataAction": false,
@@ -968,6 +976,22 @@
           "displayName": "Deletes EdgeMachine resource",
           "isDataAction": false,
           "name": "Microsoft.AzureStackHCI/EdgeMachines/Delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Issues a JWS authorization signature with administrator access for the specified EdgeMachine.",
+          "displayName": "Issue an administrator EdgeMachine SSH signature",
+          "isDataAction": false,
+          "name": "Microsoft.AzureStackHCI/EdgeMachines/issueSshCertificateForAdmin/Action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Issues a JWS authorization signature with non-administrator access for the specified EdgeMachine.",
+          "displayName": "Issue a non-administrator EdgeMachine SSH signature",
+          "isDataAction": false,
+          "name": "Microsoft.AzureStackHCI/EdgeMachines/issueSshCertificateForNonAdmin/Action",
           "origin": null,
           "properties": null
         },
@@ -1992,6 +2016,36 @@
           "displayName": "Deploys Cluster Volume resources",
           "isDataAction": false,
           "name": "Microsoft.AzureStackHCI/Clusters/Volumes/deploy/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "EdgeMachines/ProvisionOsJobs",
+      "name": "EdgeMachines/ProvisionOsJobs",
+      "operations": [
+        {
+          "description": "Reads EdgeMachine Provision OS jobs",
+          "displayName": "Reads EdgeMachine Provision OS jobs",
+          "isDataAction": false,
+          "name": "Microsoft.AzureStackHCI/EdgeMachines/ProvisionOsJobs/Read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates EdgeMachine Provision OS jobs",
+          "displayName": "Creates or updates EdgeMachine Provision OS jobs",
+          "isDataAction": false,
+          "name": "Microsoft.AzureStackHCI/EdgeMachines/ProvisionOsJobs/Write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes EdgeMachine Provision OS jobs",
+          "displayName": "Deletes EdgeMachine Provision OS jobs",
+          "isDataAction": false,
+          "name": "Microsoft.AzureStackHCI/EdgeMachines/ProvisionOsJobs/Delete",
           "origin": null,
           "properties": null
         }
