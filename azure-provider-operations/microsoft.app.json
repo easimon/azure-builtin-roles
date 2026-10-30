@@ -3284,6 +3284,58 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "SRE Agent",
+      "name": "agents/a2a",
+      "operations": [
+        {
+          "description": "Discover agent capabilities and retrieve caller-authorized A2A task status and results",
+          "displayName": "Read A2A capabilities and tasks in an SRE agent",
+          "isDataAction": true,
+          "name": "Microsoft.App/agents/a2a/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Submit or continue A2A work and cancel the caller's tasks",
+          "displayName": "Submit, continue, and cancel A2A tasks in an SRE agent",
+          "isDataAction": true,
+          "name": "Microsoft.App/agents/a2a/write",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "SRE Agent",
+      "name": "agents/a2a/connections",
+      "operations": [
+        {
+          "description": "View incoming and outgoing A2A connections and available handlers, excluding secrets",
+          "displayName": "Read A2A connections in an SRE agent",
+          "isDataAction": true,
+          "name": "Microsoft.App/agents/a2a/connections/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Create, update, or test outgoing A2A connections and approve, disable, or remove incoming callers",
+          "displayName": "Update A2A connections in an SRE agent",
+          "isDataAction": true,
+          "name": "Microsoft.App/agents/a2a/connections/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete outgoing A2A connections in an SRE agent",
+          "displayName": "Delete outgoing A2A connections in an SRE agent",
+          "isDataAction": true,
+          "name": "Microsoft.App/agents/a2a/connections/delete",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
