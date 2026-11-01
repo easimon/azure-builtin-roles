@@ -419,6 +419,118 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "HorizonDb Cluster",
+      "name": "clusters/authentications",
+      "operations": [
+        {
+          "description": "Lists the two service-created authentication configurations, passwordMethod and microsoftEntra, including disabled methods. Returns persisted authentication state without credentials or data-plane calls.",
+          "displayName": "List HorizonDB authentication configurations",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/authentications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Return the list of HorizonDb clusters or gets the properties for the specified cluster.",
+          "displayName": "List or Get HorizonDb cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/authentications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or replaces the service-created Microsoft Entra authentication method. State Enabled enables the feature and State Disabled disables it; no additional properties are required. Repeating the same request is idempotent. Disabling the feature does not remove or modify database roles or users previously created through the Microsoft Entra administrator API or directly through pgaadauth extension functions.",
+          "displayName": "Create or replace HorizonDB Microsoft Entra authentication",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/authentications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a HorizonDb cluster with the specified parameters or update the properties or tags for the specified cluster.",
+          "displayName": "Create or Update HorizonDb cluster",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/authentications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Asynchronously enables or disables PostgreSQL password authentication, or resets the existing administrator password. An administrator must already exist; PATCH does not create or rename one and ignores administratorLogin if supplied. Omitted properties preserve their current values. Enable may be combined with password reset and does not require Microsoft Entra authentication to be enabled; Disable requires Microsoft Entra authentication and cannot include a password.",
+          "displayName": "Update HorizonDB password authentication",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/authentications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Asynchronously creates the initial password administrator or updates password authentication. State is required. Initial creation requires Enabled, administratorLogin and administratorLoginPassword. An existing username cannot be supplied again. Disabling requires enabled Microsoft Entra authentication and cannot include credentials. Both 201 creation and 200 replacement responses represent accepted asynchronous operations and include polling headers; poll the operation to determine its final outcome.",
+          "displayName": "Create or update HorizonDB password authentication",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/authentications/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Cluster",
+      "name": "clusters/pools/nodes",
+      "operations": [
+        {
+          "description": null,
+          "displayName": null,
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/pools/nodes/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Private Endpoint Connection",
+      "name": "clusters/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "Approves or rejects an existing HorizonDb private endpoint connection.",
+          "displayName": "Approve or Reject HorizonDb private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Returns the list of private endpoint connections or gets the properties for the specified HorizonDb private endpoint connection.",
+          "displayName": "List or Get HorizonDb private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes an existing HorizonDb private endpoint connection.",
+          "displayName": "Delete HorizonDb private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/privateEndpointConnections/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "HorizonDb Private Link Resource",
+      "name": "clusters/privateLinkResources",
+      "operations": [
+        {
+          "description": "Returns the list of private link resources or gets the specified private link resource for a HorizonDb cluster.",
+          "displayName": "List or Get HorizonDb private link resource",
+          "isDataAction": false,
+          "name": "Microsoft.HorizonDb/clusters/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
