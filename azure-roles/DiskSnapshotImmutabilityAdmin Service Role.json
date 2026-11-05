@@ -1,0 +1,30 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-06-16T15:19:45.756841+00:00",
+  "description": "Can set a new locked immutability policy and modify (extend) it. Cannot change ImmutabilityPolicyType from locked to unlocked for an active immutable policy, and cannot reduce the ImmutabilityPolicyDurationDays for a locked immutability policy.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/541b4c51-7349-4db1-b5af-298b9f20dd79",
+  "name": "541b4c51-7349-4db1-b5af-298b9f20dd79",
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Compute/snapshots/read",
+        "Microsoft.Compute/snapshots/updateImmutabilityPolicyLock/action"
+      ],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "DiskSnapshotImmutabilityAdmin Service Role",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-11-02T16:10:40.449343+00:00"
+}
