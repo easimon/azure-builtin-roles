@@ -3,7 +3,7 @@
     "/"
   ],
   "createdBy": null,
-  "createdOn": "2025-10-09T01:48:17.607559+00:00",
+  "createdOn": "2025-10-13T15:11:13.209903+00:00",
   "description": "Allows for full access to IoT devices within Azure Device Registry Namespace.",
   "id": "/providers/Microsoft.Authorization/roleDefinitions/a5c3590a-3a1a-4cd4-9648-ea0a32b15137",
   "name": "a5c3590a-3a1a-4cd4-9648-ea0a32b15137",
@@ -11,10 +11,26 @@
     {
       "actions": [
         "microsoft.deviceregistry/namespaces/read",
+        "microsoft.deviceregistry/namespaces/write",
+        "microsoft.deviceregistry/namespaces/migrate/action",
+        "microsoft.deviceregistry/namespaces/generateReport/action",
+        "microsoft.deviceregistry/namespaces/getLatestReport/action",
+        "microsoft.deviceregistry/assets/*",
+        "microsoft.deviceregistry/assetendpointprofiles/*",
+        "microsoft.deviceregistry/schemaRegistries/*",
         "microsoft.deviceregistry/namespaces/devices/*",
         "microsoft.deviceregistry/namespaces/discovereddevices/*",
+        "microsoft.deviceregistry/namespaces/assets/*",
+        "microsoft.deviceregistry/namespaces/discoveredAssets/*",
+        "microsoft.deviceregistry/namespaces/groups/*",
+        "microsoft.deviceregistry/namespaces/jobs/*",
+        "microsoft.deviceregistry/namespaces/jobRuns/*",
+        "microsoft.deviceregistry/namespaces/registryDevices/*",
         "microsoft.deviceregistry/namespaces/credentials/read",
         "microsoft.deviceregistry/namespaces/credentials/policies/read",
+        "microsoft.deviceregistry/namespaces/certificateAuthorities/read",
+        "microsoft.deviceregistry/namespaces/certificateAuthorities/certificatePolicies/read",
+        "microsoft.deviceupdate/updateinstances/read",
         "microsoft.devices/iothubs/certificates/*",
         "microsoft.devices/iothubs/read"
       ],
@@ -33,5 +49,5 @@
   "systemData": null,
   "type": "Microsoft.Authorization/roleDefinitions",
   "updatedBy": null,
-  "updatedOn": "2025-10-22T23:19:49.995147+00:00"
+  "updatedOn": "2026-11-04T16:24:34.993581+00:00"
 }
