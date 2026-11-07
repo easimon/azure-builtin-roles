@@ -6379,6 +6379,14 @@
           "properties": null
         },
         {
+          "description": "Generates embeddings through an AI Gateway model alias.",
+          "displayName": "Generate embeddings through AI Gateway",
+          "isDataAction": true,
+          "name": "Microsoft.ApiManagement/aigateways/models/embeddings/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Lists the models available through an AI Gateway by using the OpenAI-compatible GET /v1/models endpoint.",
           "displayName": "List AI Gateway models",
           "isDataAction": true,
@@ -6487,6 +6495,64 @@
           "displayName": "Remove alias",
           "isDataAction": false,
           "name": "Microsoft.ApiManagement/aigateways/workspaces/aliases/delete",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Check Name Availability",
+      "name": "locations/checkNameAvailability",
+      "operations": [
+        {
+          "description": "Checks if provided AI Gateway name is available in a location",
+          "displayName": "Check AI Gateway Name Availability",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/locations/checkNameAvailability/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AI Gateway Private Link Group Resource",
+      "name": "aigateways/privateLinkResources",
+      "operations": [
+        {
+          "description": "Get private link resources for an AI Gateway instance",
+          "displayName": "Get AI Gateway private link resources",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/aigateways/privateLinkResources/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "AI Gateway Private Endpoint Connection",
+      "name": "aigateways/privateEndpointConnections",
+      "operations": [
+        {
+          "description": "List or get private endpoint connections to an AI Gateway instance",
+          "displayName": "Read AI Gateway private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/aigateways/privateEndpointConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Approve or reject a private endpoint connection to an AI Gateway instance",
+          "displayName": "Approve or reject AI Gateway private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/aigateways/privateEndpointConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Delete a private endpoint connection to an AI Gateway instance",
+          "displayName": "Delete AI Gateway private endpoint connection",
+          "isDataAction": false,
+          "name": "Microsoft.ApiManagement/aigateways/privateEndpointConnections/delete",
           "origin": null,
           "properties": null
         }
