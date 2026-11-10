@@ -244,14 +244,6 @@
           "properties": null
         },
         {
-          "description": "Allows a storage container to be added to a Quota Management Group",
-          "displayName": "Join Quota Management Group",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/blobServices/containers/joinQuotaManagementGroups/action",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Returns a container",
           "displayName": "Get blob container",
           "isDataAction": false,
@@ -594,10 +586,10 @@
           "properties": null
         },
         {
-          "description": "Allows a storage account to be added to a Quota Management Group",
-          "displayName": "Join Quota Management Group",
+          "description": "Tests a proposed blob access point configuration connection before resource creation.",
+          "displayName": "Test Proposed Blob Access Point Configuration Connection",
           "isDataAction": false,
-          "name": "Microsoft.Storage/storageAccounts/joinQuotaManagementGroups/action",
+          "name": "Microsoft.Storage/storageAccounts/testBlobAccessPointConfigurationProposedConnection/action",
           "origin": null,
           "properties": null
         },
@@ -3955,68 +3947,38 @@
       ]
     },
     {
-      "displayName": "Quota Management Groups",
-      "name": "quotaManagementGroups",
+      "displayName": "Blob Access Point Configuration",
+      "name": "storageAccounts/blobAccessPointConfigurations",
       "operations": [
         {
-          "description": "Creates or updates a Quota Management Group",
-          "displayName": "Create or Update Quota Management Group",
+          "description": "Creates or updates a blob access point configuration.",
+          "displayName": "Write Blob Access Point Configuration",
           "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementGroups/write",
+          "name": "Microsoft.Storage/storageAccounts/blobAccessPointConfigurations/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets or lists Quota Management Groups",
-          "displayName": "Read Quota Management Group",
+          "description": "Returns the list of blob access point configurations or gets the properties of specified blob access point configuration.",
+          "displayName": "Get/List(s) Blob Access Point Configuration",
           "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementGroups/read",
+          "name": "Microsoft.Storage/storageAccounts/blobAccessPointConfigurations/read",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Deletes a Quota Management Group",
-          "displayName": "Delete Quota Management Group",
+          "description": "Delete a blob access point configuration.",
+          "displayName": "Delete Blob Access Point Configuration",
           "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementGroups/delete",
-          "origin": null,
-          "properties": null
-        }
-      ]
-    },
-    {
-      "displayName": "Quota Management Policies",
-      "name": "quotaManagementPolicies",
-      "operations": [
-        {
-          "description": "Creates or updates a Quota Management Policy",
-          "displayName": "Create or Update Quota Management Policy",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementPolicies/write",
+          "name": "Microsoft.Storage/storageAccounts/blobAccessPointConfigurations/delete",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Gets or lists Quota Management Policies",
-          "displayName": "Read Quota Management Policy",
+          "description": "Tests an existing blob access point configuration connection.",
+          "displayName": "Test Existing Blob Access Point Configuration",
           "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementPolicies/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Deletes a Quota Management Policy",
-          "displayName": "Delete Quota Management Policy",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementPolicies/delete",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Allows a Quota Management Group to link to a Quota Management Policy",
-          "displayName": "Join Quota Management Policy",
-          "isDataAction": false,
-          "name": "Microsoft.Storage/quotaManagementPolicies/join/action",
+          "name": "Microsoft.Storage/storageAccounts/blobAccessPointConfigurations/testExistingConnection/action",
           "origin": null,
           "properties": null
         }
