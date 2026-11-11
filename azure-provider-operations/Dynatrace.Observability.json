@@ -138,18 +138,10 @@
           "properties": null
         },
         {
-          "description": "Starts migration resource discovery for the monitor.",
-          "displayName": "Discover migration resources",
+          "description": "Starts discovery and creates a migration record for the monitor.",
+          "displayName": "Start migration discovery",
           "isDataAction": false,
-          "name": "Dynatrace.Observability/monitors/discoverMigrationResource/action",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Gets the most recently accepted migration discovery run.",
-          "displayName": "Get migration discovery status",
-          "isDataAction": false,
-          "name": "Dynatrace.Observability/monitors/getMigrationDiscoveryStatus/action",
+          "name": "Dynatrace.Observability/monitors/startDiscovery/action",
           "origin": null,
           "properties": null
         },
@@ -288,6 +280,20 @@
           "displayName": "Create/Update monitored subscriptions for the dynatrace resource",
           "isDataAction": false,
           "name": "Dynatrace.Observability/monitors/monitoredSubscriptions/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Migrations",
+      "name": "monitors/migrations",
+      "operations": [
+        {
+          "description": "Gets or lists migration discovery resources for the monitor.",
+          "displayName": "Get/List migrations",
+          "isDataAction": false,
+          "name": "Dynatrace.Observability/monitors/migrations/read",
           "origin": null,
           "properties": null
         }
