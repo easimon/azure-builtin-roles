@@ -270,7 +270,7 @@
           "properties": null
         },
         {
-          "description": "Triggers template evaluation for all scenarios in a given workspace.",
+          "description": "Evaluates published scenario template versions against a workspace discovery snapshot.",
           "displayName": "Evaluates templates for a Workspace.",
           "isDataAction": false,
           "name": "Microsoft.Chaos/workspaces/evaluate/action",
@@ -600,6 +600,34 @@
           "displayName": "Gets all Action Versions.",
           "isDataAction": false,
           "name": "Microsoft.Chaos/locations/actionVersions/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ScenarioTemplate",
+      "name": "scenarioTemplates",
+      "operations": [
+        {
+          "description": "Gets or lists the built-in scenario templates published by Chaos Studio.",
+          "displayName": "Read a built-in Scenario Template.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/scenarioTemplates/read",
+          "origin": "user,system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "ScenarioTemplateVersion",
+      "name": "scenarioTemplates/versions",
+      "operations": [
+        {
+          "description": "Gets or lists the published versions of a built-in scenario template.",
+          "displayName": "Read a published version of a built-in Scenario Template.",
+          "isDataAction": false,
+          "name": "Microsoft.Chaos/scenarioTemplates/versions/read",
           "origin": "user,system",
           "properties": null
         }
