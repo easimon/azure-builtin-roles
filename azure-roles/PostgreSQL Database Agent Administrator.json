@@ -1,0 +1,40 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-11-11T22:03:19.898811+00:00",
+  "description": "Includes PostgreSQL Database Agent Contributor permissions plus server mitigation approval and client-execution start and result reporting.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/a715612b-6d9c-4e9e-852d-50deb47ab794",
+  "name": "a715612b-6d9c-4e9e-852d-50deb47ab794",
+  "permissions": [
+    {
+      "actions": [],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/issues/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/tasks/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/diagnosticData/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/issues/write",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/write",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/delete",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/tasks/execute/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/mitigations/database/approve/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/investigations/forceResolve/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/mitigations/server/approve/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/clientExecutions/start/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/clientExecutions/results/write"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "PostgreSQL Database Agent Administrator",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-11-11T22:03:19.898811+00:00"
+}
