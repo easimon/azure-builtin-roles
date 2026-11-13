@@ -3092,18 +3092,18 @@
       "name": "sandboxGroups/volumes",
       "operations": [
         {
-          "description": "List volumes in a sandbox group",
-          "displayName": "List Volumes",
+          "description": "Create a backup of a volume in a sandbox group",
+          "displayName": "Create Volume Backup",
           "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/volumes/read",
+          "name": "Microsoft.App/sandboxGroups/volumes/write",
           "origin": "user, system",
           "properties": null
         },
         {
-          "description": "Create a new volume in a sandbox group",
-          "displayName": "Create Volume",
+          "description": "List volumes in a sandbox group",
+          "displayName": "List Volumes",
           "isDataAction": true,
-          "name": "Microsoft.App/sandboxGroups/volumes/write",
+          "name": "Microsoft.App/sandboxGroups/volumes/read",
           "origin": "user, system",
           "properties": null
         },
@@ -3332,6 +3332,36 @@
           "displayName": "Provision SRE Agent Session Sandbox",
           "isDataAction": false,
           "name": "Microsoft.App/agentSessions/provision/action",
+          "origin": "user, system",
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "Ingress Label",
+      "name": "sandboxGroups/ingressLabels",
+      "operations": [
+        {
+          "description": "Create or update an ingress label in a sandbox group",
+          "displayName": "Create or Update Ingress Label",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/ingressLabels/write",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Get an ingress label in a sandbox group",
+          "displayName": "Get Ingress Label",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/ingressLabels/read",
+          "origin": "user, system",
+          "properties": null
+        },
+        {
+          "description": "Delete an ingress label in a sandbox group",
+          "displayName": "Delete Ingress Label",
+          "isDataAction": true,
+          "name": "Microsoft.App/sandboxGroups/ingressLabels/delete",
           "origin": "user, system",
           "properties": null
         }
