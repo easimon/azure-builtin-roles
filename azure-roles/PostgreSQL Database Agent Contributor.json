@@ -1,0 +1,37 @@
+{
+  "assignableScopes": [
+    "/"
+  ],
+  "createdBy": null,
+  "createdOn": "2026-11-11T22:03:19.897810+00:00",
+  "description": "Read PostgreSQL Database Agent diagnostics, manage issue lifecycle and custom instructions, execute tasks, approve database mitigations, and force-resolve investigations.",
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/f86e2d45-38c4-4c0b-91d2-6cd8bc090016",
+  "name": "f86e2d45-38c4-4c0b-91d2-6cd8bc090016",
+  "permissions": [
+    {
+      "actions": [],
+      "condition": null,
+      "conditionVersion": null,
+      "dataActions": [
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/issues/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/tasks/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/diagnosticData/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/issues/write",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/read",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/write",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/instructions/delete",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/tasks/execute/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/mitigations/database/approve/action",
+        "Microsoft.DBforPostgreSQL/flexibleServers/dbAgent/investigations/forceResolve/action"
+      ],
+      "notActions": [],
+      "notDataActions": []
+    }
+  ],
+  "roleName": "PostgreSQL Database Agent Contributor",
+  "roleType": "BuiltInRole",
+  "systemData": null,
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "updatedBy": null,
+  "updatedOn": "2026-11-11T22:03:19.897810+00:00"
+}
