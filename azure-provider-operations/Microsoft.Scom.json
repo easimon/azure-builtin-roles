@@ -102,39 +102,15 @@
           "properties": null
         },
         {
-          "description": "Lists all SCOM monitoring instances in a resource group",
-          "displayName": "Instances_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.Scom/managedInstances/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all SCOM monitoring instances in a subscription ",
-          "displayName": "Instances_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.Scom/managedInstances/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Get SCOM monitoring instance details",
-          "displayName": "Instances_Get",
-          "isDataAction": false,
-          "name": "Microsoft.Scom/managedInstances/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Create or update SCOM monitoring instance",
-          "displayName": "Instances_CreateOrUpdate",
+          "description": "Patch SCOM managed instance",
+          "displayName": "Instances_Update",
           "isDataAction": false,
           "name": "Microsoft.Scom/managedInstances/write",
           "origin": null,
           "properties": null
         },
         {
-          "description": "Delete a SCOM monitoring instance",
+          "description": "Delete a SCOM managed instance",
           "displayName": "Instances_Delete",
           "isDataAction": false,
           "name": "Microsoft.Scom/managedInstances/delete",
@@ -142,10 +118,202 @@
           "properties": null
         },
         {
-          "description": "Patch SCOM managed instance",
-          "displayName": "Instances_Update",
+          "description": "Create or update SCOM managed instance",
+          "displayName": "Instances_CreateOrUpdate",
           "isDataAction": false,
           "name": "Microsoft.Scom/managedInstances/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get SCOM managed instance details",
+          "displayName": "Instances_Get",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all SCOM managed instances in a subscription ",
+          "displayName": "Instances_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists all SCOM managed instances in a resource group",
+          "displayName": "Instances_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Scaling SCOM managed instance.",
+          "displayName": "Instances_Scale",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/setServerCount/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Scaling SCOM managed instance.",
+          "displayName": "Instances_ScaleManagementServer",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/setManagementServerCount/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting the summary of monitored resources and manage gateway attached to a SCOM managed instance.",
+          "displayName": "Resource_Summary",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getResourceSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting the List of specified type of resource attached to a SCOM managed instance based on filter and sorting conditions.",
+          "displayName": "Resource_List",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getResourcesList/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting the List of specified type of resource attached to a SCOM managed instance based on filter and sorting conditions.",
+          "displayName": "ManagedGateway_List",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getManagedGateways/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting the List of specified type of resource attached to a SCOM managed instance based on filter and sorting conditions.",
+          "displayName": "MonitoredResource_List",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getMonitoredResources/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting Health Status Summary of specified type of resource attached to a SCOM managed instance based on filter conditions.",
+          "displayName": "ResourceHealthStatusSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getResourceHealthStatusSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting Health Status Summary of specified type of resource attached to a SCOM managed instance based on filter conditions.",
+          "displayName": "ManagedGatewaysHealthSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getManagedGatewaysHealthSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Getting Health Status Summary of specified type of resource attached to a SCOM managed instance based on filter conditions.",
+          "displayName": "MonitoredResourcesHealthSummary",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/getMonitoredResourcesHealthSummary/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gateway approval for onboarding gateway.",
+          "displayName": "Onboard_Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/onboardGateway/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gateway approval for onboarding gateway.",
+          "displayName": "Onboard_ManagedGateway",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/onboardManagedGateway/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gateway removal approval for deleting gateway.",
+          "displayName": "Offboard_Gateway",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/offboardGateway/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gateway removal approval for deleting gateway.",
+          "displayName": "Offboard_ManagedGateway",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/offboardManagedGateway/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Api to remove monitored resource from management server.",
+          "displayName": "Offboard_MonitoredResource",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/offboardMonitoredResource/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update SCOM servers with latest scom software.",
+          "displayName": "Instances_PatchServers",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/patchServers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update SCOM servers with latest scom software.",
+          "displayName": "Instances_PatchManagementServers",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/patchManagementServers/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Link Log Analytics workspace for SCOM monitoring instance",
+          "displayName": "Instances_LinkLogAnalyticsWorkspace",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/linkLogAnalyticsWorkspace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Unlink Log Analytics workspace for SCOM monitoring instance",
+          "displayName": "Instances_UnlinkLogAnalyticsWorkspace",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/unlinkLogAnalyticsWorkspace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update configuration for log analytics linking for SCOM monitoring instance",
+          "displayName": "Instances_UpdateLogAnalyticsWorkspace",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/updateLogAnalyticsWorkspace/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Link managed grafana instance to SCOM MI instance",
+          "displayName": "Instances_LinkManagedGrafana",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/linkManagedGrafana/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Unlink managed grafana instance from SCOM MI instance",
+          "displayName": "Instances_UnlinkManagedGrafana",
+          "isDataAction": false,
+          "name": "Microsoft.Scom/managedInstances/unlinkManagedGrafana/action",
           "origin": null,
           "properties": null
         }
