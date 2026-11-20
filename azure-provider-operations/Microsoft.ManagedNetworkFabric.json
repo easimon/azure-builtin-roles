@@ -3298,10 +3298,42 @@
       "name": "fabrics",
       "operations": [
         {
-          "description": "Deletes the specified Fabric.",
+          "description": "Acknowledge the current DisruptiveRolloutPlan for this fabric, releasing the next rollout batch. Long-running: the operation returns once the plan controller observes the acknowledgement stamp for the supplied `planRevision`, not when the rollout finishes -- poll `properties.disruptiveRollout` for rollout progress. A `planRevision` that no longer matches the operator's current plan returns 409 Conflict carrying the current revision. Idempotent: re-acknowledging the same revision is a no-op success. Acknowledge and discard are mutually exclusive for a given plan revision. Consumes the Fabric resource Azure Resource Manager single-flight slot; concurrent invocations on the same Fabric return 409 until terminal `provisioningState`.",
+          "displayName": "Fabrics_AcknowledgeDisruptiveRollout",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/acknowledgeDisruptiveRollout/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "Fabrics_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Discard the current DisruptiveRolloutPlan for this fabric, aborting the pending rollout. Long-running: the operation returns once the plan controller observes the discard for the supplied `planRevision` and transitions the plan to `Discarded`. A `planRevision` that no longer matches the operator's current plan returns 409 Conflict carrying the current revision. Idempotent: re-discarding the same revision is a no-op success. Acknowledge and discard are mutually exclusive for a given plan revision. Consumes the Fabric resource Azure Resource Manager single-flight slot; concurrent invocations on the same Fabric return 409 until terminal `provisioningState`.",
+          "displayName": "Fabrics_DiscardDisruptiveRollout",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/discardDisruptiveRollout/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Move this fabric's management plane from the Azure-hosted operator to the operator on its associated on-prem cluster, using the custom location specified in the request body. Requires the Fabric to already carry its cluster association (`clusterResourceId`) and to be cloud-hosted (`managementPlaneLocation` absent or `Cloud`). Long-running: the operation records the intent, and completes once the cloud operator has released the Fabric (its host-access ownership is torn down and no further cloud-side mutation will occur), not when the on-prem operator has taken it over -- poll `managementPlaneLocation` for `OnPrem` and `managementPlaneTransition` for the hand-off's progress and any hold. While the hand-off is in flight, PUT, PATCH, DELETE, and mutating actions are refused with `FabricTransitioning`. Idempotent: invoking it on a Fabric whose hand-off is already in flight returns the in-flight operation's outcome. Consumes the Fabric resource Azure Resource Manager single-flight slot; concurrent invocations on the same Fabric return 409 until terminal `provisioningState`.",
+          "displayName": "Fabrics_Migrate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/migrate/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Preflight a prospective fabricVersion change without applying it. Read-only: returns disruption summary, affected device count, and range-check results computed against the Fabric's pinned FabricSku.supportedFabricVersions snapshot. Consumes the Fabric resource Azure Resource Manager single-flight slot; concurrent invocations on the same Fabric return 409 until terminal `provisioningState`.",
+          "displayName": "Fabrics_PreviewVersionChange",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/previewFabricVersionChange/action",
           "origin": null,
           "properties": null
         },
@@ -3338,7 +3370,7 @@
           "properties": null
         },
         {
-          "description": "Updates a Fabric.",
+          "description": "Applies a sparse update to the fabric. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "Fabrics_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/write",
@@ -3352,7 +3384,7 @@
       "name": "fabrics/delegations",
       "operations": [
         {
-          "description": "Deletes the specified FabricDelegation.",
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "FabricDelegations_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/delegations/delete",
@@ -3376,6 +3408,14 @@
           "properties": null
         },
         {
+          "description": "Lists FabricDelegations by subscription.",
+          "displayName": "FabricDelegations_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/delegations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Creates a FabricDelegation.",
           "displayName": "FabricDelegations_Create",
           "isDataAction": false,
@@ -3384,7 +3424,7 @@
           "properties": null
         },
         {
-          "description": "Updates a FabricDelegation.",
+          "description": "Applies a sparse update. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "FabricDelegations_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/delegations/write",
@@ -3398,7 +3438,7 @@
       "name": "fabrics/vlans",
       "operations": [
         {
-          "description": "Deletes the specified Vlan.",
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "Vlans_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vlans/delete",
@@ -3422,6 +3462,14 @@
           "properties": null
         },
         {
+          "description": "Lists Vlans by subscription.",
+          "displayName": "Vlans_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/vlans/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Creates a Vlan.",
           "displayName": "Vlans_Create",
           "isDataAction": false,
@@ -3430,7 +3478,7 @@
           "properties": null
         },
         {
-          "description": "Updates a Vlan.",
+          "description": "Applies a sparse update. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "Vlans_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vlans/write",
@@ -3444,7 +3492,7 @@
       "name": "fabrics/vrfs/delegations",
       "operations": [
         {
-          "description": "Deletes the specified VrfDelegation.",
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "VrfDelegations_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/delegations/delete",
@@ -3454,6 +3502,14 @@
         {
           "description": "Gets the specified VrfDelegation.",
           "displayName": "VrfDelegations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/delegations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists VrfDelegations by subscription.",
+          "displayName": "VrfDelegations_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/delegations/read",
           "origin": null,
@@ -3476,7 +3532,7 @@
           "properties": null
         },
         {
-          "description": "Updates a VrfDelegation.",
+          "description": "Applies a sparse update. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "VrfDelegations_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/delegations/write",
@@ -3490,7 +3546,7 @@
       "name": "fabrics/vrfs",
       "operations": [
         {
-          "description": "Deletes the specified Vrf.",
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "Vrfs_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/delete",
@@ -3514,6 +3570,14 @@
           "properties": null
         },
         {
+          "description": "Lists Vrfs by subscription.",
+          "displayName": "Vrfs_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/read",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Creates a Vrf.",
           "displayName": "Vrfs_Create",
           "isDataAction": false,
@@ -3522,7 +3586,7 @@
           "properties": null
         },
         {
-          "description": "Updates a Vrf.",
+          "description": "Applies a sparse update. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "Vrfs_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/write",
@@ -3536,7 +3600,7 @@
       "name": "fabrics/vrfs/networks",
       "operations": [
         {
-          "description": "Deletes the specified Network.",
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "Networks_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/networks/delete",
@@ -3546,6 +3610,14 @@
         {
           "description": "Gets the specified Network.",
           "displayName": "Networks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/networks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists Networks by subscription.",
+          "displayName": "Networks_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/networks/read",
           "origin": null,
@@ -3568,7 +3640,7 @@
           "properties": null
         },
         {
-          "description": "Updates a Network.",
+          "description": "Applies a sparse update. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "Networks_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/networks/write",
@@ -3636,7 +3708,7 @@
           "properties": null
         },
         {
-          "description": "Deletes the specified ServicePeer.",
+          "description": "Deletes the resource using the August response contract.",
           "displayName": "ServicePeers_Delete",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/servicePeers/delete",
@@ -3654,6 +3726,14 @@
         {
           "description": "Gets the specified ServicePeer.",
           "displayName": "ServicePeers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/servicePeers/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists ServicePeers by subscription.",
+          "displayName": "ServicePeers_ListBySubscription",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/servicePeers/read",
           "origin": null,
@@ -3684,10 +3764,334 @@
           "properties": null
         },
         {
-          "description": "Updates a ServicePeer.",
+          "description": "Applies a sparse update. Returns the updated resource when complete, or accepts the update for asynchronous processing.",
           "displayName": "ServicePeers_Update",
           "isDataAction": false,
           "name": "Microsoft.ManagedNetworkFabric/fabrics/vrfs/servicePeers/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fabrics/accessControlLists",
+      "name": "fabrics/accessControlLists",
+      "operations": [
+        {
+          "description": "Delete a AccessControlListResource",
+          "displayName": "FabricAccessControlLists_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/accessControlLists/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a AccessControlListResource",
+          "displayName": "FabricAccessControlLists_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/accessControlLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AccessControlListResource resources by FabricResource",
+          "displayName": "FabricAccessControlLists_ListByFabricResource",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/accessControlLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List AccessControlListResource resources by subscription ID",
+          "displayName": "FabricAccessControlLists_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/accessControlLists/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a AccessControlListResource",
+          "displayName": "FabricAccessControlLists_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/accessControlLists/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a AccessControlListResource",
+          "displayName": "FabricAccessControlLists_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/accessControlLists/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fabrics/externalConnections",
+      "name": "fabrics/externalConnections",
+      "operations": [
+        {
+          "description": "Delete a ExternalConnectionResource",
+          "displayName": "ExternalConnections_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a ExternalConnectionResource",
+          "displayName": "ExternalConnections_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ExternalConnectionResource resources by FabricResource",
+          "displayName": "ExternalConnections_ListByFabricResource",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List ExternalConnectionResource resources by subscription ID",
+          "displayName": "ExternalConnections_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a ExternalConnectionResource",
+          "displayName": "ExternalConnections_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a ExternalConnectionResource",
+          "displayName": "ExternalConnections_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fabrics/externalConnections/vrfAttachments",
+      "name": "fabrics/externalConnections/vrfAttachments",
+      "operations": [
+        {
+          "description": "Delete a VrfAttachmentResource",
+          "displayName": "VrfAttachments_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/vrfAttachments/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a VrfAttachmentResource",
+          "displayName": "VrfAttachments_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/vrfAttachments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List VrfAttachmentResource resources by ExternalConnectionResource",
+          "displayName": "VrfAttachments_ListByExternalConnectionResource",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/vrfAttachments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List VrfAttachmentResource resources by subscription ID",
+          "displayName": "VrfAttachments_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/vrfAttachments/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a VrfAttachmentResource",
+          "displayName": "VrfAttachments_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/vrfAttachments/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a VrfAttachmentResource",
+          "displayName": "VrfAttachments_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/externalConnections/vrfAttachments/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fabrics/racks",
+      "name": "fabrics/racks",
+      "operations": [
+        {
+          "description": "Delete a RackResource",
+          "displayName": "Racks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/racks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RackResource",
+          "displayName": "Racks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/racks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RackResource resources by FabricResource",
+          "displayName": "Racks_ListByFabricResource",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/racks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RackResource resources by subscription ID",
+          "displayName": "Racks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/racks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RackResource",
+          "displayName": "Racks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/racks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a RackResource",
+          "displayName": "Racks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/racks/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fabrics/routePolicies",
+      "name": "fabrics/routePolicies",
+      "operations": [
+        {
+          "description": "Delete a RoutePolicyResource",
+          "displayName": "FabricRoutePolicies_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/routePolicies/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a RoutePolicyResource",
+          "displayName": "FabricRoutePolicies_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/routePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RoutePolicyResource resources by FabricResource",
+          "displayName": "FabricRoutePolicies_ListByFabricResource",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/routePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List RoutePolicyResource resources by subscription ID",
+          "displayName": "FabricRoutePolicies_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/routePolicies/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a RoutePolicyResource",
+          "displayName": "FabricRoutePolicies_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/routePolicies/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a RoutePolicyResource",
+          "displayName": "FabricRoutePolicies_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/routePolicies/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "fabrics/uplinks",
+      "name": "fabrics/uplinks",
+      "operations": [
+        {
+          "description": "Delete a UplinkResource",
+          "displayName": "Uplinks_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/uplinks/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a UplinkResource",
+          "displayName": "Uplinks_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/uplinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List UplinkResource resources by FabricResource",
+          "displayName": "Uplinks_ListByFabricResource",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/uplinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List UplinkResource resources by subscription ID",
+          "displayName": "Uplinks_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/uplinks/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a UplinkResource",
+          "displayName": "Uplinks_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/uplinks/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Update a UplinkResource",
+          "displayName": "Uplinks_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ManagedNetworkFabric/fabrics/uplinks/write",
           "origin": null,
           "properties": null
         }
