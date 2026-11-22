@@ -39,8 +39,17 @@ Feedback / definitive info on that is welcome.
 
 ### Role file format
 
-The JSON format here is from `az role definition list`, with the Subscription Id part redacted.
+The JSON format here is from `az role definition list`
+
+- with the Subscription Id part redacted
+- and the fields `createdOn` and `updatedOn` removed from each role
+
 This differs structurally (not only in attribute order) from the Roles JSON view in Azure Portal.
+
+The fields `createdOn` and `updatedOn` have been added at some point in time, and change very 
+frequently, with no visible change in the rest of the document. Especially changes to the the 
+field `createdOn` make little sense, so these fields seem to provide just noise, no actual 
+information.
 
 JSON View in Azure Portal: The `id` property is listed first, all other attributes are nested
 in a `properties` attribute. Order of attributes seems "natural".
