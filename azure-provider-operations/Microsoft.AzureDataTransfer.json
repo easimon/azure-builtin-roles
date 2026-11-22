@@ -142,6 +142,14 @@
           "properties": null
         },
         {
+          "description": "Approves pending flow request(s) associated with the specified Pipeline.",
+          "displayName": "Pipelines_ApproveTransferFlow",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/approveTransferFlow/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Executes a privileged or administrative action on the specified Pipeline.",
           "displayName": "Pipelines_ExecuteAction",
           "isDataAction": false,
@@ -166,10 +174,26 @@
           "properties": null
         },
         {
+          "description": "Lists the storage and messaging transfer flows that use the specified Pipeline, across all subscriptions and tenants that use it. This is the pipeline approver view; it differs from the subscription and resource group list operations, which only return the caller's own transfer flows. Results do not cross clouds; the remote side of each flow is referenced only through remoteTransferFlowResourceId.",
+          "displayName": "Pipelines_ListTransferFlows",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/listTransferFlows/action",
+          "origin": null,
+          "properties": null
+        },
+        {
           "description": "Rejects a pending connection request associated with the specified Pipeline.",
           "displayName": "Pipelines_RejectConnection",
           "isDataAction": false,
           "name": "Microsoft.AzureDataTransfer/pipelines/rejectConnection/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Rejects pending flow request(s) associated with the specified Pipeline.",
+          "displayName": "Pipelines_RejectTransferFlow",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/pipelines/rejectTransferFlow/action",
           "origin": null,
           "properties": null
         }
@@ -530,6 +554,162 @@
           "displayName": "FlowProfiles_Update",
           "isDataAction": false,
           "name": "Microsoft.AzureDataTransfer/pipelines/flowProfiles/write",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "storageTransferFlows",
+      "name": "storageTransferFlows",
+      "operations": [
+        {
+          "description": "Gets storage transfer flows in a subscription.",
+          "displayName": "StorageTransferFlows_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets storage transfer flows in a resource group.",
+          "displayName": "StorageTransferFlows_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets StorageTransferFlow resource.",
+          "displayName": "StorageTransferFlows_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the StorageTransferFlow resource.",
+          "displayName": "StorageTransferFlows_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the storage transfer flow resource.",
+          "displayName": "StorageTransferFlows_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the StorageTransferFlow resource.",
+          "displayName": "StorageTransferFlows_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stops data transfer through the specified storage transfer flow.",
+          "displayName": "StorageTransferFlows_DisableTransfer",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/disableTransfer/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts (or resumes) data transfer through the specified storage transfer flow. The transfer flow must be approved and linked.",
+          "displayName": "StorageTransferFlows_EnableTransfer",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/enableTransfer/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Pairs this storage transfer flow with the storage transfer flow identified by its remoteTransferFlowResourceId on the other side of the pipeline. Once both sides are linked and approved, data can be transferred between them.",
+          "displayName": "StorageTransferFlows_LinkRemoteFlow",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/storageTransferFlows/linkRemoteFlow/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "messagingTransferFlows",
+      "name": "messagingTransferFlows",
+      "operations": [
+        {
+          "description": "Gets messaging transfer flows in a subscription.",
+          "displayName": "MessagingTransferFlows_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets messaging transfer flows in a resource group.",
+          "displayName": "MessagingTransferFlows_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets the MessagingTransferFlow resource.",
+          "displayName": "MessagingTransferFlows_Get",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates the MessagingTransferFlow resource.",
+          "displayName": "MessagingTransferFlows_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes the MessagingTransferFlow resource.",
+          "displayName": "MessagingTransferFlows_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Updates the MessagingTransferFlow resource.",
+          "displayName": "MessagingTransferFlows_Update",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Stops data transfer through the specified messaging transfer flow.",
+          "displayName": "MessagingTransferFlows_DisableTransfer",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/disableTransfer/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Starts (or resumes) data transfer through the specified messaging transfer flow. The transfer flow must be approved and linked.",
+          "displayName": "MessagingTransferFlows_EnableTransfer",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/enableTransfer/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Pairs this messaging transfer flow with the messaging transfer flow identified by its remoteTransferFlowResourceId on the other side of the pipeline. Once both sides are linked and approved, data can be transferred between them.",
+          "displayName": "MessagingTransferFlows_LinkRemoteFlow",
+          "isDataAction": false,
+          "name": "Microsoft.AzureDataTransfer/messagingTransferFlows/linkRemoteFlow/action",
           "origin": null,
           "properties": null
         }
