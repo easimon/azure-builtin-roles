@@ -32,3 +32,5 @@ echo > "${TWEET_PATH}/dummy.tweet"
 "${SCRIPT_DIR}/_process-additions.sh" "${DIR}" "${DEFINITION_TYPE}"
 "${SCRIPT_DIR}/_process-removals.sh" "${DIR}" "${DEFINITION_TYPE}"
 "${SCRIPT_DIR}/_process-modifications.sh" "${DIR}" "${DEFINITION_TYPE}"
+
+echo "Processing changes for ${DEFINITION_TYPE} in ${DIR} completed."

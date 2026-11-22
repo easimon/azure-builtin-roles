@@ -69,6 +69,7 @@ jobs:
           TWEETS="$(cat "${TWEET_PATH}"/*/*.tweet | jq --slurp -c .)"
           echo "tweets=${TWEETS}" > "${GITHUB_OUTPUT}"
           echo "${TWEETS}" | jq > "${GITHUB_STEP_SUMMARY}"
+          echo "Processing completed for ${TWEETS}."
     outputs:
       tweets: ${{ steps.create-matrix.outputs.tweets }}
 
