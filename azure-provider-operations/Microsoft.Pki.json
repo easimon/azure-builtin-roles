@@ -62,30 +62,6 @@
           "name": "Microsoft.Pki/pkis/delete",
           "origin": null,
           "properties": null
-        },
-        {
-          "description": "Updates some properties of a PKI resource, while not touching other properties.",
-          "displayName": "Pki_Update",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the PKI resources in a subscription.",
-          "displayName": "Pki_ListBySubscription",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/read",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the PKI resources in a resource group.",
-          "displayName": "Pki_ListByResourceGroup",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/read",
-          "origin": null,
-          "properties": null
         }
       ]
     },
@@ -118,18 +94,10 @@
           "properties": null
         },
         {
-          "description": "Updates some properties of a certificate authority, while not touching other properties.",
-          "displayName": "CertificateAuthority_Update",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/certificateAuthorities/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the certificate authorities in a PKI resource.",
-          "displayName": "CertificateAuthority_ListByPki",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/certificateAuthorities/read",
+          "description": "Revokes a certificate issued by a certificate authority.",
+          "displayName": "CertificateAuthority_Revoke",
+          "isDataAction": true,
+          "name": "Microsoft.Pki/pkis/certificateAuthorities/revoke/action",
           "origin": null,
           "properties": null
         }
@@ -164,26 +132,18 @@
           "properties": null
         },
         {
-          "description": "Updates some properties of an enrollment policy, while not touching other properties.",
-          "displayName": "EnrollmentPolicy_Update",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/enrollmentPolicies/write",
-          "origin": null,
-          "properties": null
-        },
-        {
-          "description": "Lists all the enrollment policies in a PKI resource.",
-          "displayName": "EnrollmentPolicy_ListByPki",
-          "isDataAction": false,
-          "name": "Microsoft.Pki/pkis/enrollmentPolicies/read",
-          "origin": null,
-          "properties": null
-        },
-        {
           "description": "Allow to use enrollment policies for enrolling certificates",
           "displayName": "EnrollmentPolicy_Enroll",
           "isDataAction": true,
           "name": "Microsoft.Pki/pkis/enrollmentPolicies/enroll/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Enrolls an intermediate certificate using an enrollment policy.",
+          "displayName": "EnrollmentPolicy_IntermediateEnroll",
+          "isDataAction": true,
+          "name": "Microsoft.Pki/pkis/enrollmentPolicies/intermediateEnroll/action",
           "origin": null,
           "properties": null
         }
