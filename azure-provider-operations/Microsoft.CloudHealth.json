@@ -364,6 +364,44 @@
           "properties": null
         }
       ]
+    },
+    {
+      "displayName": "healthmodels/managedPrivateEndpoints",
+      "name": "healthmodels/managedPrivateEndpoints",
+      "operations": [
+        {
+          "description": "Delete a managed private endpoint and asynchronously clean up its model-owned connection.",
+          "displayName": "ManagedPrivateEndpoints_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/managedPrivateEndpoints/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Create a managed private endpoint. Repeating the same request for the same resource is idempotent and does not allocate another endpoint. Changing an immutable property returns a descriptive 400 error. Provisioning can complete before the target owner approves the connection.",
+          "displayName": "ManagedPrivateEndpoints_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/managedPrivateEndpoints/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Get a managed private endpoint and its observed provisioning and approval state.",
+          "displayName": "ManagedPrivateEndpoints_Get",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/managedPrivateEndpoints/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "List the managed private endpoints owned by a health model.",
+          "displayName": "ManagedPrivateEndpoints_ListByHealthModel",
+          "isDataAction": false,
+          "name": "Microsoft.CloudHealth/healthmodels/managedPrivateEndpoints/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
     }
   ],
   "type": "Microsoft.Authorization/providerOperations"
