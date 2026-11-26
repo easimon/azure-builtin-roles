@@ -1,0 +1,694 @@
+{
+  "displayName": "Microsoft.ResourceMover",
+  "id": "/providers/Microsoft.Authorization/providerOperations/Microsoft.ResourceMover",
+  "name": "Microsoft.ResourceMover",
+  "operations": [
+    {
+      "description": "Register the subscription for Microsoft.ResourceMover",
+      "displayName": "Register the Microsoft.ResourceMover",
+      "isDataAction": false,
+      "name": "Microsoft.ResourceMover/register/action",
+      "origin": null,
+      "properties": null
+    },
+    {
+      "description": "Unregister the subscription for Microsoft.ResourceMover",
+      "displayName": "Unregister the Microsoft.ResourceMover",
+      "isDataAction": false,
+      "name": "Microsoft.ResourceMover/unregister/action",
+      "origin": null,
+      "properties": null
+    }
+  ],
+  "resourceTypes": [
+    {
+      "displayName": "moveProjects",
+      "name": "moveProjects",
+      "operations": [
+        {
+          "description": "Updates a move project. `tags` and `identity` are accepted in the PATCH body.",
+          "displayName": "MoveProjects_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a move project.",
+          "displayName": "MoveProjects_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a move project.",
+          "displayName": "MoveProjects_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a move project.",
+          "displayName": "MoveProjects_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists move projects in a resource group.",
+          "displayName": "MoveProjects_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists move projects in a subscription.",
+          "displayName": "MoveProjects_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Initiates discovery of Azure resources within the specified scope. Always asynchronous: the\nservice returns 202 Accepted with polling headers, and the polling endpoint returns 204\nNo Content when the operation completes successfully. Track progress and the resulting\nfindings via the corresponding `DiscoveryRun` child resource.",
+          "displayName": "MoveProjects_Discover",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/discover/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Exports move applications and all of their members to a CSV file. The optional OData filter\nuses the same allow-list as `MoveApplications.listByParent`: `applicationType`,\n`discoveryRunId`, and `status`. Unsupported expressions are rejected with 400 InvalidFilter.\nRequests above the limit of 10 live staged export files are rejected with 429\nTooManyStagedFiles until an existing file expires.",
+          "displayName": "MoveProjects_ExportApplicationsCsv",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/exportApplicationsCsv/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a fresh, short-lived, read-only URI for an exported applications CSV file. Invalid or\ncross-project file names are rejected with 400 InvalidFileName. Missing or expired files are\nrejected with 404 DownloadNotFound. The download URI expires after 60 minutes.",
+          "displayName": "MoveProjects_GetCsvDownloadUri",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/getCsvDownloadUri/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a short-lived, create-only URI for staging an applications CSV file. The project may\nhave at most 10 live staged import files. Requests above that limit are rejected with 429\nTooManyStagedFiles until an existing file expires. The upload URI expires after 15 minutes.",
+          "displayName": "MoveProjects_GetCsvUploadUri",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/getCsvUploadUri/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Imports move applications from a staged CSV file. The service validates the project-bound file\nname and uploaded content before accepting the operation. Preflight rejects a missing upload\nwith 404 UploadNotFound, a file over 25 MB with 413 CsvTooLarge, and unsupported content\nencoding with 400 InvalidContentEncoding. A concurrent live import is rejected with 409\nImportAlreadyInProgress. Terminal ValidationFailed errors apply no changes and include up to\n1000 details; terminal ApplyFailed errors may leave previously committed changes in place.",
+          "displayName": "MoveProjects_ImportApplicationsCsv",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/importApplicationsCsv/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Exports move applications and all of their members to an XLSX workbook in Blob Storage.\nThe optional JSON body contains an OData filter. Admission returns an empty 202 with polling\nheaders; fileName, rowCount, exceedsImportLimit, and expiresOn are available only in the\nterminal operation output. Exchange the completed fileName using the shared getDownloadUri\naction to download workbook bytes from Blob Storage. The optional OData filter\nuses the same allow-list as `MoveApplications.listByParent`: `applicationType`,\n`discoveryRunId`, and `status`. Unsupported expressions are rejected with 400 InvalidFilter.\nRequests above the limit of 10 live staged export files are rejected with 429\nTooManyStagedFiles until an existing file expires. Errors use the standard ARM ErrorResponse;\nthrottled responses include Retry-After.",
+          "displayName": "MoveProjects_ExportApplicationsWorkbook",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/exportApplicationsWorkbook/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a fresh, short-lived, read-only URI for an exported applications discovery workbook or a\nmove-plan XLSX workbook in Blob Storage. This JSON action returns a SAS URI, not workbook\nbytes; download the file directly from Blob Storage. Invalid or cross-project file names are rejected with 400\nInvalidFileName. Missing or expired files are rejected with 404 DownloadNotFound. The download\nURI expires after 60 minutes. Failures use the standard ARM ErrorResponse.",
+          "displayName": "MoveProjects_GetDownloadUri",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/getDownloadUri/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a short-lived, create-only SAS URI for staging an applications XLSX workbook in Blob Storage.\nUpload workbook bytes directly to that URI using the service-issued .xlsx file name before invoking\n`importApplicationsWorkbook`; this JSON action does not receive workbook bytes. The project may\nhave at most 10 live staged import files. Requests above that limit are rejected with 429\nTooManyStagedFiles until an existing file expires. The upload URI expires after 15 minutes.\nFailures use the standard ARM ErrorResponse; retry throttled requests after the Retry-After delay.",
+          "displayName": "MoveProjects_GetWorkbookUploadUri",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/getWorkbookUploadUri/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Imports move applications from an XLSX workbook already uploaded to Blob Storage using\n`getWorkbookUploadUri`. Supply only the service-issued fileName in JSON, not multipart content\nor workbook bytes. Admission returns an empty 202 with polling headers; successful completion\nreturns 204 with no content. Invalid workbooks are rejected with 400, unauthorized access\nwith 403, missing uploads with 404, concurrent\nimports with 409, oversized workbooks with 413, throttling with 429, and temporary service\nunavailability with 503. Retry-After indicates the delay for retryable responses.",
+          "displayName": "MoveProjects_ImportApplicationsWorkbook",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/importApplicationsWorkbook/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Imports move applications from an XLSX workbook already uploaded to Blob Storage using\n`getWorkbookUploadUri`. Supply only the service-issued fileName in JSON, not multipart content\nor workbook bytes. Admission returns an empty 202 with polling headers; successful completion\nreturns 204 with no content. Invalid workbooks are rejected with 400, unauthorized access\nwith 403, missing uploads with 404, concurrent\nimports with 409, oversized workbooks with 413, throttling with 429, and temporary service\nunavailability with 503. Retry-After indicates the delay for retryable responses. Asynchronous\nvalidation can fail with `ValidationFailed` and `DependencyCycleDetected` details, including\nfor draft applications. Dependencies outside an application are nonblocking warnings.",
+          "displayName": "MoveProjects_ImportApplicationsWorkbook",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/importApplicationsWorkbook/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "operations",
+      "name": "operations",
+      "operations": [
+        {
+          "description": "read operations",
+          "displayName": "read_operations",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/operations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "discoveryAgents",
+      "name": "discoveryAgents",
+      "operations": [
+        {
+          "description": "Updates a discovery agent. `tags` and `identity` are accepted in the PATCH body.",
+          "displayName": "DiscoveryAgents_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a discovery agent.",
+          "displayName": "DiscoveryAgents_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a discovery agent.",
+          "displayName": "DiscoveryAgents_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a discovery agent by name.",
+          "displayName": "DiscoveryAgents_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists discovery agents in a resource group.",
+          "displayName": "DiscoveryAgents_ListByResourceGroup",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists discovery agents in a subscription.",
+          "displayName": "DiscoveryAgents_ListBySubscription",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates a new run for the discovery agent.",
+          "displayName": "DiscoveryAgents_Execute",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/execute/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "discoveryAgents/threads/execute",
+      "name": "discoveryAgents/threads",
+      "operations": [
+        {
+          "description": "Creates a new run for the thread.",
+          "displayName": "Threads_Execute",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/threads/execute/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "locations/operationStatuses",
+      "name": "locations/operationStatuses",
+      "operations": [
+        {
+          "description": "write operationStatuses",
+          "displayName": "write_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/locations/operationStatuses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "read operationStatuses",
+          "displayName": "read_operationStatuses",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/locations/operationStatuses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "moveProjects/moveApplications",
+      "name": "moveProjects/moveApplications",
+      "operations": [
+        {
+          "description": "Patches a move application. Mutable inner properties (`displayName`, `description`, `applicationType`,\n`discoveryRunId`, `status`) may be set; `provisioningState` and `warnings` are read-only.\nSetting status to `Finalized` is rejected with 400 `InvalidField` if the application dependency\ngraph contains a cycle or self-dependency.",
+          "displayName": "MoveApplications_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a move application.",
+          "displayName": "MoveApplications_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a move application. Setting status to `Finalized` is rejected with 400\n`InvalidField` if the application dependency graph contains a cycle or self-dependency.",
+          "displayName": "MoveApplications_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a move application by name.",
+          "displayName": "MoveApplications_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists move applications for a move project.",
+          "displayName": "MoveApplications_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "moveProjects/discoveryRuns",
+      "name": "moveProjects/discoveryRuns",
+      "operations": [
+        {
+          "description": "Deletes a discovery run. A run that is still in progress (provisioningState=Creating/Updating)\ncannot be deleted and is rejected with 409 OperationInProgress.",
+          "displayName": "DiscoveryRuns_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/discoveryRuns/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a discovery run by ID.",
+          "displayName": "DiscoveryRuns_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/discoveryRuns/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists discovery runs for a move project.",
+          "displayName": "DiscoveryRuns_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/discoveryRuns/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "moveProjects/moveApplications/members",
+      "name": "moveProjects/moveApplications/members",
+      "operations": [
+        {
+          "description": "Patches the source region, classification, management, and exclusion fields of a move application member. `sourceResourceId` is immutable; only `sourceRegion`, `reasoning`, `classificationFactors`, `confidence`, `dependsOn`, `managedBy`, and `excluded` are patchable.",
+          "displayName": "MoveApplicationMembers_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/members/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Removes a move application member, detaching the MoveResource from this application. The underlying MoveResource is not deleted.",
+          "displayName": "MoveApplicationMembers_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/members/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or replaces a move application member, assigning a MoveResource to this application.",
+          "displayName": "MoveApplicationMembers_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/members/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a move application member by name.",
+          "displayName": "MoveApplicationMembers_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/members/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists members of a move application.",
+          "displayName": "MoveApplicationMembers_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveApplications/members/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "discoveryAgents/conversations",
+      "name": "discoveryAgents/conversations",
+      "operations": [
+        {
+          "description": "Deletes a conversation.",
+          "displayName": "Conversations_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/conversations/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a conversation.",
+          "displayName": "Conversations_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/conversations/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a conversation by ID.",
+          "displayName": "Conversations_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/conversations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists conversations for a discovery agent.",
+          "displayName": "Conversations_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/conversations/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the items (messages, tool calls, tool outputs) of a conversation using standard pagination.",
+          "displayName": "Conversations_ListItems",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/conversations/listItems/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "discoveryAgents/responses",
+      "name": "discoveryAgents/responses",
+      "operations": [
+        {
+          "description": "Deletes a response.",
+          "displayName": "Responses_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/responses/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a response. The response runs synchronously; poll GET for `status`.",
+          "displayName": "Responses_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/responses/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a response by ID.",
+          "displayName": "Responses_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/responses/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the input and output items of a response using standard pagination.",
+          "displayName": "Responses_ListItems",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/responses/listItems/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists responses for a discovery agent, optionally filtered by conversation.",
+          "displayName": "Responses_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/responses/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "moveProjects/moveBatches",
+      "name": "moveProjects/moveBatches",
+      "operations": [
+        {
+          "description": "Patches a move batch. `moveApplications` is immutable after create and cannot be patched.",
+          "displayName": "MoveBatches_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a move batch.",
+          "displayName": "MoveBatches_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a move batch.",
+          "displayName": "MoveBatches_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a move batch by name.",
+          "displayName": "MoveBatches_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists move batches for a move project.",
+          "displayName": "MoveBatches_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Aborts an in-progress batch move. Always asynchronous: the service returns 202 Accepted with\npolling headers, and the polling endpoint returns 204 No Content when the operation completes\nsuccessfully.",
+          "displayName": "MoveBatches_Abort",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/abort/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Discards the results of the batch move. Always asynchronous: the service returns 202 Accepted\nwith polling headers, and the polling endpoint returns 204 No Content when the operation\ncompletes successfully.",
+          "displayName": "MoveBatches_Discard",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/discard/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Finalizes the batch move, committing the changes. Always asynchronous: the service returns 202\nAccepted with polling headers, and the polling endpoint returns 204 No Content when the\noperation completes successfully.",
+          "displayName": "MoveBatches_Finalize",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/finalize/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Prepares the batch for the move. Always asynchronous: the service returns 202 Accepted with\npolling headers, and the polling endpoint returns 204 No Content when the operation completes\nsuccessfully.",
+          "displayName": "MoveBatches_Prepare",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/prepare/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Tests the batch move without committing it. Always asynchronous: the service returns 202\nAccepted with polling headers, and the polling endpoint returns 204 No Content when the\noperation completes successfully.",
+          "displayName": "MoveBatches_Test",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/test/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Exports the batch's move plan as a human-readable, multi-section CSV report. Always\nasynchronous: the service returns 202 Accepted with polling headers, and the terminal\noperation status carries `output.{ fileName, rowCount, exceedsImportLimit, expiresOn }`.\nRejected with 409 when no plan exists yet for the batch.",
+          "displayName": "MoveBatches_ExportMovePlanCsv",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/exportMovePlanCsv/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Finalizes the move batch after a successful move. Always asynchronous: the service returns\n202 Accepted with polling headers, and the polling endpoint returns 204 No Content when the\noperation completes successfully.",
+          "displayName": "MoveBatches_Finalize",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/finalize/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Prepares the move batch for the move. Always asynchronous: the service returns 202 Accepted\nwith polling headers, and the polling endpoint returns 204 No Content when the operation\ncompletes successfully.",
+          "displayName": "MoveBatches_Prepare",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/prepare/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Exports the batch's move plan as a four-sheet XLSX workbook (Summary, Validations, Resources,\nAppendix). Always asynchronous: the service returns 202 Accepted with polling headers and an\nempty body; the terminal operation status carries `output.{ fileName, expiresOn }` (modeled as\nthe final 200 response). The workbook is downloaded by exchanging `fileName` via\n`getCsvDownloadUri`. Rejected with 409 when no plan exists yet for the batch, and with 413 when\nthe plan exceeds the maximum exportable size.",
+          "displayName": "MoveBatches_ExportMovePlan",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/exportMovePlan/action",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Exports the batch's move plan as a four-sheet XLSX workbook (Summary, Validations, Resources,\nAppendix). Always asynchronous: the service returns 202 Accepted with polling headers and an\nempty body; the terminal operation status carries `output.{ fileName, expiresOn }` (modeled as\nthe final 200 response). The workbook is downloaded by exchanging `fileName` via\n`getDownloadUri`. Rejected with 409 when no plan exists yet for the batch, and with 413 when\nthe plan exceeds the maximum exportable size.",
+          "displayName": "MoveBatches_ExportMovePlan",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/exportMovePlan/action",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "moveProjects/moveBatches/moveActions",
+      "name": "moveProjects/moveBatches/moveActions",
+      "operations": [
+        {
+          "description": "Patches a move action. `kind` and `sourceResourceId` are immutable after create.",
+          "displayName": "MoveActions_Update",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/moveActions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Deletes a move action.",
+          "displayName": "MoveActions_Delete",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/moveActions/delete",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Creates or updates a move action.",
+          "displayName": "MoveActions_CreateOrUpdate",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/moveActions/write",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Gets a move action by name.",
+          "displayName": "MoveActions_Get",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/moveActions/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists move actions for a move batch.",
+          "displayName": "MoveActions_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/moveBatches/moveActions/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "discoveryAgents/artifacts",
+      "name": "discoveryAgents/artifacts",
+      "operations": [
+        {
+          "description": "Downloads a single artifact for the specified discovery agent. The artifact is addressed by the owning `itemId`, with the optional `fileId` query parameter selecting a specific file within that item, and is returned as a resource whose `properties.file` carries the content.",
+          "displayName": "DiscoveryAgents_DownloadArtifact",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/artifacts/read",
+          "origin": null,
+          "properties": null
+        },
+        {
+          "description": "Lists the artifacts produced by the specified item for a discovery agent. Each entry carries its content in `properties.file`. Because artifact content is inlined and the response is bounded by the ARM payload limit, `fileId` selects the single artifact to return.",
+          "displayName": "DiscoveryAgents_ListArtifacts",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/discoveryAgents/artifacts/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    },
+    {
+      "displayName": "moveProjects/workbookImportOperations",
+      "name": "moveProjects/workbookImportOperations",
+      "operations": [
+        {
+          "description": "Lists recent workbook import operations for a move project, ordered from newest to oldest. Records\nremain available until their staged files expire. Before returning a non-terminal record, the\nservice reconciles it with the live workflow so an abandoned import is surfaced as failed.",
+          "displayName": "WorkbookImportOperations_ListByParent",
+          "isDataAction": false,
+          "name": "Microsoft.ResourceMover/moveProjects/workbookImportOperations/read",
+          "origin": null,
+          "properties": null
+        }
+      ]
+    }
+  ],
+  "type": "Microsoft.Authorization/providerOperations"
+}
